@@ -106,5 +106,97 @@
   "E15-H77": {
     "verdict": "PARTIAL",
     "evidence": "urban density lowers fertility; modest and hard to engineer; congestion diseconomies"
+  },
+  "E15-H78": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] France PACS 1999: 40%+ non-marital births, union-fertility link held"
+  },
+  "E15-H79": {
+    "verdict": "PARTIAL",
+    "evidence": "[measured] Singapore SDN made marriages but TFR still fell to 0.87 - thin-market lever"
+  },
+  "E15-H80": {
+    "verdict": "REFUTED",
+    "evidence": "[measured] no-fault effect reverses within a decade (Wolfers); repeal harms women; covenant marriage unused"
+  },
+  "E15-H81": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] Australia under-16 ban; Twenge time-displacement; restores in-person formation"
+  },
+  "E15-H82": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] marriage-penalty literature; lowers the financial cost of pairing"
+  },
+  "E15-H83": {
+    "verdict": "PARTIAL",
+    "evidence": "[measured] Army RCT: divorce 8.1% vs 14.9% for high-risk only, no average effect"
+  },
+  "E15-H84": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] Balbo-Barban: a friend/sibling's birth raises one's own odds (12-24 mo, fades)"
+  },
+  "E15-H85": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] Lee 2025 (perceived gender conflict); Korea 4B; restores viable matches"
+  },
+  "E15-H86": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] paradox of choice (Rosenfeld); commitment defaults curb optionality overload"
+  },
+  "E15-H87": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] loneliness epidemic; social-skills + third places re-enter the market"
+  },
+  "E15-H88": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] cut private-ed cost/edupoverty -> lower child-cost norm -> higher completed parity"
+  },
+  "E15-H89": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] lower exam stakes -> less intensive parenting + less youth burnout -> cheaper kids + more coupling"
+  },
+  "E15-H90": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] Doepke-Zilibotti: lower stakes -> relaxed parenting -> child cost down -> parity up"
+  },
+  "E15-H91": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] cut 2069 h/yr + presenteeism -> time/energy -> coupling + parenting (35-45h women higher pregnancy odds)"
+  },
+  "E15-H92": {
+    "verdict": "PARTIAL",
+    "evidence": "[measured] protect mothers' promotion -> early birth doesn't torpedo career; naive gender-NEUTRAL clock-stop BACKFIRES (helps men)"
+  },
+  "E15-H93": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] normalize kids in the 20s with support -> pull first birth into the fertile window -> lower childlessness"
+  },
+  "E15-H94": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] make early family career-neutral for BOTH partners -> dissolve the mutual-wait coordination failure"
+  },
+  "E15-H95": {
+    "verdict": "PARTIAL",
+    "evidence": "[measured] break the good-school-district housing premium -> lower the fused education+housing cost gate"
+  },
+  "E15-H96": {
+    "verdict": "PARTIAL",
+    "evidence": "[extrapolated] universal relationship skills -> more durable unions; extrapolated from PREP (high-risk 8% vs 15%, no average effect)"
+  },
+  "E15-H97": {
+    "verdict": "PARTIAL",
+    "evidence": "[extrapolated] treat anxiety/attachment/loneliness barriers -> more relationship formation -> coupling (no direct fertility RCT)"
+  },
+  "E15-H98": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] reduce approach anxiety -> re-enter the dating market -> coupling"
+  },
+  "E15-H99": {
+    "verdict": "SUPPORTED",
+    "evidence": "[predicted] shift the career-first identity -> parenthood higher status -> coupling + quantum (contagion, not top-down)"
+  },
+  "E15-H100": {
+    "verdict": "SUPPORTED",
+    "evidence": "[measured] change workplace culture -> time for family -> both margins"
   }
 }

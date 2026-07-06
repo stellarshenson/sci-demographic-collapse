@@ -133,11 +133,19 @@ women never have a child - so the missing births are missing mothers, the coupli
 children (Korea alone is a quantum-collapse special case). Second, it re-grades the strengths against the
 evidence and the record: childcare and gender equity are the strongest durable levers, while cash is weak and
 temporary - Korea's USD 270B over two decades is the proof - and the difference between a keystone bundle and
-an equal-sized cash bundle is durability, not magnitude. Twenty-seven hypotheses, each riding on an
-already-proven finding and bounded to a real-world ceiling, return an honest mix of 21 SUPPORTED, 4 PARTIAL and
-2 REFUTED: rolling back gender equality backfires and a paternity father-quota moves norms but not births,
-while cutting extreme working hours and building family-size housing emerge as underused levers beside the
-keystone. The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
+an equal-sized cash bundle is durability, not magnitude. Fifty hypotheses, each riding on an already-proven
+finding and bounded to a real-world ceiling, return an honest mix of 37 SUPPORTED, 10 PARTIAL and 3 REFUTED:
+rolling back gender equality backfires and a paternity father-quota moves norms but not births, while cutting
+extreme working hours and building family-size housing emerge as underused levers beside the keystone. A
+coupling-in-depth chapter tests ten legislative and psychological levers (France's PACS and de-escalating
+Korea's gender war are measured and effective; restricting divorce backfires; state matchmaking makes marriages
+without moving a birth rate), and a deeper-drivers chapter targets the binding constraint the obvious levers
+miss - the career-first / education-arms-race / overwork life-script (Poland deployed free nurseries and a
+93-billion-euro cash program and still fell to ~1.1). Every lever carries an interactions-and-side-effects
+reading: the coupled ODE amplifies a keystone push near the ridge and damps it deep in the basin, and cash,
+divorce restriction and gender-neutral career policies carry documented countervailing effects. A decision-
+maker's star-ranking with mechanism-of-effect chains is distilled in `docs/interventions.md`, and the source
+library lives in `references/papers/` (21 PDFs + 35 digests). The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
 coercive, non-durable and blind to the keystone. A society escapes the Seldon manifold by attacking the
 coupling keystone early, broadly and durably while it still sits near the ridge (E15).
 
@@ -201,8 +209,9 @@ coupling keystone early, broadly and durably while it still sits near the ridge 
   Rogers-Castro, counterfactual overrides), imported by Notebooks 4-10
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID behavioural
   panel; provenance in `data/raw/README.md`, `data/raw/unwpp/README.md`, and the per-source manifests
-- **Figures** - thirty-five executed figures in `reports/figures/` (including the recalibration loss
+- **Figures** - thirty-eight executed figures in `reports/figures/` (including the recalibration loss
   landscape, gap closure, tournament, coverage, crisis-fidelity, contrarian-scorecard, the Seldon-manifold /
   drivers / interventions panels, and the E15 intervention-story set: margin decomposition, strength × margin
-  map, keystone levers, the wider-menu verdict grid, the contraception spectrum, and the reversal verdict);
-  tables in `reports/*.csv`
+  map, keystone levers, the wider-menu verdict grid, the coupling-in-depth grid, the deeper-drivers grid, the
+  coupled-system interaction panel, the contraception spectrum, and the reversal verdict); tables in
+  `reports/*.csv`

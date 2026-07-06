@@ -6,7 +6,7 @@ Experiments log for calibrating the nine-state demographic-collapse model (from 
 
 - **Branch / artefacts** - Notebook 1 (structural, uncalibrated) `notebooks/01-kj-demographic-collapse.ipynb`; E1-E5 execution `notebooks/02-kj-demographic-calibration.ipynb`; design (on convergence) `docs/demographic-collapse-sota.md`
 - **Data** - `data/raw/` open-source ingests (World Bank, Eurostat, OWID) + per-source `MANIFEST.json` (source, URL, retrieval date, license); `data/external/` cited event-forcing anchors
-- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 27 hypotheses H51-H77): **21 SUPPORTED, 4 PARTIAL, 2 REFUTED**. **Campaign total: 102 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 21 SUPPORTED, 4 PARTIAL, 2 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`
+- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 50 hypotheses H51-H100 incl. coupling-in-depth legislative+psychological levers, a deeper-drivers chapter on the career-first arms race, and an interactions/side-effects analysis): **37 SUPPORTED, 10 PARTIAL, 3 REFUTED**. **Campaign total: 125 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 37 SUPPORTED, 10 PARTIAL, 3 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`; decision-maker star-ranking with mechanism-of-effect + side-effects in `docs/interventions.md`; research library in `references/papers/` (21 PDFs + 35 digests)
 
 ## Problem overview
 
@@ -710,8 +710,16 @@ split into its extensive (childlessness ρ) and intensive (parity P̄) margins, 
 into one extensible interface - an age-distributed lift on the region's ASFR schedule, composed into bundles
 that differ by which margin they load and whether they endure. Each hypothesis rides on an already-proven
 finding and extends it into the calibrated model, documenting every effect with a per-effect citation.
-Executed in `notebooks/10-kj-demographic-intervention-story.ipynb` (2026-07-06): **21 SUPPORTED, 4 PARTIAL,
-2 REFUTED**. The E14 catalogue strengths are superseded by the literature-graded E15 table.
+Executed in `notebooks/10-kj-demographic-intervention-story.ipynb` (2026-07-06): **50 hypotheses (H51-H100),
+37 SUPPORTED, 10 PARTIAL, 3 REFUTED** - a wider menu (attention economy, structure, family, messaging,
+health), a coupling-in-depth chapter of ten legislative and psychological levers, and a deeper-drivers chapter
+of thirteen specific interventions on the career-first / education-arms-race / overwork life-script (the Poland
+lesson: free nurseries + a 93-billion-euro cash program still left TFR ~1.1). Each lever also carries an
+**interactions and side-effects** analysis - the coupled Seldon ODE amplifies a keystone push near the ridge
+and damps it deep in the basin, and several levers carry documented countervailing effects (cash reduces female
+labour supply; restricting divorce raises women's suicide/DV; a gender-neutral career-clock stop widens the
+gender gap). The E14 catalogue strengths are superseded by the literature-graded E15 table; a decision-maker's
+star-ranking with mechanism-of-effect chains is in `docs/interventions.md`.
 
 ### E15 at a glance
 
@@ -744,9 +752,36 @@ Executed in `notebooks/10-kj-demographic-intervention-story.ipynb` (2026-07-06):
 | E15-H75 | fecundity awareness + egg-freezing cuts involuntary childlessness | involuntary childlessness rises 6% at 30 → 35% at 40; knowledge gaps cause avoidable delay | SUPPORTED |
 | E15-H76 | addressing male reproductive-health decline raises fertility | PARTIAL - Western sperm count −50%+ 1973-2015 (Levine 2022) but region-specific and debated | PARTIAL |
 | E15-H77 | de-urbanization / smaller cities raises fertility | PARTIAL - urban density lowers fertility but modest and hard to engineer (congestion diseconomies) | PARTIAL |
+| E15-H78 | legal recognition of cohabitation (PACS) raises coupling | measured - France PACS 1999: 40%+ non-marital births, union-fertility link held | SUPPORTED |
+| E15-H79 | state matchmaking raises fertility | measured - Singapore SDN made marriages but TFR still fell to 0.87 | PARTIAL |
+| E15-H80 | restricting divorce / covenant marriage raises stability | measured - no-fault effect reverses within a decade (Wolfers); repeal harms women; covenant marriage unused | REFUTED |
+| E15-H81 | attention-economy legislation (minor bans, right-to-disconnect) restores coupling | predicted - Australia under-16; Twenge time-displacement; tier-3 | SUPPORTED |
+| E15-H82 | removing the marriage tax penalty lowers the cost of pairing | measured - marriage-penalty literature; modest | SUPPORTED |
+| E15-H83 | relationship-skills education (PREP) raises union stability | measured - divorce 8.1% vs 14.9% for high-risk couples only, no average effect | PARTIAL |
+| E15-H84 | seeding fertility social contagion spreads childbearing | measured - Balbo-Barban: a friend/sibling's birth raises one's own odds (12-24 mo, fades) | SUPPORTED |
+| E15-H85 | gender depolarization restores viable matches | measured - Lee 2025 perceived gender conflict; Korea 4B; strongest coupling lever for Korea | SUPPORTED |
+| E15-H86 | slow-dating / choice-architecture nudges raise commitment | predicted - paradox of choice (Rosenfeld); tier-3 | SUPPORTED |
+| E15-H87 | loneliness / approach-anxiety reduction raises formation | predicted - loneliness epidemic; tier-3 | SUPPORTED |
+| E15-H88 | hagwon curfew + private-tutoring cap raises fertility | measured - Korea private-ed 27tn won, edupoverty 40% -> lower child-cost norm -> parity up | SUPPORTED |
+| E15-H89 | CSAT single-exam de-determinism raises fertility | measured - lower exam stakes -> less intensive parenting + less youth burnout | SUPPORTED |
+| E15-H90 | compressing winner-take-all inequality raises fertility | measured - Doepke-Zilibotti: lower stakes -> relaxed parenting -> cheaper children (root lever) | SUPPORTED |
+| E15-H91 | enforcing an overwork cap raises fertility | measured - Korea 2069 h/yr; weekly hours the top pregnancy-intention factor; 35-45h higher odds | SUPPORTED |
+| E15-H92 | career-neutral parenthood (gender-aware) pulls births earlier | measured - naive gender-NEUTRAL clock-stop BACKFIRES, helps men, widens gap (Stearns) | PARTIAL |
+| E15-H93 | resequencing the life script (family-during-training) lowers childlessness | predicted - financial-security worry raises delay odds 128% | SUPPORTED |
+| E15-H94 | breaking the assortative-postponement trap raises coupling | predicted - make early family career-neutral for both partners | SUPPORTED |
+| E15-H95 | de-fusing the school-district real-estate arms race raises fertility | measured - lower the fused education+housing cost gate | PARTIAL |
+| E15-H96 | school-mandated communication/conflict-resolution workshops raise union stability | extrapolated - from PREP (high-risk 8% vs 15%, no average effect) | PARTIAL |
+| E15-H97 | mandatory/subsidized psychotherapy raises relationship formation | extrapolated - treat anxiety/attachment/loneliness barriers; no direct fertility RCT | PARTIAL |
+| E15-H98 | universal social-skills / approach-anxiety training raises formation | predicted - re-enter the dating market; tier-3 | SUPPORTED |
+| E15-H99 | raising the status of early parenthood (peer-led) raises coupling | predicted - shift the career-first identity; contagion not top-down propaganda | SUPPORTED |
+| E15-H100 | employer family-time mandate raises fertility | measured - 4-day default, on-site childcare, right-to-disconnect -> time for family | SUPPORTED |
 
 ### Lessons
 
+- **The obvious levers fail alone - the Poland lesson** - free Maluch+ nurseries plus a 93-billion-euro 500+/800+ cash program left Poland's TFR at ~1.1; cash and childcare do not touch the binding constraint, the career-first life-script enforced by a winner-take-all arms race (Doepke-Zilibotti); the deepest lever is to compress the stakes, not subsidize the race
+- **No lever acts alone** - the coupled Seldon ODE amplifies a keystone (childlessness-reducing) push near the ridge and damps it deep in the basin (the mechanistic reason reversal is position-dependent), and several levers carry documented side effects: cash reduces female labour supply (Poland IBS), restricting divorce raises women's suicide and DV (Stevenson-Wolfers), a gender-neutral career-clock stop widens the gender gap (Stearns), and restricting contraception tripled maternal mortality (Romania)
+
+- **The coupling keystone can be attacked directly, by law and by psychology** - recognizing cohabitation (France's PACS) and de-escalating the gender war (Korea's 4B) are measured, effective coupling levers; but two popular fixes backfire - restricting divorce reverses within a decade and harms women, and state matchmaking makes marriages without moving a birth rate
 - **The missing births are missing mothers** - for Germany/Italy/Japan the deficit is extensive (nearly three in ten women never have a child); Korea alone is a quantum-collapse special case - so the coupling keystone is where the leverage lives
 - **Durability, not size, separates the keystone from cash** - a structural lever and an equal-ΔTFR cash lever start the same, but cash erodes and stalls before the separatrix while the structural lever crosses it
 - **Reversal is position + timing** - the same maximal effort reverses societies near the ridge and only bends Korea/Japan; where you sit on the manifold decides the outcome

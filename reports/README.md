@@ -55,6 +55,9 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb10_act4_manifold.png` - the Seldon manifold: keystone levers cross the separatrix, cash stalls
 - `nb10_act5_keystone.png` - coupling & security levers with evidence-tier uncertainty bands
 - `nb10_widermenu.png` - fourteen more levers colored by honest verdict (SUPPORTED / PARTIAL / REFUTED)
+- `nb10_coupling_depth.png` - ten coupling-specific legislative + psychological levers (measured vs predicted, colored by verdict)
+- `nb10_deep_drivers.png` - thirteen specific interventions on the career-first / arms-race / overwork life-script (measured / extrapolated / predicted, colored by verdict)
+- `nb10_interactions.png` - the coupled-system interaction: the same keystone push flips the fate near the ridge, does nothing deep in the basin
 - `nb10_act6_controversial_targeted.png` - contraception decision-architecture spectrum; age-targeted vs uniform cash
 - `nb10_act7_verdict.png` - baseline vs the best well-aimed effort per region (who reverses, who bends)
 
