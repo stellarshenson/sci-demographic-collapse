@@ -1,0 +1,22 @@
+{
+  "E10-H32": {
+    "verdict": "PARTIAL",
+    "evidence": "2007\u21922013 TFR fall +0.26 is 4% quantum (real, no rebound); 2,803k births forgone vs pre-2008 fertility"
+  },
+  "E10-H33": {
+    "verdict": "SUPPORTED",
+    "evidence": "COVID reproduced as a mortality shock: e0 \u22122.5 yr, model excess deaths 985k (real \u22481,000k); TFR dip \u22120.068 rebounds +0.049 (recoverable tempo, not quantum)"
+  },
+  "E10-H34": {
+    "verdict": "SUPPORTED",
+    "evidence": "Korea 1997 is a permanent quantum step (quantum drop +0.45, no recovery through 2005); 3,151k births forgone"
+  },
+  "E10-H35": {
+    "verdict": "SUPPORTED",
+    "evidence": "reunification aggregate TFR dip +0.18 (1989\u21921994) reproduced; 718k births forgone (national aggregate; East/West split flagged)"
+  },
+  "E10-H36": {
+    "verdict": "SUPPORTED",
+    "evidence": "cost table exported; the mortality shock (COVID, excess deaths) is cleanly separated from the fertility shocks (recession/IMF/reunification, forgone births); Korea 1997 and the 2008 recession are the costliest fertility events"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "E8-H26": {
+    "verdict": "SUPPORTED",
+    "evidence": "adjTFR > TFR in the postponement era for all 5 regions; tempo gaps USA +0.25, Korea +0.30"
+  },
+  "E8-H27": {
+    "verdict": "SUPPORTED",
+    "evidence": "USA quantum 2.18 (above replacement - shortfall is largely tempo) \u226b Korea quantum 1.55 (structural collapse); recent-era USA 1.78, Korea 0.98"
+  },
+  "E8-H28": {
+    "verdict": "SUPPORTED",
+    "evidence": "skew-normal reconstructs USA ASFR with MAE 2.9/1000 (2.8% of peak) and exact reconstructed TFR - a 2-parameter (quantum, location) driver for E9"
+  },
+  "E9-H29": {
+    "verdict": "SUPPORTED",
+    "evidence": "SVI converges (F=\u2212ELBO plateaus); posterior-mean TFR beats the frozen-rate baseline and the 95% band covers \u226590% of observed for all panel regions (USA MAPE 4.8% vs baseline 9.1%, cover 100%)"
+  },
+  "E9-H30": {
+    "verdict": "PARTIAL",
+    "evidence": "held-out POPULATION MAPE \u22643% for all backtest regions (USA 1.16%, Korea 2.58%, Italy 0.26%) - population is trustworthy out-of-sample; TFR point-forecast coverage is regime-dependent (Korea 88% monotone-forecastable, USA 12%/Italy 88% post-2015 regime shifts unforecastable) - an honest limit: momentum makes population predictable, period TFR is not"
+  },
+  "E9-H31": {
+    "verdict": "SUPPORTED",
+    "evidence": "posterior parameter table (means \u00b1 CI, F at optimum) and prediction-vs-observed residual table exported to reports/nb4_parameter_table.csv and reports/nb4_predictions.csv"
+  }
+}

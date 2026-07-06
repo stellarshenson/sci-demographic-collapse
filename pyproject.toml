@@ -28,6 +28,8 @@ dependencies = [
     "rich",
     "scikit-learn",
     "torch",
+    "pyro-ppl",
+    "arviz",
 ]
 
 [project.optional-dependencies]

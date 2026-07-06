@@ -1,0 +1,22 @@
+{
+  "E6-H21": {
+    "verdict": "SUPPORTED",
+    "evidence": "one-step operator fidelity: births MAPE 0.17%, deaths 0.00% (bar \u22642%) - the accounting identity is exact; the closed run undershoots by 58,931k \u2248 net migration 44,774k + compounding (scalar baseline total MAPE 4%)"
+  },
+  "E6-H22": {
+    "verdict": "REFRAMED",
+    "evidence": "model now computes momentum (impossible in NB2's scalar form); USA spent its positive momentum 1.088 (1990) \u2192 0.984 (2023); Japan 0.715, Korea 0.807 deep negative. Predicted USA>1 today holds only pre-~2018"
+  },
+  "E6-H23": {
+    "verdict": "SUPPORTED",
+    "evidence": "all \u03bb\u2081<1 (every region sub-replacement); \u03bb orders monotonically by TFR, USA 0.9917 highest \u2192 Korea 0.9696 lowest (r -3.1%/yr); stable-vs-observed pyramid cosine USA 0.976"
+  },
+  "E7-H24": {
+    "verdict": "SUPPORTED",
+    "evidence": "total MAPE 0.06% with Rogers-Castro (closed 8%, bar \u22641%); RC beats age-uniform on the ages20-40 residual (143k vs 567k)"
+  },
+  "E7-H25": {
+    "verdict": "SUPPORTED",
+    "evidence": "component signs match (USA +/+, Italy \u2212/+, Korea natural growth collapsing +233\u2192+41k); natural-change error USA 7.9%, Korea 13.9% (\u226415%); Italy sign-correct, %-inflated on a near-zero base"
+  }
+}

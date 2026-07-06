@@ -1,0 +1,14 @@
+{
+  "E11-H37": {
+    "verdict": "SUPPORTED",
+    "evidence": "baseline to 2100: Korea 19M (-63%), Japan -52%, Italy -39%; USA +6% (migration-buffered) - WPP-plausible"
+  },
+  "E11-H38": {
+    "verdict": "SUPPORTED",
+    "evidence": "INT-1+INT-2 (+0.30 TFR) raises 2100 population (USA +73.2M, Korea +4.6M) but the 2050 gap is far smaller (+13.3M / +1.5M) - momentum locks the near term"
+  },
+  "E11-H39": {
+    "verdict": "SUPPORTED",
+    "evidence": "USA +0.3 grows to 435M (tempo recoverable); Korea +0.3 still halves to 23.9M, only a structural lift to replacement stabilizes (47M); a 2025 start beats 2045 by 15.8M"
+  }
+}

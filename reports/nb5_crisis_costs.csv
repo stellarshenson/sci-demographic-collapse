@@ -1,0 +1,5 @@
+crisis,kind,cost_k,metric,tfr_drop,quantum_pct
+Korea 1997 IMF,fertility,3150.5566206589892,forgone births,0.48419999999999996,91.9615352331334
+USA 2008 recession,fertility,2802.565297156272,forgone births,0.25660000000000016,4.014145789090469
+Germany reunification,fertility,718.2893418622614,forgone births,0.17880000000000007,89.80196413824419
+USA COVID-19,mortality,984.74060043192,excess deaths,0.06830000000000003,NaN
