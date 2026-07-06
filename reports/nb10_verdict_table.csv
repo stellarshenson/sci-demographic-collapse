@@ -1,0 +1,7 @@
+region,baseline_pct,best_pct,qlift,reversed
+USA,5.4,96.0,0.59,true
+France,-6.3,61.3,0.59,true
+Germany,12.3,132.9,0.59,true
+Italy,-39.2,16.0,0.59,true
+Japan,-51.6,-14.8,0.59,false
+Korea,-62.7,-26.9,0.59,false

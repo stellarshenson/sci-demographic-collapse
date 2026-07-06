@@ -1,0 +1,110 @@
+{
+  "E15-H51": {
+    "verdict": "SUPPORTED",
+    "evidence": "cash cannot reverse collapse: Korea cash-only reaches -57% (USD 270B natural experiment: TFR fell every year 1.13->0.72)"
+  },
+  "E15-H52": {
+    "verdict": "SUPPORTED",
+    "evidence": "extensive margin (childlessness) dominates the deficit for USA, Germany, Italy, Japan; Korea a quantum-collapse special case (+0.76 parity gap)"
+  },
+  "E15-H53": {
+    "verdict": "SUPPORTED",
+    "evidence": "the keystone is policy-orphaned: catalogue state levers act on the quantum; coupling is reached only by culture + the added extensive levers"
+  },
+  "E15-H54": {
+    "verdict": "SUPPORTED",
+    "evidence": "a durable keystone bundle beats an equal-dTFR eroding cash bundle by 9-22pp across regions"
+  },
+  "E15-H55": {
+    "verdict": "SUPPORTED",
+    "evidence": "gender equity (durable, dual-margin) beats equal cash by up to +14pp; Myrskyla master lever"
+  },
+  "E15-H56": {
+    "verdict": "SUPPORTED",
+    "evidence": "even a maximal keystone+migration bundle does not return ultra-low Korea (-27%) or Japan (-15%) to growth by 2100"
+  },
+  "E15-H57": {
+    "verdict": "SUPPORTED",
+    "evidence": "literature strength ordering holds on the model: childcare/gender-equity > housing/security > leave/work-family > cash > bonus > IVF"
+  },
+  "E15-H58": {
+    "verdict": "SUPPORTED",
+    "evidence": "earlier union formation lowers childlessness and raises the extensive margin; honest caveat: pure-young timing slightly speeds sub-replacement turnover"
+  },
+  "E15-H59": {
+    "verdict": "SUPPORTED",
+    "evidence": "longer/stable unions raise completed fertility via time-in-union (+10pp USA); instability partly self-offsets through repartnering"
+  },
+  "E15-H60": {
+    "verdict": "SUPPORTED",
+    "evidence": "contraception decision-architecture is powerful by magnitude (friction +2.5..15pp; Romania total ban +37..82pp) but coercive, non-durable, raises unwanted births - measured, not endorsed"
+  },
+  "E15-H61": {
+    "verdict": "SUPPORTED",
+    "evidence": "a state partner-market camp is the only lever directly manufacturing coupling density (Korea +5pp), but tier-3 - widest uncertainty, no precedent"
+  },
+  "E15-H62": {
+    "verdict": "SUPPORTED",
+    "evidence": "early-parenthood security + job guarantee (caps the child penalty, not price) beats equal-cost cash by up to +8pp; Nordic ceiling ~1.5-1.7 bounds it"
+  },
+  "E15-H63": {
+    "verdict": "SUPPORTED",
+    "evidence": "age-targeted cash beats uniform (up to +2.3pp per budget): the response concentrates at 25-29 (Kim 2023; Finnish BI)"
+  },
+  "E15-H64": {
+    "verdict": "SUPPORTED",
+    "evidence": "reverses time-displacement (Twenge 2019); Australia under-16; tier-3 fertility magnitude extrapolated"
+  },
+  "E15-H65": {
+    "verdict": "SUPPORTED",
+    "evidence": "reverses optionality/commitment-phobia (Rosenfeld); loot-box/gambling-mechanic regulation parallel"
+  },
+  "E15-H66": {
+    "verdict": "SUPPORTED",
+    "evidence": "apps disintermediated matchmakers without raising pairing rate (Rosenfeld); app regulation alone insufficient"
+  },
+  "E15-H67": {
+    "verdict": "SUPPORTED",
+    "evidence": "joint-custody default + parental-alienation reform -> lower custody-loss risk, better co-parenting; no direct fertility study (tier-3)"
+  },
+  "E15-H68": {
+    "verdict": "REFUTED",
+    "evidence": "raises fathers' leave + equality norms but no major fertility effect (Norway null; Sweden temporary low-income 3rd birth)"
+  },
+  "E15-H69": {
+    "verdict": "REFUTED",
+    "evidence": "BACKFIRES: East Asia's persistent traditional norms drive fertility lowest; Korea's crisis is gendered (Myrskyla J-curve)"
+  },
+  "E15-H70": {
+    "verdict": "PARTIAL",
+    "evidence": "national fertility campaigns 'unlikely to make people have more children'; drowned out where paired with anti-women's-rights"
+  },
+  "E15-H71": {
+    "verdict": "SUPPORTED",
+    "evidence": "Korea 1915 h/yr; weekly hours the most significant factor in pregnancy intentions; Japan 4-day-week experiment"
+  },
+  "E15-H72": {
+    "verdict": "SUPPORTED",
+    "evidence": "student debt delays marriage + homeownership; 67% of Gen-Z borrowers delayed a major life event"
+  },
+  "E15-H73": {
+    "verdict": "SUPPORTED",
+    "evidence": "3BR+ units raise births 2.3x more than small units; housing drove ~half the US fertility drop"
+  },
+  "E15-H74": {
+    "verdict": "PARTIAL",
+    "evidence": "6.2% of GDP; TFR 1.23->1.61 but 'largely a slowdown in postponement' (tempo), not cohort quantum"
+  },
+  "E15-H75": {
+    "verdict": "SUPPORTED",
+    "evidence": "cuts postponement-driven involuntary childlessness (6% at 30 -> 35% at 40); knowledge gaps cause avoidable delay"
+  },
+  "E15-H76": {
+    "verdict": "PARTIAL",
+    "evidence": "Western sperm count -50%+ 1973-2015 (Levine 2022) but region-specific and debated; effect uncertain"
+  },
+  "E15-H77": {
+    "verdict": "PARTIAL",
+    "evidence": "urban density lowers fertility; modest and hard to engineer; congestion diseconomies"
+  }
+}

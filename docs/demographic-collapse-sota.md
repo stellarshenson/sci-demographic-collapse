@@ -126,6 +126,21 @@ bends ultra-low Korea from a 63% collapse to a 10% decline by 2100 (E14-H48), be
 already hollowed out. No single policy is a cure (E14-H46); only an early, broad bundle moves the trajectory,
 and where a region sits on the manifold decides whether it reverses the trend or merely softens it.
 
+The final round (E15) grounds every intervention's strength in the (quasi-)experimental literature and repairs
+two gaps in the E14 catalogue. First, it splits fertility into its extensive (childlessness) and intensive
+(parity) margins and shows that for Germany, Italy and Japan the deficit is extensive - nearly three in ten
+women never have a child - so the missing births are missing mothers, the coupling keystone, not missing third
+children (Korea alone is a quantum-collapse special case). Second, it re-grades the strengths against the
+evidence and the record: childcare and gender equity are the strongest durable levers, while cash is weak and
+temporary - Korea's USD 270B over two decades is the proof - and the difference between a keystone bundle and
+an equal-sized cash bundle is durability, not magnitude. Twenty-seven hypotheses, each riding on an
+already-proven finding and bounded to a real-world ceiling, return an honest mix of 21 SUPPORTED, 4 PARTIAL and
+2 REFUTED: rolling back gender equality backfires and a paternity father-quota moves norms but not births,
+while cutting extreme working hours and building family-size housing emerge as underused levers beside the
+keystone. The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
+coercive, non-durable and blind to the keystone. A society escapes the Seldon manifold by attacking the
+coupling keystone early, broadly and durably while it still sits near the ridge (E15).
+
 ## Numbers - parameters and predictions
 
 - **Parameter + calibration table** - `reports/nb7_parameter_table.csv` (recalibrated per-region level,
@@ -179,11 +194,15 @@ and where a region sits on the manifold decides whether it reverses the trend or
   `06-kj-demographic-interventions` (forward projections, E11), `07-kj-demographic-recalibration`
   (Wasserstein recalibration closing the prediction gap, E12), `08-kj-demographic-contrarian` (25-hypothesis
   contrarian audit, E13), `09-kj-demographic-reversal` (reversal-intervention catalogue + Seldon manifold /
-  drivers / interventions images, E14); all execute end-to-end on the pinned GPU
+  drivers / interventions images, E14), `10-kj-demographic-intervention-story` (the coupling keystone +
+  literature-grounded intervention strengths on one extensible interface, 27 hypotheses, E15); all execute
+  end-to-end on the pinned GPU
 - **Core module** - `src/sci_demographic_collapse/coremodel.py` (Leslie map, momentum, eigenstructure,
-  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-9
+  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-10
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID behavioural
   panel; provenance in `data/raw/README.md`, `data/raw/unwpp/README.md`, and the per-source manifests
-- **Figures** - twenty-seven executed figures in `reports/figures/` (including the recalibration loss
-  landscape, gap closure, tournament, coverage, crisis-fidelity, contrarian-scorecard, and the Seldon-manifold
-  / drivers / interventions panels); tables in `reports/*.csv`
+- **Figures** - thirty-five executed figures in `reports/figures/` (including the recalibration loss
+  landscape, gap closure, tournament, coverage, crisis-fidelity, contrarian-scorecard, the Seldon-manifold /
+  drivers / interventions panels, and the E15 intervention-story set: margin decomposition, strength × margin
+  map, keystone levers, the wider-menu verdict grid, the contraception spectrum, and the reversal verdict);
+  tables in `reports/*.csv`

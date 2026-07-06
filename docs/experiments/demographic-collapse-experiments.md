@@ -6,7 +6,7 @@ Experiments log for calibrating the nine-state demographic-collapse model (from 
 
 - **Branch / artefacts** - Notebook 1 (structural, uncalibrated) `notebooks/01-kj-demographic-collapse.ipynb`; E1-E5 execution `notebooks/02-kj-demographic-calibration.ipynb`; design (on convergence) `docs/demographic-collapse-sota.md`
 - **Data** - `data/raw/` open-source ingests (World Bank, Eurostat, OWID) + per-source `MANIFEST.json` (source, URL, retrieval date, license); `data/external/` cited event-forcing anchors
-- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. **Campaign total: 75 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED. SOTA design distilled in `docs/demographic-collapse-sota.md`
+- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 27 hypotheses H51-H77): **21 SUPPORTED, 4 PARTIAL, 2 REFUTED**. **Campaign total: 102 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 21 SUPPORTED, 4 PARTIAL, 2 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`
 
 ## Problem overview
 
@@ -699,6 +699,60 @@ Myrskylä-Kohler-Billari 2009 (J-curve), Goldscheider 2015 (gender revolution), 
   returns the tempo-recoverable USA to growth, but the same maximal effort only bends ultra-low Korea from a
   63% collapse to a shallow decline by 2100, because its reproductive base is already hollowed out; no single
   policy is a cure, and only an early, broad bundle moves the trajectory at all
+
+## E15 - The coupling keystone and the literature-grounded strength of interventions
+
+E15 repairs two flaws in E14: its intervention strengths were recalled, not researched, and almost every lever
+attacked the fertility quantum while ignoring coupling - the keystone Notebook 1 identified. Every strength is
+now pinned to the (quasi-)experimental literature and bounded to a real-world ceiling (Korea's USD 270B floor,
+the Nordic ~1.5-1.7 ceiling, Romania's Decree 770, the Colorado LARC experiment, post-Dobbs). Fertility is
+split into its extensive (childlessness ρ) and intensive (parity P̄) margins, and all interventions are baked
+into one extensible interface - an age-distributed lift on the region's ASFR schedule, composed into bundles
+that differ by which margin they load and whether they endure. Each hypothesis rides on an already-proven
+finding and extends it into the calibrated model, documenting every effect with a per-effect citation.
+Executed in `notebooks/10-kj-demographic-intervention-story.ipynb` (2026-07-06): **21 SUPPORTED, 4 PARTIAL,
+2 REFUTED**. The E14 catalogue strengths are superseded by the literature-graded E15 table.
+
+### E15 at a glance
+
+| id | claim | evidence | verdict |
+| --- | --- | --- | --- |
+| E15-H51 | cash cannot reverse collapse | Korea cash-only → −57% (USD 270B; TFR fell every year 1.13→0.72) | SUPPORTED |
+| E15-H52 | the extensive margin (childlessness) dominates the ultra-low deficit | closing childlessness adds +0.30-0.36 TFR for Germany/Italy/Japan; Korea a quantum-collapse special case (+0.76 parity gap) | SUPPORTED |
+| E15-H53 | the coupling keystone is policy-orphaned | catalogue state levers act on the quantum; coupling reached only by culture + the added extensive levers | SUPPORTED |
+| E15-H54 | a durable keystone bundle beats an equal-ΔTFR eroding cash bundle | +9 to +22pp across regions - durability, not size, is the differentiator | SUPPORTED |
+| E15-H55 | gender equity is the unique dual-margin lever | beats equal cash by up to +14pp (Myrskylä J-curve master lever) | SUPPORTED |
+| E15-H56 | a maximal bundle cannot reverse the deepest cases by 2100 | Korea −27%, Japan −15% bent but not to growth; USA/France/Germany/Italy reverse | SUPPORTED |
+| E15-H57 | literature strength ordering holds on the model | childcare/gender-equity > housing/security > leave > cash > bonus > IVF | SUPPORTED |
+| E15-H58 | earlier union formation raises the extensive margin | lowers childlessness; caveat: pure-young timing slightly speeds sub-replacement turnover | SUPPORTED |
+| E15-H59 | longer / stable unions raise completed fertility | time-in-union is the key determinant; instability partly self-offsets via repartnering | SUPPORTED |
+| E15-H60 | contraception decision-architecture is powerful but coercive | friction +2.5-15pp, Romania total ban +37-82pp; non-durable, raises unwanted births - measured, not endorsed | SUPPORTED |
+| E15-H61 | a state partner-market camp is the only lever manufacturing coupling density | Korea +~5pp, but tier-3 (no precedent, widest band) | SUPPORTED |
+| E15-H62 | early-parenthood security + job guarantee beats cash | caps the child penalty, not price; +up to 8pp; Nordic ~1.5-1.7 ceiling bounds it | SUPPORTED |
+| E15-H63 | age-targeted cash beats uniform cash | response concentrates at 25-29 (Kim 2023; Finnish BI) | SUPPORTED |
+| E15-H64 | social-media time regulation reverses time-displacement | Twenge 2019; Australia under-16; tier-3 fertility magnitude extrapolated | SUPPORTED |
+| E15-H65 | dating-app design regulation reverses optionality/commitment-phobia | Rosenfeld; loot-box/gambling-mechanic regulation parallel; tier-3 | SUPPORTED |
+| E15-H66 | rebuilding offline intermediaries helps | apps disintermediated matchmakers without raising pairing rate (Rosenfeld); app regulation alone insufficient | SUPPORTED |
+| E15-H67 | shared-custody / fathers' rights raises the extensive margin | lower custody-loss risk, better co-parenting; no direct fertility study (tier-3) | SUPPORTED |
+| E15-H68 | a paternity father-quota raises fertility | REFUTED - raises fathers' leave + equality norms but no major fertility effect (Norway null) | REFUTED |
+| E15-H69 | rolling back gender-equality policy raises fertility | REFUTED - it BACKFIRES; East Asia's persistent traditional norms drive fertility lowest (Myrskylä) | REFUTED |
+| E15-H70 | pro-natal propaganda / messaging raises fertility | PARTIAL - "unlikely to make people have more children"; drowned out where it fights women's rights | PARTIAL |
+| E15-H71 | reducing extreme working hours raises fertility | Korea 1915 h/yr; weekly hours the most significant factor in pregnancy intentions; Japan 4-day-week experiment | SUPPORTED |
+| E15-H72 | student-debt / education-cost relief pulls family formation earlier | debt delays marriage + homeownership; 67% of Gen-Z borrowers delayed a life event | SUPPORTED |
+| E15-H73 | family-size housing (3BR+) raises fertility | 3BR+ units raise births 2.3× more than small units; housing drove ~half the US fertility drop | SUPPORTED |
+| E15-H74 | Hungary-style family tax/loan raises completed fertility | PARTIAL - 6.2% of GDP; TFR 1.23→1.61 but "largely a slowdown in postponement" (tempo), not cohort quantum | PARTIAL |
+| E15-H75 | fecundity awareness + egg-freezing cuts involuntary childlessness | involuntary childlessness rises 6% at 30 → 35% at 40; knowledge gaps cause avoidable delay | SUPPORTED |
+| E15-H76 | addressing male reproductive-health decline raises fertility | PARTIAL - Western sperm count −50%+ 1973-2015 (Levine 2022) but region-specific and debated | PARTIAL |
+| E15-H77 | de-urbanization / smaller cities raises fertility | PARTIAL - urban density lowers fertility but modest and hard to engineer (congestion diseconomies) | PARTIAL |
+
+### Lessons
+
+- **The missing births are missing mothers** - for Germany/Italy/Japan the deficit is extensive (nearly three in ten women never have a child); Korea alone is a quantum-collapse special case - so the coupling keystone is where the leverage lives
+- **Durability, not size, separates the keystone from cash** - a structural lever and an equal-ΔTFR cash lever start the same, but cash erodes and stalls before the separatrix while the structural lever crosses it
+- **Reversal is position + timing** - the same maximal effort reverses societies near the ridge and only bends Korea/Japan; where you sit on the manifold decides the outcome
+- **Two levers earn a negative verdict** - a paternity father-quota moves equality norms but not births, and rolling back gender equality backfires (the model, like East Asia, says traditional-norm restoration drives fertility lower)
+- **The attention economy is real but tier-3** - social-media / dating-app regulation can help rebuild the partner market, but app regulation alone is necessary, not sufficient; offline intermediaries must be rebuilt
+- **The sleeper levers** - cutting extreme working hours and building family-size housing rank beside the keystone and are underused in the pro-natal debate
 
 ## Interventions parking lot (recorded, NOT planned)
 

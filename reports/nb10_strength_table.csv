@@ -1,0 +1,15 @@
+id,intervention,dTFR,margin,durable,tier,citation
+IV1,Universal childcare,0.25,intensive,true,1,"Bergsvik 2021 (childcare largest, sustained); Bauernschuster 2016"
+IV9,Gender-equity (domestic),0.2,both,true,1,Myrskyla 2009 J-curve; Goldscheider 2015; Doepke 2023
+IV5,Family housing support,0.15,both,true,2,Dettling-Kearney 2014; IFS housing agenda
+IV14,Youth-precarity / job guar.,0.15,both,true,2,Comolli 2017; Kreyenfeld; child-penalty (Kleven 2019)
+IV4,Paid parental leave (long),0.1,intensive,true,2,Bergsvik 2021 (longer leave raises fertility); Lalive-Zweimuller
+IV7,Work-family flexibility,0.1,intensive,true,2,OECD Family DB; Del Boca
+IV2,Child allowance (cash),0.1,intensive,false,1,Bergsvik 2021 (cash temporary); Korea USD 270B; Gauthier 2025
+IV12,Reduce child-cost norm,0.12,intensive,true,3,Doepke-Zilibotti intensive parenting
+IV6,Baby bonus (one-off),0.06,tempo,false,2,Milligan 2005; Australia 2004 (fades); Kim 2023
+IV3,IVF / ART subsidy,0.05,tempo,false,2,Hoorens; Denmark ART share
+IV10,Earlier union formation,0.15,extensive,true,2,Demographic Research 52/7; earlier marriage cut childlessness
+IV11,Longer / stable unions,0.15,extensive,true,2,Eur.J.Pop 2023 time-in-union; Toulemon microsimulation
+IV13,State partner-market (camp),0.2,extensive,true,3,partner scarcity #1 childlessness driver (40.7%); extrapolated
+IV8,Replacement migration,0.0,migration,true,1,UN WPP; NB8-C24

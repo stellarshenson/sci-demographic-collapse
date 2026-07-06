@@ -1,6 +1,6 @@
 # Reports - Figures & Tables
 
-Executed figures and tables from the SOTA campaign (Notebooks 3-8). Each figure is generated in place by its
+Executed figures and tables from the SOTA campaign (Notebooks 3-10). Each figure is generated in place by its
 notebook and exported here; the tables are machine-readable CSVs. Full narrative in
 [`docs/demographic-collapse-sota.md`](../docs/demographic-collapse-sota.md); evidence trail in
 [`docs/experiments/demographic-collapse-experiments.md`](../docs/experiments/demographic-collapse-experiments.md).
@@ -48,6 +48,16 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb9_e14_drivers.png` - drivers of the 2100 decline (quantum deficit dominant) and the stylized keystone (childlessness ρ)
 - `nb9_e14_interventions.png` - single-intervention effects and the road to reversal (USA reverses, Korea bends)
 
+**Intervention story - the coupling keystone (Notebook 10, E15)**
+- `nb10_act1_stakes.png` - baseline population to 2100 indexed to 100 (the stakes)
+- `nb10_act2_decomposition.png` - extensive (childlessness) vs intensive (parity) deficit per region
+- `nb10_act3_strength.png` - literature strength × margin map, and single-lever effect on the model
+- `nb10_act4_manifold.png` - the Seldon manifold: keystone levers cross the separatrix, cash stalls
+- `nb10_act5_keystone.png` - coupling & security levers with evidence-tier uncertainty bands
+- `nb10_widermenu.png` - fourteen more levers colored by honest verdict (SUPPORTED / PARTIAL / REFUTED)
+- `nb10_act6_controversial_targeted.png` - contraception decision-architecture spectrum; age-targeted vs uniform cash
+- `nb10_act7_verdict.png` - baseline vs the best well-aimed effort per region (who reverses, who bends)
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
@@ -58,6 +68,10 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb6_projection_table.csv` - 2100 population, baseline and change from 2023
 - `nb9_intervention_catalogue.csv` - the 14 reversal interventions (type, lever, ΔTFR, literature grounding)
 - `nb9_reversal_table.csv` - each intervention's 2100 population effect per region
+- `nb10_strength_table.csv` - E15 literature-graded strength catalogue (ΔTFR, margin, durability, evidence tier, per-effect citation)
+- `nb10_decomposition.csv` - extensive vs intensive deficit per region (childlessness gap vs parity gap)
+- `nb10_verdict_table.csv` - E15 baseline vs max keystone+migration 2100 outcome per region (reversal flag)
+- `nb10_e15_verdicts.json` - all 27 E15 verdicts (H51-H77) with evidence
 
 ## Verdict records
 
