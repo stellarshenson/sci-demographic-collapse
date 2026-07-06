@@ -165,6 +165,20 @@ coercion, Hungary's 5-6% of GDP buys mostly tempo, and housing's real lever is s
 price subsidy to owners. Stacked against their side effects, the coercive levers are dominated; the efficient
 frontier is structural and un-buyable (E16).
 
+The last round (E17) sweeps each lever along its design axis rather than testing a single point, and the
+finding is geometry over magnitude: how a lever is delivered decides its fate more than how large it is.
+Eighteen hypotheses (H126-H143, 12 SUPPORTED, 3 PARTIAL, 3 REFUTED) resolve the delivery axes - universal
+beats a means-test cliff, in-kind beats eroding cash, credible permanence beats a policy believed temporary,
+national beats a local bonus that only relocates births, and state funding beats an employer mandate that
+triggers hiring discrimination against young women. The sharpest mechanism is the outside option as the valve:
+rewarding union duration works only as de-risking the stressors that dissolve unions, never as lock-in, because
+the credible right to exit is what de-escalates coercion (no-fault divorce cut female suicide up to ~20% and
+domestic violence ~30%) - raise the cost of leaving and you remove the incentive it was meant to strengthen. A
+quarter of the coupling premium is affordability, so pairing is an economic lever; and the controversial
+extremes (a conditioned surrogate-carrier class, a porn ban, an adultery penalty) either sign-flip or drown in
+side-cost. The optima are diverse - interior sweet-spots, hard corners and sign-flips coexist - so there is no
+lever a designer simply turns to maximum (E17).
+
 ## Numbers - parameters and predictions
 
 - **Parameter + calibration table** - `reports/nb7_parameter_table.csv` (recalibrated per-region level,
@@ -221,9 +235,11 @@ frontier is structural and un-buyable (E16).
   drivers / interventions images, E14), `10-kj-demographic-intervention-story` (the coupling keystone +
   literature-grounded intervention strengths on one extensible interface, 50 hypotheses, E15),
   `11-kj-incentives-arms-races-defection` (named-incentive mechanisms with a defection parameter and
-  side-effect cost, 25 hypotheses, E16); all execute end-to-end on the pinned GPU
+  side-effect cost, 25 hypotheses, E16), `12-kj-swept-design-spans` (swept design axes - each hypothesis a
+  response curve locating its optimum type; coupling economics, the outside-option valve, policy geometry,
+  surrogacy, 18 hypotheses, E17); all execute end-to-end on the pinned GPU
 - **Core module** - `src/sci_demographic_collapse/coremodel.py` (Leslie map, momentum, eigenstructure,
-  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-11
+  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-12
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID behavioural
   panel; provenance in `data/raw/README.md`, `data/raw/unwpp/README.md`, and the per-source manifests
 - **Figures** - forty-four executed figures in `reports/figures/` (including the recalibration loss
@@ -232,5 +248,6 @@ frontier is structural and un-buyable (E16).
   map, keystone levers, the wider-menu verdict grid, the coupling-in-depth grid, the deeper-drivers grid, the
   coupled-system interaction panel, the contraception spectrum, and the reversal verdict; and the E16
   defection set: the arms-race defusal panel, the wealth-compression stack, the Western natural experiments,
-  the defection screen, the side-effect frontier, and the manifold bundle crossing); tables in
-  `reports/*.csv`
+  the defection screen, the side-effect frontier, and the manifold bundle crossing; and the E17 swept-span
+  set: coupling economics, duration-and-fidelity, policy geometry, surrogacy, the optimum-type taxonomy, and
+  the robust-vs-fragile bundle); tables in `reports/*.csv`

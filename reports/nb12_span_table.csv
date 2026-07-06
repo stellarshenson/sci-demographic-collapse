@@ -1,0 +1,19 @@
+id,span,name,incentive,optimum_type,theta_star,net,side_cost,delta,verdict
+E17-H126,I,coupling economies-of-scale (financial channel),two live on ~1.5x one income -> a marginal child becomes affordable,share,0.25,0.0375,0.05,0.05,SUPPORTED
+E17-H127,I,single-parent precarity,solo-parent poverty ~5.8x couples suppresses 2nd/3rd births,descriptive,5.796,0.0,0.4,0.0,SUPPORTED
+E17-H128,I,solo-parent support (benefit-cliff),de-risking solo parenthood raises fertility but a cliff perversely delays cohabitation,interior,0.5,0.076,0.2,0.1,PARTIAL
+E17-H129,J,reward union duration (de-risk vs lock-in),"de-risk dissolution via economic security/childcare, NOT bonuses/status/lock-in",interior,0.28,0.0387,0.1,0.05,SUPPORTED
+E17-H130,J,duration bonuses / anniversary holiday / longevity medals,symbolic reward for staying married,null,0.0,0.0,0.0,0.0,REFUTED
+E17-H131,K,lock-in / covenant marriage / adultery penalty,raising exit cost removes the outside-option bargaining that de-escalates coercion,sign-flip,1.0,-0.1224,0.344,0.7,REFUTED
+E17-H132,K,school finance + communication education,"reduce the stressors that dissolve unions (money arguments, communication)",interior,0.1,0.09,0.05,0.1,SUPPORTED
+E17-H133,K,"infidelity norm / stigma (soft, non-legal)",raise the social cost of infidelity without a legal penalty,interior,0.42,0.0038,0.25,0.35,PARTIAL
+E17-H134,K,pornography ban as a fertility lever,restrict porn to raise fertility/fidelity,null,0.65,-0.0268,0.3,0.7,REFUTED
+E17-H135,K,Amish / enclosed-community fertility,media-abstention high-fidelity community as a template,descriptive,0.0,0.0,0.5,0.5,SUPPORTED
+E17-H136,M,universal vs means-tested,a means-test cliff is a perverse 'stay-below-threshold' incentive,corner,0.0,0.15,0.1,0.35,SUPPORTED
+E17-H137,O,benefit form (cash/in-kind/time),"form matters more than size: in-kind persists, cash erodes",interior,0.5,0.25,0.1,0.1,SUPPORTED
+E17-H138,Q,credible permanence,fertility is a 25-yr bet; a temporary policy is discounted to tempo,corner,1.0,0.1957,0.15,0.05,SUPPORTED
+E17-H139,R,geographic scale,"local baby-bonuses relocate births (beggar-thy-neighbor), not raise the level",corner,0.0,0.12,0.1,0.7,SUPPORTED
+E17-H140,T,who pays (state vs employer mandate),an employer maternity mandate triggers statistical hiring discrimination,sign-flip,0.0,0.15,0.9,0.0,SUPPORTED
+E17-H141,S,surrogate-carrier market (conditioned class),pay a class of women to gestate others' children - decouples childbearing from the career clock,interior,0.07,0.012,1.05,0.3,PARTIAL
+E17-H142,synthesis,optimum-type taxonomy,different levers have different optimum geometries,meta,0.0,0.0,0.0,0.0,SUPPORTED
+E17-H143,synthesis,robust vs fragile bundle (Seldon manifold),a valve-paired defection-robust bundle crosses where the coercive bundle stalls,meta,0.0,0.4709,0.0,0.0,SUPPORTED

@@ -69,6 +69,14 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb11_side_effect_frontier.png` - the effect vs side-effect frontier (efficient vs dominated levers) and the manifold bundle crossing
 - `nb11_manifold_bundles.png` - the same bundle amplifies near the ridge and stalls deep in the basin (robust crosses the separatrix, fragile does not)
 
+**Swept design spans (Notebook 12, E17)**
+- `nb12_coupling_economics.png` - coupling as a financial channel: the premium decomposition (~25% money), single-parent precarity by parity, and the solo-support sweep with its cohabitation cliff (interior optimum)
+- `nb12_duration_fidelity.png` - the union-duration reward sweep (de-risk vs lock-in, interior-low) and the fidelity axis where the net sign-flips as coerciveness rises while S-W welfare harm explodes (the exit is the valve)
+- `nb12_policy_geometry.png` - five delivery axes: universality (corner), benefit-form (interior=in-kind), permanence (corner), scale (corner=national), who-pays (sign-flip, employer-mandate goes negative)
+- `nb12_surrogacy.png` - the surrogate-carrier market: a tiny demand gain post-displacement against the steep psychological/commodification and stratified-reproduction cost (the class is dominated)
+- `nb12_optimum_taxonomy.png` - the optima classified (interior / corner / sign-flip) - no universal "turn it to 11"
+- `nb12_manifold_bundles.png` - the robust valve-paired bundle crosses the Seldon separatrix where the coercive/dominated bundle stalls
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
@@ -86,6 +94,8 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb11_defection_table.csv` - E16 lever catalogue with named incentive, gross/δ/backfire/net, side-effect cost, margin, tier, verdict
 - `nb11_frontier_table.csv` - E16 net-after-defection vs side-effect cost per lever (the frontier)
 - `nb11_e16_verdicts.json` - all 25 E16 verdicts (H101-H125) with evidence
+- `nb12_span_table.csv` - E17 swept-span catalogue: named incentive, optimum type + location, net, side-cost, δ, verdict
+- `nb12_e17_verdicts.json` - all 18 E17 verdicts (H126-H143) with evidence
 
 ## Verdict records
 

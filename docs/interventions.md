@@ -217,6 +217,38 @@ turn on - not "how strong" but "can it be defected from".
   lottery bucketing, universal penalty removal, housing supply, the IVF default. On the Seldon manifold the
   defection-robust bundle crosses the separatrix near the ridge where the fragile bundle stalls.
 
+## Geometry over magnitude - how a lever is delivered decides its fate (E17)
+
+E17 swept each lever along its design axis instead of testing one point, and read where the optimum sits. The
+recurring finding is that *delivery*, not spend, governs the outcome - and that the optima are diverse, so
+there is no lever a designer simply turns up to maximum.
+
+- **The five delivery axes** - the same transfer succeeds or fails on how it is shaped. **Universal beats
+  means-tested**: a means-test is a cliff, a perverse "stay-below-threshold" incentive, and non-take-up eats the
+  targeting saving. **In-kind beats cash**: services persist where cash erodes, so form matters more than size.
+  **Credible permanence** earns the full response: fertility is a 25-year bet, so a policy believed temporary is
+  discounted to tempo (this is what "durability" really means). **National beats local**: a municipal baby
+  bonus relocates births rather than raising them - beggar-thy-neighbor. **State-funded beats an employer
+  mandate**: making employers pay for maternity triggers statistical hiring discrimination against young women,
+  widening the very motherhood penalty it meant to relieve, so the net turns negative
+- **The outside option is the valve** - the sharpest mechanism in the batch. Rewarding union *duration* works
+  only as de-risking (economic security, childcare, school finance-and-communication education that cuts the
+  stressors which dissolve unions - a PREP RCT cut divorce to a third), never as lock-in. Raising the cost of
+  leaving - covenant marriage, an adultery penalty, a divorce restriction - backfires: the credible right to
+  exit is what hands the weaker partner bargaining power and de-escalates coercion without ever being used
+  (no-fault divorce cut female suicide up to ~20% and domestic violence ~30%). Remove the exit and you remove
+  the incentive it was meant to strengthen. Anniversary bonuses and longevity medals are symbolic-null; a porn
+  ban is a null fertility lever and high-evasion (the sex-recession is partnership decline, not pornography)
+- **Name the money in coupling** - a quarter of the coupling fertility premium is literally affordability: two
+  live on ~1.5x one income, and single-parent precarity (poverty ~5.8x couples) suppresses higher-order births.
+  De-risking solo parenthood helps but a benefit-cliff past ~50% support perversely delays cohabitation, so the
+  optimum is interior - support that complements the couple, not one that substitutes for it
+- **The controversial extreme is dominated** - a paid surrogate-carrier *class* attacks the career penalty in
+  principle, but the demand gain is a rounding error at population scale, supply-side displacement bounds the
+  net, and the psychological/commodification and stratified-reproduction cost is the steepest in the campaign;
+  India ran the commercial-hub version and banned it. The exportable part of Israel's success is subsidised IVF
+  for a couple's own gestation, not a carrier class
+
 ## The rule that governs all of them
 
 No single lever is a cure, and the "obvious" ones - cash and childcare - demonstrably fail alone, as Poland and
