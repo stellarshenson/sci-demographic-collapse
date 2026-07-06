@@ -6,7 +6,7 @@ Experiments log for calibrating the nine-state demographic-collapse model (from 
 
 - **Branch / artefacts** - Notebook 1 (structural, uncalibrated) `notebooks/01-kj-demographic-collapse.ipynb`; E1-E5 execution `notebooks/02-kj-demographic-calibration.ipynb`; design (on convergence) `docs/demographic-collapse-sota.md`
 - **Data** - `data/raw/` open-source ingests (World Bank, Eurostat, OWID) + per-source `MANIFEST.json` (source, URL, retrieval date, license); `data/external/` cited event-forcing anchors
-- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 50 hypotheses H51-H100 incl. coupling-in-depth legislative+psychological levers, a deeper-drivers chapter on the career-first arms race, and an interactions/side-effects analysis): **37 SUPPORTED, 10 PARTIAL, 3 REFUTED**. **Campaign total: 125 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 37 SUPPORTED, 10 PARTIAL, 3 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`; decision-maker star-ranking with mechanism-of-effect + side-effects in `docs/interventions.md`; research library in `references/papers/` (21 PDFs + 35 digests)
+- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 50 hypotheses H51-H100 incl. coupling-in-depth legislative+psychological levers, a deeper-drivers chapter on the career-first arms race, and an interactions/side-effects analysis): **37 SUPPORTED, 10 PARTIAL, 3 REFUTED**. Round 10 E16 (2026-07-06, `notebooks/11-kj-incentives-arms-races-defection.ipynb`, incentives / arms races / defection - named-incentive mechanisms with a defection parameter δ and side-effect cost, 25 hypotheses H101-H125): **15 SUPPORTED, 6 PARTIAL, 4 REFUTED**. **Campaign total: 150 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 37 SUPPORTED, 10 PARTIAL, 3 REFUTED; E16: 15 SUPPORTED, 6 PARTIAL, 4 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`; decision-maker star-ranking with mechanism-of-effect + side-effects in `docs/interventions.md`; research library in `references/papers/` (27 PDFs + 41 digests)
 
 ## Problem overview
 
@@ -788,6 +788,61 @@ star-ranking with mechanism-of-effect chains is in `docs/interventions.md`.
 - **Two levers earn a negative verdict** - a paternity father-quota moves equality norms but not births, and rolling back gender equality backfires (the model, like East Asia, says traditional-norm restoration drives fertility lower)
 - **The attention economy is real but tier-3** - social-media / dating-app regulation can help rebuild the partner market, but app regulation alone is necessary, not sufficient; offline intermediaries must be rebuilt
 - **The sleeper levers** - cutting extreme working hours and building family-size housing rank beside the keystone and are underused in the pro-natal debate
+
+## E16 - Incentives, arms races and defection
+
+E16 repairs three flaws in E15: mechanisms were stated as outcomes rather than named incentives (Munger: "show
+me the incentive and I'll show you the outcome"); effects were measured gross, as if everyone complies; and the
+West was under-weighted against Korea. It adds two modelling extensions to the same interface - a per-lever
+**defection parameter δ** (net = gross·(1−δ) + backfire(δ), where the backfire term can invert the sign when
+the rich evade) and an explicit **side-effect cost** on a named metric. Each hypothesis is taken apart,
+measured, diagnosed against an analog, and has its **key signal isolated with maths/statistics** (an
+admission-return slope, a coachability elasticity, a Bongaarts-Feeney tempo/quantum split, a defection
+decomposition) before its model interaction is verified. Executed in
+`notebooks/11-kj-incentives-arms-races-defection.ipynb` (2026-07-06): **25 hypotheses (H101-H125), 15
+SUPPORTED, 6 PARTIAL, 4 REFUTED**. The central result is the **defection screen** - re-ranking every lever by
+net-after-defection reshuffles the order: bans, propaganda, wealth caps and exhortation fall net-negative while
+lottery bucketing, universal motherhood-penalty removal, inequality compression and structural defaults rise.
+The closing manifold verdict shows the defection-robust bundle crossing the separatrix near the ridge where the
+fragile bundle stalls.
+
+### E16 at a glance
+
+| id | claim | evidence | verdict |
+| --- | --- | --- | --- |
+| E16-H101 | an outright tutoring ban backfires under defection | Korea 1980 → black market, rich buy covert tutoring, inequality widens; net −0.235 (sign flips) | REFUTED |
+| E16-H102 | a threshold-and-lottery-band makes the prize un-buyable | reward-gradient above the bar collapses 0.98→0.00 (100% deflation); net +0.16, δ≈0.03; Korea +4.6pp, USA +11pp | SUPPORTED |
+| E16-H103 | multi-dimensional un-gameable admission deflates the race | coachability elasticity 0.15→0.05, minus 0.04 holistic-capture leak → net +0.066; cultural-capital capture caveat | PARTIAL |
+| E16-H104 | only a binding positional cap is stable | Hirsch/Frank - education is positional, voluntary restraint dominated; net +0.16 | SUPPORTED |
+| E16-H105 | compressing inequality is the self-enforcing root lever | Doepke-Zilibotti; lowest δ (0.02), largest structural; USA +17pp | SUPPORTED |
+| E16-H106 | an estate/inheritance tax compresses dynastic advantage | De Nardi-Yang bequests-as-luxury; net +0.06 after avoidance; heir-labour/capital-flight cost | PARTIAL |
+| E16-H107 | a progressive wealth cap is dominated | large gross but high avoidance + capital flight → net ≈ 0 | PARTIAL |
+| E16-H108 | taxing childlessness has a large gross but the worst welfare cost | lex Julia / USSR-Bulgaria; net +0.075, side-cost 0.85 (coercion, women's autonomy) | PARTIAL |
+| E16-H109 | removing the DINK tax advantage makes children the default | structural (δ low), politically explosive; net +0.10 | SUPPORTED |
+| E16-H110 | a universal motherhood-penalty removal beats opt-in | Kleven US penalty −31%, norm-driven (married 27% vs single 5%); net +0.19 | SUPPORTED |
+| E16-H111 | Israel's exportable signal is the default norm + universal IVF | only OECD above replacement (2.9); secular ~2.0 without coercion; δ≈0.03 | SUPPORTED |
+| E16-H112 | high-fertility subcultures win by retention/boundary, not policy | Kaufmann - Amish double ~20y, UK Orthodox 17%→75% of Jewish births; descriptive, not a lever | SUPPORTED |
+| E16-H113 | Hungary's cash rise was mostly tempo | N-IUSSP/AEI - 1.23→1.59→1.39 at ~5-6% GDP; ~85% tempo, quantum barely moved; confirms the cash ceiling | REFUTED |
+| E16-H114 | the housing lever is supply, not a price subsidy | Dettling-Kearney - price rises help owners (+5%), hurt renters (−2.4%); subsidy to owners dominated | SUPPORTED |
+| E16-H115 | student-debt relief removes an institutional resource-sink | Mezza/Fed - +$1k → −1.8pp homeownership, ~400k fewer young owners; net +0.09 | SUPPORTED |
+| E16-H116 | peer-led archetype contagion is real but fragile | Balbo-Barban - a friend's birth raises own transition; free-rideable, δ≈0.55; needs critical mass | PARTIAL |
+| E16-H117 | top-down pronatal propaganda backfires | Decree 770 - 1.9→3.7 then collapse, back-alley deaths; net −0.178 - you cannot mandate the birth | REFUTED |
+| E16-H118 | removing the parenthood happiness penalty raises fertility | Glass 2016 - the gap is policy-dependent, vanishes with family support; net +0.09 | SUPPORTED |
+| E16-H119 | decoupling status from overwork attacks the career-first script | the specific Western incentive; slow, norm-dependent, δ≈0.30 | PARTIAL |
+| E16-H120 | marriage-first exhortation is null | Wilcox correlation endogenous; MDRC Supporting Healthy Marriage null on divorce - structure dominates | REFUTED |
+| E16-H121 | use-it-or-lose-it defaults beat opt-in (the design axiom) | Norway father's quota uptake <3%→97%; opt-in collapses to free-riding; net +0.12 vs +0.036 | SUPPORTED |
+| E16-H122 | the defection screen reshuffles the ranking | bans/propaganda/wealth-cap go net-negative; lottery/inequality/penalty/defaults rise - the central result | SUPPORTED |
+| E16-H123 | recycling the defection turns leakage into funding | tax the black market, fund the compliant → ban net −0.235 → +0.017 | SUPPORTED |
+| E16-H124 | the frontier separates efficient from dominated levers | dominated: childlessness tax, wealth cap, propaganda, ban; efficient: inequality, lottery, penalty removal, housing supply, IVF | SUPPORTED |
+| E16-H125 | the defection-robust bundle crosses where the fragile stalls | near the ridge robust dTFR 0.44 → recovery (n→1.0); fragile dTFR 0.03 → stalls (n→0) | SUPPORTED |
+
+### Lessons
+
+- **The mechanism is the message** - "defuse the education arms race" is not one lever but several with opposite signs: a ban backfires (rich buy the covert good, inequality widens) while a lottery-band that makes the prize un-buyable, or a multi-dimensional test rewarding un-coachable traits, deflate the race at its source
+- **Defection is the hidden variable** - gross effect sizes lie; once you model who evades, the ranking reshuffles and the survivors are exactly the levers money cannot defect from (Norway's father-quota, 3%→97%, is the proof)
+- **Inequality is both the strongest and the most defection-robust lever** - compressing the skill premium deflates the arms race for everyone at once, with no per-family enforcement (Doepke-Zilibotti)
+- **The West has its own machinery** - Israel's near-universal default + IVF holds secular fertility near replacement without coercion; Hungary's 5-6% of GDP buys mostly tempo; housing's lever is supply for young renters, not a subsidy to owners
+- **Side effects are not footnotes** - stacked against the net, the coercive levers (childlessness tax, wealth cap, propaganda, ban) are dominated; the efficient frontier is structural and un-buyable
 
 ## Interventions parking lot (recorded, NOT planned)
 

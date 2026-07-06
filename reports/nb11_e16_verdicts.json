@@ -1,0 +1,102 @@
+{
+  "H101": {
+    "verdict": "REFUTED",
+    "evidence": "Korea 1980 ban -> black market, rich buy covert tutoring, inequality widens; struck down 2000 (Bae-Choi 2024)"
+  },
+  "H102": {
+    "verdict": "SUPPORTED",
+    "evidence": "Korea 1974 pyeongjunhwa; Dutch weighted lottery; RAND 2007 - random draw removes the marginal return to out-ranking"
+  },
+  "H103": {
+    "verdict": "PARTIAL",
+    "evidence": "coachability elasticity falls, but holistic criteria open a cultural-capital capture channel (US consultant industry)"
+  },
+  "H104": {
+    "verdict": "SUPPORTED",
+    "evidence": "Hirsch 1976 / Frank - education is positional, voluntary restraint dominated, only a binding cap is stable"
+  },
+  "H105": {
+    "verdict": "SUPPORTED",
+    "evidence": "Doepke-Zilibotti 2019 - inequality drives intensive parenting; the self-enforcing root lever"
+  },
+  "H106": {
+    "verdict": "PARTIAL",
+    "evidence": "De Nardi-Yang 2015 bequests are luxury goods; targets the resource, but legal avoidance + heir-labour/capital-flight cost"
+  },
+  "H107": {
+    "verdict": "PARTIAL",
+    "evidence": "large gross compressor but high avoidance + capital flight -> net near zero, dominated"
+  },
+  "H108": {
+    "verdict": "PARTIAL",
+    "evidence": "lex Julia / USSR-Bulgaria childlessness tax - large gross, worst welfare cost (coercion, women's autonomy)"
+  },
+  "H109": {
+    "verdict": "SUPPORTED",
+    "evidence": "structural (delta low), politically explosive; make childbearing the default by subtraction not addition"
+  },
+  "H110": {
+    "verdict": "SUPPORTED",
+    "evidence": "Kleven 2022 US penalty -31%, married 27% vs single 5% - norm-driven, individual lean-in dominated"
+  },
+  "H111": {
+    "verdict": "SUPPORTED",
+    "evidence": "Taub Center - only OECD above replacement (2.9); secular ~2.0 without coercion; exportable = default norm + IVF"
+  },
+  "H112": {
+    "verdict": "SUPPORTED",
+    "evidence": "Kaufmann 2010 - Amish double ~20y, UK Orthodox 17%->75% of Jewish births; retention/boundary, not policy"
+  },
+  "H113": {
+    "verdict": "REFUTED",
+    "evidence": "N-IUSSP/AEI - 1.23->1.59->1.39 at ~5-6% GDP; ~85% tempo, quantum barely moved; confirms the cash ceiling"
+  },
+  "H114": {
+    "verdict": "SUPPORTED",
+    "evidence": "Dettling-Kearney 2014 - price rises help owners (+5%) hurt renters (-2.4%); the lever is supply, not a subsidy"
+  },
+  "H115": {
+    "verdict": "SUPPORTED",
+    "evidence": "Mezza/Fed - +$1k debt -> -1.8pp homeownership, ~400k fewer young owners; Nau-Dwyer-Hodson delays female fertility"
+  },
+  "H116": {
+    "verdict": "PARTIAL",
+    "evidence": "Balbo-Barban 2014 - real peer contagion, short-lived, free-rideable; needs a critical mass"
+  },
+  "H117": {
+    "verdict": "REFUTED",
+    "evidence": "Decree 770 - 1.9->3.7 then collapse, back-alley deaths; you cannot mandate the birth - the exception to defaults-win"
+  },
+  "H118": {
+    "verdict": "SUPPORTED",
+    "evidence": "Glass 2016 - the happiness gap is policy-dependent, vanishes with family support; fix the penalty, not the value"
+  },
+  "H119": {
+    "verdict": "PARTIAL",
+    "evidence": "the specific Western career-first incentive (ties to E15 overwork H91); slow, norm-dependent"
+  },
+  "H120": {
+    "verdict": "REFUTED",
+    "evidence": "Wilcox correlation endogenous; MDRC Supporting Healthy Marriage null on divorce - structure dominates exhortation"
+  },
+  "H121": {
+    "verdict": "SUPPORTED",
+    "evidence": "Norway father's quota - uptake <3%->97%; opt-in equivalents collapse to free-riding (the design axiom)"
+  },
+  "H122": {
+    "verdict": "SUPPORTED",
+    "evidence": "the defection screen reshuffles the ranking: bans/propaganda/wealth-cap go net-negative, lottery/inequality/penalty rise - what you can enforce bends the curve"
+  },
+  "H123": {
+    "verdict": "SUPPORTED",
+    "evidence": "recycling cuts the ban's backfire 0.40->0.04 - net moves from -0.235 to +0.017; leakage becomes funding"
+  },
+  "H124": {
+    "verdict": "SUPPORTED",
+    "evidence": "the frontier separates an efficient set (inequality, lottery, penalty removal, housing supply, IVF default) from a dominated set (childlessness tax, wealth cap, propaganda, ban)"
+  },
+  "H125": {
+    "verdict": "SUPPORTED",
+    "evidence": "near the ridge the defection-robust bundle crosses the separatrix into recovery; the fragile bundle stalls in the collapse basin"
+  }
+}

@@ -61,6 +61,14 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb10_act6_controversial_targeted.png` - contraception decision-architecture spectrum; age-targeted vs uniform cash
 - `nb10_act7_verdict.png` - baseline vs the best well-aimed effort per region (who reverses, who bends)
 
+**Incentives, arms races & defection (Notebook 11, E16)**
+- `nb11_arms_race_defusal.png` - the admission-return slope (convex rank-skim vs flat lottery-band, 100% deflation) and net-after-defection for the five arms-race levers (a ban backfires, un-buyable levers do not)
+- `nb11_wealth_compression.png` - the wealth/inheritance levers: gross shrinks to net as the rich defect, and the side-effect cost stacked against the net
+- `nb11_western_experiments.png` - the four Western natural experiments: Israel composition vs secular default, Hungary tempo vs quantum, housing by tenure, student-debt delay
+- `nb11_defection_screen.png` - the central result: every lever re-ranked by net-after-elite-defection (bans/propaganda/wealth-cap go negative, lottery/inequality/penalty rise)
+- `nb11_side_effect_frontier.png` - the effect vs side-effect frontier (efficient vs dominated levers) and the manifold bundle crossing
+- `nb11_manifold_bundles.png` - the same bundle amplifies near the ridge and stalls deep in the basin (robust crosses the separatrix, fragile does not)
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
@@ -75,6 +83,9 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb10_decomposition.csv` - extensive vs intensive deficit per region (childlessness gap vs parity gap)
 - `nb10_verdict_table.csv` - E15 baseline vs max keystone+migration 2100 outcome per region (reversal flag)
 - `nb10_e15_verdicts.json` - all 27 E15 verdicts (H51-H77) with evidence
+- `nb11_defection_table.csv` - E16 lever catalogue with named incentive, gross/δ/backfire/net, side-effect cost, margin, tier, verdict
+- `nb11_frontier_table.csv` - E16 net-after-defection vs side-effect cost per lever (the frontier)
+- `nb11_e16_verdicts.json` - all 25 E16 verdicts (H101-H125) with evidence
 
 ## Verdict records
 

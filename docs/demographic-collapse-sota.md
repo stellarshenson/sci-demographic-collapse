@@ -145,9 +145,25 @@ miss - the career-first / education-arms-race / overwork life-script (Poland dep
 reading: the coupled ODE amplifies a keystone push near the ridge and damps it deep in the basin, and cash,
 divorce restriction and gender-neutral career policies carry documented countervailing effects. A decision-
 maker's star-ranking with mechanism-of-effect chains is distilled in `docs/interventions.md`, and the source
-library lives in `references/papers/` (21 PDFs + 35 digests). The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
+library lives in `references/papers/` (27 PDFs + 41 digests). The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
 coercive, non-durable and blind to the keystone. A society escapes the Seldon manifold by attacking the
 coupling keystone early, broadly and durably while it still sits near the ridge (E15).
+
+A further round (E16) sharpens the intervention analysis on a principle the earlier rounds left implicit:
+gross effect sizes lie, because interventions are evaded. It adds a defection parameter to every lever - the
+net a society gets is the gross times the compliant share, plus a backfire term that can invert the sign when
+the rich defect. Twenty-five hypotheses (H101-H125, 15 SUPPORTED, 6 PARTIAL, 4 REFUTED) name the exact
+incentive each lever moves and isolate its key signal statistically before sizing it. The lesson is a
+re-ranking: an outright tutoring ban backfires (Korea 1980 - the rich bought covert tutoring and inequality
+widened), while a lottery-band that makes the admission prize un-buyable, or a multi-dimensional test rewarding
+un-coachable traits, deflate the arms race at its source and cannot be defected from. The defection screen
+drops bans, propaganda, wealth caps and exhortation below zero and lifts inequality compression, lottery
+bucketing, universal motherhood-penalty removal and structural defaults to the top - what a state can enforce,
+not what sounds strong, is what bends the curve. The Western natural experiments anchor the Western half:
+Israel's near-universal default plus universal IVF holds even secular fertility near replacement without
+coercion, Hungary's 5-6% of GDP buys mostly tempo, and housing's real lever is supply for young renters, not a
+price subsidy to owners. Stacked against their side effects, the coercive levers are dominated; the efficient
+frontier is structural and un-buyable (E16).
 
 ## Numbers - parameters and predictions
 
@@ -203,15 +219,18 @@ coupling keystone early, broadly and durably while it still sits near the ridge 
   (Wasserstein recalibration closing the prediction gap, E12), `08-kj-demographic-contrarian` (25-hypothesis
   contrarian audit, E13), `09-kj-demographic-reversal` (reversal-intervention catalogue + Seldon manifold /
   drivers / interventions images, E14), `10-kj-demographic-intervention-story` (the coupling keystone +
-  literature-grounded intervention strengths on one extensible interface, 27 hypotheses, E15); all execute
-  end-to-end on the pinned GPU
+  literature-grounded intervention strengths on one extensible interface, 50 hypotheses, E15),
+  `11-kj-incentives-arms-races-defection` (named-incentive mechanisms with a defection parameter and
+  side-effect cost, 25 hypotheses, E16); all execute end-to-end on the pinned GPU
 - **Core module** - `src/sci_demographic_collapse/coremodel.py` (Leslie map, momentum, eigenstructure,
-  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-10
+  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-11
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID behavioural
   panel; provenance in `data/raw/README.md`, `data/raw/unwpp/README.md`, and the per-source manifests
-- **Figures** - thirty-eight executed figures in `reports/figures/` (including the recalibration loss
+- **Figures** - forty-four executed figures in `reports/figures/` (including the recalibration loss
   landscape, gap closure, tournament, coverage, crisis-fidelity, contrarian-scorecard, the Seldon-manifold /
-  drivers / interventions panels, and the E15 intervention-story set: margin decomposition, strength × margin
+  drivers / interventions panels, the E15 intervention-story set: margin decomposition, strength × margin
   map, keystone levers, the wider-menu verdict grid, the coupling-in-depth grid, the deeper-drivers grid, the
-  coupled-system interaction panel, the contraception spectrum, and the reversal verdict); tables in
+  coupled-system interaction panel, the contraception spectrum, and the reversal verdict; and the E16
+  defection set: the arms-race defusal panel, the wealth-compression stack, the Western natural experiments,
+  the defection screen, the side-effect frontier, and the manifold bundle crossing); tables in
   `reports/*.csv`

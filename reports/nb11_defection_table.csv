@@ -1,0 +1,23 @@
+id,name,act,incentive,gross,delta,backfire,side,margin,tier,verdict,net
+H101,Tutoring ban,I,"remove tutoring; but the act, not the resource",0.15,0.7,0.4,0.75,intensive,1,REFUTED,-0.23499999999999996
+H102,Lottery-band admission,I,flat payoff above a competence bar - a seat cannot be bought,0.165,0.03,0.0,0.15,both,2,SUPPORTED,0.16005
+H103,Multi-dim un-gameable admission,I,reward low-purchase-elasticity traits (aptitude/grit/critical thinking),0.11,0.4,0.0,0.2,both,2,PARTIAL,0.066
+H104,Positional cap (Frank),I,cap the positional spend all sides waste,0.18,0.1,0.05,0.25,intensive,2,SUPPORTED,0.157
+H105,Inequality compression,I,"lower the skill premium -> lower the stakes of rank, for all at once",0.25,0.02,0.0,0.1,both,1,SUPPORTED,0.245
+H106,Estate / inheritance tax,II,erase dynastic advantage -> less hoarding of child quality,0.12,0.35,0.05,0.4,intensive,2,PARTIAL,0.0605
+H107,Progressive wealth cap,II,cap accumulation the arms race feeds on,0.16,0.55,0.15,0.7,intensive,3,PARTIAL,-0.01050000000000001
+H108,Tax childlessness,II,"loss-aversion: cost the childless, not subsidize the child",0.15,0.3,0.1,0.85,both,2,PARTIAL,0.075
+H109,Remove DINK tax advantage,II,withdraw the childless subsidy so children are the default,0.12,0.15,0.0,0.3,both,3,SUPPORTED,0.102
+H110,Universal motherhood-penalty removal,III,"make the penalty non-existent for everyone, not opt-in",0.2,0.05,0.0,0.1,both,1,SUPPORTED,0.19
+H111,Israel default + universal IVF,III,make a child the near-universal life default; insure the runway,0.12,0.03,0.0,0.12,both,1,SUPPORTED,0.11639999999999999
+H112,High-fertility subculture,III,fertility as a bounded-community identity,0.05,0.4,0.0,0.35,extensive,2,SUPPORTED,0.03
+H113,Hungary cash package,III,buy births with lifetime tax breaks + loan forgiveness,0.05,0.1,0.0,0.3,tempo,1,REFUTED,0.045000000000000005
+H114,Housing supply / zoning,III,cut the price of a family home for young renters,0.12,0.05,0.0,0.1,intensive,1,SUPPORTED,0.11399999999999999
+H115,Student-debt relief / free tertiary,III,remove the institutional resource-sink delaying family,0.1,0.08,0.0,0.12,extensive,2,SUPPORTED,0.09200000000000001
+H116,Peer-led parent archetype,IV,a friend's birth raises your own transition (bottom-up),0.1,0.55,0.0,0.05,both,2,PARTIAL,0.045
+H117,Top-down pronatal propaganda,IV,exhort/coerce the birth itself,0.08,0.6,0.35,0.8,tempo,1,REFUTED,-0.178
+H118,Remove the parenthood happiness penalty,IV,make parents no unhappier than non-parents,0.1,0.1,0.0,0.1,intensive,2,SUPPORTED,0.09000000000000001
+H119,Decouple status from job-title/hours,IV,change what earns status away from overwork,0.12,0.3,0.0,0.2,both,3,PARTIAL,0.08399999999999999
+H120,Marriage-first exhortation,IV,promote the success sequence,0.05,0.65,0.05,0.15,both,1,REFUTED,-0.015000000000000003
+H121,Use-it-or-lose-it default,V,non-transferable default removes the free-rider problem,0.12,0.03,0.0,0.1,both,1,SUPPORTED,0.11639999999999999
+H123,Recycle the defection,V,"tax the defection channel, fund the compliant",0.15,0.7,0.04,0.2,intensive,3,SUPPORTED,0.017000000000000008

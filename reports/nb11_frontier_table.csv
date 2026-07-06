@@ -1,0 +1,23 @@
+id,name,net,side,verdict
+H101,Tutoring ban,-0.235,0.75,REFUTED
+H102,Lottery-band admission,0.16,0.15,SUPPORTED
+H103,Multi-dim un-gameable admission,0.066,0.2,PARTIAL
+H104,Positional cap (Frank),0.157,0.25,SUPPORTED
+H105,Inequality compression,0.245,0.1,SUPPORTED
+H106,Estate / inheritance tax,0.06,0.4,PARTIAL
+H107,Progressive wealth cap,-0.011,0.7,PARTIAL
+H108,Tax childlessness,0.075,0.85,PARTIAL
+H109,Remove DINK tax advantage,0.102,0.3,SUPPORTED
+H110,Universal motherhood-penalty removal,0.19,0.1,SUPPORTED
+H111,Israel default + universal IVF,0.116,0.12,SUPPORTED
+H112,High-fertility subculture,0.03,0.35,SUPPORTED
+H113,Hungary cash package,0.045,0.3,REFUTED
+H114,Housing supply / zoning,0.114,0.1,SUPPORTED
+H115,Student-debt relief / free tertiary,0.092,0.12,SUPPORTED
+H116,Peer-led parent archetype,0.045,0.05,PARTIAL
+H117,Top-down pronatal propaganda,-0.178,0.8,REFUTED
+H118,Remove the parenthood happiness penalty,0.09,0.1,SUPPORTED
+H119,Decouple status from job-title/hours,0.084,0.2,PARTIAL
+H120,Marriage-first exhortation,-0.015,0.15,REFUTED
+H121,Use-it-or-lose-it default,0.116,0.1,SUPPORTED
+H123,Recycle the defection,0.017,0.2,SUPPORTED

@@ -184,6 +184,39 @@ No lever acts alone. Two general facts, both grounded and both in the model:
   J-curve threshold, worsens the dual burden before it helps. A serious program pairs each lever with the one
   that offsets its side effect.
 
+## Defection-robustness and the side-effect frontier (E16)
+
+Gross effect sizes lie, because interventions are evaded. E16 adds a **defection parameter δ** to every lever:
+the net a society gets is the gross times the compliant share, plus a backfire term that can invert the sign
+when the rich defect. This reorders the whole menu, and it answers the question the arms-race levers really
+turn on - not "how strong" but "can it be defected from".
+
+- **A ban backfires; an un-buyable lever does not** - Korea outlawed private tutoring in 1980; tutoring went
+  underground, only the wealthy could pay the covert premium, and inequality - the fuel of the race - widened.
+  Net −0.235: the sign flips. The levers that work make the prize un-buyable. A **threshold-and-lottery-band**
+  admits a random draw from everyone above a competence bar, so the payoff is flat above the bar and the last
+  dollar of tutoring buys nothing (the reward-gradient above the bar collapses to zero - a 100% arms-race
+  deflation). A **multi-dimensional** admission rewards aptitude, grit and critical thinking - traits with low
+  purchase-elasticity - so family money stops converting into rank. Both truncate the race at its source; both
+  carry δ≈0 because a lottery seat cannot be bought.
+- **The defection screen** - re-ranking every lever by net-after-defection reshuffles the order. Bans,
+  propaganda, wealth caps and marriage-first exhortation fall net-negative. Inequality compression, lottery
+  bucketing, universal motherhood-penalty removal, housing supply and structural defaults rise to the top. The
+  Norwegian father's quota is the proof of the principle: a non-transferable, use-it-or-lose-it default took
+  uptake from under 3% to 97% where every voluntary equivalent failed. What a state can enforce, not what
+  sounds strong, is what bends the curve. And when defection is inevitable, taxing the defection channel and
+  recycling it turns a ban's leakage into a structural transfer.
+- **The Western natural experiments** - Israel is the only rich country above replacement; even its secular
+  women sit near 2.0 without coercion, because a child is the near-universal default and universal IVF insures
+  the biological runway. Hungary spends 5-6% of GDP and its rise was ~85% tempo - the completed family barely
+  moved and the rate fell back. Housing is opposite-signed by tenure, so the lever is supply for young renters,
+  not a price subsidy to owners. Student debt delays family directly.
+- **The frontier** - stacked against their side effects, the coercive levers (a childlessness tax, a wealth
+  cap, propaganda, a tutoring ban) are dominated: they either go net-negative or impose welfare costs no
+  fertility gain justifies. The efficient frontier is structural and un-buyable - inequality compression,
+  lottery bucketing, universal penalty removal, housing supply, the IVF default. On the Seldon manifold the
+  defection-robust bundle crosses the separatrix near the ridge where the fragile bundle stalls.
+
 ## The rule that governs all of them
 
 No single lever is a cure, and the "obvious" ones - cash and childcare - demonstrably fail alone, as Poland and
