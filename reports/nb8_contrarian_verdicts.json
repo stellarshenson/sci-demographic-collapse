@@ -1,0 +1,127 @@
+{
+  "E13-C1": {
+    "verdict": "REFUTED",
+    "claim": "persistence is as good as the age-structured model for 8-yr population",
+    "evidence": "model pop MAPE 0.09% vs hold-2015-flat 3.45% - age structure earns its place"
+  },
+  "E13-C2": {
+    "verdict": "SUPPORTED",
+    "claim": "Keyfitz momentum is not a stable regional constant (it depends on base year)",
+    "evidence": "USA momentum 1990/2005/2023 = 1.09/1.05/0.98 (range 0.10) - momentum depletes"
+  },
+  "E13-C3": {
+    "verdict": "SUPPORTED",
+    "claim": "USA 'population predictability' is migration persistence, not age-structure momentum",
+    "evidence": "2016-23 cumulative natural 5915k vs migration 10940k - migration dominates the USA change"
+  },
+  "E13-C4": {
+    "verdict": "SUPPORTED",
+    "claim": "the USA shortfall is not pure recoverable tempo - its quantum (adjTFR) is itself falling since 2010",
+    "evidence": "USA adjTFR slope 2010-23 = -0.050/yr - quantum declining, not just postponement (tempo estimates noisy)"
+  },
+  "E13-C5": {
+    "verdict": "REFUTED",
+    "claim": "the tempo/quantum split is fragile - r=d(MAC)/dt is noisy and flips sign repeatedly",
+    "evidence": "USA r sign-flips 0 over 34 yrs, std 0.045 - the mean age rises monotonically, split is stable"
+  },
+  "E13-C6": {
+    "verdict": "SUPPORTED",
+    "claim": "Korea's deficit is partly tempo too - its mean age at childbearing is still rising",
+    "evidence": "Korea recent r = +0.194/yr - postponement ongoing, so not a pure quantum deficit"
+  },
+  "E13-C7": {
+    "verdict": "REFUTED",
+    "claim": "Rogers-Castro is unnecessary for the population TOTAL - a scalar (age-uniform) migration matches it",
+    "evidence": "USA total residual: RC 0.228% vs age-uniform 6.451% - the age shape matters even for the headline total"
+  },
+  "E13-C8": {
+    "verdict": "REFUTED",
+    "claim": "migration, not fertility, is the USA master variable to 2100 (+50% migration beats +0.3 TFR)",
+    "evidence": "USA 2100: +0.3 TFR +85.9M vs +50% migration +61.7M - fertility is the stronger lever"
+  },
+  "E13-C9": {
+    "verdict": "REFUTED",
+    "claim": "the Rogers-Castro childhood-echo term is redundant - a labour-peak-only schedule matches the total",
+    "evidence": "USA total residual: RC-full 0.228% vs labour-only 0.889% - the echo earns its place"
+  },
+  "E13-C10": {
+    "verdict": "REFUTED",
+    "claim": "a modest (+0.3) fertility lift is futile for Korea - it recovers a tiny fraction of the baseline loss",
+    "evidence": "Korea +0.3 TFR recovers 18% of the 32M baseline loss - modest but non-trivial"
+  },
+  "E13-C11": {
+    "verdict": "REFUTED",
+    "claim": "for the USA a migration lever dominates any fertility intervention to 2100",
+    "evidence": "USA 2100 levers: migration +61.7M vs fertility +85.9M - fertility is competitive, not dominated"
+  },
+  "E13-C12": {
+    "verdict": "REFUTED",
+    "claim": "intervention timing barely matters at the 2100 horizon (2025 vs 2045 start)",
+    "evidence": "Korea early-vs-late structural lift differ 34% of 2100 pop - timing is decisive, not minor"
+  },
+  "E13-C13": {
+    "verdict": "SUPPORTED",
+    "claim": "'momentum locks the near term' is arithmetic, not insight - 2050's mothers are already born",
+    "evidence": "97% of Korea's 2050 births come from women already alive in 2023 - the near-term lock is arithmetic"
+  },
+  "E13-C14": {
+    "verdict": "SUPPORTED",
+    "claim": "the 'TFR-1.5 trap ridge' is behavioural lore, not the Leslie replacement threshold (~2.1)",
+    "evidence": "USA TFR at NRR=1 (lambda=1) = 2.09 - the 1.5 ridge is an empirical trap, NOT a mathematical replacement boundary"
+  },
+  "E13-C15": {
+    "verdict": "REFUTED",
+    "claim": "the Leslie eigenvalue does not order strictly by TFR (survival reshuffles near-ties)",
+    "evidence": "lambda-order ['France', 'USA', 'Germany', 'Spain'] vs TFR-order ['France', 'USA', 'Germany', 'Spain'] - orders coincide, lambda tracks TFR"
+  },
+  "E13-C16": {
+    "verdict": "REFUTED",
+    "claim": "migration wrecks the stable-pyramid match - the eigenvector is a poor fit to the actual pyramid",
+    "evidence": "USA cos(stable eigenvector, actual 2023 pyramid) = 0.976 - still strong despite migration"
+  },
+  "E13-C17": {
+    "verdict": "REFUTED",
+    "claim": "the low in-sample MAPE is over-flexibility - the model fits pure white noise just as well",
+    "evidence": "w2 fit to random-noise TFR gets MAPE 11.28% - it does NOT fit noise well; in-sample fit is meaningful"
+  },
+  "E13-C18": {
+    "verdict": "SUPPORTED",
+    "claim": "the closed gap is an in-sample illusion - true one-step-ahead (train<=2022) misses 2023",
+    "evidence": "USA train<=2022 -> 2023 gap 0.103 (in-sample was 0.009) - one-step-ahead is still hard (an honest limit)"
+  },
+  "E13-C19": {
+    "verdict": "SUPPORTED",
+    "claim": "MI-usage near 1 is memorization not information - a saturated interpolator scores MI=1 by construction",
+    "evidence": "a per-year interpolation (median=data) scores MI-usage 1.00 - MI alone cannot separate signal from memorization"
+  },
+  "E13-C20": {
+    "verdict": "SUPPORTED",
+    "claim": "the frozen-rate baseline is a strawman - a random-walk-with-drift baseline beats it",
+    "evidence": "held-out TFR MAPE: frozen 8.77% vs RW-drift 6.17% - the model should beat the stronger baseline, not the frozen one"
+  },
+  "E13-C21": {
+    "verdict": "SUPPORTED",
+    "claim": "the '0.00% deaths fidelity' is unimpressive - crude-rate x population reproduces deaths anyway",
+    "evidence": "crude CDRxPop deaths MAPE 0.47% - the death TOTAL needs no age structure (the pyramid matters for its age profile)"
+  },
+  "E13-C22": {
+    "verdict": "REFUTED",
+    "claim": "the full age model doesn't reorder regions - 2023 TFR rank already predicts the 2100 outcome rank",
+    "evidence": "Spearman(TFR-2023, 2100 %change) = 0.71 across 7 regions - TFR ranks, but migration/structure reorder (rho<0.8)"
+  },
+  "E13-C23": {
+    "verdict": "SUPPORTED",
+    "claim": "'demographic collapse' overstates it - no study population approaches extinction this century",
+    "evidence": "worst 2100 ratio (Korea) 0.37 of 2023 - a halving-and-ageing, not an absorbing extinction; 'collapse' is a decline, not a vanishing"
+  },
+  "E13-C24": {
+    "verdict": "SUPPORTED",
+    "claim": "sub-replacement is not destiny within the model - steady migration stabilizes Korea despite TFR 0.72",
+    "evidence": "Korea needs 459k/yr net migration (0.89% of pop/yr) to hold flat to 2100 - demographically plausible"
+  },
+  "E13-C25": {
+    "verdict": "SUPPORTED",
+    "claim": "the 'momentum governs' finding has low falsifiability - the calibration has more knobs than data points-per-region",
+    "evidence": "per-region latent DOF ~37 vs 34 data points - the defensible, parameter-free evidence is operator fidelity + held-out backtest, not the fit"
+  }
+}

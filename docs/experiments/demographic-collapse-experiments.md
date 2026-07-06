@@ -6,7 +6,7 @@ Experiments log for calibrating the nine-state demographic-collapse model (from 
 
 - **Branch / artefacts** - Notebook 1 (structural, uncalibrated) `notebooks/01-kj-demographic-collapse.ipynb`; E1-E5 execution `notebooks/02-kj-demographic-calibration.ipynb`; design (on convergence) `docs/demographic-collapse-sota.md`
 - **Data** - `data/raw/` open-source ingests (World Bank, Eurostat, OWID) + per-source `MANIFEST.json` (source, URL, retrieval date, license); `data/external/` cited event-forcing anchors
-- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. **Campaign total: 39 hypotheses - 28 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE.** SOTA design distilled in `docs/demographic-collapse-sota.md`
+- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. **Campaign total: 75 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED. SOTA design distilled in `docs/demographic-collapse-sota.md`
 
 ## Problem overview
 
@@ -67,6 +67,12 @@ Executed 2026-07-06. Twenty hypotheses across five batches: baseline calibration
 | E11-H37 | baseline "current fertility persists" to 2100 | Korea/Japan/Italy roughly halve; USA migration-buffered | Korea −63%, Japan −52%, Italy −39%, USA +6% (migration) by 2100 | SUPPORTED |
 | E11-H38 | fertility-lifting interventions bend the 2100 tail | +TFR lift raises 2100 pop; near-term momentum-locked | +0.30 TFR: USA +73M, Korea +4.6M by 2100; 2050 gap tiny (momentum-locked) | SUPPORTED |
 | E11-H39 | intervention leverage: tempo-recovery vs structural, timing | USA tempo-recoverable; Korea needs structural + early lift | USA +0.3 grows (435M); Korea needs structural+early lift, +0.3 still halves | SUPPORTED |
+| E12-H40 | the ELBO calibration suffers posterior collapse | +0.2 gap, τ→0, latent unused | mean gap 0.198, τ 0.004, MI-usage 0.07 | SUPPORTED |
+| E12-H41 | a Wasserstein (WAE) objective closes the gap, preserves MI | gap ≤ 0.05, MI restored | gap 0.018; MI-usage 0.04 → 0.96 | SUPPORTED |
+| E12-H42 | exact-1D-Wasserstein wins the method tournament | W2 ≤ MMD ≪ ELBO | W2 gap 0.018 / pop 0.69% beats MMD 0.038, ELBO 0.198 | SUPPORTED |
+| E12-H43 | hierarchical drift-pooling restores honest forecast coverage | held-out cover ≥ 90%, pop MAPE ≤ 1% | coverage 50% → 100%; pop MAPE 0.65% | SUPPORTED |
+| E12-H44 | recalibration preserves crisis + population fidelity | crises reproduced, pop residual small | 4/4 crisis windows sign-match; pop residual < 0.58% | SUPPORTED |
+| E12-H45 | recalibrated parameter + prediction tables exported | tables exist, gap documented | ELBO resid +0.18/+0.26 → W2 +0.005/+0.042 | SUPPORTED |
 
 ## Methodology and metrics
 
@@ -523,6 +529,177 @@ does not prove any policy achieves the lever.
 - **Result** - USA +0.3 grows to 435M (tempo recoverable); Korea +0.3 still halves to 23.9M, only a structural lift to replacement stabilizes (47M); a 2025 start beats 2045 by 15.8M
 - **Verdict** - SUPPORTED
 
+## E12 - Recalibration: closing the prediction gap (Wasserstein / hierarchical)
+
+The Bayesian calibration (E9) minimised `F = −ELBO`, but its posterior median over-predicted the recent
+period TFR by +0.2 to +0.3 at 2023 - the "massive gap." E12 diagnoses this as **posterior collapse** (the
+per-point KL drives the innovation scale τ → 0) and fixes it by replacing the KL with a penalty on the
+*aggregate* posterior only - a Wasserstein Auto-Encoder / InfoVAE(α=1) objective that preserves the
+latent-data mutual information. A method tournament picks the exact one-dimensional Wasserstein-2 penalty, and
+cross-region drift-pooling (the mechanism behind the UN's bayesTFR) restores honest held-out coverage.
+Executed in `notebooks/07-kj-demographic-recalibration.ipynb`.
+
+### E12-H40 ELBO posterior collapse
+- **Hypothesis** - because the ELBO applies a Kullback-Leibler penalty to every latent innovation, the calibration collapses the innovation scale τ → 0, flattening the fertility trend so the median over-predicts recent TFR (the +0.2/+0.3 gap) with near-zero latent usage
+- **Lever** - the per-point KL term in `F = −ELBO`
+- **Mechanism** - refit the ELBO objective (analytic Gaussian KL) across the panel; read the 2023 gap, the fitted τ, and a mutual-information proxy (variance of TFR the latent explains beyond the linear trend)
+- **Prediction** - mean |2023 gap| > 0.1, τ → 0, MI-usage < 0.3
+- **Acceptance bar** - collapse shown directly: large positive gap, τ near zero, MI ≈ 0
+- **Experiment** - source: UN WPP 2024 panel<br>method: ELBO refit with per-point analytic KL
+- **Result** - collapse confirmed: mean |2023 gap| 0.198 (USA +0.19, Europe +0.26), τ → 0.004, MI-usage 0.07 (latent essentially unused)
+- **Verdict** - SUPPORTED
+
+### E12-H41 Wasserstein objective closes the gap
+- **Hypothesis** - because a WAE penalises only the aggregate posterior, dropping the per-point KL preserves mutual information, so the latent tracks the data and the in-sample gap closes while MI-usage recovers toward 1
+- **Lever** - replace `Σ KL(q(zₜ)‖N(0,1))` with `λ · D(q(z)‖N(0,1))`
+- **Mechanism** - refit with the exact-1D-Wasserstein penalty; compare 2023 gap and MI-usage against the ELBO fit
+- **Prediction** - mean |2023 gap| ≤ 0.05 and mean MI-usage > 0.8
+- **Acceptance bar** - gap closed below 0.05 and MI restored above 0.8
+- **Experiment** - source: UN WPP 2024 panel<br>method: WAE (aggregate-posterior) recalibration
+- **Result** - gap closed to mean |0.018| (USA +0.009, Italy +0.005, Europe +0.006) and MI-usage restored 0.04 → 0.96
+- **Verdict** - SUPPORTED
+
+### E12-H42 Method tournament - exact-1D-Wasserstein wins
+- **Hypothesis** - because the aggregate divergence family has several members, an exact one-dimensional Wasserstein-2 penalty (optimal transport) matches or beats the RBF-MMD and both crush the ELBO on in-sample gap, TFR error, and population residual
+- **Lever** - choice of aggregate penalty D (ELBO vs MMD vs exact-W2)
+- **Mechanism** - score each objective on mean 2023 gap, in-sample TFR MAPE, and the 2023 population residual (recalibrated median scaling observed ASFR through the age structure)
+- **Prediction** - W2 gap ≤ MMD gap < ELBO gap and W2 population residual ≤ MMD
+- **Acceptance bar** - exact-Wasserstein is the panel winner on gap and population residual
+- **Experiment** - source: UN WPP 2024 panel<br>method: three-objective tournament
+- **Result** - exact-Wasserstein wins: gap 0.018 / pop residual 0.69%, beating WAE-MMD (0.038) and ELBO (0.198); MMD sits between (MI 0.96, pop 0.86%)
+- **Verdict** - SUPPORTED
+
+### E12-H43 Hierarchical drift-pooling restores forecast coverage
+- **Hypothesis** - because a post-2015 regime change is not point-predictable, the narrow single-region forecast misses the held-out TFR; borrowing strength across regions (a cross-region drift spread, bayesTFR-style) widens the band so the held-out years are honestly covered while the population forecast stays accurate
+- **Lever** - forecast drift sampled with the cross-region spread; heavy-tailed (Student-t) forecast innovations
+- **Mechanism** - train ≤ 2015, predict 2016-2023; compare held-out TFR coverage and population MAPE with and without pooling
+- **Prediction** - held-out TFR coverage ≥ 90% with pooling; population MAPE ≤ 1%
+- **Acceptance bar** - pooled band covers held-out TFR (mean ≥ 90%) at population MAPE ≤ 1%
+- **Experiment** - source: UN WPP 2024 (USA, Korea, Italy)<br>method: hierarchical widened posterior predictive
+- **Result** - cross-region drift spread 0.0082/yr lifts held-out TFR coverage 50% → 100% (USA/Korea/Italy all 100%) at population MAPE 0.65%
+- **Verdict** - SUPPORTED
+
+### E12-H44 Recalibration preserves crisis + population fidelity
+- **Hypothesis** - because closing the gap by over-smoothing would erase the crises, the recalibrated median must still reproduce each crisis-window TFR change (correct sign, close magnitude) and keep the 2023 population residual small
+- **Lever** - the recalibrated Wasserstein median
+- **Mechanism** - measure the median's TFR change across four crisis windows (USA recession, USA COVID, Korea 1997, Italy 1990s) and the recalibrated 2023 population residual
+- **Prediction** - all four crisis windows reproduced by sign; population residual < 2%
+- **Acceptance bar** - crises reproduced and population fidelity intact
+- **Experiment** - source: UN WPP 2024<br>method: crisis-window reproduction + population projection
+- **Result** - all four windows reproduced (USA recession obs −0.257/model −0.239, COVID −0.050/−0.035, Korea −0.257/−0.272, Italy −0.143/−0.156); 2023 population residual < 0.58%
+- **Verdict** - SUPPORTED
+
+### E12-H45 Recalibrated parameter + prediction tables
+- **Hypothesis** - because the goal names reliable numbers, the recalibrated run yields a per-region parameter table (level, drift, τ, σ) and a prediction-vs-observed table documenting the gap closing from ≈ +0.2 to ≈ +0.02
+- **Lever** - the converged Wasserstein posterior
+- **Mechanism** - tabulate recalibrated parameters and 2023 predictions with ELBO and Wasserstein residuals side by side
+- **Prediction** - both tables exported; the ELBO → Wasserstein residual drop is documented
+- **Acceptance bar** - parameter and prediction tables exist in `reports/`
+- **Experiment** - source: converged E12 posterior<br>method: posterior summarisation
+- **Result** - `reports/nb7_parameter_table.csv` and `reports/nb7_predictions.csv` exported; ELBO residuals +0.18/+0.26 collapse to Wasserstein +0.005/+0.042
+- **Verdict** - SUPPORTED
+
+## E13 - Contrarian audit: 25 attacks on the model's own findings
+
+A model that only confirms itself has not been tested. E13 pre-registers 25 contrarian hypotheses that attack
+the conclusions of E6-E12 and settles each with a computation on the same UN WPP data and core model. The
+convention is inverted here: **SUPPORTED means the contrarian claim holds - the finding is *qualified*** -
+and **REFUTED means the finding survived** the attack. Executed in
+`notebooks/08-kj-demographic-contrarian.ipynb`. Outcome: **12 findings survived, 13 qualified**, of 25.
+
+### E13 at a glance
+
+| id | contrarian claim (what it attacks) | evidence | verdict |
+|---|---|---|---|
+| E13-C1 | a persistence baseline is as good as the age model | model pop MAPE 0.09% vs hold-flat 3.45% | REFUTED |
+| E13-C2 | momentum is not a stable regional constant | USA momentum 1.09 → 1.05 → 0.98 (range 0.10) | SUPPORTED |
+| E13-C3 | USA predictability is migration, not momentum | 2016-23 migration 10.9M > natural 5.9M | SUPPORTED |
+| E13-C4 | the USA quantum is itself falling (not pure tempo) | adjTFR slope −0.050/yr since 2010 | SUPPORTED |
+| E13-C5 | the Bongaarts-Feeney split is fragile | USA r: 0 sign-flips, std 0.045 (monotone) | REFUTED |
+| E13-C6 | Korea's deficit is partly tempo | Korea recent r +0.194/yr (MAC still rising) | SUPPORTED |
+| E13-C7 | Rogers-Castro is needless for the total | RC 0.23% vs age-uniform 6.45% residual | REFUTED |
+| E13-C8 | migration beats fertility for the USA to 2100 | +0.3 TFR +85.9M vs +50% migration +61.7M | REFUTED |
+| E13-C9 | the RC childhood-echo term is redundant | RC-full 0.23% vs labour-only 0.89% | REFUTED |
+| E13-C10 | a +0.3 lift is futile for Korea | recovers 18% of the 32M baseline loss | REFUTED |
+| E13-C11 | a migration lever dominates fertility (USA) | migration +61.7M < fertility +85.9M | REFUTED |
+| E13-C12 | intervention timing barely matters at 2100 | Korea 2025-vs-2045 = 34% of 2100 pop | REFUTED |
+| E13-C13 | the near-term lock is arithmetic, not insight | 97% of Korea's 2050 births from women alive in 2023 | SUPPORTED |
+| E13-C14 | the 1.5 ridge is not the replacement threshold | USA TFR at λ=1 is 2.09, not 1.5 | SUPPORTED |
+| E13-C15 | the eigenvalue does not order by TFR | λ-order = TFR-order across 7 regions | REFUTED |
+| E13-C16 | migration wrecks the stable-pyramid match | USA cos(eigenvector, actual) 0.976 | REFUTED |
+| E13-C17 | the fit is over-flexible (fits noise) | w2 on white-noise TFR gets MAPE 11.3% | REFUTED |
+| E13-C18 | the closed gap is an in-sample illusion | train ≤ 2022 → 2023 gap 0.103 (in-sample 0.009) | SUPPORTED |
+| E13-C19 | MI ≈ 1 is memorization, not information | a saturated interpolator scores MI 1.00 | SUPPORTED |
+| E13-C20 | the frozen-rate baseline is a strawman | held-out TFR MAPE frozen 8.77% vs RW-drift 6.17% | SUPPORTED |
+| E13-C21 | the deaths fidelity is trivial | crude CDR×pop deaths MAPE 0.47% | SUPPORTED |
+| E13-C22 | TFR rank already predicts the 2100 rank | Spearman 0.71 (migration/structure reorder) | REFUTED |
+| E13-C23 | "collapse" overstates a halving | worst 2100 ratio (Korea) 0.37, not extinction | SUPPORTED |
+| E13-C24 | sub-replacement is not destiny with migration | Korea holds flat at 0.89%/yr net migration | SUPPORTED |
+| E13-C25 | "momentum governs" has low falsifiability | per-region latent DOF ~37 vs 34 data points | SUPPORTED |
+
+### Lessons from the audit
+
+- **The accounting and structure survive** - the age model crushes a persistence baseline (C1), the
+  Rogers-Castro age shape genuinely matters (C7, C9), fertility out-pulls migration as a USA lever (C8, C11),
+  the eigenvalue tracks TFR (C15), the stable pyramid still fits (C16), the Wasserstein fit refuses to fit
+  pure noise (C17), and intervention timing is decisive not cosmetic (C12)
+- **The fertility-forecast and tempo claims are qualified** - the USA quantum is itself eroding, so its
+  shortfall is not purely recoverable tempo (C4); the USA's recent trajectory is migration-led (C3); momentum
+  is a depleting quantity, not a constant (C2); one-step-ahead period TFR is still hard (C18)
+- **Two honest reframes** - the "TFR-1.5 trap" is an empirical threshold, not the mathematical replacement
+  line of 2.09 (C14); and sub-replacement is not destiny within the model - plausible migration holds even
+  Korea flat (C24), so the label "collapse" means decline-and-ageing, not extinction (C23)
+
+## E14 - Reversal interventions: the full catalogue, the manifold, the drivers
+
+E14 turns from diagnosis to therapy: it hypothesises the full menu of plausible interventions - state policy and
+cultural change - that the demographic literature has proposed to lift fertility, maps each onto a model lever,
+and projects it to 2100. The central question is which levers, singly or bundled, can **reverse** the trend
+(return a population to growth) rather than merely slow it. Executed in
+`notebooks/09-kj-demographic-reversal.ipynb`, with three images - the Seldon manifold, the drivers, and the
+interventions.
+
+### The catalogue (14 interventions, pre-registered)
+
+Fourteen interventions, each with a mechanism, a model lever, a literature anchor, and a plausible ΔTFR
+(best-judgment literature ranges, not fitted - the model sizes a lever, it does not prove a policy achieves it):
+
+- **State, quantum** - universal childcare (+0.25), child allowance (+0.17), paid parental leave (+0.10),
+  family housing support (+0.15), work-family flexibility (+0.10), youth-precarity reduction (+0.15)
+- **State, tempo** - baby bonus one-off (+0.08, fades), subsidized assisted reproduction (+0.05)
+- **State, coupling** - attention-economy / dating-app regulation (+0.08)
+- **State, migration** - pro-natal / replacement migration (population lever, not TFR)
+- **Culture, quantum** - gender-equity in domestic labour (+0.20), reduce intensive-parenting norm (+0.12)
+- **Culture, tempo** - earlier union formation / relationship support (+0.10)
+- **Culture, coupling** - de-stigmatize non-marital births (+0.10)
+
+Grounding: Bergsvik-Hart-Kohler 2021 (systematic review), Gauthier 2007, Luci-Greulich & Thévenon 2013,
+Myrskylä-Kohler-Billari 2009 (J-curve), Goldscheider 2015 (gender revolution), Doepke et al. 2023.
+
+### E14 at a glance
+
+| id | claim (what is under test) | evidence | verdict |
+|---|---|---|---|
+| E14-H46 | no single intervention reverses an ultra-low region | Korea's best single lever reaches only −50% (from −63%) | SUPPORTED |
+| E14-H47 | a tempo-recoverable region is reversible by a bundle | USA full bundle + migration → +129% (returns to growth) | SUPPORTED |
+| E14-H48 | an ultra-low structural region cannot be fully reversed by 2100 | Korea bends −63% → −10% but not to growth | SUPPORTED |
+| E14-H49 | quantum (completed fertility) is the master driver | Korea recovery potential: quantum 28M > migration 14M > tempo 3M | SUPPORTED |
+| E14-H50 | interventions map onto the manifold as separatrix crossings | cost/childcare/gender-equity lower ρ, formation/coupling raise C | SUPPORTED |
+
+### Lessons
+
+- **On the Seldon manifold every lever is a directed move** - cost / childcare / gender-equity policies lower
+  childlessness ρ (leftward), formation / coupling policies raise C (upward); the USA sits near the separatrix
+  (a modest push recovers it) while Korea and Japan lie deep in the collapse basin (a large combined move
+  needed)
+- **The drivers rank cleanly** - the quantum deficit dominates the 2100 decline (Korea 28M of a 32M loss),
+  migration is a strong second (14M), the momentum / age-structure lock is small but irreducible (4M), and
+  recoverable tempo is least (3M) - so the heaviest levers are the ones that raise completed fertility
+- **Reversal is a property of position, not effort** - a serious state-and-culture bundle plus migration
+  returns the tempo-recoverable USA to growth, but the same maximal effort only bends ultra-low Korea from a
+  63% collapse to a shallow decline by 2100, because its reproductive base is already hollowed out; no single
+  policy is a cure, and only an early, broad bundle moves the trajectory at all
+
 ## Interventions parking lot (recorded, NOT planned)
 
 Candidate interventions for a later, separate round - **no hypotheses planned until the model is calibrated** (an uncalibrated model cannot size an intervention). Recorded here so the ideas are not lost.
@@ -541,6 +718,7 @@ Candidate interventions for a later, separate round - **no hypotheses planned un
 
 ## Conclusions
 
+- **The prediction gap was a loss-function artifact, now closed** - the +0.2/+0.3 ELBO over-prediction of recent TFR was posterior collapse (per-point KL drives τ → 0); an exact-1D-Wasserstein (WAE) objective closes the in-sample gap to ≈ 0.02 with MI-usage 0.96, and hierarchical drift-pooling lifts held-out TFR coverage 50% → 100% - all four crises and the population totals survive the recalibration (E12)
 - **Convergence is partial and honest** - 12/20 supported. The model reproduces demographic history where the mechanism is in the equations, and places every region correctly on the fertility axis; it does not yet close on the technology mechanism, the recession magnitude, or cross-region transfer
 - **Seldon manifold: survived** - bistability persists (66% collapse basin) and the recovery/ridge boundary (1.47-1.66) agrees with the cited TFR-1.5 trap threshold
 - **Named gaps blocking full convergence** - migration (foremost), region-specific parameters, a richer recession forcing, and a formation-resolved coupling series for the technology question

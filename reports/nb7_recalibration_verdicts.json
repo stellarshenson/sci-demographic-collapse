@@ -1,0 +1,26 @@
+{
+  "E12-H40": {
+    "verdict": "SUPPORTED",
+    "evidence": "ELBO refit collapses: mean |2023 gap| 0.198 (USA +0.19), tau -> 0.0039, MI-usage 0.07 (latent unused)"
+  },
+  "E12-H41": {
+    "verdict": "SUPPORTED",
+    "evidence": "Wasserstein (WAE) closes the gap to mean |0.018| and restores MI-usage to 0.96 (from ELBO 0.04)"
+  },
+  "E12-H42": {
+    "verdict": "SUPPORTED",
+    "evidence": "tournament: exact-Wasserstein gap 0.018/pop 0.69% beats MMD 0.038 and ELBO 0.199"
+  },
+  "E12-H43": {
+    "verdict": "SUPPORTED",
+    "evidence": "hierarchical drift-pooling (spread 0.0082/yr) lifts held-out TFR coverage 50% -> 100% at pop MAPE 0.65%"
+  },
+  "E12-H44": {
+    "verdict": "SUPPORTED",
+    "evidence": "all four crisis windows reproduced (sign), recalibrated 2023 pop residual < 0.58% - fidelity preserved"
+  },
+  "E12-H45": {
+    "verdict": "SUPPORTED",
+    "evidence": "recalibrated parameter + prediction tables exported (nb7_parameter_table.csv, nb7_predictions.csv)"
+  }
+}

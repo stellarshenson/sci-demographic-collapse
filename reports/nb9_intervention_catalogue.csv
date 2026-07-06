@@ -1,0 +1,15 @@
+id,intervention,type,lever,dTFR,grounding
+IV1,Universal subsidized childcare,state,quantum,0.25,France/Nordics; Bauernschuster 2016; Rindfuss 2010
+IV2,Child allowance / cash transfers,state,quantum,0.17,Gauthier 2007; Quebec ANC; Riphahn
+IV3,Baby bonus / birth grant (one-off),state,tempo,0.08,Milligan 2005; Australia 2004 (fades)
+IV4,Paid parental leave (incl. paternity),state,quantum,0.1,Lalive-Zweimüller; Duvander
+IV5,Family housing support / affordability,state,quantum,0.15,Dettling-Kearney 2014; Mulder
+IV6,Subsidized assisted reproduction (IVF),state,tempo,0.05,Hoorens; Denmark ART share
+IV7,Work-family reconciliation (flexible hrs),state,quantum,0.1,OECD Family DB; Del Boca
+IV8,Pro-natal / replacement migration,state,migration,0.0,UN WPP; NB8-C24 result
+IV9,Gender-equity (domestic-labour equalize),culture,quantum,0.2,Myrskylä 2009 J-curve; Goldscheider 2015; Doepke 2023
+IV10,Earlier union formation / relationship support,culture,tempo,0.1,Bongaarts-Feeney; PREP; NB6 INT-2
+IV11,De-stigmatize non-marital births,culture,coupling,0.1,Nordic model; Perelli-Harris
+IV12,Reduce intensive-parenting / child-cost norm,culture,quantum,0.12,Doepke-Zilibotti; Ishiguro
+IV13,Attention-economy / dating-app regulation,state,coupling,0.08,NB6 INT-1; Rosenfeld HCMST
+IV14,Economic security / youth-precarity reduction,state,quantum,0.15,Comolli 2017; Kreyenfeld

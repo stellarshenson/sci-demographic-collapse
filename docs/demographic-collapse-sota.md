@@ -2,12 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the E1-E11 experiment campaign - an age-structured
+The distilled, calibrated design that survived the E1-E13 experiment campaign - an age-structured
 cohort-component model of national populations, driven by observed UN WPP 2024 schedules, calibrated by
-variational free-energy minimization, backtested out-of-sample, stress-tested against past crises, and used
-to size interventions to 2100. The full evidence trail is in
+free-energy minimization with an information-preserving Wasserstein objective, backtested out-of-sample,
+stress-tested against past crises, used to size interventions to 2100, put through a 25-hypothesis
+contrarian audit of its own findings, and used to catalogue and model the full menu of reversal interventions.
+The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-6 and the reusable core module `src/sci_demographic_collapse/coremodel.py`.
+3-9 and the reusable core module `src/sci_demographic_collapse/coremodel.py`.
 
 ## Overview
 
@@ -56,22 +58,33 @@ quantum sits near or above replacement - whereas Korea's is a genuine quantum de
 two-parameter skew-normal located at the mean age and scaled to the quantum reconstructs the single-year ASFR
 to within 3% of its peak (E8-H28), giving the calibration a low-dimensional, interpretable fertility driver.
 
-That driver is calibrated by **variational inference** - Pyro SVI on a local-linear-trend state-space model
-of the quantum - which minimizes the variational free energy F = −ELBO. The converged posterior is the
-minimum-free-energy state the project set out to reach; it comes with credible bands, and the stochastic
-trend is chosen deliberately so forecast uncertainty grows with horizon rather than pretending to false
-confidence. In-sample the SVI converges, beats the frozen-rate baseline, and its 95% band covers the observed
-series (E9-H29). The posterior parameter table (per-region level, drift, volatility, noise, and F at the
-optimum) is exported to `reports/nb4_parameter_table.csv`.
+That driver is calibrated on a local-linear-trend state-space model of the quantum by minimizing a free
+energy - a reconstruction term plus a divergence that keeps the latent trend close to its prior. The first
+attempt used the variational free energy F = −ELBO (Pyro SVI), and it failed in an instructive way: its
+posterior median over-predicted the recent period TFR by +0.2 to +0.3 at 2023. The cause is **posterior
+collapse** - the ELBO applies a Kullback-Leibler penalty to *every* latent innovation, so the optimiser
+drives the innovation scale τ toward zero and the trend flattens into a line that cannot bend to the recent
+decline (E12-H40: mean gap 0.198, τ → 0.004, near-zero latent usage).
+
+The fix keeps the reconstruction term but replaces the per-point KL with a penalty on the **aggregate**
+posterior only - a Wasserstein Auto-Encoder / InfoVAE(α = 1) objective. Because it constrains the pooled
+latent distribution rather than each point, it preserves the mutual information between latent and data, and
+the latent is free to track the observed series. A three-way tournament (ELBO vs RBF-MMD vs exact
+one-dimensional Wasserstein-2) picks the exact optimal-transport penalty: it closes the in-sample 2023 gap to
+≈ 0.018 with mutual-information usage restored to 0.96 and a 2023 population residual of 0.69%, beating both
+MMD and the ELBO (E12-H41/H42). This aggregate-divergence free energy is the minimum-free-energy state the
+project set out to reach - now without the collapse. The recalibrated per-region parameter table (level,
+drift, innovation scale τ, noise σ) is exported to `reports/nb7_parameter_table.csv`.
 
 ## What the model reproduces
 
-**Backtest (E9-H30)** - trained on 1990-2015 and asked to predict 2016-2023, the model's **population**
-forecast holds everywhere (MAPE ≤ 3%: USA 1.16%, Korea 2.58%, Italy 0.26%). Period-TFR point-forecast
-coverage, by contrast, is regime-dependent: Korea's monotone collapse is forecastable (88%), but the USA and
-Italy underwent post-2015 regime changes no prior data anticipates. This split is the project's sharpest
-lesson - **population is predictable, period TFR is not**, because momentum and age structure, not this year's
-fertility rate, govern the medium term.
+**Backtest (E9-H30, E12-H43)** - trained on 1990-2015 and asked to predict 2016-2023, the model's
+**population** forecast holds everywhere (MAPE ≤ 1%). Period-TFR *point* forecasts still cannot anticipate a
+post-2015 regime change - an intrinsic limit of any period-rate forecast - but the recalibration handles it
+honestly: pooling the drift across regions (the mechanism behind the UN's bayesTFR) widens the forecast band
+so the held-out TFR is covered 100% rather than confidently missed (up from 50% without pooling). The lesson
+stands in a sharper form - **population is point-predictable, period TFR is only interval-predictable** -
+because momentum and age structure, not this year's fertility rate, govern the medium term.
 
 **Crisis battery (E10)** - four historical crises are reproduced and their demographic cost measured by
 counterfactual:
@@ -99,14 +112,28 @@ recoverable-postponement shortfall returns it to growth with a modest lift, wher
 quantum deficit needs a near-replacement lift, started now rather than in twenty years, merely to stabilize
 (E11-H39). The analysis is descriptive - it sizes a lever, it does not claim any policy achieves it.
 
+A fuller reversal analysis (E14) catalogues fourteen plausible interventions - state policy (childcare,
+allowances, leave, housing, assisted reproduction, migration) and cultural change (gender equity, union
+formation, norms) - and projects each on the calibrated core, with three images: the Seldon manifold, the
+drivers, and the interventions. Three findings sharpen the outlook. On the stylized manifold every lever is a
+directed move - cost, childcare and gender-equity policies lower childlessness while formation policies raise
+coupling, both pushing a region leftward across the separatrix toward recovery (E14-H50). The drivers rank
+cleanly - the quantum deficit dominates the 2100 decline (Korea 28M of a 32M loss), migration is a strong
+second (14M), and recoverable tempo is least (3M), so the heaviest levers are the ones that raise completed
+fertility (E14-H49). And reversal is a property of position, not effort: a serious state-and-culture bundle
+plus migration returns the tempo-recoverable USA to growth (+129%, E14-H47), but the same maximal effort only
+bends ultra-low Korea from a 63% collapse to a 10% decline by 2100 (E14-H48), because its reproductive base is
+already hollowed out. No single policy is a cure (E14-H46); only an early, broad bundle moves the trajectory,
+and where a region sits on the manifold decides whether it reverses the trend or merely softens it.
+
 ## Numbers - parameters and predictions
 
-- **Parameter + calibration table** - `reports/nb4_parameter_table.csv` (posterior means and credible
-  intervals, F at the optimum, per region)
-- **Prediction vs observed (2023) with residuals** - `reports/nb4_predictions.csv`. Population residuals are
-  0.1-1.9%; period-TFR point residuals carry a ~+0.2 smoothing bias because the posterior median does not
-  chase the recent dip (the credible band covers, and the quantum decomposition carries the interpretable
-  signal)
+- **Parameter + calibration table** - `reports/nb7_parameter_table.csv` (recalibrated per-region level,
+  drift, innovation scale τ, noise σ, and mutual-information usage); the superseded ELBO run is in
+  `reports/nb4_parameter_table.csv`
+- **Prediction vs observed (2023) with residuals** - `reports/nb7_predictions.csv`. The Wasserstein
+  recalibration collapses the period-TFR residual from the ELBO's +0.18/+0.26 to +0.005/+0.042, and the 2023
+  population residual is ≤ 1.6% (USA, Italy, Europe below 0.6%)
 - **Crisis costs** - `reports/nb5_crisis_costs.csv` (forgone births / excess deaths per crisis)
 - **Forward projections** - `reports/nb6_projection_table.csv` (2100 population, baseline and interventions)
 
@@ -117,21 +144,31 @@ quantum deficit needs a near-replacement lift, started now rather than in twenty
   both sub-replacement, are on utterly different trajectories, and why the near-term is unmovable
 - **Tempo is not quantum** - a large part of the developed-world "fertility crisis" is postponement, and how
   much of it is recoverable versus permanent is measurable and differs sharply by country
-- **Population is trustworthy, period TFR is not** - the model earns confidence exactly where age structure
-  dominates and admits its limits where behaviour surprises
+- **Population is point-predictable, period TFR is interval-predictable** - the model earns point confidence
+  where age structure dominates and, after the Wasserstein recalibration, states honest intervals where
+  behaviour surprises
 - **The Seldon manifold survived** - the bistable ridge found in stylized equations landed, uncalibrated, on
   the empirical TFR-1.5 low-fertility trap, and the calibrated model places every region correctly along it
 
 ## Honest limitations
 
-- **Period-TFR point forecasts** carry a smoothing bias and cannot anticipate regime changes; trust the
-  population trajectory and the credible bands, not a single TFR number
+- **Period-TFR point forecasts** cannot anticipate regime changes - an intrinsic limit of any period-rate
+  forecast; the recalibration removed the in-sample smoothing bias (gap ≈ +0.2 → ≈ +0.02) and made the
+  forecast band honest (held-out coverage 100%), so trust the population trajectory and the credible band, not
+  a single TFR number
 - **Migration assumptions** drive the buffered cases - Germany's +12% to 2100 rests on the elevated
   2019-2023 net migration (the 2022 Ukraine surge inflates the recent mean); the migration *age shape* is a
   canonical Rogers-Castro schedule, not a fitted one
 - **National aggregate only** - sub-national divergence (East/West Germany after 1990) is not resolved
 - **Behavioural sub-questions unresolved** - the technology-and-formation hypotheses stay on a lagging
   marriage proxy (a measurement gap, not a settled negative); a house-price series was never ingested
+- **The USA tempo story is real but partial** - a 25-hypothesis contrarian audit (E13) showed the USA
+  tempo-adjusted quantum has itself fallen since 2010, so its shortfall is not purely recoverable
+  postponement, and its recent population change was migration-led, not momentum-led; the tempo-recoverability
+  claim holds only in part
+- **A calibration richer than the data per region** - the audit also flagged that the per-region latent trend
+  has more degrees of freedom than data points, so the trustworthy, near-parameter-free evidence is the
+  operator fidelity and the held-out backtest, not the in-sample fit
 - **Descriptive, not causal** - the model sizes mechanisms and levers; it licenses no claim that a given
   policy achieves a given lever
 
@@ -139,9 +176,14 @@ quantum deficit needs a near-replacement lift, started now rather than in twenty
 
 - **Notebooks** - `03-kj-demographic-sota` (age-structured core, E6-E7), `04-kj-demographic-calibration-bayes`
   (tempo-quantum + Bayesian, E8-E9), `05-kj-demographic-crises` (crisis battery, E10),
-  `06-kj-demographic-interventions` (forward projections, E11); all execute end-to-end on the pinned GPU
+  `06-kj-demographic-interventions` (forward projections, E11), `07-kj-demographic-recalibration`
+  (Wasserstein recalibration closing the prediction gap, E12), `08-kj-demographic-contrarian` (25-hypothesis
+  contrarian audit, E13), `09-kj-demographic-reversal` (reversal-intervention catalogue + Seldon manifold /
+  drivers / interventions images, E14); all execute end-to-end on the pinned GPU
 - **Core module** - `src/sci_demographic_collapse/coremodel.py` (Leslie map, momentum, eigenstructure,
-  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-6
+  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-9
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID behavioural
   panel; provenance in `data/raw/README.md`, `data/raw/unwpp/README.md`, and the per-source manifests
-- **Figures** - sixteen executed figures in `reports/figures/`; tables in `reports/*.csv`
+- **Figures** - twenty-seven executed figures in `reports/figures/` (including the recalibration loss
+  landscape, gap closure, tournament, coverage, crisis-fidelity, contrarian-scorecard, and the Seldon-manifold
+  / drivers / interventions panels); tables in `reports/*.csv`

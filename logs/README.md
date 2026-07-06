@@ -13,3 +13,6 @@ Progress logs for background and long-running jobs.
 - `nb4-execute.log` - execution of `notebooks/04-kj-demographic-calibration-bayes.ipynb` (tempo-quantum + Bayesian, E8-E9)
 - `nb5-execute.log` - execution of `notebooks/05-kj-demographic-crises.ipynb` (crisis battery, E10)
 - `nb6-execute.log` - execution of `notebooks/06-kj-demographic-interventions.ipynb` (interventions, E11)
+- `nb7-execute.log` - execution of `notebooks/07-kj-demographic-recalibration.ipynb` (Wasserstein recalibration, E12)
+- `nb8-execute.log` - execution of `notebooks/08-kj-demographic-contrarian.ipynb` (contrarian audit, E13)
+- `nb9-execute.log` - execution of `notebooks/09-kj-demographic-reversal.ipynb` (reversal interventions + manifold/drivers images, E14)

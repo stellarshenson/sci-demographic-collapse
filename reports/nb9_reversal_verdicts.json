@@ -1,0 +1,22 @@
+{
+  "E14-H46": {
+    "verdict": "SUPPORTED",
+    "evidence": "no single intervention reverses an ultra-low region: Korea's best single lever reaches only -49% (best gain +13% on a -63% baseline)"
+  },
+  "E14-H47": {
+    "verdict": "SUPPORTED",
+    "evidence": "a tempo-recoverable region is reversible: USA full bundle+migration reaches +129% (returns to growth)"
+  },
+  "E14-H48": {
+    "verdict": "SUPPORTED",
+    "evidence": "an ultra-low structural region cannot be fully reversed by 2100: Korea bends from -63% to -10% but not to growth"
+  },
+  "E14-H49": {
+    "verdict": "SUPPORTED",
+    "evidence": "quantum (completed fertility) is the master driver: Korea recovery potential quantum 28M > migration 14M > tempo 3M"
+  },
+  "E14-H50": {
+    "verdict": "SUPPORTED",
+    "evidence": "interventions map onto the Seldon manifold as leftward/upward moves: cost/childcare/gender-equity lower \u03c1, formation/coupling raise C, both crossing the separatrix toward recovery"
+  }
+}

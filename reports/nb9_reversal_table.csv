@@ -1,0 +1,57 @@
+region,id,intervention,lever,base_2100_pct,iv_2100_pct,gain_pct
+USA,IV1,Universal subsidized childcare,quantum,5.513505234431065,23.11433001697722,17.600824782546148
+USA,IV2,Child allowance / cash transfers,quantum,5.513505234431065,17.24454655403062,11.731041319599559
+USA,IV3,Baby bonus / birth grant (one-off),tempo,5.513505234431065,10.910055390298169,5.3965501558670965
+USA,IV4,Paid parental leave (incl. paternity),quantum,5.513505234431065,12.293414222076194,6.779908987645126
+USA,IV5,Family housing support / affordability,quantum,5.513505234431065,15.812472709232381,10.298967474801316
+USA,IV6,Subsidized assisted reproduction (IVF),tempo,5.513505234431065,8.860793672217682,3.3472884377866183
+USA,IV7,Work-family reconciliation (flexible hrs),quantum,5.513505234431065,12.293414222076194,6.779908987645126
+USA,IV8,Pro-natal / replacement migration,migration,5.513505234431065,41.56428415284981,36.05077891841873
+USA,IV9,Gender-equity (domestic-labour equalize),quantum,5.513505234431065,19.419075603039346,13.905570368608275
+USA,IV10,Earlier union formation / relationship support,tempo,5.513505234431065,12.293414222076194,6.779908987645126
+USA,IV11,De-stigmatize non-marital births,coupling,5.513505234431065,12.293414222076194,6.779908987645126
+USA,IV12,Reduce intensive-parenting / child-cost norm,quantum,5.513505234431065,13.69060311660759,8.177097882176524
+USA,IV13,Attention-economy / dating-app regulation,coupling,5.513505234431065,10.910055390298169,5.3965501558670965
+USA,IV14,Economic security / youth-precarity reduction,quantum,5.513505234431065,15.812472709232381,10.298967474801316
+Korea,IV1,Universal subsidized childcare,quantum,-62.74216439359791,-55.37340860569898,7.368755787898933
+Korea,IV2,Child allowance / cash transfers,quantum,-62.74216439359791,-57.84269473875657,4.89946965484134
+Korea,IV3,Baby bonus / birth grant (one-off),tempo,-62.74216439359791,-60.4948615513779,2.247302842220012
+Korea,IV4,Paid parental leave (incl. paternity),quantum,-62.74216439359791,-59.91690002308869,2.825264370509226
+Korea,IV5,Family housing support / affordability,quantum,-62.74216439359791,-58.443507487458824,4.298656906139086
+Korea,IV6,Subsidized assisted reproduction (IVF),tempo,-62.74216439359791,-61.349666118654824,1.3924982749430883
+Korea,IV7,Work-family reconciliation (flexible hrs),quantum,-62.74216439359791,-59.91690002308869,2.825264370509226
+Korea,IV8,Pro-natal / replacement migration,migration,-62.74216439359791,-49.48372457888197,13.258439814715938
+Korea,IV9,Gender-equity (domestic-labour equalize),quantum,-62.74216439359791,-56.929129889815336,5.813034503782576
+Korea,IV10,Earlier union formation / relationship support,tempo,-62.74216439359791,-59.91690002308869,2.825264370509226
+Korea,IV11,De-stigmatize non-marital births,coupling,-62.74216439359791,-59.91690002308869,2.825264370509226
+Korea,IV12,Reduce intensive-parenting / child-cost norm,quantum,-62.74216439359791,-59.332438264417384,3.40972612918053
+Korea,IV13,Attention-economy / dating-app regulation,coupling,-62.74216439359791,-60.4948615513779,2.247302842220012
+Korea,IV14,Economic security / youth-precarity reduction,quantum,-62.74216439359791,-58.443507487458824,4.298656906139086
+Italy,IV1,Universal subsidized childcare,quantum,-39.158293115524,-28.876783189539253,10.281509925984752
+Italy,IV2,Child allowance / cash transfers,quantum,-39.158293115524,-32.30256998151232,6.85572313401168
+Italy,IV3,Baby bonus / birth grant (one-off),tempo,-39.158293115524,-36.0031012005972,3.15519191492681
+Italy,IV4,Paid parental leave (incl. paternity),quantum,-39.158293115524,-35.19466537316838,3.963627742355625
+Italy,IV5,Family housing support / affordability,quantum,-39.158293115524,-33.138861154068024,6.019431961455978
+Italy,IV6,Subsidized assisted reproduction (IVF),tempo,-39.158293115524,-37.20097678336338,1.9573163321606242
+Italy,IV7,Work-family reconciliation (flexible hrs),quantum,-39.158293115524,-35.19466537316838,3.963627742355625
+Italy,IV8,Pro-natal / replacement migration,migration,-39.158293115524,-16.218357284098346,22.93993583142566
+Italy,IV9,Gender-equity (domestic-labour equalize),quantum,-39.158293115524,-31.0330663599657,8.125226755558307
+Italy,IV10,Earlier union formation / relationship support,tempo,-39.158293115524,-35.655424753710264,3.502868361813743
+Italy,IV11,De-stigmatize non-marital births,coupling,-39.158293115524,-35.19466537316838,3.963627742355625
+Italy,IV12,Reduce intensive-parenting / child-cost norm,quantum,-39.158293115524,-34.37831069670925,4.779982418814763
+Italy,IV13,Attention-economy / dating-app regulation,coupling,-39.158293115524,-36.0031012005972,3.15519191492681
+Italy,IV14,Economic security / youth-precarity reduction,quantum,-39.158293115524,-33.138861154068024,6.019431961455978
+Japan,IV1,Universal subsidized childcare,quantum,-51.564446857408456,-42.784403421222784,8.780043436185672
+Japan,IV2,Child allowance / cash transfers,quantum,-51.564446857408456,-45.71686865998821,5.847578197420246
+Japan,IV3,Baby bonus / birth grant (one-off),tempo,-51.564446857408456,-48.87688492199488,2.6875619354135707
+Japan,IV4,Paid parental leave (incl. paternity),quantum,-51.564446857408456,-48.187241542739436,3.3772053146690144
+Japan,IV5,Family housing support / affordability,quantum,-51.564446857408456,-46.43172266862741,5.132724188781052
+Japan,IV6,Subsidized assisted reproduction (IVF),tempo,-51.564446857408456,-49.897986340320976,1.6664605170874751
+Japan,IV7,Work-family reconciliation (flexible hrs),quantum,-51.564446857408456,-48.187241542739436,3.3772053146690144
+Japan,IV8,Pro-natal / replacement migration,migration,-51.564446857408456,-40.37432535659112,11.190121500817327
+Japan,IV9,Gender-equity (domestic-labour equalize),quantum,-51.564446857408456,-44.630939904859765,6.933506952548687
+Japan,IV10,Earlier union formation / relationship support,tempo,-51.564446857408456,-48.187241542739436,3.3772053146690144
+Japan,IV11,De-stigmatize non-marital births,coupling,-51.564446857408456,-48.187241542739436,3.3772053146690144
+Japan,IV12,Reduce intensive-parenting / child-cost norm,quantum,-51.564446857408456,-47.4904343114305,4.074012545977959
+Japan,IV13,Attention-economy / dating-app regulation,coupling,-51.564446857408456,-48.87688492199488,2.6875619354135707
+Japan,IV14,Economic security / youth-precarity reduction,quantum,-51.564446857408456,-46.43172266862741,5.132724188781052
