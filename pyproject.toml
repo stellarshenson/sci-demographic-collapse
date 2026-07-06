@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sci_demographic_collapse"
+version = "0.1.0"
+description = "Data science analysis of demographic collapse"
+authors = [
+    { name = "Stellars Henson" },
+]
+license = "MIT"
+readme = "README.md"
+requires-python = "~=3.13.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "loguru",
+    "tqdm",
+    "typer",
+    "python-dotenv",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "polars",
+    "rich",
+    "scikit-learn",
+    "torch",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "ipykernel",
+    "ipython",
+    "ipywidgets",
+    "nbdime",
+    "pip",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sci_demographic_collapse*"]
+exclude = ["tests*"]
+
+[tool.ruff]
+line-length = 99
+src = ["src/sci_demographic_collapse"]
+include = ["pyproject.toml", "src/sci_demographic_collapse/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sci_demographic_collapse"]
+force-sort-within-sections = true
