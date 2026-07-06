@@ -179,6 +179,18 @@ extremes (a conditioned surrogate-carrier class, a porn ban, an adultery penalty
 side-cost. The optima are diverse - interior sweet-spots, hard corners and sign-flips coexist - so there is no
 lever a designer simply turns to maximum (E17).
 
+A final round (E18) hybridises the proven winners and reaches for creative levers each tied to a named
+undercurrent. Twenty hypotheses (H144-H163, 10 SUPPORTED, 8 PARTIAL, 2 REFUTED) show that stacking
+*complementary* winners is super-additive - compress the skill premium and make admission un-buyable, de-risk
+dissolution and teach the skills and spread them as a peer norm, equalise the second shift across leave and
+hours - while stacking two levers on the same channel only saturates, so the design rule is one lever per
+channel. The deep undercurrents prove mostly slow, contested, or one-time: the pension-fertility externality is
+real (a public pension at 10% of GDP correlates with 0.7-1.6 fewer children) but its corrective has thin causal
+support; the biological channel is a hard wall yet a minority driver, and subsidised egg-freezing backfires by
+licensing postponement; migration and the grandmother effect are a bridge or an endowment, not a durable lever;
+and one-child-policy hysteresis is the sharpest warning that permission is not a lever - lifting the policy left
+Chinese fertility falling, because the norms and costs it created outlast it (E18).
+
 ## Numbers - parameters and predictions
 
 - **Parameter + calibration table** - `reports/nb7_parameter_table.csv` (recalibrated per-region level,
@@ -237,9 +249,14 @@ lever a designer simply turns to maximum (E17).
   `11-kj-incentives-arms-races-defection` (named-incentive mechanisms with a defection parameter and
   side-effect cost, 25 hypotheses, E16), `12-kj-swept-design-spans` (swept design axes - each hypothesis a
   response curve locating its optimum type; coupling economics, the outside-option valve, policy geometry,
-  surrogacy, 18 hypotheses, E17); all execute end-to-end on the pinned GPU
+  surrogacy, 18 hypotheses, E17), `13-kj-hybrids-and-undercurrents` (hybrids of the proven winners + creative
+  levers each anchored to a named undercurrent - financial/biological/cultural/psychological, 20 hypotheses,
+  E18), `14-kj-dynamical-intervention-simulation` (a recalibrated emergent behavioural model - channels = the
+  observable parameters C/ρ/P̄/τ/S - coupled to Leslie with dependency feedback, making the model the judge:
+  all 88 catalogue interventions integrated four generations and classified by their dynamics, E19); all
+  execute end-to-end on the pinned GPU
 - **Core module** - `src/sci_demographic_collapse/coremodel.py` (Leslie map, momentum, eigenstructure,
-  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-12
+  Rogers-Castro, counterfactual overrides), imported by Notebooks 4-13
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID behavioural
   panel; provenance in `data/raw/README.md`, `data/raw/unwpp/README.md`, and the per-source manifests
 - **Figures** - forty-four executed figures in `reports/figures/` (including the recalibration loss
@@ -250,4 +267,5 @@ lever a designer simply turns to maximum (E17).
   defection set: the arms-race defusal panel, the wealth-compression stack, the Western natural experiments,
   the defection screen, the side-effect frontier, and the manifold bundle crossing; and the E17 swept-span
   set: coupling economics, duration-and-fidelity, policy geometry, surrogacy, the optimum-type taxonomy, and
-  the robust-vs-fragile bundle); tables in `reports/*.csv`
+  the robust-vs-fragile bundle; and the E18 hybrids-and-undercurrents set: the hybrid blends, the
+  financial/biological/cultural undercurrent panels, and the channel taxonomy); tables in `reports/*.csv`

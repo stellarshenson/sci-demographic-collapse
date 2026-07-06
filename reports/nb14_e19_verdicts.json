@@ -1,0 +1,2466 @@
+[
+  {
+    "id": "IV1",
+    "name": "Universal subsidized childcare",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.95,
+      "dpop": 12.8,
+      "C": 0.73,
+      "peak": 1.0,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.65,
+      "dpop": 41.7,
+      "C": 1.0,
+      "peak": 1.8,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.7,
+      "dpop": 27.4,
+      "C": 1.0,
+      "peak": 1.85,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "IV2",
+    "name": "Child allowance / cash transfers",
+    "batch": "E14",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 1.1,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "tempo mirage"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 7.4,
+      "C": 0.77,
+      "peak": 1.53,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.31,
+      "dpop": 8.4,
+      "C": 0.84,
+      "peak": 1.74,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "tempo mirage"
+  },
+  {
+    "id": "IV3",
+    "name": "Baby bonus / birth grant (one-off)",
+    "batch": "E14",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.5,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 3.4,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 3.9,
+      "C": 0.84,
+      "peak": 1.65,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "IV4",
+    "name": "Paid parental leave (incl. paternity)",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.5,
+      "C": 0.4,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.47,
+      "dpop": 21.8,
+      "C": 0.93,
+      "peak": 1.56,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.6,
+      "C": 1.0,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV5",
+    "name": "Family housing support / affordability",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV6",
+    "name": "Subsidized assisted reproduction (IVF)",
+    "batch": "E14",
+    "channel": "tempo",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.1,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.3,
+      "C": 0.77,
+      "peak": 1.52,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.6,
+      "C": 0.84,
+      "peak": 1.73,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "IV7",
+    "name": "Work-family reconciliation (flexible hrs)",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.5,
+      "C": 0.4,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.47,
+      "dpop": 21.8,
+      "C": 0.93,
+      "peak": 1.56,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.6,
+      "C": 1.0,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV8",
+    "name": "Pro-natal / replacement migration",
+    "batch": "E14",
+    "channel": "migration",
+    "korea": {
+      "tfr": 0.38,
+      "dpop": 40.4,
+      "C": 0.32,
+      "peak": 0.71,
+      "dcl": "one-time bridge"
+    },
+    "germany": {
+      "tfr": 1.19,
+      "dpop": 221.5,
+      "C": 0.78,
+      "peak": 1.44,
+      "dcl": "one-time bridge"
+    },
+    "france": {
+      "tfr": 1.34,
+      "dpop": 82.3,
+      "C": 0.86,
+      "peak": 1.64,
+      "dcl": "one-time bridge"
+    },
+    "dynamical_verdict": "one-time bridge"
+  },
+  {
+    "id": "IV9",
+    "name": "Gender-equity (domestic-labour equalize)",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.79,
+      "dpop": 9.5,
+      "C": 0.62,
+      "peak": 0.88,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.63,
+      "dpop": 37.7,
+      "C": 1.0,
+      "peak": 1.76,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.67,
+      "dpop": 24.0,
+      "C": 1.0,
+      "peak": 1.81,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV10",
+    "name": "Earlier union formation / relationship support",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.5,
+      "C": 0.4,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.47,
+      "dpop": 21.8,
+      "C": 0.93,
+      "peak": 1.56,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.6,
+      "C": 1.0,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV11",
+    "name": "De-stigmatize non-marital births",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.5,
+      "C": 0.4,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.47,
+      "dpop": 21.8,
+      "C": 0.93,
+      "peak": 1.56,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.6,
+      "C": 1.0,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV12",
+    "name": "Reduce intensive-parenting / child-cost norm",
+    "batch": "E14",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.8,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 5.2,
+      "C": 0.77,
+      "peak": 1.48,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 5.9,
+      "C": 0.84,
+      "peak": 1.69,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "IV13",
+    "name": "Attention-economy / dating-app regulation",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.44,
+      "dpop": 2.7,
+      "C": 0.37,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.4,
+      "dpop": 17.0,
+      "C": 0.9,
+      "peak": 1.51,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.55,
+      "dpop": 15.4,
+      "C": 0.97,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV14",
+    "name": "Economic security / youth-precarity reduction",
+    "batch": "E14",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV1",
+    "name": "Universal childcare",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.95,
+      "dpop": 12.8,
+      "C": 0.73,
+      "peak": 1.0,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.65,
+      "dpop": 41.7,
+      "C": 1.0,
+      "peak": 1.8,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.7,
+      "dpop": 27.4,
+      "C": 1.0,
+      "peak": 1.85,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "IV9",
+    "name": "Gender-equity (domestic)",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.79,
+      "dpop": 9.5,
+      "C": 0.62,
+      "peak": 0.88,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.63,
+      "dpop": 37.7,
+      "C": 1.0,
+      "peak": 1.76,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.67,
+      "dpop": 24.0,
+      "C": 1.0,
+      "peak": 1.81,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV5",
+    "name": "Family housing support",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV14",
+    "name": "Youth-precarity / job guar.",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV4",
+    "name": "Paid parental leave (long)",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.5,
+      "C": 0.4,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.47,
+      "dpop": 21.8,
+      "C": 0.93,
+      "peak": 1.56,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.6,
+      "C": 1.0,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV7",
+    "name": "Work-family flexibility",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.5,
+      "C": 0.4,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.47,
+      "dpop": 21.8,
+      "C": 0.93,
+      "peak": 1.56,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.6,
+      "C": 1.0,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV2",
+    "name": "Child allowance (cash)",
+    "batch": "E15",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.7,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 4.3,
+      "C": 0.77,
+      "peak": 1.46,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 4.9,
+      "C": 0.84,
+      "peak": 1.67,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "IV12",
+    "name": "Reduce child-cost norm",
+    "batch": "E15",
+    "channel": "quantum",
+    "korea": {
+      "tfr": 0.41,
+      "dpop": 2.1,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.45,
+      "dpop": 20.9,
+      "C": 0.78,
+      "peak": 1.55,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.62,
+      "dpop": 20.6,
+      "C": 0.85,
+      "peak": 1.75,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV6",
+    "name": "Baby bonus (one-off)",
+    "batch": "E15",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.4,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 2.6,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 2.9,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "IV3",
+    "name": "IVF / ART subsidy",
+    "batch": "E15",
+    "channel": "tempo",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.1,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.3,
+      "C": 0.77,
+      "peak": 1.52,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.6,
+      "C": 0.84,
+      "peak": 1.73,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "IV10",
+    "name": "Earlier union formation",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV11",
+    "name": "Longer / stable unions",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV13",
+    "name": "State partner-market (camp)",
+    "batch": "E15",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.79,
+      "dpop": 9.5,
+      "C": 0.62,
+      "peak": 0.88,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.63,
+      "dpop": 37.7,
+      "C": 1.0,
+      "peak": 1.76,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.67,
+      "dpop": 24.0,
+      "C": 1.0,
+      "peak": 1.81,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "IV8",
+    "name": "Replacement migration",
+    "batch": "E15",
+    "channel": "migration",
+    "korea": {
+      "tfr": 0.38,
+      "dpop": 40.4,
+      "C": 0.32,
+      "peak": 0.71,
+      "dcl": "one-time bridge"
+    },
+    "germany": {
+      "tfr": 1.19,
+      "dpop": 221.5,
+      "C": 0.78,
+      "peak": 1.44,
+      "dcl": "one-time bridge"
+    },
+    "france": {
+      "tfr": 1.34,
+      "dpop": 82.3,
+      "C": 0.86,
+      "peak": 1.64,
+      "dcl": "one-time bridge"
+    },
+    "dynamical_verdict": "one-time bridge"
+  },
+  {
+    "id": "H101",
+    "name": "Tutoring ban",
+    "batch": "E16",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.5,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.43,
+      "dpop": -34.0,
+      "C": 0.41,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.5,
+      "dpop": -29.3,
+      "C": 0.47,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "H102",
+    "name": "Lottery-band admission",
+    "batch": "E16",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 1.0,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 6.7,
+      "C": 0.77,
+      "peak": 1.51,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.31,
+      "dpop": 7.7,
+      "C": 0.84,
+      "peak": 1.73,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H103",
+    "name": "Multi-dim un-gameable admission",
+    "batch": "E16",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.3,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 1.7,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 1.9,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H104",
+    "name": "Positional cap (Frank)",
+    "batch": "E16",
+    "channel": "quantum",
+    "korea": {
+      "tfr": 0.42,
+      "dpop": 2.5,
+      "C": 0.28,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.51,
+      "dpop": 25.0,
+      "C": 0.78,
+      "peak": 1.59,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.68,
+      "dpop": 24.7,
+      "C": 0.85,
+      "peak": 1.8,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H105",
+    "name": "Inequality compression",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.92,
+      "dpop": 12.2,
+      "C": 0.71,
+      "peak": 0.98,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.65,
+      "dpop": 41.0,
+      "C": 1.0,
+      "peak": 1.79,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.69,
+      "dpop": 26.7,
+      "C": 1.0,
+      "peak": 1.84,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "H106",
+    "name": "Estate / inheritance tax",
+    "batch": "E16",
+    "channel": "quantum",
+    "korea": {
+      "tfr": 0.34,
+      "dpop": 0.7,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.25,
+      "dpop": 6.5,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "durable bend"
+    },
+    "france": {
+      "tfr": 1.4,
+      "dpop": 6.3,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "durable bend"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H107",
+    "name": "Progressive wealth cap",
+    "batch": "E16",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.2,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.52,
+      "dpop": -30.0,
+      "C": 0.48,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.62,
+      "dpop": -26.1,
+      "C": 0.56,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "H108",
+    "name": "Tax childlessness",
+    "batch": "E16",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.3,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 2.2,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 2.5,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H109",
+    "name": "Remove DINK tax advantage",
+    "batch": "E16",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.6,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 3.7,
+      "C": 0.77,
+      "peak": 1.45,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 4.2,
+      "C": 0.84,
+      "peak": 1.66,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H110",
+    "name": "Universal motherhood-penalty removal",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.71,
+      "dpop": 8.0,
+      "C": 0.56,
+      "peak": 0.83,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.62,
+      "dpop": 35.9,
+      "C": 1.0,
+      "peak": 1.74,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.66,
+      "dpop": 22.7,
+      "C": 1.0,
+      "peak": 1.79,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H111",
+    "name": "Israel default + universal IVF",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.51,
+      "dpop": 4.1,
+      "C": 0.42,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.51,
+      "dpop": 25.1,
+      "C": 0.95,
+      "peak": 1.6,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.61,
+      "dpop": 18.5,
+      "C": 1.0,
+      "peak": 1.74,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H112",
+    "name": "High-fertility subculture",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.33,
+      "dpop": 0.5,
+      "C": 0.29,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.21,
+      "dpop": 3.4,
+      "C": 0.8,
+      "peak": 1.44,
+      "dcl": "durable bend"
+    },
+    "france": {
+      "tfr": 1.34,
+      "dpop": 3.2,
+      "C": 0.87,
+      "peak": 1.64,
+      "dcl": "durable bend"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H113",
+    "name": "Hungary cash package",
+    "batch": "E16",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.3,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 1.7,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 2.0,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H114",
+    "name": "Housing supply / zoning",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.5,
+      "dpop": 3.9,
+      "C": 0.41,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.49,
+      "dpop": 23.9,
+      "C": 0.95,
+      "peak": 1.59,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.61,
+      "dpop": 18.2,
+      "C": 1.0,
+      "peak": 1.74,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H115",
+    "name": "Student-debt relief / free tertiary",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.45,
+      "dpop": 2.9,
+      "C": 0.38,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.42,
+      "dpop": 18.1,
+      "C": 0.91,
+      "peak": 1.52,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.56,
+      "dpop": 16.1,
+      "C": 0.98,
+      "peak": 1.71,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H116",
+    "name": "Peer-led parent archetype",
+    "batch": "E16",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.1,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.9,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 1.0,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "H117",
+    "name": "Top-down pronatal propaganda",
+    "batch": "E16",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.5,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.43,
+      "dpop": -34.0,
+      "C": 0.41,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.5,
+      "dpop": -29.4,
+      "C": 0.47,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "H118",
+    "name": "Remove the parenthood happiness penalty",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.44,
+      "dpop": 2.7,
+      "C": 0.37,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.41,
+      "dpop": 17.2,
+      "C": 0.9,
+      "peak": 1.51,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.55,
+      "dpop": 15.6,
+      "C": 0.97,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H119",
+    "name": "Decouple status from job-title/hours",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.4,
+      "dpop": 1.9,
+      "C": 0.34,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.34,
+      "dpop": 12.1,
+      "C": 0.86,
+      "peak": 1.45,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.48,
+      "dpop": 11.0,
+      "C": 0.94,
+      "peak": 1.65,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H120",
+    "name": "Marriage-first exhortation",
+    "batch": "E16",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.2,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.52,
+      "dpop": -30.0,
+      "C": 0.48,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.62,
+      "dpop": -26.1,
+      "C": 0.56,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "H121",
+    "name": "Use-it-or-lose-it default",
+    "batch": "E16",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.51,
+      "dpop": 4.1,
+      "C": 0.42,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.51,
+      "dpop": 25.1,
+      "C": 0.95,
+      "peak": 1.6,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.61,
+      "dpop": 18.5,
+      "C": 1.0,
+      "peak": 1.74,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "H123",
+    "name": "Recycle the defection",
+    "batch": "E16",
+    "channel": "quantum",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.1,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 0.8,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 0.8,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H126",
+    "name": "coupling economies-of-scale (financial channel)",
+    "batch": "E17",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.36,
+      "dpop": 1.1,
+      "C": 0.31,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.27,
+      "dpop": 7.0,
+      "C": 0.83,
+      "peak": 1.44,
+      "dcl": "durable bend"
+    },
+    "france": {
+      "tfr": 1.4,
+      "dpop": 6.4,
+      "C": 0.9,
+      "peak": 1.64,
+      "dcl": "durable bend"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E17-H127",
+    "name": "single-parent precarity",
+    "batch": "E17",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.0,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.0,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.0,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H128",
+    "name": "solo-parent support (benefit-cliff)",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.5,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 2.9,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 3.3,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H129",
+    "name": "reward union duration (de-risk vs lock-in)",
+    "batch": "E17",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.36,
+      "dpop": 1.1,
+      "C": 0.31,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.27,
+      "dpop": 7.2,
+      "C": 0.83,
+      "peak": 1.44,
+      "dcl": "durable bend"
+    },
+    "france": {
+      "tfr": 1.41,
+      "dpop": 6.6,
+      "C": 0.9,
+      "peak": 1.64,
+      "dcl": "durable bend"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E17-H130",
+    "name": "duration bonuses / anniversary holiday / longevity medals",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.0,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.0,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.0,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H131",
+    "name": "lock-in / covenant marriage / adultery penalty",
+    "batch": "E17",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.4,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.47,
+      "dpop": -32.0,
+      "C": 0.44,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.56,
+      "dpop": -27.7,
+      "C": 0.51,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "E17-H132",
+    "name": "school finance + communication education",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.5,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 3.5,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 3.9,
+      "C": 0.84,
+      "peak": 1.65,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H133",
+    "name": "infidelity norm / stigma (soft, non-legal)",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.0,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.1,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.1,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H134",
+    "name": "pornography ban as a fertility lever",
+    "batch": "E17",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.2,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.51,
+      "dpop": -30.2,
+      "C": 0.47,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.61,
+      "dpop": -26.3,
+      "C": 0.55,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "E17-H135",
+    "name": "Amish / enclosed-community fertility",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.0,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.0,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.0,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H136",
+    "name": "universal vs means-tested",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.7,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 4.2,
+      "C": 0.77,
+      "peak": 1.46,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 4.8,
+      "C": 0.84,
+      "peak": 1.67,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H137",
+    "name": "benefit form (cash/in-kind/time)",
+    "batch": "E17",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.88,
+      "dpop": 11.3,
+      "C": 0.68,
+      "peak": 0.95,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.65,
+      "dpop": 39.9,
+      "C": 1.0,
+      "peak": 1.78,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.68,
+      "dpop": 25.7,
+      "C": 1.0,
+      "peak": 1.83,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E17-H138",
+    "name": "credible permanence",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 1.3,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "tempo mirage"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 8.1,
+      "C": 0.77,
+      "peak": 1.54,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.31,
+      "dpop": 9.2,
+      "C": 0.84,
+      "peak": 1.76,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "tempo mirage"
+  },
+  {
+    "id": "E17-H139",
+    "name": "geographic scale",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.2,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 1.5,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 1.7,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H140",
+    "name": "who pays (state vs employer mandate)",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 1.0,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 6.5,
+      "C": 0.77,
+      "peak": 1.51,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.31,
+      "dpop": 7.4,
+      "C": 0.84,
+      "peak": 1.72,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H141",
+    "name": "surrogate-carrier market (conditioned class)",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.1,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.4,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.4,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H142",
+    "name": "optimum-type taxonomy",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.0,
+      "C": 0.26,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.0,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.0,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E17-H143",
+    "name": "robust vs fragile bundle (Seldon manifold)",
+    "batch": "E17",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.33,
+      "dpop": 3.2,
+      "C": 0.28,
+      "peak": 0.81,
+      "dcl": "tempo mirage"
+    },
+    "germany": {
+      "tfr": 1.2,
+      "dpop": 21.3,
+      "C": 0.78,
+      "peak": 1.82,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.34,
+      "dpop": 24.5,
+      "C": 0.85,
+      "peak": 2.08,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "tempo mirage"
+  },
+  {
+    "id": "E18-H144",
+    "name": "compress x lottery-band",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 1.01,
+      "dpop": 14.3,
+      "C": 0.77,
+      "peak": 1.06,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.66,
+      "dpop": 43.2,
+      "C": 1.0,
+      "peak": 1.82,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.71,
+      "dpop": 28.7,
+      "C": 1.0,
+      "peak": 1.87,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "E18-H145",
+    "name": "in-kind x permanence",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 1.15,
+      "dpop": 18.0,
+      "C": 0.86,
+      "peak": 1.18,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.66,
+      "dpop": 45.7,
+      "C": 1.0,
+      "peak": 1.86,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.71,
+      "dpop": 30.8,
+      "C": 1.0,
+      "peak": 1.91,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "E18-H146",
+    "name": "universal+statefund x de-risk",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 1.08,
+      "dpop": 16.1,
+      "C": 0.81,
+      "peak": 1.12,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.66,
+      "dpop": 44.6,
+      "C": 1.0,
+      "peak": 1.84,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.71,
+      "dpop": 30.1,
+      "C": 1.0,
+      "peak": 1.89,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "E18-H147",
+    "name": "coupling-afford x housing-supply",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.59,
+      "dpop": 5.7,
+      "C": 0.48,
+      "peak": 0.75,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 32.5,
+      "C": 1.0,
+      "peak": 1.69,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.63,
+      "dpop": 20.7,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H148",
+    "name": "de-risk x school-ed x peer",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.58,
+      "dpop": 5.4,
+      "C": 0.47,
+      "peak": 0.74,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.59,
+      "dpop": 31.7,
+      "C": 1.0,
+      "peak": 1.68,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.63,
+      "dpop": 20.4,
+      "C": 1.0,
+      "peak": 1.76,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H149",
+    "name": "IVF-default x egg-banking x permanence",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H150",
+    "name": "gender-eq x father-quota x short-hrs",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.61,
+      "dpop": 6.0,
+      "C": 0.49,
+      "peak": 0.76,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.6,
+      "dpop": 33.0,
+      "C": 1.0,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.64,
+      "dpop": 21.0,
+      "C": 1.0,
+      "peak": 1.77,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H151",
+    "name": "inequality-compression x fertility-linked-pension",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.95,
+      "dpop": 12.8,
+      "C": 0.73,
+      "peak": 1.0,
+      "dcl": "coupling escape"
+    },
+    "germany": {
+      "tfr": 1.65,
+      "dpop": 41.7,
+      "C": 1.0,
+      "peak": 1.8,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.7,
+      "dpop": 27.4,
+      "C": 1.0,
+      "peak": 1.85,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "coupling escape"
+  },
+  {
+    "id": "E18-H152",
+    "name": "pension-fertility externality",
+    "batch": "E18",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.2,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 1.3,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 1.5,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E18-H160",
+    "name": "UBI vs child-conditional transfer",
+    "batch": "E18",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.9,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 5.6,
+      "C": 0.77,
+      "peak": 1.49,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 6.4,
+      "C": 0.84,
+      "peak": 1.7,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E18-H163",
+    "name": "employment-precarity formation-brake",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.4,
+      "C": 0.39,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.46,
+      "dpop": 20.9,
+      "C": 0.93,
+      "peak": 1.55,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.3,
+      "C": 0.99,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H153",
+    "name": "egg-freezing option-value trap",
+    "batch": "E18",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.5,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.44,
+      "dpop": -33.5,
+      "C": 0.42,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.52,
+      "dpop": -29.0,
+      "C": 0.48,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "E18-H154",
+    "name": "fecundity floor (sub-fecundity)",
+    "batch": "E18",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.9,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.17,
+      "dpop": 5.9,
+      "C": 0.77,
+      "peak": 1.5,
+      "dcl": "tempo mirage"
+    },
+    "france": {
+      "tfr": 1.3,
+      "dpop": 6.8,
+      "C": 0.84,
+      "peak": 1.71,
+      "dcl": "tempo mirage"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E18-H155",
+    "name": "hypergamy marriage-squeeze",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.51,
+      "dpop": 4.1,
+      "C": 0.42,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.51,
+      "dpop": 25.1,
+      "C": 0.95,
+      "peak": 1.6,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.61,
+      "dpop": 18.5,
+      "C": 1.0,
+      "peak": 1.74,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H156",
+    "name": "one-child-policy hysteresis",
+    "batch": "E18",
+    "channel": "cash",
+    "korea": {
+      "tfr": 0.31,
+      "dpop": 0.1,
+      "C": 0.27,
+      "peak": 0.71,
+      "dcl": "weak / stall"
+    },
+    "germany": {
+      "tfr": 1.16,
+      "dpop": 0.7,
+      "C": 0.77,
+      "peak": 1.44,
+      "dcl": "weak / stall"
+    },
+    "france": {
+      "tfr": 1.29,
+      "dpop": 0.8,
+      "C": 0.84,
+      "peak": 1.64,
+      "dcl": "weak / stall"
+    },
+    "dynamical_verdict": "weak / stall"
+  },
+  {
+    "id": "E18-H157",
+    "name": "grandmother hypothesis (kin proximity)",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.48,
+      "dpop": 3.4,
+      "C": 0.39,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.46,
+      "dpop": 20.9,
+      "C": 0.93,
+      "peak": 1.55,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.6,
+      "dpop": 17.3,
+      "C": 0.99,
+      "peak": 1.73,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H158",
+    "name": "climate/expectations birth-strike",
+    "batch": "E18",
+    "channel": "backfire",
+    "korea": {
+      "tfr": 0.12,
+      "dpop": -3.4,
+      "C": 0.14,
+      "peak": 0.71,
+      "dcl": "backfire"
+    },
+    "germany": {
+      "tfr": 0.47,
+      "dpop": -32.2,
+      "C": 0.44,
+      "peak": 1.44,
+      "dcl": "backfire"
+    },
+    "france": {
+      "tfr": 0.55,
+      "dpop": -27.8,
+      "C": 0.51,
+      "peak": 1.64,
+      "dcl": "backfire"
+    },
+    "dynamical_verdict": "backfire"
+  },
+  {
+    "id": "E18-H159",
+    "name": "migrant-fertility assimilation convergence",
+    "batch": "E18",
+    "channel": "migration",
+    "korea": {
+      "tfr": 0.38,
+      "dpop": 40.4,
+      "C": 0.32,
+      "peak": 0.71,
+      "dcl": "one-time bridge"
+    },
+    "germany": {
+      "tfr": 1.19,
+      "dpop": 221.5,
+      "C": 0.78,
+      "peak": 1.44,
+      "dcl": "one-time bridge"
+    },
+    "france": {
+      "tfr": 1.34,
+      "dpop": 82.3,
+      "C": 0.86,
+      "peak": 1.64,
+      "dcl": "one-time bridge"
+    },
+    "dynamical_verdict": "one-time bridge"
+  },
+  {
+    "id": "E18-H161",
+    "name": "urban-density fertility penalty",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.53,
+      "dpop": 4.4,
+      "C": 0.43,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.53,
+      "dpop": 26.9,
+      "C": 0.97,
+      "peak": 1.62,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.62,
+      "dpop": 19.0,
+      "C": 1.0,
+      "peak": 1.75,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  },
+  {
+    "id": "E18-H162",
+    "name": "status-of-parenthood reversal",
+    "batch": "E18",
+    "channel": "coupling",
+    "korea": {
+      "tfr": 0.44,
+      "dpop": 2.7,
+      "C": 0.37,
+      "peak": 0.71,
+      "dcl": "durable bend"
+    },
+    "germany": {
+      "tfr": 1.4,
+      "dpop": 17.0,
+      "C": 0.9,
+      "peak": 1.51,
+      "dcl": "sustained recovery"
+    },
+    "france": {
+      "tfr": 1.55,
+      "dpop": 15.4,
+      "C": 0.97,
+      "peak": 1.7,
+      "dcl": "sustained recovery"
+    },
+    "dynamical_verdict": "durable bend"
+  }
+]

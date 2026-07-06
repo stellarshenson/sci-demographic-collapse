@@ -1,0 +1,89 @@
+id,name,batch,channel,Korea_dcl,Korea_tfr2125,Korea_dpop,Germany_tfr2125,Germany_dpop
+IV1,Universal subsidized childcare,E14,coupling,coupling escape,0.95,12.8,1.65,41.7
+IV2,Child allowance / cash transfers,E14,cash,tempo mirage,0.31,1.1,1.17,7.4
+IV3,Baby bonus / birth grant (one-off),E14,cash,weak / stall,0.31,0.5,1.17,3.4
+IV4,Paid parental leave (incl. paternity),E14,coupling,durable bend,0.48,3.5,1.47,21.8
+IV5,Family housing support / affordability,E14,coupling,durable bend,0.61,6.0,1.6,33.0
+IV6,Subsidized assisted reproduction (IVF),E14,tempo,weak / stall,0.31,0.1,1.16,0.3
+IV7,Work-family reconciliation (flexible hrs),E14,coupling,durable bend,0.48,3.5,1.47,21.8
+IV8,Pro-natal / replacement migration,E14,migration,one-time bridge,0.38,40.4,1.19,221.5
+IV9,Gender-equity (domestic-labour equalize),E14,coupling,durable bend,0.79,9.5,1.63,37.7
+IV10,Earlier union formation / relationship support,E14,coupling,durable bend,0.48,3.5,1.47,21.8
+IV11,De-stigmatize non-marital births,E14,coupling,durable bend,0.48,3.5,1.47,21.8
+IV12,Reduce intensive-parenting / child-cost norm,E14,cash,weak / stall,0.31,0.8,1.17,5.2
+IV13,Attention-economy / dating-app regulation,E14,coupling,durable bend,0.44,2.7,1.4,17.0
+IV14,Economic security / youth-precarity reduction,E14,coupling,durable bend,0.61,6.0,1.6,33.0
+IV1,Universal childcare,E15,coupling,coupling escape,0.95,12.8,1.65,41.7
+IV9,Gender-equity (domestic),E15,coupling,durable bend,0.79,9.5,1.63,37.7
+IV5,Family housing support,E15,coupling,durable bend,0.61,6.0,1.6,33.0
+IV14,Youth-precarity / job guar.,E15,coupling,durable bend,0.61,6.0,1.6,33.0
+IV4,Paid parental leave (long),E15,coupling,durable bend,0.48,3.5,1.47,21.8
+IV7,Work-family flexibility,E15,coupling,durable bend,0.48,3.5,1.47,21.8
+IV2,Child allowance (cash),E15,cash,weak / stall,0.31,0.7,1.17,4.3
+IV12,Reduce child-cost norm,E15,quantum,durable bend,0.41,2.1,1.45,20.9
+IV6,Baby bonus (one-off),E15,cash,weak / stall,0.31,0.4,1.16,2.6
+IV3,IVF / ART subsidy,E15,tempo,weak / stall,0.31,0.1,1.16,0.3
+IV10,Earlier union formation,E15,coupling,durable bend,0.61,6.0,1.6,33.0
+IV11,Longer / stable unions,E15,coupling,durable bend,0.61,6.0,1.6,33.0
+IV13,State partner-market (camp),E15,coupling,durable bend,0.79,9.5,1.63,37.7
+IV8,Replacement migration,E15,migration,one-time bridge,0.38,40.4,1.19,221.5
+H101,Tutoring ban,E16,backfire,backfire,0.12,-3.5,0.43,-34.0
+H102,Lottery-band admission,E16,cash,weak / stall,0.31,1.0,1.17,6.7
+H103,Multi-dim un-gameable admission,E16,cash,weak / stall,0.31,0.3,1.16,1.7
+H104,Positional cap (Frank),E16,quantum,durable bend,0.42,2.5,1.51,25.0
+H105,Inequality compression,E16,coupling,coupling escape,0.92,12.2,1.65,41.0
+H106,Estate / inheritance tax,E16,quantum,weak / stall,0.34,0.7,1.25,6.5
+H107,Progressive wealth cap,E16,backfire,backfire,0.12,-3.2,0.52,-30.0
+H108,Tax childlessness,E16,cash,weak / stall,0.31,0.3,1.16,2.2
+H109,Remove DINK tax advantage,E16,cash,weak / stall,0.31,0.6,1.17,3.7
+H110,Universal motherhood-penalty removal,E16,coupling,durable bend,0.71,8.0,1.62,35.9
+H111,Israel default + universal IVF,E16,coupling,durable bend,0.51,4.1,1.51,25.1
+H112,High-fertility subculture,E16,coupling,weak / stall,0.33,0.5,1.21,3.4
+H113,Hungary cash package,E16,cash,weak / stall,0.31,0.3,1.16,1.7
+H114,Housing supply / zoning,E16,coupling,durable bend,0.5,3.9,1.49,23.9
+H115,Student-debt relief / free tertiary,E16,coupling,durable bend,0.45,2.9,1.42,18.1
+H116,Peer-led parent archetype,E16,cash,weak / stall,0.31,0.1,1.16,0.9
+H117,Top-down pronatal propaganda,E16,backfire,backfire,0.12,-3.5,0.43,-34.0
+H118,Remove the parenthood happiness penalty,E16,coupling,durable bend,0.44,2.7,1.41,17.2
+H119,Decouple status from job-title/hours,E16,coupling,durable bend,0.4,1.9,1.34,12.1
+H120,Marriage-first exhortation,E16,backfire,backfire,0.12,-3.2,0.52,-30.0
+H121,Use-it-or-lose-it default,E16,coupling,durable bend,0.51,4.1,1.51,25.1
+H123,Recycle the defection,E16,quantum,weak / stall,0.31,0.1,1.17,0.8
+E17-H126,coupling economies-of-scale (financial channel),E17,coupling,durable bend,0.36,1.1,1.27,7.0
+E17-H127,single-parent precarity,E17,coupling,weak / stall,0.31,0.0,1.16,0.0
+E17-H128,solo-parent support (benefit-cliff),E17,cash,weak / stall,0.31,0.5,1.16,2.9
+E17-H129,reward union duration (de-risk vs lock-in),E17,coupling,durable bend,0.36,1.1,1.27,7.2
+E17-H130,duration bonuses / anniversary holiday / longevity medals,E17,cash,weak / stall,0.31,0.0,1.16,0.0
+E17-H131,lock-in / covenant marriage / adultery penalty,E17,backfire,backfire,0.12,-3.4,0.47,-32.0
+E17-H132,school finance + communication education,E17,cash,weak / stall,0.31,0.5,1.17,3.5
+E17-H133,"infidelity norm / stigma (soft, non-legal)",E17,cash,weak / stall,0.31,0.0,1.16,0.1
+E17-H134,pornography ban as a fertility lever,E17,backfire,backfire,0.12,-3.2,0.51,-30.2
+E17-H135,Amish / enclosed-community fertility,E17,cash,weak / stall,0.31,0.0,1.16,0.0
+E17-H136,universal vs means-tested,E17,cash,weak / stall,0.31,0.7,1.17,4.2
+E17-H137,benefit form (cash/in-kind/time),E17,coupling,durable bend,0.88,11.3,1.65,39.9
+E17-H138,credible permanence,E17,cash,tempo mirage,0.31,1.3,1.17,8.1
+E17-H139,geographic scale,E17,cash,weak / stall,0.31,0.2,1.16,1.5
+E17-H140,who pays (state vs employer mandate),E17,cash,weak / stall,0.31,1.0,1.17,6.5
+E17-H141,surrogate-carrier market (conditioned class),E17,cash,weak / stall,0.31,0.1,1.16,0.4
+E17-H142,optimum-type taxonomy,E17,cash,weak / stall,0.31,0.0,1.16,0.0
+E17-H143,robust vs fragile bundle (Seldon manifold),E17,cash,tempo mirage,0.33,3.2,1.2,21.3
+E18-H144,compress x lottery-band,E18,coupling,coupling escape,1.01,14.3,1.66,43.2
+E18-H145,in-kind x permanence,E18,coupling,coupling escape,1.15,18.0,1.66,45.7
+E18-H146,universal+statefund x de-risk,E18,coupling,coupling escape,1.08,16.1,1.66,44.6
+E18-H147,coupling-afford x housing-supply,E18,coupling,durable bend,0.59,5.7,1.6,32.5
+E18-H148,de-risk x school-ed x peer,E18,coupling,durable bend,0.58,5.4,1.59,31.7
+E18-H149,IVF-default x egg-banking x permanence,E18,coupling,durable bend,0.61,6.0,1.6,33.0
+E18-H150,gender-eq x father-quota x short-hrs,E18,coupling,durable bend,0.61,6.0,1.6,33.0
+E18-H151,inequality-compression x fertility-linked-pension,E18,coupling,coupling escape,0.95,12.8,1.65,41.7
+E18-H152,pension-fertility externality,E18,cash,weak / stall,0.31,0.2,1.16,1.3
+E18-H160,UBI vs child-conditional transfer,E18,cash,weak / stall,0.31,0.9,1.17,5.6
+E18-H163,employment-precarity formation-brake,E18,coupling,durable bend,0.48,3.4,1.46,20.9
+E18-H153,egg-freezing option-value trap,E18,backfire,backfire,0.12,-3.5,0.44,-33.5
+E18-H154,fecundity floor (sub-fecundity),E18,cash,weak / stall,0.31,0.9,1.17,5.9
+E18-H155,hypergamy marriage-squeeze,E18,coupling,durable bend,0.51,4.1,1.51,25.1
+E18-H156,one-child-policy hysteresis,E18,cash,weak / stall,0.31,0.1,1.16,0.7
+E18-H157,grandmother hypothesis (kin proximity),E18,coupling,durable bend,0.48,3.4,1.46,20.9
+E18-H158,climate/expectations birth-strike,E18,backfire,backfire,0.12,-3.4,0.47,-32.2
+E18-H159,migrant-fertility assimilation convergence,E18,migration,one-time bridge,0.38,40.4,1.19,221.5
+E18-H161,urban-density fertility penalty,E18,coupling,durable bend,0.53,4.4,1.53,26.9
+E18-H162,status-of-parenthood reversal,E18,coupling,durable bend,0.44,2.7,1.4,17.0

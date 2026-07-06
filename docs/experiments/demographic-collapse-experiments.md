@@ -6,7 +6,7 @@ Experiments log for calibrating the nine-state demographic-collapse model (from 
 
 - **Branch / artefacts** - Notebook 1 (structural, uncalibrated) `notebooks/01-kj-demographic-collapse.ipynb`; E1-E5 execution `notebooks/02-kj-demographic-calibration.ipynb`; design (on convergence) `docs/demographic-collapse-sota.md`
 - **Data** - `data/raw/` open-source ingests (World Bank, Eurostat, OWID) + per-source `MANIFEST.json` (source, URL, retrieval date, license); `data/external/` cited event-forcing anchors
-- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 50 hypotheses H51-H100 incl. coupling-in-depth legislative+psychological levers, a deeper-drivers chapter on the career-first arms race, and an interactions/side-effects analysis): **37 SUPPORTED, 10 PARTIAL, 3 REFUTED**. Round 10 E16 (2026-07-06, `notebooks/11-kj-incentives-arms-races-defection.ipynb`, incentives / arms races / defection - named-incentive mechanisms with a defection parameter δ and side-effect cost, 25 hypotheses H101-H125): **15 SUPPORTED, 6 PARTIAL, 4 REFUTED**. Round 11 E17 (2026-07-06, `notebooks/12-kj-swept-design-spans.ipynb`, swept design spans - each hypothesis's Experiment/Result is a swept response curve locating its optimum, discrete-hypothesis discipline held; coupling economics, the outside-option valve, policy geometry, a controversial surrogate-carrier market, 18 hypotheses H126-H143): **12 SUPPORTED, 3 PARTIAL, 3 REFUTED**. **Campaign total: 168 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 37 SUPPORTED, 10 PARTIAL, 3 REFUTED; E16: 15 SUPPORTED, 6 PARTIAL, 4 REFUTED; E17: 12 SUPPORTED, 3 PARTIAL, 3 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`; decision-maker star-ranking with mechanism-of-effect + side-effects in `docs/interventions.md`; research library in `references/papers/` (27 PDFs + 41 digests)
+- **Status** - EXECUTED. E1-E5 (2026-07-06, `notebooks/02-kj-demographic-calibration.ipynb`): **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**. Round 1 E6-E7 (2026-07-06, `notebooks/03-kj-demographic-sota.ipynb`, age-structured SOTA rewrite on UN WPP 2024): **4 SUPPORTED, 1 REFRAMED**. Round 2-3 E8-E9 (2026-07-06, `notebooks/04-kj-demographic-calibration-bayes.ipynb`, tempo-quantum + Bayesian free-energy): **5 SUPPORTED, 1 PARTIAL**. Round 4 E10 (2026-07-06, `notebooks/05-kj-demographic-crises.ipynb`, crisis battery + counterfactual costs): **4 SUPPORTED, 1 PARTIAL**. Round 5 E11 (2026-07-06, `notebooks/06-kj-demographic-interventions.ipynb`, forward projections + interventions to 2100): **3 SUPPORTED**. Round 6 E12 (2026-07-06, `notebooks/07-kj-demographic-recalibration.ipynb`, Wasserstein recalibration closing the prediction gap): **6 SUPPORTED**. Round 7 E13 (2026-07-06, `notebooks/08-kj-demographic-contrarian.ipynb`, contrarian audit - 25 attacks on the campaign's own findings, inverted convention): **12 findings survived, 13 qualified**. Round 8 E14 (2026-07-06, `notebooks/09-kj-demographic-reversal.ipynb`, reversal-intervention catalogue + Seldon manifold / drivers / interventions images): **5 SUPPORTED**. Round 9 E15 (2026-07-06, `notebooks/10-kj-demographic-intervention-story.ipynb`, coupling keystone + literature-grounded intervention strengths on one extensible interface, 50 hypotheses H51-H100 incl. coupling-in-depth legislative+psychological levers, a deeper-drivers chapter on the career-first arms race, and an interactions/side-effects analysis): **37 SUPPORTED, 10 PARTIAL, 3 REFUTED**. Round 10 E16 (2026-07-06, `notebooks/11-kj-incentives-arms-races-defection.ipynb`, incentives / arms races / defection - named-incentive mechanisms with a defection parameter δ and side-effect cost, 25 hypotheses H101-H125): **15 SUPPORTED, 6 PARTIAL, 4 REFUTED**. Round 11 E17 (2026-07-06, `notebooks/12-kj-swept-design-spans.ipynb`, swept design spans - each hypothesis's Experiment/Result is a swept response curve locating its optimum, discrete-hypothesis discipline held; coupling economics, the outside-option valve, policy geometry, a controversial surrogate-carrier market, 18 hypotheses H126-H143): **12 SUPPORTED, 3 PARTIAL, 3 REFUTED**. Round 12 E18 (2026-07-06, `notebooks/13-kj-hybrids-and-undercurrents.ipynb`, hybrids of the proven winners + creative new levers each anchored to a named undercurrent [financial/institutional, biological, cultural/marriage-market, psychological], grounded in three research digests, 20 hypotheses H144-H163): **10 SUPPORTED, 8 PARTIAL, 2 REFUTED**. Round 13 E19 (2026-07-06, `notebooks/14-kj-dynamical-intervention-simulation.ipynb`, dynamical re-examination - a recalibrated emergent behavioural model [channels = the observable parameters C/ρ/P̄/τ/S] coupled to Leslie with dependency feedback, calibrated to real 2023 fertility, makes the model the judge; all ~88 catalogue interventions integrated 4 generations 2023→2125 and classified by their dynamics): **validation round, no new hypotheses**. **Campaign total: 188 hypotheses** - E1-E12: 34 SUPPORTED, 5 REFUTED, 2 REFRAMED, 3 PARTIAL, 1 INCONCLUSIVE; E13 audit: 12 survived, 13 qualified; E14: 5 SUPPORTED; E15: 37 SUPPORTED, 10 PARTIAL, 3 REFUTED; E16: 15 SUPPORTED, 6 PARTIAL, 4 REFUTED; E17: 12 SUPPORTED, 3 PARTIAL, 3 REFUTED; E18: 10 SUPPORTED, 8 PARTIAL, 2 REFUTED. SOTA design distilled in `docs/demographic-collapse-sota.md`; decision-maker star-ranking with mechanism-of-effect + side-effects in `docs/interventions.md`; research library in `references/papers/` (27 PDFs + 41 digests)
 
 ## Problem overview
 
@@ -886,7 +886,84 @@ valve, policy geometry, a controversial surrogate-carrier market, and two synthe
 - **The coercive extremes sign-flip or drown in side-cost** - employer mandates (hiring discrimination), a conditioned surrogate class (commodification), a porn ban (evasion + null) and duration lock-in (welfare harm) are each dominated once the side-cost is stacked
 - **No universal optimum** - the optima are diverse (interior sweet-spots, hard corners, sign-flips); there is no lever you simply turn to 11, and the structure of the optimum tells the designer whether to tune a dose, go all the way, or stop before the lever inverts
 
-## Interventions parking lot (recorded, NOT planned)
+## E18 - Hybrids and undercurrents
+
+E18 does two things the campaign had not: it **hybridises the proven winners** (does stacking complementary
+low-δ levers beat either alone?) and reaches for **creative new levers each anchored to a named undercurrent**
+(financial/institutional, biological, cultural/marriage-market, psychological). Each stays discrete (appended
+after E17-H143); a hybrid's Experiment/Result is a blend sweep locating the optimum mix and the super-additive
+premium, a creative lever's is an intensity sweep locating its optimum type. Grounded in three research digests
+(biological fecundity; financial/institutional levers; cultural/marriage-market mechanisms), whose honesty
+flags are carried into the verdicts. Executed in `notebooks/13-kj-hybrids-and-undercurrents.ipynb`. Twenty
+hypotheses; 10 SUPPORTED, 8 PARTIAL, 2 REFUTED.
+
+### E18 at a glance
+
+| id | claim | evidence | verdict |
+| --- | --- | --- | --- |
+| E18-H144 | compress x lottery-band is super-additive | complementary channels (removes the fuel + the target); blend* 0.31, net +0.273, super-additive +0.023 | SUPPORTED |
+| E18-H145 | a constitutionally-locked in-kind childcare guarantee | form x durability (in-kind persists, permanence earns the full response); net +0.325 | SUPPORTED |
+| E18-H146 | universal state-funded leave with a job guarantee | penalty-removal + state-funding + de-risk stacked; net +0.300 | SUPPORTED |
+| E18-H147 | couple-targeted family housing via supply | economies-of-scale x supply (3bed+ units ~2.3x births/euro); net +0.145 | SUPPORTED |
+| E18-H148 | de-risk x school-education x peer contagion | PREP delivered bottom-up as a peer norm; super-additive +0.050; net +0.140 | SUPPORTED |
+| E18-H149 | a universal reproductive-insurance default (IVF + egg-banking) | insure the biological runway but the egg-freezing option-trap caps it - optimum is low reliance; net +0.150 | PARTIAL |
+| E18-H150 | the second-shift stack (gender-equity x father-quota x shorter hours) | equalise the domestic load; super-additive +0.030; net +0.150 | SUPPORTED |
+| E18-H151 | compress inequality x fertility-linked pension | the pension corrective is thin so compression dominates the blend; net +0.250 | PARTIAL |
+| E18-H152 | the pension-fertility externality | Boldrin-De Nardi-Jones - pension = 10% of GDP <-> −0.7 to −1.6 TFR (55-65% of the US-EU gap); a fertility-linked pension internalises it but enacted-credit effects are small | PARTIAL |
+| E18-H153 | the egg-freezing option-value trap backfires | return-to-use ~5.7%, unconditional live-birth ~1.6%; the option value licenses postponement that costs more births than it delivers; net sign-flips negative | REFUTED |
+| E18-H154 | the fecundity floor is a minority driver | a 3-4yr delay costs only ~0.1-0.2 children biologically; obesity −3%/BMI-unit is best-evidenced; sperm-count/EDC narratives contested | PARTIAL |
+| E18-H155 | the hypergamy marriage-squeeze | women out-educate men in 139+ countries; Korea hypergamous marriages 22%->11%; bites via the marriage margin (East Asia), norm self-eroding, second-shift confound | PARTIAL |
+| E18-H156 | one-child-policy hysteresis - permission is not a lever | China TFR FELL 1.67 (2015) -> 1.09 (2022) after lifting the policy; RDD - only-child status lowers ideal family size; you cannot un-ring the bell | SUPPORTED |
+| E18-H157 | the grandmother hypothesis | grandmother >=200km away <-> ~1 fewer child; daily kin care 30% IT/ES vs 2% Nordic; loads on the 2nd birth; move-near-kin endogeneity caveat | SUPPORTED |
+| E18-H158 | the climate/expectations birth-strike | 20-33% cite climate; behaviourally real but only among committed environmentalists via the childless-forgoing margin; optimism can't be engineered top-down (Decree 770) | REFUTED |
+| E18-H159 | migrant-fertility convergence - a bridge not a cure | gen-2 fertility often below natives; full convergence >1 generation (Turkish-origin the slow outlier); migration is a one-time level boost per cohort | SUPPORTED |
+| E18-H160 | UBI adds no unconditionality premium | Alaska PFD +13.1% fertility (tempo, strongest for disadvantaged); unconditionality adds nothing over a child-conditional transfer - response tracks cash size + liquidity | PARTIAL |
+| E18-H161 | the urban-density penalty (low-confidence) | apartment cores ~TFR 1.0 vs family suburbs ~2.0; mechanism is housing space not density; heavy self-selection, no natural experiment | PARTIAL |
+| E18-H162 | status-of-parenthood reversal (bottom-up only) | make parenthood positional again; peer contagion works, top-down status engineering backfires like propaganda | PARTIAL |
+| E18-H163 | the precarity formation-brake | Alderotti meta-analysis - temporary contracts cut births (esp. 2nd), effect strengthening over time; security pulls formation earlier (rho down) | SUPPORTED |
+
+### Lessons
+
+- **Stacking complementary winners is super-additive** - the biggest premiums come from hybrids whose parts act on *different* channels (compress the fuel + make the prize un-buyable; de-risk + teach the skills + spread as a peer norm; equalise the second shift across leave and hours); stacking two levers on the same channel only saturates
+- **The deep undercurrents are mostly slow, contested, or one-time** - the pension externality and the marriage-market squeeze are real but confounded and self-eroding; migration and the grandmother effect are a bridge or an endowment, not a durable policy lever
+- **The biological channel is a hard wall but a minority driver** - a 3-4yr delay costs only ~0.1-0.2 children, and its "solution" (egg-freezing) can backfire by licensing the very postponement that causes the loss; the honest lever is metabolic health and not postponing, not a ban
+- **Permission is not a lever** - one-child-policy hysteresis is the sharpest warning: lifting a restriction did not restore fertility because norms and cost structures lock in below the policy; you cannot un-ring the bell
+- **Naming the undercurrent disciplines the claim** - forcing each lever to declare its financial / biological / cultural / psychological mechanism separates the durable levers from the vague ones
+
+## E19 - Dynamical re-examination (the model as judge)
+
+E19 is a methodological round, not new hypotheses. It re-examines the whole intervention catalogue (E14-E18,
+~88 levers) by making the calibrated model the *judge* instead of scoring levers from static response curves.
+A recalibrated **emergent behavioural model** - channels are the campaign's own observable parameters, C
+(coupling), ρ_c (childlessness), P̄ (parity), τ (tempo), S (security), each with its own dynamics adapted from
+the nine-state ODE - is coupled to the Leslie core with a dependency→security feedback, calibrated per region
+to reproduce real 2023 fertility exactly, and each intervention is integrated four generations (2023→2125).
+The verdict comes from the trajectory. Executed in `notebooks/14-kj-dynamical-intervention-simulation.ipynb`.
+
+The rebuild replaced a failed first attempt that routed every lever through the nine-state ODE's single
+bistable coupling state (flattening all diversity into "did you cross the separatrix"). The fix: channels =
+the observable parameters; TFR = C·(1−ρ_c)·P̄·Ψ_fec(τ) with a Bongaarts-Feeney period-rate term so a timing
+lever spikes then reverts; a soft-bistable coupling trap at the empirical TFR-1.5 ridge; and a per-region
+calibration whose baseline reproduces the known decline (Korea alone in the collapse basin) with no lever.
+
+### Dynamical findings (re-judgement of the catalogue)
+
+| finding | evidence from the coupled dynamics |
+| --- | --- |
+| baseline reproduces reality | model TFR23 matches all six regions exactly; baseline 2125 shows persistent sub-replacement, Korea the acute collapse (TFR 0.72→~0.47, C 0.52→0.38) - no spontaneous recovery |
+| tempo is a mirage | a timing lever spikes the period rate (Korea peak ~0.91@yr12) then reverts to baseline - it borrows births from the future, changes no completed family |
+| quantum needs coupling | raising parity works where coupling is intact (Germany 1.44→~1.95) but is gated where coupling has collapsed (Korea) - the keystone, emergent not assumed |
+| coupling is the escape | only levers that rebuild coupling cross the separatrix; 7 of 88 single levers achieve a coupling-escape on Korea (in-kind+permanence, universal+state-funded+de-risk, compress x lottery-band, universal childcare, inequality compression), the rest bend or stall |
+| migration is a bridge | biggest raw effect (+115pp mean population) but C unmoved - it buys time, it does not cure (flagged one-time bridge) |
+| coercion backfires | 8 coercive levers (tutoring ban, top-down propaganda, wealth cap, lock-in/covenant/adultery, porn ban, egg-freezing trap) push the trajectory below baseline |
+| ranking strongest→weakest | migration (bridge) > coupling-escape (in-kind/inequality/childcare ~+27-32pp) > durable-bend (gender-equity/penalty-removal/housing/precarity ~+20-26pp) > weak/mirage (cash/allowance/IVF ~0-5pp) > backfire (negative) |
+| timing is decisive | the same keystone bundle compounds through momentum when started early (2025) and is largely wasted a generation late (2055) - leverage is a function of position and timing |
+
+### Lessons
+
+- **Make the model the judge** - static response curves give a lever's shape but not its fate; integrating each intervention through the coupled model over generations separates a durable quantum shift from a tempo mirage, and shows which levers actually cross the separatrix
+- **Channel structure must be the observable parameters** - routing every lever through one bistable state flattens the analysis; letting interventions move the campaign's own parameters (C, ρ, P̄, τ) and reading TFR off the decomposition restores interpretable, separable signals
+- **Position and timing dominate magnitude** - the same lever recovers Germany and only bends Korea; the same bundle compounds early and is wasted late - the dynamical view makes this measurable
 
 Candidate interventions for a later, separate round - **no hypotheses planned until the model is calibrated** (an uncalibrated model cannot size an intervention). Recorded here so the ideas are not lost.
 

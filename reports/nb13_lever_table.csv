@@ -1,0 +1,21 @@
+id,part,name,undercurrent,optimum_type,theta_star,net,verdict
+E18-H144,A-hybrid,compress x lottery-band,educational+financial,blend,0.31,0.2734,SUPPORTED
+E18-H145,A-hybrid,in-kind x permanence,financial+institutional,blend,0.97,0.3251,SUPPORTED
+E18-H146,A-hybrid,universal+statefund x de-risk,financial+psychological,blend,0.0,0.3,SUPPORTED
+E18-H147,A-hybrid,coupling-afford x housing-supply,financial,blend,0.82,0.1451,SUPPORTED
+E18-H148,A-hybrid,de-risk x school-ed x peer,educational+cultural,blend,0.5,0.14,SUPPORTED
+E18-H149,A-hybrid,IVF-default x egg-banking x permanence,biological+institutional,corner,0.0,0.15,PARTIAL
+E18-H150,A-hybrid,gender-eq x father-quota x short-hrs,cultural+financial,blend,0.5,0.15,SUPPORTED
+E18-H151,A-hybrid,inequality-compression x fertility-linked-pension,financial+institutional,corner,0.0,0.25,PARTIAL
+E18-H152,B-financial,pension-fertility externality,financial/institutional,interior,0.25,0.0314,PARTIAL
+E18-H160,B-financial,UBI vs child-conditional transfer,financial,corner,0.0,0.13,PARTIAL
+E18-H163,B-financial,employment-precarity formation-brake,financial/psychological,corner,1.0,0.0964,SUPPORTED
+E18-H153,B-biological,egg-freezing option-value trap,biological/psychological,sign-flip,0.06,-0.1046,REFUTED
+E18-H154,B-biological,fecundity floor (sub-fecundity),biological,saturating,1.0,0.1377,PARTIAL
+E18-H155,B-cultural,hypergamy marriage-squeeze,cultural/financial,corner,1.0,0.1131,PARTIAL
+E18-H156,B-cultural,one-child-policy hysteresis,cultural/path-dependence,null,1.0,0.0173,SUPPORTED
+E18-H157,B-cultural,grandmother hypothesis (kin proximity),financial/cultural,corner,1.0,0.0964,SUPPORTED
+E18-H158,B-psychological,climate/expectations birth-strike,psychological,sign-flip,0.41,-0.0665,REFUTED
+E18-H159,B-cultural,migrant-fertility assimilation convergence,demographic/cultural,corner,0.0,0.14,SUPPORTED
+E18-H161,B-cultural,urban-density fertility penalty,structural/psychological,corner,0.0,0.12,PARTIAL
+E18-H162,B-psychological,status-of-parenthood reversal,cultural/psychological,sign-flip,0.0,0.08,PARTIAL

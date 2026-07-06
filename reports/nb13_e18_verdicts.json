@@ -1,0 +1,222 @@
+[
+  {
+    "id": "E18-H144",
+    "part": "A-hybrid",
+    "name": "compress x lottery-band",
+    "undercurrent": "educational+financial",
+    "optimum_type": "blend",
+    "theta_star": 0.31,
+    "net": 0.2734,
+    "verdict": "SUPPORTED",
+    "evidence": "combines inequality-compression x lottery-bucketing; super-additive +0.023; removes the fuel (skill premium) AND the target (buyable rank)"
+  },
+  {
+    "id": "E18-H145",
+    "part": "A-hybrid",
+    "name": "in-kind x permanence",
+    "undercurrent": "financial+institutional",
+    "optimum_type": "blend",
+    "theta_star": 0.97,
+    "net": 0.3251,
+    "verdict": "SUPPORTED",
+    "evidence": "combines in-kind services x credible-permanence; super-additive +0.000; a constitutionally-locked in-kind childcare guarantee - form x durability"
+  },
+  {
+    "id": "E18-H146",
+    "part": "A-hybrid",
+    "name": "universal+statefund x de-risk",
+    "undercurrent": "financial+psychological",
+    "optimum_type": "blend",
+    "theta_star": 0.0,
+    "net": 0.3,
+    "verdict": "SUPPORTED",
+    "evidence": "combines universal-penalty-removal x state-funding x de-risk; super-additive +0.000; universal state-funded leave with a job guarantee"
+  },
+  {
+    "id": "E18-H147",
+    "part": "A-hybrid",
+    "name": "coupling-afford x housing-supply",
+    "undercurrent": "financial",
+    "optimum_type": "blend",
+    "theta_star": 0.82,
+    "net": 0.1451,
+    "verdict": "SUPPORTED",
+    "evidence": "combines coupling-affordability x housing-supply; super-additive +0.005; couple-targeted family housing via supply (3bed+ ~2.3x births/euro)"
+  },
+  {
+    "id": "E18-H148",
+    "part": "A-hybrid",
+    "name": "de-risk x school-ed x peer",
+    "undercurrent": "educational+cultural",
+    "optimum_type": "blend",
+    "theta_star": 0.5,
+    "net": 0.14,
+    "verdict": "SUPPORTED",
+    "evidence": "combines de-risk-dissolution x school-education x peer-contagion; super-additive +0.050; PREP delivered bottom-up as a peer norm - contagion multiplies uptake"
+  },
+  {
+    "id": "E18-H149",
+    "part": "A-hybrid",
+    "name": "IVF-default x egg-banking x permanence",
+    "undercurrent": "biological+institutional",
+    "optimum_type": "corner",
+    "theta_star": 0.0,
+    "net": 0.15,
+    "verdict": "PARTIAL",
+    "evidence": "insure the biological runway but the egg-freezing option-trap caps it - optimum is low reliance (H153)"
+  },
+  {
+    "id": "E18-H150",
+    "part": "A-hybrid",
+    "name": "gender-eq x father-quota x short-hrs",
+    "undercurrent": "cultural+financial",
+    "optimum_type": "blend",
+    "theta_star": 0.5,
+    "net": 0.15,
+    "verdict": "SUPPORTED",
+    "evidence": "combines gender-equity x father-quota x decouple-overwork; super-additive +0.030; the second-shift stack - equalise the domestic load"
+  },
+  {
+    "id": "E18-H151",
+    "part": "A-hybrid",
+    "name": "inequality-compression x fertility-linked-pension",
+    "undercurrent": "financial+institutional",
+    "optimum_type": "corner",
+    "theta_star": 0.0,
+    "net": 0.25,
+    "verdict": "PARTIAL",
+    "evidence": "the pension corrective has thin causal support (H152) so compression dominates the blend"
+  },
+  {
+    "id": "E18-H152",
+    "part": "B-financial",
+    "name": "pension-fertility externality",
+    "undercurrent": "financial/institutional",
+    "optimum_type": "interior",
+    "theta_star": 0.25,
+    "net": 0.0314,
+    "verdict": "PARTIAL",
+    "evidence": "Boldrin-De Nardi-Jones: pension=10% GDP <-> -0.7..-1.6 TFR gross (55-65% of the US-EU gap); a fertility-linked pension internalises it but enacted-credit effects are small - thin causal support"
+  },
+  {
+    "id": "E18-H160",
+    "part": "B-financial",
+    "name": "UBI vs child-conditional transfer",
+    "undercurrent": "financial",
+    "optimum_type": "corner",
+    "theta_star": 0.0,
+    "net": 0.13,
+    "verdict": "PARTIAL",
+    "evidence": "Alaska PFD +13.1% fertility (strongest for disadvantaged) but tempo; unconditionality adds NO premium over child-conditional - response tracks cash size + liquidity, not the absence of conditions"
+  },
+  {
+    "id": "E18-H163",
+    "part": "B-financial",
+    "name": "employment-precarity formation-brake",
+    "undercurrent": "financial/psychological",
+    "optimum_type": "corner",
+    "theta_star": 1.0,
+    "net": 0.0964,
+    "verdict": "SUPPORTED",
+    "evidence": "Alderotti meta-analysis: temporary contracts cut births (esp. 2nd), effect strengthening over time; security pulls formation earlier (rho down); Korea +2.5pp (tempo caveat)"
+  },
+  {
+    "id": "E18-H153",
+    "part": "B-biological",
+    "name": "egg-freezing option-value trap",
+    "undercurrent": "biological/psychological",
+    "optimum_type": "sign-flip",
+    "theta_star": 0.06,
+    "net": -0.1046,
+    "verdict": "REFUTED",
+    "evidence": "return-to-use ~5.7%, unconditional live-birth ~1.6%; the option value licenses postponement that costs more births than it delivers - insure the runway, don't postpone (no RCT yet, inferred)"
+  },
+  {
+    "id": "E18-H154",
+    "part": "B-biological",
+    "name": "fecundity floor (sub-fecundity)",
+    "undercurrent": "biological",
+    "optimum_type": "saturating",
+    "theta_star": 1.0,
+    "net": 0.1377,
+    "verdict": "PARTIAL",
+    "evidence": "a 3-4yr delay costs only ~0.1-0.2 children biologically; obesity -3%/BMI-unit is the best-evidenced piece, age wall steep after 37; sperm-count/EDC narratives contested - a hard wall but a minority cause"
+  },
+  {
+    "id": "E18-H155",
+    "part": "B-cultural",
+    "name": "hypergamy marriage-squeeze",
+    "undercurrent": "cultural/financial",
+    "optimum_type": "corner",
+    "theta_star": 1.0,
+    "net": 0.1131,
+    "verdict": "PARTIAL",
+    "evidence": "women out-educate men in 139+ countries; Korea hypergamous marriages 22%->11%; bites via the marriage margin (East Asia), norm already eroding on its own, confounded with the second-shift"
+  },
+  {
+    "id": "E18-H156",
+    "part": "B-cultural",
+    "name": "one-child-policy hysteresis",
+    "undercurrent": "cultural/path-dependence",
+    "optimum_type": "null",
+    "theta_star": 1.0,
+    "net": 0.0173,
+    "verdict": "SUPPORTED",
+    "evidence": "China TFR FELL 1.67(2015)->1.09(2022) AFTER lifting the policy; RDD - only-child status durably lowers ideal family size; norms + cost structures lock in below the policy (you can't un-ring the bell)"
+  },
+  {
+    "id": "E18-H157",
+    "part": "B-cultural",
+    "name": "grandmother hypothesis (kin proximity)",
+    "undercurrent": "financial/cultural",
+    "optimum_type": "corner",
+    "theta_star": 1.0,
+    "net": 0.0964,
+    "verdict": "SUPPORTED",
+    "evidence": "grandmother >=200km away <-> ~1 fewer child; daily care 30% IT/ES vs 2% Nordic; loads on the 2nd birth; endogeneity (move near kin) + substitutes weak formal childcare; Korea +2.4pp"
+  },
+  {
+    "id": "E18-H158",
+    "part": "B-psychological",
+    "name": "climate/expectations birth-strike",
+    "undercurrent": "psychological",
+    "optimum_type": "sign-flip",
+    "theta_star": 0.41,
+    "net": -0.0665,
+    "verdict": "REFUTED",
+    "evidence": "20-33% cite climate; behaviourally real but only among committed environmentalists (minority) via the childless-forgoing margin; optimism can't be engineered top-down - propaganda backfires (Decree 770)"
+  },
+  {
+    "id": "E18-H159",
+    "part": "B-cultural",
+    "name": "migrant-fertility assimilation convergence",
+    "undercurrent": "demographic/cultural",
+    "optimum_type": "corner",
+    "theta_star": 0.0,
+    "net": 0.14,
+    "verdict": "SUPPORTED",
+    "evidence": "gen-2 fertility often BELOW natives; full convergence >1 generation (Turkish-origin the slow outlier); migration is a one-time level boost per cohort, sustained only by continuous inflow - a bridge, not a cure"
+  },
+  {
+    "id": "E18-H161",
+    "part": "B-cultural",
+    "name": "urban-density fertility penalty",
+    "undercurrent": "structural/psychological",
+    "optimum_type": "corner",
+    "theta_star": 0.0,
+    "net": 0.12,
+    "verdict": "PARTIAL",
+    "evidence": "apartment cores ~TFR 1.0 vs family suburbs ~2.0; mechanism is housing space/type not density per se; heavy self-selection, no natural experiment - flagged low-confidence"
+  },
+  {
+    "id": "E18-H162",
+    "part": "B-psychological",
+    "name": "status-of-parenthood reversal",
+    "undercurrent": "cultural/psychological",
+    "optimum_type": "sign-flip",
+    "theta_star": 0.0,
+    "net": 0.08,
+    "verdict": "PARTIAL",
+    "evidence": "make parenthood a positional/high-status good again; bottom-up peer contagion works, top-down status engineering backfires like propaganda (span G) - peer-led only"
+  }
+]

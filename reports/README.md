@@ -77,6 +77,19 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb12_optimum_taxonomy.png` - the optima classified (interior / corner / sign-flip) - no universal "turn it to 11"
 - `nb12_manifold_bundles.png` - the robust valve-paired bundle crosses the Seldon separatrix where the coercive/dominated bundle stalls
 
+**Hybrids and undercurrents (Notebook 13, E18)**
+- `nb13_hybrids.png` - the eight hybrid blend curves (pure-A to pure-B) with the super-additive premium marked where complementary channels stack
+- `nb13_financial.png` - financial/institutional undercurrents: the pension-fertility externality, UBI vs child-conditional, the precarity formation-brake
+- `nb13_biological.png` - biological undercurrents: the egg-freezing option-value trap (sign-flip) and the fecundity floor (capped, minority driver)
+- `nb13_cultural.png` - cultural/marriage-market undercurrents: hypergamy squeeze, one-child hysteresis, the grandmother effect, climate birth-strike, migrant convergence, urban density, status reversal
+- `nb13_synthesis.png` - verdicts grouped by undercurrent channel, and the hybrid super-additive premium ranked
+
+**Dynamical simulation - the model as judge (Notebook 14, E19)**
+- `nb14_baseline.png` - baseline validation: the coupled model's TFR and coupling C to 2125, Korea alone crossing into the collapse basin (no intervention)
+- `nb14_signals.png` - the three archetypal signals: tempo bumps-and-reverts, quantum needs coupling, coupling escapes the trap; the same quantum lever works in Germany but is gated in Korea
+- `nb14_classes_position.png` - dynamical class of all ~88 interventions by region, and the same-lever Korea-vs-Germany position-dependence
+- `nb14_interaction_timing.png` - a keystone bundle vs a cash bundle, started early vs a generation late: momentum makes timing decisive
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
@@ -96,6 +109,10 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb11_e16_verdicts.json` - all 25 E16 verdicts (H101-H125) with evidence
 - `nb12_span_table.csv` - E17 swept-span catalogue: named incentive, optimum type + location, net, side-cost, δ, verdict
 - `nb12_e17_verdicts.json` - all 18 E17 verdicts (H126-H143) with evidence
+- `nb13_lever_table.csv` - E18 hybrid + creative-lever catalogue: undercurrent, optimum type + location, net, verdict
+- `nb13_e18_verdicts.json` - all 20 E18 verdicts (H144-H163) with evidence
+- `nb14_dynamical_table.csv` - E19 dynamical re-judgement: each intervention's channel, Korea/Germany 2125 TFR + population gain, and dynamical class
+- `nb14_e19_verdicts.json` - full E19 dynamical results for all 88 interventions across Korea/Germany/France
 
 ## Verdict records
 
