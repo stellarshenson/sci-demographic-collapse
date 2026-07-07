@@ -160,7 +160,7 @@ Two layers, and a bridge between them that is the point of the whole design.
 
 The **behavioural layer** is a system of coupled first-order ODEs in time - the observable channels (coupling $C$, childlessness $\rho$, parity $\bar P$, tempo $\tau$, security $S$, the bistable social norm $N$, and marriageability $q$) pushing on one another, with total fertility their product:
 
-$$\text{TFR}(t) = C\,(1-\rho)\,\bar P\,\operatorname{fec}(\tau)\,\bigl(1 - k_{BF}\,\Delta\tau\bigr).$$
+$$\text{TFR}(t) = C\,(1-\rho)\,\bar P\,\mathrm{fec}(\tau)\,\bigl(1 - k_{BF}\,\Delta\tau\bigr).$$
 
 The **demographic backbone** is an age-structured cohort-component projection - the **Leslie** operator - and this is the crucial recognition: Leslie is exactly the finite-difference form of the **McKendrick-von Foerster / Sharpe-Lotka renewal PDE**,
 
@@ -172,13 +172,13 @@ The transport term $\partial_t + \partial_a$ is the derivative *along a cohort's
 
 $$\rho_{k+1} = \arg\min_{\rho}\ \mathcal{F}[\rho] + \frac{1}{2\tau}\,W_2^2\!\left(\rho,\rho_k\right),$$
 
-with interventions and selection expressed as transport maps: a policy is a pushforward $T_\#\rho$, the matriarchy male-exit is a truncation, therapy transports the low-$q$ tail upward.
+with interventions and selection expressed as transport maps: a policy is a pushforward $T_\sharp\rho$, the matriarchy male-exit is a truncation, therapy transports the low-$q$ tail upward.
 
 **The tradeoff, stated plainly.** There are two ways to give behaviour an age/cohort dimension. An **Eulerian PDE** adds age and state axes and solves them on a grid - faithful, but it smears cohorts through numerical diffusion and its cost explodes with every channel added. The **Lagrangian** route - the method of characteristics - instead follows cohort *particles* down their life-lines; it is mass-conserving, diffusion-free, and keeps each cohort's identity intact. We take the Lagrangian route, and optimal transport is what makes it exact and cheap. In one dimension the optimal plan is the **monotone, order-preserving rearrangement**, $W_2$ is the $L^2$ distance between quantile functions - the very quantity that already closed the model's calibration gap (the exact one-dimensional Wasserstein fit) - and the morph between two population states is linear interpolation in quantile space. No cost matrix, no Sinkhorn iteration, no approximation. The price is paid honestly: a distribution is a heavier object to evolve and calibrate than a scalar, and the elegance has to earn its keep by predicting *more faithfully* than the mean-field lag it replaces - a bar the build is measured against, not assumed to clear.
 
 **Why the path integral is the game-changer.** Because the one-dimensional optimal map preserves quantile rank, a cohort keeps its place in the distribution as it morphs - the transport plan *is* the Lexis life-line, now drawn in behavioural-state space rather than in age. That lets us carry, down each life-line, a **path integral of the cohort's own exposures**,
 
-$$J(u) = \int_{\text{birth}}^{t} \operatorname{effect}\!\bigl(\theta_u(s)\bigr)\,\mathrm{d}s,$$
+$$J(u) = \int_{\text{birth}}^{t} \mathrm{effect}\!\bigl(\theta_u(s)\bigr)\,\mathrm{d}s,$$
 
 so that therapy which slowly heals, relationship scars that accumulate, and the childhood-environment integral stop being a single aggregate lag and become genuine *life-course* integrals - one per cohort. The intergenerational channel then takes its true form: a parent cohort's *completed* path integral sets the **initial condition** of the child cohort's line - the honest statement of how alienation and a father-figure deficit are transmitted to the next generation. Classical demography integrates only survival and fertility down the life-line; carrying the behavioural exposures along the same characteristic is what turns an age-flat behavioural model with a crude lag into a **cohort-resolved, life-course instrument**. That is the game-changer - not a new equation bolted on, but the model's own native cohort structure finally made to carry everything it should.
 

@@ -18,11 +18,11 @@ A running log of the scientific machinery - equations, theorems, estimators, num
 - **Total fertility rate (TFR) and quantum-tempo split** - period TFR mixes recoverable postponement (tempo) and structural completed fertility (quantum)
 - **Bongaarts-Feeney tempo-quantum decomposition** - $\text{adjTFR}=\text{TFR}/(1-r)$ with $r$ the rate of rise of mean age at childbearing; separates a mirage bump from a permanent loss. Ref: Bongaarts & Feeney 1998
 - **Skew-normal ASFR reconstruction** - a two-parameter (mean age, quantum-scaled) age-specific fertility profile reconstructing single-year ASFR to within 3% of peak
-- **Fecundability decay** - $\operatorname{fec}(\tau)=\exp(-0.03\max(\tau-30,0))$, the age penalty on conception
+- **Fecundability decay** - $\mathrm{fec}(\tau)=\exp(-0.03\max(\tau-30,0))$, the age penalty on conception
 
 ## Behavioural dynamical system
 
-- **Coupled first-order ODE system** - the behavioural layer: observable channels $C,\rho,\bar P,\tau,S,N,q$ each with its own dynamics, $\text{TFR}=C(1-\rho)\bar P\operatorname{fec}(\tau)(1-k_{BF}\Delta\tau)$; `emergent.EmergentModel`
+- **Coupled first-order ODE system** - the behavioural layer: observable channels $C,\rho,\bar P,\tau,S,N,q$ each with its own dynamics, $\text{TFR}=C(1-\rho)\bar P\mathrm{fec}(\tau)(1-k_{BF}\Delta\tau)$; `emergent.EmergentModel`
 - **Soft-bistable double-well potential** - the coupling trap near the empirical TFR-1.5 ridge; gives the two-basin fate shape (the Seldon manifold)
 - **Bistable contagion with hysteresis** - the social-norm state $N$: $\dot N=-a_N(N-N_{lo})(N-\theta_N)(N-N_{hi})+f_N$, two stable wells, an unstable tipping point, a crossing push locks in. Ref: Schlogl 1972 (cubic bistable); Centola tipping ~25%
 - **Separatrix / basin of attraction** - the fate boundary in the (birth-rate, security) plane; the Seldon manifold ridge; measured at 1.47-1.66, matching the cited TFR-1.5 trap. Ref: Lutz et al. (low-fertility trap)
@@ -47,7 +47,7 @@ A running log of the scientific machinery - equations, theorems, estimators, num
 - **Wasserstein barycenter** - quantile-averaged blend of distributions; `ot.Dist.barycenter`. Ref: Agueh & Carlier 2011
 - **Wasserstein gradient flow / JKO scheme** - distribution dynamics as $\rho_{k+1}=\arg\min_\rho \mathcal F[\rho]+\frac{1}{2\tau}W_2^2(\rho,\rho_k)$; the behavioural distribution evolution. Ref: Jordan, Kinderlehrer & Otto 1998
 - **Fokker-Planck as a gradient flow** - the continuity equation $\partial_t\rho+\nabla\!\cdot(\rho v)=0$ realised as the particle-advection form; `ot.Dist.advect`
-- **Pushforward / transport maps** - interventions and selection as $T_\#\rho$ (a policy shift, a truncation); `ot.Dist.pushforward`
+- **Pushforward / transport maps** - interventions and selection as $T_\sharp\rho$ (a policy shift, a truncation); `ot.Dist.pushforward`
 - **Implicit reparameterisation gradients** - differentiate through a quantile/CDF where $\theta=g(\varepsilon)$ is not explicit (mixtures, empirical): $\partial_\phi\theta=-(\partial_\phi F)/(\partial_\theta F)$; the bridge that keeps non-Gaussian families differentiable. Ref: Figurnov, Mohamed & Mnih 2018
 - **Monotone quantile-flow (1-D normalizing flow)** - the planned distributional-core representation $\theta=Q_\phi(u)$, $u\sim\text{Uniform}$; unifies reparameterisation, OT, gradient flow and empirical↔parametric fitting in one differentiable object. Ref: Rezende & Mohamed 2015 (flows); Durkan et al. 2019 (splines)
 
@@ -57,7 +57,7 @@ A running log of the scientific machinery - equations, theorems, estimators, num
 - **Gauss-Hermite quadrature** - the bucketing nodes/weights for a Gaussian population ($\langle f\rangle=\sum_k w_k f(\theta_k)$); `population.PopChannel`, `ot.Dist.from_gaussian`
 - **Jensen gap** - $\langle f\rangle - f(\langle\theta\rangle)$, the heterogeneity correction where the channel is nonlinear; measured +0.093 (66% relative) off-threshold - material where thresholds bite
 - **Tail selection** - truncation/reweighting of a distribution's tail; the matriarchy male-exit and female hypergamy (a hypergamy bar on the marriageability distribution); `population.PopChannel.select`, `ot.Dist.select`
-- **Cohort path integral** - the Lagrangian method-of-characteristics form of the intergenerational memory: each cohort accumulates $J(u)=\int_{\text{birth}}^{t}\operatorname{effect}(\theta_u(s))\,\mathrm{d}s$ down its life-line; a parent cohort's completed integral sets the child cohort's initial condition; `ot.CohortMemory`. Replaces the earlier aggregate mean-field lag - deepens and persists the intergenerational cost (compounding)
+- **Cohort path integral** - the Lagrangian method-of-characteristics form of the intergenerational memory: each cohort accumulates $J(u)=\int_{\text{birth}}^{t}\mathrm{effect}(\theta_u(s))\,\mathrm{d}s$ down its life-line; a parent cohort's completed integral sets the child cohort's initial condition; `ot.CohortMemory`. Replaces the earlier aggregate mean-field lag - deepens and persists the intergenerational cost (compounding)
 - **Distributed lag / convolution** - the earlier mean-field intergenerational memory (superseded by the cohort path integral)
 
 ## Causal identification and evaluation (from the literature and the campaign)
