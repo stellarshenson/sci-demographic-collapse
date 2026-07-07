@@ -1,97 +1,107 @@
 # sci-demographic-collapse
 
-**Psychohistory for the one thing that kills civilizations quietly: a people that stops replacing itself.**
+*Why the modern world is quietly running out of children - and what, if anything, can be done about it. A computer model, and the story it tells.*
 
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![GPU](https://img.shields.io/badge/runs%20on-torch%20%2F%20CUDA-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Hypotheses](https://img.shields.io/badge/hypotheses-188-2ea44f.svg)](docs/experiments/demographic-collapse-experiments.md)
-[![Rounds](https://img.shields.io/badge/rounds-E1--E19-f0883e.svg)](docs/experiments/demographic-collapse-experiments.md)
-[![Notebooks](https://img.shields.io/badge/notebooks-14-8957e5.svg)](notebooks/)
-[![Seldon manifold](https://img.shields.io/badge/Seldon%20manifold-TFR%201.5-critical.svg)](docs/story.md)
-[![psychohistory](https://img.shields.io/badge/psychohistory-descriptive%2C%20not%20prophetic-lightgrey.svg)](docs/story.md)
+[![GPU](https://img.shields.io/badge/runs%20on-a%20graphics%20card-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Questions](https://img.shields.io/badge/questions%20asked-194-2ea44f.svg)](docs/experiments/demographic-collapse-experiments.md)
+[![Notebooks](https://img.shields.io/badge/notebooks-15-8957e5.svg)](notebooks/)
+[![the danger line](https://img.shields.io/badge/the%20danger%20line-1.5%20children-critical.svg)](docs/story.md)
+[![honest](https://img.shields.io/badge/it%20maps%20forces-it%20predicts%20nobody's%20future-lightgrey.svg)](docs/story.md)
 
-Asimov's Hari Seldon couldn't predict one person. He could predict a billion. Read the aggregate and the fall is already written - generations before anyone feels it.
+In Isaac Asimov's *Foundation* novels, a scientist named Hari Seldon invents a way to forecast the future of an entire civilization. The trick is that he never tries to predict any single person - people are hopeless to predict - but reads the behaviour of billions at once, the way you cannot call a coin flip yet can call the average of a million with near-certainty. He calls it psychohistory, and with it he sees, centuries ahead, that his empire is already falling.
 
-That's the trick, pointed at fertility instead of a galaxy. Ignore the individual, read the flow, find the line that splits the peoples who recover from the peoples who don't. One rule the fiction skipped and this keeps: **it is descriptive, not prophetic.** It sizes the forces and puts each country on the map. It does not hand you a date of death.
+This project is a small, real, non-fictional version of that idea, aimed at one slow-motion crisis that nearly every rich country is now living through: the moment a society stops having enough children to replace itself. The model makes no attempt to tell any country its fortune. What it does - and what the rest of this page is about - is map the invisible forces underneath the headlines, and show where each country happens to be standing when the music stops.
 
-## Two valleys, one ridge
+## Two futures, and a very narrow ridge
 
-Every nation is a ball on a landscape. One valley recovers. The other is a pit - absorbing, and the model means the word: get deep enough and every path points down. The ridge between them is the **Seldon manifold** - a watershed. A hand's breadth to one side runs to the sea; the other side runs to the desert.
+Start with a picture. Imagine every country as a ball resting on a hilly landscape with two valleys. One valley is recovery: births bruised but bouncing, the population settling onto a stable, if smaller, footing. The other is decline - and it is not a gentle slope but a pit, where rolling deep enough in means every direction leads further down. Between the two runs a single narrow ridge.
 
-> [!WARNING]
-> Falling is the default. Two of every three configurations drain to collapse. You don't have to be unlucky - the floor is tilted. Recovery is the thing you have to *hold*.
+![Two futures - a recovery valley and a decline valley - with the world's big economies placed on the landscape](reports/figures/nb9_e14_seldon_manifold.png)
 
-Fit to nothing, the ridge lands at **TFR ≈ 1.5** - the exact low-fertility trap Lutz, Skirbekk and Testa argued from data years earlier. A landscape invented from first principles put its watershed on someone else's measured cliff. Replacement is 2.1. The ridge is 1.5. **Six tenths of a child is the whole margin.**
+The first uncomfortable thing the model has to say is about the shape of that landscape: most of it tilts toward the pit. Sweep through the possibilities and roughly two out of every three lead down into decline. A civilization does not have to be unlucky to fall. Falling is the default, and staying up is the thing that has to be earned, continuously.
 
-- **US - 1.66** - safe side, barely, on a single strut
-- **Europe - 1.47** - standing on the knife
-- **China - 1.20** - over it, top-heavy, no one big enough to backfill from
-- **Korea - 0.72** - off the map, in country no modern society has ever walked
+The ridge itself sits at a startlingly precise place: about 1.5 children per woman. To merely hold its numbers level, a country needs around 2.1 - two children to replace two parents, plus a fraction for those who never reach adulthood. So the entire distance between "shrinking slowly, manageably" and "past the point of self-rescue" is about half a child per woman. That is the whole margin. (Tellingly, demographers who study low fertility (Lutz et al.) had already pinpointed this same 1.5 danger line from real-world data years before the model, built from scratch, independently placed its ridge in the very same spot. When an invented landscape drops its watershed onto someone else's measured cliff, it stops feeling like a toy.)
 
-## 188 hypotheses. Here is what survived.
+Where the great powers are standing today:
 
-- **Coupling is the keystone.** Kids come from couples, not people. Pull that stone and the arch drops - it does not sag, it drops.
-- **Tempo steals quietly.** Push first birth from 21 to 31 and the window shuts on some children for good. A delay is not a no. Arithmetic does not care about intent.
-- **The bust was quantum, not momentum.** People wanted fewer - not a mechanical echo you can wait out.
-- **Age structure is a standing tree** - cut at the base, still upright on its own mass. Korea's 2050 was cast in the 1990s. Not up for debate.
-- **Migration is the only fast hand on the wheel.** A migrant lands grown, straight into the hollow middle of the pyramid. It is the entire US strut.
-- **Cash is a mirage. Coercion backfires.** The durable levers are coupling and structure, delivered to everyone. Run it four generations and you can hear which trees have begun to lean.
+- **United States, 1.66** - just on the safe side, and held there by one thing alone
+- **Europe, about 1.5** - balanced on the ridge itself
+- **China, 1.2** - already over the edge
+- **South Korea, 0.7** - not near the ridge and not merely over it, but far down the collapse slope, lower than any large society in recorded history
 
-## The build (the fun part)
+## What "collapse" actually looks like
 
-- **Leslie cohort-component core** - single-year ages, births / deaths / Rogers-Castro migration, momentum and eigenstructure. `src/sci_demographic_collapse/coremodel.py`, torch on GPU.
-- **Bongaarts-Feeney** tempo-quantum split - *when* births happen vs *how many* complete. Get these confused and every signal is a mirage.
-- **Free-energy calibration** in Pyro. The ELBO collapsed the posterior (it ignored the latent and drew a straight line). Swapped in an **exact-1D-Wasserstein** objective and the gap went 0.26 → 0.018, mutual-information usage 0.07 → 0.96, forecast coverage 50% → 100%.
-- **The nine-state Seldon ODE** - bistable coupling × childlessness. The separatrix put *itself* on TFR-1.5; nobody placed it there.
-- **Coupled behavioural-ODE × Leslie simulator** (round E19) - the model becomes the judge. Every intervention run four generations. Tempo levers turn out to be mirages that revert. Quantum levers are gated by coupling. Only the strongest coupling levers escape the trap. Timing decides.
+Forget the word's Hollywood connotations. There is no plague here, no war, no single catastrophic year - and the model is oddly insistent on the point. What it shows instead is a long, quiet subtraction. A village loses its school, then its clinic, then its last shop. The country's median age climbs, decade by decade, until it is spending more on its endings than on its beginnings. Each generation arrives a little smaller than the one that raised it.
 
-## The trail
+To make it concrete: if today's birth rates simply continued unchanged - and if we set immigration aside for a moment, to isolate the pure effect of births - here is where the model puts the major economies eighty years from now.
 
-- **14 notebooks** (`notebooks/01…14`) - the stylized ODE, age-structured calibration, crisis stress-tests, the intervention campaign, the dynamical simulator
-- **The evidence log** - all 188 hypotheses, E1-E19, in [`docs/experiments/demographic-collapse-experiments.md`](docs/experiments/demographic-collapse-experiments.md)
-- **The distilled design** - [`docs/demographic-collapse-sota.md`](docs/demographic-collapse-sota.md)
-- **The star-ranked intervention guide** - [`docs/interventions.md`](docs/interventions.md)
-- **The plain-language story** - [`docs/story.md`](docs/story.md)
-- **30+ open-access papers** with structured digests in `references/papers/`
+![If today's birth rates continue, populations shrink - all six economies fall, Korea to about a quarter of its size](reports/figures/readme_collapse.png)
+
+Korea ends the century at roughly a quarter of its present size. Italy and Japan land near a third. Even the fortunate ones, the United States and France, shed close to a third of themselves. Nobody in the picture holds level.
+
+## Why it happens
+
+Pull the crisis apart and three causes fall out - and they are not the ones the tabloids usually blame.
+
+The largest, by a wide margin, is simply that fewer people are pairing up. Children, overwhelmingly, come from stable couples, so a society where lasting partnerships are growing rarer is a society quietly emptying its nurseries from the top down - not because parents are choosing smaller families, but because a rising share of people never become parents at all. This is the load-bearing wall of the whole structure. Everything else is trim.
+
+The second is that people start later. The average age at a first child has drifted out of the low twenties and into the thirties, and while a delay is not a refusal, biology keeps its own schedule: postpone long enough and some children who were fully intended are simply never born. The third, and smallest, is a genuine change of heart - a real drop in how many children people want, not merely in when they want them.
+
+## The clock you cannot see
+
+Now for the least intuitive fact in the whole subject, and the one that keeps demographers awake at night. A population is not really a number; it is a shape - a stack of age-groups - and that shape carries momentum. A country full of young people will keep growing for decades even after its birth rate falls below replacement, simply because so many of them are only now reaching the age to have children. It is coasting, engine off, on the speed it already had. A country that has grown old, by contrast, begins shrinking the instant the rate drops, and would keep shrinking for a generation even if every couple returned to replacement tomorrow, because there are no longer enough young people to do the having.
+
+The unsettling consequence is that the near future is, in large part, already written. Korea's population in 2050 was effectively decided in the 1990s, and no policy on earth can revisit that vote. And the model catches the United States mid-crossing: sometime in the last few decades it quietly slipped from the coasting kind of country to the shrinking kind. What holds its numbers level today is no longer a young population. It is immigration, and immigration alone.
+
+## The one fast lever, and the slow ones that actually work
+
+Which brings us to the only remedy that pays off inside a single lifetime. A newcomer arrives already grown, already of working and child-bearing age, and steps straight into the hollow middle of a population's shape; it does not take twenty years to matter. This is the entire secret of the American exception - remove immigration from the arithmetic and the United States begins to look a great deal like Europe. But it is worth being clear-eyed: migration reshuffles the world's young, and does nothing to explain or repair why a country stopped producing its own.
+
+For that deeper repair, the model did something a pundit cannot. It weighed every proposed fix not by how good it sounds, but against the actual record of the places that have tried it - and the verdict is bracingly unsentimental. The things that work are the unglamorous ones that lower the true, lifelong cost of raising a child and let people pair off and parent without torching a career: real childcare, an honest split of the housework between men and women, family housing people can afford, security for the young, and - more surprising - simply cutting the punishing work hours of places like Korea and Japan. What unites them is not their size but their staying power. They change the standing conditions of a life, and their effect lasts.
+
+The thing that fails is the thing politicians reach for first: cash. A baby bonus buys a brief flurry of births, mostly from couples who were going to have the child anyway and merely shift its timing, and then the effect quietly evaporates. The proof is written in Korea, which spent some 270 billion dollars over twenty years and watched its birth rate fall in every one of them. And two popular "cures" actively backfire. Pro-natal poster campaigns tend to wash straight over people; and the perennial call to send women back to "traditional roles" is not neutral but negative - the societies with the most old-fashioned division of domestic labour, Korea and Japan foremost, are precisely the ones with the lowest fertility on the planet. Ask a woman to shoulder both a full job and the entire household, and a great many will decline the second shift by declining the child.
+
+## The cheapest fixes turn out to be the best
+
+There is one last, faintly hopeful twist. When the model is asked not "what is most powerful" but "what buys the most improvement for the least money and effort", the winners are almost free. They are small legal and cultural adjustments - giving unmarried couples the same recognition as married ones, nudging the culture toward fairness at home - rather than grand and expensive programs. The same modest change helps every country in the study, and it helps most when a country starts early, while it still has room to move. Money, meanwhile, ranks dead last for value. The heralds of a recovery, it turns out, are cheap.
+
+## The honest ending
+
+The lesson underneath all of it is the one Asimov's fiction turned on: fate here is a matter of position and timing, not of effort or will. A country still near the ridge - the United States, France, even Italy - can genuinely turn itself around, provided the effort is early, broad, and built to last. A country already far down the slope - Korea, Japan - can, with the very same maximal effort, only soften its fall from a collapse into a decline; its base of young people is simply too thin for a single century to refill. The window does not slam shut. It closes the way everything in this story moves - slowly, quietly, one generation at a time - which is exactly why the decisions that matter most are the ones being taken right now.
 
 > [!NOTE]
-> Learning project. The behavioural models are stylized and qualitatively calibrated - they rank mechanisms and place peoples on a landscape. They forecast nobody's future, and they are honest about it.
+> This is a learning project, and the model is a deliberately simplified picture, tuned to reproduce how real populations have actually behaved. It ranks forces and places countries on a map. It is not a crystal ball, and it predicts no nation's future.
+
+## Under the hood (for the curious)
+
+- At its heart is a set of equations that follow a population by age - births, deaths, ageing, the arrival of migrants - and roll it forward one year at a time. It runs on a graphics card, so thousands of what-if scenarios finish in seconds
+- It earned its keep by first reproducing a century of real history - past recessions, the COVID dip, national crises - and was only allowed to speak about the future once it had the past right
+- Every proposed fix was then run through it for four generations, to see which genuinely bend the curve and which give the most improvement for the least cost
+
+## The full trail
+
+- **15 notebooks** (`notebooks/01…15`) - the whole investigation, step by step
+- **The evidence log** - all 194 questions put to the model and how each turned out: [`docs/experiments/demographic-collapse-experiments.md`](docs/experiments/demographic-collapse-experiments.md)
+- **The plain-language story** - [`docs/story.md`](docs/story.md)
+- **The intervention guide** - [`docs/interventions.md`](docs/interventions.md)
 
 ## Run it
 
 ```bash
-make install     # uv environment + package
-make test        # tests
+make install     # set up the environment and install the package
+make test        # run the tests
 ```
 
-## Makefile targets
+## Makefile and project map
 
-- `make install` - create environment and install package
-- `make test` - run tests
-- `make lint` / `make format` - check / fix style with ruff
-- `make build` - build the wheel
-- `make clean` - remove caches and build artifacts
-- `make .env` / `make .env.enc` - decrypt / encrypt secrets
-- `make help` - all targets
-
-## Project organization
+- `make install` / `make test` / `make lint` / `make format` / `make build` / `make clean` - the usual developer commands (`make help` lists them all)
 
 ```
-├── Makefile                          <- install / test / lint / format
-├── pyproject.toml                    <- config and dependencies (uv)
-├── data/raw/unwpp                    <- UN WPP 2024 schedules (immutable) + World Bank / Eurostat / OWID
-├── notebooks                         <- 01…14, the campaign end to end
-├── src/sci_demographic_collapse
-│   └── coremodel.py                  <- the Leslie core (imported by notebooks 4-14)
-├── docs
-│   ├── story.md                      <- the Seldon-Region narrative
-│   ├── demographic-collapse-sota.md  <- the distilled design
-│   ├── interventions.md              <- star-ranked intervention guide
-│   └── experiments/…                 <- the 188-hypothesis experiments log
-├── reports/figures                   <- every executed figure (nb1…nb14)
-└── references/papers                 <- the research library ([paper] + [paper digest] pairs)
+├── data/raw            <- the source population data (United Nations, World Bank, and others)
+├── notebooks           <- 01…15, the investigation end to end
+├── src                 <- the reusable model code
+├── docs                <- the story, the design, the intervention guide, the evidence log
+├── reports/figures     <- every chart the notebooks produced
+└── references/papers   <- the research papers behind the findings, with plain-language summaries
 ```
-
----
-
-*Low fertility alone does not decide the fall. The age structure decides the timing and the depth, and migration is the only fast hand on the wheel. The peoples who hold the ridge are not the ones with the most children this year - they are the ones whose pyramid still has a base to buy time, and who keep drawing the young inward while that time lasts.*
