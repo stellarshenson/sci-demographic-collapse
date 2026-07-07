@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sci_demographic_collapse"
-version = "0.1.0"
+version = "0.6.42"
 description = "Data science analysis of demographic collapse"
 authors = [
     { name = "Stellars Henson" },
@@ -39,6 +39,7 @@ dev = [
     "ipython",
     "ipywidgets",
     "nbdime",
+    "nbformat",
     "pip",
     "pytest",
     "pytest-cov",

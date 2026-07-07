@@ -144,8 +144,9 @@ miss - the career-first / education-arms-race / overwork life-script (Poland dep
 93-billion-euro cash program and still fell to ~1.1). Every lever carries an interactions-and-side-effects
 reading: the coupled ODE amplifies a keystone push near the ridge and damps it deep in the basin, and cash,
 divorce restriction and gender-neutral career policies carry documented countervailing effects. A decision-
-maker's star-ranking with mechanism-of-effect chains is distilled in `docs/interventions.md`, and the source
-library lives in `references/papers/` (27 PDFs + 41 digests). The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
+maker's star-ranking with mechanism-of-effect chains is regenerated on demand via the `/write-interventions`
+command, and the source library lives in `references/papers/` (37 PDFs + 60 digests) with composed proxy
+blueprints for un-tested levers in `references/proxies/`. The controversial contraception lever is measured, not endorsed - powerful by raw magnitude but
 coercive, non-durable and blind to the keystone. A society escapes the Seldon manifold by attacking the
 coupling keystone early, broadly and durably while it still sits near the ridge (E15).
 

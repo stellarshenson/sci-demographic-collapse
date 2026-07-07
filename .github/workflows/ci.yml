@@ -1,0 +1,36 @@
+name: CI
+
+# Verifies that the library imports and every notebook is structurally valid and compiles.
+# Full notebook execution is NOT run here: it needs a CUDA GPU and the UN WPP dataset (under
+# data/raw/, not committed). Run that locally or on a self-hosted GPU runner via `make test`
+# plus `jupyter nbconvert --execute`.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install CPU PyTorch and the package
+        run: |
+          python -m pip install --upgrade pip
+          # CPU-only torch keeps the runner light (the default wheel pulls the full CUDA stack)
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Test (library imports + notebook validity)
+        run: pytest -v tests/
