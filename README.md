@@ -44,7 +44,7 @@ Korea ends the century at roughly a quarter of its present size. Italy and Japan
 
 Pull the crisis apart and three causes fall out - and they are not the ones the tabloids usually blame.
 
-The largest, by a wide margin, is simply that fewer people are pairing up. Children, overwhelmingly, come from stable couples, so a society where lasting partnerships are growing rarer is a society quietly emptying its nurseries from the top down - not because parents are choosing smaller families, but because a rising share of people never become parents at all. This is the load-bearing wall of the whole structure. Everything else is trim.
+The largest, by a wide margin, is simply that fewer people are pairing up. Children, overwhelmingly, come from stable couples, so a society where lasting partnerships are growing rarer is a society quietly emptying its nurseries from the top down - not because parents are choosing smaller families, but because a rising share of people never become parents at all (Sobotka, 2017). This is the load-bearing wall of the whole structure. Everything else is trim.
 
 The second is that people start later. The average age at a first child has drifted out of the low twenties and into the thirties, and while a delay is not a refusal, biology keeps its own schedule: postpone long enough and some children who were fully intended are simply never born. The third, and smallest, is a genuine change of heart - a real drop in how many children people want, not merely in when they want them.
 
@@ -58,13 +58,22 @@ The unsettling consequence is that the near future is, in large part, already wr
 
 Which brings us to the only remedy that pays off inside a single lifetime. A newcomer arrives already grown, already of working and child-bearing age, and steps straight into the hollow middle of a population's shape; it does not take twenty years to matter. This is the entire secret of the American exception - remove immigration from the arithmetic and the United States begins to look a great deal like Europe. But it is worth being clear-eyed: migration reshuffles the world's young, and does nothing to explain or repair why a country stopped producing its own.
 
-For that deeper repair, the model did something a pundit cannot. It weighed every proposed fix not by how good it sounds, but against the actual record of the places that have tried it - and the verdict is bracingly unsentimental. The things that work are the unglamorous ones that lower the true, lifelong cost of raising a child and let people pair off and parent without torching a career: real childcare, an honest split of the housework between men and women, family housing people can afford, security for the young, and - more surprising - simply cutting the punishing work hours of places like Korea and Japan. What unites them is not their size but their staying power. They change the standing conditions of a life, and their effect lasts.
+For that deeper repair, the model did something a pundit cannot. It weighed every proposed fix not by how good it sounds, but against the actual record of the places that have tried it - and the verdict is bracingly unsentimental. The things that work are the unglamorous ones that lower the true, lifelong cost of raising a child and let people pair off and parent without torching a career: real childcare, an honest split of the housework between men and women, family housing people can afford, security for the young, teaching couples the ordinary skills of a lasting relationship - communication, handling conflict, managing money together - as a school subject, and, more surprising, simply cutting the punishing work hours of places like Korea and Japan. What unites them is not their size but their staying power. They change the standing conditions of a life, and their effect lasts.
 
-The thing that fails is the thing politicians reach for first: cash. A baby bonus buys a brief flurry of births, mostly from couples who were going to have the child anyway and merely shift its timing, and then the effect quietly evaporates. The proof is written in Korea, which spent some 270 billion dollars over twenty years and watched its birth rate fall in every one of them. And two popular "cures" actively backfire. Pro-natal poster campaigns tend to wash straight over people; and the perennial call to send women back to "traditional roles" is not neutral but negative - the societies with the most old-fashioned division of domestic labour, Korea and Japan foremost, are precisely the ones with the lowest fertility on the planet. Ask a woman to shoulder both a full job and the entire household, and a great many will decline the second shift by declining the child.
+The thing that fails is the thing politicians reach for first: cash. A baby bonus buys a brief flurry of births, mostly from couples who were going to have the child anyway and merely shift its timing, and then the effect quietly evaporates. The proof is written in Korea, which spent some 270 billion dollars over twenty years and watched its birth rate fall in every one of them.
+
+And two popular "cures" actively backfire. Pro-natal poster campaigns tend to wash straight over people. The perennial call to send women back to "traditional roles" is worse than useless - not neutral but negative, since the societies with the most old-fashioned division of domestic labour, Korea and Japan foremost, are precisely the ones with the lowest fertility on the planet. Ask a woman to shoulder both a full job and the entire household, and a great many will decline the second shift by declining the child.
 
 ## The cheapest fixes turn out to be the best
 
-There is one last, faintly hopeful twist. When the model is asked not "what is most powerful" but "what buys the most improvement for the least money and effort", the winners are almost free. They are small legal and cultural adjustments - giving unmarried couples the same recognition as married ones, nudging the culture toward fairness at home - rather than grand and expensive programs. The same modest change helps every country in the study, and it helps most when a country starts early, while it still has room to move. Money, meanwhile, ranks dead last for value. The heralds of a recovery, it turns out, are cheap.
+There is one last, faintly hopeful twist. When the model is asked not "what is most powerful" but "what buys the most improvement for the least money and effort", the winners are almost free - and they are the same short list for every country in the study:
+
+- **Recognise unmarried couples in law**, the same as married ones - almost costless, and the single best value of anything tested
+- **Teach relationships in school** - conflict resolution, communication, and managing family money. It is cheap to run and unusually well evidenced: a randomised trial of one such program cut couples' divorce rate to about a third (Stanley et al., 2010), and financial disagreement predicts divorce more powerfully than any other kind of argument (Dew et al., 2012). The mechanism is simple - a couple that stays together keeps more of its fertile years, and so has more time to have the children it wants
+- **Nudge the culture toward fairness at home**, so that raising children is not a burden falling on women alone
+- **Take the sharp edges off inequality**, so that having a child is less of a financial cliff
+
+These help most when a country starts early, while it still has room to move. Cash handed out as baby bonuses, meanwhile, ranks dead last for value. The heralds of a recovery, it turns out, are cheap.
 
 ## The honest ending
 
@@ -73,11 +82,26 @@ The lesson underneath all of it is the one Asimov's fiction turned on: fate here
 > [!NOTE]
 > This is a learning project, and the model is a deliberately simplified picture, tuned to reproduce how real populations have actually behaved. It ranks forces and places countries on a map. It is not a crystal ball, and it predicts no nation's future.
 
-## Under the hood (for the curious)
+## How we got here (and why it's worth trusting)
 
-- At its heart is a set of equations that follow a population by age - births, deaths, ageing, the arrival of migrants - and roll it forward one year at a time. It runs on a graphics card, so thousands of what-if scenarios finish in seconds
-- It earned its keep by first reproducing a century of real history - past recessions, the COVID dip, national crises - and was only allowed to speak about the future once it had the past right
-- Every proposed fix was then run through it for four generations, to see which genuinely bend the curve and which give the most improvement for the least cost
+The short version of a long road, in plain steps:
+
+1. **Started with a hypothesis** - a claim about why populations collapse, and what governs the timing and the depth
+2. **Wrote it down as equations** - a working model of births, pairing, ageing and the economy
+3. **Turned the equations into a simulation** you can run forward in time
+4. **Grounded every assumption in published research**, not guesswork
+5. **Calibrated the model to real data**
+6. **Made predictions with it** - and, crucially, ones we could check
+7. **Then tested it hard** - out-of-sample, on data it had never seen, and against real historical shocks: the 2008 recession, the COVID dip, Korea's 1997 crisis, German reunification
+8. **Kept what worked and stayed honest about what didn't** - the demographic backbone reproduces history and places every country correctly; the behavioural layer is a deliberately simplified, roughly-tuned picture, not a precision instrument
+9. **Mapped the dividing line** between recovery and decline - the ridge in the first picture above
+10. **Hypothesised interventions** - a great many, across the board, fanning out and checking how they interact with each other
+11. **Scored each one analytically**, side effects and interactions included
+12. **Ran each through the simulation** for several generations, to see what actually bends the curve over time, not just on paper
+13. **Rated them by their cost to society** - money, coercion and side effects together
+14. **Stripped the bundles down** to find the cheapest thing that still helps
+
+And the technical guts, for anyone who wants them: at its heart is a small system of **nine coupled first-order differential equations** - formulas that track how pairing, childbearing, ageing, the timing of births and the local economy push on one another - rolled forward a year at a time, alongside a standard age-by-age population projection (a Leslie model). The calibration is **Bayesian**: it fits whole probability distributions rather than single best-guess numbers, using the well-known **reparameterisation trick** (Kingma & Welling, 2014) so the fitting can be done by ordinary gradient descent. It all runs on a graphics card, so thousands of scenarios finish in seconds.
 
 ## The full trail
 

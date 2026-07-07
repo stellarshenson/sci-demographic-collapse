@@ -1,0 +1,159 @@
+[
+  {
+    "id": "E22-H170",
+    "name": "marriageable men",
+    "verdict": "SUPPORTED",
+    "cost": 0.325,
+    "efficiency": 1.49,
+    "korea": {
+      "tfr": 0.65,
+      "dtfr": 0.484,
+      "dpop": 6.0,
+      "fate": "bends",
+      "Cend": 0.44
+    },
+    "germany": {
+      "tfr": 1.91,
+      "dtfr": 0.858,
+      "dpop": 31.0,
+      "fate": "recovers",
+      "Cend": 1.0
+    },
+    "france": {
+      "tfr": 1.96,
+      "dtfr": 0.722,
+      "dpop": 37.7,
+      "fate": "recovers",
+      "Cend": 1.0
+    },
+    "evidence": "causal, largest (Autor China-shock; Kearney-Wilson fracking) - but raises BIRTHS not MARRIAGE (partly non-marital), so it partly routes around coupling into direct fertility"
+  },
+  {
+    "id": "E22-H171",
+    "name": "young-adult cost compression",
+    "verdict": "PARTIAL",
+    "cost": 0.34,
+    "efficiency": 0.28,
+    "korea": {
+      "tfr": 0.26,
+      "dtfr": 0.094,
+      "dpop": 1.4,
+      "fate": "holds",
+      "Cend": 0.24
+    },
+    "germany": {
+      "tfr": 1.28,
+      "dtfr": 0.222,
+      "dpop": 7.7,
+      "fate": "bends",
+      "Cend": 0.82
+    },
+    "france": {
+      "tfr": 1.48,
+      "dtfr": 0.236,
+      "dpop": 12.4,
+      "fate": "bends",
+      "Cend": 0.91
+    },
+    "evidence": "causal but NET-SMALL - house prices help owners (+5%) and hurt renters (-2.4%), net +0.8% (Dettling-Kearney); mostly a timing shift via liquidity"
+  },
+  {
+    "id": "E22-H172",
+    "name": "the time lever",
+    "verdict": "PARTIAL",
+    "cost": 0.215,
+    "efficiency": 0.36,
+    "korea": {
+      "tfr": 0.25,
+      "dtfr": 0.078,
+      "dpop": 1.0,
+      "fate": "holds",
+      "Cend": 0.23
+    },
+    "germany": {
+      "tfr": 1.23,
+      "dtfr": 0.175,
+      "dpop": 4.9,
+      "fate": "bends",
+      "Cend": 0.81
+    },
+    "france": {
+      "tfr": 1.42,
+      "dtfr": 0.183,
+      "dpop": 7.7,
+      "fate": "bends",
+      "Cend": 0.91
+    },
+    "evidence": "plausible, UNPROVEN - Korea's 35-45hr sweet spot for pregnancy intention (Kim 2023) is cross-sectional; no 4-day-week -> births trial has reported"
+  },
+  {
+    "id": "E22-H173",
+    "name": "anti-atomisation (kin proximity)",
+    "verdict": "SUPPORTED",
+    "cost": 0.168,
+    "efficiency": 0.55,
+    "korea": {
+      "tfr": 0.26,
+      "dtfr": 0.092,
+      "dpop": 1.5,
+      "fate": "holds",
+      "Cend": 0.21
+    },
+    "germany": {
+      "tfr": 1.31,
+      "dtfr": 0.256,
+      "dpop": 8.1,
+      "fate": "bends",
+      "Cend": 0.77
+    },
+    "france": {
+      "tfr": 1.52,
+      "dtfr": 0.283,
+      "dpop": 13.2,
+      "fate": "recovers",
+      "Cend": 0.87
+    },
+    "evidence": "causal but conditional+modest - grandmother >=200km ~1 fewer child (Engelhardt 2019); modern effect fires only where public childcare is absent (retirement-IV); co-housing untested; CHEAP -> harbinger candidate"
+  },
+  {
+    "id": "E22-H174",
+    "name": "positional arms-control",
+    "verdict": "PARTIAL",
+    "cost": 0.27,
+    "efficiency": 0.35,
+    "korea": {
+      "tfr": 0.26,
+      "dtfr": 0.095,
+      "dpop": 1.7,
+      "fate": "holds",
+      "Cend": 0.19
+    },
+    "germany": {
+      "tfr": 1.41,
+      "dtfr": 0.353,
+      "dpop": 11.3,
+      "fate": "bends",
+      "Cend": 0.75
+    },
+    "france": {
+      "tfr": 1.64,
+      "dtfr": 0.399,
+      "dpop": 19.0,
+      "fate": "recovers",
+      "Cend": 0.85
+    },
+    "evidence": "mechanism strong (Doepke inequality->intensive parenting; Korea $19.7B tutoring race) but INTERVENTION unproven - no jurisdiction dampened positional competition and measured more births; the blunt version (tutoring ban) backfired in E16"
+  },
+  {
+    "id": "E22-H175",
+    "name": "income not degrees (the education paradox)",
+    "verdict": "SUPPORTED",
+    "evidence": "raising male INCOME (vocational) bends Korea +0.51; male DEGREES only +0.20 because the arms-race + postponement eat ~+0.18; both super-additive +0.98, but the efficient move is income, not the credential war"
+  },
+  {
+    "id": "E22-H176",
+    "name": "the contrarian optimal bundle",
+    "verdict": "SUPPORTED",
+    "evidence": "male income + kin-proximity + equity-at-home bends Korea +1.08, beating naive degrees+cash +0.25; ablates to a lean core: male income+kin proximity+equity-at-home"
+  }
+]

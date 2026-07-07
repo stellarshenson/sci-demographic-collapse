@@ -95,6 +95,14 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb15_ablation_core.png` - the full recovery bundle ablated to its lean cost-efficient core (dTFR kept, cost shed); coupling non-ablatable
 - `nb15_timing_pareto_position.png` - the harbinger is cheaper earlier (timing), the cost-vs-improvement Pareto knee, and the same near-free lever by position (bends vs recovers)
 
+**Structural levers + the education optimisation (Notebook 16, E22)**
+- `nb16_structural_levers.png` - the five structural levers on Korea (trajectories) and their improvement-per-cost value ranking; marriageable-men is the only one that bends
+- `nb16_cost_position.png` - fertility improvement by region and the composite-cost-vs-improvement scatter
+- `nb16_policy_dose.png` - the sustained male-earnings gain Korea must manufacture to hold / bend / recover, in fracking-boom-equivalents
+- `nb16_income_vs_degrees.png` - the education paradox: raising male income vs male degrees (the degree route's arms-race drag)
+- `nb16_male_attainment_interaction.png` - income vs degrees vs both (the super-additive interaction)
+- `nb16_composites_ablation.png` - the contrarian income bundle (income + kin + equity-at-home) beats degrees+cash, and its ablated core
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
