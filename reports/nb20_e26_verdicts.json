@@ -1,0 +1,122 @@
+[
+  {
+    "id": "E26-H188",
+    "claim": "polyamory raises the partnership count -> coupling",
+    "evidence": "best-region \u0394TFR +0.016; concurrency raises partnership count but dilutes the dyadic commitment that predicts childbearing (Toulemon); no CNM fertility premium (Moors 2021; Gupta 2024)",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H189",
+    "claim": "polyamorous alloparenting shares child cost -> parity",
+    "evidence": "best-region \u0394TFR +0.018; the only working sub-mechanism is cost-sharing (alloparenting), which is not non-monogamy - it is the communal channel wearing a different label",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H190",
+    "claim": "CNM concentrates mating on high-status men -> excluded-male externality",
+    "evidence": "best-region \u0394TFR -0.015; male reproductive variance rises, the classic polygyny-instability externality (Henrich 2012) - drags coupling",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H191",
+    "claim": "matrilineal descent raises fertility",
+    "evidence": "best-region \u0394TFR -0.000; lowers female childlessness but co-resident female kin COMPETE (Mattison matrilineal puzzle); Mosuo TFR is not high - autonomy up, quantum flat",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H192",
+    "claim": "matrilocal residence -> grandmaternal childcare",
+    "evidence": "best-region \u0394TFR +0.028; the transferable signal is matrilocal proximity delivering deliverable grandmaternal care (Holden-Sear-Mace) - the kin channel, not the descent rule",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H193",
+    "claim": "stacking co-resident female kin pools childcare",
+    "evidence": "best-region \u0394TFR -0.001; same-sex kin crowding turns cooperative into competitive beyond a small optimum (Mattison 2011) - antagonistic, net negative",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H194",
+    "claim": "kibbutz-style full cost-socialisation of a child",
+    "evidence": "best-region \u0394TFR +0.105; the cleanest natural experiment: kibbutzim socialised the marginal cost and held above-average fertility; privatisation cut lifetime fertility 0.65 (Anson-Meir; Ebenstein 2016) - the channel is cost, not communalism",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E26-H195",
+    "claim": "generic cooperative breeding raises fertility",
+    "evidence": "best-region \u0394TFR +0.016; survival benefit robust (Sear-Mace 2008) but the fertility-quantum boost is contested (Strassmann-Kurapati 2010); works through committed kin, not generic community",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H196",
+    "claim": "state-funded universal in-kind childcare",
+    "evidence": "best-region \u0394TFR +0.097; the scalable state-support variant: universal under-3 care raised German fertility ~2.8% (Bauernschuster 2016; Rindfuss Norway) - modest, causal, in-kind",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E26-H197",
+    "claim": "the communal FORM without cost-socialisation raises fertility",
+    "evidence": "best-region \u0394TFR -0.000; the identification: privatised kibbutz kept the form but lost the fertility (Ebenstein) - communalism per se is not the lever",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H198",
+    "claim": "media is a causal fertility channel (antinatal direction)",
+    "evidence": "best-region \u0394TFR -0.004; the best-identified norm evidence runs ANTINATAL: Globo telenovelas lowered Brazilian fertility (La Ferrara 2012), 16-and-Pregnant cut teen births 5.7% (Kearney-Levine 2015) - N is causal, use for calibration",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E26-H199",
+    "claim": "deliberate pronatal media raises fertility",
+    "evidence": "best-region \u0394TFR +0.029; symmetric pronatal efficacy is unproven and weaker (reactance; the E25 propaganda-backfire result); Israel's pronatalism is a whole-society norm, not a campaign",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H200",
+    "claim": "a pronatal norm multiplies structural levers",
+    "evidence": "childcare\u00d7pronatal-N interaction +0.003; roughly additive in-model - the multiplier is weak, the channels are separable",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H201",
+    "claim": "maternal grandmother proximity raises fertility",
+    "evidence": "best-region \u0394TFR +0.034; a living maternal grandmother raised grandchildren born ~2.1, decaying with distance (Engelhardt 2019; Lahdenpera 2004) - a real input, but an endowment not a policy dial, and shrinking",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H202",
+    "claim": "paying grandparents to provide care recreates the effect",
+    "evidence": "best-region \u0394TFR +0.006; buying out the grandmother does not recreate proximity or the commitment that gives kin care its value - monetising kin is a weak substitute",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H203",
+    "claim": "kin buffers the late-tempo fecundability loss",
+    "evidence": "best-region \u0394TFR +0.014; a tempo x kin derivative interaction - kin lets daughters breed earlier/more, buffering late tau; real but the buffer is disappearing with dispersion",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H204",
+    "claim": "legal recognition of plural parents raises fertility",
+    "evidence": "best-region \u0394TFR +0.002; California SB274 / BC Family Law Act are genuine institutional innovations but scoped to child security, touch <1% of births, no quantum effect",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H205",
+    "claim": "the complementary stack childcare + kin + pronatal-N is super-additive",
+    "evidence": "three-way interaction +0.005; the same-channel overlap keeps it near-additive",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E26-H206",
+    "claim": "state childcare and grandmother care are substitutes that crowd each other out",
+    "evidence": "childcare\u00d7kin interaction +0.001; little overlap in-model",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E26-H207",
+    "claim": "autonomy-lowering pronatal traditionalism raises fertility net",
+    "evidence": "best-region \u0394TFR +0.021; raising quantum by LOWERING women's autonomy erodes the gender-equity-in-the-home root lever (Doepke-Kindermann; Kleven) - dominated once the autonomy cost is priced",
+    "verdict": "REFUTED"
+  }
+]

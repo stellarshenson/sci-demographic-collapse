@@ -1,0 +1,5 @@
+id,name,channel,cost,dTFR_korea,fate_korea,marginal_korea,verdict
+H177,post-divorce conflict reduction (state mediation / co-parenting),coup,0.162,0.07,holds,0.152,PARTIAL
+H178,"child-contact-loss male brake (shared custody, male side)",coup,0.182,0.13,bends,-,PARTIAL
+H180,shared-custody presumption (commitment insurance),coup,0.225,0.241,bends,0.327,SUPPORTED
+H181,universal state-funded relationship repair,coup,0.203,0.008,holds,0.039,REFUTED

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "E24-H177",
+    "claim": "post-divorce conflict reduction (state mediation/co-parenting) lifts fertility via preserved re-partnering",
+    "evidence": "standalone Korea +0.070 (holds) - weak on its own; bundle marginal +0.152 is position-amplified, not intrinsic; small and concentrated in the ~10-15% high-conflict caseload",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E24-H178",
+    "claim": "child-contact-loss risk is a separable male-side commitment brake",
+    "evidence": "standalone Korea +0.130 but COLLINEAR with H180 (same custody channel) - the model has no signal that separates them, so no independent additive contribution",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E24-H179",
+    "claim": "intergenerational divorce-transmission imposes a compounding fertility scar",
+    "evidence": "headwind drag Korea -0.040, Germany -0.208 over a 30-yr accumulation; register-backed core but confounded by genetic selection and the conflict increment is unproven",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E24-H180",
+    "claim": "a shared-custody presumption is the load-bearing corrective coupling lever",
+    "evidence": "standalone Korea +0.241 (bends), Germany bends, France recovers; bundle marginal +0.327 - carries the bundle; caveat: marriage-centred, the model lacks a marital-share gate so France is likely overstated",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E24-H181",
+    "claim": "universal state-funded relationship repair clears the E21 voluntary-program null",
+    "evidence": "standalone Korea +0.008 - ~zero once the durability erode is applied (Army-PREP fade); the +0.039 bundle marginal is pure position-amplification, so the contrarian universal bet does not clear the E21 null in-model",
+    "verdict": "REFUTED"
+  }
+]

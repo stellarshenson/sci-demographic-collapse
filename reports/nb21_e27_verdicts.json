@@ -1,0 +1,32 @@
+[
+  {
+    "id": "E27-H208",
+    "claim": "polygyny raises aggregate fertility (a collapse lever)",
+    "evidence": "mean \u0394TFR -0.562; decomposition shows the excluded-male C arm (-0.457) swamps the parity arm (-0.209) - a double loss; Sahel high-TFR is development-confounded",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E27-H209",
+    "claim": "polyandry SUPPRESSES aggregate fertility (a population brake)",
+    "evidence": "mean \u0394TFR -0.029; per-woman parity intact but female childlessness up (surplus unmarried women, Goldstein 1976) - the one mechanism that reliably moves TFR moves it DOWN, a population brake not a lever (wrong direction for collapse)",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E27-H210",
+    "claim": "mating-market skew drags coupling and delays partnering",
+    "evidence": "mean \u0394TFR -0.026; a modest, self-correcting C drag plus tempo delay, but unquantified in the literature (thin parameter)",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E27-H211",
+    "claim": "state sanction of polygyny manufactures the missing quantum",
+    "evidence": "mean \u0394TFR -0.532; legitimacy+subsidy entrench the externality rather than reverse it - sanction changes magnitude not sign, development-confounded",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E27-H212",
+    "claim": "media-normalising the structure raises fertility",
+    "evidence": "mean \u0394TFR -0.214; pure N forcing with no material channel plus the incel-media C drag; media diffuses small-family ideals - cheap talk reverting under N hysteresis",
+    "verdict": "REFUTED"
+  }
+]

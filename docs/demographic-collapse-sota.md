@@ -100,6 +100,54 @@ counterfactual:
 The tempo-quantum lens is what makes the distinction crisp - a recoverable postponement told apart from a
 permanent loss - the same axis that decides whether an intervention can work.
 
+## The behavioural dynamics layer
+
+The Leslie core answers what a given fertility schedule does to a population; it does not say why fertility
+moves. The behavioural layer (E19) supplies that: fertility is the emergent product of coupled, observable
+channels - coupling C, childlessness ρ, parity P̄, tempo τ, economic security S - each a state with its own
+first-order dynamics, so that `TFR = C·(1−ρ)·P̄·fec(τ)·(1 − k_BF·Δτ)`. A soft-bistable coupling trap sits near
+the empirical TFR-1.5 ridge and a dependency-to-security feedback runs through the age pyramid. Calibrated to
+real 2023 fertility, the baseline reproduces reality region by region - Korea collapses alone, no region
+recovers spontaneously - which is what licenses the model to act as the judge of an intervention.
+
+Three extensions were added on top, each **baseline-preserving** - the added term is a deviation from the
+calibrated reference, identically zero at today's state, so every 2023 baseline is unchanged to ~3e-7 and no
+re-fit is needed.
+
+**The bistable social-norm state N.** The share endorsing a childfree ideal is not a passive parameter but a
+contagion with memory, a double well
+
+$$\frac{dN}{dt} = -a_N\,(N-N_{lo})(N-\theta_N)(N-N_{hi}) + f_N(t),\qquad \rho_{target}\mathrel{+}=\lambda_\rho\,(N-N_0)$$
+
+with two stable wells (untrapped N_lo = 0.14, trapped N_hi = 0.42) split by an unstable tipping point
+θ_N = 0.25. A media or policy push is the forcing f_N; because the wells are separated by a barrier, a push
+that crosses the tip **locks in** - the hysteresis that makes a norm shift a one-way street (China's one-child
+bell that will not un-ring). The consequence is position-dependent and asymmetric: on a trapped, coupling-
+limited country a pronatal push barely moves TFR, but a modest *stigma* push tips an untrapped country down
+far more easily than any pronatal campaign lifts a trapped one.
+
+**Marriageability capital and intergenerational memory.** A bilateral marriageability state q gates coupling
+(`C_eq += g_qC·q`). It is fed both by contemporaneous therapy/health (a durable population-scale lift works;
+a voluntary one-off program fades - reproducing the null found for couples therapy) and by the **lifetime-
+integrated childhood environment** of the current reproductive cohort,
+`q ← k_q(f_therapy + g_A·mean(env over [t−45, t−27]) − q)`, where env is father investment minus relationship
+scars. That distributed lag closes the alienation loop: severing father-child access has *zero* contemporary
+effect but a full one-generation-delayed cost (0.000 at 2050 → ∓0.13 at 2110), lowering the next cohort's
+marriageability - un-marriageable men and women downstream - which feeds back into coupling and compounds.
+
+**The population-distribution framework.** A representative-agent scalar hides two things that decide
+outcomes: the Jensen gap (a heterogeneous population near a nonlinear threshold behaves unlike its mean - a
+trapped population's coupling runs 66% above what the mean predicts, because its upper tail crosses) and
+selection (the matriarchy male-exit and female hypergamy are literally tail operations on the marriageability
+distribution). The framework (`population.py`) lifts any channel to a bucketed distribution via the
+reparameterisation trick, `θ = μ + σ·ε`, discretised with Gauss-Hermite quadrature, giving Jensen-correct
+aggregates `⟨f⟩ = Σ w_k f(θ_k)`, heterogeneous intervention response, and tail-selection. The next step is to
+evolve these distributions with **optimal transport**: the operations that matter break Gaussianity
+(truncation from selection, bimodal splitting at a norm tipping point, skew from heterogeneous response), so
+the population is carried as a free-form measure morphed by transport maps, its dynamics a Wasserstein-2
+gradient flow (the JKO scheme) - the same exact-1-D Wasserstein machinery that already closed the calibration
+gap in E12.
+
 ## Interventions and the forward outlook
 
 Held at current fertility, the ultra-low societies roughly halve by 2100 - Korea −63% (51.8M → 19M), Japan

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "E25-H182",
+    "claim": "abortion restrictiveness graded to a total ban lifts fertility",
+    "evidence": "standalone best +0.001; the restrictiveness sweep peaks at an INTERIOR r*\u22480.5 - a total ban is dominated because leakage \u03b4(r) and Romania-style reversion rise with severity; small, coercive, high autonomy cost",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E25-H183",
+    "claim": "penalising helpers closes the abortion leakage worth the backfire",
+    "evidence": "standalone best +0.001 - lowering leakage (\u03b4 0.55->0.30) is cancelled by the security/coupling chill it induces; the enforcement lever nets to ~0 with the highest coercion cost in the batch",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E25-H184",
+    "claim": "kin / grandparental support raises fertility (cooperative breeding)",
+    "evidence": "standalone best +0.074, bundle marginal best +0.083; real cooperative-breeding channel (Sear-Mace) but a partial lever - proximity can be subsidised, kin density cannot be legislated",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E25-H185",
+    "claim": "in-kind childcare services beat equivalent cash",
+    "evidence": "standalone best +0.127 (['holds', 'bends', 'bends']), bundle marginal best +0.140; the durable Pbar+S in-kind geometry - the strongest welfare lever in the batch",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E25-H186",
+    "claim": "reversing social atomisation restores coupling",
+    "evidence": "standalone best +0.077, bundle marginal best +0.087; a real coupling channel that helps the trap-limited basin but diffuse and high-leakage - a harbinger-grade nudge, not a heavy lever",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E25-H187",
+    "claim": "the bistable social norm is a pronatal lever",
+    "evidence": "standalone best +0.049, marginal best +0.058; the MECHANISM is confirmed (tips + LOCKS with hysteresis) but as a pronatal lever it is weak on this triad - Korea is coupling-limited (norm barely moves TFR) and Germany is already untrapped; its real force is defensive/asymmetric - a modest STIGMA push tips Germany down by 0.13",
+    "verdict": "PARTIAL"
+  }
+]

@@ -1,0 +1,6 @@
+id,name,claim_dir,cost,mean_dTFR,fate_korea,verdict
+H208,"polygyny (one male, many females)",up,0.367,-0.562,deepens,REFUTED
+H209,"polyandry (one female, many males)",down,0.295,-0.029,holds,PARTIAL
+H210,extreme hypergamy / mating-market skew,drag,0.068,-0.026,holds,PARTIAL
+H211,state-sanctioned polygyny (legitimacy + subsidy),up,0.505,-0.532,deepens,REFUTED
+H212,media normalisation of the structure (N forcing),up,0.13,-0.214,deepens,REFUTED

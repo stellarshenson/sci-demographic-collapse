@@ -1,0 +1,7 @@
+id,name,arm,cost,best_dTFR,best_region,marginal_best,verdict
+H182,abortion restrictiveness (graded to total ban),coercive,0.363,0.001,France,-,REFUTED
+H183,penalise family/friends who help with an abortion,coercive,0.427,0.001,France,-,REFUTED
+H184,kin / grandparental support,welfare,0.093,0.074,France,0.083,PARTIAL
+H185,in-kind childcare services (not cash),welfare,0.152,0.127,France,0.14,SUPPORTED
+H186,reverse social atomisation (community / third places),welfare,0.072,0.077,France,0.087,PARTIAL
+H187,bistable social norm - pronatal media push,welfare,0.143,0.049,France,0.058,PARTIAL

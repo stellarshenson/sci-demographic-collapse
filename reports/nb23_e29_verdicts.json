@@ -1,0 +1,122 @@
+[
+  {
+    "id": "E29-H227",
+    "claim": "matriliny raises female autonomy and lowers female childlessness but not quantum",
+    "evidence": "matriliny lowers female childlessness (near-universal reproduction) yet Mosuo TFR is not high; co-resident female kin compete (Mattison matrilineal puzzle) - autonomy up, quantum flat",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H228",
+    "claim": "paternity uncertainty is offset by avuncular (mother's-brother) investment",
+    "evidence": "the avuncular buffer only partially compensates the dyadic-investment loss; net per-child investment is lower - a partial offset, not a wash",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E29-H229",
+    "claim": "matrilocal residence delivers grandmaternal childcare (a real cost-of-children lever)",
+    "evidence": "the matrilocal add-on lifts the sweep materially (+matrilocal optimum dTFR +0.184) - but this is the kin-childcare channel (E26 H201), not the descent system",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E29-H230",
+    "claim": "stacking co-resident female kin pools childcare and raises fertility",
+    "evidence": "same-sex kin crowding turns cooperative into competitive beyond a small optimum (Mattison 2011) - antagonistic, not additive",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H231",
+    "claim": "matriarchy makes high-quality men exit, lowering retained male quality",
+    "evidence": "tail selection on the male-q distribution: at s=0.5 the exit fraction is 0.64 and retained mean falls to -0.32 - the strong men withdraw first",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H232",
+    "claim": "female hypergamy on the weak retained pool collapses coupling",
+    "evidence": "with the desirability-gap bar b=+0.18, the coupling multiplier falls to 0.02 at s=0.6; the hypergamous match fails on the low-q remainder",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H233",
+    "claim": "the instability needs no male aggression - pure withdrawal and selection suffice",
+    "evidence": "the collapse is driven entirely by the exit tail-operation and the hypergamy bar; no coercion term is invoked - the structure is self-undermining",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H234",
+    "claim": "the collapse threshold is predicted by a hypergamy bar calibrated from unrelated dating data",
+    "evidence": "the dating-market desirability gap (Bruch-Newman) sets b=+0.18, which predicts a coupling-halving collapse at s*=0.38 - a cross-domain calibration transfer",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H235",
+    "claim": "men are the infrastructure/defence substrate - their exit drops security S",
+    "evidence": "the S withdrawal scales with the exit fraction (0.64 at s=0.6); the matriarchy depends on the male buy-in it erodes",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H236",
+    "claim": "paternity severance lowers the next generation's marriageability a generation later",
+    "evidence": "isolating the father-access channel (E30 intergenerational memory): near-zero contemporary effect (+0.000 at 2045) but -0.100 by 2095 - un-marriageable men and women downstream",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H237",
+    "claim": "matriarchy compounds - it degrades the next generation, not just the present",
+    "evidence": "the delayed alienation stacks on the immediate hypergamy coupling loss; the structure is worse over generations than in any single one",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H238",
+    "claim": "avuncular investment buffers the intergenerational father-absence cost",
+    "evidence": "raising the avuncular share reduces the fF severance and the delayed cost - a real but partial buffer, never a full substitute for dyadic investment",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E29-H239",
+    "claim": "the matriarchy collapse runs on two timescales - hypergamy now, alienation a generation later",
+    "evidence": "the FULL matriarchy already craters coupling contemporaneously (-1.310 at 2045 via hypergamy), and the paternity channel adds a further delayed cost (-0.100 by 2095) - a double-timescale collapse, not a slow one",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H240",
+    "claim": "state funding of the matriarchy repairs it",
+    "evidence": "the state-funded variant optimum is s=0.10 dTFR=+0.782; the subsidy lifts S but cannot retain high-q men or satisfy hypergamy - it does not fix the instability",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H241",
+    "claim": "media normalisation of matriarchy shifts the norm enough to stabilise it",
+    "evidence": "a media N-push does not touch the exit or hypergamy mechanism; it is the E25 weak-pronatal-lever result again - cheap talk against a structural collapse",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H242",
+    "claim": "engineering male retention stabilises the matriarchy",
+    "evidence": "retaining high-q men requires restoring the status and paternity certainty that DEFINE the matriarchy's compression - a self-contradiction; you cannot have both",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H243",
+    "claim": "there is an interior matriarchy strength that raises fertility",
+    "evidence": "the pure-matriarchy sweep optimum is at s=0.00 with dTFR -0.008 - the optimum is the no-matriarchy corner; the exit-hypergamy instability dominates the interior",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H244",
+    "claim": "the collapse is dominated by the exit x hypergamy interaction",
+    "evidence": "in the interaction matrix the male-exit x paternity/coupling cell is +0.317; the buffers (avuncular, matrilocal) antagonise the losses - exit and hypergamy multiply into the collapse",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E29-H245",
+    "claim": "a stable pro-fertility matriarchy exists under the right conditions",
+    "evidence": "it would need low hypergamy AND high male retention AND strong kin childcare - but retention is mutually exclusive with the paternity compression that defines matriarchy; no stable configuration in the developed regime",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E29-H246",
+    "claim": "the transferable part of matriarchy is matrilocal kin childcare, not the descent/paternity system",
+    "evidence": "only the matrilocal-childcare add-on lifts fertility (+0.184); the descent + paternity-compression core is self-undermining via exit and hypergamy - keep the kin care, drop the structure",
+    "verdict": "SUPPORTED"
+  }
+]

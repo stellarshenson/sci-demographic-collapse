@@ -1,0 +1,86 @@
+[
+  {
+    "id": "E30-H247",
+    "claim": "durable population-scale therapy/health raises marriageability and clears the E21 null",
+    "evidence": "durable best +0.140 (bends) vs the E21 voluntary-program null; it enters through marriageability q, a different channel from relationship-repair",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H248",
+    "claim": "voluntary one-off couples therapy stays null",
+    "evidence": "voluntary best +0.013 - q rises then erodes back (BSF/SHM/Army-PREP fade); confirms E21 in-model",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E30-H249",
+    "claim": "marriageability is bilateral - alienation lowers it for men AND women",
+    "evidence": "q gates coupling for the population, not one sex; a fall in q reduces partnership formation regardless of side - un-marriageable men and women together",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H250",
+    "claim": "father-access loss has no contemporary effect but a delayed intergenerational cost",
+    "evidence": "father-access -0.4 (Germany): +0.000 at 2045 (contemporary ~0) but -0.111 by 2095 - the one-generation lag of the childhood-env path integral",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H251",
+    "claim": "the intergenerational alienation compounds over the horizon",
+    "evidence": "the loss deepens +0.000@2045 \u2192 -0.189@2124; the per-cohort path integral accumulates, so the cost grows rather than plateauing - a spiral",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H252",
+    "claim": "relationship scars impose a delayed next-generation coupling cost",
+    "evidence": "a scar forcing lowers childhood env \u2192 next-cohort q \u2192 coupling with the same one-generation delay; Germany \u0394TFR -0.149 by 2125",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H253",
+    "claim": "a shared-custody presumption pays a delayed intergenerational dividend",
+    "evidence": "custody (coupling insurance + father investment) gives +0.128 at 2050 rising to +0.259 at 2110 - the E24-H180 lever earns a second, delayed payoff through the child cohort",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H254",
+    "claim": "paternity certainty raises father investment and pays an intergenerational dividend",
+    "evidence": "father-access GAIN +0.4 lifts the next cohort's marriageability, +0.141 by 2110 - the mirror of the alienation loss",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H255",
+    "claim": "the therapy dividend also compounds intergenerationally",
+    "evidence": "durable therapy raises q, which raises father investment (phi*q) \u2192 childhood env \u2192 the next cohort's q - a healthier-fathers second dividend on top of the contemporary lift",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H256",
+    "claim": "the intergenerational channel is calibrated to the fatherlessness literature",
+    "evidence": "the father-absence path integral is register-backed (McLanahan-Sandefur; Autor 2019) and bounded rather than point-fit; the delay (27-45yr) and childhood window (0-18) are demographic, not tuned",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H257",
+    "claim": "short-horizon evaluation understates structural levers",
+    "evidence": "the shared-custody lever's benefit grows ~2.0x from 2050 (+0.128) to 2110 (+0.259) as the intergenerational dividend lands on top of its contemporary effect; a 2050-horizon evaluation captures only about half its eventual worth",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E30-H258",
+    "claim": "alienation is hysteresis-adjacent - a lost generation propagates forward",
+    "evidence": "because a cohort's low q feeds the next cohort's childhood env, a depressed generation transmits forward; the loss at -0.189@2124 is still deepening, not recovering, within the horizon",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E30-H259",
+    "claim": "cash can buy marriageability",
+    "evidence": "a security push (fS=0.20) leaves q unmoved (qend +0.0000) while raising TFR only through the security channel; marriageability is health/attachment, not income - cash and marriageability are not substitutes",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E30-H260",
+    "claim": "the intergenerational memory reframes the campaign - score levers over two generations",
+    "evidence": "the delayed dividends (custody, therapy, paternity) and the compounding costs (alienation, scars) only appear on a multi-generation horizon; a single-generation ledger misprices every structural lever",
+    "verdict": "SUPPORTED"
+  }
+]

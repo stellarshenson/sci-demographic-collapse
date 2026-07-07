@@ -1,0 +1,86 @@
+[
+  {
+    "id": "E28-H213",
+    "claim": "state suppression of polygyny (enforced monogamy) is the fertility-favouring institution in the developed regime",
+    "evidence": "enforced-monogamy dividend mean \u0394TFR +0.698 (>0): reversing the excluded-male externality lifts C and S (Henrich 2012); the spectrum optimum sits at the suppression corner e=-1.0",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E28-H214",
+    "claim": "cultural / society endorsement of polygyny raises fertility",
+    "evidence": "developed-regime sweep slopes down through endorsement; at cultural endorsement e=+0.5 mean \u0394TFR -0.803 - a loss",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E28-H215",
+    "claim": "state endorsement + subsidy of polygyny manufactures the missing quantum",
+    "evidence": "full state endorsement e=+1 mean \u0394TFR -0.807; the subsidy offsets part of the S loss but not the C drag - subsidy x parity is antagonistic",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E28-H216",
+    "claim": "the development regime flips the sign of polygyny (Tertilt +40% only in low-development)",
+    "evidence": "at full endorsement e=+1 the developed regime gives -0.807 but the low-development regime gives +0.263 - opposite signs, the Tertilt sign-flip; developed optimum is suppression (e=-1.0), low-dev optimum is endorsement (e=+1.0)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E28-H217",
+    "claim": "polyandry endorsement suppresses fertility regardless of endorsement level",
+    "evidence": "polyandry sweep is negative across e, at full endorsement mean \u0394TFR -0.595; surplus unmarried women (Goldstein 1976) - a brake at every endorsement level",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E28-H218",
+    "claim": "state suppression of polyandry raises fertility by un-rationing women's reproduction",
+    "evidence": "suppressing polyandry mean \u0394TFR +0.117; mechanically un-rations female reproduction but the effect is small in a low-childlessness-headroom developed regime",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E28-H219",
+    "claim": "the excluded-sex externality on C scales with endorsement reach",
+    "evidence": "the fC drag grows monotonically with |e| in the builder; the developed sweep's downslope is driven by it - reach amplifies the externality",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E28-H220",
+    "claim": "endorsement shifts the bistable norm N enough to matter on its own",
+    "evidence": "norm-endorse standalone mean \u0394TFR -0.111; the fN arm alone is weak - legitimacy without a material channel is cheap talk (E25 H187 hysteresis)",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E28-H221",
+    "claim": "a state subsidy offsets the polygyny externality",
+    "evidence": "subsidy x polygyny-reach interaction -0.492; the subsidy lifts S but cannot repair the C collapse - antagonistic to the parity loss, does not flip the sign",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E28-H222",
+    "claim": "the excluded-male crime side-effect dominates any polygyny fertility gain",
+    "evidence": "crime index rises 3.4x with reach (Edlund 2013) while developed \u0394TFR falls - the side-effect and the fertility effect both push against endorsement; net stacked, polygyny endorsement is dominated",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E28-H223",
+    "claim": "polygyny is a viable lever once women's autonomy is priced in",
+    "evidence": "polygyny lowers female autonomy (the Doepke-Kindermann / Kleven gender-equity root lever) on top of the fertility loss - dominated on both the fertility and the autonomy axis",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E28-H224",
+    "claim": "the interaction structure is dominated by the development sign-flip and the reach x externality",
+    "evidence": "largest off-diagonal cell is polygyny-reach x low-dev (-0.309); enforce-mono antagonises polygyny-reach; the matrix has no super-additive pro-fertility endorsement cell in the developed regime",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E28-H225",
+    "claim": "the spectrum optimum is an interior endorsement level",
+    "evidence": "the developed-regime optimum is the CORNER at suppression (e=-1.0), not interior - endorsement monotonically worsens fertility; the interior-optimum claim is refuted",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E28-H226",
+    "claim": "across the whole spectrum no polygamy variant lifts developed-regime TFR net of side-effects",
+    "evidence": "every developed endorsement point is <=0 and carries a rising crime + autonomy cost; only the suppression corner (enforced monogamy) is fertility-and-stability-favouring - the closing synthesis",
+    "verdict": "SUPPORTED"
+  }
+]
