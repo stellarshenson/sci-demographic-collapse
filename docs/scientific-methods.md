@@ -56,7 +56,7 @@ A running log of the scientific machinery - equations, theorems, estimators, num
 - **Reparameterisation-to-buckets** - lift a scalar channel to $\theta=\mu+\sigma\varepsilon$ discretised into population buckets; `population.PopChannel`
 - **Gauss-Hermite quadrature** - the bucketing nodes/weights for a Gaussian population ($\langle f\rangle=\sum_k w_k f(\theta_k)$); `population.PopChannel`, `ot.Dist.from_gaussian`
 - **Jensen gap** - $\langle f\rangle - f(\langle\theta\rangle)$, the heterogeneity correction where the channel is nonlinear; measured +0.093 (66% relative) off-threshold - material where thresholds bite
-- **Tail selection** - truncation/reweighting of a distribution's tail; the matriarchy male-exit and female hypergamy (a hypergamy bar on the marriageability distribution); `population.PopChannel.select`, `ot.Dist.select`
+- **Tail selection** - truncation/reweighting of a distribution's tail (a cutoff or preference threshold on a channel); `population.PopChannel.select`, `ot.Dist.select`
 - **Cohort path integral** - the Lagrangian method-of-characteristics form of the intergenerational memory: each cohort accumulates $J(u)=\int_{\text{birth}}^{t}\mathrm{effect}(\theta_u(s))\,\mathrm{d}s$ down its life-line; a parent cohort's completed integral sets the child cohort's initial condition; `ot.CohortMemory`. Replaces the earlier aggregate mean-field lag - deepens and persists the intergenerational cost (compounding)
 - **Distributed lag / convolution** - the earlier mean-field intergenerational memory (superseded by the cohort path integral)
 

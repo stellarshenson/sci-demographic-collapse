@@ -1,0 +1,62 @@
+[
+  {
+    "id": "E31-H261",
+    "claim": "rebuttable shared-custody presumption (the causal winner)",
+    "evidence": "mean \u0394TFR +0.323; the one clean causal custody->fertility estimate: marital fertility +8-14%, marriage +5% (Halla 2013 JEEA); contact preserved for the next cohort",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E31-H262",
+    "claim": "rigid mandatory 50/50 vs rebuttable",
+    "evidence": "mean \u0394TFR +0.149; Kentucky HB528 divorce -25% but pre-trend, not causal (Stone 2023); rigidity forces 50/50 onto high-conflict/DV cases, injecting a scar - the geometry lesson rebuttable >= rigid",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E31-H263",
+    "claim": "fines / sanctions / contempt for access denial",
+    "evidence": "mean \u0394TFR -0.020; no population RCT shows contempt/make-up-time durably raises contact; the adversarial escalation dominates the thin contact gain, and jailing the custodial parent harms the child",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E31-H264",
+    "claim": "criminalisation of alienation (Brazil Lei 12.318/2010)",
+    "evidence": "mean \u0394TFR -0.064; 14 years, no measured positive outcome, 2022 walk-back, UN moving to repeal; weaponisation flips the sign - an alienation cross-claim ~doubles a protective mother's custody-loss risk (Meier 2020). NOTE: backfire-only estimate; the deterrence sub-channel + monitoring is tested explicitly in E32",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E31-H265",
+    "claim": "mandated reunification therapy / camps",
+    "evidence": "mean \u0394TFR -0.003; efficacy uncontrolled/weak, and the legislative tide runs the other way - Kayden's Law (VAWA 2022) + state bans (Piqui's/Abrial's Law) prohibit therapies that cut a child off from a safe parent",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E31-H266",
+    "claim": "mandatory co-parenting / divorce education",
+    "evidence": "mean \u0394TFR +0.008; mixed evidence, modest and fading (Guyette 2024; Sigal 2011), the E21 BSF/SHM null-with-fade signature; cheap, low-harm - a complement not a driver",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E31-H267",
+    "claim": "early mediation (divert from litigation)",
+    "evidence": "mean \u0394TFR +0.111; at 12yr 52% of mediated nonresident parents talked weekly with their child vs 14% litigated, no rise in conflict (Emery 2001 RCT) - the best prevention feed into the delayed dividend",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E31-H268",
+    "claim": "DV carve-out design (safety-gated shared custody)",
+    "evidence": "mean \u0394TFR +0.258; the H261 presumption WITH automatic DVO rebuttal + abuse screening - keeps the fertility gain, zeroes the scar; Spain's safety-gated JPC saw IPV FALL 45% (Fernandez-Kranz 2024)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E31-H269",
+    "claim": "weaponisation screen (the Meier correction)",
+    "evidence": "mean \u0394TFR +0.030; require corroborated adjudication of an abuse claim BEFORE an alienation finding can reverse custody - no fertility upside of its own, large harm-reduction; makes anti-alienation policy survivable",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E31-H270",
+    "claim": "prevention-over-punishment synthesis",
+    "evidence": "mean \u0394TFR +0.409; bundle the complements (shared-custody default + mediation + co-parenting education + DV carve-out + weaponisation screen), EXCLUDING criminalisation/fines/forced reunification - super-additive with fScar driven negative",
+    "verdict": "SUPPORTED"
+  }
+]

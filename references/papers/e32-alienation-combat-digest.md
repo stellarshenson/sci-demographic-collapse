@@ -66,6 +66,64 @@ Research digest for batch H271-H285. Topic: how to COMBAT parental alienation on
 - McLanahan, Tach & Schneider (2013): father-absence effects are partly causal, partly selection - so every fF+ dividend into the intergenerational path integral is SELECTION-DISCOUNTED (~0.5-0.7), not taken at face value
 - Meier et al. (2020) and Alsalem (2023): the same enforcement machinery that preserves benign father contact hands an abuser a custody weapon; fathers' alienation cross-claims roughly double a protective mother's risk of losing custody. Every coercion lever must stack this DV-overlap due-process cost. The symmetric two-sided bond (ARM B) is the one design that removes the weaponisation asymmetry, because both parents hold the same stake
 
+## Supplement - minor-offence / civil-penalty + corrective fanout (H286-H293)
+
+Focused expansion of the ENFORCEMENT arm into the MIDDLE ground E32 left open: low-stakes, high-certainty CIVIL penalties that keep the deterrence sub-term non-zero (certainty, per Nagin) WITHOUT the custody-reversal prize that drives the Meier weaponisation. Each variant is its own hypothesis. The load-bearing donors here are the day-fine (proportionality + collectability), the library-fine literature (a cautionary donor: escalating magnitude does NOT change behaviour), and child-support enforcement (deterrence with a documented backfire). Every penalty rung still requires a protective-parent / DV exemption or it re-enters the Meier regime.
+
+### The certainty / civil-decoupling logic
+
+- Two orthogonal axes govern a penalty rung. CERTAINTY (does a sanction reliably issue?) supplies the deterrence sub-term fF+ - this is the on-the-spot-issuance vs court-adjudication axis. STAKES (what is at risk - money vs the child?) governs the backfire sub-term - this is the civil vs criminal axis. Weaponisation is a function of STAKES, not certainty: a civil ticket decoupled from custody cannot be used as a custody weapon because the prize is gone
+- The library-fine caution disciplines the "escalating" idea: doubling overdue fines in 1980s Philadelphia had NO effect on return rates and DEPRESSED borrowing; fine-free conversions later showed on-time returns were unchanged while lapsed users returned. Escalation MAGNITUDE is a mirage; only the certainty that a ticket issues at all carries deterrence. This bounds the per-diem escalator to a proportionality / fairness device, not a behaviour lever
+
+### The eight hypotheses (donors, transfers, limits)
+
+1. Escalating per-diem contact-denial ticket (H286) - civil infraction, on-the-spot issuance, amount accrues with the hours the child was withheld
+- Donor A: civil-contempt per-diem coercive-sanction doctrine (US family courts) - a daily fine that is PURGEABLE, terminating the instant the order is obeyed; the most common coercive civil sanction, structurally aimed at compliance not punishment. Donor B: Nagin (2013) certainty > severity. Donor C (cautionary): library overdue-fine literature - escalation magnitude does not change return behaviour
+- Transfer: the per-diem structure and its purgeability transfer directly (compliance stops the meter); certainty (a ticket reliably issues) supplies fF+; the escalator is a proportionality device only. Calibrates fF small-to-moderate+ (certainty-scaled), fScar small+, low leakage IF gated
+- Limit: contempt as practised is COURT-adjudicated and slow (certainty is low in practice); moving to on-the-spot issuance is the certainty upgrade but there is no clean objective signal of who wrongfully withheld (the H283 signal problem), and a protective parent withholding for safety looks identical to a benign alienator
+
+2. Income-scaled day-fine version (H287) - the fine unit is a share of daily income, so it bites equally across the income distribution
+- Donor: Staten Island Day-Fine Experiment (Hillsman / Vera Institute / NIJ, 1988-1989) plus its Finnish (paivasakko) and German (Tagessatz) parents. Measured: cases yielding NO payment fell from 22% (pre-experiment fixed fines) to 6% under day fines; failure-to-appear arrest warrants fell; total court revenue rose despite higher fines on affluent offenders; self-reported income accurate >90% of the time; high collection sustained at higher amounts
+- Transfer: proportionality removes the flat-fine failure mode where a wealthy alienator shrugs and a poor one defaults into a warrant; it raises collectability and perceived fairness. Calibrates the same ticket with far lower default-leakage and an equity gain. Valid transfer = the collectability / equity property
+- Limit: the day-fine literature measured COLLECTION of the fine, not the target behaviour (releasing the child); it proves the penalty is payable and fair, not that it restores contact. The self-employed / high-income can under-report income (the Slemrod perverse-response carried from E32)
+
+3. On-the-spot police issuance vs court-adjudicated (H288) - isolates the CERTAINTY mechanism
+- Donor: red-light / speed-camera enforcement - Cohn et al. (2020) Campbell review and Hoye / Perkins meta-analyses find large drops in the targeted violation (right-angle / red-light-running crashes down ~24-47%) because automated capture raises the PERCEIVED CERTAINTY of apprehension; net crash effect is muted by a rear-end offset. Plus HOPE / Nagin certainty
+- Transfer: court adjudication is slow and uncertain (deterrence sub-term ~0); on-the-spot issuance raises certainty and makes fF+ non-zero - this is the hypothesis that supplies the deterrence term. Direction transfers
+- Limit: the camera has an OBJECTIVE automated signal; a doorstep denial has none - an officer cannot adjudicate custody merits or distinguish a protective withholding from alienation on the spot. The certainty upgrade therefore buys FALSE POSITIVES against protective parents (re-enters Meier). Certainty and accuracy trade off; you cannot have fast AND accurate here
+
+4. Civil infraction (no custody consequence) vs criminal (custody consequence) (H289) - the STAKES / weaponisation axis
+- Donor: Meier et al. (2020) - a father's alienation cross-claim roughly DOUBLES a protective mother's risk of losing custody; plus the civil/criminal-contempt doctrine (civil = coercive, purgeable, prospective; criminal = punitive). The E32 finding that raw criminalisation is REFUTED for weaponisation
+- Transfer: keeping the penalty CIVIL and decoupled from custody removes the custody-reversal prize; a ticket that cannot change custody cannot be wielded as a custody weapon. This is the single design move that collapses the Meier payoff while keeping a deterrence term. Calibrates a large reduction in the backfire sub-term at equal certainty
+- Limit: a civil penalty can still be weaponised as low-grade financial harassment (bad-faith serial ticketing of a low-income protective parent), so the DV / protective-parent exemption remains mandatory; but the weaponisation MAGNITUDE is far lower because the stake is money, not the child
+
+5. Revenue to the wronged parent (make-whole / restitution) vs revenue to the state (H290) - who receives the penalty
+- Donor: Tyler (2006) restorative / procedural-justice - restitution and procedurally-fair, victim-directed sanctions raise perceived legitimacy, and legitimacy (not fear of punishment) drives durable compliance; punishment-only models undercut self-regulation
+- Transfer: directing the penalty to the harmed parent raises legitimacy and compensates the missed-contact harm. Calibrates a legitimacy multiplier (fScar-) and a small fS+ transfer to the wronged parent
+- Limit: make-whole to the parent creates a PERVERSE INCENTIVE - the receiving parent now profits from the other's non-compliance and may provoke or over-document denials for payout (moral hazard raising fScar+). State revenue dodges the moral hazard but has lower legitimacy and reads as a revenue grab (the fines-and-fees critique). Net ambiguous; a CAPPED restitution in MAKE-UP CONTACT TIME rather than cash dodges the cash moral hazard
+
+6. Supervised-exchange / neutral drop-off centres (H291) - corrective, removes the flashpoint
+- Donor: supervised-visitation and safe-exchange outcome literature - parents report feeling safe (~90%), contact is maintained, and handover conflict falls because the parents never meet; explicitly designed for the DV-exchange population
+- Transfer: removing the exchange flashpoint removes the situational trigger for denial events and lets contact continue without contact between the adults. Calibrates fF+ (contact preserved), fScar- (flashpoint removed), low weaponisation - a facilitative, un-weaponisable rung analogous to the ARM-B bond
+- Limit: evidence is observational / self-report, no RCT; it is facilitative not deterrent; capacity and fiscal cost cap scale; primarily validated on the DV-exchange population, so the general-population transfer is a bounded direction
+
+7. Parenting coordinator / special master (H292) - a monitored corrective third party
+- Donor: parenting-coordination evaluation evidence (APA 2012 guidelines; Family Court Review quasi-experimental studies) - PC is associated with DECREASED relitigation and fewer court filings among high-conflict co-parents, managing conflict through a third party with monitoring and limited decision authority
+- Transfer: a monitored third party reduces the relitigation spiral and manages handover conflict. Calibrates fF moderate+, fScar- (conflict managed), moderate cost
+- Limit: the evidence is mostly pre-post / quasi-experimental, not RCT; the measured outcome is RELITIGATION and court-resource use, not contact restoration or fertility; PC fees fall on the family, and PC decision authority can itself be captured / weaponised if not gated
+
+8. Family-support social work as a corrective (vs punitive) rung (H293)
+- Donor: Intensive Family Preservation Services / Homebuilders (carried from E32) - multi-level meta-analysis overall g=0.18, placement g=0.31 child-level but NULL family-level, weaker in the randomised trials
+- Transfer: a supportive, low-harm bottom rung; the corrective (vs punitive) framing keeps fScar~0. Calibrates fF small+, fScar~0, low leakage - a safe but easily-dominated lever
+- Limit: IFPS targets placement PREVENTION, not contact restoration; the RCT effect is small-to-null, so as a standalone contact-restoration lever it is dominated (leans REFUTED); it survives only as a safe complement beneath a rung that actually moves contact
+
+### Interaction note
+
+- Escalating-ticket x DV-exemption (ENABLING): the ticket is net-negative WITHOUT a protective-parent / DV carve-out (false-positive backfire against safe parents swamps the thin deterrence term, per Meier); the exemption is the gate that flips it from the Meier regime to usable. The exemption is a precondition, not an add-on
+- Civil x criminal (the STAKES axis): moving the same certainty mechanism from criminal (custody prize) to civil (money only) collapses the weaponisation payoff - weaponisation tracks stakes, not certainty. This is why H289 can be SUPPORTED while E31/E32 criminalisation was REFUTED at equal or higher certainty
+- Make-whole x legitimacy: restitution raises legitimacy (Tyler, pushing fScar-) but simultaneously creates a receiving-parent moral hazard (pushing fScar+); the two forces oppose, so make-whole is net-positive only when the restitution is make-up CONTACT TIME rather than cash
+- Each lever's sign x the intergenerational path integral: levers that preserve contact WITHOUT raising conflict (supervised exchange, income-scaled civil ticket with exemption) feed fF+ into the 27-45yr path integral, selection-discounted 0.5-0.7 per McLanahan; levers that raise conflict (criminal, uncapped cash make-whole, on-the-spot false positives) feed fScar+ and can net-NEGATIVE the integral even while nominally "enforcing" contact - enforcement that manufactures conflict is a negative-dividend intervention
+
 ## References (sources used)
 
 - Mitchell, O., Wilson, D.B., Eggers, A., MacKenzie, D.L. (2012). Drug Courts' Effects on Criminal Offending for Juveniles and Adults. Campbell Systematic Reviews 8(1); companion in Journal of Criminal Justice 40(1):60-71
@@ -81,3 +139,13 @@ Research digest for batch H271-H285. Topic: how to COMBAT parental alienation on
 - Nagin, D.S. (2013). Deterrence in the Twenty-First Century. Crime and Justice 42(1):199-263
 - Intensive Family Preservation Services / Homebuilders meta-analysis (2020/2024), Children and Youth Services Review (S0145213420300491): overall g=0.18, placement g=0.31 child-level / null family-level
 - Carried from E31: Halla (2013) joint custody +8-14% marital fertility; Emery et al. (2001) mediation 52% vs 14% weekly contact at 12yr; Meier et al. (2020) weaponisation; Alsalem (2023) A/HRC/53/36; McLanahan, Tach & Schneider (2013) father-absence selection discount; Brazil Lei 12.318/2010
+
+Supplement (H286-H293):
+- Hillsman, S.T. et al. / Vera Institute of Justice & NIJ (1990). The Staten Island Day-Fine Experiment; Effects of Instituting Means-Based Fines in Criminal Court (Final Report, NIJ). No-payment 22% -> 6%; warrants down; revenue up; self-reported income >90% accurate. Parents: Finnish paivasakko, German Tagessatz day-fine systems
+- Library overdue-fine literature (cautionary donor): Sung & Tolppanen / Mid-sized academic-library return-behaviour analysis, Journal of Academic Librarianship (S0099133313000992); Colorado State Library and EveryLibrary fine-free evaluations (Chicago +240% returns first month, Denver +17% lost-item returns); 1980s Philadelphia fine-doubling (no effect on return rate, borrowing fell) - escalation magnitude does not change return behaviour
+- Meyer, D.R., Cancian, M., Waring, M.K. (2020). Use of child support enforcement actions and their relationship to payments. Children and Youth Services Review 108 (S0190740919306760): most enforcement actions associate with beginning to pay, BUT license suspension is sometimes associated with LOWER likelihood of payment; wage withholding limited to formal-wage earners (informal-economy / self-employment escape). CRS R41762 on driver's-license-suspension policies
+- Cohn, E.G. et al. (2020). Red light camera interventions for reducing traffic violations and crashes: a systematic review. Campbell Systematic Reviews; Hoye (2013) and Perkins et al. red-light-camera meta-analyses (right-angle / red-light-running crashes down ~24-47%, rear-end offset) - automated capture raises perceived certainty of apprehension
+- Civil-contempt coercive-sanction doctrine: US DOJ Justice Manual 754 and 757 (civil vs criminal contempt, the purge test); per-diem daily fines as the common coercive, purgeable family-court sanction
+- Tyler, T.R. (2006). Restorative Justice and Procedural Justice: Dealing with Rule Breaking. Journal of Social Issues 62(2); procedural-justice / legitimacy model - legitimacy, not fear of punishment, drives durable compliance; victim restitution engages self-regulatory mechanisms
+- Supervised-visitation / safe-exchange outcome literature (environmental scans and program evaluations): ~90% of parents report feeling safe; handover conflict reduced by removing adult-to-adult contact; validated primarily on the DV-exchange population
+- Parenting-coordination evidence: American Psychological Association (2012) Guidelines for the Practice of Parenting Coordination; Family Court Review quasi-experimental evaluations (Dealy 2023; Sullivan 2020) - associated with decreased relitigation and court filings, evidence largely pre-post / quasi-experimental

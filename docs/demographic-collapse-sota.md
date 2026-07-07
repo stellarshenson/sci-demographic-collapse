@@ -138,8 +138,8 @@ marriageability - un-marriageable men and women downstream - which feeds back in
 **The population-distribution framework.** A representative-agent scalar hides two things that decide
 outcomes: the Jensen gap (a heterogeneous population near a nonlinear threshold behaves unlike its mean - a
 trapped population's coupling runs 66% above what the mean predicts, because its upper tail crosses) and
-selection (the matriarchy male-exit and female hypergamy are literally tail operations on the marriageability
-distribution). The framework (`population.py`) lifts any channel to a bucketed distribution via the
+selection (a cutoff or preference threshold that truncates or reweights the tail of a distribution, which the
+representative-agent scalar cannot express). The framework (`population.py`) lifts any channel to a bucketed distribution via the
 reparameterisation trick, `θ = μ + σ·ε`, discretised with Gauss-Hermite quadrature, giving Jensen-correct
 aggregates `⟨f⟩ = Σ w_k f(θ_k)`, heterogeneous intervention response, and tail-selection. The next step is to
 evolve these distributions with **optimal transport**: the operations that matter break Gaussianity
