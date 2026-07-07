@@ -1,0 +1,13 @@
+lever,channel,cost,dTFR_korea,efficiency,fate
+cohabitation legal recognition,coup,0.088,0.217,2.469,bends
+inequality compression,coup,0.36,0.697,1.937,bends
+gender-equity (domestic),coup,0.24,0.455,1.894,bends
+family housing supply,coup,0.26,0.455,1.748,bends
+universal penalty removal,coup,0.315,0.539,1.711,bends
+in-kind childcare,coup,0.38,0.632,1.663,bends
+gender depolarization (norm),coup,0.195,0.293,1.502,bends
+youth job-security / precarity,coup,0.335,0.455,1.357,bends
+de-risk dissolution (school ed),coup,0.168,0.217,1.293,bends
+father-quota default,coup,0.215,0.217,1.01,bends
+IVF / ART,quant,0.245,0.05,0.203,holds
+cash allowance,cash,0.42,0.005,0.011,holds

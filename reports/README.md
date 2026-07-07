@@ -90,6 +90,11 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb14_classes_position.png` - dynamical class of all ~88 interventions by region, and the same-lever Korea-vs-Germany position-dependence
 - `nb14_interaction_timing.png` - a keystone bundle vs a cash bundle, started early vs a generation late: momentum makes timing decisive
 
+**Seldon harbingers (Notebook 15, E20)**
+- `nb15_harbingers.png` - every lever ranked by fertility improvement per composite cost, and the cost-vs-improvement scatter (cheap + high = harbinger)
+- `nb15_ablation_core.png` - the full recovery bundle ablated to its lean cost-efficient core (dTFR kept, cost shed); coupling non-ablatable
+- `nb15_timing_pareto_position.png` - the harbinger is cheaper earlier (timing), the cost-vs-improvement Pareto knee, and the same near-free lever by position (bends vs recovers)
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
@@ -113,6 +118,8 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb13_e18_verdicts.json` - all 20 E18 verdicts (H144-H163) with evidence
 - `nb14_dynamical_table.csv` - E19 dynamical re-judgement: each intervention's channel, Korea/Germany 2125 TFR + population gain, and dynamical class
 - `nb14_e19_verdicts.json` - full E19 dynamical results for all 88 interventions across Korea/Germany/France
+- `nb15_harbinger_table.csv` - E20 lever ranking: composite cost, Korea dTFR, improvement-per-cost efficiency, Seldon fate
+- `nb15_e20_verdicts.json` - the six E20 Seldon-harbinger verdicts (H164-H169) with evidence
 
 ## Verdict records
 
