@@ -1,0 +1,164 @@
+[
+  {
+    "id": "E32-H271",
+    "claim": "social-work supervision",
+    "evidence": "mean \u0394TFR +0.100; IFPS/Homebuilders g=0.18, null at family level - safe, cheap, dominated",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H272",
+    "claim": "stepped therapy (escalate on failure, abuse-gated)",
+    "evidence": "mean \u0394TFR +0.269; drug-court graduated-sanctions+treatment (Mitchell 2012, recidivism 50->38%); the escalation THREAT is the active ingredient, conditional on the abuse-gate",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H273",
+    "claim": "monitored sanction (certainty supplied)",
+    "evidence": "mean \u0394TFR -0.037; HOPE certainty (Hawken-Kleiman 2009) + tax-audit (Slemrod); monitoring turns the deterrence term positive but nets ~0 against the backfire - necessary not sufficient",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H274",
+    "claim": "raw criminalisation, no monitoring (severity)",
+    "evidence": "mean \u0394TFR -0.160; severity without certainty = zero deterrence (Nagin), high weaponisation - the E31 Brazil result mechanistically explained",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E32-H275",
+    "claim": "coercion sign-heterogeneity",
+    "evidence": "mean \u0394TFR -0.041; SARP mandatory-arrest deterred employed, ESCALATED unemployed (Sherman-Berk); pop-weighted mean ~0, forbids a single global coercion setting",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H276",
+    "claim": "foster/removal-until-reconciliation",
+    "evidence": "mean \u0394TFR -0.425; Doyle 2007/08 marginal foster kids worse + Barnevernet/ECHR; removal severs BOTH bonds + trauma - the antipattern",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E32-H277",
+    "claim": "refund + clawback bond (the seed)",
+    "evidence": "mean \u0394TFR +0.314; CARES deposit-contract (Gine-Karlan-Zinman); both parents post the same stake -> un-weaponisable, delta ~0.10",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H278",
+    "claim": "contingency-management milestone rewards",
+    "evidence": "mean \u0394TFR +0.327; CM g~0.54, the largest psychosocial effect (Higgins, Petry); attenuates after reward stops",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H279",
+    "claim": "conditional cash / tax credit",
+    "evidence": "mean \u0394TFR +0.420; Progresa/Bolsa Familia move conditioned behaviour, but cash is the campaign's weakest fertility lever (E15/E20 mirage)",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H280",
+    "claim": "symmetric two-sided bond (un-weaponizable)",
+    "evidence": "mean \u0394TFR +0.272; both post the identical stake -> weaponisation ~0, delta 0.05, the lowest in the batch - the design win",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H281",
+    "claim": "loss-frame (lose-it) vs gain-frame",
+    "evidence": "mean \u0394TFR +0.414; Fryer-Levitt-List-Sadoff loss-framed bonus +0.2-0.4 SD vs null gain-frame - a design free-lunch at equal cost",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H282",
+    "claim": "child-outcome-contingent reward",
+    "evidence": "mean \u0394TFR +0.263; better-targeted in principle (Progresa conditionality) but child wellbeing is noisy/slow to measure - gaming toward proxies",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H283",
+    "claim": "objective clawback trigger (detection design)",
+    "evidence": "mean \u0394TFR +0.067; objective automatic trigger keeps delta 0.10; complaint-driven jumps to 0.45 - the whole ARM-B robustness hinges on this",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H284",
+    "claim": "reward x shared-custody x mediation (the stack)",
+    "evidence": "mean \u0394TFR +0.480; three orthogonal channels (Halla legal default + Emery diversion + the bond) - super-additive, the largest intergenerational dividend",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H285",
+    "claim": "carrot x stick substitution",
+    "evidence": "adding the monitored stick to the symmetric bond changes \u0394TFR only -0.023 - a credible carrot drops the stick's marginal value to ~0; stacking coercion on top is net-harmful",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H286",
+    "claim": "escalating per-diem contact-denial ticket",
+    "evidence": "mean \u0394TFR +0.009; civil-contempt purgeable per-diem + certainty; BUT library-fine (Philadelphia doubling: zero effect) = escalation magnitude is a mirage; certainty, not size",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H287",
+    "claim": "income-scaled day-fine",
+    "evidence": "mean \u0394TFR +0.012; Staten Island day-fine (Hillsman/Vera): no-payment 22->6%, revenue up, equity+; dominates the flat fine on collectability",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H288",
+    "claim": "on-the-spot police issuance (certainty)",
+    "evidence": "mean \u0394TFR +0.009; red-light-camera certainty (Cohn 2020) supplies the deterrence term, but a doorstep denial has no objective signal -> false positives on protective parents",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H289",
+    "claim": "civil (no custody consequence) vs criminal",
+    "evidence": "mean \u0394TFR +0.009; THE KEY INSIGHT: weaponisation tracks STAKES not certainty; a ticket that cannot change custody cannot be a custody weapon - collapses the Meier payoff",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H290",
+    "claim": "revenue to the wronged parent (make-whole)",
+    "evidence": "mean \u0394TFR +0.036; legitimacy+ (Tyler restorative justice) but cash make-whole creates a perverse incentive to provoke denials; net-positive only as make-up CONTACT time",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H291",
+    "claim": "supervised exchange / neutral drop-off",
+    "evidence": "mean \u0394TFR +0.037; removes the handover flashpoint, contact continues with no adult contact - un-weaponisable; weak-observational evidence + fiscal ceiling",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E32-H292",
+    "claim": "parenting coordinator / special master",
+    "evidence": "mean \u0394TFR +0.024; reduces relitigation (Dealy 2023 quasi-exp) but the outcome is court-resource not contact; PC authority capturable if ungated",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H293",
+    "claim": "family-support social work (corrective)",
+    "evidence": "mean \u0394TFR +0.007; safe/cheap bottom rung, small-to-null (IFPS) - survives only as a complement",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H294",
+    "claim": "criminal fine, custody-decoupled",
+    "evidence": "mean \u0394TFR +0.003; a certain low penalty decoupled from custody - deters mildly without the weaponisation; the lowest viable criminal rung",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H295",
+    "claim": "community service / public works",
+    "evidence": "mean \u0394TFR +0.004; a corrective-punitive hybrid, decoupled - does something without removing the parent; modest conflict cost",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H296",
+    "claim": "suspended jail sentence (threat, decoupled)",
+    "evidence": "mean \u0394TFR -0.001; the drug-court graduated-THREAT logic - deters without the incarceration harm, but the threat itself adds conflict",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E32-H297",
+    "claim": "actual jail time (custody-decoupled)",
+    "evidence": "mean \u0394TFR -0.234; removes a parent from the child (fF-), severity>certainty (Nagin), incarceration harms children (Wakefield-Wildeman; Wildeman 2009) - the ladder's off-limit top rung even decoupled from custody",
+    "verdict": "REFUTED"
+  }
+]

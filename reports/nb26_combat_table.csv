@@ -1,0 +1,27 @@
+id,arm,name,verdict
+H271,stick,social-work supervision,PARTIAL
+H272,stick,"stepped therapy (escalate on failure, abuse-gated)",PARTIAL
+H273,stick,monitored sanction (certainty supplied),PARTIAL
+H274,stick,"raw criminalisation, no monitoring (severity)",REFUTED
+H275,stick,coercion sign-heterogeneity,PARTIAL
+H276,stick,foster/removal-until-reconciliation,REFUTED
+H277,carrot,refund + clawback bond (the seed),SUPPORTED
+H278,carrot,contingency-management milestone rewards,SUPPORTED
+H279,carrot,conditional cash / tax credit,PARTIAL
+H280,carrot,symmetric two-sided bond (un-weaponizable),SUPPORTED
+H281,carrot,loss-frame (lose-it) vs gain-frame,SUPPORTED
+H282,carrot,child-outcome-contingent reward,PARTIAL
+H283,carrot,objective clawback trigger (detection design),PARTIAL
+H284,carrot,reward x shared-custody x mediation (the stack),SUPPORTED
+H286,civil,escalating per-diem contact-denial ticket,PARTIAL
+H287,civil,income-scaled day-fine,SUPPORTED
+H288,civil,on-the-spot police issuance (certainty),PARTIAL
+H289,civil,civil (no custody consequence) vs criminal,SUPPORTED
+H290,civil,revenue to the wronged parent (make-whole),PARTIAL
+H291,civil,supervised exchange / neutral drop-off,SUPPORTED
+H292,civil,parenting coordinator / special master,PARTIAL
+H293,civil,family-support social work (corrective),PARTIAL
+H294,graded,"criminal fine, custody-decoupled",PARTIAL
+H295,graded,community service / public works,PARTIAL
+H296,graded,"suspended jail sentence (threat, decoupled)",PARTIAL
+H297,graded,actual jail time (custody-decoupled),REFUTED
