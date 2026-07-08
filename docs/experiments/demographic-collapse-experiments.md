@@ -1447,6 +1447,27 @@ abs err 6.41e-05, all six regions). Campaign total → 357.
 | E36-H356 | the honest saturating dose overturns the linear "12 to hold, 48 to recover" | drive-alone ceiling +0.487 sits below the +0.551 needed to hold 0.72; hold, bend and recover are all unreachable by income alone at any finite dose; the E22 linear line said 18/28/44 booms | SUPPORTED |
 | E36-H357 | the "strongest single lever / only one that bends Korea" claim is QUALIFIED, not overturned | broad-based male income still bends all three (Korea +0.274, Germany +0.433, France +0.293) and is the strongest single positive channel, but concentrated men-only collapses to +0.124 and it cannot recover any region alone - it bends, it does not recover, and only in its broad-based gender-balanced form | SUPPORTED |
 
+## Catalogue effects-compete sweep (post-E36 audit)
+
+After E36 exposed the marriageable-men lever as linearly-dosed and single-channel, the full 182-lever
+`interventions.py` catalogue was swept under the effects-compete discipline - the requirement that every
+lever both *saturate* (bound out through the clipped channel dynamics) and *contend on shared wires* (carry
+its competing counter-terms rather than push one channel in isolation). The verdict is **substantially
+compliant: 154 of 182 levers (E16-E33) contend on their shared wires, and no un-corrected linear-dose
+headline survives**. The discipline was genuinely applied from E16 onward - defection leakage `(1−δ)` is
+folded into every forcing vector, backfires carry explicit negative channels (fS/fRV/fScar), and each
+batch's real interaction (substitution, regime sign-flip, weaponisation, durability null, super-additivity)
+is modelled as a sibling lever, with the E16/E18 "super-additive stacking" artifact already dissolved by the
+combination law (`combine.py`). Only two gaps remain, both resolved by annotation rather than re-simulation
+because neither carries a headline claim: the **E14/E15 IV-menu (28 rows)** predates the defection parameter,
+so its bare positive S/C/Pb pushes are un-screened and ~1.2-1.4x their δ-screened E16 successors (E14 IV5
+housing fS 0.18 → E16 H114 fS 0.13) - retained as pre-defection legacy, superseded by E16 and re-judged
+dynamically in E19, never read as headline; and **E18-H155 (hypergamy squeeze)** encodes only the positive
+"reduce the squeeze" arm, its convex asymmetric-lift counter-term carried by E36-H351 which supersedes it.
+Both are annotated in `interventions.py`. No re-simulation was warranted - the one genuine linear-dose
+offender (marriageable-men) was already re-formulated as E36 and no headline SOTA lever required correction.
+Campaign total unchanged at 357.
+
 ## Model extensions this session (E25, E30, population framework)
 
 Two baseline-preserving extensions were added to the calibrated E19 core (`src/sci_demographic_collapse/emergent.py`), each verified to leave every region's 2023-calibrated baseline unchanged to ~3e-7 (the coupling term is identically zero at the reference state, so no re-fit):

@@ -24,6 +24,21 @@ Not reconstructable as static channel vectors (verdicts live in reports/*_verdic
 E28 H219/H222-H226 (sweep and interaction syntheses), E29 H227-H246 (population-framework
 mechanism batch), E30 H249/H251/H255-H258/H260 (core-property claims), E32 H285 (interaction
 finding), E33 H300-H302/H306 (compounding sub-populations).
+
+Effects-compete status (post-E36 catalogue sweep)
+- E16-E33 levers CONTEND on their shared wires: defection leakage `(1 - delta)` is folded into
+  every `f`, backfires carry explicit negative channels (fS/fRV/fScar), and each batch's real
+  interaction (substitution, regime sign-flip, weaponisation, durability null, super-additivity)
+  is modelled as a sibling lever; the E16/E18 "super-additive stacking" artifact is dissolved by
+  the combination law (`combine.py`). No linear-dose headline survives here - the one offender,
+  marriageable-men, lived in nb16 (not this catalogue) and was re-formulated as E36.
+- E14/E15 IV-menu (IV1-IV14, E15-IVn) PREDATE the defection parameter (introduced E16): their bare
+  positive S/C/Pb pushes are un-screened and ~1.2-1.4x their delta-screened E16 successors (e.g.
+  E14 IV5 housing fS 0.18 -> E16 H114 fS 0.13). They are retained only as the pre-defection legacy
+  menu, superseded by E16 and re-judged dynamically in E19 - do NOT read their magnitudes as
+  headline.
+- E18-H155 (hypergamy squeeze) encodes only the positive "reduce the squeeze" arm; its convex
+  asymmetric-lift counter-term is carried by E36-H351, which supersedes it for any headline use.
 """
 
 CHANNELS = ("fS", "fC", "fPb", "fTau", "fRV", "fN", "fq", "fF", "fScar")
