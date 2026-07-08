@@ -1,0 +1,62 @@
+[
+  {
+    "id": "E35-H339",
+    "claim": "within-population eigen-operator is inert AS A LEVER at the Kolk-2014 anchor",
+    "evidence": "anchored operator (r=0.15, Lambda=I) max|dTFR| = 0e+00 on the scalar single-agent core (xbar==x -> delta identically 0) and 6.8e-04 on the dispersed K-agent core (2050-2125); ~1e4x below any real channel - it does not move national fertility and does not touch the 2023 calibration",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E35-H340",
+    "claim": "between-group share compounding sets a long-run national TFR FLOOR dominating the mainstream trend",
+    "evidence": "national TFR = share-weighted blend of sect(>2.05) + declining mainstream: as the sect compounds its share the asymptotic national floor sits at ~4.3-6.8 TFR (Amish/Hutterite/Haredi), ABOVE replacement, regardless of how far the mainstream falls - the floor is the whole-population fixed point, not the mainstream trend",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E35-H341",
+    "claim": "retention (apostasy delta), NOT subgroup fertility, is the load-bearing axis of the floor",
+    "evidence": "(delta,tfr) sweep: asymptotic-share range varying delta[0.02-0.5]=0.36 vs tfr[3-10]=0.20 (delta 1.8x); and delta switches the takeover on/off (tfr 6.6: gen 4 at delta 0.05 -> never at delta 0.45) - fertility above replacement is necessary, retention makes it compound (generalises E33-H306)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E35-H342",
+    "claim": "the national floor is pinned by the highest-retention above-replacement subpop, ~independent of R_main",
+    "evidence": "varying the mainstream decline R_main across 0.5-1.1 moves the national floor by only 0.40 TFR (Haredi 6.6/0.10) - the floor is set by the sect's (tfr,delta), not by the mainstream's rate of fall",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E35-H343",
+    "claim": "within-population cultural transmission is ALREADY carried by the bistable norm N + ot.py cohort memory",
+    "evidence": "the channels the operator was meant to add already move mean dTFR ~0.056 (norm N, coupling, father-invest + scar cohort-memory path integrals) - ~83x the operator's 6.8e-04; a separate linear operator adds nothing",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E35-H344",
+    "claim": "cultural transmission is a DESCRIPTIVE FLOOR, not a controllable intervention",
+    "evidence": "the compounding sects are existence proofs (E33-H300/301/302) with retention delta 0.05-0.13 that are properties of a bounded, high-exit-cost community, explicitly recorded as NOT transferable; a high-retention above-replacement sect cannot be manufactured by policy - the floor describes the boundary condition, it is not a lever",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E35-H345",
+    "claim": "a policy raising the MAINSTREAM's retention of a pronatal norm cannot compound like a sect",
+    "evidence": "mainstream pseudo-sect (tfr 2.2, no boundary -> high delta): share 0.05 -> 0.07 at delta 0.3, ->0.000 at delta 0.5, no takeover; the same fertility BOUNDED (delta 0.08) takes over by gen None - compounding needs the boundary, which policy on the open population cannot supply",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E35-H346",
+    "claim": "the earlier a high-retention subpop's share is seeded, the sooner and shallower the national trough",
+    "evidence": "seed sweep x0 0.002->0.15: national-TFR trough rises 1.41->2.21 and takeover advances gen 5->2; timing is monotone, though the asymptotic floor is a seed-INVARIANT fixed point (0.60) - timing governs the transient and time-to-floor, not the ultimate level",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E35-H347",
+    "claim": "the eigenbasis V is immaterial at the anchor (Phi = r*I): the elegance is decorative",
+    "evidence": "with Lambda=I, Phi = r*V*V^T = r*I identically; max|Phi - r*I| = 1.1e-16 across all three regional eigenbases - V (the 'cultural archetype' rotation) makes no difference to the operator whatsoever",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E35-H348",
+    "claim": "the between-group floor changes none of the 338 intervention verdicts (separable, orthogonal)",
+    "evidence": "the floor enters national TFR as an additive share-weighted term (1-x)*main + x*sect; a within-nation lever's marginal effect is exactly (1-x)*dTFR_main - same sign (4/4 preserved), identical lever ordering national vs mainstream (True), merely rescaled by the sect complement - the floor and the levers write different terms of the same sum",
+    "verdict": "SUPPORTED"
+  }
+]
