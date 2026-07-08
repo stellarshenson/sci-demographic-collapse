@@ -17,3 +17,4 @@ Progress logs for background and long-running jobs.
 - `nb8-execute.log` - execution of `notebooks/08-kj-demographic-contrarian.ipynb` (contrarian audit, E13)
 - `nb9-execute.log` - execution of `notebooks/09-kj-demographic-reversal.ipynb` (reversal interventions + manifold/drivers images, E14)
 - `nb10-execute.log` - execution of `notebooks/10-kj-demographic-intervention-story.ipynb` (coupling keystone + literature-grounded intervention strengths, 27 hypotheses, E15)
+- `nb17-execute.log` - execution of `notebooks/17-kj-story-visuals.ipynb` (README story figures, incl. the male-prospects power-vs-value companion chart)
