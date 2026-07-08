@@ -126,3 +126,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 41. **Task [Short] - README male-prospects box header** (v0.7.0): Added a titled header to the "conspicuous absence" IMPORTANT callout in `README.md`<br>
     **Result**: Prefixed the box with a bold header **The male prospects problem** and an italic subtitle *- uncomfortable truth and strongest intervention*, followed by `<br><br>` into the paragraph; un-bolded the former opening sentence so the header carries the emphasis. Verified 0 em-dashes.
+
+42. **Task - README male-prospects cultural-barrier paragraph** (v0.7.0): Added a second paragraph to the male-prospects IMPORTANT callout in `README.md`<br>
+    **Result**: Appended a blockquote paragraph (via a `>` break so it renders as a second paragraph inside the same alert) on the cultural obstacle - that a public conversation finds it hard to accept young men now need help, yet demography ages the society into decline regardless. Kept the doc's measured, non-partisan register (echoes the "duty to the truth, not the room" line). Verified 0 em-dashes.

@@ -112,6 +112,8 @@ There is one last, faintly hopeful twist. When the model is asked not "what is m
 
 > [!IMPORTANT]
 > **The male prospects problem** *- uncomfortable truth and strongest intervention*<br><br>One conspicuous absence belongs here by design. The strongest lever of all - restoring young men's economic prospects - does not appear on this list precisely because it is the *costliest*, a sustained mountain of earnings rather than a near-free reform, so it tops the power ranking and sits at the bottom of the value one. The two lists answer different questions. And the cheap way to make that expensive lever actually pay is already here: deliver the gains *broadly*, by narrowing inequality, rather than as a concentrated windfall to a few - a lopsided boom widens the very income gap that makes children feel ruinously expensive, and largely cancels itself.
+>
+> The harder barrier is cultural, not fiscal. It is genuinely difficult for a public conversation to accept that young men - the group long assumed to hold the advantages - are now the ones whose prospects most need repair. But demography does not wait for that discomfort to settle: if young men cannot form couples, the births do not follow, and the society ages into decline all the same. The truth being uncomfortable does not make it any less true; refusing it only lets the problem compound until the fall is far harder to stop.
 
 These help most when a country starts early, while it still has room to move. Cash handed out as baby bonuses, meanwhile, ranks dead last for value. The heralds of a recovery, it turns out, are cheap.
 
