@@ -2,14 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the full E1-E35 campaign - 348 pre-registered
-hypotheses across thirty-five rounds. It is an age-structured cohort-component (Leslie) core of national
+The distilled, calibrated design that survived the full E1-E36 campaign - 357 pre-registered
+hypotheses across thirty-six rounds. It is an age-structured cohort-component (Leslie) core of national
 populations, wrapped in a seven-channel coupled behavioural layer whose baseline reproduces each region's
 real 2023 fertility, calibrated by an information-preserving Wasserstein objective, backtested
 out-of-sample, stress-tested against four historical crises, and used to size, rank and ablate the entire
 intervention catalogue over four generations. The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-28 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
+3-28 plus 31-32 (E34, E36) and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
 coupled behavioural × Leslie model, the judge every intervention is scored on).
 
 ## Overview
@@ -200,18 +200,31 @@ for stacked side effects. The levers below are the SUPPORTED survivors, grouped 
 campaign found. Each carries its mechanism and its honest caveat. Magnitudes are model ΔTFR on the triad;
 the model sizes a lever, it does not prove a policy achieves it.
 
-### 1. Marriageable men - income, not degrees (the strongest single lever)
+### 1. Marriageable men - income, not degrees (the strongest single channel, and it saturates)
 
-Raising non-college men's earnings and employment is the strongest causal lever in the campaign and the
-*only* single lever that bends deep-basin Korea (+0.48). Two natural experiments agree - the Autor-Dorn-Hanson
-China shock cut fertility 6.1/1,000 and marriage 4.2pt, Kearney-Wilson fracking raised births ~3% with
-marriage flat - giving an elasticity ~0.2-0.4 (E22-H170). The education paradox sharpens it: raising male
-*income* bends Korea +0.51 while pushing male *degrees* returns only +0.20, because the university arms-race
-and postponement eat ~0.18 of the gain - the efficient move is income off the university track, not the
-credential war (E22-H175). The contrarian bundle male income + kin-proximity + gender-equity-in-the-home
-bends Korea +1.08, five-fold the naive "push degrees, hand out cash" bundle (E22-H176). **Caveat**: it raises
-births more than marriage (partly non-marital); the required dose is a measurable mountain - ~12 fracking-
-booms of sustained male-earnings gain just to *hold* Korea's 0.72, ~48 to *recover* to 1.5.
+Raising non-college men's earnings and employment is the strongest single positive channel in the campaign
+and, in its broad-based form, still the only single lever that bends deep-basin Korea. But E36 re-formulated
+it honestly - as a *saturating* Hill response on *relative* (positional) male income, with its competing
+counter-terms wired onto the same coupling and quantum channels - and every headline number shrank, because
+effects compete rather than add. Two natural experiments fix the response: the Autor-Dorn-Hanson China shock
+(fertility −6.1/1,000, marriage −4.2pt) and Kearney-Wilson fracking (births ~3%, marriage flat) set the
+near-origin slope, and the elasticity 0.2-0.4 is that slope, not a constant (E22-H170). The drive saturates:
+the old "+0.48" is its asymptote, not a way-point (a plausible 80-boom dose reaches +0.374), because once
+men's relative rank is restored more income buys no further marriageability (E36-H349). The education paradox
+holds but smaller: male *income* bends Korea +0.274 while male *degrees* returns +0.144, the university
+arms-race and postponement eating the gain (E22-H175, E36-H352) - income still dominates on both the
+contemporary and the delayed horizon, so the efficient move is income off the university track. The contrarian
+bundle income + kin-proximity + gender-equity-in-the-home bends Korea +0.908, and it beats the single-channel
+ceiling by *stacking complementary saturating channels*, not by over-driving one wire (E36-H355). Two
+competition terms bind: a concentrated, men-only delivery roughly *halves* the effect (to +0.124) because it
+feeds the inequality (Doepke) and hypergamy-squeeze (Esteve, Autor) counter-terms, so only a broad-based,
+gender-balanced delivery is the strong form (E36-H350/H351/H357); and the female arm is sign-conditional -
+female income is fertility-positive only above home-equity γ≈0.5, negative under specialisation (E36-H353).
+**Caveat, corrected**: the earlier linear dose ("~12 fracking-booms to hold, ~48 to recover") was an
+extrapolation and is overturned - the drive-alone ceiling (+0.487) sits *below* even the +0.551 needed just to
+*hold* Korea's 0.72, so income alone bends but cannot hold or recover at any finite dose (E36-H356). Recovery
+must come from the stacked fanout - broad-based delivery + kin proximity + home equity + the female arm +
+fiscal redistribution - and the extra births are partly non-marital.
 
 ### 2. Gender equity in the home - the Doepke root lever
 
@@ -427,7 +440,8 @@ project runs on is that elegance must move the numbers.
   the crisis battery and the contrarian audit; `09`-`13` the reversal catalogue and the E14-E18 intervention
   rounds; `14` the dynamical re-examination (the model as judge); `15` the harbinger ablation; `16`-`27` the
   structural / exit-machinery / norms / alternative-structure / religion rounds; `28` the cultural-
-  transmission close (E35). All execute end-to-end on the pinned GPU
+  transmission close (E35); `31` the heretical / coercive-natalism fanout (E34) and `32` the marriageable-men
+  saturating-fanout re-simulation (E36). All execute end-to-end on the pinned GPU
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID
   behavioural panel; provenance in `data/raw/README.md` and the per-source manifests
 - **Numbers** - `reports/nb7_parameter_table.csv` (recalibrated per-region parameters), `nb7_predictions.csv`

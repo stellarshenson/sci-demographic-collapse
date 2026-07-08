@@ -1,0 +1,56 @@
+[
+  {
+    "id": "E36-H349",
+    "name": "the marriageable-men drive SATURATES in relative male income (Hill, not linear)",
+    "evidence": "marriageability q responds to income via q_max\u00b7I/(I50+I) (n=1 Langmuir; near-origin slope 0.03 \u0394TFR/boom from Kearney-Wilson, I50=14 booms); the drive-alone ceiling on Korea is +0.374 \u0394TFR (reachable TFR 0.54) - the E22 '+0.48 drive alone' is the ASYMPTOTE, not a way-point; the positional market stops paying once rank is restored",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H350",
+    "name": "an unevenly-landing (concentrated) boom partly self-cancels via the Doepke inequality channel",
+    "evidence": "a fully-concentrated lift (\u03ba=1) bites -0.066 \u0394TFR on Korea vs the broad-based drive (Doepke-Zilibotti: inequality raises intensive-parenting stakes \u2192 quantum P\u0304 falls); net-positive only when broad-based",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H351",
+    "name": "lifting men without matching female footing worsens the hypergamy squeeze and cuts coupling",
+    "evidence": "a men-only lift (gap=1) bites -0.112 \u0394TFR on Korea through the coupling channel (Esteve 2016 end-of-hypergamy; Autor asymmetry: female-intensive shocks move marriage the opposite way); the squeeze is convex in the gap, so 'just lift men' backfires past a point",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H352",
+    "name": "the degrees route is worse contemporaneously (arms-race) but writes a delayed path-integral dividend",
+    "evidence": "the education route bites -0.129 now (arms-race + postponement, E22-H175 ~0.18) yet the childhood-env term feeds the 27-45yr cohort-memory path integral: degrees gen-1 +0.015 \u2192 gen-4 +0.138 vs income gen-1 +0.132 \u2192 gen-4 +0.278; income still dominates on both horizons",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E36-H353",
+    "name": "the female arm is sign-conditional: female income is fertility-positive only under home equity",
+    "evidence": "female-income \u0394TFR on Korea runs -0.019 at \u03b3=0.1 (specialisation, double-burden postponement) to +0.135 at \u03b3=0.9 (equity), crossing zero near \u03b3\u22480.50 (Doepke-Kindermann; Goldscheider gender revolution)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H354",
+    "name": "broad-based / redistributive delivery counters the inequality backlash and restores net-positive",
+    "evidence": "switching fiscal redistribution on over a concentrated lift recovers +0.066 \u0394TFR on Korea (\u03ba_eff = \u03ba(1-r)); the lever's sign is a property of the DELIVERY, not just the size",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H355",
+    "name": "the full fanout (broad + equity + female arm + fiscal) beats the drive ceiling by stacking channels",
+    "evidence": "the contrarian bundle bends Korea +0.908 vs the drive-alone ceiling +0.374, because it recruits security + coupling + the female arm - separate saturating channels - rather than over-driving the one marriageability channel (consistent with the E18 'one lever per channel' law)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H356",
+    "name": "the honest saturating dose overturns the linear '12 to hold, 48 to recover'",
+    "evidence": "on the saturating curve, HOLD 0.72 needs \u221e (above the drive ceiling), BEND 1.0 \u221e, RECOVER 1.5 \u221e (above the ceiling +0.374); the E22 linear line said 18/44 booms - saturation makes recover-by-income-alone unreachable at any finite dose",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E36-H357",
+    "name": "the 'strongest single lever / only one that bends Korea' claim is QUALIFIED, not overturned",
+    "evidence": "broad-based male income still bends all three (Korea +0.274, Germany +0.433, France +0.293) and remains the strongest single positive channel - BUT it is not monotone or unbounded: a concentrated men-only delivery collapses to +0.124 on Korea, and it cannot recover any region alone. It bends, it does not recover; and only its BROAD-BASED, gender-balanced form is the strong lever",
+    "verdict": "SUPPORTED"
+  }
+]

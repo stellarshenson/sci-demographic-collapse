@@ -1,0 +1,177 @@
+[
+  {
+    "id": "E34-H314",
+    "claim": "Decree 770 total ban (abortion + contraception)",
+    "evidence": "gen1 +0.026 vs gen4 -0.217 (triad mean, the two competing); Korea +0.013->-0.146; delta=0.75; signature=reverses; SIGN-FLIP (coercion reversal). Romania 1966: TFR 1.9->3.7 in one year, back to baseline by 1983, 100-170k orphans; the canonical mirage-then-collapse and the calibration case for the cross-generational reversal (Bucharest EIP: 7-9pt IQ loss, insecure attachment)",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H315",
+    "claim": "Mutterkreuz honour decoration (pronatal medal, no penalty)",
+    "evidence": "gen1 +0.043 vs gen4 +0.068 (triad mean, the two competing); Korea +0.035->+0.032; delta=0.10; signature=compounds. Nazi Germany 1938 Cross of Honour; historians attribute the CBR rise to the abortion ban + marriage loans, not the medal - a pure-honour norm nudge is weak and confounded by the coercive package around it",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H316",
+    "claim": "Childlessness tax + Mother-Heroine medals (penalty + honour)",
+    "evidence": "gen1 +0.056 vs gen4 +0.060 (triad mean, the two competing); Korea +0.040->+0.010; delta=0.30; signature=compounds. USSR 1941 childlessness tax + 1944 Mother Heroine (~430k awarded); the penalty arm is coercion-adjacent (transmits mild resentment), the honour arm inert, heavy wartime confound",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H317",
+    "claim": "Eugenic Graduate Mothers Scheme (selective natalism)",
+    "evidence": "gen1 +0.008 vs gen4 -0.019 (triad mean, the two competing); Korea +0.005->-0.021; delta=0.40; signature=weak/decays; SIGN-FLIP (coercion reversal). Singapore 1984, rescinded within a year after electoral backlash; national TFR still fell to 1.42 by 1986 - eugenic conditioning triggers revolt, the autonomy+pluralism cost is disqualifying, the fertility effect nil",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H318",
+    "claim": "Sacred third-child baptism (un-buyable devotion)",
+    "evidence": "gen1 +0.322 vs gen4 +0.596 (triad mean, the two competing); Korea +0.249->+0.373; delta=0.05; signature=compounds. Georgia, Patriarch Ilia II from 2007-08: births +28% in two years, entirely in married and third-order fertility, delta~0 because the sacred act cannot be bought or faked - the un-buyable-devotion existence proof that compounds forward",
+    "verdict": "SUPPORTED",
+    "lean": "SUPPORTED"
+  },
+  {
+    "id": "E34-H319",
+    "claim": "Contraception rollback / pronatalist reversal",
+    "evidence": "gen1 +0.013 vs gen4 -0.105 (triad mean, the two competing); Korea +0.007->-0.088; delta=0.50; signature=reverses; SIGN-FLIP (coercion reversal). Iran post-2012: modern contraceptive use fell 67%->31% but TFR stayed near/below replacement - removing options does not create demand; unwanted births carry fScar into the integral",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H320",
+    "claim": "Lifetime tax exemption for 4+ children (Hungary)",
+    "evidence": "gen1 +0.127 vs gen4 +0.222 (triad mean, the two competing); Korea +0.083->+0.114; delta=0.15; signature=compounds. Hungary 2019-20 Family Protection Plan, ~5% GDP: TFR 1.25->1.59 but heavily tempo-inflated (the fTau arm borrows gen-2 births into gen-1 and reverts); the security arm is real, the cash-is-a-mirage finding applies with a security discount",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H321",
+    "claim": "Covenant marriage / abolish no-fault divorce",
+    "evidence": "gen1 +0.014 vs gen4 -0.112 (triad mean, the two competing); Korea +0.012->-0.085; delta=0.60; signature=reverses; SIGN-FLIP (coercion reversal). Louisiana 1997, tiny uptake; contradicts Stevenson-Wolfers exit-valve (no-fault divorce REDUCED spousal violence) - raising exit cost traps high-conflict couples, a fScar engine that scars the next generation",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H322",
+    "claim": "Demeny / parental proxy voting (franchise by children)",
+    "evidence": "gen1 +0.153 vs gen4 +0.315 (triad mean, the two competing); Korea +0.117->+0.203; delta=0.03; signature=compounds. Boffa et al. model proxy voting as a commitment device that tilts the polity toward child-friendly spending (a Pareto improvement) - the rare structural, un-buyable, low-coercion lever; reallocated investment matures in the next cohort so it compounds forward",
+    "verdict": "SUPPORTED",
+    "lean": "SUPPORTED"
+  },
+  {
+    "id": "E34-H323",
+    "claim": "Child-linked pension (internalise the pension externality)",
+    "evidence": "gen1 +0.096 vs gen4 +0.177 (triad mean, the two competing); Korea +0.063->+0.089; delta=0.10; signature=compounds. Boldrin-De Nardi-Jones: PAYG pensions explain a large share of the decline (pension~10% GDP <-> -0.7..-1.6 TFR); the corrective is structurally sound but empirically thin and back-loaded, a static gen-1 read understates it",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H324",
+    "claim": "State-run matchmaking / assortative markets",
+    "evidence": "gen1 +0.100 vs gen4 +0.174 (triad mean, the two competing); Korea +0.092->+0.116; delta=0.20; signature=compounds. Singapore SDU, Japan/Korea konkatsu - right channel (coupling is the keystone) but the state is a weak matchmaker; helps at the margin, does not bend fate",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H325",
+    "claim": "Bride-price / dowry revival (marriage-payment lever)",
+    "evidence": "gen1 +0.025 vs gen4 +0.001 (triad mean, the two competing); Korea +0.027->+0.011; delta=0.30; signature=weak/decays. rural Senegal: higher bride price REDUCES fertility pressure (robust to controls); the sign is ambiguous-to-negative and the commodification cost high - not usable in a modern monogamous market",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H326",
+    "claim": "Legalise polygamy as a fertility lever",
+    "evidence": "gen1 -0.058 vs gen4 -0.142 (triad mean, the two competing); Korea -0.038->-0.078; delta=0.20; signature=weak/decays. sub-Saharan DHS / LDS: per-woman fertility DECLINES with co-wife number (~1 child fewer); polygyny lowers the TFR object and starves the young-male marriage market (fq-), a self-reinforcing imbalance",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H327",
+    "claim": "Lower the marriage / consent age",
+    "evidence": "gen1 +0.077 vs gen4 -0.122 (triad mean, the two competing); Korea +0.041->-0.134; delta=0.10; signature=reverses; SIGN-FLIP (coercion reversal). 15-country study: earlier marriage -> earlier, more childbearing, but severe health/education/IPV harm; the gen-1 gain is real and that is exactly why it is disqualified - child brides transmit a low-fF, high-fScar, low-human-capital cohort forward",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H328",
+    "claim": "Abortion ban (Dobbs / SB8 / Poland)",
+    "evidence": "gen1 +0.024 vs gen4 -0.086 (triad mean, the two competing); Korea +0.013->-0.085; delta=0.40; signature=reverses; SIGN-FLIP (coercion reversal). Texas SB8 ~+3% births, post-Dobbs +3-4% concentrated in low-access states, Poland reverted in ~20 weeks; a small real bump (confirms the E25 interior-optimum overshoot) whose marginal, unwanted, low-resource cohort reverses forward (Turnaway logic)",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL->REFUTED"
+  },
+  {
+    "id": "E34-H329",
+    "claim": "Conscription exemption / national service for parents",
+    "evidence": "gen1 +0.036 vs gen4 +0.061 (triad mean, the two competing); Korea +0.023->+0.022; delta=0.20; signature=compounds. speculative, loosely Israel (service culture coexists with TFR 3.0 but driven by religiosity/community, not the exemption) - a plausible small parity nudge with no clean identification",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H330",
+    "claim": "Gilead: established coercive theocratic natalism",
+    "evidence": "gen1 +0.064 vs gen4 -0.308 (triad mean, the two competing); Korea +0.043->-0.143; delta=0.85; signature=reverses; SIGN-FLIP (coercion reversal). fictional maximum (Atwood); the scaling law is Decree 770 x Iran x Singapore - every coercive maximum reverted and de-legitimised. The theoretical ceiling of the coercion-backfire law: higher stake -> harder defection -> deepest cross-generational reversal",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H331",
+    "claim": "Sacralise motherhood as norm (no penalty)",
+    "evidence": "gen1 +0.069 vs gen4 +0.134 (triad mean, the two competing); Korea +0.053->+0.069; delta=0.08; signature=compounds. Georgia generalised (Norris-Inglehart): elevate motherhood as a freely-held sacred vocation WITHOUT penalty; the norm self-transmits into the next cohort's basin with no scarring - the un-buyable-devotion lesson without the Orthodox-marriage gate",
+    "verdict": "SUPPORTED",
+    "lean": "SUPPORTED"
+  },
+  {
+    "id": "E34-H332",
+    "claim": "Apocalyptic / martyrdom-reward high fertility (Quiverfull)",
+    "evidence": "gen1 +0.226 vs gen4 +0.368 (triad mean, the two competing); Korea +0.126->+0.155; delta=0.05; signature=compounds. Quiverfull, ~10+ children per couple but only thousands of families; a real high-fertility engine that compounds WITHIN the group via norm inheritance, but a compounding-subpopulation object not a state forcing, non-copyable at scale",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H333",
+    "claim": "High-demand religion retention (compounding subpopulation)",
+    "evidence": "gen1 +0.099 vs gen4 +0.195 (triad mean, the two competing); Korea +0.071->+0.097; delta=0.10; signature=compounds. LDS TFR ~3.4 (2015) declining toward the national mean as practice converges, needs ~70% child retention to self-replace - a genuine compounding object but converging downward, carry it as a sub-population not a forcing",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H334",
+    "claim": "Ban contraception",
+    "evidence": "gen1 +0.009 vs gen4 -0.108 (triad mean, the two competing); Korea +0.005->-0.088; delta=0.60; signature=reverses; SIGN-FLIP (coercion reversal). wherever tried at state scale the demand routes around it (mirrors abortion-ban evasion); removing means without changing demand yields high delta and large autonomy cost - a classic backfire that reverses forward",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H335",
+    "claim": "Pronatal media / glorify large families (propaganda)",
+    "evidence": "gen1 +0.025 vs gen4 +0.045 (triad mean, the two competing); Korea +0.023->+0.025; delta=0.40; signature=compounds. campaign propaganda-backfire finding; overt pronatal messaging reads as manipulation and provokes reactance - the norm channel is real but weaponised messaging backfires, credibility not volume moves norms (contrast the un-purchasable Georgia signal)",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H336",
+    "claim": "Shame / honour penalty on childlessness",
+    "evidence": "gen1 +0.053 vs gen4 +0.025 (triad mean, the two competing); Korea +0.036->-0.022; delta=0.40; signature=reverses; SIGN-FLIP (coercion reversal). the penalty family (USSR tax, honour-shame cultures); a penalty by another name - it flips negative on the defection screen, carries a heavy autonomy cost, and the transmitted resentment reverses it across generations",
+    "verdict": "REFUTED",
+    "lean": "REFUTED"
+  },
+  {
+    "id": "E34-H337",
+    "claim": "Total covenant-community bundle (Amish-style)",
+    "evidence": "gen1 +0.352 vs gen4 +0.585 (triad mean, the two competing); Korea +0.325->+0.447; delta=0.15; signature=compounds. Old Order Amish, completed fertility ~6-7, population doubles ~20yr, retention ~85%; an existence proof that compounds strongly within the enclave, but a total subculture not a separable, legislable lever",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  },
+  {
+    "id": "E34-H338",
+    "claim": "Tech-right pronatalism (IVF + embryo selection)",
+    "evidence": "gen1 +0.067 vs gen4 +0.141 (triad mean, the two competing); Korea +0.051->+0.075; delta=0.10; signature=compounds. Collins family / Natal Conference (attendance doubled 2023->2025); a real norm-shift inside a tiny elite subculture with an embryo-selection commodification cost - unproven at population scale and small by construction",
+    "verdict": "PARTIAL",
+    "lean": "PARTIAL"
+  }
+]
