@@ -68,9 +68,10 @@ The unsettling consequence is that the near future is, in large part, already wr
 
 Which brings us to the only remedy that pays off inside a single lifetime. A newcomer arrives already grown, already of working and child-bearing age, and steps straight into the hollow middle of a population's shape; it does not take twenty years to matter. This is the entire secret of the American exception - remove immigration from the arithmetic and the United States begins to look a great deal like Europe. But it is worth being clear-eyed: migration reshuffles the world's young, and does nothing to explain or repair why a country stopped producing its own.
 
-For that deeper repair, the model did something a pundit cannot. It weighed every proposed fix not by how good it sounds, but against the actual record of the places that have tried it - and the verdict is bracingly unsentimental. The things that work are the unglamorous ones: they lower the true, lifelong cost of raising a child, and they let people pair off and parent without torching a career. Seven of them keep recurring:
+For that deeper repair, the model did something a pundit cannot. It weighed every proposed fix not by how good it sounds, but against the actual record of the places that have tried it - and the verdict is bracingly unsentimental. The things that work are the unglamorous ones: they lower the true, lifelong cost of raising a child, and they let people pair off and parent without torching a career. Seven of them keep recurring, and one stands above the rest.
 
-- **Marriageable young men** - restoring the economic prospects of young men, since the marriage market still sorts on them and their *relative* decline is what stops couples forming; in the model this is the strongest single lever of all, and the only one that bends even South Korea
+**Marriageable young men - the strongest lever of all.** Restore the economic prospects of young men. The marriage market still sorts on them, and their *relative* decline is what stops couples forming - so in the model this is the single strongest lever, and the only one that bends even South Korea. The other six change the standing conditions of a life; this one decides whether the couple forms at all:
+
 - **Real childcare** - so a job and a child stop being a forced choice
 - **An honest split of the housework** between women and men
 - **Family housing** the young can actually afford
@@ -132,21 +133,9 @@ With that said, here are the popular cures the evidence does *not* support - and
 
 ## The slowest engine of all - how culture actually moves fertility
 
-One force in this story works too slowly to have surfaced in anything above: the quiet handing-down of a way of living, from parents to children, generation after generation. We tried to build it into the model as its own mechanism, tested it honestly, and learned something we did not expect - the obvious way to model it is the wrong way, and the force that really matters is a different one.
+One force in this story works too slowly to have surfaced in anything above: the quiet handing-down of a way of living, from parents to children, generation after generation. In the model it is not a lever you pull but the slow attractor the levers operate above.
 
-### What we tried, and why it was wrong
-
-The intuitive picture is a machine that bends a family's way of living from parents to children - turn up "want children" and it nudges "community" too, because traits travel together, and over generations the family line settles toward a stable culture. We built exactly that: culture as a matrix acting on each family's trait-arrow, with a single retention dial and an off switch, so we could run the population with the mechanism on and off and measure the difference. In symbols, each cohort's trait-vector $\mathbf{x}$ is pulled a fraction of the way toward the culture's own archetype $\bar{\mathbf{x}}$ at every generational renewal,
-
-$$\Delta\mathbf{x} = \Phi\,(\bar{\mathbf{x}} - \mathbf{x}), \qquad \Phi = r\,V\Lambda V^{-1},$$
-
-where $V$ holds the archetype directions, $\Lambda$ their transmission strengths, and $r$ is the single retention dial - $r=0$ switches the whole thing off, exactly reproducing the untouched model.
-
-It moved national fertility by four ten-thousandths of a child. Essentially nothing. The reason is instructive: a machine that bends one nation's families toward their own average is just regression to the mean - it is blind to how many people are in each culture, so it can never compound. Worse, once we set its strength to the real, measured rate at which fertility is handed down parent to child (a correlation of about $r \approx 0.15$), the measured transmission strengths turned out to be equal, $\Lambda = I$, and the elegant operator collapsed to $\Phi = r\,I$ - plain multiplication by a number, with $V$ and all its "traits travel together" rotation now decorative to one part in $10^{16}$. So we removed it. The code is preserved in the project's history, and the full autopsy is experiment E35.
-
-### What actually matters: out-having, not handing-down
-
-The real engine is not transmission within a population - it is competition between them. A high-fertility, high-retention subculture does not convert anyone; it simply out-has the mainstream. The mainstream, below replacement, halves every generation; the subculture grows its share of the whole population every generation. Run that forward and the subculture's fertility becomes the floor the entire nation's birth rate settles toward, no matter how far the mainstream falls. The Amish, doubling roughly every twenty years, are the existence proof. In our projection this between-group compounding sets the national floor - the level the whole country's birth rate settles toward over four generations - at roughly four to seven children per woman, orders of magnitude above the within-population machine we threw away. It was already in the model, validated in experiment E33.
+The real engine is not transmission within a population - it is competition between them. A high-fertility, high-retention subculture does not convert anyone; it simply out-has the mainstream. The mainstream, below replacement, halves every generation; the subculture grows its share of the whole population every generation. Run that forward and the subculture's fertility becomes the floor the entire nation's birth rate settles toward, no matter how far the mainstream falls. The Amish, doubling roughly every twenty years, are the existence proof. In our projection this between-group compounding sets the national floor - the level the whole country's birth rate settles toward over four generations - at roughly four to seven children per woman. It was already in the model, validated in experiment E33.
 
 The formalism is a two-compartment replicator, not a matrix. Let $x_g$ be the subculture's share of births at generation $g$, and let each side's per-generation growth be its fertility over replacement - the mainstream $R_{\text{main}} = \text{TFR}_{\text{main}}/2.05 < 1$, the subculture $R_{\text{sub}} = (\text{TFR}_{\text{sub}}/2.05)\,(1-\delta)(1-\beta x_g)$, discounted by an apostasy rate $\delta$ and an edge-secularisation $\beta$. The share then updates by the standard selection ratio, and the national rate is the share-weighted blend:
 
