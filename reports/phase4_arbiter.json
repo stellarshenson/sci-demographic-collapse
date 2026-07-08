@@ -285,7 +285,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV1",
+      "id": "E15-IV1",
       "batch": "E15",
       "name": "Universal childcare",
       "scalar": 0.5693,
@@ -305,7 +305,7 @@
       "verdict": "coupling escape"
     },
     {
-      "id": "IV9",
+      "id": "E15-IV9",
       "batch": "E15",
       "name": "Gender-equity (domestic)",
       "scalar": 0.4769,
@@ -325,7 +325,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV5",
+      "id": "E15-IV5",
       "batch": "E15",
       "name": "Family housing support",
       "scalar": 0.3912,
@@ -345,7 +345,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV14",
+      "id": "E15-IV14",
       "batch": "E15",
       "name": "Youth-precarity / job guar.",
       "scalar": 0.3912,
@@ -365,7 +365,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV4",
+      "id": "E15-IV4",
       "batch": "E15",
       "name": "Paid parental leave (long)",
       "scalar": 0.277,
@@ -385,7 +385,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV7",
+      "id": "E15-IV7",
       "batch": "E15",
       "name": "Work-family flexibility",
       "scalar": 0.277,
@@ -405,7 +405,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV2",
+      "id": "E15-IV2",
       "batch": "E15",
       "name": "Child allowance (cash)",
       "scalar": 0.1938,
@@ -425,7 +425,7 @@
       "verdict": "weak / stall"
     },
     {
-      "id": "IV12",
+      "id": "E15-IV12",
       "batch": "E15",
       "name": "Reduce child-cost norm",
       "scalar": 0.2336,
@@ -445,7 +445,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV6",
+      "id": "E15-IV6",
       "batch": "E15",
       "name": "Baby bonus (one-off)",
       "scalar": 0.1153,
@@ -465,7 +465,7 @@
       "verdict": "weak / stall"
     },
     {
-      "id": "IV3",
+      "id": "E15-IV3",
       "batch": "E15",
       "name": "IVF / ART subsidy",
       "scalar": 0.0349,
@@ -485,7 +485,7 @@
       "verdict": "weak / stall"
     },
     {
-      "id": "IV10",
+      "id": "E15-IV10",
       "batch": "E15",
       "name": "Earlier union formation",
       "scalar": 0.3912,
@@ -505,7 +505,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV11",
+      "id": "E15-IV11",
       "batch": "E15",
       "name": "Longer / stable unions",
       "scalar": 0.3912,
@@ -525,7 +525,7 @@
       "verdict": "durable bend"
     },
     {
-      "id": "IV13",
+      "id": "E15-IV13",
       "batch": "E15",
       "name": "State partner-market (camp)",
       "scalar": 0.4769,

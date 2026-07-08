@@ -1797,7 +1797,7 @@ wheels = [
 
 [[package]]
 name = "sci-demographic-collapse"
-version = "0.1.0"
+version = "0.6.42"
 source = { editable = "." }
 dependencies = [
     { name = "arviz" },
@@ -1822,6 +1822,7 @@ dev = [
     { name = "ipython" },
     { name = "ipywidgets" },
     { name = "nbdime" },
+    { name = "nbformat" },
     { name = "pip" },
     { name = "pytest" },
     { name = "pytest-cov" },
@@ -1838,6 +1839,7 @@ requires-dist = [
     { name = "loguru" },
     { name = "matplotlib" },
     { name = "nbdime", marker = "extra == 'dev'" },
+    { name = "nbformat", marker = "extra == 'dev'" },
     { name = "numpy" },
     { name = "pip", marker = "extra == 'dev'" },
     { name = "polars" },

@@ -148,6 +148,32 @@ the population is carried as a free-form measure morphed by transport maps, its 
 gradient flow (the JKO scheme) - the same exact-1-D Wasserstein machinery that already closed the calibration
 gap in E12.
 
+**The distributional core, built and calibrated.** That next step is now the production core (`run_cal`): a
+K-agent ensemble carries the full joint state `(C, ρ, P̄, τ, S, N, q)`, spread by a deterministic Latin-
+hypercube marginal, aggregated Jensen-correctly, with per-cohort path integrals over the 27-45yr reproductive
+lag. It reproduces the scalar core exactly at zero dispersion (to 2.2e-16), recalibrates to 2023 fertility for
+all six regions to ~1e-4 (five to four decimals, Germany on the fourth-decimal boundary), and - swept across
+all 182 catalogue levers - moves solo outcomes by at most 0.0043 TFR versus the scalar core. The lesson is honest: on these near-linear channel responses the
+distributional lift is *faithfulness* - the correct treatment of heterogeneity and selection - not a
+re-ranking of the intervention catalogue.
+
+**How interventions combine - an equation, not bookkeeping.** Because fertility is a product of bounded
+channel factors, `log TFR` is additive across independent channels (the same multiplicativity Bongaarts built
+the proximate-determinants model on), so the honest combination law is addition in log-TFR plus a single
+interaction term - the mixed second derivative of the response,
+
+$$I(A,B) = f_A^\top H\, f_B,\qquad H = \nabla^2 \log\text{TFR}(0)$$
+
+with `H` read straight off the calibrated core, never hand-set. This separates genuine synergy from the `exp()`
+curvature artifact that makes any two positive levers *look* super-additive on the raw scale, and it explains
+the bundle results mechanically: `H`'s negative diagonal is same-channel saturation (why stacks that overload
+the shared security channel collide), its off-diagonal reproduces the ODE coupling Jacobian, and its sign
+flips across the separatrix so that threshold synergy is manifold position. Its eigenvectors are coherent
+channel bundles - {security, coupling}, {norm, childlessness} - the same coupling operator that governs
+cultural transmission: one operator, two phenomena. The bilinear form is exact in the small-signal limit and a
+structural indicator, not a precise predictor, at bundle amplitude through the stiff bistable channels, so the
+operational rule is to combine on the log scale and measure the interaction directly.
+
 ## Interventions and the forward outlook
 
 Held at current fertility, the ultra-low societies roughly halve by 2100 - Korea −63% (51.8M → 19M), Japan

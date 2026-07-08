@@ -1,0 +1,2323 @@
+{
+  "n_bundles": 117,
+  "triad": [
+    "Korea",
+    "Germany",
+    "France"
+  ],
+  "rows": [
+    {
+      "id": "H215",
+      "batch": "E28",
+      "name": "state endorsement + subsidy of polygyny manufactures the missing",
+      "n_channels": 5,
+      "full": -0.8055,
+      "interaction": 0.045,
+      "additivity": "super",
+      "lead_channel": "fC",
+      "marginals": {
+        "fPb": -0.0089,
+        "fC": -0.6195,
+        "fS": -0.0003,
+        "fRV": 0.0018,
+        "fN": -0.0015
+      },
+      "solos": {
+        "fPb": -0.355,
+        "fC": -0.7962,
+        "fS": 0.3079,
+        "fRV": 0.1054,
+        "fN": -0.1126
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H214",
+      "batch": "E28",
+      "name": "cultural / society endorsement of polygyny raises fertility",
+      "n_channels": 5,
+      "full": -0.8019,
+      "interaction": 0.3469,
+      "additivity": "super",
+      "lead_channel": "fC",
+      "marginals": {
+        "fPb": -0.0046,
+        "fC": -0.4446,
+        "fS": -0.026,
+        "fRV": 0.0011,
+        "fN": -0.0017
+      },
+      "solos": {
+        "fPb": -0.1827,
+        "fC": -0.742,
+        "fS": -0.1814,
+        "fRV": 0.0547,
+        "fN": -0.0974
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H213",
+      "batch": "E28",
+      "name": "state suppression of polygyny (enforced monogamy) is the fertili",
+      "n_channels": 2,
+      "full": 0.6961,
+      "interaction": -0.289,
+      "additivity": "sub",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.286,
+        "fS": 0.121
+      },
+      "solos": {
+        "fC": 0.575,
+        "fS": 0.4101
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "E18-H145",
+      "batch": "E18",
+      "name": "in-kind x permanence",
+      "n_channels": 2,
+      "full": 0.654,
+      "interaction": -0.1326,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.4097,
+        "fC": 0.1118
+      },
+      "solos": {
+        "fS": 0.5423,
+        "fC": 0.2443
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H146",
+      "batch": "E18",
+      "name": "universal+statefund x de-risk",
+      "n_channels": 2,
+      "full": 0.6264,
+      "interaction": -0.1146,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.4006,
+        "fC": 0.1112
+      },
+      "solos": {
+        "fS": 0.5152,
+        "fC": 0.2258
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H144",
+      "batch": "E18",
+      "name": "compress x lottery-band",
+      "n_channels": 2,
+      "full": 0.5976,
+      "interaction": -0.0983,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3917,
+        "fC": 0.1074
+      },
+      "solos": {
+        "fS": 0.4901,
+        "fC": 0.2058
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "H217",
+      "batch": "E28",
+      "name": "polyandry endorsement suppresses fertility regardless of endorse",
+      "n_channels": 3,
+      "full": -0.5926,
+      "interaction": 0.1749,
+      "additivity": "super",
+      "lead_channel": "fRV",
+      "marginals": {
+        "fRV": -0.3452,
+        "fC": -0.0756,
+        "fN": -0.0121
+      },
+      "solos": {
+        "fRV": -0.5057,
+        "fC": -0.1535,
+        "fN": -0.1083
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "IV1",
+      "batch": "E14",
+      "name": "Universal subsidized childcare",
+      "n_channels": 2,
+      "full": 0.5676,
+      "interaction": -0.0855,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3795,
+        "fC": 0.1025
+      },
+      "solos": {
+        "fS": 0.465,
+        "fC": 0.1881
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E15-IV1",
+      "batch": "E15",
+      "name": "Universal childcare",
+      "n_channels": 2,
+      "full": 0.5676,
+      "interaction": -0.0855,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3795,
+        "fC": 0.1025
+      },
+      "solos": {
+        "fS": 0.465,
+        "fC": 0.1881
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H151",
+      "batch": "E18",
+      "name": "inequality-compression x fertility-linked-pension",
+      "n_channels": 2,
+      "full": 0.5676,
+      "interaction": -0.0855,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3795,
+        "fC": 0.1025
+      },
+      "solos": {
+        "fS": 0.465,
+        "fC": 0.1881
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "H208",
+      "batch": "E27",
+      "name": "polygyny (one male, many females)",
+      "n_channels": 4,
+      "full": -0.5617,
+      "interaction": 0.1001,
+      "additivity": "super",
+      "lead_channel": "fC",
+      "marginals": {
+        "fPb": -0.1185,
+        "fC": -0.2979,
+        "fRV": 0.0097,
+        "fS": -0.0496
+      },
+      "solos": {
+        "fPb": -0.2277,
+        "fC": -0.39,
+        "fRV": 0.0265,
+        "fS": -0.0706
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H105",
+      "batch": "E16",
+      "name": "Inequality compression",
+      "n_channels": 2,
+      "full": 0.5513,
+      "interaction": -0.0829,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3708,
+        "fC": 0.0975
+      },
+      "solos": {
+        "fS": 0.4537,
+        "fC": 0.1805
+      },
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "H211",
+      "batch": "E27",
+      "name": "state-sanctioned polygyny (legitimacy + subsidy)",
+      "n_channels": 5,
+      "full": -0.5307,
+      "interaction": 0.117,
+      "additivity": "super",
+      "lead_channel": "fC",
+      "marginals": {
+        "fPb": -0.1299,
+        "fC": -0.2799,
+        "fRV": 0.0114,
+        "fS": 0.0125,
+        "fN": -0.0323
+      },
+      "solos": {
+        "fPb": -0.2277,
+        "fC": -0.39,
+        "fRV": 0.0265,
+        "fS": 0.0186,
+        "fN": -0.0751
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H117",
+      "batch": "E16",
+      "name": "Top-down pronatal propaganda",
+      "n_channels": 2,
+      "full": -0.5251,
+      "interaction": 0.098,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.3293,
+        "fRV": -0.0978
+      },
+      "solos": {
+        "fS": -0.4273,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "H101",
+      "batch": "E16",
+      "name": "Tutoring ban",
+      "n_channels": 2,
+      "full": -0.5247,
+      "interaction": 0.0979,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.329,
+        "fRV": -0.0979
+      },
+      "solos": {
+        "fS": -0.4268,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "E17-H137",
+      "batch": "E17",
+      "name": "benefit form (cash/in-kind/time)",
+      "n_channels": 2,
+      "full": 0.5214,
+      "interaction": -0.0772,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3524,
+        "fC": 0.0919
+      },
+      "solos": {
+        "fS": 0.4296,
+        "fC": 0.169
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H153",
+      "batch": "E18",
+      "name": "egg-freezing option-value trap",
+      "n_channels": 2,
+      "full": -0.5207,
+      "interaction": 0.0957,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.3249,
+        "fRV": -0.1001
+      },
+      "solos": {
+        "fS": -0.4206,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "E18-H158",
+      "batch": "E18",
+      "name": "climate/expectations birth-strike",
+      "n_channels": 2,
+      "full": -0.5069,
+      "interaction": 0.0841,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.3112,
+        "fRV": -0.1117
+      },
+      "solos": {
+        "fS": -0.3952,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "E17-H131",
+      "batch": "E17",
+      "name": "lock-in / covenant marriage / adultery penalty",
+      "n_channels": 2,
+      "full": -0.5047,
+      "interaction": 0.0825,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.3089,
+        "fRV": -0.1133
+      },
+      "solos": {
+        "fS": -0.3914,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "H284",
+      "batch": "E32",
+      "name": "reward x shared-custody x mediation (the stack)",
+      "n_channels": 5,
+      "full": 0.4793,
+      "interaction": -0.19,
+      "additivity": "sub",
+      "lead_channel": "fC",
+      "marginals": {
+        "fS": 0.0453,
+        "fC": 0.1463,
+        "fq": 0.0255,
+        "fF": 0.0587,
+        "fScar": 0.0257
+      },
+      "solos": {
+        "fS": 0.0741,
+        "fC": 0.2892,
+        "fq": 0.0722,
+        "fF": 0.1492,
+        "fScar": 0.0846
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "E17-H134",
+      "batch": "E17",
+      "name": "pornography ban as a fertility lever",
+      "n_channels": 2,
+      "full": -0.478,
+      "interaction": 0.073,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.2822,
+        "fRV": -0.1227
+      },
+      "solos": {
+        "fS": -0.3552,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "IV9",
+      "batch": "E14",
+      "name": "Gender-equity (domestic-labour equalize)",
+      "n_channels": 2,
+      "full": 0.476,
+      "interaction": -0.0623,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3253,
+        "fC": 0.0884
+      },
+      "solos": {
+        "fS": 0.3876,
+        "fC": 0.1507
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV9",
+      "batch": "E15",
+      "name": "Gender-equity (domestic)",
+      "n_channels": 2,
+      "full": 0.476,
+      "interaction": -0.0623,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3253,
+        "fC": 0.0884
+      },
+      "solos": {
+        "fS": 0.3876,
+        "fC": 0.1507
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV13",
+      "batch": "E15",
+      "name": "State partner-market (camp)",
+      "n_channels": 2,
+      "full": 0.476,
+      "interaction": -0.0623,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3253,
+        "fC": 0.0884
+      },
+      "solos": {
+        "fS": 0.3876,
+        "fC": 0.1507
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H120",
+      "batch": "E16",
+      "name": "Marriage-first exhortation",
+      "n_channels": 2,
+      "full": -0.4752,
+      "interaction": 0.0721,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.2794,
+        "fRV": -0.1236
+      },
+      "solos": {
+        "fS": -0.3515,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "H107",
+      "batch": "E16",
+      "name": "Progressive wealth cap",
+      "n_channels": 2,
+      "full": -0.4747,
+      "interaction": 0.072,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": -0.2789,
+        "fRV": -0.1238
+      },
+      "solos": {
+        "fS": -0.3509,
+        "fRV": -0.1958
+      },
+      "verdict": "backfire"
+    },
+    {
+      "id": "H110",
+      "batch": "E16",
+      "name": "Universal motherhood-penalty removal",
+      "n_channels": 2,
+      "full": 0.4449,
+      "interaction": -0.0475,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.3083,
+        "fC": 0.0891
+      },
+      "solos": {
+        "fS": 0.3558,
+        "fC": 0.1366
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H276",
+      "batch": "E32",
+      "name": "foster/removal-until-reconciliation",
+      "n_channels": 3,
+      "full": -0.4245,
+      "interaction": 0.0357,
+      "additivity": "super",
+      "lead_channel": "fF",
+      "marginals": {
+        "fq": -0.1276,
+        "fF": -0.1422,
+        "fScar": -0.1013
+      },
+      "solos": {
+        "fq": -0.1563,
+        "fF": -0.1772,
+        "fScar": -0.1267
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H279",
+      "batch": "E32",
+      "name": "conditional cash / tax credit",
+      "n_channels": 4,
+      "full": 0.4198,
+      "interaction": -0.0428,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.293,
+        "fC": 0.0531,
+        "fF": 0.0198,
+        "fScar": 0.0058
+      },
+      "solos": {
+        "fS": 0.3338,
+        "fC": 0.0772,
+        "fF": 0.0364,
+        "fScar": 0.0152
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H281",
+      "batch": "E32",
+      "name": "loss-frame (lose-it) vs gain-frame",
+      "n_channels": 4,
+      "full": 0.4148,
+      "interaction": -0.1142,
+      "additivity": "sub",
+      "lead_channel": "fC",
+      "marginals": {
+        "fS": 0.0756,
+        "fC": 0.1282,
+        "fF": 0.0391,
+        "fScar": 0.0217
+      },
+      "solos": {
+        "fS": 0.1271,
+        "fC": 0.2258,
+        "fF": 0.1155,
+        "fScar": 0.0606
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H270",
+      "batch": "E31",
+      "name": "prevention-over-punishment synthesis",
+      "n_channels": 5,
+      "full": 0.4094,
+      "interaction": -0.0384,
+      "additivity": "sub",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1835,
+        "fF": 0.0301,
+        "fq": 0.0451,
+        "fScar": 0.0241,
+        "fRV": 0.0673
+      },
+      "solos": {
+        "fC": 0.2258,
+        "fF": 0.0545,
+        "fq": 0.0722,
+        "fScar": 0.0455,
+        "fRV": 0.0498
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "IV5",
+      "batch": "E14",
+      "name": "Family housing support / affordability",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV14",
+      "batch": "E14",
+      "name": "Economic security / youth-precarity reduction",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV5",
+      "batch": "E15",
+      "name": "Family housing support",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV14",
+      "batch": "E15",
+      "name": "Youth-precarity / job guar.",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV10",
+      "batch": "E15",
+      "name": "Earlier union formation",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV11",
+      "batch": "E15",
+      "name": "Longer / stable unions",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H149",
+      "batch": "E18",
+      "name": "IVF-default x egg-banking x permanence",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H150",
+      "batch": "E18",
+      "name": "gender-eq x father-quota x short-hrs",
+      "n_channels": 2,
+      "full": 0.3908,
+      "interaction": -0.0267,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2761,
+        "fC": 0.088
+      },
+      "solos": {
+        "fS": 0.3028,
+        "fC": 0.1147
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H147",
+      "batch": "E18",
+      "name": "coupling-afford x housing-supply",
+      "n_channels": 2,
+      "full": 0.38,
+      "interaction": -0.0237,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2688,
+        "fC": 0.0874
+      },
+      "solos": {
+        "fS": 0.2925,
+        "fC": 0.1112
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H148",
+      "batch": "E18",
+      "name": "de-risk x school-ed x peer",
+      "n_channels": 2,
+      "full": 0.3687,
+      "interaction": -0.0205,
+      "additivity": "sub",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2613,
+        "fC": 0.0869
+      },
+      "solos": {
+        "fS": 0.2818,
+        "fC": 0.1074
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H305",
+      "batch": "E33",
+      "name": "Israel nationalism as a SECULAR norm-carrier",
+      "n_channels": 4,
+      "full": 0.3519,
+      "interaction": 0.0317,
+      "additivity": "super",
+      "lead_channel": "fS",
+      "marginals": {
+        "fN": 0.0651,
+        "fS": 0.1474,
+        "fC": 0.1057,
+        "fRV": 0.0575
+      },
+      "solos": {
+        "fN": 0.0509,
+        "fS": 0.1271,
+        "fC": 0.0924,
+        "fRV": 0.0498
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H278",
+      "batch": "E32",
+      "name": "contingency-management milestone rewards",
+      "n_channels": 3,
+      "full": 0.3273,
+      "interaction": -0.0453,
+      "additivity": "sub",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1832,
+        "fF": 0.0625,
+        "fScar": 0.0283
+      },
+      "solos": {
+        "fC": 0.2258,
+        "fF": 0.1013,
+        "fScar": 0.0455
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "E18-H161",
+      "batch": "E18",
+      "name": "urban-density fertility penalty",
+      "n_channels": 2,
+      "full": 0.3256,
+      "interaction": -0.006,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2332,
+        "fC": 0.0864
+      },
+      "solos": {
+        "fS": 0.2392,
+        "fC": 0.0924
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H261",
+      "batch": "E31",
+      "name": "rebuttable shared-custody presumption (the causal winner)",
+      "n_channels": 3,
+      "full": 0.3233,
+      "interaction": 0.0113,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.235,
+        "fF": 0.0336,
+        "fRV": 0.0649
+      },
+      "solos": {
+        "fC": 0.2258,
+        "fF": 0.0364,
+        "fRV": 0.0498
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H277",
+      "batch": "E32",
+      "name": "refund + clawback bond (the seed)",
+      "n_channels": 4,
+      "full": 0.3143,
+      "interaction": -0.0195,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fS": 0.0635,
+        "fC": 0.1338,
+        "fF": 0.0465,
+        "fScar": 0.0223
+      },
+      "solos": {
+        "fS": 0.0741,
+        "fC": 0.1507,
+        "fF": 0.0726,
+        "fScar": 0.0364
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "E18-H155",
+      "batch": "E18",
+      "name": "hypergamy marriage-squeeze",
+      "n_channels": 2,
+      "full": 0.3111,
+      "interaction": -0.0008,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2238,
+        "fC": 0.0865
+      },
+      "solos": {
+        "fS": 0.2246,
+        "fC": 0.0873
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H111",
+      "batch": "E16",
+      "name": "Israel default + universal IVF",
+      "n_channels": 2,
+      "full": 0.3107,
+      "interaction": -0.0006,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2236,
+        "fC": 0.0865
+      },
+      "solos": {
+        "fS": 0.2242,
+        "fC": 0.0871
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H121",
+      "batch": "E16",
+      "name": "Use-it-or-lose-it default",
+      "n_channels": 2,
+      "full": 0.3107,
+      "interaction": -0.0006,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2236,
+        "fC": 0.0865
+      },
+      "solos": {
+        "fS": 0.2242,
+        "fC": 0.0871
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H114",
+      "batch": "E16",
+      "name": "Housing supply / zoning",
+      "n_channels": 2,
+      "full": 0.2994,
+      "interaction": 0.0014,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.2159,
+        "fC": 0.0849
+      },
+      "solos": {
+        "fS": 0.2145,
+        "fC": 0.0835
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV4",
+      "batch": "E14",
+      "name": "Paid parental leave (incl. paternity)",
+      "n_channels": 2,
+      "full": 0.2768,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1996,
+        "fC": 0.0798
+      },
+      "solos": {
+        "fS": 0.197,
+        "fC": 0.0772
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV7",
+      "batch": "E14",
+      "name": "Work-family reconciliation (flexible hrs)",
+      "n_channels": 2,
+      "full": 0.2768,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1996,
+        "fC": 0.0798
+      },
+      "solos": {
+        "fS": 0.197,
+        "fC": 0.0772
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV10",
+      "batch": "E14",
+      "name": "Earlier union formation / relationship support",
+      "n_channels": 2,
+      "full": 0.2768,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1996,
+        "fC": 0.0798
+      },
+      "solos": {
+        "fS": 0.197,
+        "fC": 0.0772
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV11",
+      "batch": "E14",
+      "name": "De-stigmatize non-marital births",
+      "n_channels": 2,
+      "full": 0.2768,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1996,
+        "fC": 0.0798
+      },
+      "solos": {
+        "fS": 0.197,
+        "fC": 0.0772
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV4",
+      "batch": "E15",
+      "name": "Paid parental leave (long)",
+      "n_channels": 2,
+      "full": 0.2768,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1996,
+        "fC": 0.0798
+      },
+      "solos": {
+        "fS": 0.197,
+        "fC": 0.0772
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E15-IV7",
+      "batch": "E15",
+      "name": "Work-family flexibility",
+      "n_channels": 2,
+      "full": 0.2768,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1996,
+        "fC": 0.0798
+      },
+      "solos": {
+        "fS": 0.197,
+        "fC": 0.0772
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H280",
+      "batch": "E32",
+      "name": "symmetric two-sided bond (un-weaponizable)",
+      "n_channels": 3,
+      "full": 0.2729,
+      "interaction": -0.0185,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1627,
+        "fF": 0.0493,
+        "fScar": 0.0308
+      },
+      "solos": {
+        "fC": 0.1805,
+        "fF": 0.0654,
+        "fScar": 0.0455
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H272",
+      "batch": "E32",
+      "name": "stepped therapy (escalate on failure, abuse-gated)",
+      "n_channels": 4,
+      "full": 0.2693,
+      "interaction": -0.0152,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1373,
+        "fq": 0.0607,
+        "fF": 0.0664,
+        "fScar": -0.0109
+      },
+      "solos": {
+        "fC": 0.1507,
+        "fq": 0.0722,
+        "fF": 0.0798,
+        "fScar": -0.0182
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H216",
+      "batch": "E28",
+      "name": "the development regime flips the sign of polygyny (Tertilt +40% ",
+      "n_channels": 4,
+      "full": 0.267,
+      "interaction": 0.0581,
+      "additivity": "super",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.3568,
+        "fRV": 0.2797,
+        "fC": -0.3046,
+        "fN": -0.0001
+      },
+      "solos": {
+        "fPb": 0.3896,
+        "fRV": 0.1207,
+        "fC": -0.1888,
+        "fN": -0.1126
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "E18-H163",
+      "batch": "E18",
+      "name": "employment-precarity formation-brake",
+      "n_channels": 2,
+      "full": 0.2666,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1922,
+        "fC": 0.0771
+      },
+      "solos": {
+        "fS": 0.1895,
+        "fC": 0.0745
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H157",
+      "batch": "E18",
+      "name": "grandmother hypothesis (kin proximity)",
+      "n_channels": 2,
+      "full": 0.2666,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1922,
+        "fC": 0.0771
+      },
+      "solos": {
+        "fS": 0.1895,
+        "fC": 0.0745
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H282",
+      "batch": "E32",
+      "name": "child-outcome-contingent reward",
+      "n_channels": 3,
+      "full": 0.2631,
+      "interaction": -0.0171,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1352,
+        "fF": 0.0728,
+        "fScar": 0.0307
+      },
+      "solos": {
+        "fC": 0.1507,
+        "fF": 0.087,
+        "fScar": 0.0425
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H268",
+      "batch": "E31",
+      "name": "DV carve-out design (safety-gated shared custody)",
+      "n_channels": 2,
+      "full": 0.2583,
+      "interaction": -0.0039,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.2219,
+        "fF": 0.0326
+      },
+      "solos": {
+        "fC": 0.2258,
+        "fF": 0.0364
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H307",
+      "batch": "E33",
+      "name": "is religion predominantly the norm channel N?",
+      "n_channels": 3,
+      "full": 0.2426,
+      "interaction": 0.0186,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fN": 0.0669,
+        "fC": 0.0512,
+        "fS": 0.1419
+      },
+      "solos": {
+        "fN": 0.0504,
+        "fC": 0.0465,
+        "fS": 0.1271
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H253",
+      "batch": "E30",
+      "name": "a shared-custody presumption pays a delayed intergenerational di",
+      "n_channels": 2,
+      "full": 0.2358,
+      "interaction": -0.0055,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1452,
+        "fF": 0.0851
+      },
+      "solos": {
+        "fC": 0.1507,
+        "fF": 0.0906
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H297",
+      "batch": "E32",
+      "name": "actual jail time (custody-decoupled)",
+      "n_channels": 3,
+      "full": -0.2342,
+      "interaction": -0.0147,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fq": -0.0787,
+        "fF": -0.0566,
+        "fScar": -0.1003
+      },
+      "solos": {
+        "fq": -0.0728,
+        "fF": -0.0548,
+        "fScar": -0.0919
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H115",
+      "batch": "E16",
+      "name": "Student-debt relief / free tertiary",
+      "n_channels": 2,
+      "full": 0.2328,
+      "interaction": 0.0023,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1674,
+        "fC": 0.0677
+      },
+      "solos": {
+        "fS": 0.1651,
+        "fC": 0.0654
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H118",
+      "batch": "E16",
+      "name": "Remove the parenthood happiness penalty",
+      "n_channels": 2,
+      "full": 0.2223,
+      "interaction": 0.0022,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1596,
+        "fC": 0.0649
+      },
+      "solos": {
+        "fS": 0.1574,
+        "fC": 0.0627
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV13",
+      "batch": "E14",
+      "name": "Attention-economy / dating-app regulation",
+      "n_channels": 2,
+      "full": 0.2194,
+      "interaction": 0.0022,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1575,
+        "fC": 0.0641
+      },
+      "solos": {
+        "fS": 0.1553,
+        "fC": 0.0619
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H162",
+      "batch": "E18",
+      "name": "status-of-parenthood reversal",
+      "n_channels": 2,
+      "full": 0.2194,
+      "interaction": 0.0022,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1575,
+        "fC": 0.0641
+      },
+      "solos": {
+        "fS": 0.1553,
+        "fC": 0.0619
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H212",
+      "batch": "E27",
+      "name": "media normalisation of the structure (N forcing)",
+      "n_channels": 2,
+      "full": -0.2113,
+      "interaction": 0.0102,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fN": -0.0799,
+        "fC": -0.1212
+      },
+      "solos": {
+        "fN": -0.0901,
+        "fC": -0.1314
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H308",
+      "batch": "E33",
+      "name": "religious marriage + lower divorce (compositional)",
+      "n_channels": 2,
+      "full": 0.1733,
+      "interaction": -0.0017,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.149,
+        "fScar": 0.0226
+      },
+      "solos": {
+        "fC": 0.1507,
+        "fScar": 0.0243
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H274",
+      "batch": "E32",
+      "name": "raw criminalisation, no monitoring (severity)",
+      "n_channels": 2,
+      "full": -0.1592,
+      "interaction": -0.0101,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fF": -0.0831,
+        "fScar": -0.0861
+      },
+      "solos": {
+        "fF": -0.073,
+        "fScar": -0.0761
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H119",
+      "batch": "E16",
+      "name": "Decouple status from job-title/hours",
+      "n_channels": 2,
+      "full": 0.1587,
+      "interaction": 0.0028,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.1131,
+        "fC": 0.0484
+      },
+      "solos": {
+        "fS": 0.1103,
+        "fC": 0.0456
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H262",
+      "batch": "E31",
+      "name": "rigid mandatory 50/50 vs rebuttable",
+      "n_channels": 3,
+      "full": 0.1485,
+      "interaction": 0.0002,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.1509,
+        "fF": 0.0202,
+        "fScar": -0.0226
+      },
+      "solos": {
+        "fC": 0.1507,
+        "fF": 0.0219,
+        "fScar": -0.0243
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H205",
+      "batch": "E26",
+      "name": "the complementary stack childcare + kin + pronatal-N is super-ad",
+      "n_channels": 4,
+      "full": 0.1247,
+      "interaction": 0.0068,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0649,
+        "fS": 0.0324,
+        "fTau": 0.0013,
+        "fN": 0.0334
+      },
+      "solos": {
+        "fPb": 0.0595,
+        "fS": 0.028,
+        "fTau": 0.0011,
+        "fN": 0.0293
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H299",
+      "batch": "E33",
+      "name": "cross-denomination TFR gradient",
+      "n_channels": 2,
+      "full": 0.1151,
+      "interaction": 0.0069,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fN": 0.0569,
+        "fS": 0.0651
+      },
+      "solos": {
+        "fN": 0.05,
+        "fS": 0.0582
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H267",
+      "batch": "E31",
+      "name": "early mediation (divert from litigation)",
+      "n_channels": 3,
+      "full": 0.1104,
+      "interaction": -0.001,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0429,
+        "fScar": 0.0237,
+        "fq": 0.0426
+      },
+      "solos": {
+        "fF": 0.0437,
+        "fScar": 0.0243,
+        "fq": 0.0434
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H298",
+      "batch": "E33",
+      "name": "religious PRACTICE (weekly attendance) vs nominal affiliation",
+      "n_channels": 2,
+      "full": 0.1007,
+      "interaction": 0.0038,
+      "additivity": "additive",
+      "lead_channel": "fN",
+      "marginals": {
+        "fN": 0.0542,
+        "fC": 0.0503
+      },
+      "solos": {
+        "fN": 0.0504,
+        "fC": 0.0465
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H271",
+      "batch": "E32",
+      "name": "social-work supervision",
+      "n_channels": 3,
+      "full": 0.0997,
+      "interaction": -0.0005,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.0766,
+        "fF": 0.0285,
+        "fScar": -0.0059
+      },
+      "solos": {
+        "fC": 0.0772,
+        "fF": 0.0291,
+        "fScar": -0.0061
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "E17-H129",
+      "batch": "E17",
+      "name": "reward union duration (de-risk vs lock-in)",
+      "n_channels": 2,
+      "full": 0.0945,
+      "interaction": 0.0014,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.066,
+        "fC": 0.0299
+      },
+      "solos": {
+        "fS": 0.0646,
+        "fC": 0.0285
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E17-H126",
+      "batch": "E17",
+      "name": "coupling economies-of-scale (financial channel)",
+      "n_channels": 2,
+      "full": 0.0913,
+      "interaction": 0.0013,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.0636,
+        "fC": 0.0288
+      },
+      "solos": {
+        "fS": 0.0624,
+        "fC": 0.0276
+      },
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H206",
+      "batch": "E26",
+      "name": "state childcare and grandmother care are substitutes that crowd ",
+      "n_channels": 3,
+      "full": 0.0912,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0621,
+        "fS": 0.0306,
+        "fTau": 0.0012
+      },
+      "solos": {
+        "fPb": 0.0595,
+        "fS": 0.028,
+        "fTau": 0.0011
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H303",
+      "batch": "E33",
+      "name": "pronatal theology (Quiverfull/LDS) via realised practice",
+      "n_channels": 2,
+      "full": 0.0909,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fN",
+      "marginals": {
+        "fN": 0.0528,
+        "fPb": 0.0407
+      },
+      "solos": {
+        "fN": 0.0502,
+        "fPb": 0.0381
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H185",
+      "batch": "E25",
+      "name": "in-kind childcare services (not cash)",
+      "n_channels": 2,
+      "full": 0.0882,
+      "interaction": 0.0026,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0576,
+        "fS": 0.0332
+      },
+      "solos": {
+        "fPb": 0.055,
+        "fS": 0.0306
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H266",
+      "batch": "E31",
+      "name": "mandatory co-parenting / divorce education",
+      "n_channels": 2,
+      "full": 0.083,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fq",
+      "marginals": {
+        "fq": 0.072,
+        "fF": 0.0108
+      },
+      "solos": {
+        "fq": 0.0722,
+        "fF": 0.0109
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H194",
+      "batch": "E26",
+      "name": "kibbutz-style full cost-socialisation of a child",
+      "n_channels": 2,
+      "full": 0.0725,
+      "interaction": 0.0016,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0497,
+        "fS": 0.0244
+      },
+      "solos": {
+        "fPb": 0.0481,
+        "fS": 0.0228
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H196",
+      "batch": "E26",
+      "name": "state-funded universal in-kind childcare",
+      "n_channels": 2,
+      "full": 0.0673,
+      "interaction": 0.0016,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0393,
+        "fS": 0.0296
+      },
+      "solos": {
+        "fPb": 0.0377,
+        "fS": 0.028
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H283",
+      "batch": "E32",
+      "name": "objective clawback trigger (detection design)",
+      "n_channels": 2,
+      "full": 0.0666,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0363,
+        "fScar": 0.0302
+      },
+      "solos": {
+        "fF": 0.0364,
+        "fScar": 0.0303
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H186",
+      "batch": "E25",
+      "name": "reverse social atomisation (community / third places)",
+      "n_channels": 2,
+      "full": 0.0642,
+      "interaction": 0.0003,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.0545,
+        "fS": 0.01
+      },
+      "solos": {
+        "fC": 0.0542,
+        "fS": 0.0097
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H264",
+      "batch": "E31",
+      "name": "criminalisation of alienation (Brazil Lei 12.318/2010)",
+      "n_channels": 2,
+      "full": -0.0639,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fScar": -0.0457,
+        "fF": -0.0183
+      },
+      "solos": {
+        "fScar": -0.0456,
+        "fF": -0.0182
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H184",
+      "batch": "E25",
+      "name": "kin / grandparental support",
+      "n_channels": 2,
+      "full": 0.051,
+      "interaction": 0.0008,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0332,
+        "fS": 0.0186
+      },
+      "solos": {
+        "fPb": 0.0324,
+        "fS": 0.0178
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H112",
+      "batch": "E16",
+      "name": "High-fertility subculture",
+      "n_channels": 2,
+      "full": 0.0448,
+      "interaction": 0.0002,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.0308,
+        "fC": 0.0142
+      },
+      "solos": {
+        "fS": 0.0306,
+        "fC": 0.014
+      },
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H275",
+      "batch": "E32",
+      "name": "coercion sign-heterogeneity",
+      "n_channels": 2,
+      "full": -0.0414,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fF": -0.011,
+        "fScar": -0.0304
+      },
+      "solos": {
+        "fF": -0.0109,
+        "fScar": -0.0304
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H291",
+      "batch": "E32",
+      "name": "supervised exchange / neutral drop-off",
+      "n_channels": 2,
+      "full": 0.037,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0218,
+        "fScar": 0.0152
+      },
+      "solos": {
+        "fF": 0.0219,
+        "fScar": 0.0152
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H273",
+      "batch": "E32",
+      "name": "monitored sanction (certainty supplied)",
+      "n_channels": 2,
+      "full": -0.0365,
+      "interaction": 0.0001,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fF": 0.0183,
+        "fScar": -0.0547
+      },
+      "solos": {
+        "fF": 0.0182,
+        "fScar": -0.0548
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H290",
+      "batch": "E32",
+      "name": "revenue to the wronged parent (make-whole)",
+      "n_channels": 3,
+      "full": 0.0362,
+      "interaction": -0.0,
+      "additivity": "additive",
+      "lead_channel": "fS",
+      "marginals": {
+        "fS": 0.0283,
+        "fF": 0.011,
+        "fScar": -0.003
+      },
+      "solos": {
+        "fS": 0.0283,
+        "fF": 0.0109,
+        "fScar": -0.003
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H209",
+      "batch": "E27",
+      "name": "polyandry (one female, many males)",
+      "n_channels": 2,
+      "full": -0.0292,
+      "interaction": 0.0002,
+      "additivity": "additive",
+      "lead_channel": "fRV",
+      "marginals": {
+        "fRV": -0.0236,
+        "fC": -0.0054
+      },
+      "solos": {
+        "fRV": -0.0238,
+        "fC": -0.0056
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H210",
+      "batch": "E27",
+      "name": "extreme hypergamy / mating-market skew",
+      "n_channels": 2,
+      "full": -0.0259,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": -0.0232,
+        "fTau": -0.0025
+      },
+      "solos": {
+        "fC": -0.0233,
+        "fTau": -0.0026
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H292",
+      "batch": "E32",
+      "name": "parenting coordinator / special master",
+      "n_channels": 2,
+      "full": 0.0237,
+      "interaction": -0.0,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0146,
+        "fScar": 0.0091
+      },
+      "solos": {
+        "fF": 0.0146,
+        "fScar": 0.0091
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H265",
+      "batch": "E31",
+      "name": "mandated reunification therapy / camps",
+      "n_channels": 2,
+      "full": -0.0231,
+      "interaction": -0.0,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fF": 0.0073,
+        "fScar": -0.0304
+      },
+      "solos": {
+        "fF": 0.0073,
+        "fScar": -0.0304
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H201",
+      "batch": "E26",
+      "name": "maternal grandmother proximity raises fertility",
+      "n_channels": 2,
+      "full": 0.0227,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0216,
+        "fTau": 0.0012
+      },
+      "solos": {
+        "fPb": 0.0216,
+        "fTau": 0.0011
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H263",
+      "batch": "E31",
+      "name": "fines / sanctions / contempt for access denial",
+      "n_channels": 2,
+      "full": -0.0195,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fF": 0.011,
+        "fScar": -0.0304
+      },
+      "solos": {
+        "fF": 0.0109,
+        "fScar": -0.0304
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H192",
+      "batch": "E26",
+      "name": "matrilocal residence -> grandmaternal childcare",
+      "n_channels": 2,
+      "full": 0.0192,
+      "interaction": -0.0,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0178,
+        "fTau": 0.0014
+      },
+      "solos": {
+        "fPb": 0.0178,
+        "fTau": 0.0014
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H313",
+      "batch": "E33",
+      "name": "traditional GENDER ROLES as the mechanism",
+      "n_channels": 2,
+      "full": 0.0159,
+      "interaction": 0.0001,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fScar": -0.0151,
+        "fC": 0.0311
+      },
+      "solos": {
+        "fScar": -0.0152,
+        "fC": 0.031
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H188",
+      "batch": "E26",
+      "name": "polyamory raises the partnership count -> coupling",
+      "n_channels": 2,
+      "full": 0.0142,
+      "interaction": -0.0,
+      "additivity": "additive",
+      "lead_channel": "fC",
+      "marginals": {
+        "fC": 0.0163,
+        "fRV": -0.0021
+      },
+      "solos": {
+        "fC": 0.0163,
+        "fRV": -0.0021
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H207",
+      "batch": "E26",
+      "name": "autonomy-lowering pronatal traditionalism raises fertility net",
+      "n_channels": 2,
+      "full": 0.0142,
+      "interaction": 0.0001,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0102,
+        "fRV": 0.004
+      },
+      "solos": {
+        "fPb": 0.0101,
+        "fRV": 0.004
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H287",
+      "batch": "E32",
+      "name": "income-scaled day-fine",
+      "n_channels": 2,
+      "full": 0.0121,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0182,
+        "fScar": -0.0061
+      },
+      "solos": {
+        "fF": 0.0182,
+        "fScar": -0.0061
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H203",
+      "batch": "E26",
+      "name": "kin buffers the late-tempo fecundability loss",
+      "n_channels": 2,
+      "full": 0.0098,
+      "interaction": 0.0001,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0091,
+        "fTau": 0.0006
+      },
+      "solos": {
+        "fPb": 0.0091,
+        "fTau": 0.0006
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H288",
+      "batch": "E32",
+      "name": "on-the-spot police issuance (certainty)",
+      "n_channels": 2,
+      "full": 0.0091,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0182,
+        "fScar": -0.0091
+      },
+      "solos": {
+        "fF": 0.0182,
+        "fScar": -0.0091
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H289",
+      "batch": "E32",
+      "name": "civil (no custody consequence) vs criminal",
+      "n_channels": 2,
+      "full": 0.0091,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0182,
+        "fScar": -0.0091
+      },
+      "solos": {
+        "fF": 0.0182,
+        "fScar": -0.0091
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H286",
+      "batch": "E32",
+      "name": "escalating per-diem contact-denial ticket",
+      "n_channels": 2,
+      "full": 0.0085,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0146,
+        "fScar": -0.0061
+      },
+      "solos": {
+        "fF": 0.0146,
+        "fScar": -0.0061
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H183",
+      "batch": "E25",
+      "name": "penalise family/friends who help with an abortion",
+      "n_channels": 3,
+      "full": 0.0071,
+      "interaction": -0.0002,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fPb": 0.0132,
+        "fS": -0.0035,
+        "fC": -0.0027
+      },
+      "solos": {
+        "fPb": 0.0133,
+        "fS": -0.0034,
+        "fC": -0.0026
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H295",
+      "batch": "E32",
+      "name": "community service / public works",
+      "n_channels": 2,
+      "full": 0.0036,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0219,
+        "fScar": -0.0182
+      },
+      "solos": {
+        "fF": 0.0219,
+        "fScar": -0.0182
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H294",
+      "batch": "E32",
+      "name": "criminal fine, custody-decoupled",
+      "n_channels": 2,
+      "full": 0.003,
+      "interaction": 0.0,
+      "additivity": "additive",
+      "lead_channel": "fF",
+      "marginals": {
+        "fF": 0.0182,
+        "fScar": -0.0152
+      },
+      "solos": {
+        "fF": 0.0182,
+        "fScar": -0.0152
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H296",
+      "batch": "E32",
+      "name": "suspended jail sentence (threat, decoupled)",
+      "n_channels": 2,
+      "full": -0.0012,
+      "interaction": 0.0001,
+      "additivity": "additive",
+      "lead_channel": "fScar",
+      "marginals": {
+        "fF": 0.0292,
+        "fScar": -0.0303
+      },
+      "solos": {
+        "fF": 0.0291,
+        "fScar": -0.0304
+      },
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H191",
+      "batch": "E26",
+      "name": "matrilineal descent raises fertility",
+      "n_channels": 2,
+      "full": -0.0002,
+      "interaction": -0.0001,
+      "additivity": "additive",
+      "lead_channel": "fPb",
+      "marginals": {
+        "fRV": 0.0024,
+        "fPb": -0.0025
+      },
+      "solos": {
+        "fRV": 0.0024,
+        "fPb": -0.0025
+      },
+      "verdict": "REFUTED"
+    }
+  ]
+}

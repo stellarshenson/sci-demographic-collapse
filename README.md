@@ -120,6 +120,34 @@ With that said, here are the popular cures the evidence does *not* support - and
 - **The myth that people simply stopped wanting children** - a genuine change of heart exists, but the model finds it the *smallest* of the three causes. Surveys are the tell: across Europe the ideal family size people report still sits near **2.1-2.3** children even as the actual rate languishes around **1.5** - a "child gap" of roughly **half a child** that desire cannot explain. The largest cause by far is that fewer people ever pair into the stable couples children mostly come from (Sobotka, 2017); the "they just don't want them" story mistakes the smallest driver for the whole
 - **The myth of the permanent immigration fix** - immigration is the one lever that pays off inside a single lifetime, and it holds some countries level today: strip net migration out of the arithmetic and the United States' population shortfall widens by about **85%**, and its numbers start to look like Europe's (this campaign's E5 finding). But migration reshuffles the world's *existing* young - the UN's own replacement-migration study found that to hold their working-age-to-old ratios steady, ageing societies would need sustained inflows many times any historical level. It neither explains nor repairs why a country stopped producing its own, and the planet as a whole cannot immigrate its way out
 
+## The slowest engine of all - how we model culture
+
+One force in this story works too slowly to have surfaced in anything above, and it is the one we are building into the model next. It is not a policy or a shock but the quiet handing-down of a way of living, from parents to children, generation after generation. What follows is an explainer of the approach - the mechanism as we are designing it, not yet a result the model has produced.
+
+### How it works
+
+A culture bearer is a parent passing down not just genes but a whole way of living - and cultures that hand that way of living to more children, and keep those children in the fold, quietly grow their share of the population generation after generation.
+
+Think of culture as a recipe passed down in a family - not one recipe but a bundle: how many children is normal, whether you marry, how you raise them, the community you lean on. Some cultures have more children, so they pass their bundle to more people in the next generation. Do that for a few generations and the high-fertility recipe spreads - not by converting anyone, simply by out-having everyone. It is natural selection, run on culture instead of genes.
+
+The contrast that makes it vivid: the Amish hand down the norm and the community and the boundary that keeps children in - all the pieces travel together, so their numbers roughly double every twenty years. A government pro-baby advertising campaign nudges one generation and hands down no community, no boundary, no durable belief - so it leaks away in a single generation.
+
+And here is the catch that makes it interesting. The most important piece is not "want more children" - it is retention: do the children stay in the culture? A culture can have many children and still vanish if it cannot keep them. That is why forcing births backfires - you can compel one generation to have babies but not to hand down a love of family; often you hand down resentment instead, and it reverses.
+
+We model it as an on/off switch on purpose: run the population once with the mechanism working and once without, and you can measure exactly what this slow generational force changes, instead of guessing.
+
+### The mechanics, in plain terms
+
+Everything starts as an arrow. Picture each person as an arrow built from their settings - how much they want children, how tied to a community they are, how ready to pair up.
+
+Culture is a machine that bends the arrow. In the maths it is a matrix - a machine that rotates the arrow (turn up "want children" and it also nudges "community", because traits travel together) and stretches or shrinks it, amplifying some traits and fading others. The parents' arrow goes in, the children's arrow comes out.
+
+Now do it again and again. Keep running the same arrow through the same machine, generation after generation, and the arrow swings around to line up with the machine's favourite direction. Mathematicians call that direction an eigenvector; the everyday picture is a tray of marbles shaken until they settle into a groove. That groove is the stable culture, and the population arcs toward it.
+
+Births are the thumb on the scale. Whose arrow gets fed into the next generation's machine is weighted by how many children they had - so the groove the population slides into is whichever culture out-reproduces the rest. Cultural natural selection, written as arithmetic.
+
+And the on/off dial is a single number: retention. It multiplies the whole machine. Set it to zero and children come out looking like the population average - culture off. Turn it up and the machine pulls each child toward the groove.
+
 ## How we got here (and why it's worth trusting)
 
 The short version of a long road, in plain steps:

@@ -1320,6 +1320,18 @@ CATALOGUE = [
     },
 ]
 
+# E14 and E15 both record the shared 14-lever intervention menu IV1-IV14. Most pairs share the
+# E14 channel map (re-listings of the same physical lever across two batches); a few differ
+# (e.g. E14 IV3 = baby bonus `fPb` vs E15 IV3 = IVF subsidy `fTau`). Either way the ids collide,
+# so batch-prefix any repeat - E14 keeps the canonical bare id, the E15 entry becomes `E15-IVn` -
+# to keep id-keyed lookups from silently dropping a lever.
+_seen_ids = set()
+for _e in CATALOGUE:
+    if _e["id"] in _seen_ids:
+        _e["id"] = f"{_e['batch']}-{_e['id']}"
+    _seen_ids.add(_e["id"])
+assert len(_seen_ids) == len(CATALOGUE), "catalogue ids must be unique"
+
 
 def force_of(f, start=0):
     """Build a 9-channel forcing function `fy(yr)` from a channel-amplitude dict.

@@ -1,0 +1,408 @@
+{
+  "triad": [
+    "Korea",
+    "Germany",
+    "France"
+  ],
+  "channels": [
+    "fS",
+    "fC",
+    "fPb",
+    "fTau",
+    "fRV",
+    "fN"
+  ],
+  "rows": [
+    {
+      "id": "IV1",
+      "desc": "Universal subsidized childcare",
+      "channels": [
+        "fS",
+        "fC"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.6681,
+          "raw_solosum": 0.4913,
+          "I_meas_log": -0.11503,
+          "I_bilinear": 0.12722,
+          "exp_artifact": 0.1768
+        },
+        "Germany": {
+          "raw_full": 0.587,
+          "raw_solosum": 0.8032,
+          "I_meas_log": -0.18648,
+          "I_bilinear": -0.19269,
+          "exp_artifact": -0.2163
+        },
+        "France": {
+          "raw_full": 0.4476,
+          "raw_solosum": 0.6649,
+          "I_meas_log": -0.16169,
+          "I_bilinear": -0.07659,
+          "exp_artifact": -0.2172
+        }
+      },
+      "triad": {
+        "raw_full": 0.5676,
+        "raw_solosum": 0.6531,
+        "raw_ratio": 0.869,
+        "I_meas_log": -0.1544,
+        "I_bilinear": -0.04735,
+        "exp_artifact": -0.0856
+      },
+      "abl_full": 0.5676
+    },
+    {
+      "id": "E18-H144",
+      "desc": "compress x lottery-band",
+      "channels": [
+        "fS",
+        "fC"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.7362,
+          "raw_solosum": 0.5577,
+          "I_meas_log": -0.1778,
+          "I_bilinear": 0.15216,
+          "exp_artifact": 0.1786
+        },
+        "Germany": {
+          "raw_full": 0.5945,
+          "raw_solosum": 0.8325,
+          "I_meas_log": -0.20313,
+          "I_bilinear": -0.23046,
+          "exp_artifact": -0.238
+        },
+        "France": {
+          "raw_full": 0.462,
+          "raw_solosum": 0.6978,
+          "I_meas_log": -0.17437,
+          "I_bilinear": -0.09161,
+          "exp_artifact": -0.2358
+        }
+      },
+      "triad": {
+        "raw_full": 0.5976,
+        "raw_solosum": 0.696,
+        "raw_ratio": 0.859,
+        "I_meas_log": -0.1851,
+        "I_bilinear": -0.05664,
+        "exp_artifact": -0.0984
+      },
+      "abl_full": 0.5976
+    },
+    {
+      "id": "E18-H145",
+      "desc": "in-kind x permanence",
+      "channels": [
+        "fS",
+        "fC"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.8895,
+          "raw_solosum": 0.7318,
+          "I_meas_log": -0.33975,
+          "I_bilinear": 0.2152,
+          "exp_artifact": 0.1577
+        },
+        "Germany": {
+          "raw_full": 0.6017,
+          "raw_solosum": 0.8839,
+          "I_meas_log": -0.23676,
+          "I_bilinear": -0.32593,
+          "exp_artifact": -0.2822
+        },
+        "France": {
+          "raw_full": 0.4709,
+          "raw_solosum": 0.744,
+          "I_meas_log": -0.19936,
+          "I_bilinear": -0.12956,
+          "exp_artifact": -0.2731
+        }
+      },
+      "triad": {
+        "raw_full": 0.654,
+        "raw_solosum": 0.7866,
+        "raw_ratio": 0.832,
+        "I_meas_log": -0.25863,
+        "I_bilinear": -0.0801,
+        "exp_artifact": -0.1325
+      },
+      "abl_full": 0.654
+    },
+    {
+      "id": "E18-H146",
+      "desc": "universal+statefund x de-risk",
+      "channels": [
+        "fS",
+        "fC"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.8144,
+          "raw_solosum": 0.6413,
+          "I_meas_log": -0.25634,
+          "I_bilinear": 0.1832,
+          "exp_artifact": 0.1731
+        },
+        "Germany": {
+          "raw_full": 0.5982,
+          "raw_solosum": 0.859,
+          "I_meas_log": -0.22061,
+          "I_bilinear": -0.27747,
+          "exp_artifact": -0.2608
+        },
+        "France": {
+          "raw_full": 0.4666,
+          "raw_solosum": 0.7226,
+          "I_meas_log": -0.18795,
+          "I_bilinear": -0.1103,
+          "exp_artifact": -0.256
+        }
+      },
+      "triad": {
+        "raw_full": 0.6264,
+        "raw_solosum": 0.741,
+        "raw_ratio": 0.845,
+        "I_meas_log": -0.22164,
+        "I_bilinear": -0.06819,
+        "exp_artifact": -0.1146
+      },
+      "abl_full": 0.6264
+    },
+    {
+      "id": "H215",
+      "desc": "state endorsement + subsidy of polygyny manufact",
+      "channels": [
+        "fS",
+        "fC",
+        "fPb",
+        "fRV",
+        "fN"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": -0.1541,
+          "raw_solosum": -0.0102,
+          "I_meas_log": -0.7217,
+          "I_bilinear": -0.75313,
+          "exp_artifact": -0.1439
+        },
+        "Germany": {
+          "raw_full": -1.0396,
+          "raw_solosum": -1.1425,
+          "I_meas_log": -0.20146,
+          "I_bilinear": 0.89091,
+          "exp_artifact": 0.1028
+        },
+        "France": {
+          "raw_full": -1.2226,
+          "raw_solosum": -1.3989,
+          "I_meas_log": -0.18269,
+          "I_bilinear": 0.3139,
+          "exp_artifact": 0.1763
+        }
+      },
+      "triad": {
+        "raw_full": -0.8055,
+        "raw_solosum": -0.8505,
+        "raw_ratio": 0.947,
+        "I_meas_log": -0.36861,
+        "I_bilinear": 0.15056,
+        "exp_artifact": 0.0451
+      },
+      "abl_full": -0.8055
+    },
+    {
+      "id": "H216",
+      "desc": "the development regime flips the sign of polygyn",
+      "channels": [
+        "fC",
+        "fPb",
+        "fRV",
+        "fN"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": -0.0593,
+          "raw_solosum": 0.0359,
+          "I_meas_log": 0.14369,
+          "I_bilinear": 0.07957,
+          "exp_artifact": -0.0952
+        },
+        "Germany": {
+          "raw_full": 0.3849,
+          "raw_solosum": 0.2528,
+          "I_meas_log": 0.20844,
+          "I_bilinear": 0.09553,
+          "exp_artifact": 0.132
+        },
+        "France": {
+          "raw_full": 0.4753,
+          "raw_solosum": 0.3377,
+          "I_meas_log": 0.16269,
+          "I_bilinear": 0.08619,
+          "exp_artifact": 0.1376
+        }
+      },
+      "triad": {
+        "raw_full": 0.267,
+        "raw_solosum": 0.2088,
+        "raw_ratio": 1.278,
+        "I_meas_log": 0.17161,
+        "I_bilinear": 0.0871,
+        "exp_artifact": 0.0581
+      },
+      "abl_full": 0.267
+    },
+    {
+      "id": "SYN-Cq",
+      "desc": "coupling x quantum (cross-archetype)",
+      "channels": [
+        "fS",
+        "fPb"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.6692,
+          "raw_solosum": 0.4621,
+          "I_meas_log": -0.01146,
+          "I_bilinear": 0.85674,
+          "exp_artifact": 0.2071
+        },
+        "Germany": {
+          "raw_full": 1.1468,
+          "raw_solosum": 1.0004,
+          "I_meas_log": -0.03725,
+          "I_bilinear": -0.03079,
+          "exp_artifact": 0.1465
+        },
+        "France": {
+          "raw_full": 1.0204,
+          "raw_solosum": 0.9204,
+          "I_meas_log": -0.03098,
+          "I_bilinear": -0.0252,
+          "exp_artifact": 0.1
+        }
+      },
+      "triad": {
+        "raw_full": 0.9455,
+        "raw_solosum": 0.7943,
+        "raw_ratio": 1.19,
+        "I_meas_log": -0.02656,
+        "I_bilinear": 0.26692,
+        "exp_artifact": 0.1512
+      },
+      "abl_full": null
+    },
+    {
+      "id": "SYN-QN",
+      "desc": "quantum x norm (near-orthogonal)",
+      "channels": [
+        "fPb",
+        "fN"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.1743,
+          "raw_solosum": 0.1298,
+          "I_meas_log": 0.08411,
+          "I_bilinear": 0.19911,
+          "exp_artifact": 0.0446
+        },
+        "Germany": {
+          "raw_full": 0.4934,
+          "raw_solosum": 0.4726,
+          "I_meas_log": -0.00154,
+          "I_bilinear": -0.02963,
+          "exp_artifact": 0.0208
+        },
+        "France": {
+          "raw_full": 0.5625,
+          "raw_solosum": 0.5395,
+          "I_meas_log": -0.00143,
+          "I_bilinear": -0.02779,
+          "exp_artifact": 0.023
+        }
+      },
+      "triad": {
+        "raw_full": 0.4101,
+        "raw_solosum": 0.3806,
+        "raw_ratio": 1.077,
+        "I_meas_log": 0.02705,
+        "I_bilinear": 0.04723,
+        "exp_artifact": 0.0294
+      },
+      "abl_full": null
+    },
+    {
+      "id": "SYN-SN",
+      "desc": "coupling x norm-tip (threshold probe)",
+      "channels": [
+        "fS",
+        "fN"
+      ],
+      "per_region": {
+        "Korea": {
+          "raw_full": 0.4533,
+          "raw_solosum": 0.3884,
+          "I_meas_log": 0.0086,
+          "I_bilinear": 1.46522,
+          "exp_artifact": 0.065
+        },
+        "Germany": {
+          "raw_full": 0.666,
+          "raw_solosum": 0.6459,
+          "I_meas_log": -0.00739,
+          "I_bilinear": -0.095,
+          "exp_artifact": 0.0201
+        },
+        "France": {
+          "raw_full": 0.5278,
+          "raw_solosum": 0.515,
+          "I_meas_log": -0.00643,
+          "I_bilinear": -0.08125,
+          "exp_artifact": 0.0129
+        }
+      },
+      "triad": {
+        "raw_full": 0.5491,
+        "raw_solosum": 0.5164,
+        "raw_ratio": 1.063,
+        "I_meas_log": -0.00174,
+        "I_bilinear": 0.42966,
+        "exp_artifact": 0.0327
+      },
+      "abl_full": null
+    }
+  ],
+  "hessian_diag": {
+    "Korea": {
+      "fS": 39.9752,
+      "fC": -44.6234,
+      "fPb": -0.1468,
+      "fTau": 0.0043,
+      "fRV": -0.6672,
+      "fN": 106.9028
+    },
+    "Germany": {
+      "fS": -2.4536,
+      "fC": -3.0525,
+      "fPb": -0.5487,
+      "fTau": -0.0004,
+      "fRV": -1.3758,
+      "fN": -107.693
+    },
+    "France": {
+      "fS": -1.8513,
+      "fC": -2.3798,
+      "fPb": -0.5289,
+      "fTau": -0.0004,
+      "fRV": -1.305,
+      "fN": -104.2418
+    }
+  }
+}
