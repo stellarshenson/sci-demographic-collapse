@@ -1,0 +1,3528 @@
+{
+  "n_levers": 175,
+  "n_surprises": 1,
+  "surprises": [
+    {
+      "id": "IV2",
+      "batch": "E14",
+      "name": "Child allowance / cash transfers",
+      "scalar": 0.3355,
+      "disp": 0.3363,
+      "delta": 0.0008,
+      "kind": "fate",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "tempo mirage"
+    }
+  ],
+  "all_rows": [
+    {
+      "id": "IV1",
+      "batch": "E14",
+      "name": "Universal subsidized childcare",
+      "scalar": 0.5693,
+      "disp": 0.5676,
+      "delta": -0.0017,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "IV2",
+      "batch": "E14",
+      "name": "Child allowance / cash transfers",
+      "scalar": 0.3355,
+      "disp": 0.3363,
+      "delta": 0.0008,
+      "kind": "fate",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "tempo mirage"
+    },
+    {
+      "id": "IV3",
+      "batch": "E14",
+      "name": "Baby bonus / birth grant (one-off)",
+      "scalar": 0.1544,
+      "disp": 0.1543,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "IV4",
+      "batch": "E14",
+      "name": "Paid parental leave (incl. paternity)",
+      "scalar": 0.277,
+      "disp": 0.2768,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV5",
+      "batch": "E14",
+      "name": "Family housing support / affordability",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV6",
+      "batch": "E14",
+      "name": "Subsidized assisted reproduction (IVF)",
+      "scalar": 0.0349,
+      "disp": 0.0341,
+      "delta": -0.0008,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "IV7",
+      "batch": "E14",
+      "name": "Work-family reconciliation (flexible hrs)",
+      "scalar": 0.277,
+      "disp": 0.2768,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV9",
+      "batch": "E14",
+      "name": "Gender-equity (domestic-labour equalize)",
+      "scalar": 0.4769,
+      "disp": 0.476,
+      "delta": -0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV10",
+      "batch": "E14",
+      "name": "Earlier union formation / relationship support",
+      "scalar": 0.277,
+      "disp": 0.2768,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV11",
+      "batch": "E14",
+      "name": "De-stigmatize non-marital births",
+      "scalar": 0.277,
+      "disp": 0.2768,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV12",
+      "batch": "E14",
+      "name": "Reduce intensive-parenting / child-cost norm",
+      "scalar": 0.2336,
+      "disp": 0.2337,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "IV13",
+      "batch": "E14",
+      "name": "Attention-economy / dating-app regulation",
+      "scalar": 0.2196,
+      "disp": 0.2194,
+      "delta": -0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV14",
+      "batch": "E14",
+      "name": "Economic security / youth-precarity reduction",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV1",
+      "batch": "E15",
+      "name": "Universal childcare",
+      "scalar": 0.5693,
+      "disp": 0.5676,
+      "delta": -0.0017,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "IV9",
+      "batch": "E15",
+      "name": "Gender-equity (domestic)",
+      "scalar": 0.4769,
+      "disp": 0.476,
+      "delta": -0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV5",
+      "batch": "E15",
+      "name": "Family housing support",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV14",
+      "batch": "E15",
+      "name": "Youth-precarity / job guar.",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV4",
+      "batch": "E15",
+      "name": "Paid parental leave (long)",
+      "scalar": 0.277,
+      "disp": 0.2768,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV7",
+      "batch": "E15",
+      "name": "Work-family flexibility",
+      "scalar": 0.277,
+      "disp": 0.2768,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV2",
+      "batch": "E15",
+      "name": "Child allowance (cash)",
+      "scalar": 0.1938,
+      "disp": 0.1938,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "IV12",
+      "batch": "E15",
+      "name": "Reduce child-cost norm",
+      "scalar": 0.2336,
+      "disp": 0.2337,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV6",
+      "batch": "E15",
+      "name": "Baby bonus (one-off)",
+      "scalar": 0.1153,
+      "disp": 0.1153,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "IV3",
+      "batch": "E15",
+      "name": "IVF / ART subsidy",
+      "scalar": 0.0349,
+      "disp": 0.0341,
+      "delta": -0.0008,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "IV10",
+      "batch": "E15",
+      "name": "Earlier union formation",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV11",
+      "batch": "E15",
+      "name": "Longer / stable unions",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "IV13",
+      "batch": "E15",
+      "name": "State partner-market (camp)",
+      "scalar": 0.4769,
+      "disp": 0.476,
+      "delta": -0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H101",
+      "batch": "E16",
+      "name": "Tutoring ban",
+      "scalar": -0.525,
+      "disp": -0.5247,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "H102",
+      "batch": "E16",
+      "name": "Lottery-band admission",
+      "scalar": 0.3049,
+      "disp": 0.3052,
+      "delta": 0.0004,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H103",
+      "batch": "E16",
+      "name": "Multi-dim un-gameable admission",
+      "scalar": 0.0758,
+      "disp": 0.0758,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H104",
+      "batch": "E16",
+      "name": "Positional cap (Frank)",
+      "scalar": 0.2765,
+      "disp": 0.2767,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H105",
+      "batch": "E16",
+      "name": "Inequality compression",
+      "scalar": 0.5529,
+      "disp": 0.5513,
+      "delta": -0.0016,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "H106",
+      "batch": "E16",
+      "name": "Estate / inheritance tax",
+      "scalar": 0.0753,
+      "disp": 0.0753,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H107",
+      "batch": "E16",
+      "name": "Progressive wealth cap",
+      "scalar": -0.4749,
+      "disp": -0.4747,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "H108",
+      "batch": "E16",
+      "name": "Tax childlessness",
+      "scalar": 0.1008,
+      "disp": 0.1007,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H109",
+      "batch": "E16",
+      "name": "Remove DINK tax advantage",
+      "scalar": 0.1675,
+      "disp": 0.1675,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H110",
+      "batch": "E16",
+      "name": "Universal motherhood-penalty removal",
+      "scalar": 0.4453,
+      "disp": 0.4449,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H111",
+      "batch": "E16",
+      "name": "Israel default + universal IVF",
+      "scalar": 0.3106,
+      "disp": 0.3107,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H112",
+      "batch": "E16",
+      "name": "High-fertility subculture",
+      "scalar": 0.0446,
+      "disp": 0.0448,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H113",
+      "batch": "E16",
+      "name": "Hungary cash package",
+      "scalar": 0.0776,
+      "disp": 0.0775,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H114",
+      "batch": "E16",
+      "name": "Housing supply / zoning",
+      "scalar": 0.2994,
+      "disp": 0.2994,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H115",
+      "batch": "E16",
+      "name": "Student-debt relief / free tertiary",
+      "scalar": 0.2331,
+      "disp": 0.2328,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H116",
+      "batch": "E16",
+      "name": "Peer-led parent archetype",
+      "scalar": 0.0386,
+      "disp": 0.0386,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "H117",
+      "batch": "E16",
+      "name": "Top-down pronatal propaganda",
+      "scalar": -0.5254,
+      "disp": -0.5251,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "H118",
+      "batch": "E16",
+      "name": "Remove the parenthood happiness penalty",
+      "scalar": 0.2226,
+      "disp": 0.2223,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H119",
+      "batch": "E16",
+      "name": "Decouple status from job-title/hours",
+      "scalar": 0.1583,
+      "disp": 0.1587,
+      "delta": 0.0004,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H120",
+      "batch": "E16",
+      "name": "Marriage-first exhortation",
+      "scalar": -0.4754,
+      "disp": -0.4752,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "H121",
+      "batch": "E16",
+      "name": "Use-it-or-lose-it default",
+      "scalar": 0.3106,
+      "disp": 0.3107,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H123",
+      "batch": "E16",
+      "name": "Recycle the defection",
+      "scalar": 0.0097,
+      "disp": 0.0097,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H126",
+      "batch": "E17",
+      "name": "coupling economies-of-scale (financial channel)",
+      "scalar": 0.0908,
+      "disp": 0.0913,
+      "delta": 0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E17-H128",
+      "batch": "E17",
+      "name": "solo-parent support (benefit-cliff)",
+      "scalar": 0.1317,
+      "disp": 0.1316,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H129",
+      "batch": "E17",
+      "name": "reward union duration (de-risk vs lock-in)",
+      "scalar": 0.094,
+      "disp": 0.0945,
+      "delta": 0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E17-H131",
+      "batch": "E17",
+      "name": "lock-in / covenant marriage / adultery penalty",
+      "scalar": -0.5049,
+      "disp": -0.5047,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "E17-H132",
+      "batch": "E17",
+      "name": "school finance + communication education",
+      "scalar": 0.1563,
+      "disp": 0.1563,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H133",
+      "batch": "E17",
+      "name": "infidelity norm / stigma (soft, non-legal)",
+      "scalar": 0.0047,
+      "disp": 0.0047,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H134",
+      "batch": "E17",
+      "name": "pornography ban as a fertility lever",
+      "scalar": -0.4782,
+      "disp": -0.478,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "E17-H136",
+      "batch": "E17",
+      "name": "universal vs means-tested",
+      "scalar": 0.1888,
+      "disp": 0.1888,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H137",
+      "batch": "E17",
+      "name": "benefit form (cash/in-kind/time)",
+      "scalar": 0.5229,
+      "disp": 0.5214,
+      "delta": -0.0015,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E17-H138",
+      "batch": "E17",
+      "name": "credible permanence",
+      "scalar": 0.3692,
+      "disp": 0.3699,
+      "delta": 0.0007,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "tempo mirage"
+    },
+    {
+      "id": "E17-H139",
+      "batch": "E17",
+      "name": "geographic scale",
+      "scalar": 0.0689,
+      "disp": 0.0688,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H140",
+      "batch": "E17",
+      "name": "who pays (state vs employer mandate)",
+      "scalar": 0.2942,
+      "disp": 0.2945,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H141",
+      "batch": "E17",
+      "name": "surrogate-carrier market (conditioned class)",
+      "scalar": 0.016,
+      "disp": 0.016,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E17-H143",
+      "batch": "E17",
+      "name": "robust vs fragile bundle (Seldon manifold)",
+      "scalar": 0.9821,
+      "disp": 0.9803,
+      "delta": -0.0018,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "tempo mirage"
+    },
+    {
+      "id": "E18-H144",
+      "batch": "E18",
+      "name": "compress x lottery-band",
+      "scalar": 0.5989,
+      "disp": 0.5976,
+      "delta": -0.0013,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H145",
+      "batch": "E18",
+      "name": "in-kind x permanence",
+      "scalar": 0.655,
+      "disp": 0.654,
+      "delta": -0.001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H146",
+      "batch": "E18",
+      "name": "universal+statefund x de-risk",
+      "scalar": 0.6275,
+      "disp": 0.6264,
+      "delta": -0.0011,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H147",
+      "batch": "E18",
+      "name": "coupling-afford x housing-supply",
+      "scalar": 0.3802,
+      "disp": 0.38,
+      "delta": -0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H148",
+      "batch": "E18",
+      "name": "de-risk x school-ed x peer",
+      "scalar": 0.3688,
+      "disp": 0.3687,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H149",
+      "batch": "E18",
+      "name": "IVF-default x egg-banking x permanence",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H150",
+      "batch": "E18",
+      "name": "gender-eq x father-quota x short-hrs",
+      "scalar": 0.3912,
+      "disp": 0.3908,
+      "delta": -0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H151",
+      "batch": "E18",
+      "name": "inequality-compression x fertility-linked-pension",
+      "scalar": 0.5693,
+      "disp": 0.5676,
+      "delta": -0.0017,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "coupling escape"
+    },
+    {
+      "id": "E18-H152",
+      "batch": "E18",
+      "name": "pension-fertility externality",
+      "scalar": 0.06,
+      "disp": 0.06,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E18-H160",
+      "batch": "E18",
+      "name": "UBI vs child-conditional transfer",
+      "scalar": 0.2536,
+      "disp": 0.2538,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E18-H163",
+      "batch": "E18",
+      "name": "employment-precarity formation-brake",
+      "scalar": 0.2668,
+      "disp": 0.2666,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H153",
+      "batch": "E18",
+      "name": "egg-freezing option-value trap",
+      "scalar": -0.521,
+      "disp": -0.5207,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "E18-H154",
+      "batch": "E18",
+      "name": "fecundity floor (sub-fecundity)",
+      "scalar": 0.2692,
+      "disp": 0.2694,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E18-H155",
+      "batch": "E18",
+      "name": "hypergamy marriage-squeeze",
+      "scalar": 0.311,
+      "disp": 0.3111,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H156",
+      "batch": "E18",
+      "name": "one-child-policy hysteresis",
+      "scalar": 0.033,
+      "disp": 0.033,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "weak / stall"
+    },
+    {
+      "id": "E18-H157",
+      "batch": "E18",
+      "name": "grandmother hypothesis (kin proximity)",
+      "scalar": 0.2668,
+      "disp": 0.2666,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H158",
+      "batch": "E18",
+      "name": "climate/expectations birth-strike",
+      "scalar": -0.5072,
+      "disp": -0.5069,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "backfire"
+    },
+    {
+      "id": "E18-H161",
+      "batch": "E18",
+      "name": "urban-density fertility penalty",
+      "scalar": 0.3256,
+      "disp": 0.3256,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "E18-H162",
+      "batch": "E18",
+      "name": "status-of-parenthood reversal",
+      "scalar": 0.2196,
+      "disp": 0.2194,
+      "delta": -0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "durable bend"
+    },
+    {
+      "id": "H182",
+      "batch": "E25",
+      "name": "abortion restrictiveness (graded to total ban)",
+      "scalar": 0.0086,
+      "disp": 0.0086,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H183",
+      "batch": "E25",
+      "name": "penalise family/friends who help with an abortion",
+      "scalar": 0.0072,
+      "disp": 0.0071,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H184",
+      "batch": "E25",
+      "name": "kin / grandparental support",
+      "scalar": 0.0509,
+      "disp": 0.051,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H185",
+      "batch": "E25",
+      "name": "in-kind childcare services (not cash)",
+      "scalar": 0.0879,
+      "disp": 0.0882,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H186",
+      "batch": "E25",
+      "name": "reverse social atomisation (community / third places)",
+      "scalar": 0.0642,
+      "disp": 0.0642,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H187",
+      "batch": "E25",
+      "name": "bistable social norm - pronatal media push",
+      "scalar": 0.038,
+      "disp": 0.0409,
+      "delta": 0.0029,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H188",
+      "batch": "E26",
+      "name": "polyamory raises the partnership count -> coupling",
+      "scalar": 0.0142,
+      "disp": 0.0142,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H189",
+      "batch": "E26",
+      "name": "polyamorous alloparenting shares child cost -> parity",
+      "scalar": 0.0122,
+      "disp": 0.0122,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H190",
+      "batch": "E26",
+      "name": "CNM concentrates mating on high-status men -> excluded-male ",
+      "scalar": -0.021,
+      "disp": -0.021,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H191",
+      "batch": "E26",
+      "name": "matrilineal descent raises fertility",
+      "scalar": -0.0002,
+      "disp": -0.0002,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H192",
+      "batch": "E26",
+      "name": "matrilocal residence -> grandmaternal childcare",
+      "scalar": 0.0192,
+      "disp": 0.0192,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H193",
+      "batch": "E26",
+      "name": "stacking co-resident female kin pools childcare",
+      "scalar": -0.004,
+      "disp": -0.0041,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H194",
+      "batch": "E26",
+      "name": "kibbutz-style full cost-socialisation of a child",
+      "scalar": 0.0723,
+      "disp": 0.0725,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H195",
+      "batch": "E26",
+      "name": "generic cooperative breeding raises fertility",
+      "scalar": 0.0111,
+      "disp": 0.0111,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H196",
+      "batch": "E26",
+      "name": "state-funded universal in-kind childcare",
+      "scalar": 0.0671,
+      "disp": 0.0673,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H197",
+      "batch": "E26",
+      "name": "the communal FORM without cost-socialisation raises fertilit",
+      "scalar": -0.002,
+      "disp": -0.002,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H198",
+      "batch": "E26",
+      "name": "media is a causal fertility channel (antinatal direction)",
+      "scalar": -0.0935,
+      "disp": -0.0913,
+      "delta": 0.0022,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H199",
+      "batch": "E26",
+      "name": "deliberate pronatal media raises fertility",
+      "scalar": 0.0247,
+      "disp": 0.0274,
+      "delta": 0.0027,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H201",
+      "batch": "E26",
+      "name": "maternal grandmother proximity raises fertility",
+      "scalar": 0.0227,
+      "disp": 0.0227,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H202",
+      "batch": "E26",
+      "name": "paying grandparents to provide care recreates the effect",
+      "scalar": 0.0038,
+      "disp": 0.0038,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H203",
+      "batch": "E26",
+      "name": "kin buffers the late-tempo fecundability loss",
+      "scalar": 0.0098,
+      "disp": 0.0098,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H204",
+      "batch": "E26",
+      "name": "legal recognition of plural parents raises fertility",
+      "scalar": 0.0011,
+      "disp": 0.0011,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H207",
+      "batch": "E26",
+      "name": "autonomy-lowering pronatal traditionalism raises fertility n",
+      "scalar": 0.0142,
+      "disp": 0.0142,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H200",
+      "batch": "E26",
+      "name": "a pronatal norm multiplies structural levers",
+      "scalar": 0.0265,
+      "disp": 0.0293,
+      "delta": 0.0027,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H205",
+      "batch": "E26",
+      "name": "the complementary stack childcare + kin + pronatal-N is supe",
+      "scalar": 0.1213,
+      "disp": 0.1247,
+      "delta": 0.0034,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H206",
+      "batch": "E26",
+      "name": "state childcare and grandmother care are substitutes that cr",
+      "scalar": 0.091,
+      "disp": 0.0912,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H208",
+      "batch": "E27",
+      "name": "polygyny (one male, many females)",
+      "scalar": -0.5623,
+      "disp": -0.5617,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H209",
+      "batch": "E27",
+      "name": "polyandry (one female, many males)",
+      "scalar": -0.0292,
+      "disp": -0.0292,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H210",
+      "batch": "E27",
+      "name": "extreme hypergamy / mating-market skew",
+      "scalar": -0.0258,
+      "disp": -0.0259,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H211",
+      "batch": "E27",
+      "name": "state-sanctioned polygyny (legitimacy + subsidy)",
+      "scalar": -0.5324,
+      "disp": -0.5307,
+      "delta": 0.0017,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H212",
+      "batch": "E27",
+      "name": "media normalisation of the structure (N forcing)",
+      "scalar": -0.2137,
+      "disp": -0.2113,
+      "delta": 0.0024,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H213",
+      "batch": "E28",
+      "name": "state suppression of polygyny (enforced monogamy) is the fer",
+      "scalar": 0.6978,
+      "disp": 0.6961,
+      "delta": -0.0017,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H214",
+      "batch": "E28",
+      "name": "cultural / society endorsement of polygyny raises fertility",
+      "scalar": -0.8032,
+      "disp": -0.8019,
+      "delta": 0.0012,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H215",
+      "batch": "E28",
+      "name": "state endorsement + subsidy of polygyny manufactures the mis",
+      "scalar": -0.8067,
+      "disp": -0.8055,
+      "delta": 0.0012,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H216",
+      "batch": "E28",
+      "name": "the development regime flips the sign of polygyny (Tertilt +",
+      "scalar": 0.2627,
+      "disp": 0.267,
+      "delta": 0.0042,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "deepens",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H217",
+      "batch": "E28",
+      "name": "polyandry endorsement suppresses fertility regardless of end",
+      "scalar": -0.5948,
+      "disp": -0.5926,
+      "delta": 0.0023,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H218",
+      "batch": "E28",
+      "name": "state suppression of polyandry raises fertility by un-ration",
+      "scalar": 0.1169,
+      "disp": 0.1202,
+      "delta": 0.0033,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H220",
+      "batch": "E28",
+      "name": "endorsement shifts the bistable norm N enough to matter on i",
+      "scalar": -0.1107,
+      "disp": -0.1083,
+      "delta": 0.0024,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H221",
+      "batch": "E28",
+      "name": "a state subsidy offsets the polygyny externality",
+      "scalar": 0.4912,
+      "disp": 0.4912,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H247",
+      "batch": "E30",
+      "name": "durable population-scale therapy/health raises marriageabili",
+      "scalar": 0.1205,
+      "disp": 0.1201,
+      "delta": -0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H248",
+      "batch": "E30",
+      "name": "voluntary one-off couples therapy stays null",
+      "scalar": 0.1205,
+      "disp": 0.1201,
+      "delta": -0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H250",
+      "batch": "E30",
+      "name": "father-access loss has no contemporary effect but a delayed ",
+      "scalar": -0.1561,
+      "disp": -0.1555,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H252",
+      "batch": "E30",
+      "name": "relationship scars impose a delayed next-generation coupling",
+      "scalar": -0.1272,
+      "disp": -0.1267,
+      "delta": 0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H253",
+      "batch": "E30",
+      "name": "a shared-custody presumption pays a delayed intergenerationa",
+      "scalar": 0.2366,
+      "disp": 0.2358,
+      "delta": -0.0008,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H254",
+      "batch": "E30",
+      "name": "paternity certainty raises father investment and pays an int",
+      "scalar": 0.1431,
+      "disp": 0.1425,
+      "delta": -0.0007,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H259",
+      "batch": "E30",
+      "name": "cash can buy marriageability",
+      "scalar": 0.3343,
+      "disp": 0.3338,
+      "delta": -0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H261",
+      "batch": "E31",
+      "name": "rebuttable shared-custody presumption (the causal winner)",
+      "scalar": 0.3227,
+      "disp": 0.3233,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H262",
+      "batch": "E31",
+      "name": "rigid mandatory 50/50 vs rebuttable",
+      "scalar": 0.1493,
+      "disp": 0.1485,
+      "delta": -0.0008,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H263",
+      "batch": "E31",
+      "name": "fines / sanctions / contempt for access denial",
+      "scalar": -0.0195,
+      "disp": -0.0195,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H264",
+      "batch": "E31",
+      "name": "criminalisation of alienation (Brazil Lei 12.318/2010)",
+      "scalar": -0.0641,
+      "disp": -0.0639,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H265",
+      "batch": "E31",
+      "name": "mandated reunification therapy / camps",
+      "scalar": -0.0232,
+      "disp": -0.0231,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "holds",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H266",
+      "batch": "E31",
+      "name": "mandatory co-parenting / divorce education",
+      "scalar": 0.0832,
+      "disp": 0.083,
+      "delta": -0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H267",
+      "batch": "E31",
+      "name": "early mediation (divert from litigation)",
+      "scalar": 0.1109,
+      "disp": 0.1104,
+      "delta": -0.0004,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H268",
+      "batch": "E31",
+      "name": "DV carve-out design (safety-gated shared custody)",
+      "scalar": 0.2578,
+      "disp": 0.2583,
+      "delta": 0.0005,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H269",
+      "batch": "E31",
+      "name": "weaponisation screen (the Meier correction)",
+      "scalar": 0.0304,
+      "disp": 0.0303,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H270",
+      "batch": "E31",
+      "name": "prevention-over-punishment synthesis",
+      "scalar": 0.4088,
+      "disp": 0.4094,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H271",
+      "batch": "E32",
+      "name": "social-work supervision",
+      "scalar": 0.1001,
+      "disp": 0.0997,
+      "delta": -0.0004,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H272",
+      "batch": "E32",
+      "name": "stepped therapy (escalate on failure, abuse-gated)",
+      "scalar": 0.2687,
+      "disp": 0.2693,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H273",
+      "batch": "E32",
+      "name": "monitored sanction (certainty supplied)",
+      "scalar": -0.0366,
+      "disp": -0.0365,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H274",
+      "batch": "E32",
+      "name": "raw criminalisation, no monitoring (severity)",
+      "scalar": -0.1598,
+      "disp": -0.1592,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H275",
+      "batch": "E32",
+      "name": "coercion sign-heterogeneity",
+      "scalar": -0.0415,
+      "disp": -0.0414,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H276",
+      "batch": "E32",
+      "name": "foster/removal-until-reconciliation",
+      "scalar": -0.4251,
+      "disp": -0.4245,
+      "delta": 0.0007,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H277",
+      "batch": "E32",
+      "name": "refund + clawback bond (the seed)",
+      "scalar": 0.3137,
+      "disp": 0.3143,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H278",
+      "batch": "E32",
+      "name": "contingency-management milestone rewards",
+      "scalar": 0.3267,
+      "disp": 0.3273,
+      "delta": 0.0007,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H279",
+      "batch": "E32",
+      "name": "conditional cash / tax credit",
+      "scalar": 0.4201,
+      "disp": 0.4198,
+      "delta": -0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H280",
+      "batch": "E32",
+      "name": "symmetric two-sided bond (un-weaponizable)",
+      "scalar": 0.2723,
+      "disp": 0.2729,
+      "delta": 0.0006,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H281",
+      "batch": "E32",
+      "name": "loss-frame (lose-it) vs gain-frame",
+      "scalar": 0.4139,
+      "disp": 0.4148,
+      "delta": 0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H282",
+      "batch": "E32",
+      "name": "child-outcome-contingent reward",
+      "scalar": 0.2631,
+      "disp": 0.2631,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H283",
+      "batch": "E32",
+      "name": "objective clawback trigger (detection design)",
+      "scalar": 0.0668,
+      "disp": 0.0666,
+      "delta": -0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H284",
+      "batch": "E32",
+      "name": "reward x shared-custody x mediation (the stack)",
+      "scalar": 0.4802,
+      "disp": 0.4793,
+      "delta": -0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "recovers",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H286",
+      "batch": "E32",
+      "name": "escalating per-diem contact-denial ticket",
+      "scalar": 0.0085,
+      "disp": 0.0085,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H287",
+      "batch": "E32",
+      "name": "income-scaled day-fine",
+      "scalar": 0.0122,
+      "disp": 0.0121,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H288",
+      "batch": "E32",
+      "name": "on-the-spot police issuance (certainty)",
+      "scalar": 0.0091,
+      "disp": 0.0091,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H289",
+      "batch": "E32",
+      "name": "civil (no custody consequence) vs criminal",
+      "scalar": 0.0091,
+      "disp": 0.0091,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H290",
+      "batch": "E32",
+      "name": "revenue to the wronged parent (make-whole)",
+      "scalar": 0.036,
+      "disp": 0.0362,
+      "delta": 0.0002,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H291",
+      "batch": "E32",
+      "name": "supervised exchange / neutral drop-off",
+      "scalar": 0.0371,
+      "disp": 0.037,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H292",
+      "batch": "E32",
+      "name": "parenting coordinator / special master",
+      "scalar": 0.0237,
+      "disp": 0.0237,
+      "delta": -0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H293",
+      "batch": "E32",
+      "name": "family-support social work (corrective)",
+      "scalar": 0.0073,
+      "disp": 0.0073,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H294",
+      "batch": "E32",
+      "name": "criminal fine, custody-decoupled",
+      "scalar": 0.003,
+      "disp": 0.003,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H295",
+      "batch": "E32",
+      "name": "community service / public works",
+      "scalar": 0.0037,
+      "disp": 0.0036,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H296",
+      "batch": "E32",
+      "name": "suspended jail sentence (threat, decoupled)",
+      "scalar": -0.0012,
+      "disp": -0.0012,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H297",
+      "batch": "E32",
+      "name": "actual jail time (custody-decoupled)",
+      "scalar": -0.2345,
+      "disp": -0.2342,
+      "delta": 0.0003,
+      "kind": "",
+      "fate_scalar": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "fate_disp": [
+        "deepens",
+        "deepens",
+        "deepens"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H298",
+      "batch": "E33",
+      "name": "religious PRACTICE (weekly attendance) vs nominal affiliatio",
+      "scalar": 0.0976,
+      "disp": 0.1007,
+      "delta": 0.0031,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H299",
+      "batch": "E33",
+      "name": "cross-denomination TFR gradient",
+      "scalar": 0.1108,
+      "disp": 0.1151,
+      "delta": 0.0043,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H303",
+      "batch": "E33",
+      "name": "pronatal theology (Quiverfull/LDS) via realised practice",
+      "scalar": 0.0878,
+      "disp": 0.0909,
+      "delta": 0.0031,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H304",
+      "batch": "E33",
+      "name": "state-established church / religious schooling as a fertilit",
+      "scalar": 0.0173,
+      "disp": 0.02,
+      "delta": 0.0026,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H305",
+      "batch": "E33",
+      "name": "Israel nationalism as a SECULAR norm-carrier",
+      "scalar": 0.3489,
+      "disp": 0.3519,
+      "delta": 0.003,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H308",
+      "batch": "E33",
+      "name": "religious marriage + lower divorce (compositional)",
+      "scalar": 0.1742,
+      "disp": 0.1733,
+      "delta": -0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "bends"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H309",
+      "batch": "E33",
+      "name": "non-stopping / higher parity (contraception rejection)",
+      "scalar": 0.0191,
+      "disp": 0.019,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H310",
+      "batch": "E33",
+      "name": "earlier tempo (younger marriage / first birth)",
+      "scalar": 0.0044,
+      "disp": 0.0044,
+      "delta": -0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "H311",
+      "batch": "E33",
+      "name": "lower permanent childlessness (rho->0) - the strongest quant",
+      "scalar": 0.0993,
+      "disp": 0.0994,
+      "delta": 0.0001,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H312",
+      "batch": "E33",
+      "name": "congregation as community / alloparenting (fS)",
+      "scalar": 0.1262,
+      "disp": 0.1271,
+      "delta": 0.0009,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "fate_disp": [
+        "holds",
+        "bends",
+        "bends"
+      ],
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "H313",
+      "batch": "E33",
+      "name": "traditional GENDER ROLES as the mechanism",
+      "scalar": 0.0159,
+      "disp": 0.0159,
+      "delta": 0.0,
+      "kind": "",
+      "fate_scalar": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "fate_disp": [
+        "holds",
+        "holds",
+        "holds"
+      ],
+      "verdict": "REFUTED"
+    },
+    {
+      "id": "H307",
+      "batch": "E33",
+      "name": "is religion predominantly the norm channel N?",
+      "scalar": 0.2392,
+      "disp": 0.2426,
+      "delta": 0.0034,
+      "kind": "",
+      "fate_scalar": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "fate_disp": [
+        "bends",
+        "bends",
+        "recovers"
+      ],
+      "verdict": "PARTIAL"
+    }
+  ]
+}

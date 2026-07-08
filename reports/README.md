@@ -128,6 +128,8 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb14_e19_verdicts.json` - full E19 dynamical results for all 88 interventions across Korea/Germany/France
 - `nb15_harbinger_table.csv` - E20 lever ranking: composite cost, Korea dTFR, improvement-per-cost efficiency, Seldon fate
 - `nb15_e20_verdicts.json` - the six E20 Seldon-harbinger verdicts (H164-H169) with evidence
+- `nb27_religion_table.csv` - E33 religion x fertility catalogue (claim, verdict) across the 16 hypotheses
+- `nb27_e33_verdicts.json` - all 16 E33 verdicts (H298-H313) with evidence (12 channel-forcing + 4 compounding-subpopulation)
 
 ## Verdict records
 

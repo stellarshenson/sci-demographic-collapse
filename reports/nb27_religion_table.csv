@@ -1,0 +1,17 @@
+id,claim,verdict
+E33-H298,religious PRACTICE (weekly attendance) vs nominal affiliation,PARTIAL
+E33-H299,cross-denomination TFR gradient,PARTIAL
+E33-H300,"Amish as a compounding sub-population (lambda>1, not a forcing)",SUPPORTED
+E33-H301,"Hutterite as a compounding sub-population (lambda>1, not a forcing)",SUPPORTED
+E33-H302,"Haredi as a compounding sub-population (lambda>1, not a forcing)",SUPPORTED
+E33-H303,pronatal theology (Quiverfull/LDS) via realised practice,PARTIAL
+E33-H304,state-established church / religious schooling as a fertility lever,REFUTED
+E33-H305,Israel nationalism as a SECULAR norm-carrier,SUPPORTED
+E33-H306,retention is the load-bearing fragile assumption,PARTIAL
+E33-H307,is religion predominantly the norm channel N?,PARTIAL
+E33-H308,religious marriage + lower divorce (compositional),PARTIAL
+E33-H309,non-stopping / higher parity (contraception rejection),PARTIAL
+E33-H310,earlier tempo (younger marriage / first birth),PARTIAL
+E33-H311,lower permanent childlessness (rho->0) - the strongest quantum channel,SUPPORTED
+E33-H312,congregation as community / alloparenting (fS),SUPPORTED
+E33-H313,traditional GENDER ROLES as the mechanism,REFUTED

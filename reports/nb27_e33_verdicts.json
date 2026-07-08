@@ -1,0 +1,98 @@
+[
+  {
+    "id": "E33-H298",
+    "claim": "religious PRACTICE (weekly attendance) vs nominal affiliation",
+    "evidence": "mean \u0394TFR +0.098; GSS ~70k: weekly attenders ~2.4, unaffiliated lowest; affiliation-only collapses to ~0 - the operative variable is practice acting through N/C, not 'religion'",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H299",
+    "claim": "cross-denomination TFR gradient",
+    "evidence": "mean \u0394TFR +0.111; Pew Muslim 2.9 / Christian 2.6 / unaffiliated 1.6, but >50% attenuates under GDP/region; Iran 1.35 & Utah 1.8 sit below secular France - a security/region proxy (Norris-Inglehart), not doctrine",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H300",
+    "claim": "Amish as a compounding sub-population (lambda>1, not a forcing)",
+    "evidence": "share projection: baseline takeover gen 4 -> doubled-\u03b4 gen None; asymptote 0.59->0.50; Greksa-Korbin completed ~7.7, doubling ~20yr, +97% since 2000 - existence proof of compounding, explicitly NOT a transferable lever",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E33-H301",
+    "claim": "Hutterite as a compounding sub-population (lambda>1, not a forcing)",
+    "evidence": "share projection: baseline takeover gen 3 -> doubled-\u03b4 gen 3; asymptote 0.65->0.62; Eaton-Mayer completed 10.9, 4.12%/yr fastest recorded natural growth - pins the upper bound of the fecundity wall / rho->0 is attainable; not a policy",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E33-H302",
+    "claim": "Haredi as a compounding sub-population (lambda>1, not a forcing)",
+    "evidence": "share projection: baseline takeover gen 4 -> doubled-\u03b4 gen 5; asymptote 0.60->0.53; Israel CBS 6.6 stable ~a decade, growing share inside a modern state - compounding; the transferable part is the norm, not the Haredi package",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E33-H303",
+    "claim": "pronatal theology (Quiverfull/LDS) via realised practice",
+    "evidence": "mean \u0394TFR +0.088; acts only through the norm/parity it actually induces; Catholic contraception ban did NOT bind (converged to secular mean) - theology sets a ceiling, practice binds",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H304",
+    "claim": "state-established church / religious schooling as a fertility lever",
+    "evidence": "mean \u0394TFR +0.017; Norris-Inglehart: established churches (CoE, Nordic Lutheran) coexist with the LOWEST fertility and religiosity - establishment is inert under high security; near-zero lever",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E33-H305",
+    "claim": "Israel nationalism as a SECULAR norm-carrier",
+    "evidence": "mean \u0394TFR +0.349; ~75% secular Jewish Israelis at/above replacement (~2.0-2.2) with LOW personal religiosity + most state-funded IVF per capita - the transferable ingredient is norm+community+security, NOT religion per se",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E33-H306",
+    "claim": "retention is the load-bearing fragile assumption",
+    "evidence": "the fertility gap is robust but doubling apostasy \u03b4 shifts every sect's takeover out and lowers the asymptote (Amish 0.59->0.50); the projected inheritance-of-the-earth is bounded by retention, not asserted",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H307",
+    "claim": "is religion predominantly the norm channel N?",
+    "evidence": "norm-borne share only 27% of the religion effect (full +0.239 = via-N +0.064 + residual +0.176); the norm is separable and identified (Israel norm-w/o-piety vs Iran piety-losing-norm) but community+coupling carry the majority - religion is a multi-channel bundle, NOT predominantly N",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H308",
+    "claim": "religious marriage + lower divorce (compositional)",
+    "evidence": "mean \u0394TFR +0.174; DeRose 2021 higher union stability; a large slice of the gap but it runs entirely through fC/fScar the model owns - and if via raised exit-cost/lock-in it BACKFIRES (Stevenson-Wolfers), so the durable part is voluntary stability",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H309",
+    "claim": "non-stopping / higher parity (contraception rejection)",
+    "evidence": "mean \u0394TFR +0.019; large only inside natural-fertility sects (compounding-internal); weak as a general-population channel - most of the developed-world religious gap is low childlessness + marriage, not high parity",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H310",
+    "claim": "earlier tempo (younger marriage / first birth)",
+    "evidence": "mean \u0394TFR +0.004; 3-6yr earlier first birth feeds the Bongaarts-Feeney tempo term; but tempo alone is a mirage (bump-revert) unless coupled to quantum - the coupled model shows the revert",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E33-H311",
+    "claim": "lower permanent childlessness (rho->0) - the strongest quantum channel",
+    "evidence": "mean \u0394TFR +0.099; childlessness ~0-3% in sects vs 15-25% secular East Asia/Europe; the single largest QUANTUM contribution - but a within-observant property, so partially a compounding-internal effect",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E33-H312",
+    "claim": "congregation as community / alloparenting (fS)",
+    "evidence": "mean \u0394TFR +0.126; Shaver 2020 ALSPAC: co-religionist aid predicts fertility and persists while secular support decays - the least-coercive, most-transferable religion channel (secular equivalent = durable kin/community networks)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E33-H313",
+    "claim": "traditional GENDER ROLES as the mechanism",
+    "evidence": "mean \u0394TFR +0.016; DeRose 2021: the religious advantage barely moved as its traditional-role component eroded - religious fertility is DESPITE, not because of, gender traditionalism; wiring religion as a trad-role forcing imports the campaign's REFUTED backfire (female income flips positive only under gender-equity-in-home)",
+    "verdict": "REFUTED"
+  }
+]
