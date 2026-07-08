@@ -206,3 +206,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Ephemeral build/verify scratch (notebook builders, phase runners, scratch data)
+# The deliverable notebooks/reports are committed; these throwaway scripts are not
+scratchpad/
