@@ -30,16 +30,51 @@ REAL = {
     "Italy": (1.20, 31.8),
     "Japan": (1.21, 31.4),
     "Korea": (0.72, 32.9),
+    # Poland: TFR from GUS (national office) 2023 = 1.16, not UN WPP's 1.30; age-at-childbearing
+    # 29.9 from the same UN WPP series the others use. GUS 2024 fell further to 1.099.
+    "Poland": (1.16, 29.9),
 }
-C0 = {"USA": 0.90, "France": 0.95, "Germany": 0.86, "Italy": 0.83, "Japan": 0.80, "Korea": 0.52}
-RV0 = {"USA": 0.07, "France": 0.07, "Germany": 0.09, "Italy": 0.10, "Japan": 0.10, "Korea": 0.08}
-S0 = {"USA": 0.58, "France": 0.62, "Germany": 0.52, "Italy": 0.45, "Japan": 0.45, "Korea": 0.40}
+C0 = {
+    "USA": 0.90,
+    "France": 0.95,
+    "Germany": 0.86,
+    "Italy": 0.83,
+    "Japan": 0.80,
+    "Korea": 0.52,
+    "Poland": 0.82,
+}
+RV0 = {
+    "USA": 0.07,
+    "France": 0.07,
+    "Germany": 0.09,
+    "Italy": 0.10,
+    "Japan": 0.10,
+    "Korea": 0.08,
+    "Poland": 0.10,
+}
+S0 = {
+    "USA": 0.58,
+    "France": 0.62,
+    "Germany": 0.52,
+    "Italy": 0.45,
+    "Japan": 0.45,
+    "Korea": 0.40,
+    "Poland": 0.45,
+}
 
 # social-norm state N (E25): share endorsing a childfree ideal, modelled as a bistable
 # contagion with two stable wells (Nlo untrapped, Nhi trapped) and an unstable tipping point
 # thN. Each region starts snapped to its basin so baseline N is a fixed point of the unforced
 # dynamics and the norm->rho coupling lam_rho*(N-N0) is identically zero at today's calibration.
-NORM0 = {"USA": 0.14, "France": 0.14, "Germany": 0.14, "Italy": 0.42, "Japan": 0.42, "Korea": 0.42}
+NORM0 = {
+    "USA": 0.14,
+    "France": 0.14,
+    "Germany": 0.14,
+    "Italy": 0.42,
+    "Japan": 0.42,
+    "Korea": 0.42,
+    "Poland": 0.42,
+}
 
 # ensemble calibration (Phase 2, the distributional core). SIGMA_CAL is the grounded, structural
 # population-heterogeneity spread per channel (age-at-first-birth SD ~3yr; parity intentions spread widest;
@@ -54,6 +89,7 @@ PB_SCALE_ENS = {
     "Italy": 1.0301,
     "Japan": 1.0322,
     "Korea": 1.0333,
+    "Poland": 1.0372,  # re-solved by calibrate_ens; dispersed baseline reproduces GUS TFR 1.16 exactly
 }
 
 # behavioural rate constants (calibrated in E19; norm constants added in E25; marriageability +
