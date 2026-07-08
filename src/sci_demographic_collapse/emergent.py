@@ -19,7 +19,6 @@ import numpy as np
 import torch
 
 from . import coremodel as cm
-from .culture import CultureOperator
 from .ot import CohortMemory
 
 # 2023 calibration targets (TFR, mean age at first birth) and channel start values
@@ -131,13 +130,10 @@ class EmergentModel:
             np.clip(N + dt * dN, 0.0, 1.0), np.clip(q + dt * dq, -1.0, 1.0),
         ]), dtau
 
-    def run(self, region: str, force=None, years: int = 102, culture: CultureOperator | None = None) -> dict:
+    def run(self, region: str, force=None, years: int = 102) -> dict:
         """Integrate `region` forward `years` from 2023 under an optional forcing function.
 
         `force` maps a year index to `[fS, fC, fPbar, ftau, frho]`; None means the baseline.
-        `culture` is an optional culture-bearer operator; `None` or `r=0` leaves the trajectory untouched
-        (this scalar path carries one representative agent, so its fertility-weighted mean is itself and the
-        nudge is identically zero - selection needs the multi-subgroup ensemble in `run_ens`).
         Returns dict with the TFR and C trajectories, end states, and percent population change.
         """
         if force is None:
@@ -180,9 +176,6 @@ class EmergentModel:
             mem.push(env)
             A_lag = p["gA"] * mem.reproductive_mean()   # mean completed childhood integral over reproductive cohorts
             tfr = quantum(C, rv, Pb) * fec(tau) * (1 - self.P["kBF"] * dtau)
-            if culture is not None and culture.is_renewal(yr):   # cohort-renewal culture nudge (no-op at r=0)
-                st = culture.apply(st[None, :].copy(), np.array([tfr]), yr)[0]
-                C, rv, Pb, tau, S, N, q = st
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nm, _b, _d = cm.leslie_step(
                 nf, nm, torch.tensor(Sx, device=self.DEV),
@@ -314,17 +307,13 @@ class EmergentModel:
     SIGMA0 = {"C": 0.0, "rv": 0.0, "Pb": 0.0, "tau": 0.0, "S": 0.0, "N": 0.0, "q": 0.0}
 
     def run_ens(self, region, force=None, sigma=None, K=48, years=102, seed=0, return_dist=False,
-                pb_scale=1.0, culture: CultureOperator | None = None):
+                pb_scale=1.0):
         """The full distributional core: carry the joint state as a K-agent ensemble and aggregate
         Jensen-correctly. Each channel is spread by a Latin-hypercube marginal (deterministic, decorrelated
         across channels via seeded permutations), so `sigma`->0 reproduces the scalar `run` to machine
         precision, while a real dispersion recovers the heterogeneity the representative agent throws away
         (the bistable-N split, the coupling-trap gate, the tail selection). TFR is the population mean of
         per-agent TFR; the Leslie birth profile is the ensemble-mean of each agent's tempo-shifted profile.
-
-        `culture` is an optional culture-bearer operator: at cohort-renewal years it nudges the K subgroups'
-        cultural traits toward their fertility-weighted mean (Perron-Frobenius selection). Default None, and
-        `r=0` is a machine-precision no-op, so the calibrated baseline is unchanged.
         """
         chans = ["C", "rv", "Pb", "tau", "S", "N", "q"]
         if force is None:
@@ -371,8 +360,6 @@ class EmergentModel:
             C, rv, Pb, tau, S, N, q = (st[:, i] for i in range(7))
             tfr_i = C * (1 - rv) * Pb * np.exp(-0.03 * np.clip(tau - 30.0, 0, None)) * (1 - p["kBF"] * dtau_acc)
             tfr = float(tfr_i.mean())
-            if culture is not None:      # culture-bearer nudge on the K subgroups (identity at r=0 / off-renewal)
-                st = culture.apply(st, tfr_i, yr)
             prof = np.zeros_like(base)
             for k in range(K):
                 mult = (tfr_i[k] / tfrb) if tfrb > 1e-6 else 0.0
@@ -413,13 +400,11 @@ class EmergentModel:
             out[r] = float(s)
         return out
 
-    def run_cal(self, region, force=None, K: int = 64, years: int = 102, return_dist: bool = False,
-                culture: CultureOperator | None = None):
+    def run_cal(self, region, force=None, K: int = 64, years: int = 102, return_dist: bool = False):
         """The calibrated distributional core (the production run): the dispersed K-agent ensemble under
-        SIGMA_CAL, re-anchored to 2023 REAL TFR by PB_SCALE_ENS. This is what all hypotheses are scored on.
-        `culture` is an optional culture-bearer operator (default None / r=0 leaves the run byte-identical)."""
+        SIGMA_CAL, re-anchored to 2023 REAL TFR by PB_SCALE_ENS. This is what all hypotheses are scored on."""
         return self.run_ens(region, force=force, sigma=SIGMA_CAL, K=K, years=years,
-                             pb_scale=PB_SCALE_ENS[region], return_dist=return_dist, culture=culture)
+                             pb_scale=PB_SCALE_ENS[region], return_dist=return_dist)
 
     def baselines(self, regions=None) -> dict:
         """Baseline (no-intervention) run for each region."""

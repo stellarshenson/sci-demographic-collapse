@@ -169,10 +169,21 @@ curvature artifact that makes any two positive levers *look* super-additive on t
 the bundle results mechanically: `H`'s negative diagonal is same-channel saturation (why stacks that overload
 the shared security channel collide), its off-diagonal reproduces the ODE coupling Jacobian, and its sign
 flips across the separatrix so that threshold synergy is manifold position. Its eigenvectors are coherent
-channel bundles - {security, coupling}, {norm, childlessness} - the same coupling operator that governs
-cultural transmission: one operator, two phenomena. The bilinear form is exact in the small-signal limit and a
+channel bundles - {security, coupling}, {norm, childlessness} - the coupled directions of the ODE's
+channel-coupling submatrix. The bilinear form is exact in the small-signal limit and a
 structural indicator, not a precise predictor, at bundle amplitude through the stiff bistable channels, so the
 operational rule is to combine on the log scale and measure the interaction directly.
+
+**Culture is a floor, not a lever.** A culture-bearer eigen-operator - culture as a matrix bending each family's
+trait vector toward its dominant eigenvector - was built, anchored to the measured intergenerational-fertility
+correlation (~0.15), and tested; it moved national TFR by 4e-4 and, at that anchor, collapsed to plain scalar
+multiplication (V decorative), so it was retired as the wrong object (E35). Cultural transmission that actually
+matters is between-group, not within: a high-fertility, high-retention subculture out-reproduces a sub-replacement
+mainstream and compounds its population share until its fertility sets the national floor the whole population
+decays toward - three to seven and a half TFR over four generations at the same retention anchor (E33's validated
+share replicator). Two facts govern it: retention (apostasy rate), not subgroup fertility, is the load-bearing axis;
+and it is descriptive, not a policy dial - a bounded high-retention community cannot be legislated into existence.
+Culture is therefore excluded from the lever set and treated as the slow attractor the levers operate above.
 
 ## Interventions and the forward outlook
 

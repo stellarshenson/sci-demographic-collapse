@@ -120,33 +120,21 @@ With that said, here are the popular cures the evidence does *not* support - and
 - **The myth that people simply stopped wanting children** - a genuine change of heart exists, but the model finds it the *smallest* of the three causes. Surveys are the tell: across Europe the ideal family size people report still sits near **2.1-2.3** children even as the actual rate languishes around **1.5** - a "child gap" of roughly **half a child** that desire cannot explain. The largest cause by far is that fewer people ever pair into the stable couples children mostly come from (Sobotka, 2017); the "they just don't want them" story mistakes the smallest driver for the whole
 - **The myth of the permanent immigration fix** - immigration is the one lever that pays off inside a single lifetime, and it holds some countries level today: strip net migration out of the arithmetic and the United States' population shortfall widens by about **85%**, and its numbers start to look like Europe's (this campaign's E5 finding). But migration reshuffles the world's *existing* young - the UN's own replacement-migration study found that to hold their working-age-to-old ratios steady, ageing societies would need sustained inflows many times any historical level. It neither explains nor repairs why a country stopped producing its own, and the planet as a whole cannot immigrate its way out
 
-## The slowest engine of all - how we model culture
+## The slowest engine of all - how culture actually moves fertility
 
-One force in this story works too slowly to have surfaced in anything above, and it is the one we are building into the model next. It is not a policy or a shock but the quiet handing-down of a way of living, from parents to children, generation after generation. What follows is an explainer of the approach - the mechanism as we are designing it, not yet a result the model has produced.
+One force in this story works too slowly to have surfaced in anything above: the quiet handing-down of a way of living, from parents to children, generation after generation. We tried to build it into the model as its own mechanism, tested it honestly, and learned something we did not expect - the obvious way to model it is the wrong way, and the force that really matters is a different one.
 
-### How it works
+### What we tried, and why it was wrong
 
-A culture bearer is a parent passing down not just genes but a whole way of living - and cultures that hand that way of living to more children, and keep those children in the fold, quietly grow their share of the population generation after generation.
+The intuitive picture is a machine that bends a family's way of living from parents to children - turn up "want children" and it nudges "community" too, because traits travel together, and over generations the family line settles toward a stable culture. We built exactly that: culture as a matrix acting on each family's trait-arrow, with a single retention dial and an off switch, so we could run the population with the mechanism on and off and measure the difference.
 
-Think of culture as a recipe passed down in a family - not one recipe but a bundle: how many children is normal, whether you marry, how you raise them, the community you lean on. Some cultures have more children, so they pass their bundle to more people in the next generation. Do that for a few generations and the high-fertility recipe spreads - not by converting anyone, simply by out-having everyone. It is natural selection, run on culture instead of genes.
+It moved national fertility by four ten-thousandths of a child. Essentially nothing. The reason is instructive: a machine that bends one nation's families toward their own average is just regression to the mean - it is blind to how many people are in each culture, so it can never compound. Worse, once we set its strength to the real, measured rate at which fertility is handed down parent to child (a correlation of about 0.15), the elegant machine collapsed into plain multiplication by a number, and all the rotation, all the "traits travel together", became decorative. So we removed it. The code is preserved in the project's history, and the full autopsy is experiment E35.
 
-The contrast that makes it vivid: the Amish hand down the norm and the community and the boundary that keeps children in - all the pieces travel together, so their numbers roughly double every twenty years. A government pro-baby advertising campaign nudges one generation and hands down no community, no boundary, no durable belief - so it leaks away in a single generation.
+### What actually matters: out-having, not handing-down
 
-And here is the catch that makes it interesting. The most important piece is not "want more children" - it is retention: do the children stay in the culture? A culture can have many children and still vanish if it cannot keep them. That is why forcing births backfires - you can compel one generation to have babies but not to hand down a love of family; often you hand down resentment instead, and it reverses.
+The real engine is not transmission within a population - it is competition between them. A high-fertility, high-retention subculture does not convert anyone; it simply out-has the mainstream. The mainstream, below replacement, halves every generation; the subculture grows its share of the whole population every generation. Run that forward and the subculture's fertility becomes the floor the entire nation's birth rate settles toward, no matter how far the mainstream falls. The Amish, doubling roughly every twenty years, are the existence proof. In our projection this between-group compounding moves national fertility by three to seven and a half children over four generations - four orders of magnitude more than the machine we threw away. It was already in the model, validated in experiment E33.
 
-We model it as an on/off switch on purpose: run the population once with the mechanism working and once without, and you can measure exactly what this slow generational force changes, instead of guessing.
-
-### The mechanics, in plain terms
-
-Everything starts as an arrow. Picture each person as an arrow built from their settings - how much they want children, how tied to a community they are, how ready to pair up.
-
-Culture is a machine that bends the arrow. In the maths it is a matrix - a machine that rotates the arrow (turn up "want children" and it also nudges "community", because traits travel together) and stretches or shrinks it, amplifying some traits and fading others. The parents' arrow goes in, the children's arrow comes out.
-
-Now do it again and again. Keep running the same arrow through the same machine, generation after generation, and the arrow swings around to line up with the machine's favourite direction. Mathematicians call that direction an eigenvector; the everyday picture is a tray of marbles shaken until they settle into a groove. That groove is the stable culture, and the population arcs toward it.
-
-Births are the thumb on the scale. Whose arrow gets fed into the next generation's machine is weighted by how many children they had - so the groove the population slides into is whichever culture out-reproduces the rest. Cultural natural selection, written as arithmetic.
-
-And the on/off dial is a single number: retention. It multiplies the whole machine. Set it to zero and children come out looking like the population average - culture off. Turn it up and the machine pulls each child toward the groove.
+Two things about it are worth holding onto. First, retention beats fertility: a group with seven children per family that loses a third of them each generation loses to a group with five that keeps almost all - the exit rate is the whole game. Second, and this is the hard part, it is a floor, not a dial. You cannot legislate a bounded, high-retention community into existence. A government can nudge the mainstream's fertility a little; it cannot manufacture the boundary that makes compounding work. So in everything above, culture is not one of the levers - it is the slow attractor the levers operate above.
 
 ## How we got here (and why it's worth trusting)
 
