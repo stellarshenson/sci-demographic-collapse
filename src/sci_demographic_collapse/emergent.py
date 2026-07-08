@@ -13,6 +13,7 @@ model validated in notebooks 14-17; import it instead of re-deriving it.
     base = m.run("Korea")                       # baseline TFR trajectory to 2125
     lifted = m.run("Korea", m.coupling(0.20))   # a coupling push
 """
+
 from __future__ import annotations
 
 import numpy as np
@@ -23,38 +24,75 @@ from .ot import CohortMemory
 
 # 2023 calibration targets (TFR, mean age at first birth) and channel start values
 REAL = {
-    "USA": (1.62, 29.4), "France": (1.64, 31.1), "Germany": (1.44, 31.0),
-    "Italy": (1.20, 31.8), "Japan": (1.21, 31.4), "Korea": (0.72, 32.9),
+    "USA": (1.62, 29.4),
+    "France": (1.64, 31.1),
+    "Germany": (1.44, 31.0),
+    "Italy": (1.20, 31.8),
+    "Japan": (1.21, 31.4),
+    "Korea": (0.72, 32.9),
 }
-C0 = {"USA": .90, "France": .95, "Germany": .86, "Italy": .83, "Japan": .80, "Korea": .52}
-RV0 = {"USA": .07, "France": .07, "Germany": .09, "Italy": .10, "Japan": .10, "Korea": .08}
-S0 = {"USA": .58, "France": .62, "Germany": .52, "Italy": .45, "Japan": .45, "Korea": .40}
+C0 = {"USA": 0.90, "France": 0.95, "Germany": 0.86, "Italy": 0.83, "Japan": 0.80, "Korea": 0.52}
+RV0 = {"USA": 0.07, "France": 0.07, "Germany": 0.09, "Italy": 0.10, "Japan": 0.10, "Korea": 0.08}
+S0 = {"USA": 0.58, "France": 0.62, "Germany": 0.52, "Italy": 0.45, "Japan": 0.45, "Korea": 0.40}
 
 # social-norm state N (E25): share endorsing a childfree ideal, modelled as a bistable
 # contagion with two stable wells (Nlo untrapped, Nhi trapped) and an unstable tipping point
 # thN. Each region starts snapped to its basin so baseline N is a fixed point of the unforced
 # dynamics and the norm->rho coupling lam_rho*(N-N0) is identically zero at today's calibration.
-NORM0 = {"USA": .14, "France": .14, "Germany": .14, "Italy": .42, "Japan": .42, "Korea": .42}
+NORM0 = {"USA": 0.14, "France": 0.14, "Germany": 0.14, "Italy": 0.42, "Japan": 0.42, "Korea": 0.42}
 
 # ensemble calibration (Phase 2, the distributional core). SIGMA_CAL is the grounded, structural
 # population-heterogeneity spread per channel (age-at-first-birth SD ~3yr; parity intentions spread widest;
 # norm/security/marriageability moderate; coupling/childlessness tight) - these are NOT fit parameters.
 # PB_SCALE_ENS is the one calibration free parameter re-solved per region so the DISPERSED baseline still
 # reproduces the 2023 REAL TFR (Pb is how the scalar PB0 was calibrated too). Regenerate via calibrate_ens().
-SIGMA_CAL = {"C": .05, "rv": .03, "Pb": .15, "tau": 3.0, "S": .10, "N": .06, "q": .10}
-PB_SCALE_ENS = {"USA": 1.0276, "France": 1.0404, "Germany": 1.0350, "Italy": 1.0301, "Japan": 1.0322,
-                "Korea": 1.0333}
+SIGMA_CAL = {"C": 0.05, "rv": 0.03, "Pb": 0.15, "tau": 3.0, "S": 0.10, "N": 0.06, "q": 0.10}
+PB_SCALE_ENS = {
+    "USA": 1.0276,
+    "France": 1.0404,
+    "Germany": 1.0350,
+    "Italy": 1.0301,
+    "Japan": 1.0322,
+    "Korea": 1.0333,
+}
 
 # behavioural rate constants (calibrated in E19; norm constants added in E25; marriageability +
 # intergenerational-memory constants added in E30)
 PARAMS = dict(
-    kC=.08, C_thr=.66, C_floor=.24, decl=.05, gS_C=.9, secC=.0007,
-    kPb=.05, gPb=1.2, secPb=.0010, kTau=.06, gTau=6.0, secTau=.006,
-    kRV=.03, gRV=.012, kS=.06, secS=.0010, kBF=.6, dep_fb=.22,
-    aN=2.5, thN=.25, Nlo=.14, Nhi=.42, lam_rho=.30,
+    kC=0.08,
+    C_thr=0.66,
+    C_floor=0.24,
+    decl=0.05,
+    gS_C=0.9,
+    secC=0.0007,
+    kPb=0.05,
+    gPb=1.2,
+    secPb=0.0010,
+    kTau=0.06,
+    gTau=6.0,
+    secTau=0.006,
+    kRV=0.03,
+    gRV=0.012,
+    kS=0.06,
+    secS=0.0010,
+    kBF=0.6,
+    dep_fb=0.22,
+    aN=2.5,
+    thN=0.25,
+    Nlo=0.14,
+    Nhi=0.42,
+    lam_rho=0.30,
     # marriageability capital q (bilateral) gates coupling; fed by therapy/health and by the
     # lifetime-integrated childhood environment of the current reproductive cohort (alienation).
-    kq=.06, gqC=.9, phi=.4, wF=.6, wS=.3, wScar=.5, gA=.5, lagLo=27, lagHi=45,
+    kq=0.06,
+    gqC=0.9,
+    phi=0.4,
+    wF=0.6,
+    wS=0.3,
+    wScar=0.5,
+    gA=0.5,
+    lagLo=27,
+    lagHi=45,
 )
 
 
@@ -99,9 +137,7 @@ class EmergentModel:
         self.RC = cm.rogers_castro()
         self.P = dict(params or PARAMS)
         # parity constant that reproduces each region's 2023 TFR at its start state
-        self.PB0 = {
-            nm: T / (C0[nm] * (1 - RV0[nm]) * fec(mab)) for nm, (T, mab) in REAL.items()
-        }
+        self.PB0 = {nm: T / (C0[nm] * (1 - RV0[nm]) * fec(mab)) for nm, (T, mab) in REAL.items()}
 
     def _estep(self, nm, st, force, tn, dep_pen, A_lag=0.0, dt=0.25):
         p = self.P
@@ -114,21 +150,35 @@ class EmergentModel:
         dq = p["kq"] * (fq + A_lag - q)
         # q gates coupling as a baseline-preserving deviation (bilateral marriageability -> partnership)
         Ceq = C0[nm] + p["gS_C"] * (S - S0[nm]) + p["gqC"] * q + fC - p["secC"] * 100 * tn
-        dC = p["kC"] * (Ceq - C) - p["decl"] * max(p["C_thr"] - C, 0) * max(C - p["C_floor"], 0) / (
-            p["C_thr"] - p["C_floor"]
-        )
+        dC = p["kC"] * (Ceq - C) - p["decl"] * max(p["C_thr"] - C, 0) * max(
+            C - p["C_floor"], 0
+        ) / (p["C_thr"] - p["C_floor"])
         dPb = p["kPb"] * (self.PB0[nm] + p["gPb"] * fPb - p["secPb"] * 100 * tn - Pb)
-        dtau = p["kTau"] * (REAL[nm][1] + p["gTau"] * (S0[nm] - S) + fTau + p["secTau"] * 100 * tn - tau)
+        dtau = p["kTau"] * (
+            REAL[nm][1] + p["gTau"] * (S0[nm] - S) + fTau + p["secTau"] * 100 * tn - tau
+        )
         # bistable social norm: cubic double-well (wells Nlo, Nhi; unstable tip thN) plus forcing
         dN = -p["aN"] * (N - p["Nlo"]) * (N - p["thN"]) * (N - p["Nhi"]) + fN
         # norm couples to childlessness as a baseline-preserving deviation from N0
-        drv = p["kRV"] * (RV0[nm] + p["gRV"] * max(tau - 30, 0) - 0.05 * (S - S0[nm])
-                          + p["lam_rho"] * (N - NORM0[nm]) + fRV - rv)
-        return np.array([
-            np.clip(C + dt * dC, .02, .999), np.clip(rv + dt * drv, 0, .6), max(Pb + dt * dPb, 1.0),
-            np.clip(tau + dt * dtau, 24, 40), np.clip(S + dt * dS, .05, .95),
-            np.clip(N + dt * dN, 0.0, 1.0), np.clip(q + dt * dq, -1.0, 1.0),
-        ]), dtau
+        drv = p["kRV"] * (
+            RV0[nm]
+            + p["gRV"] * max(tau - 30, 0)
+            - 0.05 * (S - S0[nm])
+            + p["lam_rho"] * (N - NORM0[nm])
+            + fRV
+            - rv
+        )
+        return np.array(
+            [
+                np.clip(C + dt * dC, 0.02, 0.999),
+                np.clip(rv + dt * drv, 0, 0.6),
+                max(Pb + dt * dPb, 1.0),
+                np.clip(tau + dt * dtau, 24, 40),
+                np.clip(S + dt * dS, 0.05, 0.95),
+                np.clip(N + dt * dN, 0.0, 1.0),
+                np.clip(q + dt * dq, -1.0, 1.0),
+            ]
+        ), dtau
 
     def run(self, region: str, force=None, years: int = 102) -> dict:
         """Integrate `region` forward `years` from 2023 under an optional forcing function.
@@ -138,8 +188,17 @@ class EmergentModel:
         """
         if force is None:
             force = lambda yr: [0.0] * 6  # noqa: E731
-        st = np.array([C0[region], RV0[region], self.PB0[region], REAL[region][1],
-                       S0[region], NORM0[region], 0.0])
+        st = np.array(
+            [
+                C0[region],
+                RV0[region],
+                self.PB0[region],
+                REAL[region][1],
+                S0[region],
+                NORM0[region],
+                0.0,
+            ]
+        )
         R = self.REG[region]
         nf = torch.tensor(R["pop_f"][-1].copy(), device=self.DEV)
         nm = torch.tensor(R["pop_m"][-1].copy(), device=self.DEV)
@@ -160,8 +219,8 @@ class EmergentModel:
         tfr = tfrb
         for yr in range(years):
             f = force(yr)
-            fF = f[7] if len(f) > 7 else 0.0        # father-access / paternity forcing
-            fScar = f[8] if len(f) > 8 else 0.0     # relationship-scar forcing
+            fF = f[7] if len(f) > 7 else 0.0  # father-access / paternity forcing
+            fScar = f[8] if len(f) > 8 else 0.0  # relationship-scar forcing
             dtau = 0.0
             for _ in range(4):
                 st, dt_ = self._estep(region, st, f, yr / 100.0, dep_pen, A_lag)
@@ -174,13 +233,21 @@ class EmergentModel:
             F = fF + p["phi"] * q
             env = p["wF"] * F - p["wScar"] * fScar
             mem.push(env)
-            A_lag = p["gA"] * mem.reproductive_mean()   # mean completed childhood integral over reproductive cohorts
+            A_lag = (
+                p["gA"] * mem.reproductive_mean()
+            )  # mean completed childhood integral over reproductive cohorts
             tfr = quantum(C, rv, Pb) * fec(tau) * (1 - self.P["kBF"] * dtau)
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nm, _b, _d = cm.leslie_step(
-                nf, nm, torch.tensor(Sx, device=self.DEV),
-                torch.tensor(_shift_profile(base, tfr / tfrb if tfrb > 1e-6 else 0, tau - REAL[region][1]), device=self.DEV),
-                srb, torch.tensor(0.0 * self.RC, device=self.DEV),
+                nf,
+                nm,
+                torch.tensor(Sx, device=self.DEV),
+                torch.tensor(
+                    _shift_profile(base, tfr / tfrb if tfrb > 1e-6 else 0, tau - REAL[region][1]),
+                    device=self.DEV,
+                ),
+                srb,
+                torch.tensor(0.0 * self.RC, device=self.DEV),
             )
             tot = (nf + nm).cpu().numpy()
             dep = float(tot[65:].sum() / max(tot[20:65].sum(), 1))
@@ -189,11 +256,25 @@ class EmergentModel:
             Ttr.append(tfr)
             Ntr.append(N)
             Qtr.append(q)
-        return dict(C=np.array(Ctr), TFR=np.array(Ttr), N=np.array(Ntr), q=np.array(Qtr), Cend=float(C),
-                    Nend=float(N), qend=float(q), Pbend=float(Pb), Send=float(S), rvend=float(rv),
-                    tauend=float(tau), tfr=float(tfr), pop_pct=(float(tot.sum()) / pop0 - 1) * 100)
+        return dict(
+            C=np.array(Ctr),
+            TFR=np.array(Ttr),
+            N=np.array(Ntr),
+            q=np.array(Qtr),
+            Cend=float(C),
+            Nend=float(N),
+            qend=float(q),
+            Pbend=float(Pb),
+            Send=float(S),
+            rvend=float(rv),
+            tauend=float(tau),
+            tfr=float(tfr),
+            pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
+        )
 
-    def run_dist(self, region: str, force=None, sigmaN: float = 0.06, Kd: int = 41, years: int = 102) -> dict:
+    def run_dist(
+        self, region: str, force=None, sigmaN: float = 0.06, Kd: int = 41, years: int = 102
+    ) -> dict:
         """Distributional-norm variant of `run` (the first channel of the distributional core rebuild).
 
         The bistable norm N is carried as a `Kd`-atom population with dispersion `sigmaN`, so it SPLITS at the
@@ -205,10 +286,19 @@ class EmergentModel:
         if force is None:
             force = lambda yr: [0.0] * 6  # noqa: E731
         p = self.P
-        C, rv, Pb, tau, S, qc = C0[region], RV0[region], self.PB0[region], REAL[region][1], S0[region], 0.0
+        C, rv, Pb, tau, S, qc = (
+            C0[region],
+            RV0[region],
+            self.PB0[region],
+            REAL[region][1],
+            S0[region],
+            0.0,
+        )
         u = (np.arange(Kd) + 0.5) / Kd
         z = torch.special.ndtri(torch.tensor(u, dtype=torch.float64)).numpy()
-        Nd = np.clip(NORM0[region] + sigmaN * z, 0.0, 1.0)          # the norm population, spread around its well
+        Nd = np.clip(
+            NORM0[region] + sigmaN * z, 0.0, 1.0
+        )  # the norm population, spread around its well
         R = self.REG[region]
         nf = torch.tensor(R["pop_f"][-1].copy(), device=self.DEV)
         nm = torch.tensor(R["pop_m"][-1].copy(), device=self.DEV)
@@ -238,28 +328,54 @@ class EmergentModel:
                 Nmean = float(Nd.mean())
                 dS = p["kS"] * (S0[region] + fS - dep_pen - S) - p["secS"]
                 dq = p["kq"] * (fq + A_lag - qc)
-                Ceq = C0[region] + p["gS_C"] * (S - S0[region]) + p["gqC"] * qc + fC - p["secC"] * 100 * tn
-                dC = p["kC"] * (Ceq - C) - p["decl"] * max(p["C_thr"] - C, 0) * max(C - p["C_floor"], 0) / (
-                    p["C_thr"] - p["C_floor"])
+                Ceq = (
+                    C0[region]
+                    + p["gS_C"] * (S - S0[region])
+                    + p["gqC"] * qc
+                    + fC
+                    - p["secC"] * 100 * tn
+                )
+                dC = p["kC"] * (Ceq - C) - p["decl"] * max(p["C_thr"] - C, 0) * max(
+                    C - p["C_floor"], 0
+                ) / (p["C_thr"] - p["C_floor"])
                 dPb = p["kPb"] * (self.PB0[region] + p["gPb"] * fPb - p["secPb"] * 100 * tn - Pb)
-                dtau = p["kTau"] * (REAL[region][1] + p["gTau"] * (S0[region] - S) + fTau + p["secTau"] * 100 * tn - tau)
-                drv = p["kRV"] * (RV0[region] + p["gRV"] * max(tau - 30, 0) - 0.05 * (S - S0[region])
-                                  + p["lam_rho"] * (Nmean - NORM0[region]) + fRV - rv)
+                dtau = p["kTau"] * (
+                    REAL[region][1]
+                    + p["gTau"] * (S0[region] - S)
+                    + fTau
+                    + p["secTau"] * 100 * tn
+                    - tau
+                )
+                drv = p["kRV"] * (
+                    RV0[region]
+                    + p["gRV"] * max(tau - 30, 0)
+                    - 0.05 * (S - S0[region])
+                    + p["lam_rho"] * (Nmean - NORM0[region])
+                    + fRV
+                    - rv
+                )
                 dNd = -p["aN"] * (Nd - p["Nlo"]) * (Nd - p["thN"]) * (Nd - p["Nhi"]) + fN
-                C = float(np.clip(C + dt * dC, .02, .999))
-                rv = float(np.clip(rv + dt * drv, 0, .6))
+                C = float(np.clip(C + dt * dC, 0.02, 0.999))
+                rv = float(np.clip(rv + dt * drv, 0, 0.6))
                 Pb = max(Pb + dt * dPb, 1.0)
                 tau = float(np.clip(tau + dt * dtau, 24, 40))
-                S = float(np.clip(S + dt * dS, .05, .95))
+                S = float(np.clip(S + dt * dS, 0.05, 0.95))
                 qc = float(np.clip(qc + dt * dq, -1.0, 1.0))
                 Nd = np.clip(Nd + dt * dNd, 0.0, 1.0)
                 dtau_acc += dtau
             tfr = quantum(C, rv, Pb) * fec(tau) * (1 - p["kBF"] * dtau_acc)
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nm, _b, _d = cm.leslie_step(
-                nf, nm, torch.tensor(Sx, device=self.DEV),
-                torch.tensor(_shift_profile(base, tfr / tfrb if tfrb > 1e-6 else 0, tau - REAL[region][1]), device=self.DEV),
-                srb, torch.tensor(0.0 * self.RC, device=self.DEV))
+                nf,
+                nm,
+                torch.tensor(Sx, device=self.DEV),
+                torch.tensor(
+                    _shift_profile(base, tfr / tfrb if tfrb > 1e-6 else 0, tau - REAL[region][1]),
+                    device=self.DEV,
+                ),
+                srb,
+                torch.tensor(0.0 * self.RC, device=self.DEV),
+            )
             tot = (nf + nm).cpu().numpy()
             dep = float(tot[65:].sum() / max(tot[20:65].sum(), 1))
             dep_pen = p["dep_fb"] * max(dep - dep0, 0)
@@ -269,8 +385,14 @@ class EmergentModel:
             A_lag = p["gA"] * mem.reproductive_mean()
             Ttr.append(tfr)
             Ntr.append(float(Nd.mean()))
-        return dict(TFR=np.array(Ttr), N=np.array(Ntr), Nend=float(Nd.mean()), Cend=float(C),
-                    tfr=float(tfr), pop_pct=(float(tot.sum()) / pop0 - 1) * 100)
+        return dict(
+            TFR=np.array(Ttr),
+            N=np.array(Ntr),
+            Nend=float(Nd.mean()),
+            Cend=float(C),
+            tfr=float(tfr),
+            pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
+        )
 
     def _estep_vec(self, nm, st, force, tn, dep_pen, A_lag=0.0, dt=0.25):
         """Vectorised `_estep` over a K-agent ensemble. `st` is (K,7); returns ((K,7), dtau (K,)).
@@ -288,17 +410,33 @@ class EmergentModel:
         dq = p["kq"] * (fq + A_lag - q)
         Ceq = C0[nm] + p["gS_C"] * (S - S0[nm]) + p["gqC"] * q + fC - p["secC"] * 100 * tn
         dC = p["kC"] * (Ceq - C) - p["decl"] * np.clip(p["C_thr"] - C, 0, None) * np.clip(
-            C - p["C_floor"], 0, None) / (p["C_thr"] - p["C_floor"])
+            C - p["C_floor"], 0, None
+        ) / (p["C_thr"] - p["C_floor"])
         dPb = p["kPb"] * (self.PB0[nm] + p["gPb"] * fPb - p["secPb"] * 100 * tn - Pb)
-        dtau = p["kTau"] * (REAL[nm][1] + p["gTau"] * (S0[nm] - S) + fTau + p["secTau"] * 100 * tn - tau)
+        dtau = p["kTau"] * (
+            REAL[nm][1] + p["gTau"] * (S0[nm] - S) + fTau + p["secTau"] * 100 * tn - tau
+        )
         dN = -p["aN"] * (N - p["Nlo"]) * (N - p["thN"]) * (N - p["Nhi"]) + fN
-        drv = p["kRV"] * (RV0[nm] + p["gRV"] * np.clip(tau - 30, 0, None) - 0.05 * (S - S0[nm])
-                          + p["lam_rho"] * (N - NORM0[nm]) + fRV - rv)
-        out = np.stack([
-            np.clip(C + dt * dC, .02, .999), np.clip(rv + dt * drv, 0, .6), np.clip(Pb + dt * dPb, 1.0, None),
-            np.clip(tau + dt * dtau, 24, 40), np.clip(S + dt * dS, .05, .95),
-            np.clip(N + dt * dN, 0.0, 1.0), np.clip(q + dt * dq, -1.0, 1.0),
-        ], axis=1)
+        drv = p["kRV"] * (
+            RV0[nm]
+            + p["gRV"] * np.clip(tau - 30, 0, None)
+            - 0.05 * (S - S0[nm])
+            + p["lam_rho"] * (N - NORM0[nm])
+            + fRV
+            - rv
+        )
+        out = np.stack(
+            [
+                np.clip(C + dt * dC, 0.02, 0.999),
+                np.clip(rv + dt * drv, 0, 0.6),
+                np.clip(Pb + dt * dPb, 1.0, None),
+                np.clip(tau + dt * dtau, 24, 40),
+                np.clip(S + dt * dS, 0.05, 0.95),
+                np.clip(N + dt * dN, 0.0, 1.0),
+                np.clip(q + dt * dq, -1.0, 1.0),
+            ],
+            axis=1,
+        )
         return out, dtau
 
     # per-channel population dispersion for the ensemble core; 0 keeps a channel a point mass, so the
@@ -306,8 +444,17 @@ class EmergentModel:
     # calibration overrides these so the dispersed ensemble still hits each region's 2023 TFR.
     SIGMA0 = {"C": 0.0, "rv": 0.0, "Pb": 0.0, "tau": 0.0, "S": 0.0, "N": 0.0, "q": 0.0}
 
-    def run_ens(self, region, force=None, sigma=None, K=48, years=102, seed=0, return_dist=False,
-                pb_scale=1.0):
+    def run_ens(
+        self,
+        region,
+        force=None,
+        sigma=None,
+        K=48,
+        years=102,
+        seed=0,
+        return_dist=False,
+        pb_scale=1.0,
+    ):
         """The full distributional core: carry the joint state as a K-agent ensemble and aggregate
         Jensen-correctly. Each channel is spread by a Latin-hypercube marginal (deterministic, decorrelated
         across channels via seeded permutations), so `sigma`->0 reproduces the scalar `run` to machine
@@ -319,19 +466,39 @@ class EmergentModel:
         if force is None:
             force = lambda yr: [0.0] * 6  # noqa: E731
         p = self.P
-        start = np.array([C0[region], RV0[region], self.PB0[region] * pb_scale, REAL[region][1],
-                          S0[region], NORM0[region], 0.0])
+        start = np.array(
+            [
+                C0[region],
+                RV0[region],
+                self.PB0[region] * pb_scale,
+                REAL[region][1],
+                S0[region],
+                NORM0[region],
+                0.0,
+            ]
+        )
         sig = dict(self.SIGMA0)
         if sigma:
             sig.update(sigma)
-        z = torch.special.ndtri(torch.tensor((np.arange(K) + 0.5) / K, dtype=torch.float64)).numpy()
+        z = torch.special.ndtri(
+            torch.tensor((np.arange(K) + 0.5) / K, dtype=torch.float64)
+        ).numpy()
         rng = np.random.default_rng(seed)
-        lims = {"C": (.02, .999), "rv": (0.0, .6), "Pb": (1.0, None), "tau": (24, 40),
-                "S": (.05, .95), "N": (0.0, 1.0), "q": (-1.0, 1.0)}
+        lims = {
+            "C": (0.02, 0.999),
+            "rv": (0.0, 0.6),
+            "Pb": (1.0, None),
+            "tau": (24, 40),
+            "S": (0.05, 0.95),
+            "N": (0.0, 1.0),
+            "q": (-1.0, 1.0),
+        }
         st = np.tile(start, (K, 1))
         for i, c in enumerate(chans):
             if sig[c] > 0:
-                st[:, i] = start[i] + sig[c] * z[rng.permutation(K)]        # decorrelated marginal spread
+                st[:, i] = (
+                    start[i] + sig[c] * z[rng.permutation(K)]
+                )  # decorrelated marginal spread
                 lo, hi = lims[c]
                 st[:, i] = np.clip(st[:, i], lo, hi)
         R = self.REG[region]
@@ -358,7 +525,13 @@ class EmergentModel:
                 st, dtau = self._estep_vec(region, st, f, yr / 100.0, dep_pen, A_lag)
                 dtau_acc = dtau_acc + dtau
             C, rv, Pb, tau, S, N, q = (st[:, i] for i in range(7))
-            tfr_i = C * (1 - rv) * Pb * np.exp(-0.03 * np.clip(tau - 30.0, 0, None)) * (1 - p["kBF"] * dtau_acc)
+            tfr_i = (
+                C
+                * (1 - rv)
+                * Pb
+                * np.exp(-0.03 * np.clip(tau - 30.0, 0, None))
+                * (1 - p["kBF"] * dtau_acc)
+            )
             tfr = float(tfr_i.mean())
             prof = np.zeros_like(base)
             for k in range(K):
@@ -367,8 +540,13 @@ class EmergentModel:
             prof = prof / K
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nmv, _b, _d = cm.leslie_step(
-                nf, nmv, torch.tensor(Sx, device=self.DEV), torch.tensor(prof, device=self.DEV),
-                srb, torch.tensor(0.0 * self.RC, device=self.DEV))
+                nf,
+                nmv,
+                torch.tensor(Sx, device=self.DEV),
+                torch.tensor(prof, device=self.DEV),
+                srb,
+                torch.tensor(0.0 * self.RC, device=self.DEV),
+            )
             tot = (nf + nmv).cpu().numpy()
             dep = float(tot[65:].sum() / max(tot[20:65].sum(), 1))
             dep_pen = p["dep_fb"] * max(dep - dep0, 0)
@@ -378,9 +556,19 @@ class EmergentModel:
             A_lag = p["gA"] * mem.reproductive_mean()
             Ttr.append(tfr)
             Ntr.append(float(N.mean()))
-        out = dict(TFR=np.array(Ttr), N=np.array(Ntr), Nend=float(N.mean()), Cend=float(C.mean()),
-                   qend=float(q.mean()), Pbend=float(Pb.mean()), Send=float(S.mean()), rvend=float(rv.mean()),
-                   tauend=float(tau.mean()), tfr=tfr, pop_pct=(float(tot.sum()) / pop0 - 1) * 100)
+        out = dict(
+            TFR=np.array(Ttr),
+            N=np.array(Ntr),
+            Nend=float(N.mean()),
+            Cend=float(C.mean()),
+            qend=float(q.mean()),
+            Pbend=float(Pb.mean()),
+            Send=float(S.mean()),
+            rvend=float(rv.mean()),
+            tauend=float(tau.mean()),
+            tfr=tfr,
+            pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
+        )
         if return_dist:
             out["dist_end"] = {c: st[:, i].copy() for i, c in enumerate(chans)}
         return out
@@ -400,11 +588,20 @@ class EmergentModel:
             out[r] = float(s)
         return out
 
-    def run_cal(self, region, force=None, K: int = 64, years: int = 102, return_dist: bool = False):
+    def run_cal(
+        self, region, force=None, K: int = 64, years: int = 102, return_dist: bool = False
+    ):
         """The calibrated distributional core (the production run): the dispersed K-agent ensemble under
         SIGMA_CAL, re-anchored to 2023 REAL TFR by PB_SCALE_ENS. This is what all hypotheses are scored on."""
-        return self.run_ens(region, force=force, sigma=SIGMA_CAL, K=K, years=years,
-                             pb_scale=PB_SCALE_ENS[region], return_dist=return_dist)
+        return self.run_ens(
+            region,
+            force=force,
+            sigma=SIGMA_CAL,
+            K=K,
+            years=years,
+            pb_scale=PB_SCALE_ENS[region],
+            return_dist=return_dist,
+        )
 
     def baselines(self, regions=None) -> dict:
         """Baseline (no-intervention) run for each region."""
@@ -413,29 +610,53 @@ class EmergentModel:
     @staticmethod
     def coupling(mag: float, start: int = 0):
         """A coupling push (security + coupling) - the shape of levers that bend fate."""
-        return lambda yr: [1.2 * mag * ramp(yr, start), 0.35 * mag * ramp(yr, start), 0.0, 0.0, 0.0]
+        return lambda yr: [
+            1.2 * mag * ramp(yr, start),
+            0.35 * mag * ramp(yr, start),
+            0.0,
+            0.0,
+            0.0,
+        ]
 
     @staticmethod
-    def forcing(fS=0.0, fC=0.0, fPb=0.0, fTau=0.0, fRV=0.0, fN=0.0, fq=0.0, fF=0.0, fScar=0.0,
-                mag=1.0, start=0, durable=True):
+    def forcing(
+        fS=0.0,
+        fC=0.0,
+        fPb=0.0,
+        fTau=0.0,
+        fRV=0.0,
+        fN=0.0,
+        fq=0.0,
+        fF=0.0,
+        fScar=0.0,
+        mag=1.0,
+        start=0,
+        durable=True,
+    ):
         """Build a forcing from per-channel coefficients (fN drives the norm; fq/fF/fScar the E30 memory)."""
+
         def fy(yr):
             s = mag * ramp(yr, start) * (1.0 if durable else erode(yr))
             return [fS * s, fC * s, fPb * s, fTau * s, fRV * s, fN * s, fq * s, fF * s, fScar * s]
+
         return fy
 
     @staticmethod
     def norm(mag: float, start: int = 0, durable: bool = True):
         """A social-norm / media push on N; negative mag is pronatal (lowers the childfree ideal)."""
+
         def fy(yr):
             s = mag * ramp(yr, start) * (1.0 if durable else erode(yr))
             return [0.0, 0.0, 0.0, 0.0, 0.0, s]
+
         return fy
 
     @staticmethod
     def therapy(mag: float, start: int = 0, durable: bool = True):
         """A marriageability push on q via therapy/health; durable=False reproduces the voluntary-program fade."""
+
         def fy(yr):
             s = mag * ramp(yr, start) * (1.0 if durable else erode(yr))
             return [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, s, 0.0, 0.0]
+
         return fy

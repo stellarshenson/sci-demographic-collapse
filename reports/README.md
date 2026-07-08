@@ -103,6 +103,17 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb16_male_attainment_interaction.png` - income vs degrees vs both (the super-additive interaction)
 - `nb16_composites_ablation.png` - the contrarian income bundle (income + kin + equity-at-home) beats degrees+cash, and its ablated core
 
+**Marriageable-men saturating fanout (Notebook 32, E36)**
+- `nb32_dose_saturation.png` - the saturating Hill dose-response vs the old E22 linear line; the drive ceiling puts hold / bend / recover above what income alone can buy
+- `nb32_fanout_waterfall.png` - the interaction fanout on Korea: the drive minus each contending counter-term (inequality, hypergamy squeeze, degrees arms-race), then the restorative fiscal + female-equity arms
+- `nb32_triad_recheck.png` - the lever re-checked on Korea/Germany/France (drive vs concentrated men-only vs full fanout) and the old-vs-new Korea headline numbers
+- `nb32_e36_verdicts.json` - all 9 E36 verdicts (H349-H357) with evidence (saturation, the three counter-terms, the female sign-flip, the fiscal counter, the composed fanout, the re-derived dose)
+
+**Heretical & coercive natalism fanout (Notebook 31, E34)**
+- `nb31_coercion_reversal.png` - the coercion x path-integral sign flip: gen-1 vs gen-4 ΔTFR on Korea for the coercive vs devotion/structural families, and the Decree 770 vs Georgia-baptism Korea trajectories
+- `nb31_norm_penalty.png` - the norm x penalty dividing line: the same fN channel supports when re-priced voluntarily (δ≈0) and refutes when enforced by penalty/propaganda (δ=0.4)
+- `nb31_fate_table.png` - the 25-hypothesis fate table (H314-H338): δ, gen-1, gen-4, sign-flip flag, earned verdict
+
 ## Tables
 
 - `nb4_parameter_table.csv` - ELBO posterior parameters (means ± CI) and free energy F at the optimum, per region (superseded by nb7)
@@ -130,6 +141,8 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb15_e20_verdicts.json` - the six E20 Seldon-harbinger verdicts (H164-H169) with evidence
 - `nb27_religion_table.csv` - E33 religion x fertility catalogue (claim, verdict) across the 16 hypotheses
 - `nb27_e33_verdicts.json` - all 16 E33 verdicts (H298-H313) with evidence (12 channel-forcing + 4 compounding-subpopulation)
+- `nb31_heretical_table.csv` - E34 heretical/coercive lever catalogue: δ, gen-1/gen-4 ΔTFR (triad + Korea), sign-flip flag, grounded lean, verdict across the 25 hypotheses
+- `nb31_e34_verdicts.json` - all 25 E34 verdicts (H314-H338) with evidence (gen-1-vs-gen-4 competition, δ, signature, grounded analogue)
 
 ## Verdict records
 

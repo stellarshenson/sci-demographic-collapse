@@ -23,6 +23,7 @@ The same machinery lifts any channel; the payoff is largest for the nonlinear an
     q.respond(0.15, lambda t: 1-t)    # therapy helps the low-marriageability tail more, accumulates
     kept = q.select(thresh=0.3, side="below")   # high-q men exit -> retained (weight, mean) of the rest
 """
+
 from __future__ import annotations
 
 import numpy as np
@@ -41,10 +42,11 @@ class PopChannel:
             raise ValueError("K must be >= 1")
         self.mu = float(mu)
         self.sigma = float(sigma)
-        # Gauss-Hermite nodes/weights for E[f] under N(mu, sigma): x = mu + sqrt(2) sigma * node
+        # Gauss-Hermite nodes/weights for E[f] under N(mu, sigma): x = mu + sigma * node
+        # (probabilist's hermegauss, weight exp(-x^2/2); NOT the physicist's sqrt(2) rescaling)
         nodes, weights = np.polynomial.hermite_e.hermegauss(K)  # weights sum to sqrt(2 pi)
-        self.eps = nodes                                        # standard-normal quadrature abscissae
-        self.w = weights / weights.sum()                       # normalised population weights
+        self.eps = nodes  # standard-normal quadrature abscissae
+        self.w = weights / weights.sum()  # normalised population weights
         # explicit per-bucket values, so buckets can also be evolved independently of (mu, sigma)
         self.theta = self.mu + self.sigma * self.eps
 
@@ -85,7 +87,11 @@ class PopChannel:
         This is the distributional generalisation of a scalar delta - the treatable tail responds, the
         resistant tail barely moves. Operates on per-bucket theta directly (mu/sigma re-derived).
         """
-        r = np.ones_like(self.theta) if response_fn is None else np.vectorize(response_fn)(self.theta)
+        r = (
+            np.ones_like(self.theta)
+            if response_fn is None
+            else np.vectorize(response_fn)(self.theta)
+        )
         self.theta = self.theta + effect * r
         self.mu = self.mean()
         self.sigma = self.std()

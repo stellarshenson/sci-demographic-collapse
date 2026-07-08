@@ -21,6 +21,7 @@ geodesic is linear interpolation in quantile space. No cost matrix, no Sinkhorn,
     dhalf = d0.interpolate(d1, 0.5)    # the displacement geodesic (the morph)
     mem = CohortMemory(); [mem.push(e) for e in env_series]; mem.reproductive_mean()  # the cohort path integral
 """
+
 from __future__ import annotations
 
 import numpy as np
@@ -32,7 +33,7 @@ class Dist:
     def __init__(self, x, w=None):
         x = np.asarray(x, dtype=float)
         w = np.ones_like(x) if w is None else np.asarray(w, dtype=float)
-        order = np.argsort(x)                       # atoms kept sorted (1-D OT is monotone)
+        order = np.argsort(x)  # atoms kept sorted (1-D OT is monotone)
         self.x = x[order]
         self.w = w[order] / w.sum()
 
@@ -139,19 +140,19 @@ class CohortMemory:
         Js = []
         for b in range(t - self.repro_hi, t - self.repro_lo + 1):
             if b < 0:
-                Js.append(0.0)                       # childhood entirely before the simulation window
+                Js.append(0.0)  # childhood entirely before the simulation window
             else:
                 end = min(b + C, len(self.env))
                 seg = self.env[b:end]
-                Js.append(sum(seg) / C if seg else 0.0)   # normalise by full childhood length
+                Js.append(sum(seg) / C if seg else 0.0)  # normalise by full childhood length
         return sum(Js) / len(Js) if Js else 0.0
 
 
 if __name__ == "__main__":  # self-test
     a = Dist.from_gaussian(0.0, 0.3)
     b = a.pushforward(lambda x: x + 0.2)
-    assert abs(a.W2(b) - 0.2) < 1e-3, a.W2(b)                 # a pure shift has W2 = the shift
-    assert abs(a.interpolate(b, 0.5).mean - 0.1) < 1e-3       # halfway morph sits at the midpoint mean
+    assert abs(a.W2(b) - 0.2) < 1e-3, a.W2(b)  # a pure shift has W2 = the shift
+    assert abs(a.interpolate(b, 0.5).mean - 0.1) < 1e-3  # halfway morph sits at the midpoint mean
     assert abs(Dist.barycenter([a, b]).mean - 0.1) < 1e-3
     # selection breaks Gaussianity: the retained tail is one-sided
     kept = a.select(0.0, "below")
@@ -160,6 +161,12 @@ if __name__ == "__main__":  # self-test
     mem = CohortMemory()
     for yr in range(80):
         mem.push(1.0 if 5 <= yr <= 6 else 0.0)
-    print("W2 shift:", round(a.W2(b), 4), "| interp mean:", round(a.interpolate(b, 0.5).mean, 4),
-          "| retained-tail mean:", round(kept.mean, 4))
+    print(
+        "W2 shift:",
+        round(a.W2(b), 4),
+        "| interp mean:",
+        round(a.interpolate(b, 0.5).mean, 4),
+        "| retained-tail mean:",
+        round(kept.mean, 4),
+    )
     print("ot.py self-test passed")

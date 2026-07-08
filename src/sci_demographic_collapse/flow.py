@@ -20,6 +20,7 @@ this is the differentiable one used for calibration and dynamics.
     q.aggregate(gate)             # Jensen-correct population coupling gate, differentiable
     q.W2(q.pushforward(lambda x: x + 0.2))   # 0.2, exact
 """
+
 from __future__ import annotations
 
 import torch
@@ -45,7 +46,7 @@ class QuantileFlow:
     def gaussian(cls, loc, log_scale, K: int = 64):
         """A Gaussian quantile-flow: Q(u) = loc + exp(log_scale) * Phi^{-1}(u). loc/log_scale are the leaves."""
         u = _ugrid(K)
-        z = torch.special.ndtri(u)                      # inverse standard-normal CDF
+        z = torch.special.ndtri(u)  # inverse standard-normal CDF
         loc = torch.as_tensor(loc, dtype=_DT)
         log_scale = torch.as_tensor(log_scale, dtype=_DT)
         return cls(loc + torch.exp(log_scale) * z, u)
@@ -122,6 +123,7 @@ class QuantileFlow:
 
 
 if __name__ == "__main__":  # self-test - the properties that make the rebuild safe
+
     def gate(q):  # a nonlinear coupling gate
         return torch.sigmoid(6.0 * q)
 
@@ -154,8 +156,10 @@ if __name__ == "__main__":  # self-test - the properties that make the rebuild s
     wide = QuantileFlow.gaussian(-0.3, torch.log(torch.tensor(0.4, dtype=_DT)))
     assert abs(wide.jensen_gap(gate).item()) > 1e-3
 
-    print("flow.py self-test passed:",
-          f"W2-shift={a.W2(b).item():.4f}",
-          f"| scalar aggregate={s.aggregate(gate).item():.4f}",
-          f"| dloss/dloc={loc.grad.item():+.3f}",
-          f"| jensen_gap={wide.jensen_gap(gate).item():+.4f}")
+    print(
+        "flow.py self-test passed:",
+        f"W2-shift={a.W2(b).item():.4f}",
+        f"| scalar aggregate={s.aggregate(gate).item():.4f}",
+        f"| dloss/dloc={loc.grad.item():+.3f}",
+        f"| jensen_gap={wide.jensen_gap(gate).item():+.4f}",
+    )

@@ -15,6 +15,7 @@ Usage::
     p = PROXIES["pension-rewiring"]           # p.channel, p.dtfr_low, p.dtfr_high, p.components
     mult = education_cost_multiplier(0.1, 0.2)  # near-public, low-positionality cost multiplier
 """
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -25,32 +26,50 @@ class Proxy:
     """One composed proxy blueprint. Magnitudes are ΔTFR (order of magnitude)."""
 
     name: str
-    channel: str          # model channel: C, rho, Pbar, tau, S (or a combination)
-    sign: str             # "+", "-", "±"
+    channel: str  # model channel: C, rho, Pbar, tau, S (or a combination)
+    sign: str  # "+", "-", "±"
     dtfr_low: float
     dtfr_high: float
-    components: tuple      # ((effect description, citation), ...)
+    components: tuple  # ((effect description, citation), ...)
     uncertainty: str
-    flag: str             # honesty flag: how speculative the composition is
+    flag: str  # honesty flag: how speculative the composition is
 
 
 PROXIES: dict[str, Proxy] = {
     "free-public-university": Proxy(
         name="Free public university, progressively funded",
-        channel="Pbar+S", sign="±", dtfr_low=0.03, dtfr_high=0.08,
+        channel="Pbar+S",
+        sign="±",
+        dtfr_low=0.03,
+        dtfr_high=0.08,
         components=(
-            ("~$60k student debt ≈ -42% likelihood of children; ~7.5pp completed-fertility gap", "Nau, Dwyer & Hodson 2015"),
-            ("extra year of schooling lowers completed number of children (countervailing)", "Fort, Schneeweis & Winter-Ebmer 2016"),
-            ("flattening the wealth-gate lowers private return to entry; elite-slot race intact", "Kim-Tertilt-Yum 2024"),
+            (
+                "~$60k student debt ≈ -42% likelihood of children; ~7.5pp completed-fertility gap",
+                "Nau, Dwyer & Hodson 2015",
+            ),
+            (
+                "extra year of schooling lowers completed number of children (countervailing)",
+                "Fort, Schneeweis & Winter-Ebmer 2016",
+            ),
+            (
+                "flattening the wealth-gate lowers private return to entry; elite-slot race intact",
+                "Kim-Tertilt-Yum 2024",
+            ),
         ),
         uncertainty="two primitives point opposite ways - the sign is not guaranteed positive",
         flag="highly composed",
     ),
     "lottery-admission": Proxy(
         name="Lottery / sample admission above a competence bar",
-        channel="Pbar", sign="+", dtfr_low=0.08, dtfr_high=0.20,
+        channel="Pbar",
+        sign="+",
+        dtfr_low=0.08,
+        dtfr_high=0.20,
         components=(
-            ("un-buyable rank ~ 22% education tax -> +11% fertility, -39% edu spend", "Kim-Tertilt-Yum 2024"),
+            (
+                "un-buyable rank ~ 22% education tax -> +11% fertility, -39% edu spend",
+                "Kim-Tertilt-Yum 2024",
+            ),
             ("arms-race size: Korea ₩27tn (~$21bn), 78% tutored, TFR 0.72", "Seoul/CNN 2023"),
             ("documented peer spillover in positional spend", "Kim-Tertilt-Yum 2024"),
         ),
@@ -59,10 +78,19 @@ PROXIES: dict[str, Proxy] = {
     ),
     "dating-app-redesign": Proxy(
         name="Dating-app market redesign (intent-verification, choice caps, match-not-search)",
-        channel="C", sign="+", dtfr_low=0.02, dtfr_high=0.05,
+        channel="C",
+        sign="+",
+        dtfr_low=0.02,
+        dtfr_high=0.05,
         components=(
-            ("current apps: no aggregate marriage gain, higher divorce/separation", "Jung & Lusher 2026"),
-            ("online is #1 meeting mode yet pairing rate did not rise", "Rosenfeld, Thomas & Hausen 2019"),
+            (
+                "current apps: no aggregate marriage gain, higher divorce/separation",
+                "Jung & Lusher 2026",
+            ),
+            (
+                "online is #1 meeting mode yet pairing rate did not rise",
+                "Rosenfeld, Thomas & Hausen 2019",
+            ),
             ("redesign -> more/better unions -> births is UNMEASURED", "no natural experiment"),
         ),
         uncertainty="the decisive link has no effect size anywhere",
@@ -70,9 +98,15 @@ PROXIES: dict[str, Proxy] = {
     ),
     "pension-rewiring": Proxy(
         name="Pension rewiring (child-linked pension credits)",
-        channel="S", sign="+", dtfr_low=0.1, dtfr_high=0.4,
+        channel="S",
+        sign="+",
+        dtfr_low=0.1,
+        dtfr_high=0.4,
         components=(
-            ("pensions 0->10% of GNP associate with -0.7 to -1.6 TFR", "Boldrin, De Nardi & Jones 2005"),
+            (
+                "pensions 0->10% of GNP associate with -0.7 to -1.6 TFR",
+                "Boldrin, De Nardi & Jones 2005",
+            ),
             ("reverse pass-through restores a fraction f=10-25% -> +0.1..+0.4 TFR", "composed"),
         ),
         uncertainty="base is a cross-country association; credit->perceived-return pass-through unmeasured",
@@ -80,19 +114,34 @@ PROXIES: dict[str, Proxy] = {
     ),
     "break-marriage-birth-package": Proxy(
         name="Break the marriage-birth package (non-marital-birth equality, East Asia)",
-        channel="C+Pbar", sign="+", dtfr_low=0.05, dtfr_high=0.2,
+        channel="C+Pbar",
+        sign="+",
+        dtfr_low=0.05,
+        dtfr_high=0.2,
         components=(
-            ("births gated behind marriage: non-marital <2-4% (JP/KR) vs 40-60%+ (FR)", "OECD SF2.4"),
-            ("legal recognition keeps the union-fertility link intact (PACS)", "Oreffice 2011; Rault"),
+            (
+                "births gated behind marriage: non-marital <2-4% (JP/KR) vs 40-60%+ (FR)",
+                "OECD SF2.4",
+            ),
+            (
+                "legal recognition keeps the union-fertility link intact (PACS)",
+                "Oreffice 2011; Rault",
+            ),
         ),
         uncertainty="culture, not statute, may bind - stigma may not yield to law alone",
         flag="direction ecological; the legal->behaviour magnitude is the leap",
     ),
     "positional-arms-control": Proxy(
         name="Positional arms-control (tax/cap on positional education spending)",
-        channel="Pbar+rho", sign="+", dtfr_low=0.08, dtfr_high=0.20,
+        channel="Pbar+rho",
+        sign="+",
+        dtfr_low=0.08,
+        dtfr_high=0.20,
         components=(
-            ("22% education tax + transfers -> +11% fertility, -39% spend (full removal +28%)", "Kim-Tertilt-Yum 2024"),
+            (
+                "22% education tax + transfers -> +11% fertility, -39% spend (full removal +28%)",
+                "Kim-Tertilt-Yum 2024",
+            ),
             ("empirically documented private-education spillover", "Kim-Tertilt-Yum 2024"),
         ),
         uncertainty="calibrated GE model - external validity drives the number; keep +11% and +28% distinct",
@@ -105,7 +154,9 @@ PROXIES: dict[str, Proxy] = {
 EDUCATION_K = 0.22
 
 
-def education_cost_multiplier(private_share: float, positionality: float, k: float = EDUCATION_K) -> float:
+def education_cost_multiplier(
+    private_share: float, positionality: float, k: float = EDUCATION_K
+) -> float:
     """Effective cost-per-child multiplier from education financing and positionality (the M12 interface).
 
     ``base × private_share × (1 + k·π)`` relative to base: lowering ``private_share`` (socialising the
