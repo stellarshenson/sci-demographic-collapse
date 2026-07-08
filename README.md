@@ -4,7 +4,11 @@
 
 [![CI](https://github.com/stellarshenson/sci-demographic-collapse/actions/workflows/ci.yml/badge.svg)](https://github.com/stellarshenson/sci-demographic-collapse/actions/workflows/ci.yml)
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![GPU](https://img.shields.io/badge/runs%20on-a%20graphics%20card-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.12-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Pyro](https://img.shields.io/badge/Pyro-1.9-8A2BE2.svg)](https://pyro.ai/)
+[![ArviZ](https://img.shields.io/badge/ArviZ-1.2-8A2BE2.svg)](https://www.arviz.org/)
+[![SciPy](https://img.shields.io/badge/SciPy-1.18-8CAAE6.svg?logo=scipy&logoColor=white)](https://scipy.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-2.5-013243.svg?logo=numpy&logoColor=white)](https://numpy.org/)
 [![Questions](https://img.shields.io/badge/questions%20asked-300%2B-2ea44f.svg)](docs/experiments/demographic-collapse-experiments.md)
 [![the danger line](https://img.shields.io/badge/the%20danger%20line-1.5%20children-critical.svg)](docs/experiments/demographic-collapse-experiments.md)
 
@@ -106,7 +110,8 @@ There is one last, faintly hopeful twist. When the model is asked not "what is m
 - **Take the sharp edges off inequality** - meaning the income gap between winning and losing - so having a child stops being a financial cliff. Where that gap is wide, parents feel each child must be pumped full of money - tutoring, coaching, enrichment - just to keep from falling behind, an arms race that makes every child feel ruinously expensive (Doepke & Zilibotti, 2019). South Korea is the vivid case: families pour some \$20 billion a year into private cram schools (Statistics Korea), about a tenth of household income, and the country has the lowest birth rate on Earth. Narrow the gap and the stakes of any one child's rank come down with it, so a child is no longer a cliff to step off
 - **Build family housing the young can actually afford** - the price of a first family home gates the timing of a first child, and simply subsidising the price backfires: a \$10,000 rise in house prices lifts births about **5%** among families who already own but cuts them **2.4%** among renters (Dettling & Kearney, 2014), so a price-propping subsidy just transfers births from the young to the old. The lever that adds children is *supply* - zoning and building - not cheaper mortgages that bid the price straight back up. Let a couple find a family-sized home without a decade of saving, and the first child stops waiting on the housing ladder
 
-One conspicuous absence belongs here by design. The strongest lever of all - restoring young men's economic prospects - does not appear on this list precisely because it is the *costliest*, a sustained mountain of earnings rather than a near-free reform, so it tops the power ranking and sits at the bottom of the value one. The two lists answer different questions. And the cheap way to make that expensive lever actually pay is already here: deliver the gains *broadly*, by narrowing inequality, rather than as a concentrated windfall to a few - a lopsided boom widens the very income gap that makes children feel ruinously expensive, and largely cancels itself.
+> [!IMPORTANT]
+> **One conspicuous absence belongs here by design.** The strongest lever of all - restoring young men's economic prospects - does not appear on this list precisely because it is the *costliest*, a sustained mountain of earnings rather than a near-free reform, so it tops the power ranking and sits at the bottom of the value one. The two lists answer different questions. And the cheap way to make that expensive lever actually pay is already here: deliver the gains *broadly*, by narrowing inequality, rather than as a concentrated windfall to a few - a lopsided boom widens the very income gap that makes children feel ruinously expensive, and largely cancels itself.
 
 These help most when a country starts early, while it still has room to move. Cash handed out as baby bonuses, meanwhile, ranks dead last for value. The heralds of a recovery, it turns out, are cheap.
 
@@ -186,6 +191,9 @@ The lesson underneath all of it is the one Asimov's fiction turned on: fate here
 And this is what the map is *for*. The value is not a prophecy; it is a map, and a map's job is to tell you which roads are worth surveying before you send an expedition down them. This model lets a researcher see the terrain for what it is - to spend scarce time only on the hypotheses that are both plausible *and* survive a rigorous model test, and to discard the ones that merely sound good. Of the 348 hypotheses put to it, most came back PARTIAL or REFUTED; that filtering *is* the deliverable. What survives is a short, defensible list of levers worth the expense of studying for real.
 
 The natural next step is to take each surviving lever off the map and onto the ground: scale the work to a single country or continent, calibrate against that place's own registry data, and model the effects and interactions this first pass had to simplify - the custody and family-law machinery, housing supply, the education arms race, migration, and the way levers reinforce or cancel one another. That is a large, expensive, high-resolution study; the map earns its keep by telling us where it is most likely to pay off, so none of that effort is spent chasing a lever the numbers have already ruled out.
+
+> [!NOTE]
+> The model and the narrative around it are the subjective view of the researcher, not a settled forecast. The researcher is now compiling a full summary of every intervention - its strengths, weaknesses, side effects, costs, the policy that delivers it and the mechanics of how it works - together with the story behind each.
 
 ## The scientific backbone
 
