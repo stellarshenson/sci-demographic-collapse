@@ -33,6 +33,12 @@ REAL = {
     # Poland: TFR from GUS (national office) 2023 = 1.16, not UN WPP's 1.30; age-at-childbearing
     # 29.9 from the same UN WPP series the others use. GUS 2024 fell further to 1.099.
     "Poland": (1.16, 29.9),
+    # Israel: the sole developed / OECD country above replacement. UN WPP 2023 TFR 2.83 (Israel CBS
+    # 2.85, they agree - unlike Poland/GUS), MAC 30.9 - same UN WPP series the others use. National TFR
+    # is a composition of Haredi (6.38), national-religious (3.77), traditional (2.22-2.80), secular
+    # Jewish (1.98 - still the developed world's highest) and Arab (~2.9) sub-populations; Israel's own
+    # replacement level is 2.08. It sits in the healthy (untrapped) basin, not collapse.
+    "Israel": (2.83, 30.9),
 }
 C0 = {
     "USA": 0.90,
@@ -42,6 +48,7 @@ C0 = {
     "Japan": 0.80,
     "Korea": 0.52,
     "Poland": 0.82,
+    "Israel": 0.97,  # near-universal marriage/partnership + familism -> highest coupling well
 }
 RV0 = {
     "USA": 0.07,
@@ -51,6 +58,7 @@ RV0 = {
     "Japan": 0.10,
     "Korea": 0.08,
     "Poland": 0.10,
+    "Israel": 0.05,  # among the lowest permanent childlessness in the developed world
 }
 S0 = {
     "USA": 0.58,
@@ -60,6 +68,7 @@ S0 = {
     "Japan": 0.45,
     "Korea": 0.40,
     "Poland": 0.45,
+    "Israel": 0.58,  # strong familial/kin support offsets high cost of living
 }
 
 # social-norm state N (E25): share endorsing a childfree ideal, modelled as a bistable
@@ -74,6 +83,7 @@ NORM0 = {
     "Japan": 0.42,
     "Korea": 0.42,
     "Poland": 0.42,
+    "Israel": 0.14,  # pronatal familism -> childfree ideal in the low well (untrapped basin)
 }
 
 # ensemble calibration (Phase 2, the distributional core). SIGMA_CAL is the grounded, structural
@@ -90,6 +100,7 @@ PB_SCALE_ENS = {
     "Japan": 1.0322,
     "Korea": 1.0333,
     "Poland": 1.0372,  # re-solved by calibrate_ens; dispersed baseline reproduces GUS TFR 1.16 exactly
+    "Israel": 1.0502,  # re-solved by calibrate_ens; dispersed baseline reproduces UN WPP TFR 2.83 exactly
 }
 
 # behavioural rate constants (calibrated in E19; norm constants added in E25; marriageability +

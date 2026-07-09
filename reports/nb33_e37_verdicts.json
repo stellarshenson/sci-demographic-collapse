@@ -1,0 +1,62 @@
+[
+  {
+    "id": "E37-H358",
+    "name": "Israel's advantage is the secular-and-traditional majority, not the Haredi tail",
+    "evidence": "reconstructed Jewish TFR 2.81 (CBS 3.03); the non-Haredi Jewish majority is 2.41 and secular alone 1.98 - above every other developed secular society (Hleihel 2023; Okun 2017 shows the gap survives controls for employment/education, so it is normative not economic)",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E37-H359",
+    "name": "the Haredi / settler engine is COMPOSITION (a compounding sub-population), not a copyable forcing",
+    "evidence": "a two-type projection (Haredi TFR 6.38, share 13.6%; rest 2.41) drifts the national mean 2.95->5.12 over four generations from composition alone, bounded in reality by convergence and leakage; it is a Leslie sub-population with lambda>1, modelled per E33, never an fN dial on a collapsing country",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E37-H360",
+    "name": "universal state-funded IVF/ART is a real but SMALL lever (lowers childlessness)",
+    "evidence": "IVF as lowered involuntary childlessness bends Korea +0.026, Japan +0.127, Italy +0.116, Germany +0.139 - a few % of TFR, matching ART's ~4.3% of Israeli births (Birenbaum-Carmeli 2016); largest where childlessness (not coupling) binds, tiny on Korea",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E37-H361",
+    "name": "dual-earner compatibility (childcare + gender-equity in the home) is the LARGE copyable lever",
+    "evidence": "the coupling+security push bends Korea +0.539, Japan +0.645, Germany +0.568 - Israel holds TFR 2.9 at ~61% female LFP; this is the campaign's crowned gender-equity-in-the-home lever, but it is norm-gated and bends toward the 1.5 ridge, not to 2.83",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E37-H362",
+    "name": "younger tempo is a Bongaarts-Feeney mirage, not durable new quantum",
+    "evidence": "pulling tempo earlier gives Korea gen-1 +0.120 that reverts to gen-4 +0.056 (end +0.037); Israel's younger first-birth age is an outcome of the norm, and low childlessness double-counts the IVF channel",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E37-H363",
+    "name": "the familism norm is decisive but lives in COUPLING, not the childfree-ideal channel",
+    "evidence": "transplanting Korea's start-channels to Israel's: coupling C0->0.97 buys +0.717, but norm-state N0->0.14 buys -0.001 and childlessness RV0->0.05 +0.008; the narrow pronatal-norm forcing fN=-0.08 buys only +0.027. Israel's familism registers as near-universal partnership, whose transferable shadow is the H361 coupling lever - not a legislable norm dial",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E37-H364",
+    "name": "collective-future / existential security is a minority direct channel, non-copyable",
+    "evidence": "a standalone security/meaning push bends Korea only +0.054 and the narrow norm +0.027, vs the copyable coupling lever +0.539; only ~7-9% of Israelis say security worries would raise desired children (DellaPergola 2020), and religiosity-under-threat did not hold fertility elsewhere (Iran 6.6->1.35, Muslim-Israeli 9.2->2.9)",
+    "verdict": "REFUTED"
+  },
+  {
+    "id": "E37-H365",
+    "name": "aliyah is composition plus UPWARD norm-assimilation - the host norm sets the direction",
+    "evidence": "immigration adds people, but FSU immigrants arrived ~1.5 and converged UP to the host norm (opposite of the usual downward convergence); the healthy Israeli well (C0 0.97) pulls immigrants up while Korea's trapped well (C0 0.52) would pull them down - migration is a bridge, the transferable insight is the host norm, not aliyah itself",
+    "verdict": "PARTIAL"
+  },
+  {
+    "id": "E37-H366",
+    "name": "even a full coupling transplant lands short of Israel - the residual is momentum + parity + composition",
+    "evidence": "the copyable levers stack super-additively (IVF+dual+tempo sum +0.602 < joint +0.771, +0.169, the E18 complementary law), yet the full coupling transplant lands Korea at 0.89 and the bundle closes 36% of the 2.15 gap; the rest is Leslie momentum + higher parity + Haredi composition, no policy dial - a naive 'recovery' would have laundered the inherent norm into a structural lever",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "id": "E37-H367",
+    "name": "you cannot copy your way to Israel, but the copyable part is large and already crowned",
+    "evidence": "the full copyable bundle bends Korea to 0.94, Japan 1.60, Germany 1.75 - real, large, super-additive, and exactly the campaign's coupling+equity+ART stack - but all land at the ridge, short of Israel's 2.32; Israel's surplus is composition + a familism depth of coupling no finite dial reaches. E37 confirms the coupling thesis at the one above-replacement data point rather than finding a new Israeli instrument",
+    "verdict": "SUPPORTED"
+  }
+]

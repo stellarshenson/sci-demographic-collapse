@@ -312,7 +312,14 @@ zero and lifts inequality compression, lottery bucketing, universal motherhood-p
 structural defaults to the top - what a state can *enforce*, not what sounds strong, bends the curve. The
 Western natural experiments anchor the pattern: Israel's near-universal default plus universal IVF holds
 even secular fertility near replacement without coercion, Hungary's 5-6% of GDP buys mostly tempo, and
-housing's real lever is supply for young renters, not a price subsidy to owners (E16).
+housing's real lever is supply for young renters, not a price subsidy to owners (E16). E37 fans Israel - the
+one above-replacement OECD outlier, now the model's calibrated 8th region - into its mechanisms and finds the
+advantage lives in near-universal **coupling**, not a legislable norm dial: a Korea→Israel channel transplant
+puts the whole gap in coupling C0 (+0.717) while the childfree-norm state (-0.001) and childlessness (+0.008)
+carry ~none, so the transferable shadow is exactly the crowned coupling + equity + childcare stack (large,
+super-additive), which bends a collapsing region toward the 1.5 ridge but not to 2.83. Universal IVF is real
+but small (~4% of births), younger tempo a Bongaarts-Feeney mirage, and the Haredi engine composition, not a
+dial - you cannot copy your way to Israel, but the copyable part is real and already crowned (E37-H358-H367).
 
 ### 9. The transferable secular ingredients of religion, and enforced monogamy
 

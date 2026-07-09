@@ -18,3 +18,6 @@ Progress logs for background and long-running jobs.
 - `nb9-execute.log` - execution of `notebooks/09-kj-demographic-reversal.ipynb` (reversal interventions + manifold/drivers images, E14)
 - `nb10-execute.log` - execution of `notebooks/10-kj-demographic-intervention-story.ipynb` (coupling keystone + literature-grounded intervention strengths, 27 hypotheses, E15)
 - `nb17-execute.log` - execution of `notebooks/17-kj-story-visuals.ipynb` (README story figures, incl. the male-prospects power-vs-value companion chart)
+- `unwpp-israel-ingest.log` - targeted UN WPP re-ingest of Israel (LocID 376) appended to the `data/raw/unwpp/` CSVs (the 8th region)
+- `nb17-israel-execute.log` - re-execution of `notebooks/17-kj-story-visuals.ipynb` after adding Israel to the Seldon manifold fate map
+- `nb33-execute.log` - execution of `notebooks/33-kj-israel-mechanisms-e37.ipynb` (Israel's mechanisms fanned into H358-H367, E37)

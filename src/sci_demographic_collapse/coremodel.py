@@ -29,6 +29,7 @@ REGIONS = {
     "Spain": 724,
     "France": 250,
     "Poland": 616,
+    "Israel": 376,
     "Europe": 908,
 }
 NA = 101  # single-year buckets 0..100+ (100 is the open interval)
