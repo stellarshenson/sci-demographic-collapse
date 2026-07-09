@@ -22,7 +22,42 @@ Fit a coupled nine-state ODE model of population dynamics to observed national d
 
 ## Executive summary
 
-Executed 2026-07-06. Twenty hypotheses across five batches: baseline calibration fidelity (E1), separatrix placement (E2), economic/policy-era stress tests (E3), technology-adoption stress tests (E4, the core interest), and falsification / generalization / missing-parameter discovery (E5). The demographic and economic backbone calibrates well and all four regions place correctly against the low-fertility-trap ridge; the technology hypotheses fail their out-of-sample bar; and migration is confirmed as the largest missing parameter. The Seldon manifold survives calibration - its ridge lands on the literature's independent TFR-1.5 threshold. Final tally: **12 SUPPORTED, 5 REFUTED, 1 REFRAMED, 1 PARTIAL, 1 INCONCLUSIVE**.
+Executed 2026-07-06 to 2026-07-08 across thirty-six rounds (E1-E36), the campaign pre-registered and scored **357 hypotheses**. It opens with the demographic and economic backbone - baseline calibration, separatrix placement, crisis stress-tests, tempo-quantum decomposition and a Wasserstein recalibration that closed the prediction gap (E1-E12) - then turns to interventions: a literature-grounded lever catalogue, incentives and defection, swept design spans, hybrids, and a dynamical re-examination that makes the coupled model the judge (E14-E22). Later rounds probe alternative structures, social norms and the exit / alienation machinery (E24-E32), then religion, cultural transmission, coercive natalism and the saturating marriageable-men lever (E33-E36). The Seldon manifold survives calibration - its ridge lands on the literature's independent TFR-1.5 threshold - and the scoring stays honest: of the 357 hypotheses, **193 SUPPORTED, 94 PARTIAL, 67 REFUTED** (plus 2 REFRAMED and 1 INCONCLUSIVE from the calibration rounds), with a separate contrarian audit (E13) leaving 12 findings standing and 13 qualified. Cash bonuses, tutoring bans and top-down propaganda are among the casualties.
+
+### Campaign at a glance (all 36 rounds)
+
+Batch-level roll-up of every round. The per-hypothesis detail for the E1-E12 calibration rounds follows in the next table; every later batch carries its own at-a-glance sub-table in its section.
+
+| round | focus | H-range | n | S / P / R |
+|---|---|---|---|---|
+| E1-E12 | calibration, separatrix, crises, tempo-quantum, Wasserstein recalibration | H1-H45 | 45 | 34 / 3 / 5 (+2 reframed, 1 inconclusive) |
+| E13 | contrarian audit (25 attacks on the campaign's own findings) | - | 0 | 12 survived, 13 qualified |
+| E14 | reversal-intervention catalogue | H46-H50 | 5 | 5 / 0 / 0 |
+| E15 | coupling keystone + grounded lever strengths | H51-H100 | 50 | 37 / 10 / 3 |
+| E16 | incentives, arms races, defection | H101-H125 | 25 | 15 / 6 / 4 |
+| E17 | swept design spans | H126-H143 | 18 | 12 / 3 / 3 |
+| E18 | hybrids + undercurrents | H144-H163 | 20 | 10 / 8 / 2 |
+| E19 | dynamical re-examination (model-as-judge validation) | - | 0 | validation round |
+| E20 | Seldon harbingers (least-cost ablation) | H164-H169 | 6 | 6 / 0 / 0 |
+| E21 | relationship-machinery research | - | 0 | research round |
+| E22 | five structural levers + education | H170-H176 | 7 | 4 / 3 / 0 |
+| E23 | exit-machinery research | - | 0 | research round |
+| E24 | exit-machinery simulation | H177-H181 | 5 | 1 / 3 / 1 |
+| E25 | social norms + abortion | H182-H187 | 6 | 1 / 3 / 2 |
+| E26 | alternative structures + interaction panel | H188-H207 | 20 | 3 / 8 / 9 |
+| E27 | reproductive-concentration structures | H208-H212 | 5 | 0 / 2 / 3 |
+| E28 | polygamy endorsement spectrum | H213-H226 | 14 | 7 / 3 / 4 |
+| E29 | matriarchy stability optimisation | H227-H246 | 20 | 10 / 3 / 7 |
+| E30 | marriageability + intergenerational path integral | H247-H260 | 14 | 11 / 1 / 2 |
+| E31 | parental-alienation legislation | H261-H270 | 10 | 4 / 3 / 3 |
+| E32 | combating alienation (27-lever toolkit) | H271-H297 | 27 | 9 / 15 / 3 |
+| E33 | religion x fertility | H298-H313 | 16 | 6 / 8 / 2 |
+| E34 | heretical & coercive natalism fanout | H314-H338 | 25 | 3 / 11 / 11 |
+| E35 | cultural transmission (the floor, not the lever) | H339-H348 | 10 | 7 / 0 / 3 |
+| E36 | marriageable-men saturation | H349-H357 | 9 | 8 / 1 / 0 |
+| **total** | **36 rounds (E1-E36)** | **H1-H357** | **357** | **193 / 94 / 67** (+2 reframed, 1 inconclusive; E13 audit 12/13) |
+
+E34 and E35 were executed in reverse numeric order (E35 first, then E34) but are listed here by H-range. Research / audit / validation rounds (E13, E19, E21, E23) introduce no new H-numbered hypotheses.
 
 ### Research at a glance
 
