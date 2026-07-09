@@ -68,6 +68,12 @@ Now for the least intuitive fact in the whole subject, and the one that keeps de
 
 The unsettling consequence is that the near future is, in large part, already written. Korea's population in 2050 was effectively decided in the 1990s, and no policy on earth can revisit that vote. And the model catches the United States mid-crossing: sometime in the last few decades it quietly slipped from the coasting kind of country to the shrinking kind. What holds its numbers level today is no longer a young population. It is immigration, and immigration alone.
 
+<div align="center">
+
+### *The near future is, in large part, already written.*
+
+</div>
+
 ## The one fast lever, and the slow ones that actually work
 
 Which brings us to the only remedy that pays off inside a single lifetime. A newcomer arrives already grown, already of working and child-bearing age, and steps straight into the hollow middle of a population's shape; it does not take twenty years to matter. This is the entire secret of the American exception - remove immigration from the arithmetic and the United States begins to look a great deal like Europe. But it is worth being clear-eyed: migration reshuffles the world's young, and does nothing to explain or repair why a country stopped producing its own.
@@ -159,13 +165,17 @@ Two things about it are worth holding onto. First, retention beats fertility: a 
 
 ## The one country that didn't fall - Israel
 
-Every country on this map is shrinking except one. Israel holds at **2.83** children per woman - above replacement, alone in the developed world (UN WPP 2024; its own bureau says 2.85). It is the closest thing demography has to a natural experiment in what keeps a birth rate up, so we calibrated it into the model as an eighth country and ran it through the same tests (this campaign's E37 round).
+Every country on this map is shrinking except one. Israel holds at **2.83** children per woman, above replacement and alone in the developed world (UN WPP 2024) - the closest thing demography has to a natural experiment in what keeps a birth rate up, so we calibrated it into the model as an eighth country (this campaign's E37 round).
 
-Start with what Israel's success is *not*: the ultra-Orthodox. Take the Haredi out entirely, and the three-quarters of Jewish Israelis who are secular or traditional still sit at or above replacement - secular Jews near **1.98**, the highest of any secular society on Earth. The gap survives controls for women's work and education, so it is a norm, not a paycheck (Okun, 2017; Weinreb, Taub Center, 2024).
+The success is **not the ultra-Orthodox**. Take the Haredi out, and the three-quarters of Jewish Israelis who are secular or traditional still sit at or above replacement - secular Jews near **1.98**, the highest of any secular society on Earth, and the gap survives controls for women's work and education (Okun, 2017; Weinreb, Taub Center, 2024). It is a norm, not a paycheck.
 
-Then ask the model *where* that advantage lives. Hand South Korea Israel's numbers, one dial at a time. Give it Israel's coupling - near-universal, stable partnership - and Korea's projected birth rate jumps **+0.72**. Give it Israel's low childfree norm instead, or its low childlessness, and nothing moves (**-0.001** and **+0.008**). Israel's famous pronatal culture, in the arithmetic, is not a wish for babies. It is couples that form and stay formed - the exact channel every winning lever above already pulls.
+So we asked the model where that norm lives. Give South Korea Israel's **coupling** - near-universal, stable partnership - and its projected birth rate jumps **+0.72**; give it Israel's low childfree norm or its low childlessness instead, and nothing moves (-0.001, +0.008). Israel's pronatal culture is not a wish for babies; it is couples that form and stay formed - the exact channel every winning lever above already pulls. The copyable pieces are real but bounded: universal IVF is barely 4% of births (Birenbaum-Carmeli, 2016), and the dense-childcare bundle behind 61% female employment is the gender-equity lever this project already crowns. Run it all through the model and a collapsing country reaches the 1.5 ridge, not 2.83 - the rest is age structure, desired family size, and the compounding Haredi subculture, none of them a dial a government can turn.
 
-That is the good news and the hard news together. The copyable part of Israel is no secret: universal state-funded IVF, at five times Europe's treatment rate but only about **4%** of births (Birenbaum-Carmeli, 2016), and a high birth rate held *alongside* **61%** female employment, because childcare is dense and the second shift shared - the gender-equity lever this project already crowns. But run the whole bundle through the model and it lifts a collapsing country only to the **1.5** ridge, not to 2.83. The rest is Israel's young age structure, its higher desired family size, and the compounding Haredi subculture from the last section - none of them a dial a government can turn. You cannot copy your way to Israel. But the part you can copy is already on the list.
+<div align="center">
+
+### *You cannot copy your way to Israel - but the part you can copy is already on the list.*
+
+</div>
 
 ## How we got here (and why it's worth trusting)
 
