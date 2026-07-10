@@ -149,3 +149,11 @@ Every FIRST-ACTION item above is done and verified on disk:
 ### Pending decision for the user
 - **Commit approval**: the entire E40 + A8 + guard-suite + docs + journal + memory tree is uncommitted (working tree modified/untracked per `git status`). Awaiting explicit "commit"/"push". No git action taken.
 - User asked to run executors on **Fable 5** (model set to Fable 5 this session); honour for future E41 executor waves unless overridden.
+
+### UPDATE (post-brace, ~23:55) - E41 Wave-2 workflow COMPLETED cleanly
+- `wf_53322579-da8` returned AFTER the brace board was written: **19 agents, 0 errors, 0 empty**, 5283s, 2.70M subagent tokens. It did NOT die with the session - it finished.
+- **Full result persisted** (survives on its own, no action needed to preserve):
+  - `/tmp/claude-1000/-home-lab-workspace-learning-projects-sci-demographic-collapse/c9898e9e-043d-4d91-9eb6-b5e80ecf9847/tasks/w6ptbzwqt.output` (full workflow return, ~268KB)
+  - per-agent results: `.../subagents/workflows/wf_53322579-da8/journal.jsonl` (`type:result` lines)
+- Headline dispositions in the return: **c-construct (C0F0/C0F4) RESOLVED-DATA** - lifetime ever-in-union C-construct collected for all 8 regions from PRIMARY sources (Eurostat Census 2021 API FR/DE/IT/PL, CPS ASEC 2023 USA, 2020 census JP, Lee&Zeman 2024 KOSIS KR, CBS IL, NSFG/NCFMR US cohabitation); feasibility bound C0>=1-p0 holds 7/8, Israel knife-edge (cohort-mismatch, feasible at cohort-matched p0~0.11); **C0F4 Poland cohort-parity table DOES NOT EXIST** (NSP 2021 had no children-ever-born question) - "Poland UP" stays directional but the mandated magnitude does not survive. Other 16 findings' dispositions in the .output/journal - NOT read this session.
+- **FIRST ACTION UNCHANGED** but reads from the completed .output/journal (no partial-reconstruction needed): persist `reports/e41_blocker_resolutions.json`, doc v2, flip acc-crit W2.x, extend experiments-log E41. Loop only if a final critic re-verdict still carries a BLOCKER.
