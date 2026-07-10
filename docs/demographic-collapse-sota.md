@@ -71,13 +71,21 @@ carry the whole campaign:
 
 Period fertility is their multiplicative composition with a Bongaarts-Feeney tempo term:
 
-$$\text{TFR} = C\,(1-\rho)\,\bar P\,\text{fec}(\tau)\,(1 - k_{BF}\,\Delta\tau)$$
+$$\text{TFR} = C\,(1-\rho)\,\bar P\,\text{fec}(\tau)\,\max(1 - k_{BF}\,\Delta\tau,\,0)$$
 
-with `fec(τ)` a fecundability decay above age 30 and `k_BF = 0.6`. The multiplicative form is the whole
-reason the combination law below is clean: on the log scale the channels are additive (Bongaarts
-proximate-determinants multiplicativity). The completed-fertility quantum is `C·(1−ρ)·P̄`; the tempo term
-makes a pure timing lever spike then revert - a mirage that borrows births from the future and changes no
-completed family (E19).
+with `fec(τ)` a fecundability decay above age 30, `k_BF = 0.6`, and `Δτ` the *realized* annual change of
+the tempo state (per agent, post-clip, floored at zero). The E40 rigor audit found the pre-E40
+implementation summed the four substep *rates* instead - exactly 4x this documented equation - which
+inflated every timing transient 4x, kept a phantom tempo term alive at the τ clips, ran negative
+per-agent period factors inside the calibrated baseline, and made the TFR observable depend on the
+integrator's step count. The corrected term restores first-order convergence and the recalibrated
+ensemble reproduces 2023 REAL for all 8 regions (`notebooks/36-kj-rigor-audit-e40.ipynb`). The
+multiplicative form is the whole reason the combination law below is clean: on the log scale the channels
+are additive (Bongaarts proximate-determinants multiplicativity). The completed-fertility quantum is
+`C·(1−ρ)·P̄`; the tempo term makes a pure timing lever spike then revert - a mirage that borrows births
+from the future and changes no completed family (E19). E40 deflates the mirage's recorded *amplitude* 4x
+(Korea fTau=−3: peak +0.24 → +0.07) while leaving its structure and every endpoint verdict intact - tempo
+remains the most transient channel in every region.
 
 ### The bistable coupling trap
 

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A1",
+    "claim": "the tempo term contradicts the documented (1 - kBF*taudot) by 4x, keeps a phantom term at the tau clips, is unguarded below zero - and ran negative per-agent factors in the calibrated baseline",
+    "evidence": "rate_sum/realized = 4.0000 exactly off-clip; at tau pinned 40 the realized change is 0 yet the legacy factor is negative permanently; fTau=+12 gives legacy min TFR -0.481 vs fixed +0.403; 7/8 regions carried negative per-agent factors at baseline year 1 (worst -0.221), absorbed by the committed calibration; births were never corrupted (_shift_profile floors the profile at 0)",
+    "verdict": "CONFIRMED-FIXED"
+  },
+  {
+    "id": "A2",
+    "claim": "the TFR observable depends on the integrator resolution",
+    "evidence": "substep halving moves legacy century endpoints (Korea 0.168->0.147, Israel 2.33->2.17, errors GROW under refinement); the fixed observable converges first-order (max|4-8| ~4e-4, halving to ~2e-4)",
+    "verdict": "CONFIRMED-FIXED"
+  },
+  {
+    "id": "A3",
+    "claim": "the corrected core recalibrates exactly",
+    "evidence": "PB_SCALE_ENS re-solved (all 8 lower by 0.1-1.3% - the fix removes the baseline's negative-agent depression and damps the secular drift 4x less); run_cal year-1 max drift 1.3e-04 across 8 regions; the verbatim legacy core reproduces the committed calibration to 1.2e-04; baseline endpoints shift by +0.008..+0.037 with the ordering intact",
+    "verdict": "CONFIRMED"
+  },
+  {
+    "id": "A4",
+    "claim": "the recorded headline numbers survive the fix",
+    "evidence": "tempo transients deflate ~4x (the defect's signature - the recorded tempo-bump amplitudes of E19/E33/E37 are superseded), but every verdict-bearing number holds: archetype transience ordering 2/2 regions with endpoint deltas stable to <0.03, inequality>male in 2/2 regions (Korea +0.76 vs +0.32), transplant open +0.736 / closed +0.818 (recorded +0.717/+0.798), gH* 0.143 (recorded 0.1423), Korea fission crossing 2062 (recorded 2062)",
+    "verdict": "MEASURED-HOLDS"
+  },
+  {
+    "id": "A5",
+    "claim": "the 2023 ensemble anchor is seed-dependent",
+    "evidence": "+/-0.006-0.009 TFR across seeds 0-7 at year 1, decaying below 1e-3 by 2124; production pins seed 0 and verdicts are same-seed deltas",
+    "verdict": "DOCUMENTED"
+  },
+  {
+    "id": "A6",
+    "claim": "the LHC spread clips asymmetrically near channel bounds",
+    "evidence": "Israel C -0.009 (18/64 atoms at the 0.999 ceiling), USA tau +0.038 (24 floor); level absorbed by PB_SCALE_ENS, tail shape shared by both cores",
+    "verdict": "DOCUMENTED"
+  },
+  {
+    "id": "A7",
+    "claim": "the tempo profile shift is integer-rounded (scalar discontinuity)",
+    "evidence": "a full-year jump of the birth-age placement at dtau=+/-0.5 in the scalar core; the K=64 tau spread (sd 3.0y) smooths it in the production ensemble",
+    "verdict": "DOCUMENTED"
+  }
+]

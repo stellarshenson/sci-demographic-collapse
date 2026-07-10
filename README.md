@@ -129,7 +129,7 @@ These help most when a country starts early, while it still has room to move. Ca
 The male-prospects lever is absent from that chart because it is the costliest - and, run through the same model, it is not the largest effect either. Set head to head against the strongest broad fix, narrowing inequality wins in every country: in Korea by **+0.70** to **+0.27**, and even in Germany, where the male lever is strongest, by **+0.59** to **+0.43**. What the male lever has that the others do not is its *aim* - it is the one pointed at young men, the margin the broad reforms miss - and it still bends every country, most where there is room to move (E36).
 
 <!-- The male lever vs the strongest fix, per nation: the broad-based male-income lever (drive-alone) vs narrowing inequality (the strongest lever in the E20 pool), both run through the same calibrated core (run_cal), ΔTFR at 2125. Inequality leads in every nation - Korea +0.70 vs +0.27, Germany +0.59 vs +0.43 - widest in the deepest basin. The male lever's importance is the margin it reaches (young men), not its magnitude. Parametrised in notebooks/17 + the visuals code. -->
-![The male-income lever measured against narrowing inequality, nation by nation - inequality lifts births more in every country, widest in Korea (+0.70 vs +0.27), narrowest in the near-ridge West](reports/figures/story_male_prospects.png)
+![The male-income lever measured against narrowing inequality, nation by nation - inequality lifts births more in every country, widest in Korea (+0.69 vs +0.28), narrowest in the near-ridge West](reports/figures/story_male_prospects.png)
 
 ## Do the fixes add up?
 
@@ -169,7 +169,7 @@ Every country on this map is shrinking except one. Israel holds at **2.83** chil
 
 The success is **not the ultra-Orthodox**. Take the Haredi out, and the three-quarters of Jewish Israelis who are secular or traditional still sit at or above replacement - secular Jews near **1.98**, the highest of any secular society on Earth, and the gap survives controls for women's work and education (Okun, 2017; Weinreb, Taub Center, 2024). It is a norm, not a paycheck.
 
-So we asked the model where that norm lives. Give South Korea Israel's **coupling** - near-universal, stable partnership - and its projected birth rate jumps **+0.72** (and **+0.80** once the dwellings the extra couples free are counted back into the housing market); give it Israel's low childfree norm or its low childlessness instead, and nothing moves (-0.001, +0.008). Israel's pronatal culture is not a wish for babies; it is couples that form and stay formed - the exact channel every winning lever above already pulls. The copyable pieces are real but bounded: universal IVF is barely 4% of births (Birenbaum-Carmeli, 2016), and the dense-childcare bundle behind 61% female employment is the gender-equity lever this project already crowns. Run it all through the model and a collapsing country reaches the 1.5 ridge, not 2.83 - the rest is age structure, desired family size, and the compounding Haredi subculture, none of them a dial a government can turn.
+So we asked the model where that norm lives. Give South Korea Israel's **coupling** - near-universal, stable partnership - and its projected birth rate jumps **+0.74** (and **+0.82** once the dwellings the extra couples free are counted back into the housing market); give it Israel's low childfree norm or its low childlessness instead, and nothing moves (-0.001, +0.008). Israel's pronatal culture is not a wish for babies; it is couples that form and stay formed - the exact channel every winning lever above already pulls. The copyable pieces are real but bounded: universal IVF is barely 4% of births (Birenbaum-Carmeli, 2016), and the dense-childcare bundle behind 61% female employment is the gender-equity lever this project already crowns. Run it all through the model and a collapsing country reaches the 1.5 ridge, not 2.83 - the rest is age structure, desired family size, and the compounding Haredi subculture, none of them a dial a government can turn.
 
 <div align="center">
 
@@ -190,7 +190,7 @@ The short version of a long road, in plain steps:
 7. **Then tested it hard** - on data it had never seen while it was being built, and against real historical shocks: the 2008 recession, the COVID dip, Korea's 1997 crisis, German reunification. (Statisticians call this an "out-of-sample" test - the fair way to check a model, since anything can be fitted to the past it was shown)
 8. **Kept what worked and stayed honest about what didn't** - we separated the part that passed from the part that did not: the demographic backbone reproduces real history and ranks every country correctly, while the behavioural layer that turns life conditions into a birth rate is a deliberately simplified, roughly-tuned picture, not a precision instrument
 9. **Mapped the dividing line between recovery and decline** - we traced the boundary the model draws between a country that can still turn itself around and one sliding into collapse - the "ridge" in the landscape picture above - and confirmed it lands where independent demographers put the danger line, at about 1.5 children per woman
-10. **Hypothesised and pre-registered interventions** - we wrote down 392 testable claims across thirty-nine rounds (labelled E1-E39), most of them candidate fixes, and committed to what would count as success *before* running each test, so a result can't be quietly reinterpreted as a win after the fact; each was fanned out across the board with its interactions, reinforcements and cancellations measured
+10. **Hypothesised and pre-registered interventions** - we wrote down 392 testable claims across forty rounds (labelled E1-E40; two of those rounds, E13 and E40, audit the campaign itself rather than add claims), most of them candidate fixes, and committed to what would count as success *before* running each test, so a result can't be quietly reinterpreted as a win after the fact; each was fanned out across the board with its interactions, reinforcements and cancellations measured
 11. **Scored each one analytically** - for every proposed fix we first worked out its likely effect on paper, side effects and interactions with other measures included, before trusting any of them enough to simulate
 12. **Ran each through the simulation** - we then put every intervention through the running model for several generations, because a lever that looks strong in a single year can fade, revert, or even backfire once the population responds over decades
 13. **Rated them by their cost to society** - we scored each fix not only by how much it helps but by what it costs in money, coercion and unwanted side effects together, so an expensive or heavy-handed lever cannot look "best" on its effect alone
@@ -202,9 +202,9 @@ Timing is handled explicitly with a **Bongaarts-Feeney** tempo-quantum correctio
 
 The calibration is **Bayesian** and unusually careful: rather than fit single best-guess numbers it fits whole probability distributions by the **reparameterisation trick** (Kingma & Welling, 2014), and a later round replaced the usual objective with an exact **one-dimensional Wasserstein** loss to close a stubborn gap between prediction and reality.
 
-Every parameter is anchored in the literature - roughly **58 source papers with more than 80 structured research digests** behind the choices - and the whole thing is calibrated to **UN World Population Prospects 2024** data for real countries. The campaign itself runs to **35 notebooks** and **392 pre-registered hypotheses across 39 rounds** (E1-E39), and it all runs on a graphics card, so thousands of scenarios finish in seconds.
+Every parameter is anchored in the literature - roughly **58 source papers with more than 80 structured research digests** behind the choices - and the whole thing is calibrated to **UN World Population Prospects 2024** data for real countries. The campaign itself runs to **36 notebooks** and **392 pre-registered hypotheses across 40 rounds** (E1-E40), and it all runs on a graphics card, so thousands of scenarios finish in seconds.
 
-None of this arrived on the first try. The equations were **rebuilt more than once** - an early version placed countries in the wrong order and had to be re-derived from scratch, and the behavioural half was **recalibrated repeatedly** (including a re-fit that closed a stubborn gap between prediction and reality) until the baseline could reproduce each country's real 2023 birth rate and its past crises without ever being told the answer. Only then were the interventions run through it: a model earns the right to judge a policy by first re-telling history. And the scoring is kept honest - of the 392 hypotheses a large share came back **PARTIAL or REFUTED** (cash bonuses, tutoring bans and top-down propaganda among the casualties), which is how you can trust that the SUPPORTED ones are more than wishful thinking.
+None of this arrived on the first try. The equations were **rebuilt more than once** - an early version placed countries in the wrong order and had to be re-derived from scratch, and the behavioural half was **recalibrated repeatedly** (including a re-fit that closed a stubborn gap between prediction and reality) until the baseline could reproduce each country's real 2023 birth rate and its past crises without ever being told the answer. The auditing never stopped either: a late rigor audit of the simulation core (E40) caught the birth-timing term applying **four times its documented strength**, fixed it at the source, recalibrated, and re-verified every headline number - the levers' rankings and every verdict survived; the size of the "tempo mirage" bump did not, and the corrected, four-times-smaller figure is the one to trust. Only then were the interventions run through it: a model earns the right to judge a policy by first re-telling history. And the scoring is kept honest - of the 392 hypotheses a large share came back **PARTIAL or REFUTED** (cash bonuses, tutoring bans and top-down propaganda among the casualties), which is how you can trust that the SUPPORTED ones are more than wishful thinking.
 
 **What this is: mature exploratory research.** The value is in the distinction between its two halves. The demographic backbone - the ageing, the population momentum, the ranking of countries - stands on solid, validated ground. The behavioural layer that turns a policy into a birth rate is a deliberately simplified research instrument: good enough to rank the forces at work and compare the *shape* of one lever against another. A validated skeleton under a deliberately simplified muscle - that is what the whole project rests on, and it is worth being exact about what it buys.
 
@@ -228,7 +228,9 @@ Two layers, and a bridge between them that is the point of the whole design.
 
 The **behavioural layer** is a system of coupled first-order ODEs in time - the observable channels (coupling $C$, childlessness $\rho$, parity $\bar P$, tempo $\tau$, security $S$, the bistable social norm $N$, and marriageability $q$) pushing on one another, with total fertility their product and the timing split by a Bongaarts-Feeney tempo correction (Bongaarts & Feeney, 1998):
 
-$$\text{TFR}(t) = C\,(1-\rho)\,\bar P\,\mathrm{fec}(\tau)\,\bigl(1 - k_{BF}\,\Delta\tau\bigr).$$
+$$\text{TFR}(t) = C\,(1-\rho)\,\bar P\,\mathrm{fec}(\tau)\,\max\bigl(1 - k_{BF}\,\Delta\tau,\,0\bigr),$$
+
+with $\Delta\tau$ the *realized* annual change of the timing channel (the E40 audit fixed an implementation that applied four times this documented rate and could go negative).
 
 The **demographic backbone** is an age-structured cohort-component projection - the **Leslie** operator (Leslie, 1945) - and this is the crucial recognition: Leslie is exactly the finite-difference form of the **McKendrick-von Foerster / Sharpe-Lotka renewal PDE** (McKendrick, 1926; von Foerster, 1959; Sharpe & Lotka, 1911; Lotka, 1939),
 
@@ -254,7 +256,7 @@ so that a slow-healing therapy, an accumulating scar, and the childhood-environm
 
 ## The full trail
 
-- **35 notebooks** (`notebooks/01…35`) - the whole investigation, step by step
+- **36 notebooks** (`notebooks/01…36`) - the whole investigation, step by step
 - **The evidence log** - all 392 questions put to the model and how each turned out: [`docs/experiments/demographic-collapse-experiments.md`](docs/experiments/demographic-collapse-experiments.md)
 - **The reference library** - the papers and grounded distributions behind the model ([`references/`](references/)), including composed proxy blueprints for levers no one has run a clean experiment on ([`references/proxies/`](references/proxies/))
 
@@ -271,7 +273,7 @@ make test        # run the tests
 
 ```
 ├── data/raw            <- the source population data (United Nations, World Bank, and others)
-├── notebooks           <- 01…35, the investigation end to end
+├── notebooks           <- 01…36, the investigation end to end
 ├── src                 <- the reusable model code
 ├── docs                <- the story, the design, the intervention guide, the evidence log
 ├── reports/figures     <- every chart the notebooks produced

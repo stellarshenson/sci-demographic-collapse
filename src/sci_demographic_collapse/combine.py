@@ -2,7 +2,7 @@
 
 The core's TFR is a product of bounded channel factors (Bongaarts multiplicativity):
 
-    TFR = C * (1 - rho) * Pbar * fec(tau) * (1 - kBF * dtau)
+    TFR = C * (1 - rho) * Pbar * fec(tau) * max(1 - kBF * dtau, 0)   # dtau = realized annual (E40)
 
 so on the LOG scale the channels are ADDITIVE. Write the log-TFR steady-state response to a forcing
 vector f (the 9-channel `interventions.CHANNELS` amplitudes) as L(f) = log TFR(f). The honest

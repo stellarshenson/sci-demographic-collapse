@@ -3,8 +3,11 @@
 The behavioural layer models fertility as an emergent product of five coupled, observable channels -
 coupling C, childlessness rho, parity Pbar, tempo tau, and economic security S - each with its own
 first-order dynamics, wrapped around the calibrated Leslie core in `coremodel`. TFR is
-`quantum(C, rho, Pbar) * fec(tau) * (1 - kBF * dtau)` with a Bongaarts-Feeney period term, a soft-bistable
-coupling trap near the empirical TFR-1.5 ridge, and a dependency->security feedback through the age pyramid.
+`quantum(C, rho, Pbar) * fec(tau) * max(1 - kBF * dtau, 0)` with a Bongaarts-Feeney period term on the
+REALIZED annual change of tau (dtau = tau_t - tau_{t-1}, post-clip; the E40 audit found the earlier
+substep rate-sum overstated the documented `(1 - k_BF*taudot)` by the substep count, kept a phantom
+tempo term alive at the tau clips, and let the factor go negative), a soft-bistable coupling trap near
+the empirical TFR-1.5 ridge, and a dependency->security feedback through the age pyramid.
 
 Interventions enter as a forcing function `force(year) -> [fS, fC, fPbar, ftau, frho]`. This is the same
 model validated in notebooks 14-17; import it instead of re-deriving it.
@@ -93,14 +96,15 @@ NORM0 = {
 # reproduces the 2023 REAL TFR (Pb is how the scalar PB0 was calibrated too). Regenerate via calibrate_ens().
 SIGMA_CAL = {"C": 0.05, "rv": 0.03, "Pb": 0.15, "tau": 3.0, "S": 0.10, "N": 0.06, "q": 0.10}
 PB_SCALE_ENS = {
-    "USA": 1.0276,
-    "France": 1.0404,
-    "Germany": 1.0350,
-    "Italy": 1.0301,
-    "Japan": 1.0322,
-    "Korea": 1.0333,
-    "Poland": 1.0372,  # re-solved by calibrate_ens; dispersed baseline reproduces GUS TFR 1.16 exactly
-    "Israel": 1.0502,  # re-solved by calibrate_ens; dispersed baseline reproduces UN WPP TFR 2.83 exactly
+    # re-solved by calibrate_ens on the corrected B-F term (E40); dispersed baselines reproduce 2023 REAL exactly
+    "USA": 1.0267,
+    "France": 1.0286,
+    "Germany": 1.0239,
+    "Italy": 1.0164,
+    "Japan": 1.0197,
+    "Korea": 1.0176,
+    "Poland": 1.0336,  # dispersed baseline reproduces GUS TFR 1.16 exactly
+    "Israel": 1.0373,  # dispersed baseline reproduces UN WPP TFR 2.83 exactly
 }
 
 # behavioural rate constants (calibrated in E19; norm constants added in E25; marriageability +
@@ -187,6 +191,8 @@ class EmergentModel:
         self.PB0 = {nm: T / (C0[nm] * (1 - RV0[nm]) * fec(mab)) for nm, (T, mab) in REAL.items()}
 
     def _estep(self, nm, st, force, tn, dep_pen, A_lag=0.0, dt=0.25):
+        # returns (new_state, dtau_rate); the rate is DIAGNOSTIC only since E40 - the TFR
+        # observable uses the realized annual change of tau, never a sum of substep rates
         p = self.P
         C, rv, Pb, tau, S, N, q = st
         fS, fC, fPb, fTau, fRV = force[:5]
@@ -268,11 +274,12 @@ class EmergentModel:
             f = force(yr)
             fF = f[7] if len(f) > 7 else 0.0  # father-access / paternity forcing
             fScar = f[8] if len(f) > 8 else 0.0  # relationship-scar forcing
-            dtau = 0.0
+            tau_prev = st[3]
             for _ in range(4):
-                st, dt_ = self._estep(region, st, f, yr / 100.0, dep_pen, A_lag)
-                dtau += dt_
+                st, _ = self._estep(region, st, f, yr / 100.0, dep_pen, A_lag)
             C, rv, Pb, tau, S, N, q = st
+            # realized annual tempo change (post-clip) - the documented B-F rate (E40 fix)
+            dtau = tau - tau_prev
             # childhood environment this year: father investment (access + healthier fathers via q) minus
             # relationship scars; the current reproductive cohort's marriageability is the integral of the
             # environment they experienced 27-45 years ago (a one-generation distributed lag). Measured as a
@@ -283,7 +290,7 @@ class EmergentModel:
             A_lag = (
                 p["gA"] * mem.reproductive_mean()
             )  # mean completed childhood integral over reproductive cohorts
-            tfr = quantum(C, rv, Pb) * fec(tau) * (1 - self.P["kBF"] * dtau)
+            tfr = quantum(C, rv, Pb) * fec(tau) * max(1 - p["kBF"] * dtau, 0.0)
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nm, _b, _d = cm.leslie_step(
                 nf,
@@ -370,7 +377,7 @@ class EmergentModel:
             fF = f[7] if len(f) > 7 else 0.0
             fScar = f[8] if len(f) > 8 else 0.0
             tn = yr / 100.0
-            dtau_acc = 0.0
+            tau_prev = tau
             for _ in range(4):
                 Nmean = float(Nd.mean())
                 dS = p["kS"] * (S0[region] + fS - dep_pen - S) - p["secS"]
@@ -409,8 +416,8 @@ class EmergentModel:
                 S = float(np.clip(S + dt * dS, 0.05, 0.95))
                 qc = float(np.clip(qc + dt * dq, -1.0, 1.0))
                 Nd = np.clip(Nd + dt * dNd, 0.0, 1.0)
-                dtau_acc += dtau
-            tfr = quantum(C, rv, Pb) * fec(tau) * (1 - p["kBF"] * dtau_acc)
+            # realized annual tempo change (post-clip) - the documented B-F rate (E40 fix)
+            tfr = quantum(C, rv, Pb) * fec(tau) * max(1 - p["kBF"] * (tau - tau_prev), 0.0)
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nm, _b, _d = cm.leslie_step(
                 nf,
@@ -567,17 +574,19 @@ class EmergentModel:
             f = force(yr)
             fF = f[7] if len(f) > 7 else 0.0
             fScar = f[8] if len(f) > 8 else 0.0
-            dtau_acc = np.zeros(K)
+            tau_prev = st[:, 3].copy()
             for _ in range(4):
-                st, dtau = self._estep_vec(region, st, f, yr / 100.0, dep_pen, A_lag)
-                dtau_acc = dtau_acc + dtau
+                st, _ = self._estep_vec(region, st, f, yr / 100.0, dep_pen, A_lag)
             C, rv, Pb, tau, S, N, q = (st[:, i] for i in range(7))
+            # realized annual tempo change per agent (post-clip) - the documented B-F rate (E40 fix).
+            # The factor is floored at 0; above 1 (advancing births) is genuine Bongaarts-Feeney and
+            # bounded by the dynamics: |dtau| <= kTau * (tau range) ~ 0.96/yr, so factor <= ~1.6
             tfr_i = (
                 C
                 * (1 - rv)
                 * Pb
                 * np.exp(-0.03 * np.clip(tau - 30.0, 0, None))
-                * (1 - p["kBF"] * dtau_acc)
+                * np.clip(1 - p["kBF"] * (tau - tau_prev), 0.0, None)
             )
             tfr = float(tfr_i.mean())
             prof = np.zeros_like(base)

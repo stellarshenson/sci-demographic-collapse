@@ -25,3 +25,5 @@ Progress logs for background and long-running jobs.
 - `sci-ingest.log` - Meta SCI (Social Connectedness Index) NUTS 2024 download from HDX into `data/raw/sci/`
 - `proto-e39.log` - E39 prototype run (time-resolved closed-loop checks: back-loading, sign flip, gH* fixed point) before the notebook build
 - `nb35-execute.log` - execution of `notebooks/35-kj-housing-coupling-time-e39.ipynb` (the housing-coupling loop in time, H386-H392, E39)
+- `nb36-execute.log` - execution of `notebooks/36-kj-rigor-audit-e40.ipynb` (the rigor audit of the simulation core: the tempo-term fix, recalibration and blast radius, A1-A7, E40)
+- `nb17-reexecute-e40.log` - re-execution of `notebooks/17-kj-story-visuals.ipynb` on the corrected core (story figures regenerated after the E40 tempo-term fix)

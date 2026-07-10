@@ -124,6 +124,11 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb35_fission_tax.png` - household-demand growth from the baseline coupling decline vs a +10% supply program, with crossing years (Korea eats the program by 2062)
 - `nb35_e39_verdicts.json` - all 7 E39 verdicts (H386-H392) with evidence, H387 stamped by the interaction-analyst gate
 
+**The rigor audit of the simulation core (Notebook 36, E40)**
+- `nb36_tempo_fix.png` - the tempo-term defect and its fix: the mirage bump deflating 4x under the corrected factor, legacy endpoint divergence vs fixed first-order convergence under substep halving, and the 8-region baseline endpoint shift (+0.008..+0.037, ordering intact)
+- `nb36_blast_radius.png` - the recorded headline numbers vs the corrected core (dumbbell + transplant) and the archetype peak |ΔTFR| legacy vs fixed
+- `nb36_e40_verdicts.json` - the 7 audit findings A1-A7 with evidence (4 CONFIRMED - tempo term fixed at source, integrator invariance restored, recalibration exact; 3 DOCUMENTED - seed wobble, LHC clip bias, integer profile shift)
+
 **Heretical & coercive natalism fanout (Notebook 31, E34)**
 - `nb31_coercion_reversal.png` - the coercion x path-integral sign flip: gen-1 vs gen-4 ΔTFR on Korea for the coercive vs devotion/structural families, and the Decree 770 vs Georgia-baptism Korea trajectories
 - `nb31_norm_penalty.png` - the norm x penalty dividing line: the same fN channel supports when re-priced voluntarily (δ≈0) and refutes when enforced by penalty/propaganda (δ=0.4)
