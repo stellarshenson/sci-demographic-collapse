@@ -102,3 +102,50 @@ to user; commit/push only on explicit approval.
 
 - Nothing quarantined. The pre-E40 tempo-bump amplitudes in E19/E33/E37 records are superseded (not
   quarantined - the supersession is recorded in the E40 section; inline markers pending, item 4 above).
+
+### RESOLVED 2026-07-10 ~20:20 (brace-resume complete; the park is closed)
+
+Every FIRST-ACTION item above is done and verified on disk:
+- A4e floor cell (finding 3) + supersede markers (finding 4): shipped; NB36 executed green.
+- A3b bit-identity proof added (max diff 0.0e+00 vs the git-extracted d52a138 core, tempo + coupling +
+  clip-pinning forcings); lineage: the defect is verbatim 101b104 -> d52a138.
+- Review rounds: Mode 1 = SHIP (round 3, stands - implementation diff unchanged since). Mode 2 rounds
+  2-4 each answered with executed measurements (A4e stress +/-6, A4f stratified sample worst 0.023,
+  A4f2 random 5% grid sample, A4g kBF band incl. the 8-region fate map). Round-5 Mode 2 pending on the
+  re-executed NB36.
+- Guard suite delivered: tests/test_hypothesis_guards.py (10 hypothesis-named regression guards);
+  make test 62 passed, make lint clean.
+- Journal (E40, Extended) + memory updates: pending the clean confirming round, then user commit approval.
+- NEW standing work this session: E41 calibration-extension deep research running as workflow
+  wf_9556fa9c-86a (9 observable families x 8 regions + synthesis + critics); fork session delivered the
+  README "How the simulation actually works" section + scientific-methods.md revision.
+
+---
+
+## BRACE 2026-07-10 ~23:53 - E40 review loop CLOSED CLEAN; E41 Wave-2 workflow live at brace
+
+### What survives on its own (valid on disk, no action needed)
+- **E40 fully done and green**: `emergent.py` tempo fix (realized annual Δτ, floored) + PB_SCALE_ENS re-solved; NB36 (`notebooks/36-kj-rigor-audit-e40.ipynb`) re-executed green 47 cells 0 errors incl. record-faithful A8/A8b/A8c; NB17 fixed at source + green. `reports/nb36_e40_verdicts.json` carries A1-A8. `make test` 63 passed, `make lint` clean.
+- **Adversarial review CLOSED**: 12-round Mode 2 Bedrock loop, **round 12 CLEAN** (`scratchpad/e40-review2r12-mode2-result.txt`, log `logs/e40-review2r12.log`). No uncarried claims; one non-blocking MINOR accepted as stated residual.
+- **Records reconciled** (uncommitted, staged in working tree): experiments log E40 section incl. A8 lineage + round-12 CLEAN sentence + supersession rows with exact numbers (A8b shift 0.0155, A8c gating x4.5 vs x1.8, Poland shift 0.0031); `logs/README.md`; guard suite `tests/test_hypothesis_guards.py` (pins A1-A8).
+- **Journal entry 51** written + `journal-tools check` exit 0. **Memory** synced (project-goals.md E40/E41 paragraphs; MEMORY.md israel index line extended).
+- **E41 Wave-1 research** on disk: `reports/e41_calibration_targets_research.json`, `docs/e41-calibration-extension-research.md`, `docs/e41-acceptance-criteria.md`.
+
+### DOWN / dies with this session
+- **E41 Wave-2 blocker-resolution workflow `wf_53322579-da8`** (task id `w6ptbzwqt`) was RUNNING attached to this session at brace (last agent write 23:52). It is in its final bounded fix-loop stage - 12 resolvers + synthesis + first critique already DONE. **Its per-agent results ARE checkpointed** at:
+  `/home/lab/.claude/projects/-home-lab-workspace-learning-projects-sci-demographic-collapse/c9898e9e-043d-4d91-9eb6-b5e80ecf9847/subagents/workflows/wf_53322579-da8/journal.jsonl` (each agent's StructuredOutput persisted as a `{"type":"result",...}` line; agent-*.jsonl are full transcripts).
+  - Confirmed-good disposition already journaled: **C0F0** (C-construct infeasibility) RESOLVED-DESIGN - Korea PB0=0.93<1 collides with the Pb>=1 floor; feasibility boundary PB0>=~1.15; Korea decoupled to period-epoch pair C0=0.70/RV0=0.09 grounded in **Yoo 2026, Demographic Research 54(3)** (2023 tempo-adj marriage quantum). Floor RETAINED, no structural change.
+- **DO NOT re-run the workflow from scratch.** If it did not return, reconstruct the 18-finding disposition table from `journal.jsonl` (read the `type:result` lines), THEN do the FIRST ACTION recordings. Re-running via `Workflow({scriptPath:"scratchpad/e41-wave2-workflow.mjs", resumeFromRunId:"wf_53322579-da8"})` returns cached agent results instantly for the unchanged prefix.
+
+### FIRST ACTION for next session
+1. Read `journal.jsonl` (path above); collect all 18 findings' dispositions (RESOLVED / AMENDED / ACCEPTED-RESIDUAL) + the synthesis's protocol_v2 + the two critics' re-verdicts.
+2. Persist `reports/e41_blocker_resolutions.json` (the disposition table) + the synthesis result verbatim.
+3. Update `docs/e41-calibration-extension-research.md` -> v2 (fold protocol_v2 + resolutions).
+4. Flip `docs/e41-acceptance-criteria.md` W2.1-W2.8 statuses (MET where the disposition clears them).
+5. Extend the experiments-log E41 section (append-only, W2.8) with the Wave-2 outcome.
+6. If any critic still returned a BLOCKER -> loop the fix stage per protocol before declaring Wave 2 done.
+7. Wave 3 (implementation: anchor replacement + guard re-baselining + additive harness + 2000->2023 rejection backtest) stays **USER-GATED** - do NOT start without explicit approval. Model stays untouched.
+
+### Pending decision for the user
+- **Commit approval**: the entire E40 + A8 + guard-suite + docs + journal + memory tree is uncommitted (working tree modified/untracked per `git status`). Awaiting explicit "commit"/"push". No git action taken.
+- User asked to run executors on **Fable 5** (model set to Fable 5 this session); honour for future E41 executor waves unless overridden.

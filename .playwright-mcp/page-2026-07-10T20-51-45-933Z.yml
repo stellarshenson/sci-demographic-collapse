@@ -1,0 +1,76 @@
+- generic [active] [ref=f48e1]:
+  - generic [ref=f48e2]:
+    - banner [ref=f48e3]:
+      - link [ref=f48e4] [cursor=pointer]:
+        - /url: https://cfe-database.org/
+      - link [ref=f48e6] [cursor=pointer]:
+        - /url: https://erc.europa.eu/
+      - generic:
+        - heading [level=1] [ref=f48e7]:
+          - link "EURREP" [ref=f48e8] [cursor=pointer]:
+            - /url: https://www.eurrep.org/
+        - heading [level=2]
+      - navigation [ref=f48e9]:
+        - link "Skip to content" [ref=f48e10] [cursor=pointer]:
+          - /url: "#content"
+        - list [ref=f48e12]:
+          - listitem [ref=f48e13]:
+            - link "EURREP" [ref=f48e14] [cursor=pointer]:
+              - /url: https://www.eurrep.org
+          - listitem [ref=f48e15]:
+            - link "Home" [ref=f48e16] [cursor=pointer]:
+              - /url: https://www.eurrep.org/database/
+          - listitem [ref=f48e17]:
+            - link "About" [ref=f48e18] [cursor=pointer]:
+              - /url: https://www.eurrep.org/database/about/
+          - listitem [ref=f48e19]:
+            - link "Database" [ref=f48e20] [cursor=pointer]:
+              - /url: https://www.eurrep.org/database/database/
+          - listitem [ref=f48e21]:
+            - link "Methods" [ref=f48e22] [cursor=pointer]:
+              - /url: https://www.eurrep.org/database/methods/database-structure/
+          - listitem [ref=f48e23]:
+            - link "Contact" [ref=f48e24] [cursor=pointer]:
+              - /url: https://www.eurrep.org/database/contact/
+    - main [ref=f48e27]:
+      - article [ref=f48e28]:
+        - heading [level=2] [ref=f48e30]:
+          - link "Home" [ref=f48e31] [cursor=pointer]:
+            - /url: /
+          - text: ">>"
+          - link "Database" [ref=f48e32] [cursor=pointer]:
+            - /url: /database
+          - text: ">>"
+          - link "Database" [ref=f48e33] [cursor=pointer]:
+            - /url: /database/database
+        - generic [ref=f48e34]:
+          - generic [ref=f48e35]:
+            - text: Please select country and survey.
+            - paragraph
+            - generic:
+              - list
+            - generic:
+              - list:
+                - listitem [ref=f48e36]
+                - listitem [ref=f48e37]
+          - generic:
+            - table:
+              - rowgroup
+              - rowgroup
+          - paragraph [ref=f48e38]
+          - paragraph [ref=f48e39]:
+            - text: Subscribe to the
+            - link [ref=f48e40] [cursor=pointer]:
+              - /url: https://www.eurrep.org/category/database/feed/
+              - img "rss" [ref=f48e41]
+              - text: RSS database updates
+            - text: .
+    - contentinfo [ref=f48e42]:
+      - link "Proudly powered by WordPress" [ref=f48e44] [cursor=pointer]:
+        - /url: http://wordpress.org/
+  - generic [ref=f48e46]:
+    - text: This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.
+    - button "Accept" [ref=f48e47] [cursor=pointer]
+    - link "Read More" [ref=f48e48] [cursor=pointer]:
+      - /url: http://www.eurrep.org
+  - text: Show more Enabled

@@ -126,6 +126,11 @@ PARAMS = dict(
     gRV=0.012,
     kS=0.06,
     secS=0.0010,
+    # Bongaarts & Feeney 1998 ("On the quantum and tempo of fertility", PDR 24(2)): the tempo
+    # adjustment TFR/(1 - r) with r the annual change in mean age at childbearing; applied here as
+    # a damping on the REALIZED annual dtau (E40). Published practice puts the effective damping
+    # in the 0.5-0.7 band for low-fertility settings; the E40-A4g sweep over {0.4, 0.6, 0.8} shows
+    # no verdict-bearing conclusion rides on the choice.
     kBF=0.6,
     dep_fb=0.22,
     aN=2.5,

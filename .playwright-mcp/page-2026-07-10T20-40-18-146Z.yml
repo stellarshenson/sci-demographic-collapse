@@ -1,0 +1,42 @@
+- generic [active] [ref=f15e1]:
+  - img "loading" [ref=f15e4]
+  - generic:
+    - link "메뉴 바로가기" [ref=f15e5] [cursor=pointer]:
+      - /url: "#leftMenu"
+    - link "본문 바로가기" [ref=f15e6] [cursor=pointer]:
+      - /url: "#centerMenu"
+  - paragraph [ref=f15e8]:
+    - link [ref=f15e9] [cursor=pointer]:
+      - /url: javascript:openKosis();
+      - img "KOSIS" [ref=f15e10]
+  - generic [ref=f15e11]:
+    - iframe [ref=f15e13]:
+      - generic [ref=f16e2]:
+        - generic [ref=f16e3]:
+          - generic [ref=f16e4]: "통계목록 :"
+          - combobox "통계목록" [ref=f16e5]:
+            - option "주제별 통계" [selected]
+            - option "기관별 통계"
+            - option "e-지방지표(주제별)"
+            - option "e-지방지표(지역별)"
+            - option "과거-광복이전"
+            - option "과거-통계연감"
+            - option "중지통계"
+            - option "국제통계"
+            - option "국제지역통계"
+            - option "북한통계"
+        - generic [ref=f16e6]:
+          - button "스크랩" [ref=f16e7] [cursor=pointer]
+          - button "내가 본 통계표" [ref=f16e8] [cursor=pointer]
+        - generic [ref=f16e9]:
+          - combobox "Search Keyword Option" [ref=f16e10]:
+            - option "통계목록" [selected]
+            - option "통계표"
+          - textbox "단어검색" [ref=f16e12]
+          - button "검색" [ref=f16e13] [cursor=pointer]
+        - generic [ref=f16e14]:
+          - button "맨위로" [ref=f16e15] [cursor=pointer]
+          - button "오름차순" [ref=f16e17] [cursor=pointer]
+        - list [ref=f16e20]:
+          - listitem [ref=f16e21]
+    - iframe [ref=f15e16]

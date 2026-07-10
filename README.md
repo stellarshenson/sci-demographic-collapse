@@ -196,7 +196,7 @@ The short version of a long road, in plain steps:
 13. **Rated them by their cost to society** - we scored each fix not only by how much it helps but by what it costs in money, coercion and unwanted side effects together, so an expensive or heavy-handed lever cannot look "best" on its effect alone
 14. **Stripped the bundles down** - finally we removed pieces from the winning combinations one at a time, to find the smallest and cheapest set of measures that still delivers most of the benefit
 
-And the technical guts, for anyone who wants them - because the science behind the story is worth being specific about. At its heart is a system of **seven coupled first-order differential equations** tracking how pairing, childbearing, the timing of births, economic security, the surrounding social norm and partner-marriageability push on one another, rolled forward a year at a time and fed into a standard **age-structured cohort-component projection**: a **Leslie matrix** advancing roughly fifty single-year age groups by their own fertility, survival and migration schedules (the migration schedule a **Rogers-Castro** curve).
+And the technical guts, for anyone who wants them - because the science behind the story is worth being specific about. At its heart is a system of **seven coupled first-order differential equations** tracking how pairing, childbearing, the timing of births, economic security, the surrounding social norm and partner-marriageability push on one another - nine equations in all once the intergenerational memory integral and the fertility composition law are counted, and each is laid out one by one in the walkthrough below - rolled forward a year at a time and fed into a standard **age-structured cohort-component projection**: a **Leslie matrix** advancing roughly fifty single-year age groups by their own fertility, survival and migration schedules (the migration schedule a **Rogers-Castro** curve).
 
 Timing is handled explicitly with a **Bongaarts-Feeney** tempo-quantum correction, and the trap that gives the story its two-basin shape is a **soft-bistable, double-well coupling potential** - the same maths behind the Seldon manifold above.
 
@@ -204,7 +204,7 @@ The calibration is **Bayesian** and unusually careful: rather than fit single be
 
 Every parameter is anchored in the literature - roughly **58 source papers with more than 80 structured research digests** behind the choices - and the whole thing is calibrated to **UN World Population Prospects 2024** data for real countries. The campaign itself runs to **36 notebooks** and **392 pre-registered hypotheses across 40 rounds** (E1-E40), and it all runs on a graphics card, so thousands of scenarios finish in seconds.
 
-None of this arrived on the first try. The equations were **rebuilt more than once** - an early version placed countries in the wrong order and had to be re-derived from scratch, and the behavioural half was **recalibrated repeatedly** (including a re-fit that closed a stubborn gap between prediction and reality) until the baseline could reproduce each country's real 2023 birth rate and its past crises without ever being told the answer. The auditing never stopped either: a late rigor audit of the simulation core (E40) caught the birth-timing term applying **four times its documented strength**, fixed it at the source, recalibrated, and re-verified every headline number - the levers' rankings and every verdict survived; the size of the "tempo mirage" bump did not, and the corrected, four-times-smaller figure is the one to trust. Only then were the interventions run through it: a model earns the right to judge a policy by first re-telling history. And the scoring is kept honest - of the 392 hypotheses a large share came back **PARTIAL or REFUTED** (cash bonuses, tutoring bans and top-down propaganda among the casualties), which is how you can trust that the SUPPORTED ones are more than wishful thinking.
+None of this arrived on the first try. The equations were **rebuilt more than once** - an early version placed countries in the wrong order and had to be re-derived from scratch, and the behavioural half was **recalibrated repeatedly** (including a re-fit that closed a stubborn gap between prediction and reality) until the baseline could reproduce each country's real 2023 birth rate and its past crises without ever being told the answer. The auditing never stopped either: a late rigor audit of the simulation core (E40) caught the birth-timing term applying **four times its documented strength**, fixed it at the source, recalibrated, and re-verified every headline number - the levers' rankings survived, and every directly re-simulated verdict survived (the entire lever catalogue was re-run on the corrected core; the handful of results that live outside that catalogue inherit the fix's narrow footprint as a stated residual assurance rather than a re-run); the size of the "tempo mirage" bump did not survive, and the corrected, four-times-smaller figure is the one to trust. Only then were the interventions run through it: a model earns the right to judge a policy by first re-telling history. And the scoring is kept honest - of the 392 hypotheses a large share came back **PARTIAL or REFUTED** (cash bonuses, tutoring bans and top-down propaganda among the casualties), which is how you can trust that the SUPPORTED ones are more than wishful thinking.
 
 **What this is: mature exploratory research.** The value is in the distinction between its two halves. The demographic backbone - the ageing, the population momentum, the ranking of countries - stands on solid, validated ground. The behavioural layer that turns a policy into a birth rate is a deliberately simplified research instrument: good enough to rank the forces at work and compare the *shape* of one lever against another. A validated skeleton under a deliberately simplified muscle - that is what the whole project rests on, and it is worth being exact about what it buys.
 
@@ -221,6 +221,73 @@ The natural next step is to take each surviving lever off the map and onto the g
 
 > [!NOTE]
 > The model and the narrative around it are the subjective view of the researcher, not a settled forecast. The researcher is now compiling a full summary of every intervention - its strengths, weaknesses, side effects, costs, the policy that delivers it and the mechanics of how it works - together with the story behind each.
+
+## How the simulation actually works - one lap of the machine
+
+Everything above came out of one machine, and this section opens the casing. It walks the whole computation in the order the computer actually performs it - from the equations on the blackboard to a verdict on a policy - in enough detail that you could rebuild it. Every piece of mathematics named along the way is catalogued, with its literature reference, in the [scientific foundations inventory](docs/scientific-methods.md); this section is the story of how those pieces fit together and turn.
+
+**Step 1 - write the world down as nine equations.** The behavioural heart of the model is a set of seven coupled differential equations - one per channel of life the evidence says actually moves a birth rate - plus an intergenerational memory integral and the composition law that turns the channels into children. Nine equations in all. The seven channels are:
+
+- $C$ - **coupling**: the share of reproductive-age adults in a lasting partnership. Children overwhelmingly come from stable couples, so this is the load-bearing wall
+- $\rho$ - **childlessness**: the share who never become parents at all
+- $\bar P$ - **parity**: how many children the families that do form end up having
+- $\tau$ - **tempo**: the mean age at childbearing. A delay is not a refusal, but biology keeps its own schedule
+- $S$ - **security** (0 to 1): the economic footing of the young - jobs, housing, a future stable enough to plan on
+- $N$ - **the social norm**: the share of society endorsing a childfree ideal, contagious and self-reinforcing
+- $q$ - **marriageability**: partner-readiness capital on both sides of the market, gating whether couples form at all
+
+Six of the seven equations share one shape - a *relaxation*: each channel drifts toward a moving target at its own characteristic speed $k$, the way coffee cools toward room temperature. All the physics lives in where the targets sit and in how the channels drag each other's targets around. Security:
+
+$$\dot S = k_S\bigl(S_0 + f_S - \Pi_{\text{dep}} - S\bigr) - \varepsilon_S,$$
+
+whose target is the country's anchor $S_0$, pushed up by policy ($f_S$), dragged down by the ageing burden $\Pi_{\text{dep}}$ the population pyramid feeds back (step 4g), and leaking slowly ($\varepsilon_S$). Coupling:
+
+$$\dot C = k_C\bigl(C^{\star} - C\bigr) - d\,\frac{\max(C_{\text{thr}}-C,\,0)\,\max(C-C_{\text{floor}},\,0)}{C_{\text{thr}}-C_{\text{floor}}},\qquad C^{\star} = C_0 + g_{SC}\,(S-S_0) + g_{qC}\,q + f_C - \varepsilon_C\,t,$$
+
+whose target rises with security and marriageability and erodes secularly with time - and whose second term is the **trap**: a decline well that switches on between a floor and a threshold ($C_{\text{thr}} = 0.66$), so that once partnership slips below the threshold it is actively pulled down rather than merely low. This soft-bistable term is where the two-basin fate map - the Seldon manifold above - comes from. Parity and tempo are plain relaxations with secular drifts (family-size targets erode, first births drift later, matching the observed trends decade by decade):
+
+$$\dot{\bar P} = k_P\bigl(\bar P_0 + g_P\,f_P - \varepsilon_P\,t - \bar P\bigr), \qquad \dot\tau = k_\tau\bigl(\tau_0 + g_\tau\,(S_0 - S) + f_\tau + \varepsilon_\tau\,t - \tau\bigr),$$
+
+with one cross-wire that matters: when security falls, first births drift *later* ($g_\tau(S_0-S)$). Childlessness rises with late starts, with insecurity, and with the norm:
+
+$$\dot\rho = k_\rho\bigl(\rho_0 + g_\rho \max(\tau-30,\,0) - 0.05\,(S-S_0) + \lambda_\rho\,(N-N_0) + f_\rho - \rho\bigr).$$
+
+The seventh, the norm, is the one equation that is *not* a relaxation - it is a cubic double-well, the classic bistable form:
+
+$$\dot N = -a_N\,(N-N_{\text{lo}})(N-\theta_N)(N-N_{\text{hi}}) + f_N,$$
+
+with two self-reinforcing wells (a child-friendly one at $N_{\text{lo}}=0.14$, a childfree one at $N_{\text{hi}}=0.42$) and an unstable tipping point at $\theta_N=0.25$: push a society across it and it does not drift back - it falls into the other well and stays. Marriageability relaxes toward what policy and upbringing supply:
+
+$$\dot q = k_q\bigl(f_q + A - q\bigr),$$
+
+and $A$ is the eighth equation, the **intergenerational memory**: each cohort of children accumulates a life-course integral of the environment it grew up in - father investment minus relationship scarring -
+
+$$J = \int_{\text{childhood}} \bigl[\,w_F\,(f_F + \phi\,q) - w_{\text{scar}}\,f_{\text{scar}}\,\bigr]\,\mathrm{d}s, \qquad A = g_A\,\langle J \rangle_{\text{ages 27-45}},$$
+
+and hands the completed integral to the marriage market when that cohort reaches reproductive age, 27 to 45 years later. A damaged childhood does not show up in the birth rate next year; it shows up in a generation, which is exactly how the real force works. The ninth equation is the **composition law** - the channels multiply, they do not add:
+
+$$\text{TFR} = C\,(1-\rho)\,\bar P\;\mathrm{fec}(\tau)\;\max\bigl(1 - k_{BF}\,\Delta\tau,\;0\bigr), \qquad \mathrm{fec}(\tau) = e^{-0.03\,\max(\tau-30,\,0)},$$
+
+where $\mathrm{fec}$ is the biological age penalty on conception and the last factor is the Bongaarts-Feeney tempo correction: in a year when the mean age at childbearing is actively *rising* by $\Delta\tau$, some births are parked in the future and the period rate dips below the true quantum - the mirage machinery behind the baby-bonus illusion. The product form is a statement about the world: every channel is a gate, and a zero anywhere zeroes the whole thing. No amount of cash ($\bar P$ up) rescues a society where couples do not form ($C$ down) - which is precisely what the intervention rounds later found. The $f_\bullet$ symbols are the **nine policy wires** ($f_S, f_C, f_P, f_\tau, f_\rho, f_N, f_q, f_F, f_{\text{scar}}$) - every lever tested in this project is a pattern of pushes on these wires, and nothing else.
+
+**Step 2 - anchor the equations to the real world.** Each country enters as a set of measured anchors: its 2023 birth rate and mean age at childbearing (UN WPP 2024; Poland's own statistical office where the two disagree), its coupling level $C_0$, childlessness $\rho_0$, security $S_0$, and which norm-well it starts in ($N_0$). The rate constants and coupling gains come from the demographic and economic literature - some 58 source papers - not from hand-tuning. Then one identity closes the loop: the parity anchor is *solved*, not fitted, by requiring the composition law to reproduce the country's real 2023 TFR exactly at its start state, $\bar P_0 = \text{TFR}_{2023} / \bigl(C_0\,(1-\rho_0)\,\mathrm{fec}(\tau_0)\bigr)$. Calibration here means the model starts *from reality* - and its dynamics were then made to re-tell history (the 2008 recession, the COVID dip, Korea's 1997 crisis) before being trusted with anything new.
+
+**Step 3 - split each country into 64 shadow populations.** A country is not an average person, and near thresholds the difference is the whole story - an average sitting safely above a tipping point can hide a third of the population already below it. So each channel is spread into a 64-strand ensemble (a stratified Latin-hypercube spread, decorrelated across channels), with the spreads taken from population data, not invented: age at first birth scatters with a standard deviation near 3 years, family-size intentions are the widest channel, coupling and childlessness the tightest. Each of the 64 strands then lives the equations independently - so when a norm approaches its tipping point the population *splits*, part falling into the childfree well while part holds, instead of switching as one block. One final dial per country (a parity rescale, about 2-4%) re-anchors the dispersed ensemble's first year to the real 2023 rate exactly. This dispersed, re-anchored configuration - `run_cal` in the code - is the production instrument every hypothesis in the campaign is scored on.
+
+**Step 4 - the yearly lap.** With the machine wound up, one simulated year - one iteration, repeated 102 times to carry each country from 2023 to 2125 - performs, in order:
+
+1. **Read the year's policy settings** - each active lever contributes its push on the nine wires, shaped by an honest implementation envelope: nothing for the first two years (legislation is slow), ramping linearly to full strength by year twelve, and - for levers that are handouts rather than structures - eroding away exponentially afterwards
+2. **Advance the seven channels** through four quarter-year steps of the coupled equations, each state clipped to its physical range (coupling can never exceed 100% of adults, the mean age at childbearing lives between 24 and 40, and so on)
+3. **Take the realized tempo change** $\Delta\tau$ - how much the mean age at childbearing *actually* moved this year, clips included - and form the Bongaarts-Feeney factor $\max(1-k_{BF}\,\Delta\tau,\,0)$. The E40 audit made this exactness load-bearing: an observable must be a function of the state trajectory, never of the integrator's internal sub-steps (the pre-fix code summed sub-step rates and silently applied four times the documented correction)
+4. **Compose each strand's TFR** by the ninth equation and average the 64 - the population's period fertility for the year
+5. **Shape the births into mothers' ages**: each strand's TFR scales the country's own observed age-specific fertility profile and shifts it along the age axis by that strand's tempo displacement; the 64 profiles average into the year's birth schedule
+6. **Run the demographic backbone one step** - the Leslie cohort-component projection: every single-year age class advances by its survival ratio (mortality improving a third of a percent a year), the birth schedule adds the new cohort at age zero, split by the observed sex ratio at birth. The baseline runs immigration-free by design - migration is a lever to be tested, not an assumption to be buried
+7. **Let the pyramid push back**: the new age structure sets the dependency ratio (over-65s per working-age adult), and its excess over the 2023 level feeds the ageing burden $\Pi_{\text{dep}}$ into next year's security equation. This is the fateful loop - fewer births age the pyramid, the ageing burden erodes the security of the young, and eroded security suppresses coupling, timing and parity in turn
+8. **Deposit this year's childhood environment** into the cohort memory, where it rides silently for a generation before surfacing in the marriage market as equation eight prescribes
+
+**Step 5 - run it a century, then judge.** One lap per year, 2023 to 2125 - four generations, long enough for a lever that dazzles in year five to fade, revert, or backfire by year forty, which is the fate of most of them. To score a policy the machine runs *twice* - once as baseline, once with the lever, identical in every other respect including the random seed - and the verdict lives in the difference: its size at the century mark, its durability (peak effect versus lasting effect - the mirage detector), and its side effects on the other channels. Every hypothesis states its bar *before* the run, and the code that guards the verdict-bearing numbers runs in the test suite (`tests/test_hypothesis_guards.py`), so any future change to the core that silently moves a recorded result fails the build.
+
+That is the whole machine: nine equations, sixty-four strands, one lap per year, a century per run, two runs per verdict. The deeper mathematics - why the age structure is secretly a transport equation, and how the model carries whole distributions rather than averages where that matters - is the next section; the full catalogue of every method with its reference is the [scientific foundations inventory](docs/scientific-methods.md).
 
 ## The scientific backbone
 
@@ -257,6 +324,7 @@ so that a slow-healing therapy, an accumulating scar, and the childhood-environm
 ## The full trail
 
 - **36 notebooks** (`notebooks/01…36`) - the whole investigation, step by step
+- **The scientific foundations** - every equation, theorem, estimator and numerical scheme in the machine, catalogued with its reference: [`docs/scientific-methods.md`](docs/scientific-methods.md)
 - **The evidence log** - all 392 questions put to the model and how each turned out: [`docs/experiments/demographic-collapse-experiments.md`](docs/experiments/demographic-collapse-experiments.md)
 - **The reference library** - the papers and grounded distributions behind the model ([`references/`](references/)), including composed proxy blueprints for levers no one has run a clean experiment on ([`references/proxies/`](references/proxies/))
 

@@ -1,0 +1,899 @@
+- generic [active] [ref=f1e1]:
+  - generic:
+    - link "상단메뉴 바로가기" [ref=f1e2] [cursor=pointer]:
+      - /url: "#gnb"
+    - link "본문 바로가기" [ref=f1e3] [cursor=pointer]:
+      - /url: "#main_layout"
+  - generic [ref=f1e4]: 이 누리집은 대한민국 공식 전자정부 누리집입니다.
+  - generic [ref=f1e6]:
+    - list [ref=f1e8]:
+      - listitem [ref=f1e9]:
+        - generic [ref=f1e10]:
+          - paragraph [ref=f1e11]: 제13회 2026 국가승인통계활용 디지털콘텐츠 공모전2026.4.30.(목) ~ 7.12.(일)
+          - button "팝업보기" [ref=f1e12] [cursor=pointer]
+    - generic [ref=f1e14]:
+      - generic [ref=f1e15]:
+        - radio "하루 동안 열지않기" [ref=f1e16]
+        - text: 하루 동안 열지않기
+      - generic [ref=f1e17]:
+        - radio "다시 열지않기" [ref=f1e18]
+        - text: 다시 열지않기
+      - button "팝업닫기" [ref=f1e19] [cursor=pointer]
+  - generic [ref=f1e20]:
+    - generic [ref=f1e24]:
+      - heading [level=1] [ref=f1e25]:
+        - link [ref=f1e26] [cursor=pointer]:
+          - /url: /index/index.do;jsessionid=eSpkn9_e8bgi5B4eM_O8pG4o2qORfmYSI7fPBeWz.esvwas4_S41
+          - img "KOSIS 국가통계포털- KOrean Statistical Information Service" [ref=f1e27]
+      - link "내가본통계표" [ref=f1e28] [cursor=pointer]:
+        - /url: "#Quick3"
+      - link "전체메뉴" [ref=f1e29] [cursor=pointer]:
+        - /url: "#none"
+    - generic [ref=f1e31]:
+      - generic [ref=f1e32]:
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]:
+            - textbox "통합검색" [disabled] [ref=f1e36]: 통계표
+            - button "분류선택" [ref=f1e37] [cursor=pointer]
+            - textbox "검색어를 입력해주세요" [ref=f1e38]:
+              - /placeholder: 검색어를 입력해주세요.
+              - text: 출생아수별 기혼여성
+            - button "자동완성 열기" [ref=f1e39] [cursor=pointer]
+            - button "검색" [ref=f1e40] [cursor=pointer]
+          - button "상세검색" [ref=f1e41] [cursor=pointer]
+          - checkbox "결과 내 재검색"
+          - generic [ref=f1e42]: 결과 내 재검색
+        - generic [ref=f1e43] [cursor=pointer]:
+          - term [ref=f1e44]:
+            - text: 인기검색어
+            - generic: (최근 한달간)
+          - definition [ref=f1e45]:
+            - button "인기검색어 더보기" [ref=f1e46]
+            - list [ref=f1e47]:
+              - listitem "인구" [ref=f1e48]:
+                - link "1 인구" [ref=f1e49]:
+                  - /url: "#"
+                  - generic [ref=f1e50]: "1"
+                  - text: 인구
+              - listitem "범죄율" [ref=f1e51]:
+                - link "2 범죄율" [ref=f1e52]:
+                  - /url: "#"
+                  - generic [ref=f1e53]: "2"
+                  - text: 범죄율
+              - listitem "AI" [ref=f1e54]:
+                - link "3 AI" [ref=f1e55]:
+                  - /url: "#"
+                  - generic [ref=f1e56]: "3"
+                  - text: AI
+              - listitem "스마트폰" [ref=f1e57]:
+                - link "4 스마트폰" [ref=f1e58]:
+                  - /url: "#"
+                  - generic [ref=f1e59]: "4"
+                  - text: 스마트폰
+              - listitem "소비자물가지수" [ref=f1e60]:
+                - link "5 소비자물가지수" [ref=f1e61]:
+                  - /url: "#"
+                  - generic [ref=f1e62]: "5"
+                  - text: 소비자물가지수
+              - listitem "온라인쇼핑" [ref=f1e63]:
+                - link "6 온라인쇼핑" [ref=f1e64]:
+                  - /url: "#"
+                  - generic [ref=f1e65]: "6"
+                  - text: 온라인쇼핑
+              - listitem "노인인구" [ref=f1e66]:
+                - link "7 노인인구" [ref=f1e67]:
+                  - /url: "#"
+                  - generic [ref=f1e68]: "7"
+                  - text: 노인인구
+              - listitem "폐업" [ref=f1e69]:
+                - link "8 폐업" [ref=f1e70]:
+                  - /url: "#"
+                  - generic [ref=f1e71]: "8"
+                  - text: 폐업
+              - listitem "사망원인" [ref=f1e72]:
+                - link "9 사망원인" [ref=f1e73]:
+                  - /url: "#"
+                  - generic [ref=f1e74]: "9"
+                  - text: 사망원인
+              - listitem "청소년" [ref=f1e75]:
+                - link "10 청소년" [ref=f1e76]:
+                  - /url: "#"
+                  - generic [ref=f1e77]: "10"
+                  - text: 청소년
+        - list [ref=f1e81]:
+          - listitem [ref=f1e82]:
+            - link "통합검색" [ref=f1e83] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e85]:
+            - link "통계표" [ref=f1e86] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e88]:
+            - link "통계시각화콘텐츠" [ref=f1e89] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e90]:
+            - link "통계분류" [ref=f1e91] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e93]:
+            - link "온라인간행물" [ref=f1e94] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e95]:
+            - link "통계설명자료" [ref=f1e96] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e97]:
+            - link "통계용어" [ref=f1e98] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f1e99]:
+            - link "게시물" [ref=f1e100] [cursor=pointer]:
+              - /url: javascript:void(0)
+      - generic [ref=f1e101]:
+        - generic [ref=f1e106]:
+          - paragraph [ref=f1e107]:
+            - generic [ref=f1e108]:
+              - strong [ref=f1e109]: "\"출생아수별 기혼여성\""
+              - text: 에 대한 검색결과는
+              - strong [ref=f1e110]: 92건
+              - text: 입니다.
+          - generic [ref=f1e111]:
+            - heading "통계표 92 건" [level=2] [ref=f1e113]
+            - list [ref=f1e114]:
+              - listitem [ref=f1e115]:
+                - link "국내통계" [ref=f1e116] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f1e117]:
+                - link "e-지방지표" [ref=f1e118] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f1e119]:
+                - link "국제통계" [ref=f1e120] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f1e121]:
+                - link "북한통계" [ref=f1e122] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f1e123]:
+                - link "국제지역통계" [ref=f1e124] [cursor=pointer]:
+                  - /url: javascript:void(0);
+            - generic [ref=f1e126]:
+              - combobox "정렬을 선택해주세요." [ref=f1e128]:
+                - option "정확도순" [selected]
+                - option "최신순"
+              - combobox "리스트 갯수를 선택해주세요." [ref=f1e130]:
+                - option "10개"
+                - option "20개" [selected]
+                - option "30개"
+            - generic [ref=f1e131]:
+              - button "조건검색 열기" [ref=f1e132] [cursor=pointer]
+              - generic [ref=f1e133]:
+                - list [ref=f1e134]:
+                  - listitem [ref=f1e135]:
+                    - link [ref=f1e136] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 산업별/
+                      - strong [ref=f1e137]: 출생
+                      - text: 자녀수별
+                      - strong [ref=f1e138]: 기혼여성
+                      - text: 인구(15세이상)-시군구
+                    - generic "새창열림" [ref=f1e139] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e140]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e141]:
+                    - link [ref=f1e142] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 연령별/
+                      - strong [ref=f1e143]: 출생
+                      - text: 자녀수별
+                      - strong [ref=f1e144]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e145] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e146]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e147]:
+                    - link [ref=f1e148] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 연령별/
+                      - strong [ref=f1e149]: 출생
+                      - text: 자녀수별/총 출산기간별
+                      - strong [ref=f1e150]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e151] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e152]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e153]:
+                    - link [ref=f1e154] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 혼인상태별/
+                      - strong [ref=f1e155]: 출생
+                      - text: 자녀수별/총 출산기간별
+                      - strong [ref=f1e156]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e157] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e158]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e159]:
+                    - link [ref=f1e160] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 연령별/경제활동상태별/총 출산기간별
+                      - strong [ref=f1e161]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e162] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e163]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e164]:
+                    - link [ref=f1e165] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 직업별/
+                      - strong [ref=f1e166]: 출생
+                      - text: 자녀수별
+                      - strong [ref=f1e167]: 기혼여성
+                      - text: 인구(15세이상)-시군구
+                    - generic "새창열림" [ref=f1e168] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e169]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e170]:
+                    - link [ref=f1e171] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 연령별/교육정도별/총 출산기간별
+                      - strong [ref=f1e172]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e173] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e174]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e175]:
+                    - link [ref=f1e176] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 연령별/종사상지위별/총 출산기간별
+                      - strong [ref=f1e177]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e178] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e179]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e180]:
+                    - link [ref=f1e181] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 연령별/초혼연령별/총 출산기간별
+                      - strong [ref=f1e182]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e183] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e184]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e185]:
+                    - link [ref=f1e186] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 유배우
+                      - strong [ref=f1e187]: 여성
+                      - text: (15~49세)과 남편의 난임 경험 여부
+                    - generic "새창열림" [ref=f1e188] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e189]: 가족과출산조사
+                      - text: ",2015~2018"
+                  - listitem [ref=f1e190]:
+                    - link [ref=f1e191] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f1e192]: 기혼여성
+                      - text: (19~49세)
+                      - strong [ref=f1e193]: 출생
+                      - text: 아별 배우자의 출산휴가 및 육아휴직 여부
+                    - generic "새창열림" [ref=f1e194] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e195]: 가족과출산조사
+                      - text: ",2024~2024"
+                  - listitem [ref=f1e196]:
+                    - link [ref=f1e197] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f1e198]: 기혼여성
+                      - text: (19~49세)의
+                      - strong [ref=f1e199]: 출생
+                      - text: 아별 출산전후휴가 및 육아휴직 여부
+                    - generic "새창열림" [ref=f1e200] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e201]: 가족과출산조사
+                      - text: ",2024~2024"
+                  - listitem [ref=f1e202]:
+                    - link [ref=f1e203] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f1e204]: 기혼여성
+                      - text: (19~49세)의
+                      - strong [ref=f1e205]: 출생
+                      - text: 아의 월령별
+                      - strong [ref=f1e206]: 수
+                      - text: 유양상(중복응답)
+                    - generic "새창열림" [ref=f1e207] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e208]: 가족과출산조사
+                      - text: ",2024~2024"
+                  - listitem [ref=f1e209]:
+                    - link [ref=f1e210] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f1e211]: 기혼여성
+                      - text: (15~49세)의 임신 횟
+                      - strong [ref=f1e212]: 수
+                    - generic "새창열림" [ref=f1e213] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e214]: 가족과출산조사
+                      - text: ",2015~2018"
+                  - listitem [ref=f1e215]:
+                    - link [ref=f1e216] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f1e217]: 출생
+                      - text: 아별 출산전후휴가 및 육아휴직 여부
+                    - generic "새창열림" [ref=f1e218] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e219]: 가족과출산조사
+                      - text: ",2024~2024"
+                  - listitem [ref=f1e220]:
+                    - link [ref=f1e221] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 난임시술 경험 유배우
+                      - strong [ref=f1e222]: 여성
+                      - text: (15~49세)과 남편의 시술 중단 경험
+                    - generic "새창열림" [ref=f1e223] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e224]: 가족과출산조사
+                      - text: ",2015~2018"
+                  - listitem [ref=f1e225]:
+                    - link [ref=f1e226] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 경제활동상태별/
+                      - strong [ref=f1e227]: 출생
+                      - text: 자녀수별
+                      - strong [ref=f1e228]: 기혼여성
+                      - text: 인구(15세이상)-시군구
+                    - generic "새창열림" [ref=f1e229] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e230]: 인구총조사
+                      - text: ",2020~2020"
+                  - listitem [ref=f1e231]:
+                    - link [ref=f1e232] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f1e233]: 기혼여성
+                      - text: (15~49세)의 결혼 당시 계획 자녀
+                      - strong [ref=f1e234]: 수
+                      - text: 및
+                      - strong [ref=f1e235]: 출생
+                      - text: 아수
+                    - generic "새창열림" [ref=f1e236] [cursor=pointer]:
+                      - text: 한국보건사회연구원,
+                      - strong [ref=f1e237]: 가족과출산조사
+                      - text: ",2015~2018"
+                  - listitem [ref=f1e238]:
+                    - link [ref=f1e239] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 직업별/
+                      - strong [ref=f1e240]: 출생
+                      - text: 자녀수별
+                      - strong [ref=f1e241]: 기혼여성
+                      - text: 인구(15세이상)-시군구
+                    - generic "새창열림" [ref=f1e242] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e243]: 인구총조사
+                      - text: ",2015~2015"
+                  - listitem [ref=f1e244]:
+                    - link [ref=f1e245] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 혼인상태별/
+                      - strong [ref=f1e246]: 출생
+                      - text: 자녀수별/총 출산기간별
+                      - strong [ref=f1e247]: 기혼여성
+                      - text: 인구(15세이상)-시도
+                    - generic "새창열림" [ref=f1e248] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f1e249]: 인구총조사
+                      - text: ",2015~2015"
+                - generic [ref=f1e251]:
+                  - button "맨처음" [ref=f1e252] [cursor=pointer]
+                  - button "이전" [ref=f1e253] [cursor=pointer]
+                  - paragraph [ref=f1e254]:
+                    - link "1" [ref=f1e255] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "2" [ref=f1e256] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "3" [ref=f1e257] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "4" [ref=f1e258] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "5" [ref=f1e259] [cursor=pointer]:
+                      - /url: "#none"
+                  - button "다음" [ref=f1e260] [cursor=pointer]
+                  - button "맨끝" [ref=f1e261] [cursor=pointer]
+        - generic:
+          - list:
+            - listitem:
+              - link:
+                - /url: "#Quick3"
+            - listitem:
+              - link:
+                - /url: "#Quick4"
+        - img "코봇 아이콘" [ref=f1e263] [cursor=pointer]
+    - generic [ref=f1e265]:
+      - generic [ref=f1e266]:
+        - list [ref=f1e268]:
+          - listitem [ref=f1e269]:
+            - link "이용지침" [ref=f1e270] [cursor=pointer]:
+              - /url: /serviceInfo/useGuide.do;jsessionid=eSpkn9_e8bgi5B4eM_O8pG4o2qORfmYSI7fPBeWz.esvwas4_S41
+          - listitem [ref=f1e271]:
+            - link [ref=f1e272] [cursor=pointer]:
+              - /url: /serviceInfo/privacy_policy.do;jsessionid=eSpkn9_e8bgi5B4eM_O8pG4o2qORfmYSI7fPBeWz.esvwas4_S41
+              - strong [ref=f1e273]: 개인정보처리방침
+          - listitem [ref=f1e274]:
+            - link "이메일무단수집거부" [ref=f1e275] [cursor=pointer]:
+              - /url: /serviceInfo/emailCollectClause.do;jsessionid=eSpkn9_e8bgi5B4eM_O8pG4o2qORfmYSI7fPBeWz.esvwas4_S41
+          - listitem [ref=f1e276]:
+            - link "RSS" [ref=f1e277] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f1e278]:
+            - link "OpenAPI" [ref=f1e279] [cursor=pointer]:
+              - /url: /serviceInfo/openAPIGuide.do;jsessionid=eSpkn9_e8bgi5B4eM_O8pG4o2qORfmYSI7fPBeWz.esvwas4_S41
+          - listitem [ref=f1e280]:
+            - link "통계제공기관" [ref=f1e281] [cursor=pointer]:
+              - /url: "#"
+        - link [ref=f1e283] [cursor=pointer]:
+          - /url: /common/tech/gatePage.do;jsessionid=eSpkn9_e8bgi5B4eM_O8pG4o2qORfmYSI7fPBeWz.esvwas4_S41
+          - strong [ref=f1e284]: 관련사이트 바로가기
+      - generic [ref=f1e285]:
+        - generic [ref=f1e286]: (35208) 대전광역시 서구 청사로 189 (둔산동, 정부대전청사 3동) 콜센터 02-2012-9114 (국번없이 110)
+        - paragraph [ref=f1e287]: Copyright Ministry of Data and Statistics. All rights reserved.
+  - iframe [ref=f1e288]:
+    - generic [ref=f2e1]:
+      - generic:
+        - link "상단메뉴 바로가기" [ref=f2e2] [cursor=pointer]:
+          - /url: "#gnb"
+        - link "본문 바로가기" [ref=f2e3] [cursor=pointer]:
+          - /url: "#main_layout"
+      - generic [ref=f2e4]: 이 누리집은 대한민국 공식 전자정부 누리집입니다.
+      - generic [ref=f2e6]:
+        - list [ref=f2e8]:
+          - listitem [ref=f2e9]:
+            - generic [ref=f2e10]:
+              - paragraph [ref=f2e11]: 제13회 2026 국가승인통계활용 디지털콘텐츠 공모전2026.4.30.(목) ~ 7.12.(일)
+              - button "팝업보기" [ref=f2e12] [cursor=pointer]
+        - generic [ref=f2e14]:
+          - generic [ref=f2e15]:
+            - radio "하루 동안 열지않기" [ref=f2e16]
+            - text: 하루 동안 열지않기
+          - generic [ref=f2e17]:
+            - radio "다시 열지않기" [ref=f2e18]
+            - text: 다시 열지않기
+          - button "팝업닫기" [ref=f2e19] [cursor=pointer]
+      - generic [ref=f2e20]:
+        - generic [ref=f2e24]:
+          - heading [level=1] [ref=f2e25]:
+            - link [ref=f2e26] [cursor=pointer]:
+              - /url: /index/index.do
+              - img "KOSIS 국가통계포털- KOrean Statistical Information Service" [ref=f2e27]
+          - link "내가본통계표" [ref=f2e28] [cursor=pointer]:
+            - /url: "#Quick3"
+          - link "전체메뉴" [ref=f2e29] [cursor=pointer]:
+            - /url: "#none"
+        - generic [ref=f2e31]:
+          - generic [ref=f2e32]:
+            - generic [ref=f2e34]:
+              - generic [ref=f2e35]:
+                - textbox "통합검색" [disabled] [ref=f2e36]: 통계표
+                - button "분류선택" [ref=f2e37] [cursor=pointer]
+                - textbox "검색어를 입력해주세요" [ref=f2e38]:
+                  - /placeholder: 검색어를 입력해주세요.
+                  - text: 출생아수별 기혼여성
+                - button "자동완성 열기" [ref=f2e39] [cursor=pointer]
+                - button "검색" [ref=f2e40] [cursor=pointer]
+              - button "상세검색" [ref=f2e41] [cursor=pointer]
+              - checkbox "결과 내 재검색"
+              - generic [ref=f2e42]: 결과 내 재검색
+            - generic [ref=f2e43] [cursor=pointer]:
+              - term [ref=f2e44]:
+                - text: 인기검색어
+                - generic: (최근 한달간)
+              - definition [ref=f2e45]:
+                - button "인기검색어 더보기" [ref=f2e46]
+                - list [ref=f2e47]:
+                  - listitem "인구" [ref=f2e48]:
+                    - link "1 인구" [ref=f2e49]:
+                      - /url: "#"
+                      - generic [ref=f2e50]: "1"
+                      - text: 인구
+                  - listitem "범죄율" [ref=f2e51]:
+                    - link "2 범죄율" [ref=f2e52]:
+                      - /url: "#"
+                      - generic [ref=f2e53]: "2"
+                      - text: 범죄율
+                  - listitem "AI" [ref=f2e54]:
+                    - link "3 AI" [ref=f2e55]:
+                      - /url: "#"
+                      - generic [ref=f2e56]: "3"
+                      - text: AI
+                  - listitem "스마트폰" [ref=f2e57]:
+                    - link "4 스마트폰" [ref=f2e58]:
+                      - /url: "#"
+                      - generic [ref=f2e59]: "4"
+                      - text: 스마트폰
+                  - listitem "소비자물가지수" [ref=f2e60]:
+                    - link "5 소비자물가지수" [ref=f2e61]:
+                      - /url: "#"
+                      - generic [ref=f2e62]: "5"
+                      - text: 소비자물가지수
+                  - listitem "온라인쇼핑" [ref=f2e63]:
+                    - link "6 온라인쇼핑" [ref=f2e64]:
+                      - /url: "#"
+                      - generic [ref=f2e65]: "6"
+                      - text: 온라인쇼핑
+                  - listitem "노인인구" [ref=f2e66]:
+                    - link "7 노인인구" [ref=f2e67]:
+                      - /url: "#"
+                      - generic [ref=f2e68]: "7"
+                      - text: 노인인구
+                  - listitem "폐업" [ref=f2e69]:
+                    - link "8 폐업" [ref=f2e70]:
+                      - /url: "#"
+                      - generic [ref=f2e71]: "8"
+                      - text: 폐업
+                  - listitem "사망원인" [ref=f2e72]:
+                    - link "9 사망원인" [ref=f2e73]:
+                      - /url: "#"
+                      - generic [ref=f2e74]: "9"
+                      - text: 사망원인
+                  - listitem "청소년" [ref=f2e75]:
+                    - link "10 청소년" [ref=f2e76]:
+                      - /url: "#"
+                      - generic [ref=f2e77]: "10"
+                      - text: 청소년
+            - list [ref=f2e81]:
+              - listitem [ref=f2e82]:
+                - link "통합검색" [ref=f2e83] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e85]:
+                - link "통계표" [ref=f2e86] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e88]:
+                - link "통계시각화콘텐츠" [ref=f2e89] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e90]:
+                - link "통계분류" [ref=f2e91] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e93]:
+                - link "온라인간행물" [ref=f2e94] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e95]:
+                - link "통계설명자료" [ref=f2e96] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e97]:
+                - link "통계용어" [ref=f2e98] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=f2e99]:
+                - link "게시물" [ref=f2e100] [cursor=pointer]:
+                  - /url: javascript:void(0)
+          - generic [ref=f2e101]:
+            - generic [ref=f2e106]:
+              - paragraph [ref=f2e107]:
+                - generic [ref=f2e108]:
+                  - strong [ref=f2e109]: "\"출생아수별 기혼여성\""
+                  - text: 에 대한 검색결과는
+                  - strong [ref=f2e110]: 92건
+                  - text: 입니다.
+              - generic [ref=f2e111]:
+                - heading "통계표 92 건" [level=2] [ref=f2e113]
+                - list [ref=f2e114]:
+                  - listitem [ref=f2e115]:
+                    - link "국내통계" [ref=f2e116] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                  - listitem [ref=f2e117]:
+                    - link "e-지방지표" [ref=f2e118] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                  - listitem [ref=f2e119]:
+                    - link "국제통계" [ref=f2e120] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                  - listitem [ref=f2e121]:
+                    - link "북한통계" [ref=f2e122] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                  - listitem [ref=f2e123]:
+                    - link "국제지역통계" [ref=f2e124] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                - generic [ref=f2e126]:
+                  - combobox "정렬을 선택해주세요." [ref=f2e128]:
+                    - option "정확도순" [selected]
+                    - option "최신순"
+                  - combobox "리스트 갯수를 선택해주세요." [ref=f2e130]:
+                    - option "10개"
+                    - option "20개" [selected]
+                    - option "30개"
+                - generic [ref=f2e131]:
+                  - button "조건검색 열기" [ref=f2e132] [cursor=pointer]
+                  - generic [ref=f2e133]:
+                    - list [ref=f2e134]:
+                      - listitem [ref=f2e135]:
+                        - link [ref=f2e136] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 산업별/
+                          - strong [ref=f2e137]: 출생
+                          - text: 자녀수별
+                          - strong [ref=f2e138]: 기혼여성
+                          - text: 인구(15세이상)-시군구
+                        - generic "새창열림" [ref=f2e139] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e140]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e141]:
+                        - link [ref=f2e142] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 연령별/
+                          - strong [ref=f2e143]: 출생
+                          - text: 자녀수별
+                          - strong [ref=f2e144]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e145] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e146]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e147]:
+                        - link [ref=f2e148] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 연령별/
+                          - strong [ref=f2e149]: 출생
+                          - text: 자녀수별/총 출산기간별
+                          - strong [ref=f2e150]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e151] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e152]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e153]:
+                        - link [ref=f2e154] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 혼인상태별/
+                          - strong [ref=f2e155]: 출생
+                          - text: 자녀수별/총 출산기간별
+                          - strong [ref=f2e156]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e157] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e158]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e159]:
+                        - link [ref=f2e160] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 연령별/경제활동상태별/총 출산기간별
+                          - strong [ref=f2e161]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e162] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e163]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e164]:
+                        - link [ref=f2e165] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 직업별/
+                          - strong [ref=f2e166]: 출생
+                          - text: 자녀수별
+                          - strong [ref=f2e167]: 기혼여성
+                          - text: 인구(15세이상)-시군구
+                        - generic "새창열림" [ref=f2e168] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e169]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e170]:
+                        - link [ref=f2e171] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 연령별/교육정도별/총 출산기간별
+                          - strong [ref=f2e172]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e173] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e174]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e175]:
+                        - link [ref=f2e176] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 연령별/종사상지위별/총 출산기간별
+                          - strong [ref=f2e177]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e178] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e179]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e180]:
+                        - link [ref=f2e181] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 연령별/초혼연령별/총 출산기간별
+                          - strong [ref=f2e182]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e183] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e184]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e185]:
+                        - link [ref=f2e186] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 유배우
+                          - strong [ref=f2e187]: 여성
+                          - text: (15~49세)과 남편의 난임 경험 여부
+                        - generic "새창열림" [ref=f2e188] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e189]: 가족과출산조사
+                          - text: ",2015~2018"
+                      - listitem [ref=f2e190]:
+                        - link [ref=f2e191] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - strong [ref=f2e192]: 기혼여성
+                          - text: (19~49세)
+                          - strong [ref=f2e193]: 출생
+                          - text: 아별 배우자의 출산휴가 및 육아휴직 여부
+                        - generic "새창열림" [ref=f2e194] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e195]: 가족과출산조사
+                          - text: ",2024~2024"
+                      - listitem [ref=f2e196]:
+                        - link [ref=f2e197] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - strong [ref=f2e198]: 기혼여성
+                          - text: (19~49세)의
+                          - strong [ref=f2e199]: 출생
+                          - text: 아별 출산전후휴가 및 육아휴직 여부
+                        - generic "새창열림" [ref=f2e200] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e201]: 가족과출산조사
+                          - text: ",2024~2024"
+                      - listitem [ref=f2e202]:
+                        - link [ref=f2e203] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - strong [ref=f2e204]: 기혼여성
+                          - text: (19~49세)의
+                          - strong [ref=f2e205]: 출생
+                          - text: 아의 월령별
+                          - strong [ref=f2e206]: 수
+                          - text: 유양상(중복응답)
+                        - generic "새창열림" [ref=f2e207] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e208]: 가족과출산조사
+                          - text: ",2024~2024"
+                      - listitem [ref=f2e209]:
+                        - link [ref=f2e210] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - strong [ref=f2e211]: 기혼여성
+                          - text: (15~49세)의 임신 횟
+                          - strong [ref=f2e212]: 수
+                        - generic "새창열림" [ref=f2e213] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e214]: 가족과출산조사
+                          - text: ",2015~2018"
+                      - listitem [ref=f2e215]:
+                        - link [ref=f2e216] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - strong [ref=f2e217]: 출생
+                          - text: 아별 출산전후휴가 및 육아휴직 여부
+                        - generic "새창열림" [ref=f2e218] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e219]: 가족과출산조사
+                          - text: ",2024~2024"
+                      - listitem [ref=f2e220]:
+                        - link [ref=f2e221] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 난임시술 경험 유배우
+                          - strong [ref=f2e222]: 여성
+                          - text: (15~49세)과 남편의 시술 중단 경험
+                        - generic "새창열림" [ref=f2e223] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e224]: 가족과출산조사
+                          - text: ",2015~2018"
+                      - listitem [ref=f2e225]:
+                        - link [ref=f2e226] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 경제활동상태별/
+                          - strong [ref=f2e227]: 출생
+                          - text: 자녀수별
+                          - strong [ref=f2e228]: 기혼여성
+                          - text: 인구(15세이상)-시군구
+                        - generic "새창열림" [ref=f2e229] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e230]: 인구총조사
+                          - text: ",2020~2020"
+                      - listitem [ref=f2e231]:
+                        - link [ref=f2e232] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - strong [ref=f2e233]: 기혼여성
+                          - text: (15~49세)의 결혼 당시 계획 자녀
+                          - strong [ref=f2e234]: 수
+                          - text: 및
+                          - strong [ref=f2e235]: 출생
+                          - text: 아수
+                        - generic "새창열림" [ref=f2e236] [cursor=pointer]:
+                          - text: 한국보건사회연구원,
+                          - strong [ref=f2e237]: 가족과출산조사
+                          - text: ",2015~2018"
+                      - listitem [ref=f2e238]:
+                        - link [ref=f2e239] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 직업별/
+                          - strong [ref=f2e240]: 출생
+                          - text: 자녀수별
+                          - strong [ref=f2e241]: 기혼여성
+                          - text: 인구(15세이상)-시군구
+                        - generic "새창열림" [ref=f2e242] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e243]: 인구총조사
+                          - text: ",2015~2015"
+                      - listitem [ref=f2e244]:
+                        - link [ref=f2e245] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                          - text: 혼인상태별/
+                          - strong [ref=f2e246]: 출생
+                          - text: 자녀수별/총 출산기간별
+                          - strong [ref=f2e247]: 기혼여성
+                          - text: 인구(15세이상)-시도
+                        - generic "새창열림" [ref=f2e248] [cursor=pointer]:
+                          - text: 국가데이터처,
+                          - strong [ref=f2e249]: 인구총조사
+                          - text: ",2015~2015"
+                    - generic [ref=f2e251]:
+                      - button "맨처음" [ref=f2e252] [cursor=pointer]
+                      - button "이전" [ref=f2e253] [cursor=pointer]
+                      - paragraph [ref=f2e254]:
+                        - link "1" [ref=f2e255] [cursor=pointer]:
+                          - /url: "#none"
+                        - link "2" [ref=f2e256] [cursor=pointer]:
+                          - /url: "#none"
+                        - link "3" [ref=f2e257] [cursor=pointer]:
+                          - /url: "#none"
+                        - link "4" [ref=f2e258] [cursor=pointer]:
+                          - /url: "#none"
+                        - link "5" [ref=f2e259] [cursor=pointer]:
+                          - /url: "#none"
+                      - button "다음" [ref=f2e260] [cursor=pointer]
+                      - button "맨끝" [ref=f2e261] [cursor=pointer]
+            - generic:
+              - list:
+                - listitem:
+                  - link:
+                    - /url: "#Quick3"
+                - listitem:
+                  - link:
+                    - /url: "#Quick4"
+            - img "코봇 아이콘" [ref=f2e263] [cursor=pointer]
+        - generic [ref=f2e265]:
+          - generic [ref=f2e266]:
+            - list [ref=f2e268]:
+              - listitem [ref=f2e269]:
+                - link "이용지침" [ref=f2e270] [cursor=pointer]:
+                  - /url: /serviceInfo/useGuide.do
+              - listitem [ref=f2e271]:
+                - link [ref=f2e272] [cursor=pointer]:
+                  - /url: /serviceInfo/privacy_policy.do
+                  - strong [ref=f2e273]: 개인정보처리방침
+              - listitem [ref=f2e274]:
+                - link "이메일무단수집거부" [ref=f2e275] [cursor=pointer]:
+                  - /url: /serviceInfo/emailCollectClause.do
+              - listitem [ref=f2e276]:
+                - link "RSS" [ref=f2e277] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f2e278]:
+                - link "OpenAPI" [ref=f2e279] [cursor=pointer]:
+                  - /url: /serviceInfo/openAPIGuide.do
+              - listitem [ref=f2e280]:
+                - link "통계제공기관" [ref=f2e281] [cursor=pointer]:
+                  - /url: "#"
+            - link [ref=f2e283] [cursor=pointer]:
+              - /url: /common/tech/gatePage.do
+              - strong [ref=f2e284]: 관련사이트 바로가기
+          - generic [ref=f2e285]:
+            - generic [ref=f2e286]:
+              - text: (35208) 대전광역시 서구 청사로 189 (둔산동, 정부대전청사 3동)
+              - generic [ref=f2e287]: 콜센터 02-2012-9114 (국번없이 110)
+            - paragraph [ref=f2e288]: Copyright Ministry of Data and Statistics. All rights reserved.
+      - iframe [ref=f2e289]:
+        
+      - iframe [ref=f2e290]:
+        
+      - iframe [ref=f2e291]:
+        
+      - iframe [ref=f2e292]:
+        
+  - iframe [ref=f1e289]:
+    
+  - iframe [ref=f1e290]:
+    
+  - iframe [ref=f1e291]:
+    

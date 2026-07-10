@@ -1,0 +1,1215 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - link "상단메뉴 바로가기" [ref=e2] [cursor=pointer]:
+      - /url: "#gnb"
+    - link "본문 바로가기" [ref=e3] [cursor=pointer]:
+      - /url: "#content"
+  - generic [ref=e4]:
+    - generic [ref=e8]:
+      - heading [level=1] [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /eng/;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+          - img "KOSIS KOrean Statistical Information Service" [ref=e11]
+      - link "My History" [ref=e12] [cursor=pointer]:
+        - /url: "#Quick3"
+      - link "ALL MENU" [ref=e13] [cursor=pointer]:
+        - /url: "#"
+    - text: + + + +
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e20]:
+          - textbox "Search" [ref=e21]: https://kosis.kr/eng/;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+          - button "search" [ref=e22] [cursor=pointer]
+        - generic [ref=e25]:
+          - list [ref=e26]:
+            - listitem [ref=e27]:
+              - link "Search" [ref=e28] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - link "search Options" [ref=e29] [cursor=pointer]:
+            - /url: javascript:void(0)
+      - generic [ref=e30]:
+        - generic [ref=e34]:
+          - generic [ref=e36]:
+            - strong [ref=e37]: 3216;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+            - text: results for your search keyword.
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - heading "Select Statistics" [level=3] [ref=e40]
+              - button "enlarge" [ref=e41] [cursor=pointer]
+              - generic [ref=e42]:
+                - term [ref=e43]:
+                  - link "By Statistics Title" [ref=e44] [cursor=pointer]:
+                    - /url: "#"
+                - definition [ref=e45]:
+                  - list [ref=e46]:
+                    - listitem [ref=e47]:
+                      - generic "Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e48]:
+                        - checkbox "Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e49]
+                        - text: Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e50]:
+                      - generic "Housing Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e51]:
+                        - checkbox "Housing Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e52]
+                        - text: Housing Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e53]:
+                      - generic "Internal Migration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e54]:
+                        - checkbox "Internal Migration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e55]
+                        - text: Internal Migration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e56]:
+                      - generic "International Migration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e57]:
+                        - checkbox "International Migration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e58]
+                        - text: International Migration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e59]:
+                      - generic "Vital Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e60]:
+                        - checkbox "Vital Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e61]
+                        - text: Vital Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e62]:
+                      - generic "Household Projections;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e63]:
+                        - checkbox "Household Projections;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e64]
+                        - text: Household Projections;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e65]:
+                      - generic "Population Projections for Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e66]:
+                        - checkbox "Population Projections for Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e67]
+                        - text: Population Projections for Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e68]:
+                      - generic "Population Statistics Based on Resident Registration;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e69]:
+                        - checkbox "Population Statistics Based on Resident Registration;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e70]
+                        - text: Population Statistics Based on Resident Registration;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e71]:
+                      - generic "Statistics on Foreign Residents by the Local Governments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e72]:
+                        - checkbox "Statistics on Foreign Residents by the Local Governments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e73]
+                        - text: Statistics on Foreign Residents by the Local Governments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e74]:
+                      - generic "Statistics of Arrivals and Departures;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e75]:
+                        - checkbox "Statistics of Arrivals and Departures;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e76]
+                        - text: Statistics of Arrivals and Departures;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e77]:
+                      - generic "Demographic panel statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e78]:
+                        - checkbox "Demographic panel statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e79]
+                        - text: Demographic panel statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e80]:
+                      - generic "Social Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e81]:
+                        - checkbox "Social Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e82]
+                        - text: Social Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e83]:
+                      - generic "Time use survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e84]:
+                        - checkbox "Time use survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e85]
+                        - text: Time use survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e86]:
+                      - generic "newlyweds statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e87]:
+                        - checkbox "newlyweds statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e88]
+                        - text: newlyweds statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e89]:
+                      - generic "Youth Survey on Usage of Media and Harmful Environment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e90]:
+                        - checkbox "Youth Survey on Usage of Media and Harmful Environment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e91]
+                        - text: Youth Survey on Usage of Media and Harmful Environment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e92]:
+                      - generic "Comprehensive Survey on Youth;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e93]:
+                        - checkbox "Comprehensive Survey on Youth;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e94]
+                        - text: Comprehensive Survey on Youth;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e95]:
+                      - generic "social statistics by life class;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e96]:
+                        - checkbox "social statistics by life class;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e97]
+                        - text: social statistics by life class;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e98]:
+                      - generic "Traffic Accidents Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e99]:
+                        - checkbox "Traffic Accidents Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e100]
+                        - text: Traffic Accidents Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e101]:
+                      - generic "Analytical Statistics on Crime;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e102]:
+                        - checkbox "Analytical Statistics on Crime;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e103]
+                        - text: Analytical Statistics on Crime;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e104]:
+                      - generic "Statistics of Forest Fire;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e105]:
+                        - checkbox "Statistics of Forest Fire;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e106]
+                        - text: Statistics of Forest Fire;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e107]:
+                      - generic "Industrial Accident Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e108]:
+                        - checkbox "Industrial Accident Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e109]
+                        - text: Industrial Accident Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e110]:
+                      - generic "Table of Fire Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e111]:
+                        - checkbox "Table of Fire Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e112]
+                        - text: Table of Fire Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e113]:
+                      - generic "Economically Active Population Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e114]:
+                        - checkbox "Economically Active Population Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e115]
+                        - text: Economically Active Population Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e116]:
+                      - generic "Parental Leave Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e117]:
+                        - checkbox "Parental Leave Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e118]
+                        - text: Parental Leave Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e119]:
+                      - generic "Aged Employment Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e120]:
+                        - checkbox "Aged Employment Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e121]
+                        - text: Aged Employment Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e122]:
+                      - generic "Employment Position Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e123]:
+                        - checkbox "Employment Position Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e124]
+                        - text: Employment Position Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e125]:
+                      - generic "Labor Productivity Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e126]:
+                        - checkbox "Labor Productivity Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e127]
+                        - text: Labor Productivity Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e128]:
+                      - generic "Survey on the Status of Fixed-Term Workers in Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e129]:
+                        - checkbox "Survey on the Status of Fixed-Term Workers in Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e130]
+                        - text: Survey on the Status of Fixed-Term Workers in Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e131]:
+                      - generic "The Establishments Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e132]:
+                        - checkbox "The Establishments Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e133]
+                        - text: The Establishments Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e134]:
+                      - generic "Labor Force Survey at Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e135]:
+                        - checkbox "Labor Force Survey at Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e136]
+                        - text: Labor Force Survey at Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e137]:
+                      - generic "Report on the Industrial Accident Compensation Insurance;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e138]:
+                        - checkbox "Report on the Industrial Accident Compensation Insurance;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e139]
+                        - text: Report on the Industrial Accident Compensation Insurance;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e140]:
+                      - generic "Employment Positions of Wage Workers Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e141]:
+                        - checkbox "Employment Positions of Wage Workers Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e142]
+                        - text: Employment Positions of Wage Workers Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e143]:
+                      - generic "Survey on Immigrant’s Living Conditions and Labour Force;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e144]:
+                        - checkbox "Survey on Immigrant’s Living Conditions and Labour Force;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e145]
+                        - text: Survey on Immigrant’s Living Conditions and Labour Force;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e146]:
+                      - generic "Local Area Labour Force Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e147]:
+                        - checkbox "Local Area Labour Force Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e148]
+                        - text: Local Area Labour Force Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e149]:
+                      - generic "Survey of Household Finances and Living Conditions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e150]:
+                        - checkbox "Survey of Household Finances and Living Conditions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e151]
+                        - text: Survey of Household Finances and Living Conditions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e152]:
+                      - generic "Household Income and Expenditure Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e153]:
+                        - checkbox "Household Income and Expenditure Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e154]
+                        - text: Household Income and Expenditure Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e155]:
+                      - generic "Farm Household Economy Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e156]:
+                        - checkbox "Farm Household Economy Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e157]
+                        - text: Farm Household Economy Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e158]:
+                      - generic "Fishery Household Economy Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e159]:
+                        - checkbox "Fishery Household Economy Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e160]
+                        - text: Fishery Household Economy Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e161]:
+                      - generic "National Health Screening Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e162]:
+                        - checkbox "National Health Screening Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e163]
+                        - text: National Health Screening Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e164]:
+                      - generic "Main Surgery Statistical Yearbook;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e165]:
+                        - checkbox "Main Surgery Statistical Yearbook;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e166]
+                        - text: Main Surgery Statistical Yearbook;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e167]:
+                      - generic "National Health Insurance Statistical Yearbook;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e168]:
+                        - checkbox "National Health Insurance Statistical Yearbook;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e169]
+                        - text: National Health Insurance Statistical Yearbook;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e170]:
+                      - generic "Report on Actual Condition of Public Sanitary;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e171]:
+                        - checkbox "Report on Actual Condition of Public Sanitary;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e172]
+                        - text: Report on Actual Condition of Public Sanitary;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e173]:
+                      - generic "Korea National Health Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e174]:
+                        - checkbox "Korea National Health Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e175]
+                        - text: Korea National Health Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e176]:
+                      - generic "National Health Care Sources Statistical;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e177]:
+                        - checkbox "National Health Care Sources Statistical;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e178]
+                        - text: National Health Care Sources Statistical;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e179]:
+                      - generic "Facts about Health Centers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e180]:
+                        - checkbox "Facts about Health Centers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e181]
+                        - text: Facts about Health Centers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e182]:
+                      - generic "Causes of Death Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e183]:
+                        - checkbox "Causes of Death Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e184]
+                        - text: Causes of Death Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e185]:
+                      - generic "Life Tables By Province;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e186]:
+                        - checkbox "Life Tables By Province;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e187]
+                        - text: Life Tables By Province;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e188]:
+                      - generic "Production of Food Manufacturing and Processing Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e189]:
+                        - checkbox "Production of Food Manufacturing and Processing Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e190]
+                        - text: Production of Food Manufacturing and Processing Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e191]:
+                      - generic "Cancer Registration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e192]:
+                        - checkbox "Cancer Registration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e193]
+                        - text: Cancer Registration Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e194]:
+                      - generic "Evaluation of the Quality of Medical Benefits by Healthcare Institution;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e195]:
+                        - checkbox "Evaluation of the Quality of Medical Benefits by Healthcare Institution;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e196]
+                        - text: Evaluation of the Quality of Medical Benefits by Healthcare Institution;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e197]:
+                      - generic "Report on Health Care Services Utilization;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e198]:
+                        - checkbox "Report on Health Care Services Utilization;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e199]
+                        - text: Report on Health Care Services Utilization;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e200]:
+                      - generic "The statistics of pharmaceutical consumption and sales;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e201]:
+                        - checkbox "The statistics of pharmaceutical consumption and sales;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e202]
+                        - text: The statistics of pharmaceutical consumption and sales;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e203]:
+                      - generic "National Mental Health Survey of Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e204]:
+                        - checkbox "National Mental Health Survey of Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e205]
+                        - text: National Mental Health Survey of Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e206]:
+                      - generic "Medical Service Usage Statistics by Region;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e207]:
+                        - checkbox "Medical Service Usage Statistics by Region;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e208]
+                        - text: Medical Service Usage Statistics by Region;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e209]:
+                      - generic "Students Health Examination Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e210]:
+                        - checkbox "Students Health Examination Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e211]
+                        - text: Students Health Examination Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e212]:
+                      - generic "Classified report on protection child in home atmosphere;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e213]:
+                        - checkbox "Classified report on protection child in home atmosphere;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e214]
+                        - text: Classified report on protection child in home atmosphere;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e215]:
+                      - generic "Livelihood Protection Recipients Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e216]:
+                        - checkbox "Livelihood Protection Recipients Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e217]
+                        - text: Livelihood Protection Recipients Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e218]:
+                      - generic "Report on the Elderly and Employees at Welfare Facilities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e219]:
+                        - checkbox "Report on the Elderly and Employees at Welfare Facilities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e220]
+                        - text: Report on the Elderly and Employees at Welfare Facilities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e221]:
+                      - generic "The Survey on the Actual Conditions of Older Person in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e222]:
+                        - checkbox "The Survey on the Actual Conditions of Older Person in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e223]
+                        - text: The Survey on the Actual Conditions of Older Person in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e224]:
+                      - generic "Long Term Care Insurance Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e225]:
+                        - checkbox "Long Term Care Insurance Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e226]
+                        - text: Long Term Care Insurance Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e227]:
+                      - generic "Report on Children Requiring Protection;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e228]:
+                        - checkbox "Report on Children Requiring Protection;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e229]
+                        - text: Report on Children Requiring Protection;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e230]:
+                      - generic "Statistics of Social Welfare Volunteers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e231]:
+                        - checkbox "Statistics of Social Welfare Volunteers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e232]
+                        - text: Statistics of Social Welfare Volunteers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e233]:
+                      - generic "Report on Children and Employees at Welfare Facilities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e234]:
+                        - checkbox "Report on Children and Employees at Welfare Facilities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e235]
+                        - text: Report on Children and Employees at Welfare Facilities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e236]:
+                      - generic "Statistics on Childcare Facilities and Users;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e237]:
+                        - checkbox "Statistics on Childcare Facilities and Users;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e238]
+                        - text: Statistics on Childcare Facilities and Users;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e239]:
+                      - generic "National survey of the Disabled Persons;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e240]:
+                        - checkbox "National survey of the Disabled Persons;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e241]
+                        - text: National survey of the Disabled Persons;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e242]:
+                      - generic "Registered Disabled Persons;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e243]:
+                        - checkbox "Registered Disabled Persons;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e244]
+                        - text: Registered Disabled Persons;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e245]:
+                      - generic "Pension Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e246]:
+                        - checkbox "Pension Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e247]
+                        - text: Pension Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e248]:
+                      - generic "Social Expenditure in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e249]:
+                        - checkbox "Social Expenditure in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e250]
+                        - text: Social Expenditure in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e251]:
+                      - generic "Statistics of Education;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e252]:
+                        - checkbox "Statistics of Education;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e253]
+                        - text: Statistics of Education;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e254]:
+                      - generic "Private Education Expenditures Survey of Elementary, Middle and High School Students;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e255]:
+                        - checkbox "Private Education Expenditures Survey of Elementary, Middle and High School Students;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e256]
+                        - text: Private Education Expenditures Survey of Elementary, Middle and High School Students;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e257]:
+                      - generic "Statistics of Lifelong Education;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e258]:
+                        - checkbox "Statistics of Lifelong Education;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e259]
+                        - text: Statistics of Lifelong Education;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e260]:
+                      - generic "Korean Adult Lifelong Learning Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e261]:
+                        - checkbox "Korean Adult Lifelong Learning Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e262]
+                        - text: Korean Adult Lifelong Learning Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e263]:
+                      - generic "Korea Heritage Management Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e264]:
+                        - checkbox "Korea Heritage Management Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e265]
+                        - text: Korea Heritage Management Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e266]:
+                      - generic "Foreign Visitors Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e267]:
+                        - checkbox "Foreign Visitors Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e268]
+                        - text: Foreign Visitors Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e269]:
+                      - generic "Library Statistics in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e270]:
+                        - checkbox "Library Statistics in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e271]
+                        - text: Library Statistics in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e272]:
+                      - generic "Korean Tourism Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e273]:
+                        - checkbox "Korean Tourism Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e274]
+                        - text: Korean Tourism Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e275]:
+                      - generic "Transaction-basd Price Indices;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e276]:
+                        - checkbox "Transaction-basd Price Indices;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e277]
+                        - text: Transaction-basd Price Indices;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e278]:
+                      - generic "Unsold New Housings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e279]:
+                        - checkbox "Unsold New Housings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e280]
+                        - text: Unsold New Housings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e281]:
+                      - generic "Rental Housing Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e282]:
+                        - checkbox "Rental Housing Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e283]
+                        - text: Rental Housing Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e284]:
+                      - generic "National Housing Price Trend Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e285]:
+                        - checkbox "National Housing Price Trend Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e286]
+                        - text: National Housing Price Trend Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e287]:
+                      - generic "Korea Housing Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e288]:
+                        - checkbox "Korea Housing Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e289]
+                        - text: Korea Housing Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e290]:
+                      - generic "Statistics of Housing Construction;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e291]:
+                        - checkbox "Statistics of Housing Construction;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e292]
+                        - text: Statistics of Housing Construction;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e293]:
+                      - generic "Housing Supply Ratio;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e294]:
+                        - checkbox "Housing Supply Ratio;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e295]
+                        - text: Housing Supply Ratio;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e296]:
+                      - generic "Statistics of House Ownership;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e297]:
+                        - checkbox "Statistics of House Ownership;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e298]
+                        - text: Statistics of House Ownership;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e299]:
+                      - generic "National Geographic Information Statistics List;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e300]:
+                        - checkbox "National Geographic Information Statistics List;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e301]
+                        - text: National Geographic Information Statistics List;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e302]:
+                      - generic "Current Status of Landholdings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e303]:
+                        - checkbox "Current Status of Landholdings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e304]
+                        - text: Current Status of Landholdings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e305]:
+                      - generic "Land Price Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e306]:
+                        - checkbox "Land Price Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e307]
+                        - text: Land Price Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e308]:
+                      - generic "Cadastral Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e309]:
+                        - checkbox "Cadastral Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e310]
+                        - text: Cadastral Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e311]:
+                      - generic "Composite Economic Indexes;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e312]:
+                        - checkbox "Composite Economic Indexes;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e313]
+                        - text: Composite Economic Indexes;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e314]:
+                      - generic "Economic Sentiment Index(ESI);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e315]:
+                        - checkbox "Economic Sentiment Index(ESI);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e316]
+                        - text: Economic Sentiment Index(ESI);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e317]:
+                      - generic "Economic census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e318]:
+                        - checkbox "Economic census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e319]
+                        - text: Economic census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e320]:
+                      - generic "Business Survey Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e321]:
+                        - checkbox "Business Survey Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e322]
+                        - text: Business Survey Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e323]:
+                      - generic "Monthly Estimated Index of Equipment Investment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e324]:
+                        - checkbox "Monthly Estimated Index of Equipment Investment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e325]
+                        - text: Monthly Estimated Index of Equipment Investment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e326]:
+                      - generic "Consumer Survey Index(CSI);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e327]:
+                        - checkbox "Consumer Survey Index(CSI);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e328]
+                        - text: Consumer Survey Index(CSI);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e329]:
+                      - generic "Business Survey on Micro-Sized Establishment and Traditional Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e330]:
+                        - checkbox "Business Survey on Micro-Sized Establishment and Traditional Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e331]
+                        - text: Business Survey on Micro-Sized Establishment and Traditional Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e332]:
+                      - generic "Index of all Industry Production;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e333]:
+                        - checkbox "Index of all Industry Production;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e334]
+                        - text: Index of all Industry Production;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e335]:
+                      - generic "Survey on Forecast for Small and Medium Business;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e336]:
+                        - checkbox "Survey on Forecast for Small and Medium Business;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e337]
+                        - text: Survey on Forecast for Small and Medium Business;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e338]:
+                      - generic "Financial Statement Analysis;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e339]:
+                        - checkbox "Financial Statement Analysis;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e340]
+                        - text: Financial Statement Analysis;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e341]:
+                      - generic "Business Demography Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e342]:
+                        - checkbox "Business Demography Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e343]
+                        - text: Business Demography Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e344]:
+                      - generic "Survey of Business Activities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e345]:
+                        - checkbox "Survey of Business Activities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e346]
+                        - text: Survey of Business Activities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e347]:
+                      - generic "micro-enterprises statistics survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e348]:
+                        - checkbox "micro-enterprises statistics survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e349]
+                        - text: micro-enterprises statistics survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e350]:
+                      - generic "Census on Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e351]:
+                        - checkbox "Census on Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e352]
+                        - text: Census on Establishments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e353]:
+                      - generic "Survey on Actual States of SMEs(Small and Medium-sized Enterprises);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e354]:
+                        - checkbox "Survey on Actual States of SMEs(Small and Medium-sized Enterprises);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e355]
+                        - text: Survey on Actual States of SMEs(Small and Medium-sized Enterprises);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e356]:
+                      - generic "Livestock Statistics Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e357]:
+                        - checkbox "Livestock Statistics Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e358]
+                        - text: Livestock Statistics Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e359]:
+                      - generic "Statistics of Returned Farmers & Fishermen and Migrators to Rural Regions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e360]:
+                        - checkbox "Statistics of Returned Farmers & Fishermen and Migrators to Rural Regions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e361]
+                        - text: Statistics of Returned Farmers & Fishermen and Migrators to Rural Regions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e362]:
+                      - generic "Agriculture, Forestry and Fishery Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e363]:
+                        - checkbox "Agriculture, Forestry and Fishery Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e364]
+                        - text: Agriculture, Forestry and Fishery Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e365]:
+                      - generic "Fisheries Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e366]:
+                        - checkbox "Fisheries Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e367]
+                        - text: Fisheries Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e368]:
+                      - generic "Census of Agriculture, Forestry and Fisheries;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e369]:
+                        - checkbox "Census of Agriculture, Forestry and Fisheries;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e370]
+                        - text: Census of Agriculture, Forestry and Fisheries;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e371]:
+                      - generic "Agricultural Area Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e372]:
+                        - checkbox "Agricultural Area Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e373]
+                        - text: Agricultural Area Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e374]:
+                      - generic "Agriculture Corporation Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e375]:
+                        - checkbox "Agriculture Corporation Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e376]
+                        - text: Agriculture Corporation Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e377]:
+                      - generic "Crop Production Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e378]:
+                        - checkbox "Crop Production Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e379]
+                        - text: Crop Production Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e380]:
+                      - generic "Agricultural and Livestock Production Cost Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e381]:
+                        - checkbox "Agricultural and Livestock Production Cost Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e382]
+                        - text: Agricultural and Livestock Production Cost Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e383]:
+                      - generic "Assorted Feed Products and Ingredient Usage Report;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e384]:
+                        - checkbox "Assorted Feed Products and Ingredient Usage Report;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e385]
+                        - text: Assorted Feed Products and Ingredient Usage Report;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e386]:
+                      - generic "North Korean rice cultivation area survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e387]:
+                        - checkbox "North Korean rice cultivation area survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e388]
+                        - text: North Korean rice cultivation area survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e389]:
+                      - generic "Food Grain Consumption Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e390]:
+                        - checkbox "Food Grain Consumption Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e391]
+                        - text: Food Grain Consumption Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e392]:
+                      - generic "production and consumption of milk and milk products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e393]:
+                        - checkbox "production and consumption of milk and milk products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e394]
+                        - text: production and consumption of milk and milk products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e395]:
+                      - generic "Production of Forest Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e396]:
+                        - checkbox "Production of Forest Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e397]
+                        - text: Production of Forest Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e398]:
+                      - generic "Special Crop Production Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e399]:
+                        - checkbox "Special Crop Production Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e400]
+                        - text: Special Crop Production Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e401]:
+                      - generic "Survey on Fishery Processing Industry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e402]:
+                        - checkbox "Survey on Fishery Processing Industry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e403]
+                        - text: Survey on Fishery Processing Industry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e404]:
+                      - generic "Statistics of Inspection of Imports and Exports of Fisheries Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e405]:
+                        - checkbox "Statistics of Inspection of Imports and Exports of Fisheries Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e406]
+                        - text: Statistics of Inspection of Imports and Exports of Fisheries Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e407]:
+                      - generic "Status of Fish Culture;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e408]:
+                        - checkbox "Status of Fish Culture;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e409]
+                        - text: Status of Fish Culture;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e410]:
+                      - generic "Fishery Production Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e411]:
+                        - checkbox "Fishery Production Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e412]
+                        - text: Fishery Production Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e413]:
+                      - generic "Mining and Manufacturing Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e414]:
+                        - checkbox "Mining and Manufacturing Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e415]
+                        - text: Mining and Manufacturing Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e416]:
+                      - generic "Monthly Survey of Mining and Manufacturing;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e417]:
+                        - checkbox "Monthly Survey of Mining and Manufacturing;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e418]
+                        - text: Monthly Survey of Mining and Manufacturing;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e419]:
+                      - generic "Monthly Survey of Machinery Orders Received;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e420]:
+                        - checkbox "Monthly Survey of Machinery Orders Received;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e421]
+                        - text: Monthly Survey of Machinery Orders Received;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e422]:
+                      - generic "Korea Industrial Complexes Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e423]:
+                        - checkbox "Korea Industrial Complexes Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e424]
+                        - text: Korea Industrial Complexes Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e425]:
+                      - generic "Industrial Statistics & Analysis;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e426]:
+                        - checkbox "Industrial Statistics & Analysis;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e427]
+                        - text: Industrial Statistics & Analysis;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e428]:
+                      - generic "Manufacturing Domestic Supply Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e429]:
+                        - checkbox "Manufacturing Domestic Supply Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e430]
+                        - text: Manufacturing Domestic Supply Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e431]:
+                      - generic "Steel Statistics Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e432]:
+                        - checkbox "Steel Statistics Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e433]
+                        - text: Steel Statistics Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e434]:
+                      - generic "Monthly Survey of Construction Orders Received and Value of Construction Completed;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e435]:
+                        - checkbox "Monthly Survey of Construction Orders Received and Value of Construction Completed;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e436]
+                        - text: Monthly Survey of Construction Orders Received and Value of Construction Completed;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e437]:
+                      - generic "Construction Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e438]:
+                        - checkbox "Construction Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e439]
+                        - text: Construction Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e440]:
+                      - generic "Statistics of Buildings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e441]:
+                        - checkbox "Statistics of Buildings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e442]
+                        - text: Statistics of Buildings;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e443]:
+                      - generic "Statistics on Building Permission, Commencement and Completion Works;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e444]:
+                        - checkbox "Statistics on Building Permission, Commencement and Completion Works;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e445]
+                        - text: Statistics on Building Permission, Commencement and Completion Works;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e446]:
+                      - generic "Trends for Construction Contracts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e447]:
+                        - checkbox "Trends for Construction Contracts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e448]
+                        - text: Trends for Construction Contracts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e449]:
+                      - generic "Statistics of Urban Plan;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e450]:
+                        - checkbox "Statistics of Urban Plan;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e451]
+                        - text: Statistics of Urban Plan;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e452]:
+                      - generic "Performance of Transport;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e453]:
+                        - checkbox "Performance of Transport;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e454]
+                        - text: Performance of Transport;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e455]:
+                      - generic "National Traffic Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e456]:
+                        - checkbox "National Traffic Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e457]
+                        - text: National Traffic Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e458]:
+                      - generic "Yearbook of Road Bridge and Tunnel Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e459]:
+                        - checkbox "Yearbook of Road Bridge and Tunnel Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e460]
+                        - text: Yearbook of Road Bridge and Tunnel Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e461]:
+                      - generic "Traffic Volume Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e462]:
+                        - checkbox "Traffic Volume Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e463]
+                        - text: Traffic Volume Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e464]:
+                      - generic "Road Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e465]:
+                        - checkbox "Road Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e466]
+                        - text: Road Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e467]:
+                      - generic "Number of Registered Vessels;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e468]:
+                        - checkbox "Number of Registered Vessels;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e469]
+                        - text: Number of Registered Vessels;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e470]:
+                      - generic "Transportation Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e471]:
+                        - checkbox "Transportation Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e472]
+                        - text: Transportation Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e473]:
+                      - generic "Producing Situation of Drivers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e474]:
+                        - checkbox "Producing Situation of Drivers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e475]
+                        - text: Producing Situation of Drivers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e476]:
+                      - generic "Total Registered Moter Vehicles;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e477]:
+                        - checkbox "Total Registered Moter Vehicles;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e478]
+                        - text: Total Registered Moter Vehicles;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e479]:
+                      - generic "Statistical of Korea Railroad;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e480]:
+                        - checkbox "Statistical of Korea Railroad;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e481]
+                        - text: Statistical of Korea Railroad;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e482]:
+                      - generic "Aviation Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e483]:
+                        - checkbox "Aviation Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e484]
+                        - text: Aviation Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e485]:
+                      - generic "Cargo handling result at seaports;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e486]:
+                        - checkbox "Cargo handling result at seaports;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e487]
+                        - text: Cargo handling result at seaports;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e488]:
+                      - generic "Audience Behavior Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e489]:
+                        - checkbox "Audience Behavior Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e490]
+                        - text: Audience Behavior Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e491]:
+                      - generic "Postal statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e492]:
+                        - checkbox "Postal statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e493]
+                        - text: Postal statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e494]:
+                      - generic "The statistics of Internet Address Resources in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e495]:
+                        - checkbox "The statistics of Internet Address Resources in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e496]
+                        - text: The statistics of Internet Address Resources in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e497]:
+                      - generic "Survey on the Internet Usage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e498]:
+                        - checkbox "Survey on the Internet Usage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e499]
+                        - text: Survey on the Internet Usage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e500]:
+                      - generic "Enterprise Informatization Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e501]:
+                        - checkbox "Enterprise Informatization Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e502]
+                        - text: Enterprise Informatization Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e503]:
+                      - generic "Report on Survey of Domestic Bio-Industry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e504]:
+                        - checkbox "Report on Survey of Domestic Bio-Industry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e505]
+                        - text: Report on Survey of Domestic Bio-Industry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e506]:
+                      - generic "Intellectual Property Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e507]:
+                        - checkbox "Intellectual Property Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e508]
+                        - text: Intellectual Property Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e509]:
+                      - generic "Monthly Service Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e510]:
+                        - checkbox "Monthly Service Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e511]
+                        - text: Monthly Service Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e512]:
+                      - generic "The Service Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e513]:
+                        - checkbox "The Service Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e514]
+                        - text: The Service Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e515]:
+                      - generic "Wholesale and Retail Trade Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e516]:
+                        - checkbox "Wholesale and Retail Trade Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e517]
+                        - text: Wholesale and Retail Trade Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e518]:
+                      - generic "Monthly Online Shopping Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e519]:
+                        - checkbox "Monthly Online Shopping Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e520]
+                        - text: Monthly Online Shopping Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e521]:
+                      - generic "Statistics of Traditional Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e522]:
+                        - checkbox "Statistics of Traditional Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e523]
+                        - text: Statistics of Traditional Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e524]:
+                      - generic "Franchise Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e525]:
+                        - checkbox "Franchise Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e526]
+                        - text: Franchise Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e527]:
+                      - generic "Construction Labor Wages Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e528]:
+                        - checkbox "Construction Labor Wages Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e529]
+                        - text: Construction Labor Wages Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e530]:
+                      - generic "Labor Cost of Enterprise Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e531]:
+                        - checkbox "Labor Cost of Enterprise Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e532]
+                        - text: Labor Cost of Enterprise Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e533]:
+                      - generic "Survey on Wage Bargaining Settlement;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e534]:
+                        - checkbox "Survey on Wage Bargaining Settlement;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e535]
+                        - text: Survey on Wage Bargaining Settlement;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e536]:
+                      - generic "Survey on Wages by occupation of SMEs;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e537]:
+                        - checkbox "Survey on Wages by occupation of SMEs;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e538]
+                        - text: Survey on Wages by occupation of SMEs;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e539]:
+                      - generic "Price Index of Commodities Received and Paid by Farmers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e540]:
+                        - checkbox "Price Index of Commodities Received and Paid by Farmers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e541]
+                        - text: Price Index of Commodities Received and Paid by Farmers;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e542]:
+                      - generic "The Survey of Rice Price in producing district;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e543]:
+                        - checkbox "The Survey of Rice Price in producing district;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e544]
+                        - text: The Survey of Rice Price in producing district;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e545]:
+                      - generic "Producer Price Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e546]:
+                        - checkbox "Producer Price Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e547]
+                        - text: Producer Price Index;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e548]:
+                      - generic "Domestic Prices of Petroleum Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e549]:
+                        - checkbox "Domestic Prices of Petroleum Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e550]
+                        - text: Domestic Prices of Petroleum Products;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e551]:
+                      - generic "Consumer Price Survey (Index);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e552]:
+                        - checkbox "Consumer Price Survey (Index);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e553]
+                        - text: Consumer Price Survey (Index);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e554]:
+                      - generic "Export/Import Price Indexes;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e555]:
+                        - checkbox "Export/Import Price Indexes;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e556]
+                        - text: Export/Import Price Indexes;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e557]:
+                      - generic "Household Production Satellite Account;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e558]:
+                        - checkbox "Household Production Satellite Account;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e559]
+                        - text: Household Production Satellite Account;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e560]:
+                      - generic "National Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e561]:
+                        - checkbox "National Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e562]
+                        - text: National Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e563]:
+                      - generic "National balance sheets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e564]:
+                        - checkbox "National balance sheets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e565]
+                        - text: National balance sheets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e566]:
+                      - generic "National Transfer Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e567]:
+                        - checkbox "National Transfer Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e568]
+                        - text: National Transfer Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e569]:
+                      - generic "National Time Transfer Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e570]:
+                        - checkbox "National Time Transfer Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e571]
+                        - text: National Time Transfer Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e572]:
+                      - generic "Flow of Funds;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e573]:
+                        - checkbox "Flow of Funds;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e574]
+                        - text: Flow of Funds;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e575]:
+                      - generic "Regional Income;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e576]:
+                        - checkbox "Regional Income;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e577]
+                        - text: Regional Income;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e578]:
+                      - generic "Government Debt;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e579]:
+                        - checkbox "Government Debt;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e580]
+                        - text: Government Debt;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e581]:
+                      - generic "National Tax Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e582]:
+                        - checkbox "National Tax Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e583]
+                        - text: National Tax Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e584]:
+                      - generic "Statistical Yearbook of Local Tax;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e585]:
+                        - checkbox "Statistical Yearbook of Local Tax;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e586]
+                        - text: Statistical Yearbook of Local Tax;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e587]:
+                      - generic "Statistics of Local Civil Servants;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e588]:
+                        - checkbox "Statistics of Local Civil Servants;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e589]
+                        - text: Statistics of Local Civil Servants;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e590]:
+                      - generic "Consolidated Fiscal Balance(Central government);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e591]:
+                        - checkbox "Consolidated Fiscal Balance(Central government);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e592]
+                        - text: Consolidated Fiscal Balance(Central government);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e593]:
+                      - generic "Statistical manpower and budget survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e594]:
+                        - checkbox "Statistical manpower and budget survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e595]
+                        - text: Statistical manpower and budget survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e596]:
+                      - generic "Loan Officer Survey on Financial Institation Lending;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e597]:
+                        - checkbox "Loan Officer Survey on Financial Institation Lending;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e598]
+                        - text: Loan Officer Survey on Financial Institation Lending;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e599]:
+                      - generic "Statistics of Securities and Derivatives Markets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e600]:
+                        - checkbox "Statistics of Securities and Derivatives Markets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e601]
+                        - text: Statistics of Securities and Derivatives Markets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e602]:
+                      - generic "Payment and Settlement Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e603]:
+                        - checkbox "Payment and Settlement Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e604]
+                        - text: Payment and Settlement Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e605]:
+                      - generic "Money and Banking Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e606]:
+                        - checkbox "Money and Banking Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e607]
+                        - text: Money and Banking Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e608]:
+                      - generic "Foreign Trade Statistics by SITC;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e609]:
+                        - checkbox "Foreign Trade Statistics by SITC;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e610]
+                        - text: Foreign Trade Statistics by SITC;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e611]:
+                      - generic "Balance of payments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e612]:
+                        - checkbox "Balance of payments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e613]
+                        - text: Balance of payments;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e614]:
+                      - generic "International Investment Position;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e615]:
+                        - checkbox "International Investment Position;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e616]
+                        - text: International Investment Position;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e617]:
+                      - generic "Trade by Enterprise Characteristics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e618]:
+                        - checkbox "Trade by Enterprise Characteristics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e619]
+                        - text: Trade by Enterprise Characteristics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e620]:
+                      - generic "Gross External Debt and Assets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e621]:
+                        - checkbox "Gross External Debt and Assets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e622]
+                        - text: Gross External Debt and Assets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e623]:
+                      - generic "Trade statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e624]:
+                        - checkbox "Trade statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e625]
+                        - text: Trade statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e626]:
+                      - generic "Foreign Direct Investment Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e627]:
+                        - checkbox "Foreign Direct Investment Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e628]
+                        - text: Foreign Direct Investment Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e629]:
+                      - generic "SMEs Export Trends;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e630]:
+                        - checkbox "SMEs Export Trends;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e631]
+                        - text: SMEs Export Trends;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e632]:
+                      - generic "National waste generation and treatment status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e633]:
+                        - checkbox "National waste generation and treatment status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e634]
+                        - text: National waste generation and treatment status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e635]:
+                      - generic "National Greenhouse gas Inventory;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e636]:
+                        - checkbox "National Greenhouse gas Inventory;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e637]
+                        - text: National Greenhouse gas Inventory;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e638]:
+                      - generic "Korea National Environmental Health Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e639]:
+                        - checkbox "Korea National Environmental Health Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e640]
+                        - text: Korea National Environmental Health Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e641]:
+                      - generic "Status and trends of air quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e642]:
+                        - checkbox "Status and trends of air quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e643]
+                        - text: Status and trends of air quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e644]:
+                      - generic "Statistics of Waterworks;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e645]:
+                        - checkbox "Statistics of Waterworks;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e646]
+                        - text: Statistics of Waterworks;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e647]:
+                      - generic "Result of Monitoring on Water Quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e648]:
+                        - checkbox "Result of Monitoring on Water Quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e649]
+                        - text: Result of Monitoring on Water Quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e650]:
+                      - generic "Status of Volume based waste fee System;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e651]:
+                        - checkbox "Status of Volume based waste fee System;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e652]
+                        - text: Status of Volume based waste fee System;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e653]:
+                      - generic "Air pollutant emissions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e654]:
+                        - checkbox "Air pollutant emissions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e655]
+                        - text: Air pollutant emissions;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e656]:
+                      - generic "Major Cities Noise Level;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e657]:
+                        - checkbox "Major Cities Noise Level;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e658]
+                        - text: Major Cities Noise Level;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e659]:
+                      - generic "Result of Soil Quality and Contamination Monitoring;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e660]:
+                        - checkbox "Result of Soil Quality and Contamination Monitoring;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e661]
+                        - text: Result of Soil Quality and Contamination Monitoring;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e662]:
+                      - generic "The status of waste recycling and recycling companies;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e663]:
+                        - checkbox "The status of waste recycling and recycling companies;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e664]
+                        - text: The status of waste recycling and recycling companies;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e665]:
+                      - generic "Statistics of Sewerage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e666]:
+                        - checkbox "Statistics of Sewerage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e667]
+                        - text: Statistics of Sewerage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e668]:
+                      - generic "Seawater Quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e669]:
+                        - checkbox "Seawater Quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e670]
+                        - text: Seawater Quality;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e671]:
+                      - generic "Status of Order Performance in Specialized Environmental Construction Business;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e672]:
+                        - checkbox "Status of Order Performance in Specialized Environmental Construction Business;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e673]
+                        - text: Status of Order Performance in Specialized Environmental Construction Business;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e674]:
+                      - generic "Statistics of Generation Facilities in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e675]:
+                        - checkbox "Statistics of Generation Facilities in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e676]
+                        - text: Statistics of Generation Facilities in Korea;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e677]:
+                      - generic "Oil Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e678]:
+                        - checkbox "Oil Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e679]
+                        - text: Oil Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e680]:
+                      - generic "Survey on deployment of New & Renewable energy;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e681]:
+                        - checkbox "Survey on deployment of New & Renewable energy;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e682]
+                        - text: Survey on deployment of New & Renewable energy;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e683]:
+                      - generic "Energy supply and demand statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e684]:
+                        - checkbox "Energy supply and demand statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e685]
+                        - text: Energy supply and demand statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e686]:
+                      - generic "New and Renewable Energy Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e687]:
+                        - checkbox "New and Renewable Energy Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e688]
+                        - text: New and Renewable Energy Industry Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e689]:
+                      - generic "Tuberculosis Patient Notification Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e690]:
+                        - checkbox "Tuberculosis Patient Notification Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e691]
+                        - text: Tuberculosis Patient Notification Status;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e692]:
+                      - generic "Korea National Health and Nutrition Examination Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e693]:
+                        - checkbox "Korea National Health and Nutrition Examination Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e694]
+                        - text: Korea National Health and Nutrition Examination Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e695]:
+                      - generic "Notifiable Infectious Diseases Report;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e696]:
+                        - checkbox "Notifiable Infectious Diseases Report;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e697]
+                        - text: Notifiable Infectious Diseases Report;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e698]:
+                      - generic "Community Health Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e699]:
+                        - checkbox "Community Health Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e700]
+                        - text: Community Health Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e701]:
+                      - generic "Korea Youth Risk Behavior Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e702]:
+                        - checkbox "Korea Youth Risk Behavior Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e703]
+                        - text: Korea Youth Risk Behavior Survey;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e704]:
+                      - generic "Vehicle Kilometer Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e705]:
+                        - checkbox "Vehicle Kilometer Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e706]
+                        - text: Vehicle Kilometer Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e707]:
+                      - 'generic "Survey on Construction Management Engineer`s Wage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e708]':
+                        - 'checkbox "Survey on Construction Management Engineer`s Wage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e709]'
+                        - text: "Survey on Construction Management Engineer`s Wage;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11"
+                    - listitem [ref=e710]:
+                      - generic "Statistics of Meteorological Observation;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e711]:
+                        - checkbox "Statistics of Meteorological Observation;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e712]
+                        - text: Statistics of Meteorological Observation;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+                    - listitem [ref=e713]:
+                      - generic "Statistics of Global Atmosphere Watch;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e714]:
+                        - checkbox "Statistics of Global Atmosphere Watch;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e715]
+                        - text: Statistics of Global Atmosphere Watch;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11
+              - generic [ref=e716]:
+                - term [ref=e717]:
+                  - link "By Theme" [ref=e718] [cursor=pointer]:
+                    - /url: "#"
+                - definition:
+                  - paragraph [ref=e719]:
+                    - link "Population;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (11;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Society;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (6;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Crime and Safety;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (5;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Labor;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (12;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Income, Consumption and Assets;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (4;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Health;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (22;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Welfare;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (13;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Education and Training;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (4;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Culture and Leisure;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (4;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Housing;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (9;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Land Use;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (4;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Economy and Market;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (9;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Business Activities;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (6;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Agriculture and Forestry;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (15;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Fishery;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (4;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Mining and Manufacturing;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (7;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Construction;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (6;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Transport and Traffic;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (13;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Information and Communication ;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (5;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Science and Technology;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (2;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Retail, Wholesale and Services;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (6;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Wages and Salaries;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (5;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Prices;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (6;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "National Accounts;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (7;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Government Finance and Service;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (6;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Finance;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (4;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Trade and Balance of Payment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (9;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Environment;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (16;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                    - link "Energy;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 (5;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11)":
+                      - /url: "#"
+                  - list [ref=e720]
+              - generic [ref=e721]:
+                - button "Reset" [ref=e722] [cursor=pointer]
+                - button "Apply" [ref=e723] [cursor=pointer]
+            - generic [ref=e724]:
+              - generic [ref=e725]:
+                - 'heading "Statistical Table : 3216;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11 results" [level=2] [ref=e726]'
+                - generic [ref=e727]:
+                  - generic [ref=e728]:
+                    - combobox "list count" [ref=e730]:
+                      - option "10"
+                      - option "20" [selected]
+                      - option "30"
+                    - combobox "list order." [ref=e732]:
+                      - option "Accurate" [selected]
+                      - option "Recent"
+                  - link "View Contents" [ref=e734] [cursor=pointer]:
+                    - /url: javascript:void(0);
+              - list [ref=e736]:
+                - listitem [ref=e737]:
+                  - link "Population, Households and Housing Units" [ref=e738] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e739]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2015 ~ 2024
+                  - term [ref=e742]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (2015~);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e743] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e744] [cursor=pointer]
+                - listitem [ref=e745]:
+                  - link "Summary of Census Population(By administrative district/sex/age)" [ref=e746] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e747]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1925 ~ 2010
+                  - term [ref=e750]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census Generalization (1925~2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e751] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e752] [cursor=pointer]
+                - listitem [ref=e753]:
+                  - link "Summary of Census Population(By administrative district/sex/age)" [ref=e754] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e755]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1925 ~ 2010
+                  - term [ref=e758]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census Generalization (1925~2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e759] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e760] [cursor=pointer]
+                - listitem [ref=e761]:
+                  - link "Summary of Census Population(by administrative district/sex/age)" [ref=e762] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e763]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1925 ~ 2010
+                  - term [ref=e766]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census Generalization (1925~2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e767] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e768] [cursor=pointer]
+                - listitem [ref=e769]:
+                  - link "Population, Households and Housing Units" [ref=e770] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e771]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2010 ~ 2010
+                  - term [ref=e774]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e775] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e776] [cursor=pointer]
+                - listitem [ref=e777]:
+                  - link "Population, Households and Housing Units" [ref=e778] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e779]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2005 ~ 2005
+                  - term [ref=e782]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (2005);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e783] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e784] [cursor=pointer]
+                - listitem [ref=e785]:
+                  - link "Population, Households and Housing Units by Administrative District" [ref=e786] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e787]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2000 ~ 2000
+                  - term [ref=e790]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (2000);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e791] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e792] [cursor=pointer]
+                - listitem [ref=e793]:
+                  - link "Population & households by administrative district" [ref=e794] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e795]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1995 ~ 1995
+                  - term [ref=e798]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (1995);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e799] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e800] [cursor=pointer]
+                - listitem [ref=e801]:
+                  - link "Population & households by administrative district" [ref=e802] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e803]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1990 ~ 1990
+                  - term [ref=e806]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (1990);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e807] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e808] [cursor=pointer]
+                - listitem [ref=e809]:
+                  - link "Population & households by administrative district" [ref=e810] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e811]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1985 ~ 1985
+                  - term [ref=e814]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (1985);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e815] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e816] [cursor=pointer]
+                - listitem [ref=e817]:
+                  - link "Population & households by administrative district" [ref=e818] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e819]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1980 ~ 1980
+                  - term [ref=e822]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (1980);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e823] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e824] [cursor=pointer]
+                - listitem [ref=e825]:
+                  - link "Population & households by administrative district" [ref=e826] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e827]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1975 ~ 1975
+                  - term [ref=e830]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (1975);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e831] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e832] [cursor=pointer]
+                - listitem [ref=e833]:
+                  - link "Population & households by administrative district" [ref=e834] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e835]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1970 ~ 1970
+                  - term [ref=e838]:
+                    - 'link "- Location : Population > Population Census > Population Sector > Population By Census (1970);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e839] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e840] [cursor=pointer]
+                - listitem [ref=e841]:
+                  - link "Households and Household Members by Type of Household" [ref=e842] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e843]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2015 ~ 2024
+                  - term [ref=e846]:
+                    - 'link "- Location : Population > Population Census > Household > Household By Census (2015~);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e847] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e848] [cursor=pointer]
+                - listitem [ref=e849]:
+                  - link "Summary of census household(by administrative district/living quarters)" [ref=e850] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e851]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 1980 ~ 2010
+                  - term [ref=e854]:
+                    - 'link "- Location : Population > Population Census > Household > Household Of Census Generalization (1980~2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e855] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e856] [cursor=pointer]
+                - listitem [ref=e857]:
+                  - link "Multicultural Households and Household Members by Composition of Multicultural Household" [ref=e858] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e859]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2010 ~ 2010
+                  - term [ref=e862]:
+                    - 'link "- Location : Population > Population Census > Household > Household By Census (2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e863] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e864] [cursor=pointer]
+                - listitem [ref=e865]:
+                  - link "Households and Household Members by Type of Household" [ref=e866] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e867]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2010 ~ 2010
+                  - term [ref=e870]:
+                    - 'link "- Location : Population > Population Census > Household > Household By Census (2010);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e871] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e872] [cursor=pointer]
+                - listitem [ref=e873]:
+                  - link "Households and Household Members by Type of Household" [ref=e874] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e875]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2005 ~ 2005
+                  - term [ref=e878]:
+                    - 'link "- Location : Population > Population Census > Household > Household By Census (2005);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e879] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e880] [cursor=pointer]
+                - listitem [ref=e881]:
+                  - link "Households and Household Members by Administrative District" [ref=e882] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e883]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Population Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2000 ~ 2000
+                  - term [ref=e886]:
+                    - 'link "- Location : Population > Population Census > Household > Household By Census (2000);jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e887] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e888] [cursor=pointer]
+                - listitem [ref=e889]:
+                  - link "Housing units classified by 2010 administrative district (eup, myeon, dong)" [ref=e890] [cursor=pointer]:
+                    - /url: http://kosis.kr/eng/
+                  - generic [ref=e891]: Ministry of Data and Statistics;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, Housing Census;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11, 2000 ~ 2010
+                  - term [ref=e894]:
+                    - 'link "- Location : Population > Population Census > Time Series Connect > Eup, Myeon, Dong;jsessionid=hEE_VqE8vCSa79ZWi--i0LyEFeAx9SznV1V7q0yg.esvwas1_S11" [ref=e895] [cursor=pointer]':
+                      - /url: "#"
+                    - button "바로가기" [ref=e896] [cursor=pointer]
+            - generic [ref=e897]:
+              - button "맨처음" [ref=e898] [cursor=pointer]
+              - button "앞으로" [ref=e899] [cursor=pointer]
+              - paragraph [ref=e900]:
+                - link "1" [ref=e901] [cursor=pointer]:
+                  - /url: paging
+                - link "2" [ref=e902] [cursor=pointer]:
+                  - /url: paging
+                - link "3" [ref=e903] [cursor=pointer]:
+                  - /url: paging
+                - link "4" [ref=e904] [cursor=pointer]:
+                  - /url: paging
+                - link "5" [ref=e905] [cursor=pointer]:
+                  - /url: paging
+                - link "6" [ref=e906] [cursor=pointer]:
+                  - /url: paging
+                - link "7" [ref=e907] [cursor=pointer]:
+                  - /url: paging
+                - link "8" [ref=e908] [cursor=pointer]:
+                  - /url: paging
+                - link "9" [ref=e909] [cursor=pointer]:
+                  - /url: paging
+                - link "10" [ref=e910] [cursor=pointer]:
+                  - /url: paging
+              - button "다음" [ref=e911] [cursor=pointer]
+              - button "맨끝" [ref=e912] [cursor=pointer]
+        - generic:
+          - list
+  - generic [ref=e913]:
+    - link [ref=e916] [cursor=pointer]:
+      - /url: "#"
+      - strong [ref=e917]: Related Site
+    - generic [ref=e918]:
+      - strong [ref=e919]: Ministry Of Data and Statistics
+      - generic [ref=e920]: Government Complex-Daejeon, 189 Cheongsa-ro, Seo-gu, Daejeon 35208, Republic of Korea TEL +82-2-2012-9114
+      - paragraph [ref=e921]: Copyright Ministry of Data and Statistics. All rights reserved.

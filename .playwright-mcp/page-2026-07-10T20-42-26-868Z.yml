@@ -1,0 +1,491 @@
+- generic [active] [ref=f22e1]:
+  - generic:
+    - link "상단메뉴 바로가기" [ref=f22e2] [cursor=pointer]:
+      - /url: "#gnb"
+    - link "본문 바로가기" [ref=f22e3] [cursor=pointer]:
+      - /url: "#main_layout"
+  - generic [ref=f22e4]: 이 누리집은 대한민국 공식 전자정부 누리집입니다.
+  - generic [ref=f22e6]:
+    - list [ref=f22e8]:
+      - listitem [ref=f22e9]:
+        - generic [ref=f22e10]:
+          - paragraph [ref=f22e11]: 제13회 2026 국가승인통계활용 디지털콘텐츠 공모전2026.4.30.(목) ~ 7.12.(일)
+          - button "팝업보기" [ref=f22e12] [cursor=pointer]
+    - generic [ref=f22e14]:
+      - generic [ref=f22e15]:
+        - radio "하루 동안 열지않기" [ref=f22e16]
+        - text: 하루 동안 열지않기
+      - generic [ref=f22e17]:
+        - radio "다시 열지않기" [ref=f22e18]
+        - text: 다시 열지않기
+      - button "팝업닫기" [ref=f22e19] [cursor=pointer]
+  - generic [ref=f22e20]:
+    - generic [ref=f22e24]:
+      - heading [level=1] [ref=f22e25]:
+        - link [ref=f22e26] [cursor=pointer]:
+          - /url: /index/index.do
+          - img "KOSIS 국가통계포털- KOrean Statistical Information Service" [ref=f22e27]
+      - link "내가본통계표" [ref=f22e28] [cursor=pointer]:
+        - /url: "#Quick3"
+      - link "전체메뉴" [ref=f22e29] [cursor=pointer]:
+        - /url: "#none"
+    - generic [ref=f22e31]:
+      - generic [ref=f22e32]:
+        - generic [ref=f22e34]:
+          - generic [ref=f22e35]:
+            - textbox "통합검색" [disabled] [ref=f22e36]: 통계표
+            - button "분류선택" [ref=f22e37] [cursor=pointer]
+            - textbox "검색어를 입력해주세요" [ref=f22e38]:
+              - /placeholder: 검색어를 입력해주세요.
+              - text: 연령별 혼인상태별 인구
+            - button "자동완성 열기" [ref=f22e39] [cursor=pointer]
+            - button "검색" [ref=f22e40] [cursor=pointer]
+          - button "상세검색" [ref=f22e41] [cursor=pointer]
+          - checkbox "결과 내 재검색"
+          - generic [ref=f22e42]: 결과 내 재검색
+        - generic [ref=f22e43] [cursor=pointer]:
+          - term [ref=f22e44]:
+            - text: 인기검색어
+            - generic: (최근 한달간)
+          - definition [ref=f22e45]:
+            - button "인기검색어 더보기" [ref=f22e46]
+            - list [ref=f22e47]:
+              - listitem "인구" [ref=f22e48]:
+                - link "1 인구" [ref=f22e49]:
+                  - /url: "#"
+                  - generic [ref=f22e50]: "1"
+                  - text: 인구
+              - listitem "범죄율" [ref=f22e51]:
+                - link "2 범죄율" [ref=f22e52]:
+                  - /url: "#"
+                  - generic [ref=f22e53]: "2"
+                  - text: 범죄율
+              - listitem "AI" [ref=f22e54]:
+                - link "3 AI" [ref=f22e55]:
+                  - /url: "#"
+                  - generic [ref=f22e56]: "3"
+                  - text: AI
+              - listitem "스마트폰" [ref=f22e57]:
+                - link "4 스마트폰" [ref=f22e58]:
+                  - /url: "#"
+                  - generic [ref=f22e59]: "4"
+                  - text: 스마트폰
+              - listitem "소비자물가지수" [ref=f22e60]:
+                - link "5 소비자물가지수" [ref=f22e61]:
+                  - /url: "#"
+                  - generic [ref=f22e62]: "5"
+                  - text: 소비자물가지수
+              - listitem "온라인쇼핑" [ref=f22e63]:
+                - link "6 온라인쇼핑" [ref=f22e64]:
+                  - /url: "#"
+                  - generic [ref=f22e65]: "6"
+                  - text: 온라인쇼핑
+              - listitem "노인인구" [ref=f22e66]:
+                - link "7 노인인구" [ref=f22e67]:
+                  - /url: "#"
+                  - generic [ref=f22e68]: "7"
+                  - text: 노인인구
+              - listitem "폐업" [ref=f22e69]:
+                - link "8 폐업" [ref=f22e70]:
+                  - /url: "#"
+                  - generic [ref=f22e71]: "8"
+                  - text: 폐업
+              - listitem "사망원인" [ref=f22e72]:
+                - link "9 사망원인" [ref=f22e73]:
+                  - /url: "#"
+                  - generic [ref=f22e74]: "9"
+                  - text: 사망원인
+              - listitem "청소년" [ref=f22e75]:
+                - link "10 청소년" [ref=f22e76]:
+                  - /url: "#"
+                  - generic [ref=f22e77]: "10"
+                  - text: 청소년
+        - list [ref=f22e81]:
+          - listitem [ref=f22e82]:
+            - link "통합검색" [ref=f22e83] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e85]:
+            - link "통계표" [ref=f22e86] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e88]:
+            - link "통계시각화콘텐츠" [ref=f22e89] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e90]:
+            - link "통계분류" [ref=f22e91] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e93]:
+            - link "온라인간행물" [ref=f22e94] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e95]:
+            - link "통계설명자료" [ref=f22e96] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e97]:
+            - link "통계용어" [ref=f22e98] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - listitem [ref=f22e99]:
+            - link "게시물" [ref=f22e100] [cursor=pointer]:
+              - /url: javascript:void(0)
+      - generic [ref=f22e101]:
+        - generic [ref=f22e106]:
+          - paragraph [ref=f22e107]:
+            - generic [ref=f22e108]:
+              - strong [ref=f22e109]: "\"연령별 혼인상태별 인구\""
+              - text: 에 대한 검색결과는
+              - strong [ref=f22e110]: 4,224건
+              - text: 입니다.
+          - generic [ref=f22e111]:
+            - heading "통계표 4,224 건" [level=2] [ref=f22e113]
+            - list [ref=f22e114]:
+              - listitem [ref=f22e115]:
+                - link "국내통계" [ref=f22e116] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f22e117]:
+                - link "e-지방지표" [ref=f22e118] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f22e119]:
+                - link "국제통계" [ref=f22e120] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f22e121]:
+                - link "북한통계" [ref=f22e122] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=f22e123]:
+                - link "국제지역통계" [ref=f22e124] [cursor=pointer]:
+                  - /url: javascript:void(0);
+            - generic [ref=f22e126]:
+              - combobox "정렬을 선택해주세요." [ref=f22e128]:
+                - option "정확도순" [selected]
+                - option "최신순"
+              - combobox "리스트 갯수를 선택해주세요." [ref=f22e130]:
+                - option "10개"
+                - option "20개" [selected]
+                - option "30개"
+            - generic [ref=f22e131]:
+              - button "조건검색 열기" [ref=f22e132] [cursor=pointer]
+              - generic [ref=f22e133]:
+                - list [ref=f22e134]:
+                  - listitem [ref=f22e135]:
+                    - link [ref=f22e136] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성,
+                      - strong [ref=f22e137]: 연령
+                      - text: 및
+                      - strong [ref=f22e138]: 혼인상태별
+                      - strong [ref=f22e139]: 인구
+                      - text: "- 시군구"
+                    - generic "새창열림" [ref=f22e140] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e141]:
+                        - strong [ref=f22e142]: 인구
+                        - text: 총조사
+                      - text: ",2022~2024"
+                  - listitem [ref=f22e143]:
+                    - link [ref=f22e144] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 가구주의 성,
+                      - strong [ref=f22e145]: 연령
+                      - text: 및
+                      - strong [ref=f22e146]: 혼인상태별
+                      - text: 가구 - 시군구
+                    - generic "새창열림" [ref=f22e147] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e148]:
+                        - strong [ref=f22e149]: 인구
+                        - text: 총조사
+                      - text: ",2022~2024"
+                  - listitem [ref=f22e150]:
+                    - link [ref=f22e151] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성,
+                      - strong [ref=f22e152]: 연령
+                      - text: 및 가구주와의 관계별
+                      - strong [ref=f22e153]: 인구
+                      - text: "- 시군구"
+                    - generic "새창열림" [ref=f22e154] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e155]:
+                        - strong [ref=f22e156]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e157]:
+                    - link [ref=f22e158] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성,
+                      - strong [ref=f22e159]: 연령
+                      - text: 및 세대구성별
+                      - strong [ref=f22e160]: 인구
+                      - text: "- 시군구"
+                    - generic "새창열림" [ref=f22e161] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e162]:
+                        - strong [ref=f22e163]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e164]:
+                    - link [ref=f22e165] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e166]: 연령
+                      - text: 및 성별
+                      - strong [ref=f22e167]: 인구
+                      - text: 읍면동
+                    - generic "새창열림" [ref=f22e168] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e169]:
+                        - strong [ref=f22e170]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e171]:
+                    - link [ref=f22e172] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e173]: 연령
+                      - text: 및 성별 장애인
+                      - strong [ref=f22e174]: 인구
+                      - text: "- 시군구"
+                    - generic "새창열림" [ref=f22e175] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e176]:
+                        - strong [ref=f22e177]: 인구
+                        - text: 총조사
+                      - text: ",2023~2024"
+                  - listitem [ref=f22e178]:
+                    - link [ref=f22e179] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 현 거주지 성,
+                      - strong [ref=f22e180]: 연령
+                      - text: 및 1년 전 거주지 기준 이동자유형별
+                      - strong [ref=f22e181]: 인구
+                      - text: (1세이상) - 읍면동(연도 끝자리 0, 5), 시군구(그 외 연도)
+                    - generic "새창열림" [ref=f22e182] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e183]:
+                        - strong [ref=f22e184]: 인구
+                        - text: 총조사
+                      - text: ",2016~2024"
+                  - listitem [ref=f22e185]:
+                    - link [ref=f22e186] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 현 거주지 성,
+                      - strong [ref=f22e187]: 연령
+                      - text: 및 1년 전 거주지 이동
+                      - strong [ref=f22e188]: 인구
+                      - text: (1세이상) - 시도
+                    - generic "새창열림" [ref=f22e189] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e190]:
+                        - strong [ref=f22e191]: 인구
+                        - text: 총조사
+                      - text: ",2016~2024"
+                  - listitem [ref=f22e192]:
+                    - link [ref=f22e193] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성, 세대구성 및
+                      - strong [ref=f22e194]: 연령별
+                      - text: 고령자 - 시군구
+                    - generic "새창열림" [ref=f22e195] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e196]:
+                        - strong [ref=f22e197]: 인구
+                        - text: 총조사
+                      - text: ",2020~2024"
+                  - listitem [ref=f22e198]:
+                    - link [ref=f22e199] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성 및
+                      - strong [ref=f22e200]: 연령별
+                      - text: 1인가구 - 시군구
+                    - generic "새창열림" [ref=f22e201] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e202]:
+                        - strong [ref=f22e203]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e204]:
+                    - link [ref=f22e205] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e206]: 연령
+                      - text: 및 성별 다문화가구원 - 시도
+                    - generic "새창열림" [ref=f22e207] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e208]:
+                        - strong [ref=f22e209]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e210]:
+                    - link [ref=f22e211] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e212]: 결혼
+                      - text: 문화에 대한 태도 (
+                      - strong [ref=f22e213]: 결혼
+                      - text: 하면 자녀를 가져야 한다, 13세 이상
+                      - strong [ref=f22e214]: 인구
+                      - text: )
+                    - generic "새창열림" [ref=f22e215] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e216]: 사회조사
+                      - text: ",2018~2024"
+                  - listitem [ref=f22e217]:
+                    - link [ref=f22e218] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e219]: 결혼
+                      - text: 문화에 대한 태도(
+                      - strong [ref=f22e220]: 결혼
+                      - text: 생활은 부부보다 가족간의 관계가 우선시 되어야 한다, 13세 이상
+                      - strong [ref=f22e221]: 인구
+                      - text: )
+                    - generic "새창열림" [ref=f22e222] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e223]: 사회조사
+                      - text: ",2008~2024"
+                  - listitem [ref=f22e224]:
+                    - link [ref=f22e225] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e226]: 결혼
+                      - text: 문화에 대한 태도(남녀가
+                      - strong [ref=f22e227]: 결혼
+                      - text: 을 하지 않더라도 함께 살 수 있다, 13세 이상
+                      - strong [ref=f22e228]: 인구
+                      - text: )
+                    - generic "새창열림" [ref=f22e229] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e230]: 사회조사
+                      - text: ",2008~2024"
+                  - listitem [ref=f22e231]:
+                    - link [ref=f22e232] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e233]: 결혼
+                      - text: 문화에 대한 태도(외국인과
+                      - strong [ref=f22e234]: 결혼
+                      - text: 할 수 있다, 13세 이상
+                      - strong [ref=f22e235]: 인구
+                      - text: )
+                    - generic "새창열림" [ref=f22e236] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e237]: 사회조사
+                      - text: ",2008~2024"
+                  - listitem [ref=f22e238]:
+                    - link [ref=f22e239] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e240]: 결혼
+                      - text: 에 대한 견해(13세 이상
+                      - strong [ref=f22e241]: 인구
+                      - text: )
+                    - generic "새창열림" [ref=f22e242] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e243]: 사회조사
+                      - text: ",2008~2024"
+                  - listitem [ref=f22e244]:
+                    - link [ref=f22e245] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e246]: 결혼
+                      - text: 을 하지 않는 이유 (13세 이상
+                      - strong [ref=f22e247]: 인구
+                      - text: )
+                    - generic "새창열림" [ref=f22e248] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e249]: 사회조사
+                      - text: ",2022~2024"
+                  - listitem [ref=f22e250]:
+                    - link [ref=f22e251] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성 및
+                      - strong [ref=f22e252]: 연령별
+                      - text: 외국인 - 시도
+                    - generic "새창열림" [ref=f22e253] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e254]:
+                        - strong [ref=f22e255]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e256]:
+                    - link [ref=f22e257] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: 성, 현재 국적 및
+                      - strong [ref=f22e258]: 연령별
+                      - text: 외국인 - 전국
+                    - generic "새창열림" [ref=f22e259] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e260]:
+                        - strong [ref=f22e261]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                  - listitem [ref=f22e262]:
+                    - link [ref=f22e263] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - strong [ref=f22e264]: 연령별
+                      - text: 미혼모, 미혼부 - 시도
+                    - generic "새창열림" [ref=f22e265] [cursor=pointer]:
+                      - text: 국가데이터처,
+                      - strong [ref=f22e266]:
+                        - strong [ref=f22e267]: 인구
+                        - text: 총조사
+                      - text: ",2015~2024"
+                - generic [ref=f22e269]:
+                  - button "맨처음" [ref=f22e270] [cursor=pointer]
+                  - button "이전" [ref=f22e271] [cursor=pointer]
+                  - paragraph [ref=f22e272]:
+                    - link "1" [ref=f22e273] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "2" [ref=f22e274] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "3" [ref=f22e275] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "4" [ref=f22e276] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "5" [ref=f22e277] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "6" [ref=f22e278] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "7" [ref=f22e279] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "8" [ref=f22e280] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "9" [ref=f22e281] [cursor=pointer]:
+                      - /url: "#none"
+                    - link "10" [ref=f22e282] [cursor=pointer]:
+                      - /url: "#none"
+                  - button "다음" [ref=f22e283] [cursor=pointer]
+                  - button "맨끝" [ref=f22e284] [cursor=pointer]
+        - generic:
+          - list:
+            - listitem:
+              - link:
+                - /url: "#Quick3"
+            - listitem:
+              - link:
+                - /url: "#Quick4"
+        - img "코봇 아이콘" [ref=f22e286] [cursor=pointer]
+    - generic [ref=f22e288]:
+      - generic [ref=f22e289]:
+        - list [ref=f22e291]:
+          - listitem [ref=f22e292]:
+            - link "이용지침" [ref=f22e293] [cursor=pointer]:
+              - /url: /serviceInfo/useGuide.do
+          - listitem [ref=f22e294]:
+            - link [ref=f22e295] [cursor=pointer]:
+              - /url: /serviceInfo/privacy_policy.do
+              - strong [ref=f22e296]: 개인정보처리방침
+          - listitem [ref=f22e297]:
+            - link "이메일무단수집거부" [ref=f22e298] [cursor=pointer]:
+              - /url: /serviceInfo/emailCollectClause.do
+          - listitem [ref=f22e299]:
+            - link "RSS" [ref=f22e300] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f22e301]:
+            - link "OpenAPI" [ref=f22e302] [cursor=pointer]:
+              - /url: /serviceInfo/openAPIGuide.do
+          - listitem [ref=f22e303]:
+            - link "통계제공기관" [ref=f22e304] [cursor=pointer]:
+              - /url: "#"
+        - link [ref=f22e306] [cursor=pointer]:
+          - /url: /common/tech/gatePage.do
+          - strong [ref=f22e307]: 관련사이트 바로가기
+      - generic [ref=f22e308]:
+        - generic [ref=f22e309]: (35208) 대전광역시 서구 청사로 189 (둔산동, 정부대전청사 3동) 콜센터 02-2012-9114 (국번없이 110)
+        - paragraph [ref=f22e310]: Copyright Ministry of Data and Statistics. All rights reserved.
+  - iframe [ref=f22e311]:
+    
+  - iframe [ref=f22e312]:
+    
+  - iframe [ref=f22e313]:
+    
+  - iframe [ref=f22e314]:
+    

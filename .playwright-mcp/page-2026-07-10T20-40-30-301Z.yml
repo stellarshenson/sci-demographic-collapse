@@ -1,0 +1,628 @@
+- generic [active] [ref=f15e1]:
+  - img "loading" [ref=f15e4]
+  - generic:
+    - link "메뉴 바로가기" [ref=f15e5] [cursor=pointer]:
+      - /url: "#leftMenu"
+    - link "본문 바로가기" [ref=f15e6] [cursor=pointer]:
+      - /url: "#centerMenu"
+  - paragraph [ref=f15e8]:
+    - link [ref=f15e9] [cursor=pointer]:
+      - /url: javascript:openKosis();
+      - img "KOSIS" [ref=f15e10]
+  - generic [ref=f15e11]:
+    - iframe [ref=f15e13]:
+      - generic [ref=f16e2]:
+        - generic [ref=f16e3]:
+          - generic [ref=f16e4]: "통계목록 :"
+          - combobox "통계목록" [ref=f16e5]:
+            - option "주제별 통계" [selected]
+            - option "기관별 통계"
+            - option "e-지방지표(주제별)"
+            - option "e-지방지표(지역별)"
+            - option "과거-광복이전"
+            - option "과거-통계연감"
+            - option "중지통계"
+            - option "국제통계"
+            - option "국제지역통계"
+            - option "북한통계"
+        - generic [ref=f16e6]:
+          - button "스크랩" [ref=f16e7] [cursor=pointer]
+          - button "내가 본 통계표" [ref=f16e8] [cursor=pointer]
+        - generic [ref=f16e9]:
+          - combobox "Search Keyword Option" [ref=f16e10]:
+            - option "통계목록" [selected]
+            - option "통계표"
+          - textbox "단어검색" [ref=f16e12]
+          - button "검색" [ref=f16e13] [cursor=pointer]
+        - generic [ref=f16e14]:
+          - button "맨위로" [ref=f16e15] [cursor=pointer]
+          - button "오름차순" [ref=f16e17] [cursor=pointer]
+        - list [ref=f16e20]:
+          - listitem [ref=f16e21]:
+            - listitem [ref=f16e22]:
+              - img "인구" [ref=f16e24] [cursor=pointer]
+              - link "인구" [ref=f16e25] [cursor=pointer]:
+                - /url: javascript:treeDownList('A,MT_ZTITLE,1')
+              - list [ref=f16e26]:
+                - listitem [ref=f16e27]:
+                  - link [ref=f16e28] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_4,MT_ZTITLE,2")
+                    - img "인구총조사" [ref=f16e29]
+                  - link "인구총조사" [ref=f16e31] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_4,MT_ZTITLE,2")
+                  - list [ref=f16e32]:
+                    - listitem [ref=f16e33]:
+                      - link [ref=f16e34] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A11,MT_ZTITLE,3")
+                        - img "인구부문" [ref=f16e35]
+                      - link "인구부문" [ref=f16e37] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A11,MT_ZTITLE,3")
+                      - list [ref=f16e38]:
+                        - listitem [ref=f16e39]:
+                          - link [ref=f16e40] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11_2015_1,MT_ZTITLE,4")
+                            - img "총조사인구(2015년 이후)" [ref=f16e41]
+                          - link "총조사인구(2015년 이후)" [ref=f16e43] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11_2015_1,MT_ZTITLE,4")
+                          - list [ref=f16e44]:
+                            - listitem [ref=f16e45]:
+                              - link [ref=f16e46] [cursor=pointer]:
+                                - /url: javascript:treeDownList("A11_2015_1_10,MT_ZTITLE,5")
+                                - img "전수부문 (등록센서스, 2015년 이후)" [ref=f16e47]
+                              - link "전수부문 (등록센서스, 2015년 이후)" [ref=f16e49] [cursor=pointer]:
+                                - /url: javascript:treeDownList("A11_2015_1_10,MT_ZTITLE,5")
+                              - list
+                            - listitem [ref=f16e50]:
+                              - link [ref=f16e51] [cursor=pointer]:
+                                - /url: javascript:treeDownList("A11_2015_1_001,MT_ZTITLE,5")
+                                - img "표본(20%)부문 (2020년)" [ref=f16e52]
+                              - link "표본(20%)부문 (2020년)" [ref=f16e54] [cursor=pointer]:
+                                - /url: javascript:treeDownList("A11_2015_1_001,MT_ZTITLE,5")
+                              - list [ref=f16e55]:
+                                - listitem [ref=f16e56]:
+                                  - link [ref=f16e57] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_001,MT_ZTITLE,6")
+                                    - img "표본기본표" [ref=f16e58]
+                                  - link "표본기본표" [ref=f16e60] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_001,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e61]:
+                                  - link [ref=f16e62] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_002,MT_ZTITLE,6")
+                                    - img "외국인(20%표본)" [ref=f16e63]
+                                  - link "외국인(20%표본)" [ref=f16e65] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_002,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e66]:
+                                  - link [ref=f16e67] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_007,MT_ZTITLE,6")
+                                    - img "통근통학(20%표본)" [ref=f16e68]
+                                  - link "통근통학(20%표본)" [ref=f16e70] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_007,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e71]:
+                                  - link [ref=f16e72] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_008,MT_ZTITLE,6")
+                                    - img "국내인구이동(20%표본)" [ref=f16e73]
+                                  - link "국내인구이동(20%표본)" [ref=f16e75] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_008,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e76]:
+                                  - link [ref=f16e77] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_003,MT_ZTITLE,6")
+                                    - img "활동제약(20%표본)" [ref=f16e78]
+                                  - link "활동제약(20%표본)" [ref=f16e80] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_003,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e81]:
+                                  - link [ref=f16e82] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_004,MT_ZTITLE,6")
+                                    - img "고령자(20%표본)" [ref=f16e83]
+                                  - link "고령자(20%표본)" [ref=f16e85] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_004,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e86]:
+                                  - link [ref=f16e87] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_005,MT_ZTITLE,6")
+                                    - img "사회활동,생활비원천(20%표본)" [ref=f16e88]
+                                  - link "사회활동,생활비원천(20%표본)" [ref=f16e90] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_005,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e91]:
+                                  - link [ref=f16e92] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_009,MT_ZTITLE,6")
+                                    - img "경제활동(20%표본)" [ref=f16e93]
+                                  - link "경제활동(20%표본)" [ref=f16e95] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_009,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e96]:
+                                  - link [ref=f16e97] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_010,MT_ZTITLE,6")
+                                    - img "산업·직업(20%표본)" [ref=f16e98]
+                                  - link "산업·직업(20%표본)" [ref=f16e100] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_010,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e101]:
+                                  - link [ref=f16e102] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_006,MT_ZTITLE,6")
+                                    - img "여성·아동(20%표본)" [ref=f16e103]
+                                  - link "여성·아동(20%표본)" [ref=f16e105] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_006,MT_ZTITLE,6")
+                                  - list [ref=f16e106]:
+                                    - listitem [ref=f16e107]:
+                                      - img "연령별/출생자녀수별 기혼여성인구(15세이상)-시도" [ref=f16e108]
+                                      - link "연령별/출생자녀수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e109] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2001","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e110]:
+                                      - img "연령별/초혼연령별 기혼여성인구(15세이상)-시도" [ref=f16e111]
+                                      - link "연령별/초혼연령별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e112] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2013","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e113]:
+                                      - img "연령별/보육상태별 아동인구(12세이하, 일반가구)-시도" [ref=f16e114]
+                                      - link "연령별/보육상태별 아동인구(12세이하, 일반가구)-시도 (5년 2020~2020)" [ref=f16e115] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2017","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e116]:
+                                      - img "가구주의 경제활동상태별/보육상태별 아동인구(12세이하, 일반가구)-시도" [ref=f16e117]
+                                      - link "가구주의 경제활동상태별/보육상태별 아동인구(12세이하, 일반가구)-시도 (5년 2020~2020)" [ref=f16e118] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2020","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e119]:
+                                      - img "교육정도별/출생자녀수별 기혼여성인구(15세이상)-시도" [ref=f16e120]
+                                      - link "교육정도별/출생자녀수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e121] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2002","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e122]:
+                                      - img "경제활동상태별/출생자녀수별 기혼여성인구(15세이상)-시군구" [ref=f16e123]
+                                      - link "경제활동상태별/출생자녀수별 기혼여성인구(15세이상)-시군구 (5년 2020~2020)" [ref=f16e124] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2003","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e125]:
+                                      - img "산업별/출생자녀수별 기혼여성인구(15세이상)-시군구" [ref=f16e126]
+                                      - link "산업별/출생자녀수별 기혼여성인구(15세이상)-시군구 (5년 2020~2020)" [ref=f16e127] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2004","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e128]:
+                                      - img "직업별/출생자녀수별 기혼여성인구(15세이상)-시군구" [ref=f16e129]
+                                      - link "직업별/출생자녀수별 기혼여성인구(15세이상)-시군구 (5년 2020~2020)" [ref=f16e130] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2005","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e131]:
+                                      - img "종사상지위별/출생자녀수별 기혼여성인구(15세이상)-시군구" [ref=f16e132]
+                                      - link "종사상지위별/출생자녀수별 기혼여성인구(15세이상)-시군구 (5년 2020~2020)" [ref=f16e133] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2006","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e134]:
+                                      - img "사망자녀수별/출생자녀수별 기혼여성인구(15세이상)-시도" [ref=f16e135]
+                                      - link "사망자녀수별/출생자녀수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e136] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2007","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e137]:
+                                      - img "연령별/사망자녀수별 기혼여성인구(15세이상)-시도" [ref=f16e138]
+                                      - link "연령별/사망자녀수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e139] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2008","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e140]:
+                                      - img "연령별/출생자녀수별/추가자녀계획수별 기혼여성인구(15세이상)-시도" [ref=f16e141]
+                                      - link "연령별/출생자녀수별/추가자녀계획수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e142] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2009","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e143]:
+                                      - img "교육정도별/출생자녀수별/추가자녀계획수별 기혼여성인구(15세이상)-시도" [ref=f16e144]
+                                      - link "교육정도별/출생자녀수별/추가자녀계획수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e145] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2010","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e146]:
+                                      - img "경제활동상태별/추가자녀계획수별 기혼여성인구(15세이상)-시군구" [ref=f16e147]
+                                      - link "경제활동상태별/추가자녀계획수별 기혼여성인구(15세이상)-시군구 (5년 2020~2020)" [ref=f16e148] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2011","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e149]:
+                                      - img "경제활동상태별/출생자녀수별/추가자녀계획수별 기혼여성인구(15세이상)-시도" [ref=f16e150]
+                                      - link "경제활동상태별/출생자녀수별/추가자녀계획수별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e151] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2012","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e152]:
+                                      - img "연령별/교육정도별/초혼연령별 기혼여성인구(15세이상)-시도" [ref=f16e153]
+                                      - link "연령별/교육정도별/초혼연령별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e154] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2014","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e155]:
+                                      - img "연령별/경제활동상태별/초혼연령별 기혼여성인구(15세이상)-시군구" [ref=f16e156]
+                                      - link "연령별/경제활동상태별/초혼연령별 기혼여성인구(15세이상)-시군구 (5년 2020~2020)" [ref=f16e157] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2015","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e158]:
+                                      - img "연령별/출생자녀수별/초혼연령별 기혼여성인구(15세이상)-시도" [ref=f16e159]
+                                      - link "연령별/출생자녀수별/초혼연령별 기혼여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e160] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2016","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e161]:
+                                      - img "아동인원수별/보육상태별 아동인구(12세이하, 일반가구)-시도" [ref=f16e162]
+                                      - link "아동인원수별/보육상태별 아동인구(12세이하, 일반가구)-시도 (5년 2020~2020)" [ref=f16e163] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2018","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e164]:
+                                      - img "세대구성별/보육상태별 아동인구(12세이하, 일반가구)-시도" [ref=f16e165]
+                                      - link "세대구성별/보육상태별 아동인구(12세이하, 일반가구)-시도 (5년 2020~2020)" [ref=f16e166] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2019","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e167]:
+                                      - img "가구주의 종사상지위별/보육상태별 아동인구(12세이하, 일반가구)-시도" [ref=f16e168]
+                                      - link "가구주의 종사상지위별/보육상태별 아동인구(12세이하, 일반가구)-시도 (5년 2020~2020)" [ref=f16e169] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2021","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e170]:
+                                      - img "연령별/경제활동상태별/직업별 여성인구(15세이상)-시도" [ref=f16e171]
+                                      - link "연령별/경제활동상태별/직업별 여성인구(15세이상)-시도 (5년 2020~2020)" [ref=f16e172] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2023","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                    - listitem [ref=f16e173]:
+                                      - img "점유형태별/보육상태별 아동인구(12세이하, 일반가구)-시도" [ref=f16e174]
+                                      - link "점유형태별/보육상태별 아동인구(12세이하, 일반가구)-시도 (5년 2020~2020)" [ref=f16e175] [cursor=pointer]:
+                                        - /url: javascript:showStats("101","DT_1PF2022","N","A11_2015_1_001_006","MT_ZTITLE","")
+                                - listitem [ref=f16e176]:
+                                  - link [ref=f16e177] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_011,MT_ZTITLE,6")
+                                    - img "출산시기(20%표본)" [ref=f16e178]
+                                  - link "출산시기(20%표본)" [ref=f16e180] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_011,MT_ZTITLE,6")
+                                  - list
+                                - listitem [ref=f16e181]:
+                                  - link [ref=f16e182] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_012,MT_ZTITLE,6")
+                                    - img "경력단절(20%표본)" [ref=f16e183]
+                                  - link "경력단절(20%표본)" [ref=f16e185] [cursor=pointer]:
+                                    - /url: javascript:treeDownList("A11_2015_1_001_012,MT_ZTITLE,6")
+                                  - list
+                            - listitem [ref=f16e186]:
+                              - link [ref=f16e187] [cursor=pointer]:
+                                - /url: javascript:treeDownList("A11_2015_1_20,MT_ZTITLE,5")
+                                - img "표본(20%)부문 (2015년)" [ref=f16e188]
+                              - link "표본(20%)부문 (2015년)" [ref=f16e190] [cursor=pointer]:
+                                - /url: javascript:treeDownList("A11_2015_1_20,MT_ZTITLE,5")
+                              - list
+                        - listitem [ref=f16e191]:
+                          - link [ref=f16e192] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11_SN,MT_ZTITLE,4")
+                            - img "세종시인구(2013년)" [ref=f16e193]
+                          - link "세종시인구(2013년)" [ref=f16e195] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11_SN,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e196]:
+                          - link [ref=f16e197] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A111,MT_ZTITLE,4")
+                            - img "총조사인구 총괄(1925년~2010년)" [ref=f16e198]
+                          - link "총조사인구 총괄(1925년~2010년)" [ref=f16e200] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A111,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e201]:
+                          - link [ref=f16e202] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11_2010,MT_ZTITLE,4")
+                            - img "총조사인구(2010년)" [ref=f16e203]
+                          - link "총조사인구(2010년)" [ref=f16e205] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11_2010,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e206]:
+                          - link [ref=f16e207] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11I,MT_ZTITLE,4")
+                            - img "총조사인구(2005년)" [ref=f16e208]
+                          - link "총조사인구(2005년)" [ref=f16e210] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11I,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e211]:
+                          - link [ref=f16e212] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A112,MT_ZTITLE,4")
+                            - img "총조사인구(2000년)" [ref=f16e213]
+                          - link "총조사인구(2000년)" [ref=f16e215] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A112,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e216]:
+                          - link [ref=f16e217] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A113,MT_ZTITLE,4")
+                            - img "총조사인구(1995년)" [ref=f16e218]
+                          - link "총조사인구(1995년)" [ref=f16e220] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A113,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e221]:
+                          - link [ref=f16e222] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A114,MT_ZTITLE,4")
+                            - img "총조사인구(1990년)" [ref=f16e223]
+                          - link "총조사인구(1990년)" [ref=f16e225] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A114,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e226]:
+                          - link [ref=f16e227] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A115,MT_ZTITLE,4")
+                            - img "총조사인구(1985년)" [ref=f16e228]
+                          - link "총조사인구(1985년)" [ref=f16e230] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A115,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e231]:
+                          - link [ref=f16e232] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A116,MT_ZTITLE,4")
+                            - img "총조사인구(1980년)" [ref=f16e233]
+                          - link "총조사인구(1980년)" [ref=f16e235] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A116,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e236]:
+                          - link [ref=f16e237] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A117,MT_ZTITLE,4")
+                            - img "총조사인구(1975년)" [ref=f16e238]
+                          - link "총조사인구(1975년)" [ref=f16e240] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A117,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e241]:
+                          - link [ref=f16e242] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A118,MT_ZTITLE,4")
+                            - img "총조사인구(1970년)" [ref=f16e243]
+                          - link "총조사인구(1970년)" [ref=f16e245] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A118,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e246]:
+                          - link [ref=f16e247] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A119,MT_ZTITLE,4")
+                            - img "총조사인구(1966년)" [ref=f16e248]
+                          - link "총조사인구(1966년)" [ref=f16e250] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A119,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e251]:
+                          - link [ref=f16e252] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11A,MT_ZTITLE,4")
+                            - img "총조사인구(1960년)" [ref=f16e253]
+                          - link "총조사인구(1960년)" [ref=f16e255] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11A,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e256]:
+                          - link [ref=f16e257] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11B,MT_ZTITLE,4")
+                            - img "총조사인구(1955년)" [ref=f16e258]
+                          - link "총조사인구(1955년)" [ref=f16e260] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11B,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e261]:
+                          - link [ref=f16e262] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11C,MT_ZTITLE,4")
+                            - img "총조사인구(1949년)" [ref=f16e263]
+                          - link "총조사인구(1949년)" [ref=f16e265] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11C,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e266]:
+                          - link [ref=f16e267] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11D,MT_ZTITLE,4")
+                            - img "총조사인구(1944년)" [ref=f16e268]
+                          - link "총조사인구(1944년)" [ref=f16e270] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11D,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e271]:
+                          - link [ref=f16e272] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11E,MT_ZTITLE,4")
+                            - img "총조사인구(1940년)" [ref=f16e273]
+                          - link "총조사인구(1940년)" [ref=f16e275] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11E,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e276]:
+                          - link [ref=f16e277] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11F,MT_ZTITLE,4")
+                            - img "총조사인구(1935년)" [ref=f16e278]
+                          - link "총조사인구(1935년)" [ref=f16e280] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11F,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e281]:
+                          - link [ref=f16e282] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11G,MT_ZTITLE,4")
+                            - img "총조사인구(1930년)" [ref=f16e283]
+                          - link "총조사인구(1930년)" [ref=f16e285] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11G,MT_ZTITLE,4")
+                          - list
+                        - listitem [ref=f16e286]:
+                          - link [ref=f16e287] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11H,MT_ZTITLE,4")
+                            - img "총조사인구(1925년)" [ref=f16e288]
+                          - link "총조사인구(1925년)" [ref=f16e290] [cursor=pointer]:
+                            - /url: javascript:treeDownList("A11H,MT_ZTITLE,4")
+                          - list
+                    - listitem [ref=f16e291]:
+                      - link [ref=f16e292] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A12,MT_ZTITLE,3")
+                        - img "가구부문" [ref=f16e293]
+                      - link "가구부문" [ref=f16e295] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A12,MT_ZTITLE,3")
+                      - list
+                    - listitem [ref=f16e296]:
+                      - link [ref=f16e297] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A1_10,MT_ZTITLE,3")
+                        - img "시계열 연계" [ref=f16e298]
+                      - link "시계열 연계" [ref=f16e300] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A1_10,MT_ZTITLE,3")
+                      - list
+                    - listitem [ref=f16e301]:
+                      - link [ref=f16e302] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A1_13,MT_ZTITLE,3")
+                        - img "인구밀도" [ref=f16e303]
+                      - link "인구밀도" [ref=f16e305] [cursor=pointer]:
+                        - /url: javascript:treeDownList("A1_13,MT_ZTITLE,3")
+                      - list
+                - listitem [ref=f16e306]:
+                  - link [ref=f16e307] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_7,MT_ZTITLE,2")
+                    - img "주민등록인구현황" [ref=f16e308]
+                  - link "주민등록인구현황" [ref=f16e310] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_7,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e311]:
+                  - link [ref=f16e312] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_3,MT_ZTITLE,2")
+                    - img "인구동향조사" [ref=f16e313]
+                  - link "인구동향조사" [ref=f16e315] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_3,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e316]:
+                  - link [ref=f16e317] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_6,MT_ZTITLE,2")
+                    - img "장래인구추계" [ref=f16e318]
+                  - link "장래인구추계" [ref=f16e320] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_6,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e321]:
+                  - link [ref=f16e322] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_1,MT_ZTITLE,2")
+                    - img "국내인구이동통계" [ref=f16e323]
+                  - link "국내인구이동통계" [ref=f16e325] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_1,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e326]:
+                  - link [ref=f16e327] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_9,MT_ZTITLE,2")
+                    - img "출입국자및체류외국인통계" [ref=f16e328]
+                  - link "출입국자및체류외국인통계" [ref=f16e330] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_9,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e331]:
+                  - link [ref=f16e332] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_8,MT_ZTITLE,2")
+                    - img "지방자치단체외국인주민현황" [ref=f16e333]
+                  - link "지방자치단체외국인주민현황" [ref=f16e335] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_8,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e336]:
+                  - link [ref=f16e337] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_5,MT_ZTITLE,2")
+                    - img "장래가구추계" [ref=f16e338]
+                  - link "장래가구추계" [ref=f16e340] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_5,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e341]:
+                  - link [ref=f16e342] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_2,MT_ZTITLE,2")
+                    - img "국제인구이동통계" [ref=f16e343]
+                  - link "국제인구이동통계" [ref=f16e345] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_2,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e346]:
+                  - link [ref=f16e347] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_001,MT_ZTITLE,2")
+                    - img "고령친화용품제조업실태조사" [ref=f16e348]
+                  - link "고령친화용품제조업실태조사" [ref=f16e350] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_001,MT_ZTITLE,2")
+                  - list
+                - listitem [ref=f16e351]:
+                  - link [ref=f16e352] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_002,MT_ZTITLE,2")
+                    - img "인구동태패널통계" [ref=f16e353]
+                  - link "인구동태패널통계" [ref=f16e355] [cursor=pointer]:
+                    - /url: javascript:treeDownList("A_002,MT_ZTITLE,2")
+                  - list
+            - listitem [ref=f16e356]:
+              - img "사회일반" [ref=f16e358] [cursor=pointer]
+              - link "사회일반" [ref=f16e359] [cursor=pointer]:
+                - /url: javascript:treeDownList('B,MT_ZTITLE,1')
+            - listitem [ref=f16e360]:
+              - img "범죄ㆍ안전" [ref=f16e362] [cursor=pointer]
+              - link "범죄ㆍ안전" [ref=f16e363] [cursor=pointer]:
+                - /url: javascript:treeDownList('C,MT_ZTITLE,1')
+            - listitem [ref=f16e364]:
+              - img "노동" [ref=f16e366] [cursor=pointer]
+              - link "노동" [ref=f16e367] [cursor=pointer]:
+                - /url: javascript:treeDownList('D,MT_ZTITLE,1')
+            - listitem [ref=f16e368]:
+              - img "소득ㆍ소비ㆍ자산" [ref=f16e370] [cursor=pointer]
+              - link "소득ㆍ소비ㆍ자산" [ref=f16e371] [cursor=pointer]:
+                - /url: javascript:treeDownList('E,MT_ZTITLE,1')
+            - listitem [ref=f16e372]:
+              - img "보건" [ref=f16e374] [cursor=pointer]
+              - link "보건" [ref=f16e375] [cursor=pointer]:
+                - /url: javascript:treeDownList('F,MT_ZTITLE,1')
+            - listitem [ref=f16e376]:
+              - img "복지" [ref=f16e378] [cursor=pointer]
+              - link "복지" [ref=f16e379] [cursor=pointer]:
+                - /url: javascript:treeDownList('G,MT_ZTITLE,1')
+            - listitem [ref=f16e380]:
+              - img "교육ㆍ훈련" [ref=f16e382] [cursor=pointer]
+              - link "교육ㆍ훈련" [ref=f16e383] [cursor=pointer]:
+                - /url: javascript:treeDownList('H1,MT_ZTITLE,1')
+            - listitem [ref=f16e384]:
+              - img "문화ㆍ여가" [ref=f16e386] [cursor=pointer]
+              - link "문화ㆍ여가" [ref=f16e387] [cursor=pointer]:
+                - /url: javascript:treeDownList('H2,MT_ZTITLE,1')
+            - listitem [ref=f16e388]:
+              - img "주거" [ref=f16e390] [cursor=pointer]
+              - link "주거" [ref=f16e391] [cursor=pointer]:
+                - /url: javascript:treeDownList('I1,MT_ZTITLE,1')
+            - listitem [ref=f16e392]:
+              - img "국토이용" [ref=f16e394] [cursor=pointer]
+              - link "국토이용" [ref=f16e395] [cursor=pointer]:
+                - /url: javascript:treeDownList('I2,MT_ZTITLE,1')
+            - listitem [ref=f16e396]:
+              - img "경제일반ㆍ경기" [ref=f16e398] [cursor=pointer]
+              - link "경제일반ㆍ경기" [ref=f16e399] [cursor=pointer]:
+                - /url: javascript:treeDownList('J1,MT_ZTITLE,1')
+            - listitem [ref=f16e400]:
+              - img "기업경영" [ref=f16e402] [cursor=pointer]
+              - link "기업경영" [ref=f16e403] [cursor=pointer]:
+                - /url: javascript:treeDownList('J2,MT_ZTITLE,1')
+            - listitem [ref=f16e404]:
+              - img "농림" [ref=f16e406] [cursor=pointer]
+              - link "농림" [ref=f16e407] [cursor=pointer]:
+                - /url: javascript:treeDownList('K1,MT_ZTITLE,1')
+            - listitem [ref=f16e408]:
+              - img "수산" [ref=f16e410] [cursor=pointer]
+              - link "수산" [ref=f16e411] [cursor=pointer]:
+                - /url: javascript:treeDownList('K2,MT_ZTITLE,1')
+            - listitem [ref=f16e412]:
+              - img "광업ㆍ제조업" [ref=f16e414] [cursor=pointer]
+              - link "광업ㆍ제조업" [ref=f16e415] [cursor=pointer]:
+                - /url: javascript:treeDownList('L,MT_ZTITLE,1')
+            - listitem [ref=f16e416]:
+              - img "건설" [ref=f16e418] [cursor=pointer]
+              - link "건설" [ref=f16e419] [cursor=pointer]:
+                - /url: javascript:treeDownList('M1,MT_ZTITLE,1')
+            - listitem [ref=f16e420]:
+              - img "교통ㆍ물류" [ref=f16e422] [cursor=pointer]
+              - link "교통ㆍ물류" [ref=f16e423] [cursor=pointer]:
+                - /url: javascript:treeDownList('M2,MT_ZTITLE,1')
+            - listitem [ref=f16e424]:
+              - img "정보통신" [ref=f16e426] [cursor=pointer]
+              - link "정보통신" [ref=f16e427] [cursor=pointer]:
+                - /url: javascript:treeDownList('N1,MT_ZTITLE,1')
+            - listitem [ref=f16e428]:
+              - img "과학ㆍ기술" [ref=f16e430] [cursor=pointer]
+              - link "과학ㆍ기술" [ref=f16e431] [cursor=pointer]:
+                - /url: javascript:treeDownList('N2,MT_ZTITLE,1')
+            - listitem [ref=f16e432]:
+              - img "도소매ㆍ서비스" [ref=f16e434] [cursor=pointer]
+              - link "도소매ㆍ서비스" [ref=f16e435] [cursor=pointer]:
+                - /url: javascript:treeDownList('O,MT_ZTITLE,1')
+            - listitem [ref=f16e436]:
+              - img "임금" [ref=f16e438] [cursor=pointer]
+              - link "임금" [ref=f16e439] [cursor=pointer]:
+                - /url: javascript:treeDownList('P1,MT_ZTITLE,1')
+            - listitem [ref=f16e440]:
+              - img "물가" [ref=f16e442] [cursor=pointer]
+              - link "물가" [ref=f16e443] [cursor=pointer]:
+                - /url: javascript:treeDownList('P2,MT_ZTITLE,1')
+            - listitem [ref=f16e444]:
+              - img "국민계정" [ref=f16e446] [cursor=pointer]
+              - link "국민계정" [ref=f16e447] [cursor=pointer]:
+                - /url: javascript:treeDownList('Q,MT_ZTITLE,1')
+            - listitem [ref=f16e448]:
+              - img "정부ㆍ재정" [ref=f16e450] [cursor=pointer]
+              - link "정부ㆍ재정" [ref=f16e451] [cursor=pointer]:
+                - /url: javascript:treeDownList('R,MT_ZTITLE,1')
+            - listitem [ref=f16e452]:
+              - img "금융" [ref=f16e454] [cursor=pointer]
+              - link "금융" [ref=f16e455] [cursor=pointer]:
+                - /url: javascript:treeDownList('S1,MT_ZTITLE,1')
+            - listitem [ref=f16e456]:
+              - img "무역ㆍ국제수지" [ref=f16e458] [cursor=pointer]
+              - link "무역ㆍ국제수지" [ref=f16e459] [cursor=pointer]:
+                - /url: javascript:treeDownList('S2,MT_ZTITLE,1')
+            - listitem [ref=f16e460]:
+              - img "환경" [ref=f16e462] [cursor=pointer]
+              - link "환경" [ref=f16e463] [cursor=pointer]:
+                - /url: javascript:treeDownList('T,MT_ZTITLE,1')
+            - listitem [ref=f16e464]:
+              - img "에너지" [ref=f16e466] [cursor=pointer]
+              - link "에너지" [ref=f16e467] [cursor=pointer]:
+                - /url: javascript:treeDownList('U,MT_ZTITLE,1')
+            - listitem [ref=f16e468]:
+              - img "지역통계" [ref=f16e470] [cursor=pointer]
+              - link "지역통계" [ref=f16e471] [cursor=pointer]:
+                - /url: javascript:treeDownList('V,MT_ZTITLE,1')
+    - iframe [ref=f15e16]:
+      - generic [ref=f17e2]:
+        - generic [ref=f17e3] [cursor=pointer]: 통계목록
+        - generic [ref=f17e4]:
+          - list [ref=f17e6]:
+            - listitem [ref=f17e7] [cursor=pointer]:
+              - link "로딩중.." [ref=f17e8]:
+                - /url: javascript:fnActivate('1')
+              - link [ref=f17e10]:
+                - /url: javascript:fnCloseTab('1')
+                - img "close" [ref=f17e11]
+            - listitem [ref=f17e12] [cursor=pointer]:
+              - link "모두 닫기" [ref=f17e13]:
+                - /url: javascript:fn_closeAll()
+          - iframe [ref=f17e16]:
+            - link "차트 바로가기" [ref=f18e2] [cursor=pointer]:
+              - /url: "#Divchart"

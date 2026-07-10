@@ -1,6 +1,6 @@
 # Scientific Methods Inventory
 
-A running log of the scientific machinery - equations, theorems, estimators, numerical schemes - used across the demographic-collapse campaign, with what each is, where it is applied in the model, and the key reference. Terse by design; this is an inventory, not a tutorial. Entries are appended as new machinery enters the campaign.
+A running log of the scientific machinery - equations, theorems, estimators, numerical schemes - used across the demographic-collapse campaign, with what each is, where it is applied in the model, and the key reference. Terse by design; this is an inventory, not a tutorial. Entries are appended as new machinery enters the campaign. The plain-language companion is the README's "How the simulation actually works" walkthrough, which shows how these pieces fit together in one lap of the machine.
 
 ## Demographic core (age structure and renewal)
 
@@ -16,13 +16,15 @@ A running log of the scientific machinery - equations, theorems, estimators, num
 ## Fertility decomposition
 
 - **Total fertility rate (TFR) and quantum-tempo split** - period TFR mixes recoverable postponement (tempo) and structural completed fertility (quantum)
-- **Bongaarts-Feeney tempo-quantum decomposition** - $\text{adjTFR}=\text{TFR}/(1-r)$ with $r$ the rate of rise of mean age at childbearing; separates a mirage bump from a permanent loss. Ref: Bongaarts & Feeney 1998
+- **Bongaarts-Feeney tempo-quantum decomposition** - $\text{adjTFR}=\text{TFR}/(1-r)$ with $r$ the rate of rise of mean age at childbearing; separates a mirage bump from a permanent loss. Implemented on the *realized* annual change $\Delta\tau_{\text{realized}}$ (post-clip) with a floor at zero (the E40 fix; the pre-fix core summed sub-step rates and applied exactly 4x the documented rate, with an unguarded factor that could go negative). Ref: Bongaarts & Feeney 1998
 - **Skew-normal ASFR reconstruction** - a two-parameter (mean age, quantum-scaled) age-specific fertility profile reconstructing single-year ASFR to within 3% of peak
 - **Fecundability decay** - $\mathrm{fec}(\tau)=\exp(-0.03\max(\tau-30,0))$, the age penalty on conception
 
 ## Behavioural dynamical system
 
-- **Coupled first-order ODE system** - the behavioural layer: observable channels $C,\rho,\bar P,\tau,S,N,q$ each with its own dynamics, $\text{TFR}=C(1-\rho)\bar P\mathrm{fec}(\tau)(1-k_{BF}\Delta\tau)$; `emergent.EmergentModel`
+- **Coupled first-order ODE system** - the behavioural layer: observable channels $C,\rho,\bar P,\tau,S,N,q$ each with its own dynamics (six relaxations toward moving targets plus the bistable norm), composed as $\text{TFR}=C(1-\rho)\bar P\,\mathrm{fec}(\tau)\,\max(1-k_{BF}\Delta\tau_{\text{realized}},0)$; nine equations in all with the cohort memory integral and the composition law; `emergent.EmergentModel`
+- **Quarter-year forward-Euler substepping with physical clips** - the integrator: 4 substeps/year, each state clipped post-step to its physical range ($C\in[0.02,0.999]$, $\rho\in[0,0.6]$, $\bar P\ge 1$, $\tau\in[24,40]$, $S\in[0.05,0.95]$, $N\in[0,1]$, $q\in[-1,1]$); first-order convergent under substep halving (verified post-E40)
+- **Step-invariant observable rule** - an observable must be a function of the state trajectory, never of the integrator's internals; any quantity summed over substeps is suspect until proven step-invariant (the E40 standing lesson - the pre-fix tempo factor summed substep rates and was integrator-dependent)
 - **Soft-bistable double-well potential** - the coupling trap near the empirical TFR-1.5 ridge; gives the two-basin fate shape (the Seldon manifold)
 - **Bistable contagion with hysteresis** - the social-norm state $N$: $\dot N=-a_N(N-N_{lo})(N-\theta_N)(N-N_{hi})+f_N$, two stable wells, an unstable tipping point, a crossing push locks in. Ref: Schlogl 1972 (cubic bistable); Centola tipping ~25%
 - **Separatrix / basin of attraction** - the fate boundary in the (birth-rate, security) plane; the Seldon manifold ridge; measured at 1.47-1.66, matching the cited TFR-1.5 trap. Ref: Lutz et al. (low-fertility trap)
@@ -53,6 +55,7 @@ A running log of the scientific machinery - equations, theorems, estimators, num
 
 ## Population heterogeneity and cohorts
 
+- **Latin-hypercube ensemble (K=64)** - the production heterogeneity: each channel spread by a stratified inverse-normal quantile marginal, decorrelated across channels via seeded permutations; $\sigma\to0$ reproduces the scalar core to machine precision; spreads are the literature-grounded `SIGMA_CAL` (age-at-first-birth sd ~3yr the widest), and one per-region parity rescale (`PB_SCALE_ENS`, ~1.02-1.04) re-anchors the dispersed year-1 TFR to 2023 REAL exactly; `emergent.run_ens` / `run_cal`
 - **Reparameterisation-to-buckets** - lift a scalar channel to $\theta=\mu+\sigma\varepsilon$ discretised into population buckets; `population.PopChannel`
 - **Gauss-Hermite quadrature** - the bucketing nodes/weights for a Gaussian population ($\langle f\rangle=\sum_k w_k f(\theta_k)$); `population.PopChannel`, `ot.Dist.from_gaussian`
 - **Jensen gap** - $\langle f\rangle - f(\langle\theta\rangle)$, the heterogeneity correction where the channel is nonlinear; measured +0.093 (66% relative) off-threshold - material where thresholds bite
