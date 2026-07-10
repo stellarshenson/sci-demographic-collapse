@@ -172,3 +172,9 @@ The Wave-2 result was processed from the persisted `.output` (dict `{summary, re
 2. **W2.6 close**: either spend one more critic round after reclassifying the ~5 residual C0F0 MAJORs to ACCEPTED-RESIDUAL, or explicitly accept carrying them into Wave 3 as caveats.
 3. **Wave 3** (implementation) stays USER-GATED. Executor model = Fable 5 per the user's directive.
 Journal entry 52 (E41 Wave-2) appended via the plugin.
+
+### RESOLVED 2026-07-11 ~01:10 (decisions 1+2 taken by the user: "one more critic; update journal commit and push")
+- **W2.6 CLOSED at round 3**: the 5 residual MAJORs reclassified to ACCEPTED-RESIDUAL (`scratchpad/e41-w26-reclassification.json`, folded into the report under `w26_close` with the round-3 verdicts); two fresh Fable-5 reviewer subagents (identifiability + provenance, NEUTRAL wording - the earlier red-team phrasing tripped Fable's safeguards, see the `fable-safeguard-false-positives` memory) both returned **APPROVE, zero BLOCKER, zero MAJOR** after independently re-deriving the arithmetic. Six MINOR sharpenings folded into the wave3_actions (AR1 superseded-by-AR4; AR1 period-screen figures corrected to 0.9215/3.15; Korea PB0 band restated [1.167,1.30] + Stage-2 re-run at the joint corner C0=0.72/rv=0.065; AR2 exemption denominator pinned).
+- Records synced: acc-crit W2.6 -> MET (all Wave-2 criteria now MET); dossier bullet + Status; experiments-log E41 paragraph + at-a-glance + roll-up; memory (project-goals + MEMORY.md + new fable-safeguard-false-positives).
+- Journal entry 53 appended; commit + push authorized by the user this turn and executed.
+- **Wave 3 remains USER-GATED** - its entry conditions are protocol v2 + the `w26_close` wave3_actions. Executor model Fable 5 (neutral prompt wording).

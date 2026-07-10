@@ -108,13 +108,18 @@ BLOCKER. Both adversarial critics re-ran to a MINOR-REVISIONS verdict.
   5 re-verdict gate + honesty table + guard re-baselining; the discredited |PB_SCALE_ENS−1| honesty
   metric is deleted and replaced by a per-stage PB0-convergence table against the epoch-matched cohort
   reference
-- **Residual MAJORs (not blockers) - deferred to Wave 3 as caveats**: the two round-2 critics still
-  flag a handful of MAJOR revisions, all on the C0F0 Korea/Israel decoupling - the Korea PB0 moves
-  away from 1 so its honesty-table gap widens and must be disclosed; the delivered ideal-zero ordering
-  puts Korea at the bottom, which sits awkwardly with option A's "NORM0 is a latent index on observed
-  ordering" justification; Israel's cohort childlessness (p0≈0.11 at 40-44) is contested by its own
-  source and leaves the feasibility margin thin; the Korea RV0 band edge sits against a census-exact
-  0.065. None reopen a blocker; each is a Wave-3 implementation decision, recorded in the disposition
+- **Residual MAJORs → ACCEPTED-RESIDUAL, round-3 APPROVE ×2**: the round-2 critics flagged ~5 MAJOR
+  revisions, all on the C0F0 Korea/Israel decoupling (Korea's PB0 honesty gap widens by design;
+  the ideal-zero ordering contradicts option A's latent-index reading - Korea 0.002 lowest ideal in
+  the high well, Germany 0.075 highest in the low well; Israel's p0=0.11 contested by the same wave's
+  census-grade 0.068-0.070; Korea's RV0 band edge vs the census-exact 0.065). On the user's decision
+  they were formally reclassified to ACCEPTED-RESIDUAL - each with a named Wave-3 action and a
+  verdict-insensitivity argument - and the same two reviewer personas re-ran as round 3 (fresh
+  context): **both APPROVE, zero BLOCKER, zero MAJOR**, after independently re-deriving the
+  arithmetic (Korea PB0 at the census-exact joint corner C0=0.72/rv=0.065 is 1.167, still above the
+  1.15 screen; Israel's period screen 3.15 is p0-independent; NORM0 byte-untouched so no computed
+  number moves). Six MINOR sharpenings folded into the Wave-3 actions; record under `w26_close` in
+  the report JSON
 - **Remaining gaps** (13, unchanged scope) - Poland late-cohort p0 bracketed 0.10-0.20, the E30
   scar/intergenerational block stays unobserved (intervention-only), norm well stiffness fits only as
   stiff (all ideal series flat), migration identically zero for forward runs, several parity fine-splits
@@ -123,7 +128,9 @@ BLOCKER. Both adversarial critics re-ran to a MINOR-REVISIONS verdict.
 ## Status
 
 Wave 1 (research) and Wave 2 (blocker resolution) complete and persisted; model untouched. Every
-blocker is cleared and protocol v2 is written, but the re-critique closed at MINOR-REVISIONS, not a
-fully clean bar - a residual MAJOR set on the C0F0 decoupling is recorded as Wave-3 caveats rather
-than silently marked resolved. Wave 3 (implementation: anchor replacement, guard re-baselining,
-additive observability harness, 2000→2023 rejection backtest) is USER-GATED and not started.
+blocker is cleared, protocol v2 is written, and the review loop is CLOSED: after the round-2 residual
+MAJORs were reclassified to ACCEPTED-RESIDUAL (user decision, each with a named Wave-3 action), the
+round-3 re-review returned APPROVE from both reviewer personas with zero BLOCKER and zero MAJOR - the
+W2.6 bar holds. All Wave-2 acceptance criteria are MET. Wave 3 (implementation: anchor replacement,
+guard re-baselining, additive observability harness, 2000→2023 rejection backtest) is USER-GATED and
+not started; its entry conditions are the `w26_close` wave3_actions plus protocol v2.

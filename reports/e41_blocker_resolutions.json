@@ -4763,5 +4763,107 @@
         }
       ]
     }
+  ],
+  "w26_close": {
+    "date": "2026-07-11",
+    "purpose": "W2.6 close: the 5 residual MAJOR findings from the round-2 re-critique are formally reclassified to ACCEPTED-RESIDUAL, each with a Wave-3 action and a verdict-insensitivity argument. Round-3 critics test whether the justifications survive.",
+    "accepted_residuals": [
+      {
+        "id": "AR1",
+        "finding_id": "C0F0",
+        "critic": "identifiability",
+        "severity_was": "MAJOR",
+        "residual": "The persisted Stage-1 pairing table (scratchpad/e41-c0f0-recritique-resolution.json) Israel row is internally inconsistent: p0=0.078 listed with margin [0.0,0.03] and EIU [0.89,0.92]; a literal implementation gives RV0[IL]=1-(1-0.078)/0.89=-0.036 (violates 'no negative RV0'). The margin [0.0,0.03] is only consistent with the corrective p0=0.11.",
+        "tried_or_verified": "Numerically confirmed: at p0=0.078 margins are -0.032..-0.002; at p0=0.11 they are 0.0..+0.03 and RV0 0.0..0.033. Israel period screen per the persisted table: product 0.9215 (C0=0.97 x (1-RV0=0.95)), PB0=3.15 (>=1.15) - p0-independent. [r3 correction: the earlier 0.89/3.267 figures mixed an EIU-like product into the model-state product; both clear the screen ~2x.]",
+        "why_acceptable": "Israel is the above-replacement NULL CONTROL; no collapsing-region verdict rides on its cohort reference. The defect is a persisted-artifact bug, not a design flaw, and the period-feasibility screen (which gates the forward model) is unaffected (PB0 3.15-3.27 >> 1.15). Verdict-insensitive.",
+        "wave3_action": "Before Wave-3 Stage 1: set Israel p0=0.11 (Taub/OECD SF2.5, cohorts ~1970s) in BOTH the pairing row and the period-screen row; RV0[IL] band [0.0,0.033] with the thin-margin flag carried into the RV band per Stage 1(3).",
+        "superseded_by": "AR4 / protocol_v2_1 patch 1 (Israel p0 adjudicated to census 0.068-0.070; AR1's surviving content is the pairing-row consistency repair + the thin-margin flag mechanics - do NOT write p0=0.11 into the row)"
+      },
+      {
+        "id": "AR2",
+        "finding_id": "C0F3",
+        "critic": "identifiability",
+        "severity_was": "MAJOR",
+        "residual": "Korea's decoupling moves PB0 away from the cohort reference BY DESIGN, so its honesty-table gap D=|PB0-PB0_check| worsens ~100-124% at the Stage-1 transition (D_old |1.642-~1.97..2.06|=0.33-0.42 -> D_new |1.236-same|=0.73-0.82), violating the table's own 'none worsens >5%' clause. Also D_k is only live at the Stage-1 transition (PB0 fixed by the line-196 identity, kBF does not enter PB0).",
+        "tried_or_verified": "Arithmetic confirmed. The worsening is the intended erosion signal per C0F2 (correctly bar-free in Stage 1); the collision is that Stage-5's honesty clause re-imposes a 5% no-worsening bar on the same quantity for all 8 regions with no decoupled-region exemption written.",
+        "why_acceptable": "This is a protocol-clause gap the amendment already implies (C0F2 makes the Korea gap the NAMED bar-free erosion signal), not a defect in any computed TFR/verdict. The fix is a one-line acceptance-clause amendment for Wave 3, verdict-insensitive.",
+        "wave3_action": "Amend the Stage-5 honesty-table clause: decoupled regions (Korea, and Israel per AR4) are EXEMPT from 'none worsens >5%' - their D is reported bar-free as the named erosion signal per C0F2, or PB0_check is defined on the period construct (PPEM-consistent parity-of-mothers). The count condition adjusts its denominator with the exemptions: pass = D non-increasing for >=N-2 of the 6 non-exempt regions (state explicitly, do not leave >=6/8 to be trivially near-satisfied). D_k has live content only at the Stage-1 transition (a one-transition check, not a per-stage convergence claim)."
+      },
+      {
+        "id": "AR3",
+        "finding_id": "C0F5",
+        "critic": "identifiability",
+        "severity_was": "MAJOR",
+        "residual": "The consistent ideal-zero panel INVERTS the NORM0 well assignment - Korea 0.002 (lowest ideal) sits in the HIGH well 0.42 while Germany 0.075 (highest ideal) sits in the LOW well 0.14 - so a monotone mapping table (C0F6/Stage 0(d) fix_type=ordering-only) is unwritable. The intention construct also fails to rescue it (USA Pew 0.47 highest intention, but LOW well).",
+        "tried_or_verified": "Confirmed: no construct (ideal-zero or intention) yields a rank-consistent map to the {0.14,0.42} well assignment. Option A keeps the NORM0 dict byte-untouched (empty git diff), so NO computed value changes; the mapping table is documentation-only and feeds no number.",
+        "why_acceptable": "The arithmetic is untouched (NORM0 byte-frozen, option A byte-preserving); only the INTERPRETIVE claim 'NORM0 ordering is observationally grounded' is withdrawn. This is an honest epistemic downgrade, not a numeric defect, and it makes the record MORE honest.",
+        "wave3_action": "Relabel the mapping-table rows from fix_type=ordering-only to 'structural-prior-contradicted-by-ideal-construct': the NORM0 well assignment is a baseline-neutral structural prior with NO surviving observational support on either instrument. Add a Stage-5 caveat that E25+ cross-region NORM-lever rankings are CONDITIONAL on this prior; route any future re-assignment through the C1F5 construct switch (=option B, trips the re-verdict gate)."
+      },
+      {
+        "id": "AR4",
+        "finding_id": "C0F0",
+        "critic": "provenance",
+        "severity_was": "MAJOR",
+        "residual": "Israel cohort p0=0.11 (OECD SF2.5, women 40-44) is contradicted by the same wave's census-grade C1F3 delivery: CBS Census 2022 completed p0=0.068 (b.1968-72) / 0.070 (b.1973-77). With census p0, 1-p0=0.930-0.932 vs EIU 0.89-0.92 makes the COHORT feasibility margin NEGATIVE (-0.01..-0.04); the Taub 40-44 measure overstates permanent childlessness for Israel (late/single-mother fertility, Okun 2016).",
+        "tried_or_verified": "Confirmed the census figure is the stronger completed-cohort construct. Israel PERIOD screen (PB0 3.15) is unaffected - this hits only the cohort reference (Stage 3b + honesty table).",
+        "why_acceptable": "Israel is the above-replacement control; the forward-model feasibility (period screen) holds comfortably. A negative COHORT reference margin means Israel simply JOINS Korea as a cohort-reference-decoupled region - a consistency improvement, not an unsound spec. No collapsing-region verdict rides on Israel's cohort reference. Verdict-insensitive.",
+        "wave3_action": "Adjudicate Israel p0 to the census-grade completed-cohort value (0.068-0.070, CBS 2022); Israel then takes the Korea-style treatment for the COHORT reference only (a declared non-marital/late-fertility leak term, or reference-pair decoupling to a period-epoch state pair), while the period screen (PB0 3.15) is retained unchanged. Fix the pairing-table row so p0 and margin correspond (folds into AR1)."
+      },
+      {
+        "id": "AR5",
+        "finding_id": "C0F0",
+        "critic": "provenance",
+        "severity_was": "MAJOR",
+        "residual": "C0F0's residual null ('exact KOSIS 2020 census cell for never-married women 45-49') is FALSE - the C1F3 resolver delivered it (DT_1PM2002: never-married 9.75%, EIU=0.9025), which falls OUTSIDE the C0F0 EIU bracket [0.91,0.93]. Census-exact RV_ref=1-(1-0.156)/0.9025=0.065, BELOW the delivered RV0 band [0.07,0.09]; matched-cohort margin recomputes to +0.0585 (marriage-only), not +0.066..+0.086.",
+        "tried_or_verified": "Impact bounded and confirmed: PB0 at census-exact rv=0.065 is 0.72/(0.70*0.935*0.9166)=1.200 - exactly the band's lower edge, STILL PASSES the 1.15 screen, so NO verdict flips. Stage-2 was verified at rv in {0.083,0.092}, not at 0.065.",
+        "why_acceptable": "The correction widens Korea's RV0 band lower edge to the census value 0.065; the blocker conclusion (Korea period pair passes PB0>=1.15) is robust at the new edge (PB0=1.200). The only gap is that the Stage-2 band edge was not re-run at rv=0.065 - a Wave-3 verification step, not a design flaw. Verdict-insensitive.",
+        "wave3_action": "Wire DT_1PM2002 as the EIU basis (0.9025 ever-married + an explicitly declared 1-2pp cohabitation increment); delete the false residual-null claim; widen Korea RV0 band to [0.065,0.09] AND restate the PB0 band as [1.167,1.30] (the joint box minimum is at C0=0.72, rv=0.065: PB0=1.167, screen margin 0.017); run the Stage-2 band-edge verification at the JOINT corner (C0=0.72, rv=0.065) alongside (C0=0.70, rv=0.065); correct the margin claim to +0.0585 (marriage-only definition)."
+      }
+    ],
+    "protocol_v2_1_patches": [
+      "Stage 1 (pairing table): Israel p0 -> census-grade 0.068-0.070 (CBS 2022); Israel joins Korea as a cohort-reference-decoupled region (period screen retained); fix the persisted JSON Israel row so p0/margin/RV0 correspond (AR1, AR4).",
+      "Stage 1/2 (Korea RV0): widen band to [0.065,0.09] on the census-exact EIU=0.9025 basis; re-run the Stage-2 band edge at rv=0.065 (PB0=1.200, passes); delete the false residual-null (AR5).",
+      "Stage 5 (honesty table): decoupled regions (Korea, Israel) EXEMPT from 'none worsens >5%'; their D reported bar-free as the C0F2 erosion signal; D_k is a one-transition (Stage-1) check, not a per-stage convergence claim (AR2).",
+      "Stage 0/5 (NORM0 mapping): relabel to 'structural-prior-contradicted-by-ideal-construct'; E25+ cross-region NORM-lever rankings are CONDITIONAL on this prior; re-assignment routes through the C1F5 construct switch = option B (AR3)."
+    ],
+    "round3_verdicts": [
+      {
+        "critic": "identifiability",
+        "round": 3,
+        "model": "fable-5",
+        "verdict": "APPROVE",
+        "n_findings": 4,
+        "blockers": 0,
+        "majors": 0,
+        "note": "All five verdict-insensitivity arguments held under independent re-computation (PB0/margin/RV0 re-derived; NORM0 confirmed byte-untouched; no recorded verdict flips). 3 MINOR sharpenings folded into the wave3_actions above + 1 JUDGEMENT (AR3/AR4 verified sound)."
+      },
+      {
+        "critic": "provenance",
+        "round": 3,
+        "model": "fable-5",
+        "verdict": "APPROVE",
+        "n_findings": 4,
+        "blockers": 0,
+        "majors": 0,
+        "note": "Both provenance residuals correctly reclassified; DT_1PM2002 delivery confirmed in the report's own resolutions; census parity (Israel CBS 2022, p0=0.068, mean CEB 3.090 vs WPP 3.086) confirmed the stronger construct; period screen confirmed p0-independent. 3 MINOR (AR1 supersession, AR1 period-screen figures, AR5 joint corner) + 1 JUDGEMENT (verified)."
+      }
+    ],
+    "outcome": "W2.6 bar HOLDS: zero BLOCKER and zero MAJOR in round 3 - the five formerly-MAJOR items are ACCEPTED-RESIDUAL dispositions whose justifications both reviewers re-verified arithmetically (APPROVE x2). Six convergent MINOR sharpenings folded into the wave3_actions; nothing re-raised."
+  },
+  "critic_verdicts_round3": [
+    {
+      "critic": "identifiability",
+      "round": 3,
+      "verdict": "APPROVE",
+      "blockers": 0,
+      "majors": 0
+    },
+    {
+      "critic": "provenance",
+      "round": 3,
+      "verdict": "APPROVE",
+      "blockers": 0,
+      "majors": 0
+    }
   ]
 }

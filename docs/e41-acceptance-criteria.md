@@ -41,15 +41,17 @@ model (`src/sci_demographic_collapse/`) is untouched until W3.1.
   honesty metric deleted, replaced by a per-stage PB0-convergence table), C0F6 (option A leaves the
   `NORM0` dict byte-untouched), C0F7 (Stage-5 guard re-baselining enumerating every band in the
   63-test suite), C0F8 (WLS scope restriction + s_struct term)
-- **W2.6 OPEN (blocker bar cleared, MAJOR clause not clean)** - both critics re-ran to round 2 at
-  MINOR-REVISIONS, **zero BLOCKER** (the user's "remove all blockers" mandate MET, `final_blockers=0`).
-  But the second half of the bar - every remaining MAJOR points only at an ACCEPTED-RESIDUAL
-  disposition - is NOT satisfied: the round-2 critics still raise ~5 MAJOR revisions against
-  RESOLVED/AMENDED rows, all on the C0F0 Korea/Israel decoupling (Korea PB0 honesty-gap widening,
-  option-A ordering vs delivered ideal-zero, Israel p0 contested by its own source, Korea RV0 band
-  edge). They are enumerated in the report and deferred as Wave-3 caveats. Closing this cleanly needs
-  one more critic round after reclassifying those MAJORs to ACCEPTED-RESIDUAL, or an explicit user
-  decision to carry them into Wave 3
+- **W2.6 MET (round 3)** - closed per the user's decision (2026-07-11): the ~5 round-2 MAJORs (all on
+  the C0F0 Korea/Israel decoupling) were formally reclassified to ACCEPTED-RESIDUAL, each with a
+  named Wave-3 action and a verdict-insensitivity argument, and the same two reviewer personas re-ran
+  as round 3 (Fable 5, fresh context): **both returned APPROVE - zero BLOCKER, zero MAJOR** - after
+  independently re-deriving the PB0/margin/RV0 arithmetic (no recorded verdict flips; NORM0 confirmed
+  byte-untouched). The bar - zero BLOCKER and every remaining MAJOR only at an ACCEPTED-RESIDUAL
+  disposition - now holds with zero MAJORs outstanding. Six convergent MINOR sharpenings were folded
+  into the wave3_actions (AR1 marked superseded-by-AR4 so the retired p0=0.11 cannot be implemented;
+  AR1 period-screen figures corrected to the persisted 0.9215/3.15; Korea PB0 band restated
+  [1.167,1.30] with the Stage-2 re-run at the joint corner C0=0.72, rv=0.065; the AR2 exemption
+  denominator pinned). Full record in `reports/e41_blocker_resolutions.json` under `w26_close`
 - **W2.7 MET** - dossier updated in place (`docs/e41-calibration-extension-research.md`) with a
   "Wave 2 - blocker resolution outcome (v2)" section (new values, protocol v2, disposition summary,
   residual-MAJOR caveats) and a revised Status block; this file's Wave-2 statuses flipped
