@@ -48,11 +48,12 @@ Round-1 results persisted: `scratchpad/e40-review1-mode1-result.txt` (diff revie
   B-F for advancing births) - comment added in run_ens; #1/#6 vestigial dtau return - docstring note added
   (_estep marked DIAGNOSTIC); #4 self.P→p style - fixed. All three edits are in emergent.py (comment-only).
 - Mode 2 (data-scientist) CONFIRMED-REAL items still TO DO:
-  1. **[MAJOR] Crisis fidelity never re-verified post-fix** - run the E12-H44 protocol on the corrected
-     core (4 crisis windows sign-match: USA 2008, COVID, Korea IMF, reunification/Italy) and add to nb36
-     A4 evidence. NOTE: check first WHICH core E10/E12 crisis tests ran on - if they ran on the Bayesian
-     coremodel pipeline (NOT emergent.py), the finding is moot and should be answered as such: nb5/nb7
-     predate the emergent core. VERIFY before re-running anything.
+  1. **[MAJOR] Crisis fidelity - RESOLVED (moot).** CONFIRMED this session: nb05 (E10 crises), nb07
+     (E12 incl. H44) and nb14 (E19) all `from sci_demographic_collapse import coremodel as cm` and
+     import NO emergent core - the crisis battery validates the Leslie/data layer, which E40 did not
+     touch. The emergent behavioural core (where the tempo term lives) has no recorded crisis
+     validation to invalidate; its recorded validation surface is the 2023 calibration (A3, 8/8).
+     DONE in `scratchpad/build_nb36.py`: A4 markdown now states this by construction. No re-run needed.
   2. **[MAJOR] Blast-radius sample thin (2 regions/3 archetypes)** - extend nb36 A4b to all 8 regions
      (endpoint-delta stability table) or justify worst-case coverage.
   3. **[MAJOR] Floor-bias unmeasured** - report % of agent-years hitting the factor floor under (a)
@@ -72,15 +73,30 @@ Round-1 results persisted: `scratchpad/e40-review1-mode1-result.txt` (diff revie
   E40 rigor audit: tempo term fixed 4x, verdicts stand, amplitudes superseded".
 - Report to user; git commit/push ONLY on explicit approval (the brace commit itself is authorized by /brace).
 
-### FIRST ACTION for a fresh session
+### PARKED 2026-07-10 ~17:50 by user ("park this work for now, stop until I resume later")
 
-Read this file, then: verify which core the E10/E12 crisis battery ran on (`grep -l "crisis" notebooks/05*
-notebooks/07*` + read headers) → answer Mode-2 finding 1 accordingly (re-run on emergent core only if it
-ever ran there); then extend nb36 A4b to 8 regions + add the floor-share cell (finding 3), add supersede
-markers (finding 4), rebuild+execute nb36 via
+In-flight edits sit in `scratchpad/build_nb36.py` (gitignored, on disk), NOT yet rebuilt/executed into
+the notebook, NOT committed:
+- Mode-2 finding 1 (crisis fidelity): DONE - A4 markdown states it is moot by construction (see above).
+- Mode-2 finding 2 (thin sample): DONE in the builder - added an `A4b(8)` cell sweeping all 8 regions x
+  {tempo, coupling crown} endpoint deltas, asserting worst shift < 0.03.
+- Mode-2 finding 3 (floor bias): PARTIAL - `run_ens_legacy` gained a `fixed=True` mode that measures the
+  fixed core's floor-hit share; still need to ADD the A4e cell that calls it on baseline + strongest fTau
+  and reports the floor-hit % (expect ~0 at baseline - negatives were a legacy artifact).
+- Mode-2 finding 4 (supersede markers): NOT STARTED - add `[amplitude superseded → E40]` inline pointers
+  to the E19 / E33-H310 / E37 tempo-amplitude rows in the experiments log (marker only, never a verdict
+  rewrite; append-only safe).
+- Mode-1 findings: all addressed (comments in emergent.py, committed in cdcda5e).
+
+### FIRST ACTION on resume
+
+Read this file. Then finish the builder: add the A4e floor-share cell (finding 3), then add the supersede
+markers to the experiments log (finding 4). Rebuild + execute:
 `CUDA_VISIBLE_DEVICES=GPU-58ae1f45-295c-681b-60ad-843265f52997 .venv/bin/jupyter nbconvert --to notebook
---execute --inplace --ExecutePreprocessor.kernel_name=sci-demographic-collapse notebooks/36-kj-rigor-audit-e40.ipynb`,
-re-run both reviewers, then journal + memory + report.
+--execute --inplace --ExecutePreprocessor.kernel_name=sci-demographic-collapse notebooks/36-kj-rigor-audit-e40.ipynb`.
+Then re-run BOTH Bedrock reviewers on the updated tree (recipes above) for the clean confirming round; then
+`/journal:update` (E40, Extended) + `journal-tools check`; memory (`project-goals.md` + `MEMORY.md`); report
+to user; commit/push only on explicit approval.
 
 ### Invalid / quarantined
 
