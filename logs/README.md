@@ -23,3 +23,5 @@ Progress logs for background and long-running jobs.
 - `nb33-execute.log` - execution of `notebooks/33-kj-israel-mechanisms-e37.ipynb` (Israel's mechanisms fanned into H358-H367, E37)
 - `nb34-execute.log` - execution of `notebooks/34-kj-social-fabric-e38.ipynb` (the sociologist's fanout + housing-coupling loop, H368-H385, E38)
 - `sci-ingest.log` - Meta SCI (Social Connectedness Index) NUTS 2024 download from HDX into `data/raw/sci/`
+- `proto-e39.log` - E39 prototype run (time-resolved closed-loop checks: back-loading, sign flip, gH* fixed point) before the notebook build
+- `nb35-execute.log` - execution of `notebooks/35-kj-housing-coupling-time-e39.ipynb` (the housing-coupling loop in time, H386-H392, E39)

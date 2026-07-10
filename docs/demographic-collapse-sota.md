@@ -343,7 +343,18 @@ dwellings per adult h = 1 − c/2 closed as a tightness term deepens all eight b
 −0.063) and gives housing supply its coupling channel; but supply × coupling is a measured substitution
 (joint/sum 0.97, deepening with the loop gain - the coupling lever pre-relieves the market it would have fixed),
 not a double dividend, and re-coupling funds ~18% of its own affordability (E38-H383-H385, gate-checked by the
-interaction-analyst). Corollaries elsewhere in this doc gain independent support: crossing the separatrix is
+interaction-analyst). E39 (`notebooks/35-kj-housing-coupling-time-e39.ipynb`) then re-anchored the
+loop gain on the closed baseline's own trajectory (gH* = 0.1423 - the hand-set window factor had overstated it
+by 37%) and made time a coordinate of every loop statement: the amplification is back-loaded (8/8 regions
+deepen, 55% of the century's damage after 2085), the reverse dividend accrues late (~5% of the crowned lever's
+gain at 2050 → 11-15% at 2124), and the fission tax closes the sizing case - the coupling decline alone raises
+household demand past a +10% supply program in every trapped region (Korea by 2062, +27% by century's end),
+while the E20 podium, the E37 transplant (+0.72 → +0.80 closed-loop) and the E36 male-vs-inequality order all
+survive intact. The supply × coupling interaction did NOT survive as a time law: the gate's discriminators
+(reproduced in-notebook) show the deep-basin mid-century complement is the coupling-trap convexity - remove the
+trap and it vanishes - and Korea's endpoint additivity is a within-crown fC/fS cancellation; the only genuine
+endpoint substitution is Poland's, so the one-lever-per-wire law survives Poland-led and weakens at the
+honestly-calibrated gain (E39-H386-H392). Corollaries elsewhere in this doc gain independent support: crossing the separatrix is
 what matters, not budget concentration (the big-push premium is refuted at the calibrated thin barriers while
 tip-and-stay hysteresis is confirmed, E38-H380), and the E17 exit-valve backfire now falls out of Nash threat
 points with the corollary that gender equity is what makes exit rights safe (E38-H381).

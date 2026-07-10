@@ -117,6 +117,13 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb34_housing_coupling_loop.png` - the closed household-formation loop: amplification across all 8 regions, the supply x coupling substitution, and the reverse affordability dividend
 - `nb34_e38_verdicts.json` - all 18 E38 verdicts (H368-H385) with evidence, two of them stamped by the interaction-analyst gate
 
+**The housing-coupling loop in time (Notebook 35, E39)**
+- `nb35_amp_time.png` - the loop's amplification time-resolved across all 8 regions at the trajectory-anchored gH*=0.1423 (back-loaded: 55% of the damage lands after 2085) + the tightness trace T(t)
+- `nb35_interaction_time.png` - the supply x coupling interaction ratio in time (Korea flips complement→substitute, Poland/Germany substitute throughout) + the reverse dividend's echo share accruing late
+- `nb35_rankings.png` - the E20 per-cost podium and the male-vs-inequality head-to-head, open core vs closed loop (both orders survive; the housing proxy vs native-channel split)
+- `nb35_fission_tax.png` - household-demand growth from the baseline coupling decline vs a +10% supply program, with crossing years (Korea eats the program by 2062)
+- `nb35_e39_verdicts.json` - all 7 E39 verdicts (H386-H392) with evidence, H387 stamped by the interaction-analyst gate
+
 **Heretical & coercive natalism fanout (Notebook 31, E34)**
 - `nb31_coercion_reversal.png` - the coercion x path-integral sign flip: gen-1 vs gen-4 ΔTFR on Korea for the coercive vs devotion/structural families, and the Decree 770 vs Georgia-baptism Korea trajectories
 - `nb31_norm_penalty.png` - the norm x penalty dividing line: the same fN channel supports when re-priced voluntarily (δ≈0) and refutes when enforced by penalty/propaganda (δ=0.4)

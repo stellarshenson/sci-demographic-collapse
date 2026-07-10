@@ -1,0 +1,30 @@
+{
+  "H386": {
+    "verdict": "SUPPORTED",
+    "metric": "amp < 0 in 8/8 regions at gH*=0.1423 (worst Italy -0.043, vs E38's -0.063 at the hand-set 0.195); back-loaded: the post-2085 window (39% of the century) carries 55% of the endpoint amplification on average (8/8 material-amp regions beat the linear benchmark); drift 1e-04; Korea band 0.10:-0.026 / 0.30:-0.088 - the loop is a slow amplifier whose damage compounds as the coupling decline feeds the tightness"
+  },
+  "H387": {
+    "verdict": "PARTIAL",
+    "metric": "gate-QUALIFIED from 'flips sign in time': on the shared fC wire the pairwise supply x crown term is near-additive by construction (supply co-writes a wire the crown dominates); the mid-century complement exists in the deep basin only (Korea ratio 1.022, +0.0038 TFR, scaling with gH: 1.015/1.048 at 0.10/0.30) and is the coupling-trap convexity, NOT housing timing - decl=0 removes it (1.022->0.997, cross-term +0.0038->-0.0005); Korea's 0.999 endpoint is additive-by-CANCELLATION (fC-path substitute -0.0028 vs fS-path complement +0.0060); no region flips complement->substitute above the 1e-4 floor - the only real endpoint substitution is Poland's (-0.0155); E38-H384's one-lever-per-wire reading survives Poland-led, while at the recalibrated gH* Korea reads additive (substitution re-emerges only at gH~0.30: end ratio 0.989) [gate: interaction-analyst QUALIFIED, discriminators in-notebook]"
+  },
+  "H388": {
+    "verdict": "SUPPORTED",
+    "metric": "the echo share rises monotonically in 3/3 triad regions (corr with time +0.94 mean), from 5% at 2050 to 12% at 2124 at gH* (E38-H385's ~18% was the endpoint at the hand-set gain) - the reverse dividend needs the coupling state to move first, so it pays the policymaker who holds the lever for decades, not the one reading a 2050 evaluation"
+  },
+  "H389": {
+    "verdict": "PARTIAL",
+    "metric": "the per-cost order survives the closed loop unchanged (coupling-legal first among the E38-H379 five, +1.25->+1.49 with a +19% echo; cash echo 2.3% - the loop cannot rescue a lever that never touches coupling); the E20 housing PROXY prices above it at the supply-zoning cost, but that podium seat hinges on the cost convention (at the E20 pool's fiscal 0.5 it falls below) - which is the conflation the native/proxy split exposes: the native tightness channel prices at 5% of the proxy per cost, so the loop carries only the coupling-mediated minority of housing's value, the rest riding the direct Dettling-Kearney evidence bundled into the proxy forcing - a FLOOR on housing's worth, not a verdict that housing is worth 5% of what E20 credited [gate caveat]"
+  },
+  "H390": {
+    "verdict": "SUPPORTED",
+    "metric": "the E37 transplant gains a housing echo: open +0.717 (E37 recorded +0.717) -> closed +0.798 at gH* (+11%), positive across the band - re-coupling frees dwellings from year one (h0 pinned to Korea's own stock), so the loop pays the coupling gap back with interest; the E37 verdict (the gap lives in coupling) strengthens"
+  },
+  "H391": {
+    "verdict": "SUPPORTED",
+    "metric": "inequality beats the male lever in 4/4 regions with the loop closed (both gain an echo through the shared coupling wire, max shift +0.067 children) - the README head-to-head survives: the published open-loop numbers stand as recorded, the loop widens nothing that changes the order"
+  },
+  "H392": {
+    "verdict": "SUPPORTED",
+    "metric": "the fission tax out-eats the +10% supply program in 4/4 trapped regions (Korea +27% crossing 2062, Italy +19%, Japan +17%, Poland +18%); E16-H114 is now time-indexed: supply-not-subsidy stands, but a program sized against static household counts is consumed by the coupling decline itself - housing policy must be sized against the fission trajectory, or paired with the coupling levers that stop it"
+  }
+}
