@@ -20,29 +20,40 @@ model (`src/sci_demographic_collapse/`) is untouched until W3.1.
 
 ## Wave 2 - blocker resolution (the current mandate: "remove all blockers")
 
-- **W2.1 OPEN** - every one of the 18 BLOCKER/MAJOR findings carries a disposition row in
-  `reports/e41_blocker_resolutions.json`: RESOLVED (data delivered, source + URL + year per value),
-  AMENDED (protocol text rewritten to the critics' fix), or ACCEPTED-RESIDUAL (named justification +
-  what was tried); zero findings left without a disposition
-- **W2.2 OPEN** - the two Wave-1 nulls filled with sourced values, or ACCEPTED-RESIDUAL naming the
-  exhausted sources (Israel childfree-ideal via CBS Social Survey; Israel adjTFR via Okun
-  decompositions or computed B-F from on-disk CBS/WPP ASFR + MAC)
-- **W2.3 OPEN** - parity distributions (0/1/2/3+) delivered for France, Italy, Korea, Poland, Israel
-  (C1F3) or ACCEPTED-RESIDUAL per region with the named unavailable table
-- **W2.4 OPEN** - the C-construct blocker (C0F0) resolved: one construct chosen (critics' proposal:
-  lifetime ever-in-union by 45-49), and the feasibility bound C0 ≥ 1−p0 re-verified arithmetically
-  for all 8 regions with the delivered numbers
-- **W2.5 OPEN** - protocol v2 written containing all six amendments: C0F1 (kBF adjudicated on gap
-  dynamics, not levels), C0F2 (epoch-matched PB0 cross-check), C0F3 (honesty metric = PB0 vs
-  epoch-matched check, not |PB_SCALE_ENS−1|), C0F6 (option A leaves the `NORM0` dict untouched),
-  C0F7 (guard-suite re-baselining stage enumerating every numeric band in
-  `tests/test_hypothesis_guards.py`), C0F8 (WLS structural-error term or scope restriction)
-- **W2.6 OPEN** - re-critique clean: both adversarial critics re-run against the v2 dossier +
-  disposition table; bar = zero BLOCKER, and every remaining MAJOR points only at an explicitly
-  ACCEPTED-RESIDUAL disposition; loop until the bar holds (rounds protocol)
-- **W2.7 OPEN** - dossier updated in place (`docs/e41-calibration-extension-research.md`) with the
-  new values, protocol v2, and disposition summary; this file's Wave-2 statuses flipped to MET
-- **W2.8 OPEN** - the experiments log's E41 section extended (append-only) with the Wave-2 outcome
+- **W2.1 MET** - every one of the 18 BLOCKER/MAJOR findings carries a disposition row in
+  `reports/e41_blocker_resolutions.json`: 9 RESOLVED (data delivered, source + URL + year per value),
+  9 AMENDED (protocol text rewritten to the critics' fix), zero OPEN; disposition tally verified from
+  the persisted report
+- **W2.2 MET** - both Wave-1 nulls filled (C1F4 RESOLVED): Israel adjTFR computed locally from WPP
+  single-age ASFR (2015-2023 series, tempo gap +0.165 → ~0 by 2022-23, method-consistent with the HFC
+  BF-from-total convention); Israel childfree-ideal delivered as CBS Social Survey 2019 Table 39
+  \<0.01 hard upper bound (exact zero-only share stays a named residual)
+- **W2.3 MET** - parity distributions (0/1/2/3+) delivered for all 5 null regions (C1F3 RESOLVED:
+  KOSIS 2020, CBS Census 2022, GUS NSP 2011, INSEE EFL 2011, ISTAT FE1); each sums to 1.000, parity-0
+  coordinates with the cohort-childlessness family; Japan/FR/IT finer splits noted as remaining gaps
+- **W2.4 MET** - C0F0 resolved: lifetime ever-in-union C-construct collected 8/8 from primary
+  sources, feasibility re-verified with a period screen PB0 ≥ 1.15 (= 1+SIGMA_CAL[Pb], the empirical
+  pass boundary, stricter than the naive C0 ≥ 1−p0) checked 8/8; Korea alone decouples to a
+  period-epoch pair (C0=0.70/RV0=0.09, Yoo 2026), recorded with its residual MAJOR caveats under W2.6
+- **W2.5 MET** - protocol v2 written (7 stages, in the report and dossier) containing all six
+  amendments: C0F1 (kBF adjudicated on gap dynamics G = 1−TFR/adjTFR, not levels), C0F2 (epoch-matched
+  PB0 cross-check via a spliced b.1975 pseudo-cohort CFR at new Stage 3b), C0F3 (|PB_SCALE_ENS−1|
+  honesty metric deleted, replaced by a per-stage PB0-convergence table), C0F6 (option A leaves the
+  `NORM0` dict byte-untouched), C0F7 (Stage-5 guard re-baselining enumerating every band in the
+  63-test suite), C0F8 (WLS scope restriction + s_struct term)
+- **W2.6 OPEN (blocker bar cleared, MAJOR clause not clean)** - both critics re-ran to round 2 at
+  MINOR-REVISIONS, **zero BLOCKER** (the user's "remove all blockers" mandate MET, `final_blockers=0`).
+  But the second half of the bar - every remaining MAJOR points only at an ACCEPTED-RESIDUAL
+  disposition - is NOT satisfied: the round-2 critics still raise ~5 MAJOR revisions against
+  RESOLVED/AMENDED rows, all on the C0F0 Korea/Israel decoupling (Korea PB0 honesty-gap widening,
+  option-A ordering vs delivered ideal-zero, Israel p0 contested by its own source, Korea RV0 band
+  edge). They are enumerated in the report and deferred as Wave-3 caveats. Closing this cleanly needs
+  one more critic round after reclassifying those MAJORs to ACCEPTED-RESIDUAL, or an explicit user
+  decision to carry them into Wave 3
+- **W2.7 MET** - dossier updated in place (`docs/e41-calibration-extension-research.md`) with a
+  "Wave 2 - blocker resolution outcome (v2)" section (new values, protocol v2, disposition summary,
+  residual-MAJOR caveats) and a revised Status block; this file's Wave-2 statuses flipped
+- **W2.8 MET** - the experiments log's E41 section extended (append-only) with the Wave-2 outcome
 
 ## Wave 3 - implementation (not started)
 

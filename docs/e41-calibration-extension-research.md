@@ -81,8 +81,49 @@ Germany-TFR source fork moving the region relative to the TFR-1.5 ridge. Open re
 lost gap-fill agents: parity distributions (0/1/2/3+) beyond the aggregates, Israel norm/adjTFR nulls,
 and q/scarring-channel observables (structurally hard - likely `fix_type=none`).
 
+## Wave 2 - blocker resolution outcome (v2)
+
+The 18 findings were driven through a resolver → synthesis → re-critique workflow (`wf_53322579-da8`,
+19 agents, 0 errors); the full disposition table, protocol v2, delivered values and both re-critiques
+are persisted at `reports/e41_blocker_resolutions.json`. Every finding now carries a disposition: 9
+RESOLVED with delivered data, 9 AMENDED with replacement protocol text, none left OPEN, zero remaining
+BLOCKER. Both adversarial critics re-ran to a MINOR-REVISIONS verdict.
+
+- **Three blockers cleared** - C0F0 (C-construct) reproduced then resolved by design: the period
+  feasibility screen is PB0 ≥ 1.15 (= 1 + SIGMA_CAL[Pb]), checked 8/8; Korea alone decouples to a
+  period-epoch pair C0=0.70 / RV0=0.09 (PB0=1.236) grounded in Yoo 2026, Demographic Research 54(3)
+  (tempo-adjusted marriage quantum PPEM\* 0.698, 2023); C1F0 (q channel) gets the Wilson
+  marriageable-men family MM = SR(25-44)·male-emp(25-54) for 8 regions × 2000/2010/2023, flat for 6/8
+  so the q=0 baseline gains support; C1F1 (migration) validated 80/80 against on-disk WPP and wired as
+  observed NetMigrations × Rogers-Castro for the 2000-2023 backtest only, forward runs stay
+  natural-increase-only
+- **New observable families delivered** (41 values, 13 families): annual live births 8×2019-2025
+  (national offices, 2025 provisional), completed-cohort parity 0/1/2/3+ for the 5 null regions,
+  Israel adjTFR computed locally (tempo gap +0.165 collapsing to ~0 by 2022-23 → Israel's ~2.9 TFR is
+  quantum not tempo), old-age dependency OADR 8×2000-2023, fecundity slope cross-checked against
+  Leridon 2004, ideal-zero norm points where a same-instrument panel exists
+- **Protocol v2** (7 stages, closed-form first) - Stage 0 definitions → Stage 1 static anchors → Stage
+  2 re-anchor PB_SCALE_ENS → Stage 3 dynamics (only optimizer stage) → Stage 3b epoch-matched cohort
+  composition check → Stage 4 kBF adjudicated on GAP DYNAMICS (G = 1 − TFR/adjTFR), not levels → Stage
+  5 re-verdict gate + honesty table + guard re-baselining; the discredited |PB_SCALE_ENS−1| honesty
+  metric is deleted and replaced by a per-stage PB0-convergence table against the epoch-matched cohort
+  reference
+- **Residual MAJORs (not blockers) - deferred to Wave 3 as caveats**: the two round-2 critics still
+  flag a handful of MAJOR revisions, all on the C0F0 Korea/Israel decoupling - the Korea PB0 moves
+  away from 1 so its honesty-table gap widens and must be disclosed; the delivered ideal-zero ordering
+  puts Korea at the bottom, which sits awkwardly with option A's "NORM0 is a latent index on observed
+  ordering" justification; Israel's cohort childlessness (p0≈0.11 at 40-44) is contested by its own
+  source and leaves the feasibility margin thin; the Korea RV0 band edge sits against a census-exact
+  0.065. None reopen a blocker; each is a Wave-3 implementation decision, recorded in the disposition
+- **Remaining gaps** (13, unchanged scope) - Poland late-cohort p0 bracketed 0.10-0.20, the E30
+  scar/intergenerational block stays unobserved (intervention-only), norm well stiffness fits only as
+  stiff (all ideal series flat), migration identically zero for forward runs, several parity fine-splits
+  live only in supplementary tables
+
 ## Status
 
-Research complete and persisted; model untouched; E41 round (implementation + verification against
-these targets) not yet started. The 2 remaining nulls and the lost gap-fills are the first work items
-of the round.
+Wave 1 (research) and Wave 2 (blocker resolution) complete and persisted; model untouched. Every
+blocker is cleared and protocol v2 is written, but the re-critique closed at MINOR-REVISIONS, not a
+fully clean bar - a residual MAJOR set on the C0F0 decoupling is recorded as Wave-3 caveats rather
+than silently marked resolved. Wave 3 (implementation: anchor replacement, guard re-baselining,
+additive observability harness, 2000→2023 rejection backtest) is USER-GATED and not started.

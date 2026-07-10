@@ -157,3 +157,18 @@ Every FIRST-ACTION item above is done and verified on disk:
   - per-agent results: `.../subagents/workflows/wf_53322579-da8/journal.jsonl` (`type:result` lines)
 - Headline dispositions in the return: **c-construct (C0F0/C0F4) RESOLVED-DATA** - lifetime ever-in-union C-construct collected for all 8 regions from PRIMARY sources (Eurostat Census 2021 API FR/DE/IT/PL, CPS ASEC 2023 USA, 2020 census JP, Lee&Zeman 2024 KOSIS KR, CBS IL, NSFG/NCFMR US cohabitation); feasibility bound C0>=1-p0 holds 7/8, Israel knife-edge (cohort-mismatch, feasible at cohort-matched p0~0.11); **C0F4 Poland cohort-parity table DOES NOT EXIST** (NSP 2021 had no children-ever-born question) - "Poland UP" stays directional but the mandated magnitude does not survive. Other 16 findings' dispositions in the .output/journal - NOT read this session.
 - **FIRST ACTION UNCHANGED** but reads from the completed .output/journal (no partial-reconstruction needed): persist `reports/e41_blocker_resolutions.json`, doc v2, flip acc-crit W2.x, extend experiments-log E41. Loop only if a final critic re-verdict still carries a BLOCKER.
+
+### RESOLVED 2026-07-11 ~00:45 (brace-resume complete; FIRST ACTION done)
+The Wave-2 result was processed from the persisted `.output` (dict `{summary, result:{resolutions, synthesis, patches, critiques, final_blockers}}`; the workflow value is under `result`). Outcome: **18 findings all dispositioned - 9 RESOLVED / 9 AMENDED / 0 OPEN / 0 BLOCKER** (`final_blockers=0`); both critics re-ran to round-2 MINOR-REVISIONS. All FIRST-ACTION recordings done and verified on disk:
+- `reports/e41_blocker_resolutions.json` (326KB - disposition, protocol_v2 [7 stages], 41 new_values, honesty_metrics, remaining_gaps, both final critiques, round-1 patches, all 12 resolutions).
+- `docs/e41-calibration-extension-research.md` - "Wave 2 - blocker resolution outcome (v2)" section + revised Status.
+- `docs/e41-acceptance-criteria.md` - W2.1-W2.5, W2.7, W2.8 flipped to MET; **W2.6 kept OPEN-qualified** (blocker bar met, but the round-2 critics still raise ~5 MAJORs on the C0F0 decoupling → the "MAJOR only against ACCEPTED-RESIDUAL" clause is not clean; deferred as Wave-3 caveats, NOT silently resolved).
+- `docs/experiments/demographic-collapse-experiments.md` - E41 Wave-2 paragraph rewritten to "complete", at-a-glance row + roll-up status line updated.
+- Memory: `project-goals.md` E41 paragraph + `MEMORY.md` israel line extended.
+- `make test` 63 passed exit 0 (no source touched - docs + one report JSON only); `make lint` not re-run (no .py changed).
+
+**OPEN DECISIONS for the user (nothing auto-done):**
+1. **Commit** the E41 Wave-2 recording tree (report JSON + 4 docs + 2 memory files) - awaiting explicit approval.
+2. **W2.6 close**: either spend one more critic round after reclassifying the ~5 residual C0F0 MAJORs to ACCEPTED-RESIDUAL, or explicitly accept carrying them into Wave 3 as caveats.
+3. **Wave 3** (implementation) stays USER-GATED. Executor model = Fable 5 per the user's directive.
+Journal entry 52 (E41 Wave-2) appended via the plugin.
