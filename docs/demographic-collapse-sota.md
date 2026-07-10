@@ -320,6 +320,33 @@ carry ~none, so the transferable shadow is exactly the crowned coupling + equity
 super-additive), which bends a collapsing region toward the 1.5 ridge but not to 2.83. Universal IVF is real
 but small (~4% of births), younger tempo a Bongaarts-Feeney mirage, and the Haredi engine composition, not a
 dial - you cannot copy your way to Israel, but the copyable part is real and already crowned (E37-H358-H367).
+E38 re-derived the coupling-not-dial verdict from an independent direction: a cash × norm-dial transplant
+interaction is exactly zero in all 8 regions (both wells are baseline-preserving fixed points), while the real
+promise-gating of cash - Germany/Korea ×5.2 - lives in the coupled state (E38-H378).
+
+### 8b. The social fabric: the network anchors, the aggregator multiplies, housing closes a loop
+
+Three structural results from E38 (the sociologist's fanout, `notebooks/34-kj-social-fabric-e38.ipynb`).
+**The network is the anchor, not the fuse**: run as a field on the measured Meta SCI friendship matrix (298
+European NUTS2 regions), the norm channel's bare double-well barrier is shallow (a 0.0091 fifteen-year pulse
+tips an isolated region), and what actually holds European fertility norms in place is mutual anchoring through
+open ties - the most-open region needs a 66× larger pulse, the most insulated tips like the mean-field, and the
+admissible mixing strength is pinned by the East-bloc norm border persisting for decades (E38-H368). The
+Lagrangian cohort carry (`ot.CohortMemory` on the norm wire) delays a stigma shock's fertility bite by roughly a
+generation - norms move at the speed of cohorts. The static SCI self-share is NOT a usable fertility indicator
+(coefficient +0.129, CI straddles zero, one-sd effect +0.023 children, E38-H370); the value is the matrix.
+**Polymotivation is the multiplication law**: swapping the product aggregator TFR = C·(1−ρ)·P̄·fec(τ) for
+perfect substitutes nearly rescues Poland under the 500+-shaped bundle and cuts the Korea cash-gating from ×5.2
+to ×1.9 - both against reality - so "behaviours are polymotivational" is not rhetoric but the algebraic form the
+natural experiments select (E38-H376). **The housing-coupling loop is an amplifier whose levers share a wire**:
+dwellings per adult h = 1 − c/2 closed as a tightness term deepens all eight baseline collapses (worst Italy
+−0.063) and gives housing supply its coupling channel; but supply × coupling is a measured substitution
+(joint/sum 0.97, deepening with the loop gain - the coupling lever pre-relieves the market it would have fixed),
+not a double dividend, and re-coupling funds ~18% of its own affordability (E38-H383-H385, gate-checked by the
+interaction-analyst). Corollaries elsewhere in this doc gain independent support: crossing the separatrix is
+what matters, not budget concentration (the big-push premium is refuted at the calibrated thin barriers while
+tip-and-stay hysteresis is confirmed, E38-H380), and the E17 exit-valve backfire now falls out of Nash threat
+points with the corollary that gender equity is what makes exit rights safe (E38-H381).
 
 ### 9. The transferable secular ingredients of religion, and enforced monogamy
 

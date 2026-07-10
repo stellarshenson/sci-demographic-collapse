@@ -1,0 +1,110 @@
+{
+  "H368": {
+    "title": "mean-field misprices the norm barrier; the measured network is the anchor",
+    "prediction": "SUPPORTED",
+    "verdict": "SUPPORTED",
+    "metric": "mean-field misprices the barrier both ways: bare-cubic critical pulse 0.0091 vs x66 for the most-open region (anchoring), insulation converges to mean-field; admissible kappa<=0.2 pinned by the persistent East-bloc border; Lagrangian carry delays peak norm damage by a generation (baseline-preserving ok)"
+  },
+  "H369": {
+    "title": "tie strength beats tie count (Granovetter/Centola split)",
+    "prediction": "SUPPORTED",
+    "verdict": "SUPPORTED",
+    "metric": "kernel geometry matters: critical pulse 0.599 (strength) vs 0.599 (count), bloc spillover 0.0047 vs 0.0133; behaviour rides reinforced strong ties (Centola 53.8% vs 38.3%), reach rides weak ones (Granovetter) - count alone misprices both"
+  },
+  "H370": {
+    "title": "SCI clustering as a static fertility indicator",
+    "prediction": "PARTIAL",
+    "verdict": "PARTIAL",
+    "metric": "self-share coef +0.129, bootstrap CI straddles zero in every variant; one-sd effect +0.023 children - an order of magnitude below the levers that matter. The honest answer to 'moze to bylby dobry wskaznik?': as a static cross-section, NO - its value is the mixing MATRIX (H368), not the scalar index"
+  },
+  "H371": {
+    "title": "a revealed norm index beats declarations (Poland placement)",
+    "prediction": "PARTIAL",
+    "verdict": "PARTIAL",
+    "metric": "revealed index ranks 3/4 trapped regions in its top-4 erosion - it agrees with the campaign's behavioural placements where declarations do not; the Poland one-year discriminator does NOT separate the placements (errors 0.059 vs 0.059 at GUS 2024 - a one-year horizon is too short, both are re-anchored to 2023)"
+  },
+  "H372": {
+    "title": "the declared-realised gap is the fragility signal (Kuran)",
+    "prediction": "SUPPORTED",
+    "verdict": "SUPPORTED",
+    "metric": "Spearman(gap, fragility)=+0.65; the gap alone does not separate trapped from untrapped (US 1.08 vs DE 0.61 both untrapped) - gap x norm-state does; declared ideals stable at ~2.2 for 30y (S-B) make the gap a persistent, measurable fragility index, not noise"
+  },
+  "H373": {
+    "title": "the perfectionism anxiety loads the extensive margin",
+    "prediction": "SUPPORTED",
+    "verdict": "PARTIAL",
+    "metric": "the optimum split sits at the rho end in 0/3 regions - at this wire exchange rate the P-bar (standard-cost) wire carries at least as much of the relief gain as permission-to-start; the extensive-margin loading of the perfectionism fear is exchange-rate-dependent and NOT confirmed by this test alone (E15's extensive-margin dominance concerned lever CLASSES, not this within-lever split)"
+  },
+  "H374": {
+    "title": "the good-enough-parenting lever beats equal-cost cash",
+    "prediction": "SUPPORTED",
+    "verdict": "SUPPORTED",
+    "metric": "per composite cost the good-enough-parenting lever beats cash in 3/3 regions (Korea x4); the unconscious-fear lever is a cheap norm repair, the conscious-fear lever is expensive fiscal relief - Ishizuka's 75% intensive-norm prevalence is the addressable surface"
+  },
+  "H375": {
+    "title": "conscious x unconscious levers are complements",
+    "prediction": "PARTIAL",
+    "verdict": "PARTIAL",
+    "metric": "mildly super-additive: joint/sum 1.05, I=+0.0099 - NOT via 'different wires' (both levers write the rho wire through S and fRV/fN, and that wire stays additive, rv far from its floor): the synergy is the H376 multiplication law - security moves C/fec while the relief moves P-bar, and cross-terms of a product are positive [gate: interaction-analyst QUALIFIED]"
+  },
+  "H376": {
+    "title": "the product aggregation law beats perfect substitutes",
+    "prediction": "SUPPORTED",
+    "verdict": "PARTIAL",
+    "metric": "product law: Poland keeps falling under the bundle (+0.007) and cash is gated x5.2 Germany/Korea - both match reality; additive law fails (gating x1.9, baseline distortion 0.12); polymotivation is not rhetoric, it is the multiplication law the natural experiments select"
+  },
+  "H377": {
+    "title": "benchmark-admissible CES sigma ~ 0; binding motive = crowned channel",
+    "prediction": "SUPPORTED",
+    "verdict": "PARTIAL",
+    "metric": "the two benchmarks pull apart: the joint fit lands at sigma +1.50 because the gating benchmark prefers sigma<=0 while the half-magnitude stack ratio drifts substitutes-side - these two targets alone do not cleanly select the product against its CES neighbours (H376's Poland/gating contrast does the heavy lifting); binding motive matches the crowned channel in 4/7 regions"
+  },
+  "H378": {
+    "title": "cash x norm state: the promise gates the product",
+    "prediction": "SUPPORTED",
+    "verdict": "REFUTED",
+    "metric": "the cash x NORM-DIAL interaction is zero in every region (mean -0.000: +0.085 pronatal well vs +0.085 childfree well) - transplanting the dial changes nothing because both wells are baseline-preserving fixed points; the promise-gating of cash is real but lives in the COUPLED state (Germany/Korea gating x5.2, H376), not in the declared-norm dial - the E37 verdict again: the gap lives in coupling, not a norm dial"
+  },
+  "H379": {
+    "title": "promise-levers outrank product-levers per composite cost",
+    "prediction": "PARTIAL",
+    "verdict": "PARTIAL",
+    "metric": "2/3 of the per-cost podium is promise-side (top: coupling-legal (promise), +1.25); the product-side cash sits at +0.065 - buying the meaning beats discounting the price, with the E16 caveat intact (bottom-up only)"
+  },
+  "H380": {
+    "title": "big push vs drip: equilibrium selection under equal budget",
+    "prediction": "SUPPORTED",
+    "verdict": "PARTIAL",
+    "metric": "the concentrated push wins 0/24 cells against the permanent drip and 3/24 against the 50y-truncated drip: at the calibrated (thin) barriers ANY equal-NPV shape crosses the separatrix and hysteresis makes it stick - CROSSING matters, concentration does not; the coordination-game big-push premium is refuted at these barriers while equilibrium selection itself (tip-and-stay after funding ends) is confirmed"
+  },
+  "H381": {
+    "title": "the exit valve derived from Nash threat points",
+    "prediction": "SUPPORTED",
+    "verdict": "SUPPORTED",
+    "metric": "raising exit costs cuts entry by -0.200 under high asymmetry and -0.010 under symmetry - the E17 exit-valve backfire now FALLS OUT of Nash threat points instead of being assumed, with the corollary: gender equity is what makes exit rights safe (backfire proportional to asymmetry)"
+  },
+  "H382": {
+    "title": "the waiting game: inequality delays via option value",
+    "prediction": "PARTIAL",
+    "verdict": "SUPPORTED",
+    "metric": "derived: +20% match-quality dispersion -> reservation bar 1.15->1.22, wait 3.2->3.7 periods; model signature: the inequality lever moves tempo AND coupling jointly while pure cost moves neither - consistent with E36's hypergamy squeeze; the mapping from Gini to sigma_match remains the untested link (hence SUPPORTED)"
+  },
+  "H383": {
+    "title": "the housing-coupling loop is an amplifier",
+    "prediction": "SUPPORTED",
+    "verdict": "SUPPORTED",
+    "metric": "closing the loop deepens the fall in 8/8 regions (worst Italy -0.063); baseline preserved to 2e-04 at 2023; sign stable across the gH band - singles need a dwelling each, so every coupling loss buys the next one"
+  },
+  "H384": {
+    "title": "supply relief is worth more with the loop closed (E16-H114 revisited)",
+    "prediction": "SUPPORTED",
+    "verdict": "PARTIAL",
+    "metric": "supply and the crowned coupling lever are mild SUBSTITUTES on the shared fC/tightness wire: joint/sum 0.97 (sub-additive in 3/3 regions), deepening monotonically with the loop gain (0.10:0.986, 0.20:0.971, 0.30:0.954) - the coupling lever pre-relieves the tightness it would have fixed; NOT a double dividend. E16-H114's supply-not-subsidy verdict survives, but supply does not stack freely on coupling levers - one lever per wire (the E18 law) [gate: interaction-analyst OVERTURNED the dividend text]"
+  },
+  "H385": {
+    "title": "coupling levers partially fund their own affordability",
+    "prediction": "PARTIAL",
+    "verdict": "PARTIAL",
+    "metric": "re-coupling frees +0.091 dwellings/adult on average and the housing echo contributes ~18% of the lever's own gain - a real, previously unbooked side-benefit, but the primary channel still carries the lever"
+  }
+}

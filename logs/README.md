@@ -21,3 +21,5 @@ Progress logs for background and long-running jobs.
 - `unwpp-israel-ingest.log` - targeted UN WPP re-ingest of Israel (LocID 376) appended to the `data/raw/unwpp/` CSVs (the 8th region)
 - `nb17-israel-execute.log` - re-execution of `notebooks/17-kj-story-visuals.ipynb` after adding Israel to the Seldon manifold fate map
 - `nb33-execute.log` - execution of `notebooks/33-kj-israel-mechanisms-e37.ipynb` (Israel's mechanisms fanned into H358-H367, E37)
+- `nb34-execute.log` - execution of `notebooks/34-kj-social-fabric-e38.ipynb` (the sociologist's fanout + housing-coupling loop, H368-H385, E38)
+- `sci-ingest.log` - Meta SCI (Social Connectedness Index) NUTS 2024 download from HDX into `data/raw/sci/`

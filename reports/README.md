@@ -109,6 +109,14 @@ notebook and exported here; the tables are machine-readable CSVs. Full narrative
 - `nb32_triad_recheck.png` - the lever re-checked on Korea/Germany/France (drive vs concentrated men-only vs full fanout) and the old-vs-new Korea headline numbers
 - `nb32_e36_verdicts.json` - all 9 E36 verdicts (H349-H357) with evidence (saturation, the three counter-terms, the female sign-flip, the fiscal counter, the composed fanout, the re-derived dose)
 
+**The sociologist's fanout + the housing-coupling loop (Notebook 34, E38)**
+- `nb34_contagion_threshold.png` - the norm field on the measured Meta SCI friendship matrix: the mixing strength pinned by the East-bloc border, the barrier vs self-share anchoring curve, and the Lagrangian cohort carry delaying a stigma shock's bite by a generation
+- `nb34_sci_indicator.png` - SCI local clustering as a static fertility indicator: 259-266 NUTS2 regions with country-FE slope and the bootstrap CI straddling zero
+- `nb34_aggregator_binding.png` - the aggregation law on trial: cash gating and stack ratio across CES sigma, and product-vs-substitutes on the Poland / gating benchmarks
+- `nb34_bigpush_hysteresis.png` - equal-budget big push vs permanent and 50y-truncated drips on the norm and coupling channels (crossing matters, concentration does not)
+- `nb34_housing_coupling_loop.png` - the closed household-formation loop: amplification across all 8 regions, the supply x coupling substitution, and the reverse affordability dividend
+- `nb34_e38_verdicts.json` - all 18 E38 verdicts (H368-H385) with evidence, two of them stamped by the interaction-analyst gate
+
 **Heretical & coercive natalism fanout (Notebook 31, E34)**
 - `nb31_coercion_reversal.png` - the coercion x path-integral sign flip: gen-1 vs gen-4 ΔTFR on Korea for the coercive vs devotion/structural families, and the Decree 770 vs Georgia-baptism Korea trajectories
 - `nb31_norm_penalty.png` - the norm x penalty dividing line: the same fN channel supports when re-priced voluntarily (δ≈0) and refutes when enforced by penalty/propaganda (δ=0.4)
