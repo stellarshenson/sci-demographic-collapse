@@ -1,8 +1,9 @@
 """Coupled emergent behavioural model (E19/E22), extracted for reuse.
 
-The behavioural layer models fertility as an emergent product of five coupled, observable channels -
-coupling C, childlessness rho, parity Pbar, tempo tau, and economic security S - each with its own
-first-order dynamics, wrapped around the calibrated Leslie core in `coremodel`. TFR is
+The behavioural layer models fertility as an emergent product of seven coupled, observable channels -
+coupling C, childlessness rho, parity Pbar, tempo tau, economic security S, the social norm N (E25),
+and marriageability q (E30) - each with its own first-order dynamics, wrapped around the calibrated
+Leslie core in `coremodel`. TFR is
 `quantum(C, rho, Pbar) * fec(tau) * max(1 - kBF * dtau, 0)` with a Bongaarts-Feeney period term on the
 REALIZED annual change of tau (dtau = tau_t - tau_{t-1}, post-clip; the E40 audit found the earlier
 substep rate-sum overstated the documented `(1 - k_BF*taudot)` by the substep count, kept a phantom
@@ -25,44 +26,69 @@ import torch
 from . import coremodel as cm
 from .ot import CohortMemory
 
-# 2023 calibration targets (TFR, mean age at first birth) and channel start values
+# 2023 calibration targets (TFR, mean age at CHILDBEARING - MAC, not first birth) and channel start
+# values. E41 Stage 1: MAC re-pinned to the on-disk UN WPP 2024-revision 2023 series
+# (data/raw/unwpp/demographic_indicators.csv, MAC column) - the earlier values were a stale vintage
+# ~0.5yr low. The MAC-vs-MAB1 fork (re-keying fec/gRV off tau_entry = MAC - Delta1_r) is registered
+# as a named structural experiment (C1F6), not acted on this round.
 REAL = {
-    "USA": (1.62, 29.4),
-    "France": (1.64, 31.1),
-    "Germany": (1.44, 31.0),
-    "Italy": (1.20, 31.8),
-    "Japan": (1.21, 31.4),
-    "Korea": (0.72, 32.9),
-    # Poland: TFR from GUS (national office) 2023 = 1.16, not UN WPP's 1.30; age-at-childbearing
-    # 29.9 from the same UN WPP series the others use. GUS 2024 fell further to 1.099.
-    "Poland": (1.16, 29.9),
+    "USA": (1.62, 29.898),
+    "France": (1.64, 31.58),
+    # Germany: TFR from Destatis (Zensus-2022-rebased) 2023 = 1.38, not UN WPP's 1.44 - the
+    # national-office convention already applied to Poland (GUS) and Korea (KOSIS). E41 Stage 0(b).
+    "Germany": (1.38, 31.466),
+    "Italy": (1.20, 32.309),
+    "Japan": (1.21, 31.915),
+    "Korea": (0.72, 33.424),
+    # Poland: TFR from GUS (national office) 2023 = 1.16, not UN WPP's 1.30; MAC 29.889 from the
+    # same UN WPP series the others use. GUS 2024 fell further to 1.099.
+    "Poland": (1.16, 29.889),
     # Israel: the sole developed / OECD country above replacement. UN WPP 2023 TFR 2.83 (Israel CBS
-    # 2.85, they agree - unlike Poland/GUS), MAC 30.9 - same UN WPP series the others use. National TFR
-    # is a composition of Haredi (6.38), national-religious (3.77), traditional (2.22-2.80), secular
-    # Jewish (1.98 - still the developed world's highest) and Arab (~2.9) sub-populations; Israel's own
-    # replacement level is 2.08. It sits in the healthy (untrapped) basin, not collapse.
-    "Israel": (2.83, 30.9),
+    # 2.85, they agree - unlike Poland/GUS), MAC 30.867 - same UN WPP series the others use. National
+    # TFR is a composition of Haredi (6.38), national-religious (3.77), traditional (2.22-2.80),
+    # secular Jewish (1.98 - still the developed world's highest) and Arab (~2.9) sub-populations;
+    # Israel's own replacement level is 2.08. It sits in the healthy (untrapped) basin, not collapse.
+    "Israel": (2.83, 30.867),
 }
+# E41 Stage 1: C0 is the LIFETIME ever-in-union share (never-partnered complement at 45-49,
+# cohort-matched to p0; band centrals where the source gives a band) - no longer the hand-set
+# 25-39 partnership stock, which is demoted to a trend witness. Two regions are cohort-reference-
+# DECOUPLED period-epoch pairs: Korea's joint cohort identity gives PB0=0.93 below the Pb floor,
+# so its 2023 state is the period ever-partnering quantum (Yoo 2026, Demographic Research 54(3):
+# PPEM 0.667 / tempo-adjusted PPEM* 0.698; band 0.667-0.72 incl. a ~1-2pp non-marital-union leak);
+# Israel's cohort pairing is infeasible under the census-grade p0=0.068-0.070 (CBS Census 2022),
+# so its period pair is retained unchanged and the cohort reference carries a declared
+# non-marital/late-fertility leak (AR4). Pairing table, margins and period feasibility screen
+# (PB0 >= 1.15, checked 8/8): reports/e41_stage1_anchors.json.
 C0 = {
-    "USA": 0.90,
-    "France": 0.95,
-    "Germany": 0.86,
-    "Italy": 0.83,
-    "Japan": 0.80,
-    "Korea": 0.52,
-    "Poland": 0.82,
-    "Israel": 0.97,  # near-universal marriage/partnership + familism -> highest coupling well
+    "USA": 0.94,  # NSFG 2015-19 via NCFMR FP-23-26: ~6% never married nor cohabited at 40-44
+    "France": 0.91,  # INSEE-INED EPIC 2013-14: ever-cohabited 0.90-0.92, gens 1968-77
+    "Germany": 0.905,  # Eurostat census 2021 ever-married 0.8133 + cohabitation -> 0.88-0.93
+    "Italy": 0.825,  # Eurostat census 2021 ever-married 0.7698 + libere unioni -> 0.80-0.85
+    "Japan": 0.835,  # 2020 census ever-married at 50 = 0.8219 (de-facto incl.) -> 0.82-0.85
+    "Korea": 0.70,  # period-epoch pair: PPEM/PPEM* 2023 (Yoo 2026 DR 54(3)); band 0.667-0.72
+    "Poland": 0.91,  # Eurostat census 2021 (GUS NSP) ever-married 0.8885 + cohabitation -> 0.90-0.92
+    "Israel": 0.97,  # period-epoch pair retained (cohort reference decoupled, AR4); familism well
 }
+# E41 Stage 1: RV0 = 1 - (1-p0)/C0, within-union permanent childlessness derived JOINTLY with C0
+# from cohort-MATCHED {p0, ever-in-union} - no longer hand-set. Feasibility margins recorded 8/8
+# BEFORE the derivation (no negative RV0); IL/PL/FR/USA carry a ~1-2pp non-marital-fertility leak
+# making RV0 a lower bound. Korea/Israel are period-epoch pairs (see C0).
 RV0 = {
-    "USA": 0.07,
-    "France": 0.07,
-    "Germany": 0.09,
-    "Italy": 0.10,
-    "Japan": 0.10,
-    "Korea": 0.08,
-    "Poland": 0.10,
-    "Israel": 0.05,  # among the lowest permanent childlessness in the developed world
+    "USA": 0.112,  # p0=0.165 (CPS 2022, cohorts ~1972-77)
+    "France": 0.055,  # p0=0.14 (INSEE EFL, b.~1970)
+    "Germany": 0.116,  # p0=0.20 (Mikrozensus, b.1969-73)
+    "Italy": 0.067,  # p0=0.23 (ISTAT, b.1975)
+    "Japan": 0.126,  # p0=0.27 (IPSS/census, b.~1970)
+    "Korea": 0.09,  # RV_ref = 1-(1-0.156)/EIU, KOSIS 2020 census b.1971-75; band 0.065-0.09 (AR5)
+    "Poland": 0.091,  # p0 = late-window central 0.1725 of the 0.15-0.195 bracket (C0F4)
+    "Israel": 0.05,  # period-epoch retained; cohort p0=0.068-0.070 infeasible vs EIU 0.89-0.92 (AR4)
 }
+# E41 Stage 1(6): S0 is a GAUGE, not a fit - only S-S0 deviations enter the dynamics (S starts at
+# S0 and relaxes to S0 - dep_pen + fS), so these values carry no baseline dynamical content. They
+# are operationalised documentarily against young-adult parental co-residence 25-34 (2023: USA 0.18,
+# FR 0.16, DE 0.13, IT 0.51, JP 0.38, KR 0.55, PL 0.53, IL 0.32 - Eurostat ilc_lvps08 / national
+# offices): S0 rank-orders inversely with co-residence. Values unchanged this round.
 S0 = {
     "USA": 0.58,
     "France": 0.62,
@@ -96,15 +122,20 @@ NORM0 = {
 # reproduces the 2023 REAL TFR (Pb is how the scalar PB0 was calibrated too). Regenerate via calibrate_ens().
 SIGMA_CAL = {"C": 0.05, "rv": 0.03, "Pb": 0.15, "tau": 3.0, "S": 0.10, "N": 0.06, "q": 0.10}
 PB_SCALE_ENS = {
-    # re-solved by calibrate_ens on the corrected B-F term (E40); dispersed baselines reproduce 2023 REAL exactly
-    "USA": 1.0267,
-    "France": 1.0286,
-    "Germany": 1.0239,
-    "Italy": 1.0164,
-    "Japan": 1.0197,
-    "Korea": 1.0176,
-    "Poland": 1.0336,  # dispersed baseline reproduces GUS TFR 1.16 exactly
-    "Israel": 1.0373,  # dispersed baseline reproduces UN WPP TFR 2.83 exactly
+    # re-solved by calibrate_ens on the E41 Stage-1 anchors (data-derived C0/RV0, re-pinned MAC,
+    # Destatis Germany 1.38); dispersed baselines reproduce 2023 REAL to <5e-4 for 8/8
+    # (reports/e41_stage2_calibration.json). USA's |s-1| grew +0.0128 over E40's 1.0267: +0.0118 at
+    # the Stage-2 anchors (of which +0.0084 from the MAC re-pin alone - 29.4 -> 29.898 crosses the
+    # fec knee at 30 under sigma_tau=3.0, an attributed Jensen effect recorded as a named deviation
+    # there) plus +0.0010 from the Stage-4 kBF move (post_kbf_move in the same report).
+    "USA": 1.0395,
+    "France": 1.0233,
+    "Germany": 1.0232,
+    "Italy": 1.0163,
+    "Japan": 1.0188,
+    "Korea": 1.0088,
+    "Poland": 1.0349,  # dispersed baseline reproduces GUS TFR 1.16 exactly
+    "Israel": 1.0404,  # dispersed baseline reproduces UN WPP TFR 2.83 exactly
 }
 
 # behavioural rate constants (calibrated in E19; norm constants added in E25; marriageability +
@@ -127,11 +158,14 @@ PARAMS = dict(
     kS=0.06,
     secS=0.0010,
     # Bongaarts & Feeney 1998 ("On the quantum and tempo of fertility", PDR 24(2)): the tempo
-    # adjustment TFR/(1 - r) with r the annual change in mean age at childbearing; applied here as
-    # a damping on the REALIZED annual dtau (E40). Published practice puts the effective damping
-    # in the 0.5-0.7 band for low-fertility settings; the E40-A4g sweep over {0.4, 0.6, 0.8} shows
-    # no verdict-bearing conclusion rides on the choice.
-    kBF=0.6,
+    # adjustment TFR/(1 - r) with r the annual change in mean age at childbearing, applied on the
+    # REALIZED annual dtau (E40). E41 Stage-4 gate: adjudicated on GAP dynamics G = 1-TFR/adjTFR
+    # against the delivered adjTFR series (grid {0.4,0.6,0.8,1.0}), argmin 1.0 beats the former
+    # 0.6 by 37.8 chi2 (>4 bar) - the damped value underexplained every observed tempo gap
+    # (systematic residual sign -0.86, logged as a scope finding: even 1.0 underexplains). 1.0 is
+    # the canonical undamped B-F factor. The E40-A4g sweep note ({0.4,0.6,0.8}, no verdict rode on
+    # the choice) is superseded by this data-adjudicated value (reports/e41_backtest_results.json).
+    kBF=1.0,
     dep_fb=0.22,
     aN=2.5,
     thN=0.25,
@@ -144,7 +178,7 @@ PARAMS = dict(
     gqC=0.9,
     phi=0.4,
     wF=0.6,
-    wS=0.3,
+    wS=0.3,  # DEAD (E41 Stage 0(e)): defined but never referenced by any dynamics; kept in place
     wScar=0.5,
     gA=0.5,
     lagLo=27,
@@ -182,6 +216,37 @@ def _shift_profile(asfr: np.ndarray, mult: float, dtau: float) -> np.ndarray:
     elif s < 0:
         b = np.concatenate([b[-s:], np.zeros(min(-s, len(b)))]) if -s < len(b) else b * 0
     return np.clip(b, 0, None)
+
+
+# E41 observability harness: the per-year series collected when run()/run_ens() are called with
+# trajectories=True. Purely additive - collection never feeds back into the dynamics, so baselines
+# are bit-for-bit identical with the harness off vs on (guarded in tests).
+_TRAJ_KEYS = (
+    "C",
+    "rv",
+    "Pb",
+    "tau",
+    "S",
+    "N",
+    "q",
+    "quantum",
+    "fec",
+    "tempo_factor",
+    "dtau",
+    "adjTFR_model",
+    "TFR",
+    "births",
+    "deaths",
+    "pop_total",
+    "dependency",
+    "dep_pen",
+)
+
+
+def _traj_append(traj: dict, **vals) -> None:
+    """Append one year of observables to a harness dict (floats only, no tensors)."""
+    for k in _TRAJ_KEYS:
+        traj[k].append(float(vals[k]))
 
 
 class EmergentModel:
@@ -238,11 +303,17 @@ class EmergentModel:
             ]
         ), dtau
 
-    def run(self, region: str, force=None, years: int = 102) -> dict:
+    def run(self, region: str, force=None, years: int = 102, trajectories: bool = False) -> dict:
         """Integrate `region` forward `years` from 2023 under an optional forcing function.
 
         `force` maps a year index to `[fS, fC, fPbar, ftau, frho]`; None means the baseline.
         Returns dict with the TFR and C trajectories, end states, and percent population change.
+
+        `trajectories=True` (E41 observability harness, additive - existing keys unchanged)
+        attaches a `trajectories` dict of per-year series: the 7 channel states, the TFR
+        decomposition (quantum / fec / tempo factor / dtau / model-adjTFR = quantum*fec),
+        and the Leslie observables the loop already computes but previously discarded
+        (births, deaths, total population, dependency ratio, dep_pen).
         """
         if force is None:
             force = lambda yr: [0.0] * 6  # noqa: E731
@@ -269,6 +340,9 @@ class EmergentModel:
         dep0 = float(d0[65:].sum() / max(d0[20:65].sum(), 1))
         dep_pen = 0.0
         Ctr, Ttr, Ntr, Qtr = [], [], [], []
+        traj = (
+            {k: [] for k in _TRAJ_KEYS} if trajectories else None
+        )  # E41 harness (off by default)
         p = self.P
         # per-cohort path integral (ot.CohortMemory) - the Lagrangian method-of-characteristics form of the
         # intergenerational memory, replacing the earlier aggregate mean-field lag over calendar years
@@ -295,7 +369,10 @@ class EmergentModel:
             A_lag = (
                 p["gA"] * mem.reproductive_mean()
             )  # mean completed childhood integral over reproductive cohorts
-            tfr = quantum(C, rv, Pb) * fec(tau) * max(1 - p["kBF"] * dtau, 0.0)
+            qv = quantum(C, rv, Pb)
+            fv = fec(tau)
+            tp = max(1 - p["kBF"] * dtau, 0.0)
+            tfr = qv * fv * tp
             Sx = 1 - (1 - Sx0) * (1 - 0.003) ** (yr + 1)
             nf, nm, _b, _d = cm.leslie_step(
                 nf,
@@ -315,7 +392,29 @@ class EmergentModel:
             Ttr.append(tfr)
             Ntr.append(N)
             Qtr.append(q)
-        return dict(
+            if traj is not None:
+                _traj_append(
+                    traj,
+                    C=C,
+                    rv=rv,
+                    Pb=Pb,
+                    tau=tau,
+                    S=S,
+                    N=N,
+                    q=q,
+                    quantum=qv,
+                    fec=fv,
+                    tempo_factor=tp,
+                    dtau=dtau,
+                    adjTFR_model=qv * fv,
+                    TFR=tfr,
+                    births=float(_b),
+                    deaths=float(_d),
+                    pop_total=float(tot.sum()),
+                    dependency=dep,
+                    dep_pen=dep_pen,
+                )
+        out = dict(
             C=np.array(Ctr),
             TFR=np.array(Ttr),
             N=np.array(Ntr),
@@ -330,6 +429,9 @@ class EmergentModel:
             tfr=float(tfr),
             pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
         )
+        if traj is not None:
+            out["trajectories"] = {k: np.array(v) for k, v in traj.items()}
+        return out
 
     def run_dist(
         self, region: str, force=None, sigmaN: float = 0.06, Kd: int = 41, years: int = 102
@@ -513,6 +615,7 @@ class EmergentModel:
         seed=0,
         return_dist=False,
         pb_scale=1.0,
+        trajectories=False,
     ):
         """The full distributional core: carry the joint state as a K-agent ensemble and aggregate
         Jensen-correctly. Each channel is spread by a Latin-hypercube marginal (deterministic, decorrelated
@@ -520,6 +623,10 @@ class EmergentModel:
         precision, while a real dispersion recovers the heterogeneity the representative agent throws away
         (the bistable-N split, the coupling-trap gate, the tail selection). TFR is the population mean of
         per-agent TFR; the Leslie birth profile is the ensemble-mean of each agent's tempo-shifted profile.
+
+        `trajectories=True` (E41 harness, additive) attaches per-year ensemble-mean series: channel
+        states, the Jensen-honest TFR decomposition (means of the per-agent quantum / fec / tempo
+        factor / dtau; adjTFR_model = mean of per-agent quantum*fec), and the Leslie observables.
         """
         chans = ["C", "rv", "Pb", "tau", "S", "N", "q"]
         if force is None:
@@ -574,6 +681,7 @@ class EmergentModel:
         mem = CohortMemory(childhood=18, repro_lo=p["lagLo"], repro_hi=p["lagHi"])
         A_lag = 0.0
         Ttr, Ntr = [], []
+        traj = {k: [] for k in _TRAJ_KEYS} if trajectories else None  # E41 harness
         tfr = tfrb
         for yr in range(years):
             f = force(yr)
@@ -586,13 +694,10 @@ class EmergentModel:
             # realized annual tempo change per agent (post-clip) - the documented B-F rate (E40 fix).
             # The factor is floored at 0; above 1 (advancing births) is genuine Bongaarts-Feeney and
             # bounded by the dynamics: |dtau| <= kTau * (tau range) ~ 0.96/yr, so factor <= ~1.6
-            tfr_i = (
-                C
-                * (1 - rv)
-                * Pb
-                * np.exp(-0.03 * np.clip(tau - 30.0, 0, None))
-                * np.clip(1 - p["kBF"] * (tau - tau_prev), 0.0, None)
-            )
+            qv_i = C * (1 - rv) * Pb
+            fv_i = np.exp(-0.03 * np.clip(tau - 30.0, 0, None))
+            tp_i = np.clip(1 - p["kBF"] * (tau - tau_prev), 0.0, None)
+            tfr_i = qv_i * fv_i * tp_i
             tfr = float(tfr_i.mean())
             prof = np.zeros_like(base)
             for k in range(K):
@@ -617,6 +722,28 @@ class EmergentModel:
             A_lag = p["gA"] * mem.reproductive_mean()
             Ttr.append(tfr)
             Ntr.append(float(N.mean()))
+            if traj is not None:
+                _traj_append(
+                    traj,
+                    C=C.mean(),
+                    rv=rv.mean(),
+                    Pb=Pb.mean(),
+                    tau=tau.mean(),
+                    S=S.mean(),
+                    N=N.mean(),
+                    q=q.mean(),
+                    quantum=qv_i.mean(),
+                    fec=fv_i.mean(),
+                    tempo_factor=tp_i.mean(),
+                    dtau=(tau - tau_prev).mean(),
+                    adjTFR_model=(qv_i * fv_i).mean(),
+                    TFR=tfr,
+                    births=float(_b),
+                    deaths=float(_d),
+                    pop_total=float(tot.sum()),
+                    dependency=dep,
+                    dep_pen=dep_pen,
+                )
         out = dict(
             TFR=np.array(Ttr),
             N=np.array(Ntr),
@@ -632,6 +759,8 @@ class EmergentModel:
         )
         if return_dist:
             out["dist_end"] = {c: st[:, i].copy() for i, c in enumerate(chans)}
+        if traj is not None:
+            out["trajectories"] = {k: np.array(v) for k, v in traj.items()}
         return out
 
     def calibrate_ens(self, sigma=None, K: int = 64):
@@ -650,7 +779,13 @@ class EmergentModel:
         return out
 
     def run_cal(
-        self, region, force=None, K: int = 64, years: int = 102, return_dist: bool = False
+        self,
+        region,
+        force=None,
+        K: int = 64,
+        years: int = 102,
+        return_dist: bool = False,
+        trajectories: bool = False,
     ):
         """The calibrated distributional core (the production run): the dispersed K-agent ensemble under
         SIGMA_CAL, re-anchored to 2023 REAL TFR by PB_SCALE_ENS. This is what all hypotheses are scored on."""
@@ -662,6 +797,7 @@ class EmergentModel:
             years=years,
             pb_scale=PB_SCALE_ENS[region],
             return_dist=return_dist,
+            trajectories=trajectories,
         )
 
     def baselines(self, regions=None) -> dict:

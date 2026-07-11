@@ -178,3 +178,32 @@ Journal entry 52 (E41 Wave-2) appended via the plugin.
 - Records synced: acc-crit W2.6 -> MET (all Wave-2 criteria now MET); dossier bullet + Status; experiments-log E41 paragraph + at-a-glance + roll-up; memory (project-goals + MEMORY.md + new fable-safeguard-false-positives).
 - Journal entry 53 appended; commit + push authorized by the user this turn and executed.
 - **Wave 3 remains USER-GATED** - its entry conditions are protocol v2 + the `w26_close` wave3_actions. Executor model Fable 5 (neutral prompt wording).
+
+## 2026-07-11 ~04:40 - E41 Wave 3 state (no brace; server died once ~02:00 and was resumed)
+
+Wave 3 executed end-to-end this session: Stage 0/1 anchors in `emergent.py` (data-derived C0/RV0,
+re-pinned MAC, Destatis DE 1.38, Korea 0.70/0.09, Israel retained), Stage 2 PB_SCALE_ENS re-solved
+twice (second time after the kBF gate), W3.3 harness bit-for-bit, W3.4 backtest
+(`notebooks/37-kj-e41-backtest.ipynb`) REJECTED-on-hindcasting per pre-registered bars with the B3
+kBF gate fired (0.6 -> 1.0 shipped), Stage 5 honesty FAIL attributed + zero verdict flips. make test
+65 green, make lint green. Records synced (experiments log, SOTA, README, dossier, acc-crit
+W3.1-W3.6 MET, journal #54, memory). NOTHING COMMITTED - working tree carries the whole Wave 3;
+commit only on explicit user approval.
+
+IN FLIGHT: two W3.7 adversarial reviewers (Fable 5 subagents, neutral wording, read-only) - round 1
+(code diff review + records-consistency audit). FIRST ACTION on resume: collect their verdicts,
+triage findings, fix real ones, run the confirming round; then flip W3.7 and await the user's
+commit/push approval. Goal (Stop-hook): all Wave-3 tasks + clean confirming review + records + tests
+green + journal, awaiting only commit approval.
+
+### RESOLVED 2026-07-11 ~05:00 (W3.7 closed, goal complete)
+
+Round 1: code scope APPROVE +2 MINOR, records scope REVISE 1 MAJOR +3 MINOR (all doc staleness).
+All six fixed (+ five->seven channels module docstring). Round 2 re-ran BOTH scopes fresh:
+APPROVE x2, ZERO findings. W3.7 MET - all E41 criteria closed (acc-crit, dossier Status,
+experiments log, journal #55, memory synced). README simulation section rewritten equations-first
+per user spec (journal #56). make test 65 green, make lint green. NOTHING COMMITTED - the whole
+Wave 3 + README rewrite sit in the working tree on 4e84b09; commit only on explicit user approval.
+QUEUED: task #138 E42 fanout H393-H402 (education E + wellbeing W; user amendments: thorough
+research per hypothesis, interactions incl. first-derivative cross-terms, interaction-analyst
+gate) - awaiting user approval to execute.

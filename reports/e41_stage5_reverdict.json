@@ -1,0 +1,182 @@
+{
+ "stage": "E41 Wave-3 Stage 5 - honesty table + basin table",
+ "date": "2026-07-11",
+ "honesty_table": {
+  "USA": {
+   "PB0_check": 2.6587,
+   "MAC_cohort": 27.05,
+   "PB0_old": 1.9355,
+   "PB0_new": 1.9408,
+   "D_old": 0.7232,
+   "D_new": 0.7179,
+   "exempt": false,
+   "non_increasing": true
+  },
+  "France": {
+   "PB0_check": 2.3605,
+   "MAC_cohort": 29.53,
+   "PB0_old": 1.9185,
+   "PB0_new": 1.9997,
+   "D_old": 0.4419,
+   "D_new": 0.3608,
+   "exempt": false,
+   "non_increasing": true
+  },
+  "Germany": {
+   "PB0_check": 1.975,
+   "MAC_cohort": 29.21,
+   "PB0_old": 1.8961,
+   "PB0_new": 1.8025,
+   "D_old": 0.0789,
+   "D_new": 0.1725,
+   "exempt": false,
+   "non_increasing": false
+  },
+  "Italy": {
+   "PB0_check": 1.9058,
+   "MAC_cohort": 30.86,
+   "PB0_old": 1.6956,
+   "PB0_new": 1.6708,
+   "D_old": 0.2102,
+   "D_new": 0.235,
+   "exempt": false,
+   "non_increasing": false
+  },
+  "Japan": {
+   "PB0_check": 1.9652,
+   "MAC_cohort": 30.11,
+   "PB0_old": 1.7526,
+   "PB0_new": 1.7561,
+   "D_old": 0.2126,
+   "D_new": 0.2092,
+   "exempt": false,
+   "non_increasing": true
+  },
+  "Korea": {
+   "PB0_check": 1.8839,
+   "MAC_cohort": 29.1,
+   "PB0_old": 1.6418,
+   "PB0_new": 1.2526,
+   "D_old": 0.2421,
+   "D_new": 0.6313,
+   "exempt": true,
+   "non_increasing": false
+  },
+  "Poland": {
+   "PB0_check": 1.9335,
+   "MAC_cohort": 26.94,
+   "PB0_old": 1.5718,
+   "PB0_new": 1.4023,
+   "D_old": 0.3617,
+   "D_new": 0.5312,
+   "exempt": false,
+   "non_increasing": false
+  },
+  "Israel": {
+   "PB0_check": 3.319,
+   "MAC_cohort": 29.67,
+   "PB0_old": 3.1551,
+   "PB0_new": 3.152,
+   "D_old": 0.1639,
+   "D_new": 0.167,
+   "exempt": true,
+   "non_increasing": true
+  }
+ },
+ "honesty_clause": {
+  "non_exempt_non_increasing": 3,
+  "denominator": 6,
+  "bar": ">=4 of 6 (AR2)",
+  "passes": false,
+  "verdict": "FAIL AS PRE-REGISTERED (3/6 non-increasing vs bar >=4) - recorded, attributed, not tuned away",
+  "attribution": {
+   "Germany": "dominated by the Stage-0(b) Destatis rebase (D 0.079->0.158 from the rebase alone; the pair adds +0.014): the old small D was an artifact of WPP 1.44 sitting near the b.1975 cohort value - the rebase reveals erosion, it does not create error",
+   "Italy": "net +0.025: the MAC re-pin IMPROVES D (0.210->0.184); the census-grade joint pair (p0=0.23, EIU 0.825 -> rv=0.067) moves PB0 down by 0.051 - a data-derived move",
+   "Poland": "worsens under EVERY cohort-p0 choice (census 0.097 -> D 0.370; HFD 0.195 -> 0.585): genuine period-vs-cohort erosion (period quantum 1.16 vs b.1975 CFR 1.60, the post-2010 collapse) - same phenomenon as the exempted decoupled regions, below the decoupling threshold"
+  },
+  "finding": "the b.1975 cohort reference is receding from every post-2010-collapse period state; D conflates calibration honesty with real erosion exactly as C0F2 warned. Named Wave-4 action: refresh the epoch-matched reference per region (or define D against a rolling cohort) before the clause is re-armed"
+ },
+ "basin_table": {
+  "USA": {
+   "TFR_2125": 1.256,
+   "Cend": 0.799,
+   "Nend": 0.149,
+   "pop_pct": -52.2,
+   "fate": "decline"
+  },
+  "France": {
+   "TFR_2125": 1.251,
+   "Cend": 0.776,
+   "Nend": 0.149,
+   "pop_pct": -50.0,
+   "fate": "decline"
+  },
+  "Germany": {
+   "TFR_2125": 1.024,
+   "Cend": 0.758,
+   "Nend": 0.149,
+   "pop_pct": -71.8,
+   "fate": "decline"
+  },
+  "Italy": {
+   "TFR_2125": 0.806,
+   "Cend": 0.639,
+   "Nend": 0.42,
+   "pop_pct": -79.3,
+   "fate": "decline"
+  },
+  "Japan": {
+   "TFR_2125": 0.851,
+   "Cend": 0.67,
+   "Nend": 0.42,
+   "pop_pct": -78.9,
+   "fate": "decline"
+  },
+  "Korea": {
+   "TFR_2125": 0.251,
+   "Cend": 0.307,
+   "Nend": 0.42,
+   "pop_pct": -91.3,
+   "fate": "collapse"
+  },
+  "Poland": {
+   "TFR_2125": 0.834,
+   "Cend": 0.735,
+   "Nend": 0.42,
+   "pop_pct": -80.1,
+   "fate": "decline"
+  },
+  "Israel": {
+   "TFR_2125": 2.357,
+   "Cend": 0.871,
+   "Nend": 0.149,
+   "pop_pct": 147.7,
+   "fate": "growth"
+  }
+ },
+ "reverdict": {
+  "verdict_flips": "NONE - all ordinal guards passed unchanged (collapse ordering, tempo transience, crown-over-cash, inequality-over-male, catalogue, 392-verdict tally); fate classes unchanged (Korea collapse, Israel growth, six declines)",
+  "magnitude_corrections": [
+   {
+    "id": "E37-H363 transplant",
+    "old": "+0.736 (open core, C0[Korea] 0.52->0.97)",
+    "new": "+0.351 (0.70->0.97)",
+    "reason": "the E41 period ever-partnering construct raised Korea's own C0, shrinking the transplant distance; direction and the familism-lives-in-coupling verdict UNCHANGED; guard band re-derived [0.25,0.45] in the same change"
+   },
+   {
+    "id": "kBF tempo factor (Stage-4 gate)",
+    "old": "0.6 (E40 damped)",
+    "new": "1.0 (canonical B-F, data-adjudicated)",
+    "reason": "backtest gap-dynamics gate fired by 37.8 chi2; every tempo-lever magnitude scales ~1.67x; ordinal guards (transience, crown-over-cash, collapse ordering) re-verified green; tempo-mirage peak re-measured +0.115 (band [0.03,0.15] holds); transplant +0.349 (band holds)"
+   }
+  ],
+  "rerun_list": [
+   "E39 closed-loop echo (+0.818 -> recompute; notebook-local gH* machinery, scales with the same C0 gap - direction unaffected)",
+   "E14/E19 USA reversibility headline (+129% culture+migration bundle; notebook-local bundle machinery)",
+   "E20 Seldon least-cost table magnitudes (ordinal podium held by guards; per-lever efficiencies shift with the Korea baseline)"
+  ],
+  "norm0_caveat": "AR3: the NORM0 well assignment is a structural prior contradicted by the ideal-construct ordering; E25+ cross-region NORM-lever rankings are CONDITIONAL on it; re-assignment routes through the C1F5 construct switch (option B, trips this gate)",
+  "regime_risk": "DISCHARGED: Korea collapses at every delivered band edge (Stage-2 report); baseline fates unchanged 8/8"
+ },
+ "backtest_verdict": "REJECTED on hindcasting (B5: 4 sign misses - no recuperation mechanism); s_struct falsified (B1: 3.64); Korea collapse path passes; scope amended to forward scenario ranking"
+}

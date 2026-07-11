@@ -7,8 +7,10 @@ prediction. Machine-readable payload (all values, sources, URLs, notes, the full
 critiques): `reports/e41_calibration_targets_research.json`. Produced by a 20-agent workflow
 (3 inventory readers → 9 observable-family researchers → synthesis → 2 adversarial critics → gap-fill);
 16 of 20 agents completed - 4 gap-fill agents were lost to a session limit and their gaps remain open
-research items listed below. **Nothing in this dossier has been applied to the model**: the protocol
-below is a proposal awaiting the E41 round and user approval.
+research items listed below. At the time this header was written nothing in the dossier had been
+applied to the model; that is no longer true - Wave 3 (user-approved 2026-07-11) shipped the anchors,
+kBF=1.0 and the observability harness into `emergent.py`. See "Wave 3 - implementation outcome" and
+the Status block at the end of this document for the delivered state.
 
 ## Why
 
@@ -125,12 +127,28 @@ BLOCKER. Both adversarial critics re-ran to a MINOR-REVISIONS verdict.
   stiff (all ideal series flat), migration identically zero for forward runs, several parity fine-splits
   live only in supplementary tables
 
+## Wave 3 - implementation outcome
+
+Executed 2026-07-11 under user approval (protocol v2 + the `w26_close` wave3_actions). Stage 0/1
+replaced the anchors (lifetime ever-in-union C0, joint RV0, re-pinned WPP MAC, Destatis Germany 1.38;
+Korea period-epoch pair 0.70/0.09, Israel's pair retained under AR4; screen 8/8, NORM0 byte-untouched);
+Stage 2 re-solved `PB_SCALE_ENS` (< 5e-4 for 8/8, USA band exceedance attributed to the MAC re-pin);
+the observability harness landed additive and bit-for-bit; the pre-registered 2000→2023 backtest
+(`notebooks/37-kj-e41-backtest.ipynb`) returned **REJECTED on hindcasting** (no recuperation
+mechanism - the SOTA validity domain is amended) while Korea's collapse path, the MAC direction and
+the marriage witness all pass; the Stage-4 gate moved kBF to the canonical 1.0; the Stage-5 honesty
+clause FAILED as pre-registered and is attributed (erosion, not error - Wave-4 action named). Zero
+verdict flips; the E37 transplant re-anchors to +0.349 (shipped kBF=1.0; +0.351 pre-kBF). Per-stage records:
+`reports/e41_stage0_definitions.json`, `reports/e41_stage1_anchors.json`,
+`reports/e41_stage2_calibration.json`, `reports/e41_backtest_results.json`,
+`reports/e41_stage5_reverdict.json`.
+
 ## Status
 
-Wave 1 (research) and Wave 2 (blocker resolution) complete and persisted; model untouched. Every
-blocker is cleared, protocol v2 is written, and the review loop is CLOSED: after the round-2 residual
-MAJORs were reclassified to ACCEPTED-RESIDUAL (user decision, each with a named Wave-3 action), the
-round-3 re-review returned APPROVE from both reviewer personas with zero BLOCKER and zero MAJOR - the
-W2.6 bar holds. All Wave-2 acceptance criteria are MET. Wave 3 (implementation: anchor replacement,
-guard re-baselining, additive observability harness, 2000→2023 rejection backtest) is USER-GATED and
-not started; its entry conditions are the `w26_close` wave3_actions plus protocol v2.
+All three waves complete and all criteria MET. Wave-2 review loop CLOSED (round-3 APPROVE ×2, zero
+BLOCKER/MAJOR); Wave-3 criteria W3.1-W3.7 MET per `docs/e41-acceptance-criteria.md` - the W3.7
+implementation review closed 2026-07-11 with a clean confirming round (round 1: APPROVE + REVISE with
+six findings, all documentation staleness, all fixed; round 2 re-ran both scopes fresh: APPROVE ×2,
+zero findings). The model now carries data-derived anchors, kBF = 1.0, and the additive trajectories
+harness; the fitted backtest drift constants are recorded, not promoted. E41 is closed pending only
+the user's commit approval.

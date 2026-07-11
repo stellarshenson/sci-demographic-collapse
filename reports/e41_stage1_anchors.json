@@ -1,0 +1,248 @@
+{
+ "stage": "E41 Wave-3 Stage 1 - static anchors (closed-form)",
+ "date": "2026-07-11",
+ "convention": "state C0 = lifetime ever-in-union (band central); RV0 = 1-(1-p0)/C0 on cohort-matched pairs; Korea/Israel = period-epoch pairs (decoupled cohort reference); screen PB0 >= 1+SIGMA_CAL[Pb] = 1.15",
+ "mac_repin": "REAL[r][1] <- UN WPP 2024 rev., MAC 2023 (data/raw/unwpp/demographic_indicators.csv); previous values were a stale vintage ~0.5yr low",
+ "germany_tfr": "1.38 Destatis (Stage 0b)",
+ "regions": {
+  "USA": {
+   "state": {
+    "C0": 0.94,
+    "RV0": 0.112,
+    "product": 0.8347
+   },
+   "MAC_2023": 29.898,
+   "TFR_2023": 1.62,
+   "Q": 1.62,
+   "PB0": 1.9408,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.~1972-77",
+    "p0": 0.165,
+    "EIU": [
+     0.94,
+     0.94
+    ],
+    "feasibility_margin": [
+     0.105,
+     0.105
+    ],
+    "RV_ref": [
+     0.1117,
+     0.1117
+    ],
+    "decoupled": false
+   }
+  },
+  "France": {
+   "state": {
+    "C0": 0.91,
+    "RV0": 0.055,
+    "product": 0.8599
+   },
+   "MAC_2023": 31.58,
+   "TFR_2023": 1.64,
+   "Q": 1.7196,
+   "PB0": 1.9997,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.~1970",
+    "p0": 0.14,
+    "EIU": [
+     0.9,
+     0.92
+    ],
+    "feasibility_margin": [
+     0.04,
+     0.06
+    ],
+    "RV_ref": [
+     0.0444,
+     0.0652
+    ],
+    "decoupled": false
+   }
+  },
+  "Germany": {
+   "state": {
+    "C0": 0.905,
+    "RV0": 0.116,
+    "product": 0.8
+   },
+   "MAC_2023": 31.466,
+   "TFR_2023": 1.38,
+   "Q": 1.442,
+   "PB0": 1.8025,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.~1969-73",
+    "p0": 0.2,
+    "EIU": [
+     0.88,
+     0.93
+    ],
+    "feasibility_margin": [
+     0.08,
+     0.13
+    ],
+    "RV_ref": [
+     0.0909,
+     0.1398
+    ],
+    "decoupled": false
+   }
+  },
+  "Italy": {
+   "state": {
+    "C0": 0.825,
+    "RV0": 0.067,
+    "product": 0.7697
+   },
+   "MAC_2023": 32.309,
+   "TFR_2023": 1.2,
+   "Q": 1.2861,
+   "PB0": 1.6708,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.~1975",
+    "p0": 0.23,
+    "EIU": [
+     0.8,
+     0.85
+    ],
+    "feasibility_margin": [
+     0.03,
+     0.08
+    ],
+    "RV_ref": [
+     0.0375,
+     0.0941
+    ],
+    "decoupled": false
+   }
+  },
+  "Japan": {
+   "state": {
+    "C0": 0.835,
+    "RV0": 0.126,
+    "product": 0.7298
+   },
+   "MAC_2023": 31.915,
+   "TFR_2023": 1.21,
+   "Q": 1.2816,
+   "PB0": 1.7561,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.~1970",
+    "p0": 0.27,
+    "EIU": [
+     0.82,
+     0.85
+    ],
+    "feasibility_margin": [
+     0.09,
+     0.12
+    ],
+    "RV_ref": [
+     0.1098,
+     0.1412
+    ],
+    "decoupled": false
+   }
+  },
+  "Korea": {
+   "state": {
+    "C0": 0.7,
+    "RV0": 0.09,
+    "product": 0.637
+   },
+   "MAC_2023": 33.424,
+   "TFR_2023": 0.72,
+   "Q": 0.7979,
+   "PB0": 1.2526,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.1971-75",
+    "p0": 0.156,
+    "EIU": [
+     0.91,
+     0.93
+    ],
+    "feasibility_margin": [
+     0.066,
+     0.086
+    ],
+    "RV_ref": [
+     0.0725,
+     0.0925
+    ],
+    "decoupled": true
+   }
+  },
+  "Poland": {
+   "state": {
+    "C0": 0.91,
+    "RV0": 0.091,
+    "product": 0.8272
+   },
+   "MAC_2023": 29.889,
+   "TFR_2023": 1.16,
+   "Q": 1.16,
+   "PB0": 1.4023,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.1968-78 (p0 bracket 0.10-0.20, late central 0.15-0.195)",
+    "p0": 0.1725,
+    "EIU": [
+     0.9,
+     0.92
+    ],
+    "feasibility_margin": [
+     0.0725,
+     0.0925
+    ],
+    "RV_ref": [
+     0.0806,
+     0.1005
+    ],
+    "decoupled": false
+   }
+  },
+  "Israel": {
+   "state": {
+    "C0": 0.97,
+    "RV0": 0.05,
+    "product": 0.9215
+   },
+   "MAC_2023": 30.867,
+   "TFR_2023": 2.83,
+   "Q": 2.9046,
+   "PB0": 3.152,
+   "screen_pass": true,
+   "cohort_reference": {
+    "cohort": "b.1968-72 (CBS Census 2022, p0 0.068-0.070)",
+    "p0": 0.069,
+    "EIU": [
+     0.89,
+     0.92
+    ],
+    "feasibility_margin": [
+     -0.041,
+     -0.011
+    ],
+    "RV_ref": [
+     -0.0461,
+     -0.012
+    ],
+    "decoupled": true
+   }
+  }
+ },
+ "acceptance": {
+  "period_screen_pass_8_8": true,
+  "cohort_margins_recorded_8_8": true,
+  "no_negative_RV0": true,
+  "israel_note": "Israel cohort margin is negative by DESIGN (census-grade p0 0.068-0.070 vs EIU 0.89-0.92) - that infeasibility is the recorded reason Israel is cohort-reference-decoupled (AR4); its state pair and period screen are untouched",
+  "norm0_git_diff_empty": true
+ }
+}

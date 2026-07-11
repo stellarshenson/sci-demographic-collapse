@@ -57,12 +57,15 @@ def test_guard_calibration_anchor(model):
 
 
 def test_guard_kbf_documented_value():
-    """E40: kBF is the documented Bongaarts-Feeney 0.6 on the REALIZED annual dtau.
+    """E40/E41: kBF is the Stage-4-adjudicated Bongaarts-Feeney 1.0 on the REALIZED
+    annual dtau (E41 backtest gap-dynamics gate: argmin 1.0 beat the former 0.6 by
+    37.8 chi2 against the delivered adjTFR series; 1.0 is the canonical undamped B-F
+    factor - reports/e41_backtest_results.json).
 
-    On failure: the tempo constant was retuned - the E40 section's kBF paragraph and
-    the A4g sensitivity band must be re-run and re-documented.
+    On failure: the tempo constant was retuned outside a Stage-4-style gate - re-run
+    the gap-dynamics adjudication and re-document before trusting any tempo claim.
     """
-    assert PARAMS["kBF"] == 0.6
+    assert PARAMS["kBF"] == 1.0
 
 
 def test_guard_collapse_ordering(baselines):
@@ -81,9 +84,10 @@ def test_guard_collapse_ordering(baselines):
 
 
 def test_guard_e19_tempo_mirage_amplitude(model, baselines):
-    """E19 (superseded amplitudes -> E40-A4a): the Korea fTau=-3 tempo bump peaks in
-    the post-fix band [0.03, 0.15] (measured +0.071). The legacy 4x rate-sum gave
-    +0.236 - a value outside this band means the tempo term regressed.
+    """E19 (superseded amplitudes -> E40-A4a, re-measured E41): the Korea fTau=-3 tempo
+    bump peaks in the band [0.03, 0.15] (measured +0.071 under E40's kBF=0.6; +0.115
+    under the shipped E41 kBF=1.0 - reports/e41_stage2_calibration.json). The legacy 4x
+    rate-sum gave +0.236 - a value outside this band means the tempo term regressed.
 
     On failure: re-run NB36 A1/A4a; every timing-lever transient is suspect.
     """
@@ -146,11 +150,16 @@ def test_guard_e36_inequality_over_male_lever(model, baselines):
 
 
 def test_guard_e37_h363_coupling_transplant(model, baselines):
-    """E37-H363/E40-A4d: the Israel-coupling transplant (C0 Korea -> 0.97) lifts the
-    open-core Korea endpoint by +0.6..+0.9 (measured +0.736 post-E40).
+    """E37-H363/E40-A4d/E41: the Israel-coupling transplant (C0 Korea -> 0.97) lifts the
+    open-core Korea endpoint by +0.25..+0.45 (measured +0.3485 under the shipped kBF=1.0
+    config, +0.3508 pre-kBF - reports/e41_stage2_calibration.json post_kbf_move; was
+    +0.736 post-E40 with C0[Korea]=0.52). The E41 Stage-1 re-anchor moved Korea's C0 to the
+    period ever-partnering quantum 0.70 (Yoo 2026), so the transplant distance to
+    Israel's 0.97 shrank and the lift roughly halved - direction and the
+    familism-lives-in-coupling verdict UNCHANGED (Stage-5 re-run list, E41).
 
     On failure: the familism-lives-in-coupling verdict moved - re-judge E37-H363 and
-    the E39 closed-loop echo (+0.818).
+    the E39 closed-loop echo.
     """
     c0 = E.C0["Korea"]
     try:
@@ -158,7 +167,7 @@ def test_guard_e37_h363_coupling_transplant(model, baselines):
         lift = model.run_cal("Korea")["tfr"] - baselines["Korea"]["tfr"]
     finally:
         E.C0["Korea"] = c0
-    assert 0.6 < lift < 0.9, f"transplant lift {lift:+.3f} outside the recorded band"
+    assert 0.25 < lift < 0.45, f"transplant lift {lift:+.3f} outside the recorded band"
 
 
 def test_guard_catalogue_integrity():
@@ -211,6 +220,28 @@ def test_guard_experiments_log_verdict_tally():
     assert Counter(rows.values()) == Counter(
         SUPPORTED=211, PARTIAL=109, REFUTED=69, REFRAMED=2, INCONCLUSIVE=1
     )
+
+
+def test_guard_e41_observability_harness_additive(model):
+    """E41-W3.3: the observability harness is purely ADDITIVE - trajectories=True returns
+    the same keys plus 'trajectories', every shared output bit-identical off vs on, and
+    the per-year decomposition satisfies TFR = quantum*fec*tempo_factor exactly on run().
+
+    On failure: the harness leaked into the dynamics - every post-E41 baseline and
+    hypothesis run is suspect until the leak is found.
+    """
+    for fn in (model.run, model.run_cal):
+        off = fn("Korea", years=6)
+        on = fn("Korea", years=6, trajectories=True)
+        assert set(on.keys()) == set(off.keys()) | {"trajectories"}
+        for k, v in off.items():
+            same = np.array_equal(v, on[k]) if isinstance(v, np.ndarray) else v == on[k]
+            assert same, f"{fn.__name__}[{k}] changed with the harness on"
+        t = on["trajectories"]
+        assert set(t.keys()) == set(E._TRAJ_KEYS)
+        assert all(len(x) == 6 for x in t.values())
+    t = model.run("Korea", years=6, trajectories=True)["trajectories"]
+    assert np.array_equal(t["TFR"], t["quantum"] * t["fec"] * t["tempo_factor"])
 
 
 def test_guard_e40_audit_record():

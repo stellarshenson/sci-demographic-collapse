@@ -143,12 +143,27 @@ Wasserstein Auto-Encoder / InfoVAE(α=1) objective that preserves latent-data mu
 tournament (ELBO vs RBF-MMD vs exact one-dimensional Wasserstein-2) picks the optimal-transport penalty: it
 closes the in-sample 2023 gap to ≈0.018 with MI-usage restored 0.04 → 0.96 and a 2023 population residual of
 0.69%, beating both MMD and the ELBO (E12-H41/H42), and hierarchical drift-pooling lifts held-out TFR
-coverage 50% → 100% (E12-H43). The behavioural baseline is calibrated to real 2023 TFR for all six regions
-(USA, France, Germany, Italy, Japan, Korea) to under 1e-4 - max residual 6.4e-5, Germany at the fourth-
-decimal rounding boundary - with every channel's coupling term identically zero at the reference state, so
-each 2023 baseline is a fixed point and no lever perturbs history. The baseline reproduces reality region by
-region: Korea collapses alone, no region recovers spontaneously (E19). That is what licenses the model to
-act as the judge of an intervention.
+coverage 50% → 100% (E12-H43). The behavioural baseline is calibrated to real 2023 TFR for all eight regions
+to under 5e-4 with every channel's coupling term identically zero at the reference state, so each 2023
+baseline is a fixed point and no lever perturbs history. The baseline reproduces reality region by region:
+Korea collapses alone, no region recovers spontaneously (E19). That is what licenses the model to act as
+the judge of an intervention.
+
+**E41 grounded the state itself.** Every hand-set anchor now carries a real observable with source and
+year (`reports/e41_stage1_anchors.json`): C0 is the lifetime ever-in-union share at 45-49 (census-grade),
+RV0 = 1−(1−p0)/C0 derived jointly from cohort-matched childlessness, tau is the on-disk WPP 2023 mean age
+at childbearing (the old values were a stale vintage ~0.5yr low), Germany's TFR is the Destatis
+Zensus-rebased 1.38, and S0 is documented as a pure gauge. Two regions are declared period-epoch pairs
+whose cohort reference is decoupled: Korea (C0=0.70/RV0=0.09 on the 2023 period ever-partnering quantum,
+Yoo 2026 - its joint cohort identity would put the parity anchor below its floor) and Israel (census-grade
+p0 0.068-0.070 makes its cohort pairing infeasible). A period feasibility screen PB0 ≥ 1.15 passes 8/8.
+The E41 backtest's Stage-4 gate also re-adjudicated the tempo constant on gap dynamics G = 1−TFR/adjTFR
+against published adjTFR series: **kBF = 1.0** (the canonical undamped Bongaarts-Feeney factor) beats the
+formerly shipped 0.6 by 37.8 chi2, and even 1.0 underexplains the observed gaps (systematic residual −0.86,
+a logged scope finding). An additive observability harness (`trajectories=True`) now exposes every channel
+state, the quantum/fec/tempo decomposition and the Leslie observables per year - bit-for-bit identical
+baselines with the harness off - and its first predictions land near the delivered observables (Korea
+births 236k vs national 238k; Japan dependency 0.548 vs observed OADR 0.543).
 
 ## What the model reproduces
 
@@ -158,6 +173,18 @@ intrinsic limit of any period-rate forecast - but the recalibration handles it h
 band to cover the held-out TFR 100% (E9-H30, E12-H43). The sharper lesson stands: **population is
 point-predictable, period TFR is only interval-predictable**, because momentum and age structure, not this
 year's rate, govern the medium term.
+
+**And what it does not: the E41 rejection backtest.** The behavioural core itself, started at the observed
+year-2000 pyramid with observed migration wired in and four global drift constants fitted, was put to a
+pre-registered 2000→2023 rejection test (`notebooks/37-kj-e41-backtest.ipynb`) - and **REJECTED on
+hindcasting**: the global monotone drift misses the observed 2000→2019 TFR *sign* in Germany (+0.155),
+Poland (+0.049), Israel (+0.113) and Italy (+0.010), because the mid-2000s recuperation episodes have no
+mechanism in the core; the declared structural error s_struct = 0.08 is simultaneously falsified
+(chi2/dof 3.64 vs bar 2.0). What passes is exactly the model's mandate: Korea's collapse path (model 0.831
+vs observed 0.920 in 2019, monotone fall), the mean-age direction 8/8, and the marriage-decline witness
+8/8. The scope statement this fixes: **the behavioural core is a 2023-anchored collapse-dynamics model for
+forward scenario RANKING - not a hindcasting machine for recuperation episodes** (bars and outcome:
+`docs/e41-backtest-preregistration.md`, `reports/e41_backtest_results.json`).
 
 **Crisis battery** - four historical crises are reproduced and their demographic cost measured by
 counterfactual (E10): COVID-19 as a *mortality* shock (985k modelled excess deaths over 2020-21, real ≈1M,
@@ -323,8 +350,10 @@ even secular fertility near replacement without coercion, Hungary's 5-6% of GDP 
 housing's real lever is supply for young renters, not a price subsidy to owners (E16). E37 fans Israel - the
 one above-replacement OECD outlier, now the model's calibrated 8th region - into its mechanisms and finds the
 advantage lives in near-universal **coupling**, not a legislable norm dial: a Korea→Israel channel transplant
-puts the whole gap in coupling C0 (+0.717) while the childfree-norm state (-0.001) and childlessness (+0.008)
-carry ~none, so the transferable shadow is exactly the crowned coupling + equity + childcare stack (large,
+puts the whole gap in coupling C0 (+0.349 on the E41 anchors under the shipped kBF=1.0; the E37-recorded +0.717 rode on the old hand-set
+C0[Korea]=0.52 - the period ever-partnering construct raised Korea's own state to 0.70, shrinking the
+transplant distance, and the verdict is unchanged) while the childfree-norm state (-0.001) and childlessness
+(+0.008) carry ~none, so the transferable shadow is exactly the crowned coupling + equity + childcare stack (large,
 super-additive), which bends a collapsing region toward the 1.5 ridge but not to 2.83. Universal IVF is real
 but small (~4% of births), younger tempo a Bongaarts-Feeney mirage, and the Haredi engine composition, not a
 dial - you cannot copy your way to Israel, but the copyable part is real and already crowned (E37-H358-H367).
@@ -357,8 +386,9 @@ by 37%) and made time a coordinate of every loop statement: the amplification is
 deepen, 55% of the century's damage after 2085), the reverse dividend accrues late (~5% of the crowned lever's
 gain at 2050 → 11-15% at 2124), and the fission tax closes the sizing case - the coupling decline alone raises
 household demand past a +10% supply program in every trapped region (Korea by 2062, +27% by century's end),
-while the E20 podium, the E37 transplant (+0.72 → +0.80 closed-loop) and the E36 male-vs-inequality order all
-survive intact. The supply × coupling interaction did NOT survive as a time law: the gate's discriminators
+while the E20 podium, the E37 transplant (open-core +0.72 → +0.80 closed-loop as recorded; the open-core
+magnitude re-anchors to +0.35 under the E41 state, the closed-loop echo is on the E41 re-run list, orders
+intact) and the E36 male-vs-inequality order all survive intact. The supply × coupling interaction did NOT survive as a time law: the gate's discriminators
 (reproduced in-notebook) show the deep-basin mid-century complement is the coupling-trap convexity - remove the
 trap and it vanishes - and Korea's endpoint additivity is a within-crown fC/fS cancellation; the only genuine
 endpoint substitution is Poland's, so the one-lever-per-wire law survives Poland-led and weakens at the
@@ -482,6 +512,18 @@ project runs on is that elegance must move the numbers.
   unresolved, USA parameters do not transfer to the EU without a region-specific offset, and even calibrated
   the model sizes mechanisms and places regions - it licenses no claim that a given policy achieves a given
   lever
+- **No recuperation mechanism (E41 backtest)** - the pre-registered 2000→2023 rejection test REJECTED the
+  core on hindcasting: its global monotone drift cannot produce the mid-2000s recuperation episodes
+  (Germany, Poland, Israel, Italy all rose 2000→2019), so forward runs rank collapse scenarios and levers -
+  they do not forecast recoveries; the fitted drift constants are recorded, not shipped
+- **The cohort reference is receding** - the E41 honesty table FAILED its pre-registered clause (3/6
+  non-exempt regions non-increasing): the b.1975 completed-cohort reference is drifting away from every
+  post-2010-collapse period state, so the |PB0 − PB0_check| diagnostic conflates calibration honesty with
+  real period-vs-cohort erosion; refreshing the epoch-matched reference is the named Wave-4 action
+- **NORM0 wells are a structural prior** - the well assignment is contradicted by the delivered ideal-zero
+  ordering (Korea 0.002 lowest, Germany 0.075 highest); E25+ cross-region NORM-lever rankings are
+  CONDITIONAL on this prior, and re-assignment routes through the option-B construct switch, which trips
+  the re-verdict gate
 
 ## Reproducibility
 

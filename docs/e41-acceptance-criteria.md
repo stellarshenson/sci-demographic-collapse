@@ -57,18 +57,42 @@ model (`src/sci_demographic_collapse/`) is untouched until W3.1.
   residual-MAJOR caveats) and a revised Status block; this file's Wave-2 statuses flipped
 - **W2.8 MET** - the experiments log's E41 section extended (append-only) with the Wave-2 outcome
 
-## Wave 3 - implementation (not started)
+## Wave 3 - implementation
 
-- **W3.1 GATED** - explicit user approval to touch the model recorded in conversation
-- **W3.2 GATED** - Stage 0/1 anchor replacements applied per protocol v2; `PB_SCALE_ENS` re-solved;
-  every affected numeric band in the 63-test guard suite re-derived and updated in the same change
-  (the E40 convention), `make test` green
-- **W3.3 GATED** - observability harness additive only: existing return keys of
-  `run()`/`run_ens()`/`run_cal()` unchanged and baseline trajectories reproduced bit-for-bit with
-  the harness off vs on
-- **W3.4 GATED** - the 2000→2023 backtest executed as a REJECTION test with pre-registered pass/fail
-  bars (written before the run), results recorded whichever way they land
-- **W3.5 GATED** - `make test` and `make lint` green on the final tree
-- **W3.6 GATED** - experiments log, SOTA, and README reconciled to the post-E41 state; journal via
-  the plugin with `journal-tools check` exit 0
-- **W3.7 GATED** - implementation passed `/adversarial-review` with a clean confirming round
+- **W3.1 MET** - explicit user approval recorded 2026-07-11 ("good, next step" after the W2.6 close,
+  checkpoint tag `CHECKPOINT_BEFORE_E41_WAVE3_0.7.0`); goal set to full Wave-3 completion
+- **W3.2 MET** - Stage 0/1 anchors applied per protocol v2 (`reports/e41_stage0_definitions.json`,
+  `reports/e41_stage1_anchors.json`: period screen PB0 ≥ 1.15 passed 8/8, cohort margins recorded
+  8/8, no negative RV0, NORM0 diff empty); `PB_SCALE_ENS` re-solved twice (Stage 2, then once more
+  after the Stage-4 kBF move) with 2023 TFR < 5e-4 for 8/8; the |s−1| band held 7/8 with the USA
+  exceedance decomposed and attributed to the declared MAC re-pin (named deviation in
+  `reports/e41_stage2_calibration.json`); anchor-sensitive guard bands re-derived in the same change
+  (E37 transplant band → [0.25, 0.45] at measured +0.349 shipped-config (+0.351 pre-kBF); kBF guard → 1.0; tempo-mirage band
+  re-verified at 0.115 within [0.03, 0.15]); `make test` green (65 passed)
+- **W3.3 MET** - `trajectories=True` harness on `run()`/`run_ens()`/`run_cal()`: existing keys
+  unchanged, baselines bit-for-bit identical off vs on for all 8 regions × both cores, decomposition
+  identity exact; permanently guarded (`test_guard_e41_observability_harness_additive`)
+- **W3.4 MET** - bars pre-registered BEFORE the run (`docs/e41-backtest-preregistration.md`);
+  backtest executed (`notebooks/37-kj-e41-backtest.ipynb`, green end-to-end) and recorded the way it
+  landed: **REJECTED on hindcasting** (B5: 4 sign misses, no recuperation mechanism; B1: chi2/dof
+  3.64, s_struct falsified; B2: 7/8 with Korea's 29.9% erosion logged; B4 clean); the B3 kBF gate
+  fired (argmin 1.0 beats 0.6 by 37.8 > 4) and the move executed per the pre-registration - kBF=1.0,
+  one Stage-2 return, guards updated in the same change; fitted drift constants recorded NOT
+  promoted (`reports/e41_backtest_results.json`)
+- **W3.5 MET** - `make test` (65 passed) and `make lint` green on the final tree
+- **W3.6 MET** - experiments log E41 section extended with the Wave-3 record (at-a-glance + roll-up
+  updated), SOTA reconciled (E41 anchor paragraph, rejection-backtest scope statement, kBF=1.0,
+  transplant re-anchor +0.349, three new Honest-limitations entries), README reconciled (transplant,
+  round count, the recovery-episodes scope sentence), dossier updated; Stage-5 honesty-table FAIL
+  recorded and attributed (`reports/e41_stage5_reverdict.json`); journal via the plugin,
+  `journal-tools check` exit 0
+- **W3.7 MET** - implementation passed `/adversarial-review` with a clean confirming round
+  (2026-07-11): round 1 ran two Fable-5 reviewer scopes - a code-diff review of
+  `emergent.py`/`test_hypothesis_guards.py` (APPROVE, 2 MINOR: PB_SCALE_ENS comment attribution,
+  transplant docstring value) and a records-consistency audit of all E41 prose vs machine records
+  (REVISE, 1 MAJOR: stale "nothing applied to the model" dossier header; 3 MINOR: four-vs-three
+  Honest-limitations count, stale tempo-mirage docstring, pre-kBF +0.351 quoted where shipped-config
+  +0.349 applies). All six findings fixed; round 2 re-ran BOTH scopes fresh on the fixed tree and
+  each returned **APPROVE, zero findings** - every constant re-traced to its machine record, the
+  +0.3485/+0.3508 pair independently recomputed, harness bit-identity re-verified, append-only and
+  pre-registration integrity re-confirmed, `make test` (65) + `make lint` green on the final tree

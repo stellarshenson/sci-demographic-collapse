@@ -35,3 +35,13 @@ Progress logs for background and long-running jobs.
 - `nb36-nb17-a8-execute.log` - the A8 cycle: NB36 re-executed with the A8/A8b/A8c cells, then NB17 re-executed AFTER its inline story-figure layer was fixed at source (realized annual Δτ, floored) - the earlier `nb17-reexecute-e40.log` run had regenerated the run_cal-based figures on the corrected module but cells riding the inline copy were still on the legacy factor; this run corrects them; the appended second NB36 run carries the record-faithful A8c bar (the first A8c draft asserted a mis-remembered H376 record - NB34's actual record is PARTIAL with the gating contrast ×5.2 vs ×1.9 as the discriminator, which the corrected cell reproduces and races)
 - `e40-review2r12.log` - stderr of the E40 round-12 Mode 2 reviewer: the confirming round, verdict CLEAN (no uncarried claims; one non-blocking MINOR - optional H-enumeration of the structurally-inferred non-catalogue rows - accepted as a stated residual)
 - `e41-wave2-maketest.log` - `make test` re-run after recording the E41 Wave-2 blocker-resolution outcome into the docs (green, 63 passed; confirms the docs-only + report-JSON changes left the tree green, no source touched)
+- `e41-stage2-calibrate.log` - E41 Wave-3 Stage 2: PB_SCALE_ENS re-solved on the Stage-1 anchors (8/8 <5e-4) + the AR5 Korea band-edge verification at the joint corner
+- `e41-stage2-usa-attribution.log` - decomposition of the USA |s-1| band exceedance (new-pair/old-MAC vs old-pair/new-MAC): the MAC re-pin crossing the fec knee accounts for +0.0084 of the +0.0118 growth
+- `e41-stage2-maketest.log` / `e41-stage2-maketest2.log` - guard suite against the new anchors (first run caught the E37 transplant band as designed; second run green after the band re-derivation)
+- `e41-e37-transplant-remeasure.log` - the E37-H363 transplant re-measured under the E41 anchors (+0.351, was +0.736)
+- `e41-w33-bitforbit.log` - W3.3 observability harness proven bit-for-bit identical off vs on, 8 regions x run/run_cal
+- `e41-w33-maketest.log` - suite green after the harness (64 incl. the new harness guard)
+- `nb37-execute.log` - execution of `notebooks/37-kj-e41-backtest.ipynb` (the pre-registered 2000-2023 rejection backtest; first launch died with the server, relaunched detached)
+- `e41-stage4-kbf-restage2.log` - the Stage-4 kBF move (0.6 -> 1.0): the one Stage-2 return re-solving PB_SCALE_ENS + tempo-mirage/transplant re-measurement
+- `e41-stage4-maketest.log` - suite green after the kBF move (65)
+- `e41-stage5-reverdict.log` - Stage 5: the honesty table (FAIL 3/6, attributed), the basin table under the new anchors, and the worsening decompositions

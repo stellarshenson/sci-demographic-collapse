@@ -1,0 +1,429 @@
+{
+ "stage": "E41 Wave-3 backtest (Stages 3/3b/4)",
+ "date": "2026-07-11",
+ "preregistration": "docs/e41-backtest-preregistration.md",
+ "fitted": {
+  "secC": 0.0025652087645087604,
+  "secPb": 0.010802994525016629,
+  "secTau": 0.0,
+  "kTau": 0.05638550875050465
+ },
+ "shipped": {
+  "secC": 0.0007,
+  "secPb": 0.001,
+  "secTau": 0.006,
+  "kTau": 0.06
+ },
+ "N_residuals": 287,
+ "chi2_dof": 3.638,
+ "chi2_dof_shipped": 6.019,
+ "per_region": {
+  "USA": {
+   "n": 46,
+   "rms_std_resid": 2.17,
+   "by_witness": {
+    "TFR": 2.03,
+    "MAC": 2.29,
+    "MAR": 2.22
+   }
+  },
+  "France": {
+   "n": 46,
+   "rms_std_resid": 1.97,
+   "by_witness": {
+    "TFR": 1.02,
+    "MAC": 2.38,
+    "MAR": 3.05
+   }
+  },
+  "Germany": {
+   "n": 21,
+   "rms_std_resid": 2.24,
+   "by_witness": {
+    "TFR": 2.08,
+    "MAC": 2.48,
+    "MAR": 0.99
+   }
+  },
+  "Italy": {
+   "n": 45,
+   "rms_std_resid": 1.37,
+   "by_witness": {
+    "TFR": 1.1,
+    "MAC": 1.02,
+    "MAR": 3.55
+   }
+  },
+  "Japan": {
+   "n": 24,
+   "rms_std_resid": 1.86,
+   "by_witness": {
+    "TFR": 1.25,
+    "MAC": 1.93,
+    "MAR": 3.51
+   }
+  },
+  "Korea": {
+   "n": 30,
+   "rms_std_resid": 2.79,
+   "by_witness": {
+    "TFR": 3.98,
+    "MAC": 2.53,
+    "MAR": 1.23
+   }
+  },
+  "Poland": {
+   "n": 30,
+   "rms_std_resid": 1.47,
+   "by_witness": {
+    "TFR": 0.96,
+    "MAC": 1.63,
+    "MAR": 1.06
+   }
+  },
+  "Israel": {
+   "n": 45,
+   "rms_std_resid": 1.18,
+   "by_witness": {
+    "TFR": 1.5,
+    "MAC": 0.83,
+    "MAR": 0.6
+   }
+  }
+ },
+ "rv_init_sensitivity": {
+  "rv-0.02": 3.705,
+  "rv+0.02": 3.754
+ },
+ "bars": {
+  "B1_wls_gate": {
+   "value": 3.638,
+   "bar": 2.0,
+   "passes": false,
+   "consequence": "s_struct=0.08 falsified; rejection authority to B5"
+  },
+  "B2_cfr_composition": {
+   "passes": false,
+   "table": {
+    "USA": {
+     "CFR_obs": 2.183,
+     "CFR_model": 2.068,
+     "gap": 0.0526,
+     "passes": true,
+     "family_crosscheck": 0.037
+    },
+    "France": {
+     "CFR_obs": 2.013,
+     "CFR_model": 1.929,
+     "gap": 0.0417,
+     "passes": true,
+     "family_crosscheck": 0.017
+    },
+    "Germany": {
+     "CFR_obs": 1.585,
+     "CFR_model": 1.658,
+     "gap": 0.0457,
+     "passes": true,
+     "family_crosscheck": 0.005
+    },
+    "Italy": {
+     "CFR_obs": 1.425,
+     "CFR_model": 1.449,
+     "gap": 0.0169,
+     "passes": true,
+     "family_crosscheck": 0.005
+    },
+    "Japan": {
+     "CFR_obs": 1.404,
+     "CFR_model": 1.462,
+     "gap": 0.041,
+     "passes": true,
+     "family_crosscheck": 0.026
+    },
+    "Korea": {
+     "CFR_obs": 1.593,
+     "CFR_model": 1.116,
+     "gap": 0.2991,
+     "passes": false,
+     "family_crosscheck": 0.003
+    },
+    "Poland": {
+     "CFR_obs": 1.628,
+     "CFR_model": 1.579,
+     "gap": 0.03,
+     "passes": true,
+     "family_crosscheck": 0.028
+    },
+    "Israel": {
+     "CFR_obs": 3.085,
+     "CFR_model": 3.046,
+     "gap": 0.0127,
+     "passes": true,
+     "family_crosscheck": 0.005
+    }
+   }
+  },
+  "B3_kbf": {
+   "grid": {
+    "0.4": 116.2244713182058,
+    "0.6": 92.45572903165731,
+    "0.8": 71.94935264116819,
+    "1.0": 54.705342146738445
+   },
+   "argmin": 1.0,
+   "keep_0p6": false,
+   "window": "delivered adjTFR span (2011-2022) \u2229 [2000,2019], COVID excl., FR+IL excluded",
+   "residual_sign": -0.862
+  },
+  "B4_migration": {
+   "passes": true,
+   "violations": {}
+  },
+  "B5_tier2": {
+   "passes": false,
+   "detail": {
+    "R1_sign_miss": [
+     "Germany",
+     "Italy",
+     "Poland",
+     "Israel"
+    ],
+    "R2_korea": {
+     "model_2019": 0.831,
+     "obs_2019": 0.92,
+     "within": true,
+     "falls_2015_2019": true
+    },
+    "R3_mac_rise": {
+     "USA": true,
+     "France": true,
+     "Germany": true,
+     "Italy": true,
+     "Japan": true,
+     "Korea": true,
+     "Poland": true,
+     "Israel": true
+    },
+    "R4_c_decline": {
+     "USA": true,
+     "France": true,
+     "Germany": true,
+     "Italy": true,
+     "Japan": true,
+     "Korea": true,
+     "Poland": true,
+     "Israel": true
+    }
+   }
+  }
+ },
+ "honesty_triples": [
+  {
+   "region": "USA",
+   "year": 2016,
+   "dtau_model": 0.05314,
+   "G_obs": 0.1254,
+   "sigma_G": 0.04178
+  },
+  {
+   "region": "USA",
+   "year": 2017,
+   "dtau_model": 0.05181,
+   "G_obs": 0.11833,
+   "sigma_G": 0.04427
+  },
+  {
+   "region": "USA",
+   "year": 2018,
+   "dtau_model": 0.04921,
+   "G_obs": 0.10234,
+   "sigma_G": 0.0468
+  },
+  {
+   "region": "USA",
+   "year": 2019,
+   "dtau_model": 0.04794,
+   "G_obs": 0.09401,
+   "sigma_G": 0.04985
+  },
+  {
+   "region": "Germany",
+   "year": 2011,
+   "dtau_model": 0.07937,
+   "G_obs": 0.12572,
+   "sigma_G": 0.0543
+  },
+  {
+   "region": "Germany",
+   "year": 2012,
+   "dtau_model": 0.0774,
+   "G_obs": 0.12798,
+   "sigma_G": 0.05529
+  },
+  {
+   "region": "Germany",
+   "year": 2013,
+   "dtau_model": 0.07351,
+   "G_obs": 0.11058,
+   "sigma_G": 0.05319
+  },
+  {
+   "region": "Germany",
+   "year": 2014,
+   "dtau_model": 0.06983,
+   "G_obs": 0.06751,
+   "sigma_G": 0.05753
+  },
+  {
+   "region": "Germany",
+   "year": 2015,
+   "dtau_model": 0.06634,
+   "G_obs": 0.03466,
+   "sigma_G": 0.06805
+  },
+  {
+   "region": "Germany",
+   "year": 2016,
+   "dtau_model": 0.06463,
+   "G_obs": 0.01168,
+   "sigma_G": 0.05866
+  },
+  {
+   "region": "Italy",
+   "year": 2015,
+   "dtau_model": 0.04745,
+   "G_obs": 0.12261,
+   "sigma_G": 0.05706
+  },
+  {
+   "region": "Italy",
+   "year": 2016,
+   "dtau_model": 0.04634,
+   "G_obs": 0.11785,
+   "sigma_G": 0.05782
+  },
+  {
+   "region": "Italy",
+   "year": 2017,
+   "dtau_model": 0.04414,
+   "G_obs": 0.1159,
+   "sigma_G": 0.06037
+  },
+  {
+   "region": "Italy",
+   "year": 2018,
+   "dtau_model": 0.04206,
+   "G_obs": 0.10907,
+   "sigma_G": 0.06048
+  },
+  {
+   "region": "Italy",
+   "year": 2019,
+   "dtau_model": 0.04105,
+   "G_obs": 0.10944,
+   "sigma_G": 0.06424
+  },
+  {
+   "region": "Japan",
+   "year": 2015,
+   "dtau_model": 0.05652,
+   "G_obs": 0.10647,
+   "sigma_G": 0.05413
+  },
+  {
+   "region": "Japan",
+   "year": 2016,
+   "dtau_model": 0.05535,
+   "G_obs": 0.0975,
+   "sigma_G": 0.05905
+  },
+  {
+   "region": "Japan",
+   "year": 2017,
+   "dtau_model": 0.05303,
+   "G_obs": 0.082,
+   "sigma_G": 0.06096
+  },
+  {
+   "region": "Japan",
+   "year": 2018,
+   "dtau_model": 0.05085,
+   "G_obs": 0.08128,
+   "sigma_G": 0.06186
+  },
+  {
+   "region": "Japan",
+   "year": 2019,
+   "dtau_model": 0.04979,
+   "G_obs": 0.08215,
+   "sigma_G": 0.06312
+  },
+  {
+   "region": "Korea",
+   "year": 2015,
+   "dtau_model": 0.10554,
+   "G_obs": 0.20032,
+   "sigma_G": 0.05367
+  },
+  {
+   "region": "Korea",
+   "year": 2016,
+   "dtau_model": 0.10283,
+   "G_obs": 0.22113,
+   "sigma_G": 0.05385
+  },
+  {
+   "region": "Korea",
+   "year": 2017,
+   "dtau_model": 0.0975,
+   "G_obs": 0.25802,
+   "sigma_G": 0.05251
+  },
+  {
+   "region": "Korea",
+   "year": 2018,
+   "dtau_model": 0.09248,
+   "G_obs": 0.26172,
+   "sigma_G": 0.05227
+  },
+  {
+   "region": "Korea",
+   "year": 2019,
+   "dtau_model": 0.09002,
+   "G_obs": 0.26121,
+   "sigma_G": 0.06486
+  },
+  {
+   "region": "Poland",
+   "year": 2013,
+   "dtau_model": 0.06217,
+   "G_obs": 0.08506,
+   "sigma_G": 0.06641
+  },
+  {
+   "region": "Poland",
+   "year": 2014,
+   "dtau_model": 0.06058,
+   "G_obs": 0.08703,
+   "sigma_G": 0.06197
+  },
+  {
+   "region": "Poland",
+   "year": 2015,
+   "dtau_model": 0.05747,
+   "G_obs": 0.07237,
+   "sigma_G": 0.06411
+  },
+  {
+   "region": "Poland",
+   "year": 2016,
+   "dtau_model": 0.05595,
+   "G_obs": 0.0603,
+   "sigma_G": 0.06781
+  }
+ ],
+ "scope": {
+  "promotion_of_fitted_params": "OUT OF SCOPE this round (named follow-on decision); shipped PARAMS unchanged",
+  "migration": "backtest only; forward runs natural-increase-only"
+ }
+}

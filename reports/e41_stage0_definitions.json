@@ -1,0 +1,51 @@
+{
+  "stage": "E41 Wave-3 Stage 0 - definitions (no numbers move)",
+  "date": "2026-07-11",
+  "protocol": "protocol v2 (reports/e41_blocker_resolutions.json) + w26_close protocol_v2_1_patches",
+  "decisions": [
+    {
+      "id": "S0a-tau-construct",
+      "decision": "tau = MAC (mean age at childbearing), the WPP 2024-revision 2023 series on disk; the emergent.py line-28 label 'mean age at first birth' is corrected to MAC. Delta1 keying stays at MAC this round; re-keying the biological terms fec/gRV off tau_entry = MAC - Delta1_r is REGISTERED as a named structural experiment for a future round (C1F6), not acted on.",
+      "source": "UN WPP 2024, data/raw/unwpp/demographic_indicators.csv MAC column, year 2023; Delta1 gaps delivered in reports/e41_blocker_resolutions.json (fecundity-Delta1 family: USA 2.40 / FR 2.48 / DE 1.67 / IT 0.51 / JP 0.91 / KR 0.46 / PL 1.49 / IL 3.15)"
+    },
+    {
+      "id": "S0b-germany-tfr",
+      "decision": "Germany 2023 TFR = 1.38 (Destatis, Zensus-2022-rebased), replacing WPP 1.44 - the national-office convention already applied to Poland (GUS 1.16) and Korea (KOSIS 0.72).",
+      "source": "Destatis Statistischer Bericht - Geburten 2023 (zensus-rebased series)"
+    },
+    {
+      "id": "S0c-rv0-construct",
+      "decision": "RV0 = within-union permanent childlessness, derived JOINTLY with C0 from cohort-matched {p0(k), ever-in-union(k)} at 45-49 via RV0 = 1 - (1-p0)/C0; no longer hand-set. Cohort reference pairs feed Stage 3b and the honesty table; the 2023 state pair is validated by the period feasibility screen PB0 >= 1.15.",
+      "source": "C0F0 recritique resolution (scratchpad/e41-c0f0-recritique-resolution.json): matched_cohort_pairing_per_region + period_feasibility_margin_table_all8"
+    },
+    {
+      "id": "S0d-norm-option-A",
+      "decision": "Norm option A, byte-level: the NORM0 dict is UNTOUCHED; the latent ordering index lives only in the mapping table, relabeled 'structural-prior-contradicted-by-ideal-construct' (AR3) - the well assignment is a baseline-neutral structural prior with no surviving observational support on either instrument; E25+ cross-region NORM-lever rankings are CONDITIONAL on this prior. Any NORM0 value change is by definition option B and trips the Stage-5 re-verdict gate (C1F5 construct switch).",
+      "source": "protocol v2 Stage 0(d) + w26_close AR3; acceptance check: git diff on the NORM0 block empty"
+    },
+    {
+      "id": "S0e-wS-dead",
+      "decision": "PARAMS['wS'] is flagged DEAD (defined, never referenced by any dynamics); kept in place per surgical-change discipline, flagged in a comment.",
+      "source": "protocol v2 Stage 0(e); grep: wS appears only in the PARAMS literal"
+    },
+    {
+      "id": "S0f-decoupled-regions",
+      "decision": "Cohort-reference-decoupled regions: Korea (state pair = 2023 period ever-partnering quantum, C0=0.70 / RV0=0.09) and Israel (state pair retained at C0=0.97 / RV0=0.05; census-grade cohort p0=0.068-0.070 makes the cohort identity infeasible vs EIU 0.89-0.92, so the cohort reference carries a declared non-marital/late-fertility leak). Both are EXEMPT from the Stage-5 'none worsens >5%' honesty clause per AR2; their D is reported bar-free as the C0F2 erosion signal.",
+      "source": "Yoo 2026 Demographic Research 54(3) (PPEM 0.667 / PPEM* 0.698, 2023); Israel CBS Census 2022 cohort parity p0=0.068 (UNSD DYB POP/40); w26_close AR4/AR5"
+    },
+    {
+      "id": "S0g-poland-p0",
+      "decision": "Poland p0 = bracket 0.10-0.20, late-window central 0.15-0.195; the state point adopts the central 0.1725 with the bracket carried as the band. 'C0[PL] must rise to >= 0.897' is STRUCK (C0F4).",
+      "source": "HFD cohort-1975 0.195 (emigration-overestimated); Mynarska/Matysiak/Rybinska 2013 0.155 (cohort 1965); GGS 0.103 floor; NSP 2011 census 0.097 (cohorts 1966-71)"
+    },
+    {
+      "id": "S0h-band-central-convention",
+      "decision": "Where the delivered observable is a band (FR/DE/IT/JP/PL ever-in-union), the state point is the band CENTRAL; the band is recorded in the Stage-1 report and in the code comment. Sensitivity of the Stage-2 solve to band edges is checked for Korea (the thin case) per AR5 at the joint corner (C0=0.72, rv=0.065) alongside (0.70, 0.065).",
+      "source": "w26_close AR5; Stage-2 acceptance clause"
+    }
+  ],
+  "acceptance": {
+    "every_decision_has_named_source": true,
+    "norm0_git_diff_empty": "verified after the Stage-1 edit (see reports/e41_stage1_anchors.json)"
+  }
+}

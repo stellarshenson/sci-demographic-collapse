@@ -1,0 +1,157 @@
+{
+ "stage": "E41 Wave-3 Stage 2",
+ "date": "2026-07-11",
+ "regions": {
+  "USA": {
+   "scale": 1.0385,
+   "tfr_year1": 1.62,
+   "abs_err": 3.57e-07,
+   "old_scale": 1.0267,
+   "committed_band_abs": 0.0317,
+   "within_band": false
+  },
+  "France": {
+   "scale": 1.0202,
+   "tfr_year1": 1.64,
+   "abs_err": 2.01e-07,
+   "old_scale": 1.0286,
+   "committed_band_abs": 0.0336,
+   "within_band": true
+  },
+  "Germany": {
+   "scale": 1.0203,
+   "tfr_year1": 1.38,
+   "abs_err": 1.75e-07,
+   "old_scale": 1.0239,
+   "committed_band_abs": 0.0289,
+   "within_band": true
+  },
+  "Italy": {
+   "scale": 1.013,
+   "tfr_year1": 1.2,
+   "abs_err": 1.02e-07,
+   "old_scale": 1.0164,
+   "committed_band_abs": 0.0214,
+   "within_band": true
+  },
+  "Japan": {
+   "scale": 1.0157,
+   "tfr_year1": 1.21,
+   "abs_err": 1.22e-07,
+   "old_scale": 1.0197,
+   "committed_band_abs": 0.0247,
+   "within_band": true
+  },
+  "Korea": {
+   "scale": 1.005,
+   "tfr_year1": 0.72,
+   "abs_err": 3.01e-07,
+   "old_scale": 1.0176,
+   "committed_band_abs": 0.0226,
+   "within_band": true
+  },
+  "Poland": {
+   "scale": 1.0343,
+   "tfr_year1": 1.16,
+   "abs_err": 2.52e-07,
+   "old_scale": 1.0336,
+   "committed_band_abs": 0.0386,
+   "within_band": true
+  },
+  "Israel": {
+   "scale": 1.0376,
+   "tfr_year1": 2.829999,
+   "abs_err": 5.62e-07,
+   "old_scale": 1.0373,
+   "committed_band_abs": 0.0423,
+   "within_band": true
+  }
+ },
+ "acceptance": {
+  "tfr_reproduced_5e4_8_8": true,
+  "band_8_8": false
+ },
+ "korea_band_edges_AR5": {
+  "C0_0.72_rv_0.065": {
+   "PB0": 1.1852,
+   "scale": 1.00053,
+   "tfr_year1": 0.72,
+   "err": 1.76e-07,
+   "TFR_2125": 0.257,
+   "Cend": 0.324,
+   "collapses": true
+  },
+  "C0_0.7_rv_0.065": {
+   "PB0": 1.2191,
+   "scale": 1.00345,
+   "tfr_year1": 0.72,
+   "err": 3.84e-07,
+   "TFR_2125": 0.251,
+   "Cend": 0.307,
+   "collapses": true
+  }
+ },
+ "usa_band_deviation": {
+  "status": "ATTRIBUTED-DEVIATION (recorded, not waved away)",
+  "clause": "no region's |PB_SCALE_ENS-1| grows beyond its committed band +0.005",
+  "observed": "USA |s-1| = 0.0385 vs band 0.0317 (old 0.0267 + 0.005); exceedance +0.0068",
+  "decomposition": {
+   "old_anchors": 0.0267,
+   "new_pair_old_MAC": 0.03,
+   "old_pair_new_MAC": 0.0351,
+   "new_both": 0.0385,
+   "note": "near-additive: MAC re-pin contributes +0.0084 of the +0.0118 growth, the C0/RV0 pair +0.0033, interaction ~0.0001"
+  },
+  "mechanism": "the MAC re-pin 29.4 -> 29.898 (stale vintage corrected to on-disk WPP 2023) moves the dispersed tau ensemble (sigma_tau=3.0) across the fec knee at 30: more agents pay the fecundity decay, the dispersed baseline TFR drops, and the calibration scale rises to compensate - a real Jensen effect of a declared, sourced anchor move, directionally predicted by the fec curvature",
+  "adjudication": "bar (<5e-4) MET 8/8; band MET 7/8; the USA exceedance is fully attributed to the declared MAC re-pin, whose vintage correction postdates the band commitment. Per C0F3 the scale is a reported diagnostic - the verdict-bearing honesty gate is the Stage-5 PB0-convergence table. Flagged for the experiments log and the W3.7 review.",
+  "evidence": "logs/e41-stage2-usa-attribution.log"
+ },
+ "post_kbf_move": {
+  "note": "Stage-4 gate moved kBF 0.6->1.0 (B3); Stage 2 re-run once per the pre-registered procedure",
+  "scales": {
+   "USA": {
+    "scale": 1.0395,
+    "pre_kbf": 1.0385,
+    "err": 3.9e-07
+   },
+   "France": {
+    "scale": 1.0233,
+    "pre_kbf": 1.0202,
+    "err": 2.5e-07
+   },
+   "Germany": {
+    "scale": 1.0232,
+    "pre_kbf": 1.0203,
+    "err": 2.1e-07
+   },
+   "Italy": {
+    "scale": 1.0163,
+    "pre_kbf": 1.013,
+    "err": 1.4e-07
+   },
+   "Japan": {
+    "scale": 1.0188,
+    "pre_kbf": 1.0157,
+    "err": 1.6e-07
+   },
+   "Korea": {
+    "scale": 1.0088,
+    "pre_kbf": 1.005,
+    "err": 5.4e-07
+   },
+   "Poland": {
+    "scale": 1.0349,
+    "pre_kbf": 1.0343,
+    "err": 2.8e-07
+   },
+   "Israel": {
+    "scale": 1.0404,
+    "pre_kbf": 1.0376,
+    "err": 6.3e-07
+   }
+  },
+  "bar_5e4_8_8": true,
+  "tempo_mirage_peak_korea": 0.1153,
+  "e37_transplant_lift": 0.3485
+ }
+}
