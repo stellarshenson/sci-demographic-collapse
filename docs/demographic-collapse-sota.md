@@ -2,14 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the full E1-E42 campaign - 402 pre-registered
-hypotheses across forty-two rounds. It is an age-structured cohort-component (Leslie) core of national
+The distilled, calibrated design that survived the full E1-E43 campaign - 412 pre-registered
+hypotheses across forty-three rounds. It is an age-structured cohort-component (Leslie) core of national
 populations, wrapped in a seven-channel coupled behavioural layer whose baseline reproduces each region's
 real 2023 fertility, calibrated by an information-preserving Wasserstein objective, backtested
 out-of-sample, stress-tested against four historical crises, and used to size, rank and ablate the entire
 intervention catalogue over four generations. The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-38 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
+3-39 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
 coupled behavioural × Leslie model, the judge every intervention is scored on).
 
 ## Overview
@@ -424,6 +424,34 @@ it occupies - the interaction gate re-attributed the round's headline interactio
 (a multiplicative composition cross-term, not shared-wire saturation; the USA broadcast share a
 bistable well-crossing artifact, Korea's 0.22 the honest marginal number).
 
+### 8d. The norm channel under noise: exact escape arithmetic and a probability fate map (E43)
+
+The bistable norm channel is an autonomous 1-D gradient double well, so when E43 added per-strand
+noise dN = -V'(N)dt + sqrt(2eps)dB with a DATA-ANCHORED amplitude (eps = 5e-5/yr central from
+detrended marriage-rate wobble; per-region 2.2e-5 to 1.1e-4), the Freidlin-Wentzell / Eyring-Kramers
+machinery applied exactly: the measured escape-time exponential reproduces the barrier to 0.4% and
+noisy transitions concentrate along the computable most-probable path (E43-H404/H405). Three
+standing results follow:
+
+- **noise is a collapse-ward ratchet** - falling into the trap costs x3.2 LESS action than escaping
+  it, and at the anchored per-region noise the sign pattern is 8/8: trapped regions leak out
+  (gain), low-well regions leak in (lose) (E43-H403/H407)
+- **the fate map gains error bars** - Germany carries a +0.117 century-scale fall-in probability at
+  its anchored wobble (France +0.085, Israel +0.057; trapped-region escape leaks 0.2-3%), so its
+  safe-basin classification is a ~7-in-8 statement, not a fact (E43-H411)
+- **pushes are action subsidies, and the big-push law survives** - the escape fold sits at push
+  s* = 0.0037, far below catalogue norm forcings (every deterministic E25+ norm lever was a
+  super-fold tip); sub-fold pushes buy escape probability as the tilted action predicts
+  (~25%-accurate at the century horizon), and the pre-registered noise inversion of the E38-H380
+  big-push law is REFUTED - a multi-fold push completes its transit inside the window, so
+  concentration still beats the equal-budget annuity (E43-H406/H412)
+
+The round also adjudicated the three E42b reopen bars by measurement: R1 FAILED (the misery gate
+does not separate from a linear wire even in the straddling regime - the W decline now rests on
+evidence), R2 confirmed the dispersed-E dead zone (Jensen gap 1.3e-5), and R3 confirmed the
+broadcast well-crossing at the mechanism level while AMENDING it - the response peak is basin
+surgery (the arm-splitting window), with a residual within-well dial (x3.3 baseline) riding on it.
+
 ### 9. The transferable secular ingredients of religion, and enforced monogamy
 
 Religion is almost never a model primitive - it is a bundle that loads channels the model already owns, and
@@ -525,7 +553,10 @@ discipline the whole project runs on is that elegance must move the numbers.
   distributional in form (below-floor tail mass) but unidentified, and the measured baseline floor
   breaches live in Italy, Japan, Korea and Poland - Korea dominant at 33x the next gate mass; Germany,
   the H400 test region, never crosses - so a zero-deviation ship is impossible. The QuantileFlow carry lands in the same ≤4.65e-4 dead
-  zone as the core lift, at 48-64x compute. Full verdict: `reports/e42b_promotion_verdict.md`
+  zone as the core lift, at 48-64x compute. Full verdict: `reports/e42b_promotion_verdict.md`.
+  E43 adjudicated the three reopen bars by measurement: R1 FAILED (gate unidentifiable even
+  straddling the floor), R2 confirmed the dead zone (gap 1.3e-5), R3 confirmed-and-amended
+  (basin surgery + a rider dial) - the declines now rest on measured bars, not prose
 
 ## Honest limitations
 
@@ -557,11 +588,16 @@ discipline the whole project runs on is that elegance must move the numbers.
   real period-vs-cohort erosion; refreshing the epoch-matched reference is the named Wave-4 action
 - **The E42 wellbeing wires are notebook-local and regime-dependent** - the misery gate, loss-averse
   derivative and broadcast couplings live in NB38's EWModel, not the shipped core (the E42b workflow
-  DECLINED promotion; the pre-registered floor-crossing identification test is the named reopening
-  condition); their bite is positional (floor-crossing, norm basin), the broadcast
+  DECLINED promotion; the pre-registered floor-crossing identification test was RUN in E43 and
+  FAILED - the gate does not separate from a linear wire in any regime, so the decline is closed
+  on evidence); their bite is positional (floor-crossing, norm basin), the broadcast
   wire acts as a switch at gWN=0.10 in both tested low-well regions (dial-vs-switch sweep is a
   named residual), and the
   meaning/hedonia split is REFUTED at n=8 (strictly worse out-of-sample on the fair fit)
+- **The noise layer is notebook-local and its amplitude is a proxy anchor** - the E43 stochastic
+  machinery lives in NB39 (the shipped core stays deterministic); eps is anchored on detrended
+  crude-marriage-rate wobble mapped linearly onto N's dynamic range - a defensible but modelling
+  choice (the dominant uncertainty, hence every E43 statement carries a decade-wide eps sweep)
 - **NORM0 wells are a structural prior** - the well assignment is contradicted by the delivered ideal-zero
   ordering (Korea 0.002 lowest, Germany 0.075 highest); E25+ cross-region NORM-lever rankings are
   CONDITIONAL on this prior, and re-assignment routes through the option-B construct switch, which trips
@@ -578,7 +614,10 @@ discipline the whole project runs on is that elegance must move the numbers.
   rounds; `14` the dynamical re-examination (the model as judge); `15` the harbinger ablation; `16`-`27` the
   structural / exit-machinery / norms / alternative-structure / religion rounds; `28` the cultural-
   transmission close (E35); `31` the heretical / coercive-natalism fanout (E34) and `32` the marriageable-men
-  saturating-fanout re-simulation (E36). All execute end-to-end on the pinned GPU
+  saturating-fanout re-simulation (E36); `33` Israel's mechanisms (E37); `34` the social fabric and the
+  housing-coupling loop (E38); `35` the loop in time (E39); `36` the rigor audit of the core (E40); `37` the
+  pre-registered rejection backtest (E41); `38` the education/happiness fanout (E42); `39` the stochastic
+  basin mechanics (E43). All execute end-to-end on the pinned GPU
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID
   behavioural panel; provenance in `data/raw/README.md` and the per-source manifests
 - **Numbers** - `reports/nb7_parameter_table.csv` (recalibrated per-region parameters), `nb7_predictions.csv`
@@ -587,4 +626,4 @@ discipline the whole project runs on is that elegance must move the numbers.
   ablation and combination law), the per-notebook `nb*_verdicts.json`, and the figures in `reports/figures/`
 - **Decision-maker view** - a star-ranked intervention table with mechanism-of-effect chains and side
   effects is regenerated on demand via `/write-interventions`; the source library is `references/papers/`
-  (48 PDFs + 72 digests)
+  (72 PDFs + 112 digests)

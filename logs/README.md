@@ -48,3 +48,5 @@ Progress logs for background and long-running jobs.
 - `nb38-execute.log` - E42 notebook (38-kj-e42-education-happiness) nbconvert execution: H393-H402 education+happiness fanout
 - `nb38-execute-review.log` - E42 notebook re-execution after the adversarial-review round-1 fixes (H396/H401 re-grades, floor diagnostics cell, anchor assert)
 - `nb38-execute-review2.log` - E42 notebook re-execution after the round-2 MINOR fixes (four-region breach phrasing, konly nit, gate-preserving save cell)
+- `nb39-execute.log` - E43 notebook (39-kj-e43-stochastic-basin-mechanics) nbconvert execution: H403-H412 Freidlin-Wentzell round + R1-R3 closures
+- `nb39-execute-review.log` - E43 notebook re-execution after the round-1 review fixes (H406 adjudicated spot check, H412 end-state metric, H407 seed check, LinModel eps guard)

@@ -1,0 +1,364 @@
+{
+  "round": "E43",
+  "hypotheses": {
+    "H403": {
+      "title": "the quasipotential is exact, well-binary, and collapse-tilted",
+      "verdict": "PARTIAL",
+      "metric": "quad err 8.3e-17; dV_out/dV_in = x3.20; eps-scaled trapped ranking ['Japan', 'Italy', 'Korea', 'Poland']",
+      "note": "The channel is an exact 1-D gradient double well; the barrier is WELL-BINARY (NORM0 is snapped to the wells, so all trapped regions share one raw action) and falling into the trap costs x3.2 LESS action than escaping - the potential itself is collapse-tilted. Region resolution enters only through the per-region noise anchor, and there the pre-registered ranking sub-bar FAILS: in eps-scaled units Japan carries the deepest effective trap (quiet-wobble Japan, not Korea - the anchor, not the barrier, decides)."
+    },
+    "H404": {
+      "title": "Eyring-Kramers validates against simulation",
+      "verdict": "SUPPORTED",
+      "metric": "slope 4.007e-04 vs dV 3.992e-04; prefactor ratio 1.17 (flat); dt-halving 1.1%",
+      "note": "The exponential arithmetic is the machine's own: the measured log-slope reproduces the barrier and the prefactor ratio is a stable O(1) constant (finite-barrier + EM-dt corrections per the Berglund digest), so Kramers theory can replace brute-force rare-event simulation everywhere the barrier is large."
+    },
+    "H405": {
+      "title": "the instanton is the observed transition corridor",
+      "verdict": "SUPPORTED",
+      "metric": "1200 transits at eps=2e-04; median path inside the 2-sigma tube 100% of the transit",
+      "note": "The trajectory path-integral machinery is live: escapes do not wander - they concentrate along the time-reversed relaxation path, so the MOST-PROBABLE collapse/recovery route is computable in closed form and the corridor width is sqrt(eps/|V''|)."
+    },
+    "H406": {
+      "title": "a push is an action subsidy",
+      "verdict": "PARTIAL",
+      "metric": "50%-frontier errors ['10%', '20%', '24%', '10%']; escape fold at push s*=0.0037; coupled Korea spot crossing 0.44 vs 1-D 0.37 (factor-2 check PASS)",
+      "note": "The frontier holds structurally (it exists, is monotone in eps, and matches at both sweep ends) but the mid-sweep misses the 15% bar - the Kramers asymptotics are marginal where the target barrier sits at dV ~ O(eps) near the fold (the Berglund validity caveat). The action-subsidy picture stands; its arithmetic is ~25%-accurate at the century horizon."
+    },
+    "H407": {
+      "title": "noise is collapse-ward - the well asymmetry has teeth",
+      "verdict": "PARTIAL",
+      "metric": "sign pattern 8/8; low-well damage ranking ['Israel', 'Germany', 'France', 'USA'] (bar: Germany/France top-2); seed check Japan/Korea: {'Japan': [0.001, 0.0009, 0.001], 'Korea': [0.001, 0.0009, 0.001]}",
+      "note": "The x3.2 action asymmetry is not a curiosity: at the anchored per-region noise the trapped regions gain (strands leak OUT) while the low-well regions lose (strands leak IN, 3x cheaper), so fluctuations alone push the system toward collapse - a ratchet the deterministic model cannot see. Where the TFR-unit damage ranking disagrees with the pre-registered Germany/France top-2 (Israel leads in TFR units), the discrepancy is the regional fertility LEVEL amplifying per-crossing damage - in probability units the ranking follows eps exactly (the H411 map)."
+    },
+    "H412": {
+      "title": "big push vs annuity under noise - the norm-channel inversion",
+      "verdict": "REFUTED",
+      "metric": "annuity-dominates map {('Korea', 0.25): False, ('Korea', 0.8): False, ('Poland', 0.25): False, ('Poland', 0.8): False} (first-passage); end-state occupancy metric agrees: True (reversion after a short push exists but does not flip any cell)",
+      "note": "The inversion claim DIES: concentration wins at both budgets because a multi-fold push completes its transit within the window (the critical-slowing premise underestimated transit speeds - at 16x fold the escape is deterministic and fast), so E38-H380's big-push law SURVIVES noise on the norm channel. The annuity is not worthless - it carries the noise-hazard floor - but the concentrated crossing beats it wherever the budget can reach the fold at all."
+    },
+    "H408": {
+      "title": "R1 - the misery gate identifies only in the straddling regime",
+      "verdict": "REFUTED",
+      "metric": "gated/linear: Germany 1.03/1.00, Japan 0.98/0.96, Korea 1.02/1.00",
+      "note": "R1 adjudicated AGAINST identification: even the straddling regime cannot separate the gate from a linear wire at fixed W_floor - the E42b KEEP-NOTEBOOK-LOCAL decline stands with its reopen bar now measured and failed."
+    },
+    "H409": {
+      "title": "R2 - the dispersed-E Jensen gap, measured",
+      "verdict": "SUPPORTED",
+      "metric": "gaps Korea +1.31e-05, Germany +3.29e-06 (bar < 5e-4)",
+      "note": "R2 adjudicated: the gap the E42b judges flagged as inferred-not-measured is now on the scale and it is in the dead zone - E's dispersion adds nothing beyond its mean through the tau wire, so the education rejection stands on measurement, and the mandatory-distributional condition for any future E promotion is pre-satisfied."
+    },
+    "H410": {
+      "title": "R3 - the broadcast response is basin surgery at its peak, with a residual dial",
+      "verdict": "PARTIAL",
+      "metric": "USA peak +0.1085 inside the D-window (peak D 0.95); plateau +0.0714 vs baseline +0.0216; Korea d_occ 0.000 with response +0.0088; occ step 0.969->0.484 under noise",
+      "note": "R3 adjudicated with an AMENDED mechanism: the response MAXIMUM is basin surgery exactly as the E42 gate diagnosed (the peak lives where the two arms' basins split, D~0.9), and anchored noise grades the strand thresholds - but a residual within-well broadcast DIAL survives on the plateau (both arms tipped, response still x3.3 the baseline), which is what Korea's honest 0.22 marginal share was measuring. The wire stays excluded from promotion: its dominant bite is basin surgery, and the dial rides on an artifact-prone wire."
+    },
+    "H411": {
+      "title": "the noise-corrected Seldon fate map",
+      "verdict": "SUPPORTED",
+      "metric": "century basin-change shifts: {'USA': 0.016, 'France': 0.085, 'Germany': 0.117, 'Italy': 0.003, 'Japan': 0.002, 'Korea': 0.014, 'Poland': 0.03, 'Israel': 0.057}; movers ['Germany']",
+      "note": "The deterministic manifold is NOT the full story at the data-anchored noise: the named movers carry a >10% century-scale probability of changing basins on fluctuations alone, so their fate is a probability, not a classification - the fate map gains error bars."
+    }
+  },
+  "quasipotential": {
+    "aN": 2.5,
+    "wells": [
+      0.14,
+      0.42
+    ],
+    "tip": 0.25,
+    "dV_out": 0.000399181250000007,
+    "dV_in": 0.00012478124999999946,
+    "asym": 3.1990483345855947,
+    "pref_out": 84.2394611304604,
+    "pref_in": 104.72339141165939,
+    "fold_push": 0.003675567989348565,
+    "fold_convention": "escape-assisting tilt fN=-s"
+  },
+  "eps_anchor": {
+    "central": 5e-05,
+    "per_region": {
+      "USA": 2.2e-05,
+      "Japan": 3.1e-05,
+      "Italy": 4.2e-05,
+      "Israel": 4.3e-05,
+      "France": 5.4e-05,
+      "Germany": 6.4e-05,
+      "Korea": 8.5e-05,
+      "Poland": 0.00011
+    },
+    "sweep": [
+      2e-05,
+      5e-05,
+      0.0001,
+      0.0002
+    ],
+    "source": "reports/e43_epsilon_anchor.md"
+  },
+  "kramers": {
+    "grid": {
+      "2.00e-04": {
+        "mfpt": 718.246875,
+        "esc": 1.0,
+        "theo": 619.907157568225
+      },
+      "1.33e-04": {
+        "mfpt": 2004.71875,
+        "esc": 1.0,
+        "theo": 1694.3021987949232
+      },
+      "1.00e-04": {
+        "mfpt": 5325.5394375,
+        "esc": 1.0,
+        "theo": 4561.815553510959
+      }
+    },
+    "slope": 0.00040070841694991285,
+    "dt_halving_shift": 0.011457585527260393
+  },
+  "h407": {
+    "USA": {
+      "dTFR2125": -0.0030064251586647828,
+      "trapped": false
+    },
+    "France": {
+      "dTFR2125": -0.007418542624767044,
+      "trapped": false
+    },
+    "Germany": {
+      "dTFR2125": -0.007674449930639593,
+      "trapped": false
+    },
+    "Italy": {
+      "dTFR2125": 0.001317023587003363,
+      "trapped": true
+    },
+    "Japan": {
+      "dTFR2125": 0.0010049666868550133,
+      "trapped": true
+    },
+    "Korea": {
+      "dTFR2125": 0.0010079372139376597,
+      "trapped": true
+    },
+    "Poland": {
+      "dTFR2125": 0.004881184365520319,
+      "trapped": true
+    },
+    "Israel": {
+      "dTFR2125": -0.009018201225711842,
+      "trapped": false
+    }
+  },
+  "h408": {
+    "Germany": {
+      "gated": 1.0267482781835995,
+      "linear": 0.9989920077459596
+    },
+    "Japan": {
+      "gated": 0.975778984267848,
+      "linear": 0.9613644925528799
+    },
+    "Korea": {
+      "gated": 1.0234264458281823,
+      "linear": 1.0045396303861462
+    }
+  },
+  "h409": {
+    "Korea": 1.3063305919047696e-05,
+    "Germany": 3.2905916913517075e-06
+  },
+  "h411": {
+    "USA": {
+      "eps": 2.2e-05,
+      "trapped": false,
+      "det": 0.0334,
+      "noisy": 0.0491,
+      "shift": 0.0157
+    },
+    "France": {
+      "eps": 5.4e-05,
+      "trapped": false,
+      "det": 0.0334,
+      "noisy": 0.11795,
+      "shift": 0.08455
+    },
+    "Germany": {
+      "eps": 6.4e-05,
+      "trapped": false,
+      "det": 0.0334,
+      "noisy": 0.14995,
+      "shift": 0.11655
+    },
+    "Italy": {
+      "eps": 4.2e-05,
+      "trapped": true,
+      "det": 0.0023,
+      "noisy": 0.00505,
+      "shift": 0.00275
+    },
+    "Japan": {
+      "eps": 3.1e-05,
+      "trapped": true,
+      "det": 0.0023,
+      "noisy": 0.00435,
+      "shift": 0.0020499999999999997
+    },
+    "Korea": {
+      "eps": 8.5e-05,
+      "trapped": true,
+      "det": 0.0023,
+      "noisy": 0.01595,
+      "shift": 0.013649999999999999
+    },
+    "Poland": {
+      "eps": 0.00011,
+      "trapped": true,
+      "det": 0.0023,
+      "noisy": 0.03265,
+      "shift": 0.03035
+    },
+    "Israel": {
+      "eps": 4.3e-05,
+      "trapped": false,
+      "det": 0.0334,
+      "noisy": 0.08995,
+      "shift": 0.05655
+    }
+  },
+  "h412": {
+    "Korea": {
+      "0.25": {
+        "p_annuity": 0.048,
+        "e_annuity": 0.03075,
+        "p_push": {
+          "5": 0.098,
+          "10": 0.096375,
+          "20": 0.089875,
+          "40": 0.07325,
+          "80": 0.056125
+        },
+        "e_push": {
+          "5": 0.04625,
+          "10": 0.04725,
+          "20": 0.046,
+          "40": 0.042375,
+          "80": 0.03575
+        },
+        "f_push": {
+          "5": 0.01874539674567768,
+          "10": 0.00937269837283884,
+          "20": 0.00468634918641942,
+          "40": 0.00234317459320971,
+          "80": 0.001171587296604855
+        }
+      },
+      "0.8": {
+        "p_annuity": 0.346125,
+        "e_annuity": 0.30325,
+        "p_push": {
+          "5": 1.0,
+          "10": 0.998625,
+          "20": 0.961,
+          "40": 0.7855,
+          "80": 0.46925
+        },
+        "e_push": {
+          "5": 0.844625,
+          "10": 0.834125,
+          "20": 0.780625,
+          "40": 0.626625,
+          "80": 0.386875
+        },
+        "f_push": {
+          "5": 0.05998526958616859,
+          "10": 0.029992634793084293,
+          "20": 0.014996317396542147,
+          "40": 0.007498158698271073,
+          "80": 0.0037490793491355367
+        }
+      }
+    },
+    "Poland": {
+      "0.25": {
+        "p_annuity": 0.102125,
+        "e_annuity": 0.065875,
+        "p_push": {
+          "5": 0.16375,
+          "10": 0.161125,
+          "20": 0.148625,
+          "40": 0.12925,
+          "80": 0.115875
+        },
+        "e_push": {
+          "5": 0.07725,
+          "10": 0.076875,
+          "20": 0.078,
+          "40": 0.074625,
+          "80": 0.070125
+        },
+        "f_push": {
+          "5": 0.01874539674567768,
+          "10": 0.00937269837283884,
+          "20": 0.00468634918641942,
+          "40": 0.00234317459320971,
+          "80": 0.001171587296604855
+        }
+      },
+      "0.8": {
+        "p_annuity": 0.435625,
+        "e_annuity": 0.37325,
+        "p_push": {
+          "5": 1.0,
+          "10": 0.996375,
+          "20": 0.950375,
+          "40": 0.790875,
+          "80": 0.544125
+        },
+        "e_push": {
+          "5": 0.7735,
+          "10": 0.75975,
+          "20": 0.714875,
+          "40": 0.59525,
+          "80": 0.4385
+        },
+        "f_push": {
+          "5": 0.05998526958616859,
+          "10": 0.029992634793084293,
+          "20": 0.014996317396542147,
+          "40": 0.007498158698271073,
+          "80": 0.0037490793491355367
+        }
+      }
+    }
+  },
+  "frontier": {
+    "2.0e-05": {
+      "theo": 0.0033357009917264137,
+      "meas": 0.003671978567483967
+    },
+    "5.0e-05": {
+      "theo": 0.0030502292874463057,
+      "meas": 0.003671978567483967
+    },
+    "1.0e-04": {
+      "theo": 0.002685206734378214,
+      "meas": 0.003341751755940932
+    },
+    "2.0e-04": {
+      "theo": 0.0021102155778761206,
+      "meas": 0.0018916253226432557
+    }
+  },
+  "equivalence": {
+    "nb38_germany_gated": 1.0267482781835995,
+    "nb38_germany_linear": 0.9989920077459596
+  },
+  "r_bars": {
+    "R1": "REFUTED",
+    "R2": "SUPPORTED",
+    "R3": "PARTIAL"
+  }
+}
