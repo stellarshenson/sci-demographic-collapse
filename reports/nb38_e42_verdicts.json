@@ -1,0 +1,222 @@
+{
+  "round": "E42",
+  "hypotheses": {
+    "H393": {
+      "title": "the campus is a contraceptive (incarceration null)",
+      "verdict": "PARTIAL",
+      "metric": "tempo-only endpoint deltas {'Korea': -0.005066193347922299, 'Germany': -0.020137976649740708, 'France': -0.02475569910536679}; tempo share of full response {'Korea': 0.5885500825646404, 'Germany': 1.0, 'France': 2.319647068378748}",
+      "note": "Tempo routing carries less than the 75% bar in Korea - the quantum wire is not negligible. Review caveats: the quantum wire is the equity-conditional gErv term, which flips sign above eq=0.55, so France's >1 share is wire interference and ill-posed rather than tempo-dominant; and share > 0.75 bounds the quantum contribution at <33%, looser than the bar's <25% wording."
+    },
+    "H394": {
+      "title": "education is a positional arms race",
+      "verdict": "SUPPORTED",
+      "metric": "{'Korea': {'on_end': -0.005088777685915091, 'off_end': 0.023282909630298276, 'on_mid': -0.008851778360340234}, 'Germany': {'on_end': -0.020704102252749434, 'off_end': 0.10997796946884719, 'on_mid': -0.019806668083484746}}; expansion-wave transient deeper mid-century: True",
+      "note": "Positional routing makes expansion strictly worse than income-routed expansion in both regions, and the dE/dt wave bites deepest while the expansion is in flight - the arms-race transient the user asked the derivatives to carry. Review caveat: the ON/OFF contrast changes three loadings at once (race, gES, gEdot), so the endpoint ordering partly measures the income cash-out present only in the control arm - the clean positional evidence is the pre-registered mid-flight transient sub-check."
+    },
+    "H395": {
+      "title": "the education-fertility gradient is regime-conditional (reversal)",
+      "verdict": "SUPPORTED",
+      "metric": "expansion endpoint effect by region: {'Korea': -0.0023, 'Italy': -0.0049, 'France': 0.0053, 'USA': 0.0037}",
+      "note": "Same lever, opposite signs across the equity split - the gradient is not a law but a label for the gender-equity regime, matching the Nordic reversal. Review caveat: the sign change is wired in by the (1 - eq/0.55) term, so this demonstrates the literature-grounded sign pass-through surviving the coupled pipeline, not an emergent reversal."
+    },
+    "H396": {
+      "title": "degrees are a marker, not a mechanism",
+      "verdict": "PARTIAL",
+      "metric": "pure-E null 8/8 is BY CONSTRUCTION (no direct E wire exists to fail); income lever endpoint {'USA': 0.1001, 'France': 0.1034, 'Germany': 0.0868, 'Italy': 0.0864, 'Japan': 0.0835, 'Korea': 0.043, 'Poland': 0.0723, 'Israel': 0.1687}",
+      "note": "The inertness of attainment-without-mechanisms is an architectural statement, not a finding: this model contains no direct E->demography path, so the null cannot fail and the >10x dominance bar is satisfied by any nonzero income lever. What the cell measures is the income wire's magnitude; the marker-not-mechanism claim stands on E22's income-not-degrees evidence, not on this run - re-graded SUPPORTED->PARTIAL at review."
+    },
+    "H397": {
+      "title": "de-sequence, don't de-educate",
+      "verdict": "SUPPORTED",
+      "metric": "de-sequencing beats attainment-cut in 3/3 regions: {'Korea': {'deseq': 0.001233212690352814, 'cut': -0.0030093194485794617}, 'Germany': {'deseq': 0.01867295973589389, 'cut': -0.007484285222571607}, 'Poland': {'deseq': 0.01618850742227429, 'cut': -0.00647204353014208}}",
+      "note": "Cutting the incarceration term while keeping attainment preserves the income route the attainment-cut sacrifices."
+    },
+    "H398": {
+      "title": "the broadcast penalty - reconciliation pays twice",
+      "verdict": "PARTIAL",
+      "metric": "{'USA': {'full': 0.063, 'direct': 0.0216, 'bc_share': 0.6564}, 'Korea': {'full': 0.0087, 'direct': 0.0067, 'bc_share': 0.2217}, 'France': {'full': 0.0089, 'direct': 0.0, 'bc_share': 0.9991}}",
+      "note": "Broadcast share under the bar or France not near-null. Review caveat: the code tested |France full| < 0.25x|USA full| in place of the bar's 'France broadcast share ~0', and France's measured share is in fact near 1 - the interaction gate attributed it to the bistable well-crossing artifact; PARTIAL stands on Korea failing the 0.25 bar."
+    },
+    "H399": {
+      "title": "happiness is the competitor, not the driver",
+      "verdict": "REFUTED",
+      "metric": "Spearman all=+0.690, ex-Israel=+0.536",
+      "note": "Ladder ranks TFR even ex-Israel - the competitor story fails."
+    },
+    "H400": {
+      "title": "the misery floor - W is a one-sided gate",
+      "verdict": "PARTIAL",
+      "metric": "mirror-shock asymmetry: gated 1.03 vs linear 1.00; dip lag 14y",
+      "note": "Asymmetry contrast under the bar - gate shape not identified against linear at scalar amplitude. Review correction: the floor diagnostics (next cell) show Germany's baseline mean W never crosses W_floor, so the round's first 'already below the floor' reading was wrong - the gate opens only in the shocked tail strands and carries a few percent of the direct S-channel response; the null asymmetry is an amplitude problem, not a saturated-regime problem. Four regions breach the floor at baseline (Italy, Japan, Korea, Poland), Korea dominant at 33x the next gate mass."
+    },
+    "H401": {
+      "title": "meaning beats pleasure - W must split",
+      "verdict": "REFUTED",
+      "metric": "LOO-RMSE single 0.450 -> split 0.542; Israel residual +0.937 -> +1.071",
+      "note": "Both sub-bars failed in the CONTRADICTING direction: the fairly-fitted split is strictly worse out-of-sample and the Israel residual grows - at n=8 the meaning anchor does not merely miss identification, it degrades the fit (re-graded PARTIAL->REFUTED at review, matching the H399 standard). The single-W Israel residual keeps the motivation alive, but the split as posed is refuted; the hand-set weights that flattered it were discarded for the fair fit."
+    },
+    "H402": {
+      "title": "the third mirage - hedonic W habituates away",
+      "verdict": "PARTIAL",
+      "metric": "{'Korea': {'w_peak': 0.0001, 'w_end': -0.0, 'w_dur': -0.0011, 's_dur': 0.7551}, 'Germany': {'w_peak': 0.0002, 'w_end': 0.0, 'w_dur': 0.0037, 's_dur': 1.0}}",
+      "note": "Durability or peak bar missed - the mirage classification is not clean. Review caveat: with the habituation stock wired as net-inflow-to-zero, the durability sub-bar (w_dur < 0.5) is true by construction; the discriminating sub-bar was the transient's existence (w_peak > 1e-4), and that is what failed."
+    }
+  },
+  "panel": {
+    "Korea": {
+      "wave": -0.004943593679049257,
+      "deter": -0.00555572302903104,
+      "joint": -0.010208285837169678,
+      "I": 0.0002910308709106191,
+      "I_mid": 0.0005920713069851313
+    },
+    "Germany": {
+      "wave": -0.020183236168561436,
+      "deter": -0.008637428382911927,
+      "joint": -0.028739616579144034,
+      "I": 8.104797232932892e-05,
+      "I_mid": 0.0008038272011621217
+    }
+  },
+  "anchors": {
+    "E0": {
+      "USA": 0.5722,
+      "France": 0.565,
+      "Germany": 0.42310000000000003,
+      "Italy": 0.385,
+      "Japan": 0.6959000000000001,
+      "Korea": 0.7822,
+      "Poland": 0.5482,
+      "Israel": 0.5755
+    },
+    "E_rate": {
+      "USA": 0.02112207273547279,
+      "France": 0.02233681013482633,
+      "Germany": 0.012745381633148888,
+      "Italy": 0.016596719671681155,
+      "Japan": 0.03232231642122841,
+      "Korea": 0.05,
+      "Poland": 0.036154040127607444,
+      "Israel": 0.01780612623638903
+    },
+    "ladder": {
+      "USA": 6.724,
+      "France": 6.593,
+      "Germany": 6.753,
+      "Italy": 6.415,
+      "Japan": 6.147,
+      "Korea": 6.038,
+      "Poland": 6.673,
+      "Israel": 7.234
+    },
+    "pen": {
+      "USA": -0.127,
+      "Korea": -0.1,
+      "Japan": -0.09,
+      "Italy": -0.06,
+      "Poland": -0.05,
+      "Germany": -0.04,
+      "Israel": -0.02,
+      "France": -0.01
+    },
+    "eq": {
+      "Korea": 0.25,
+      "Japan": 0.3,
+      "Italy": 0.35,
+      "Poland": 0.4,
+      "Germany": 0.55,
+      "Israel": 0.55,
+      "USA": 0.65,
+      "France": 0.7
+    }
+  },
+  "params": {
+    "kE": 0.04,
+    "race": 0.5,
+    "sigE": 0.08,
+    "YRS_PER_SHARE": 4.5,
+    "kW": 0.5,
+    "aWS": 1.2,
+    "lamLA": 2.25,
+    "W_floor": -0.15
+  },
+  "floor_diag": {
+    "USA": {
+      "min_meanW": -0.11413278398090518,
+      "peak_below_frac": 0.046875,
+      "end_below_frac": 0.0,
+      "mean_gate": 0.00012175300668904962
+    },
+    "France": {
+      "min_meanW": -0.10610071170426512,
+      "peak_below_frac": 0.046875,
+      "end_below_frac": 0.0,
+      "mean_gate": 0.00012022083530856304
+    },
+    "Germany": {
+      "min_meanW": -0.12284442810507323,
+      "peak_below_frac": 0.046875,
+      "end_below_frac": 0.0,
+      "mean_gate": 0.00012467243645524745
+    },
+    "Italy": {
+      "min_meanW": -0.1772248771871131,
+      "peak_below_frac": 1.0,
+      "end_below_frac": 1.0,
+      "mean_gate": 0.0025922070975110487
+    },
+    "Japan": {
+      "min_meanW": -0.1532889585119366,
+      "peak_below_frac": 1.0,
+      "end_below_frac": 1.0,
+      "mean_gate": 0.00016842635144465978
+    },
+    "Korea": {
+      "min_meanW": -0.4192249621131545,
+      "peak_below_frac": 1.0,
+      "end_below_frac": 1.0,
+      "mean_gate": 0.08623931531042754
+    },
+    "Poland": {
+      "min_meanW": -0.16646723264316,
+      "peak_below_frac": 1.0,
+      "end_below_frac": 1.0,
+      "mean_gate": 0.0010501790374110322
+    },
+    "Israel": {
+      "min_meanW": -0.053373894878383066,
+      "peak_below_frac": 0.046875,
+      "end_below_frac": 0.0,
+      "mean_gate": 0.00011457121851262391
+    },
+    "Germany_downshock": {
+      "peak_gate": 0.009904611892615057,
+      "peak_below_frac": 0.3125
+    }
+  },
+  "review": {
+    "round1": [
+      "records: REVISE (2 MAJOR + 2 MINOR) - fixed",
+      "methodology: REVISE (2 MAJOR + 9 MINOR) - fixed"
+    ],
+    "regrades": {
+      "H396": "SUPPORTED->PARTIAL (the null is by-construction)",
+      "H401": "PARTIAL->REFUTED (both sub-bars failed contradicting)"
+    },
+    "floor_correction": "baseline W-floor breaches: Italy/Japan/Korea/Poland (100% of strands), Korea dominant at 33x the next gate mass; Germany never crosses - see floor_diag"
+  },
+  "interaction_gate": {
+    "agent": "interaction-analyst",
+    "date": "2026-07-11",
+    "disposition": "COUPLED-BUT-BOUNDED; both readings AMENDED, USA H398 headline OVERTURNED",
+    "panel": "mid-century I (+0.00059 Korea / +0.00080 Germany) is a multiplicative composition cross-term (quantum-factor discount x fec/tempo-factor discount; product of discounts beats their sum), K-converged <2% over K=32-192; shared wires carry ~0 (I_rv~0, I_tau~0); the 2125 endpoint is quantization noise (+/-100% across K) and not reportable",
+    "h398": "USA bc_share 0.66 and France 0.999 are bistable well-crossing artifacts (broadcast wire tips N across thN=0.25 from the low well; France's direct leg dead - penalty -0.01 never opens W_floor=-0.15); Korea 0.22 (within-well, NORM0=0.42) is the honest marginal broadcast share; PARTIAL stands with the amended mechanism",
+    "residuals": [
+      "gWN dial-vs-switch sweep on USA (where does the tip crossing stop; is bc_share continuous)",
+      "per-region well-posedness of full-minus-direct (in which regions does the misery gate open)",
+      "triple interaction wave x deterioration x broadcast (does deter-driven W drop tip N mid-wave)"
+    ],
+    "panel_evidence": "channel decomposition at idx=25: the deterioration discounts the quantum factor via C by -6.3% (quantum d_deter -0.0454 on ~0.72; C drops 0.040) while the wave discounts fec/tempo via tau (fec d_wave -0.0046, tempo d_wave -0.0078; quantum d_wave only -0.0004); analytic product cross-term TFR*(ln fec+ln tempo)_wave*(ln quantum)_deter = 0.6295*(-0.0131)*(-0.0631) = +0.00052, matching the measured I_mid +0.00059; shared wires I_rv = +0.0000000 (Korea) / +0.0000045 (Germany), I_tau ~ 0",
+    "h398_evidence": "broadcast OFF: USA N stays 0.149 (low well) in both pen states; broadcast ON (gWN=0.10): USA N driven 0.145 -> 0.511/0.478 across thN=0.25, France 0.143 -> 0.478 - BOTH tested low-well regions tip (only USA/Korea/France were run); Korea (NORM0=0.42, high well) moves 0.42 -> 0.55 within-well, no crossing; K-stable 64 -> 128 (USA share 0.6564 -> 0.6566)"
+  }
+}

@@ -45,3 +45,6 @@ Progress logs for background and long-running jobs.
 - `e41-stage4-kbf-restage2.log` - the Stage-4 kBF move (0.6 -> 1.0): the one Stage-2 return re-solving PB_SCALE_ENS + tempo-mirage/transplant re-measurement
 - `e41-stage4-maketest.log` - suite green after the kBF move (65)
 - `e41-stage5-reverdict.log` - Stage 5: the honesty table (FAIL 3/6, attributed), the basin table under the new anchors, and the worsening decompositions
+- `nb38-execute.log` - E42 notebook (38-kj-e42-education-happiness) nbconvert execution: H393-H402 education+happiness fanout
+- `nb38-execute-review.log` - E42 notebook re-execution after the adversarial-review round-1 fixes (H396/H401 re-grades, floor diagnostics cell, anchor assert)
+- `nb38-execute-review2.log` - E42 notebook re-execution after the round-2 MINOR fixes (four-region breach phrasing, konly nit, gate-preserving save cell)

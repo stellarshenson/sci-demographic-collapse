@@ -215,10 +215,10 @@ def test_guard_experiments_log_verdict_tally():
         if v:
             assert rows.get(m.group(1), v) == v, f"conflicting verdicts for {m.group(1)}"
             rows[m.group(1)] = v
-    assert len(rows) == 392, f"expected 392 unique H rows, parsed {len(rows)}"
-    assert not [n for n in range(1, 393) if f"H{n}" not in rows], "gap in H numbering"
+    assert len(rows) == 402, f"expected 402 unique H rows, parsed {len(rows)}"
+    assert not [n for n in range(1, 403) if f"H{n}" not in rows], "gap in H numbering"
     assert Counter(rows.values()) == Counter(
-        SUPPORTED=211, PARTIAL=109, REFUTED=69, REFRAMED=2, INCONCLUSIVE=1
+        SUPPORTED=214, PARTIAL=114, REFUTED=71, REFRAMED=2, INCONCLUSIVE=1
     )
 
 

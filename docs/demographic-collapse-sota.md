@@ -2,14 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the full E1-E36 campaign - 357 pre-registered
-hypotheses across thirty-six rounds. It is an age-structured cohort-component (Leslie) core of national
+The distilled, calibrated design that survived the full E1-E42 campaign - 402 pre-registered
+hypotheses across forty-two rounds. It is an age-structured cohort-component (Leslie) core of national
 populations, wrapped in a seven-channel coupled behavioural layer whose baseline reproduces each region's
 real 2023 fertility, calibrated by an information-preserving Wasserstein objective, backtested
 out-of-sample, stress-tested against four historical crises, and used to size, rank and ablate the entire
 intervention catalogue over four generations. The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-28 plus 31-32 (E34, E36) and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
+3-38 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
 coupled behavioural × Leslie model, the judge every intervention is scored on).
 
 ## Overview
@@ -73,7 +73,8 @@ Period fertility is their multiplicative composition with a Bongaarts-Feeney tem
 
 $$\text{TFR} = C\,(1-\rho)\,\bar P\,\text{fec}(\tau)\,\max(1 - k_{BF}\,\Delta\tau,\,0)$$
 
-with `fec(τ)` a fecundability decay above age 30, `k_BF = 0.6`, and `Δτ` the *realized* annual change of
+with `fec(τ)` a fecundability decay above age 30, `k_BF = 1.0` (E40 set the realized-Δτ form at 0.6;
+the E41 backtest gate re-adjudicated it to the canonical undamped 1.0), and `Δτ` the *realized* annual change of
 the tempo state (per agent, post-clip, floored at zero). The E40 rigor audit found the pre-E40
 implementation summed the four substep *rates* instead - exactly 4x this documented equation - which
 inflated every timing transient 4x, kept a phantom tempo term alive at the τ clips, ran negative
@@ -84,7 +85,8 @@ multiplicative form is the whole reason the combination law below is clean: on t
 are additive (Bongaarts proximate-determinants multiplicativity). The completed-fertility quantum is
 `C·(1−ρ)·P̄`; the tempo term makes a pure timing lever spike then revert - a mirage that borrows births
 from the future and changes no completed family (E19). E40 deflates the mirage's recorded *amplitude* 4x
-(Korea fTau=−3: peak +0.24 → +0.07) while leaving its structure and every endpoint verdict intact - tempo
+(Korea fTau=−3: peak +0.24 → +0.07; the E41 kBF=1.0 re-adjudication moves it partway back to +0.115,
+still inside the guard band) while leaving its structure and every endpoint verdict intact - tempo
 remains the most transient channel in every region.
 
 ### The bistable coupling trap
@@ -397,6 +399,31 @@ what matters, not budget concentration (the big-push premium is refuted at the c
 tip-and-stay hysteresis is confirmed, E38-H380), and the E17 exit-valve backfire now falls out of Nash threat
 points with the corollary that gender equity is what makes exit rights safe (E38-H381).
 
+### 8c. Education and happiness are proxies, not levers (E42)
+
+The two most-cited fertility covariates fail the seat-at-the-table test. Education routes entirely
+through channels the model already carries: the enrollment years push tempo (~1 birth-year per
+enrollment year, Ni Bhrolchain-Beaujouan), the income share pushes security, matching pushes q -
+and the model carries no direct education wire at all, so a pure attainment expansion with those
+routes severed is inert by construction - the round's adversarial review re-graded that null from
+finding to architectural statement (E42-H396, PARTIAL); the measured content is the equal-magnitude
+income lever's dominance, and the marker-not-mechanism claim rests on the E22 income-not-degrees law.
+Its one irreducible behaviour is positional: the arms-race chase makes expansion strictly worse
+than income-routed expansion, and the dE/dt expansion wave bites cohorts mid-flight (E42-H394).
+The education-fertility gradient itself is a regime label, flipping from penalty (Korea, Italy) to
+premium (France, USA) under the gender-equity wire (E42-H395) - the Nordic reversal reproduced.
+The make-them-happy lever dies three independent ways: the hedonic-competition story is REFUTED on
+its own bar (the Cantril ladder ranks TFR even without Israel), a sustained hedonic stimulus is a
+null - its 2-year habituation transient (Clark) is low-pass-filtered by decade-scale fertility
+channels - and the meaning/hedonia split, though motivated by Israel's +0.94 single-W residual,
+is REFUTED at n=8 - the fairly-fitted split is strictly worse out-of-sample and the Israel
+residual grows (E42-H399/H402/H401). What stays real about wellbeing is
+structural and positional: the misery gate and the loss-averse derivative (lambda=2.25) are live
+wires whose bite depends on where the population sits relative to the floor and which norm basin
+it occupies - the interaction gate re-attributed the round's headline interactions accordingly
+(a multiplicative composition cross-term, not shared-wire saturation; the USA broadcast share a
+bistable well-crossing artifact, Korea's 0.22 the honest marginal number).
+
 ### 9. The transferable secular ingredients of religion, and enforced monogamy
 
 Religion is almost never a model primitive - it is a bundle that loads channels the model already owns, and
@@ -475,10 +502,10 @@ is exactly `(1−x)·ΔTFR_main` - same sign and identical ordering, changing no
 (E35-H348). Culture is therefore excluded from the levers and treated as the slow attractor they operate
 above.
 
-## The two pruned elegances
+## The pruned elegances
 
-Two mathematically attractive constructs were built, tested honestly, and cut - the discipline the whole
-project runs on is that elegance must move the numbers.
+Three times now, mathematically attractive constructs were built, tested honestly, and cut - the
+discipline the whole project runs on is that elegance must move the numbers.
 
 - **The culture-bearer eigen-operator** (`Φ = r·VΛV⁻¹`, E35) - inert at 4e-4 to 6.8e-4 TFR and, at its own
   measured anchor, degenerate to `r·I`, so its eigenbasis was decorative. It was the wrong object for
@@ -491,6 +518,14 @@ project runs on is that elegance must move the numbers.
   magnitudes (E29 lessons, the E19 faithfulness result). The OT machinery it shares with `ot.py` still earns
   its place where selection is genuine (the matriarchy tail operations, E29), but the general core lift did
   not
+- **The E/W engine promotion** (E42b) - education and wellbeing as candidate states 8 and 9 with a
+  QuantileFlow carry. Education REJECTED: no irreducible channel (its income content ships as S/q, its
+  tempo coupling is the fTau wire at 15-90x below the winning-lever band, and the positional race is
+  identically inert for a scalar state). Wellbeing KEPT-NOTEBOOK-LOCAL: the misery gate is genuinely
+  distributional in form (below-floor tail mass) but unidentified, and the measured baseline floor
+  breaches live in Italy, Japan, Korea and Poland - Korea dominant at 33x the next gate mass; Germany,
+  the H400 test region, never crosses - so a zero-deviation ship is impossible. The QuantileFlow carry lands in the same ≤4.65e-4 dead
+  zone as the core lift, at 48-64x compute. Full verdict: `reports/e42b_promotion_verdict.md`
 
 ## Honest limitations
 
@@ -520,6 +555,13 @@ project runs on is that elegance must move the numbers.
   non-exempt regions non-increasing): the b.1975 completed-cohort reference is drifting away from every
   post-2010-collapse period state, so the |PB0 − PB0_check| diagnostic conflates calibration honesty with
   real period-vs-cohort erosion; refreshing the epoch-matched reference is the named Wave-4 action
+- **The E42 wellbeing wires are notebook-local and regime-dependent** - the misery gate, loss-averse
+  derivative and broadcast couplings live in NB38's EWModel, not the shipped core (the E42b workflow
+  DECLINED promotion; the pre-registered floor-crossing identification test is the named reopening
+  condition); their bite is positional (floor-crossing, norm basin), the broadcast
+  wire acts as a switch at gWN=0.10 in both tested low-well regions (dial-vs-switch sweep is a
+  named residual), and the
+  meaning/hedonia split is REFUTED at n=8 (strictly worse out-of-sample on the fair fit)
 - **NORM0 wells are a structural prior** - the well assignment is contradicted by the delivered ideal-zero
   ordering (Korea 0.002 lowest, Germany 0.075 highest); E25+ cross-region NORM-lever rankings are
   CONDITIONAL on this prior, and re-assignment routes through the option-B construct switch, which trips
