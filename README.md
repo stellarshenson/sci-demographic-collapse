@@ -293,6 +293,12 @@ Six of the seven channel equations share one shape - a *relaxation*: drift towar
 
 ### The machine, step by step
 
+One sentence before the steps: **the forecast engine is nothing but the yearly loop below** -
+the numerical integration of the coupled behavioural equations (with their memory terms) handing
+a fertility schedule to the exact Leslie step. Everything else on this page - the strand spread,
+the transport metric, the quantile representation, the noise layer - calibrates that engine,
+averages it honestly, or quantifies its uncertainty; none of it generates a forecast.
+
 **State.** Two age vectors `N_f, N_m` (101 single-year classes, in thousands), plus **64 copies
 ("strands") of the seven behavioural channels** `(C, rho, Pbar, tau, S, N, q)`, plus two scalars:
 the dependency penalty and the cohort-memory drive.
@@ -409,67 +415,50 @@ so that a slow-healing therapy, an accumulating scar, and the childhood-environm
 
 ### Cohorts as trajectories, and the least-action rule
 
-The equations earlier on this page define a **vector field**: at every point of the seven-channel
-state space they say which way the system drifts and how fast. One model year is a lap of that
-field - four small integration steps of the behavioural state, a per-strand fertility
-composition, and one exact accounting step of the age pyramid - and a century is 102 laps.
-Simulation, here, means *pushing the whole population forward along the flow of that field*.
+The equations above define a **vector field** on the seven-channel state space; a model year is
+one lap of that field plus one exact accounting step of the age pyramid, and simulation means
+pushing the whole population forward along its flow.
 
 > *The machine is Lagrangian in both senses of the word: follow the particle, and extremize the action.*
 
-**Do we solve the differential equations - and how.** Three different answers, stated exactly.
-The age-structure PDE (McKendrick-von Foerster) is solved in closed form by the method of
+**Do we solve the differential equations - and how.** Three answers, stated exactly. The
+age-structure PDE (McKendrick-von Foerster) is solved in closed form by the method of
 characteristics: with rates held constant within a year, the one-year Leslie map IS its exact
-solution, so the demographic layer carries no grid-discretisation error. The seven coupled
-behavioural ODEs have no closed form; they are integrated numerically - forward Euler, four
-steps of dt = 0.25 per year, each state clipped to its physical range - far from the stability
-limit, since the channel relaxation times are years to decades (first-order convergence verified
-in the E40 audit). And one channel, the bistable norm, is simple enough to admit analytic
-treatment of its noise-driven escapes (Kramers theory); the numerical integration reproduces the
-analytic escape law to 0.4%, so the closed form validates the numerics where both exist.
+solution - no grid-discretisation error. The seven coupled behavioural ODEs have no closed form
+and are integrated numerically (forward Euler, four steps of dt = 0.25 per year, states clipped
+to their physical ranges; first-order convergence verified in the E40 audit). One channel, the
+bistable norm, also admits analytic treatment of its noise-driven escapes (Kramers theory), and
+the numerics reproduce the analytic escape law to 0.4% - the closed form validates the
+integrator where both exist.
 
-**Cohorts are the particles of the characteristics solution**: a cohort born in year b travels
-its own diagonal through the (age, time) plane, thinning by mortality. Behavioural experience
-rides the same rails. Each year the model records the environment a child grows up in; a cohort's childhood is
-then a genuine path integral along its trajectory,
+**Cohorts are the particles of that characteristics solution**: a cohort born in year b travels
+its own diagonal through the (age, time) plane, and its childhood is a genuine path integral
+along that trajectory,
 
 ```math
 J(b) = \frac{1}{18}\sum_{a=0}^{17} \mathrm{env}(b+a),
 ```
 
-and what today's adults bring to family formation is the average of these completed integrals
-over everyone currently of reproductive age. This is why the model can catch generational
-reversals: a lever that flatters today's adults while souring today's childhoods flips sign
-about twenty years later, when the soured cohorts arrive.
+whose completed value, averaged over the cohorts currently of reproductive age, is what today's
+adults bring to family formation. This is why the model catches generational reversals: a lever
+that flatters today's adults while souring today's childhoods flips sign about twenty years
+later, when the soured cohorts arrive. (OT's role in calibration - the quantile transport cost -
+is derived in setup step 4 above; it is the ruler that scores the dynamics, never the engine
+that generates them.)
 
-**OT is used as the ruler, not the engine.** The field generates the flow: the model's
-prediction is the pushforward of the starting population along it. The calibration then compares
-that prediction to the observed population by the cheapest way to morph one into the other,
-
-```math
-W_2^2(\mu,\nu) = \int_0^1 \big(Q_\mu(u) - Q_\nu(u)\big)^2\,du,
-```
-
-which - by a classical theorem - equals the *minimal kinetic action* of any deformation
-connecting them. Fitting by this distance means choosing parameters whose predicted population
-is cheapest to transport onto reality.
-
-> *Calibration does not match moments; it finds the parameters whose world is cheapest to morph into ours.*
-
-**Where the field does become a transport constraint is under noise.** With measured
-year-to-year turbulence added (its amplitude taken from real marriage statistics), the
-probability of any trajectory is weighed by how much it *disobeys the field*:
+**Under noise, the field becomes the reference geometry of a least-action rule.** With measured
+year-to-year turbulence added (amplitude taken from real marriage statistics), the probability
+of a trajectory is weighed by how much it disobeys the field:
 
 ```math
 S[\varphi] = \frac{1}{4}\int \big(\dot\varphi + V'(\varphi)\big)^2 dt, \qquad P \sim e^{-S/\varepsilon}.
 ```
 
-Trajectories that follow the drift cost nothing; every departure is taxed, and rare events -
-a country fluctuating across the cultural tipping point - concentrate on the single cheapest
-path (the simulation reproduces the resulting escape-time law to half a percent). This turns
-policy sizing into mechanics: a norm intervention is priced by the action it removes from the
-barrier, which is why a decisive push and a permanent endowment both work while the
-half-hearted middle mostly evaporates.
+Trajectories that follow the drift cost nothing; every departure is taxed, and rare events - a
+country fluctuating across the cultural tipping point - concentrate on the single cheapest path.
+Policy sizing becomes mechanics: a norm intervention is priced by the action it removes from the
+barrier, which is why a decisive push and a permanent endowment both work while the half-hearted
+middle mostly evaporates.
 
 > *The model does not roll dice over fate - it weighs every possible path by its cost, and the cheap paths carry the probability.*
 
