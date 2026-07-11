@@ -1,0 +1,139 @@
+{
+  "round": "E46",
+  "hypotheses": {
+    "H426": {
+      "title": "the 2150 horizon value test",
+      "verdict": "SUPPORTED",
+      "metric": "fate flips 2125->2150: ['Italy']; max extra-gen drift 0.112",
+      "note": "The extra generation reveals value: at least one region crosses a fate boundary that the 2125 window truncated - the horizon should extend."
+    },
+    "H427": {
+      "title": "second-order tempo - overshoot is the identifying signature",
+      "verdict": "SUPPORTED",
+      "metric": "post-halt peak: 2nd-order +0.0549 vs 1st-order-same-target -0.0917 (bar >=0.01 / <0.01)",
+      "note": "The second derivative is IDENTIFIED: when postponement halts, the inertial tempo overshoots (tau_dot reverses, TFR spikes above baseline - the Bongaarts-Feeney over-recuperation, RI>1), a behaviour the first-order tempo with the identical moving target cannot produce. Overshoot is the ONLY thing that needs the second derivative."
+    },
+    "H428": {
+      "title": "second-order tempo - promotion on Germany's observed MAC path",
+      "verdict": "DEMOTE",
+      "metric": "RMSE 2nd 0.6190 vs 1st 0.1776 (ratio 3.49, bar <=0.80); model recovery 2nd +1.093 / 1st +0.214 vs observed +0.252; observed MAC reversal +0.00",
+      "note": "DEMOTE, with a mechanistic reason the fair test exposed: Germany's MAC rose MONOTONICALLY (no postponement halt, reversal +0.00), so the 2006-2016 recovery was a QUANTUM bounce, not a tempo release - a tempo channel of any order can only depress TFR while MAC rises and cannot make the recovery (both arms miss it, and the second derivative is if anything worse). The recuperation the model lacks lives in the QUANTUM channel, not tempo inertia - which redirects the recuperation fix (E47) accordingly. Elegance must move the numbers; here it moves them the wrong way."
+    },
+    "H429": {
+      "title": "second-order norm - the theory-anchored demote",
+      "verdict": "DEMOTE",
+      "metric": "fall-in shift: overdamped(physical) 0.002 (bar <0.10) vs underdamped(baseless) 0.143; critical damping gamma=0.401",
+      "note": "DEMOTE, theory confirmed IN THE PHYSICAL REGIME: at overdamped damping - the empirically-justified default for a diffusive norm (no ballistic ringing) - grounded inertia moves the century fate map <10%, because the escape barrier height is damping-independent (Kramers/HTB) and inertia touches only the prefactor. An underdamped norm DOES move the map (0.14), but underdamped norm dynamics have no empirical basis - social norms relax monotonically. The norm second derivative adds an unanchored mass and, in its physical regime, changes no verdict; the shipped overdamped norm is the justified default."
+    }
+  },
+  "tempo_params": {
+    "mTau": 0.857,
+    "gammaTau": 0.069,
+    "zeta": 0.15,
+    "k": 0.07,
+    "gamma": 0.08,
+    "source": "reports/e46_recuperation_anchor.md"
+  },
+  "norm_theory": {
+    "source": "reports/e46_underdamped_theory.md",
+    "verdict": "demote - exponent damping-independent, <10% prefactor"
+  },
+  "h426": {
+    "USA": {
+      "t2125": 1.2502316130880948,
+      "t2150": 1.1693225569657382,
+      "drift": -0.08090905612235666,
+      "fate2125": "decline",
+      "fate2150": "decline",
+      "flipped": false
+    },
+    "France": {
+      "t2125": 1.2448898534192538,
+      "t2150": 1.1616392342461621,
+      "drift": -0.08325061917309173,
+      "fate2125": "decline",
+      "fate2150": "decline",
+      "flipped": false
+    },
+    "Germany": {
+      "t2125": 1.0190943590587496,
+      "t2150": 0.9441618211539393,
+      "drift": -0.07493253790481025,
+      "fate2125": "decline",
+      "fate2150": "decline",
+      "flipped": false
+    },
+    "Italy": {
+      "t2125": 0.7996990195830971,
+      "t2150": 0.6875456180788934,
+      "drift": -0.11215340150420372,
+      "fate2125": "decline",
+      "fate2150": "collapse",
+      "flipped": true
+    },
+    "Japan": {
+      "t2125": 0.8455056828265343,
+      "t2150": 0.7497266817223445,
+      "drift": -0.0957790011041898,
+      "fate2125": "decline",
+      "fate2150": "decline",
+      "flipped": false
+    },
+    "Korea": {
+      "t2125": 0.24780396682791211,
+      "t2150": 0.2198966425896741,
+      "drift": -0.027907324238238024,
+      "fate2125": "collapse",
+      "fate2150": "collapse",
+      "flipped": false
+    },
+    "Poland": {
+      "t2125": 0.8283043206227256,
+      "t2150": 0.753852433817136,
+      "drift": -0.07445188680558967,
+      "fate2125": "decline",
+      "fate2150": "decline",
+      "flipped": false
+    },
+    "Israel": {
+      "t2125": 2.3487581396198385,
+      "t2150": 2.245241950018381,
+      "drift": -0.10351618960145759,
+      "fate2125": "growth",
+      "fate2150": "growth",
+      "flipped": false
+    }
+  },
+  "h428": {
+    "rmse_2nd": 0.6190416579651785,
+    "rmse_1st": 0.17759910342555718,
+    "recovery_2nd": 1.0930656837088164,
+    "recovery_1st": 0.21420501160460792,
+    "recovery_obs": 0.25239999999999996,
+    "mac_reversal": 0.0
+  },
+  "h429": {
+    "gamma_crit": 0.401,
+    "sweep": {
+      "USA": {
+        "0.08": 0.10189999999999999,
+        "0.401": -0.00995,
+        "1.0": 5.000000000000143e-05
+      },
+      "France": {
+        "0.08": 0.12229999999999999,
+        "0.401": -0.06085,
+        "1.0": 0.0010000000000000009
+      },
+      "Germany": {
+        "0.08": 0.14270000000000002,
+        "0.401": -0.0807,
+        "1.0": 0.0015499999999999958
+      }
+    }
+  },
+  "promotion": {
+    "tempo": "DEMOTE",
+    "norm": "DEMOTE"
+  }
+}
