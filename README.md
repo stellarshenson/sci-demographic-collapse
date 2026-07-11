@@ -210,7 +210,7 @@ The short version of a long road, in plain steps:
 7. **Then tested it hard** - on data it had never seen while it was being built, and against real historical shocks: the 2008 recession, the COVID dip, Korea's 1997 crisis, German reunification. (Statisticians call this an "out-of-sample" test - the fair way to check a model, since anything can be fitted to the past it was shown)
 8. **Kept what worked and stayed honest about what didn't** - we separated the part that passed from the part that did not: the demographic backbone reproduces real history and ranks every country correctly, while the behavioural layer that turns life conditions into a birth rate is a deliberately simplified, roughly-tuned picture, not a precision instrument
 9. **Mapped the dividing line between recovery and decline** - we traced the boundary the model draws between a country that can still turn itself around and one sliding into collapse - the "ridge" in the landscape picture above - and confirmed it lands where independent demographers put the danger line, at about 1.5 children per woman
-10. **Hypothesised and pre-registered interventions** - we wrote down 419 testable claims across forty-four rounds (labelled E1-E44; three of those rounds - E13, E40 and E41 - audit or ground the campaign itself rather than add claims), most of them candidate fixes, and committed to what would count as success *before* running each test, so a result can't be quietly reinterpreted as a win after the fact; each was fanned out across the board with its interactions, reinforcements and cancellations measured
+10. **Hypothesised and pre-registered interventions** - we wrote down 425 testable claims across forty-five rounds (labelled E1-E45; three of those rounds - E13, E40 and E41 - audit or ground the campaign itself rather than add claims), most of them candidate fixes, and committed to what would count as success *before* running each test, so a result can't be quietly reinterpreted as a win after the fact; each was fanned out across the board with its interactions, reinforcements and cancellations measured
 11. **Scored each one analytically** - for every proposed fix we first worked out its likely effect on paper, side effects and interactions with other measures included, before trusting any of them enough to simulate
 12. **Ran each through the simulation** - we then put every intervention through the running model for several generations, because a lever that looks strong in a single year can fade, revert, or even backfire once the population responds over decades
 13. **Rated them by their cost to society** - we scored each fix not only by how much it helps but by what it costs in money, coercion and unwanted side effects together, so an expensive or heavy-handed lever cannot look "best" on its effect alone
@@ -222,9 +222,9 @@ Timing is handled explicitly with a **Bongaarts-Feeney** tempo-quantum correctio
 
 The calibration is **Bayesian** and unusually careful: rather than fit single best-guess numbers it fits whole probability distributions by the **reparameterisation trick** (Kingma & Welling, 2014), and a later round replaced the usual objective with an exact **one-dimensional Wasserstein** loss to close a stubborn gap between prediction and reality.
 
-Every parameter is anchored in the literature - roughly **72 source papers with more than 110 structured research digests** behind the choices - and the whole thing is calibrated to **UN World Population Prospects 2024** data for real countries. The campaign itself runs to **41 notebooks** and **419 pre-registered hypotheses across 44 rounds** (E1-E44; E41 grounds every start-state dial in a named, cited observable - census partnership shares, cohort childlessness, national birth registries), and it all runs on a graphics card, so thousands of scenarios finish in seconds.
+Every parameter is anchored in the literature - roughly **72 source papers with more than 110 structured research digests** behind the choices - and the whole thing is calibrated to **UN World Population Prospects 2024** data for real countries. The campaign itself runs to **42 notebooks** and **425 pre-registered hypotheses across 45 rounds** (E1-E45; E41 grounds every start-state dial in a named, cited observable - census partnership shares, cohort childlessness, national birth registries), and it all runs on a graphics card, so thousands of scenarios finish in seconds.
 
-None of this arrived on the first try. The equations were **rebuilt more than once** - an early version placed countries in the wrong order and had to be re-derived from scratch, and the behavioural half was **recalibrated repeatedly** (including a re-fit that closed a stubborn gap between prediction and reality) until the baseline could reproduce each country's real 2023 birth rate and its past crises without ever being told the answer. The auditing never stopped either: a late rigor audit of the simulation core (E40) caught the birth-timing term applying **four times its documented strength**, fixed it at the source, recalibrated, and re-verified every headline number - the levers' rankings survived, and every directly re-simulated verdict survived (the entire lever catalogue was re-run on the corrected core; the handful of results that live outside that catalogue inherit the fix's narrow footprint as a stated residual assurance rather than a re-run); the size of the "tempo mirage" bump did not survive, and the corrected, several-times-smaller figure is the one to trust (a follow-up round, E41, then re-adjudicated the timing constant against published tempo-adjusted birth-rate series and settled it at the textbook Bongaarts-Feeney value, nudging the corrected bump partway back up - every ranking held). The same round put the model itself to a pre-registered pass/fail test against the last 23 years of real data, and recorded the failure as prominently as the passes: the model re-tells Korea's collapse and every country's birth-timing rise faithfully, but it has **no mechanism for recovery episodes** - Germany's and Poland's mid-2000s upturns are beyond it - so its forward runs rank collapse scenarios and levers, and forecast no recoveries. Only then were the interventions run through it: a model earns the right to judge a policy by first re-telling history. And the scoring is kept honest - of the 419 hypotheses a large share came back **PARTIAL or REFUTED** (cash bonuses, tutoring bans, top-down propaganda - and lately the make-them-happy lever - among the casualties), which is how you can trust that the SUPPORTED ones are more than wishful thinking.
+None of this arrived on the first try. The equations were **rebuilt more than once** - an early version placed countries in the wrong order and had to be re-derived from scratch, and the behavioural half was **recalibrated repeatedly** (including a re-fit that closed a stubborn gap between prediction and reality) until the baseline could reproduce each country's real 2023 birth rate and its past crises without ever being told the answer. The auditing never stopped either: a late rigor audit of the simulation core (E40) caught the birth-timing term applying **four times its documented strength**, fixed it at the source, recalibrated, and re-verified every headline number - the levers' rankings survived, and every directly re-simulated verdict survived (the entire lever catalogue was re-run on the corrected core; the handful of results that live outside that catalogue inherit the fix's narrow footprint as a stated residual assurance rather than a re-run); the size of the "tempo mirage" bump did not survive, and the corrected, several-times-smaller figure is the one to trust (a follow-up round, E41, then re-adjudicated the timing constant against published tempo-adjusted birth-rate series and settled it at the textbook Bongaarts-Feeney value, nudging the corrected bump partway back up - every ranking held). The same round put the model itself to a pre-registered pass/fail test against the last 23 years of real data, and recorded the failure as prominently as the passes: the model re-tells Korea's collapse and every country's birth-timing rise faithfully, but it has **no mechanism for recovery episodes** - Germany's and Poland's mid-2000s upturns are beyond it - so its forward runs rank collapse scenarios and levers, and forecast no recoveries. Only then were the interventions run through it: a model earns the right to judge a policy by first re-telling history. And the scoring is kept honest - of the 425 hypotheses a large share came back **PARTIAL or REFUTED** (cash bonuses, tutoring bans, top-down propaganda - and lately the make-them-happy lever - among the casualties), which is how you can trust that the SUPPORTED ones are more than wishful thinking.
 
 **What this is: mature exploratory research.** The value is in the distinction between its two halves. The demographic backbone - the ageing, the population momentum, the ranking of countries - stands on solid, validated ground. The behavioural layer that turns a policy into a birth rate is a deliberately simplified research instrument: good enough to rank the forces at work and compare the *shape* of one lever against another. A validated skeleton under a deliberately simplified muscle - that is what the whole project rests on, and it is worth being exact about what it buys.
 
@@ -235,7 +235,7 @@ None of this arrived on the first try. The equations were **rebuilt more than on
 
 The lesson underneath all of it is the one Asimov's fiction turned on: fate here is a matter of position and timing, not of effort or will. A country still near the ridge - the United States, France, even Italy - can genuinely turn itself around, provided the effort is early, broad, and built to last. A country already far down the slope - Korea, Japan - can, with the very same maximal effort, only soften its fall from a collapse into a decline; its base of young people is simply too thin for a single century to refill. The window does not slam shut. It closes the way everything in this story moves - slowly, quietly, one generation at a time - which is exactly why the decisions that matter most are the ones being taken right now.
 
-And this is what the map is *for*. The value is not a prophecy; it is a map, and a map's job is to tell you which roads are worth surveying before you send an expedition down them. This model lets a researcher see the terrain for what it is - to spend scarce time only on the hypotheses that are both plausible *and* survive a rigorous model test, and to discard the ones that merely sound good. Of the 419 hypotheses put to it, nearly half came back PARTIAL or REFUTED; that filtering *is* the deliverable. What survives is a short, defensible list of levers worth the expense of studying for real.
+And this is what the map is *for*. The value is not a prophecy; it is a map, and a map's job is to tell you which roads are worth surveying before you send an expedition down them. This model lets a researcher see the terrain for what it is - to spend scarce time only on the hypotheses that are both plausible *and* survive a rigorous model test, and to discard the ones that merely sound good. Of the 425 hypotheses put to it, nearly half came back PARTIAL or REFUTED; that filtering *is* the deliverable. What survives is a short, defensible list of levers worth the expense of studying for real.
 
 The natural next step is to take each surviving lever off the map and onto the ground: scale the work to a single country or continent, calibrate against that place's own registry data, and model the effects and interactions this first pass had to simplify - the custody and family-law machinery, housing supply, the education arms race, migration, and the way levers reinforce or cancel one another. That is a large, expensive, high-resolution study; the map earns its keep by telling us where it is most likely to pay off, so none of that effort is spent chasing a lever the numbers have already ruled out.
 
@@ -291,32 +291,67 @@ Six of the seven channel equations share one shape - a *relaxation*: drift towar
 
 **Anchoring to reality.** Each country enters as measured anchors - its 2023 TFR and mean age at childbearing (UN WPP 2024; national offices where they disagree), lifetime ever-in-union coupling $C_0$, cohort childlessness $\rho_0$, security $S_0$, and its starting norm-well $N_0$; rate constants and gains come from 58 source papers, not hand-tuning. One identity closes the loop: the parity anchor is *solved*, not fitted - $\bar P_0 = \text{TFR}_{2023} / \bigl(C_0(1-\rho_0)\mathrm{fec}(\tau_0)\bigr)$ - so the model starts *from reality*, and its dynamics were made to re-tell history (the 2008 recession, the COVID dip, Korea's 1997 crisis) before being trusted with anything new.
 
-### From the blackboard to a running population
+### The machine, step by step
 
-**Is it Monte Carlo? Deliberately not.** A country is not an average person, and near a tipping point the difference is the whole story - so each country is split into **64 shadow strands**, a *deterministic* stratified Latin-hypercube spread of the channel starting states (spreads taken from population data: age at first birth scatters with $\sigma \approx 3$ years; the strands are decorrelated across channels by seeded permutations). That is quasi-Monte-Carlo quadrature over population heterogeneity, not random simulation: no dice are rolled during a run, every strand evolves by the same deterministic equations, and shrinking the spreads to zero reproduces the single-strand model to machine precision. The payoff is twofold. First, nonlinearity is averaged *Jensen-correctly* - when the norm nears its tipping point the population **splits**, part falling into the childfree well while part holds, instead of switching as one block. Second, a policy verdict is a **difference of two deterministic runs** (baseline vs lever, identical otherwise), so it carries no sampling noise at all - a Monte Carlo design would need thousands of paths to say what two runs say exactly.
+**State.** Two age vectors `N_f, N_m` (101 single-year classes, in thousands), plus **64 copies
+("strands") of the seven behavioural channels** `(C, rho, Pbar, tau, S, N, q)`, plus two scalars:
+the dependency penalty and the cohort-memory drive.
 
-**One lap of the machine** - one simulated year, repeated 102 times, 2023 to 2125:
+**Setup, once per country:**
 
-1. **Policy in**: each active lever pushes its wires through an honest implementation envelope - nothing for two years, full strength by year twelve, handouts eroding exponentially afterwards
-2. **Channels advance**: four quarter-year steps of the coupled equations, every state clipped to its physical range (coupling cannot exceed 100% of adults; $\tau$ lives in [24, 40])
-3. **Tempo observable**: the *realized* annual change $\Delta\tau$ - clips included - forms the Bongaarts-Feeney factor. The E40 audit made this load-bearing: an observable is a function of the state trajectory, never of the integrator's sub-steps
-4. **Compose**: each strand's TFR by the composition law; the 64 average into the year's period fertility
-5. **Births get ages**: each strand scales the country's observed age-specific fertility profile and shifts it by its own tempo displacement
-6. **The demographic backbone steps**: the Leslie cohort-component projection advances every single-year age class by its survival ratio and adds the newborn cohort, split by the observed sex ratio. The baseline runs immigration-free by design - migration is a lever to be tested, not an assumption to be buried
-7. **The pyramid pushes back**: the new age structure sets the dependency ratio, and its excess over 2023 feeds $\Pi_{\text{dep}}$ into next year's security equation. This is the fateful loop - fewer births age the pyramid, the burden erodes the security of the young, eroded security suppresses coupling, timing and parity in turn
-8. **Memory deposits**: this year's childhood environment enters the cohort integral $J$, riding silently for a generation
+1. Load the observed data: UN WPP population by age and sex, survival ratios, the age-specific
+   fertility profile, sex ratio at birth
+2. Set each channel's starting value from a named observable (partnership share, cohort
+   childlessness, mean age at childbearing, ...)
+3. Spread each channel across the 64 strands on a stratified inverse-normal grid scaled by its
+   measured population dispersion (age at first birth: sigma = 3 years), decorrelated across
+   channels by seeded permutations. Zero spread reproduces the one-strand model exactly; no
+   randomness is drawn during a run
+4. Solve the parity rescale so the year-one TFR equals the observed 2023 value (within 5e-4).
+   **OT is used here**: the full recalibration fits the model by minimising the 1-D Wasserstein
+   distance - in one dimension, the plain L2 distance between quantile functions - between model
+   and observed series; this fit closed the prediction gap from 0.26 to 0.018 child
 
-**Judging a policy**: two runs, baseline and lever, otherwise identical; the verdict lives in the difference - size at the century mark, durability (peak vs lasting effect, the mirage detector), and side effects on the other channels. Every hypothesis states its bar *before* the run, and the verdict-bearing numbers are pinned by the test suite (`tests/test_hypothesis_guards.py`), so a future core change that silently moves a recorded result fails the build.
+**One year, repeated 102 times (2023 to 2125):**
 
-### Where optimal transport and the reparameterisation trick enter
+1. Read the year's policy forcing (levers ramp: zero for two years, full by year twelve; cash
+   erodes exponentially afterwards)
+2. Integrate the seven channel equations in four steps of dt = 0.25, clipping every state to its
+   physical box after each step
+3. Form each strand's fertility by the composition law
+   `TFR = C * (1 - rho) * Pbar * fec(tau) * max(1 - kBF * dtau, 0)`, where `dtau` is the
+   REALIZED annual change of tau (a function of the state trajectory, never of the integrator's
+   sub-steps - the E40 audit rule); average the 64 strands
+4. Build the year's fertility schedule: each strand rescales the observed age profile to its own
+   TFR and shifts it along the age axis by its own tempo deviation; average the 64 profiles
+5. Leslie step: age every class by its survival ratio, add the newborn cohort from the schedule,
+   split by sex ratio. The baseline runs migration-free; migration is a lever to test, not an
+   assumption
+6. Feedback one: the new pyramid's dependency ratio, in excess of 2023, becomes next year's
+   security drag
+7. Feedback two: push this year's behavioural environment into the cohort memory. A cohort born
+   in year `b` accumulates `J(b)` = the mean environment over its ages 0-17; the mean of `J`
+   over the cohorts currently aged 27-45 drives marriageability. **OT machinery is used here**:
+   the integral runs along each cohort's Lexis life-line - the same characteristics that solve
+   the age-structure transport equation (`ot.py`)
 
-Three places, all load-bearing - the depth and references are in the next section:
+**Judging a lever:** run baseline and lever, identical in every other bit; the verdict is the
+difference - size at the century mark, durability (peak vs lasting effect, the mirage detector),
+side effects on the other channels. Every hypothesis states its pass/fail bar before the run, and
+the verdict-bearing numbers are pinned by `tests/test_hypothesis_guards.py`.
 
-- **The age dimension already *is* a transport equation.** The Leslie projection is the method-of-characteristics solution of the McKendrick-von Foerster renewal PDE: cohorts ride their Lexis life-lines. We did not add transport to the model; we recognised it was there
-- **Calibration is an exact 1-D Wasserstein fit.** In one dimension $W_2$ is the $L^2$ distance between *quantile functions* - no cost matrix, no Sinkhorn - and that is the objective that closed the model's prediction gap (0.26 → 0.018 child) in the recalibration round
-- **The reparameterisation trick lives in the quantile representation** (`flow.py`): every distribution is held as $\theta = Q_\phi(u)$ with $u \sim \mathrm{Uniform}(0,1)$, which makes sampling pathwise-differentiable for *any* shape - the Gaussian trick generalised - so the whole population stays differentiable end-to-end for gradient calibration. The same object gives OT for free: transport maps are pushforwards on $Q$, and the morph between two population states is linear in quantile space
+**Why 64 strands instead of one average agent:** near the norm tipping point the population
+splits - some strands cross, some hold - and the average of the per-strand fertilities differs
+from the fertility of the average state. The strands capture that; and because they are
+deterministic, a lever verdict is the difference of two exact runs, with no sampling noise.
 
-And the honest scope: carrying *every* channel as a full distribution was tested and moved fertility by less than a thousandth of a child, so the transport machinery is kept only where the shape of the population genuinely decides the outcome - the intergenerational path integral down each cohort's life-line, and policies that *select* rather than shift. Elegance is kept only when it moves the numbers.
+**Differentiability** (`flow.py`): distributions are stored as quantile functions
+`theta = Q_phi(u)`, so sampling is a deterministic map of uniform draws and gradients pass
+through the map - the Gaussian reparameterisation trick, generalised to any shape. **OT is used
+here** too: in quantile space the transport map is a pushforward and the morph between two
+population states is linear. The fully distribution-valued core was tested and moved fertility
+by less than a thousandth of a child, so this machinery ships only where the population's shape
+decides the outcome.
 
 ## The scientific backbone
 
@@ -383,12 +418,9 @@ over everyone currently of reproductive age. This is why the model can catch gen
 reversals: a lever that flatters today's adults while souring today's childhoods flips sign
 about twenty years later, when the soured cohorts arrive.
 
-**Optimal transport is the ruler, not the engine.** A fair question: do the equations build the
-vector field as a constraint for the transport problem? Almost - the arrow runs the other way.
-The field *generates* the flow; the population the model predicts is the pushforward of the
-starting population along that flow. Optimal transport then enters as the **measuring
-instrument**: the calibration compares the model's population to the observed one by the
-cheapest way to morph one into the other,
+**OT is used as the ruler, not the engine.** The field generates the flow: the model's
+prediction is the pushforward of the starting population along it. The calibration then compares
+that prediction to the observed population by the cheapest way to morph one into the other,
 
 ```math
 W_2^2(\mu,\nu) = \int_0^1 \big(Q_\mu(u) - Q_\nu(u)\big)^2\,du,
@@ -419,9 +451,9 @@ half-hearted middle mostly evaporates.
 
 ## The full trail
 
-- **41 notebooks** (`notebooks/01…41`) - the whole investigation, step by step
+- **42 notebooks** (`notebooks/01…42`) - the whole investigation, step by step
 - **The scientific foundations** - every equation, theorem, estimator and numerical scheme in the machine, catalogued with its reference: [`docs/scientific-methods.md`](docs/scientific-methods.md)
-- **The evidence log** - all 419 questions put to the model and how each turned out: [`docs/experiments/demographic-collapse-experiments.md`](docs/experiments/demographic-collapse-experiments.md)
+- **The evidence log** - all 425 questions put to the model and how each turned out: [`docs/experiments/demographic-collapse-experiments.md`](docs/experiments/demographic-collapse-experiments.md)
 - **The reference library** - the papers and grounded distributions behind the model ([`references/`](references/)), including composed proxy blueprints for levers no one has run a clean experiment on ([`references/proxies/`](references/proxies/))
 
 ## Run it
@@ -437,7 +469,7 @@ make test        # run the tests
 
 ```
 ├── data/raw            <- the source population data (United Nations, World Bank, and others)
-├── notebooks           <- 01…41, the investigation end to end
+├── notebooks           <- 01…42, the investigation end to end
 ├── src                 <- the reusable model code
 ├── docs                <- the story, the design, the intervention guide, the evidence log
 ├── reports/figures     <- every chart the notebooks produced
