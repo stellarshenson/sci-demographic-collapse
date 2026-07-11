@@ -1,0 +1,428 @@
+{
+  "round": "E45",
+  "hypotheses": {
+    "H420": {
+      "title": "the recession tipping frontier exists, and it lives in the pair",
+      "verdict": "SUPPORTED",
+      "metric": "tipped-excess ranges: {'USA': [0.016, 0.422], 'France': [0.0, 0.312], 'Germany': [0.0, 0.219]}; bundle-OFF worst: {'USA': 0.0, 'France': 0.0, 'Germany': 0.0}",
+      "note": "Recessions carry a norm-basin threshold: below the frontier the basin holds, above it strands tip permanently - and the danger is the PAIR (deterioration feeding the hardship broadcast), not the recession alone: with the W wires off the same shocks tip almost nothing. The frontier is the policy object: it says how much recession a country can absorb before fertility damage becomes cultural, not cyclical."
+    },
+    "H421": {
+      "title": "floor protection during the shock prevents the tips",
+      "verdict": "PARTIAL",
+      "metric": "prevented fractions {'USA': 0.48, 'France': 0.6, 'Germany': 0.43} at the worst corner (0.30 x 20y, 50% support)",
+      "note": "Half-sized support does not clear the 80% bar broadly - the defense needs fuller sizing."
+    },
+    "H422": {
+      "title": "protect-during beats repair-after at equal budget",
+      "verdict": "REFUTED",
+      "metric": "{'USA': {'during': 0.48, 'after': 0.44}, 'France': {'during': 0.6, 'after': 0.55}, 'Germany': {'during': 0.43, 'after': 0.5}}",
+      "note": "REFUTED: the timing premium does not exist at this severity - the after-arm recovers about as much as the during-arm prevents (and beats it in Germany). At severe corners both arms are equally half-effective; the hysteresis-prices-the-timing story dies on its own bar, and the practical rule collapses to SIZE, not timing."
+    },
+    "H423": {
+      "title": "the counter-lever duel: floor support vs broadcast dampening",
+      "verdict": "PARTIAL",
+      "metric": "prevented {'USA': {'floor': 0.48, 'pen': 0.59}, 'France': {'floor': 0.6, 'pen': 0.15}, 'Germany': {'floor': 0.43, 'pen': 0.14}}; winner per region {'USA': 'penalty-cut', 'France': 'floor', 'Germany': 'floor'}",
+      "note": "Penalty dampening under-delivers - the deterioration arm dominates the pair."
+    },
+    "H424": {
+      "title": "the turbulence tax on recession resilience",
+      "verdict": "PARTIAL",
+      "metric": "Germany 0.20x12y excess across eps: {'2.2e-05': 0.078, '6.4e-05': 0.078, '1.1e-04': 0.078}",
+      "note": "The tax is not monotone or too small - turbulence and shock do not compound cleanly here."
+    },
+    "H425": {
+      "title": "the Kramers pricing check - defense is barrier arithmetic",
+      "verdict": "PARTIAL",
+      "metric": "5/6 cells match the tilted-fold criterion (fold 0.00173); observed classes span ONE class only - the set cannot discriminate",
+      "note": "The bar was met arithmetically (5/6) but the observed set is DEGENERATE - every cell tips, so an always-predict-TIP rule would also score 6/6 and the criterion's sub-fold half is never exercised; worse, its one distinctive prediction (France-floor, push 0.00163 sub-fold) is the miss, and the floor-defended USA/Germany arms stay SUPER-fold while prevention is only partial. The static-threshold mechanism is therefore NOT established by this set: the tipping is dynamical (duration- and path-dependent), the fold criterion is at best a necessary-direction heuristic, and the frontier map (H420) remains the honest pricing object. Verdict capped at PARTIAL per the pre-registered degeneracy guard."
+    }
+  },
+  "bundle": {
+    "pen_scale": 1.0,
+    "gWrv": 0.3,
+    "gWN": 0.01
+  },
+  "grid": {
+    "depths": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "durations": [
+      4,
+      8,
+      12,
+      20
+    ]
+  },
+  "frontier": {
+    "USA": {
+      "ref": 0.328125,
+      "ref_tfr": 1.200525922145601,
+      "grid": {
+        "0.1x4": {
+          "exc": 0.015625,
+          "dTFR_vs_ref": -0.004884418811041513
+        },
+        "0.1x8": {
+          "exc": 0.03125,
+          "dTFR_vs_ref": -0.010423115821667661
+        },
+        "0.1x12": {
+          "exc": 0.140625,
+          "dTFR_vs_ref": -0.016682508366281823
+        },
+        "0.1x20": {
+          "exc": 0.171875,
+          "dTFR_vs_ref": -0.030759633751449744
+        },
+        "0.15x4": {
+          "exc": 0.015625,
+          "dTFR_vs_ref": -0.007440268938021299
+        },
+        "0.15x8": {
+          "exc": 0.140625,
+          "dTFR_vs_ref": -0.016202537613548174
+        },
+        "0.15x12": {
+          "exc": 0.15625,
+          "dTFR_vs_ref": -0.026287211454964377
+        },
+        "0.15x20": {
+          "exc": 0.21875,
+          "dTFR_vs_ref": -0.04815324964773815
+        },
+        "0.2x4": {
+          "exc": 0.03125,
+          "dTFR_vs_ref": -0.010065358489752096
+        },
+        "0.2x8": {
+          "exc": 0.15625,
+          "dTFR_vs_ref": -0.02240121007793583
+        },
+        "0.2x12": {
+          "exc": 0.171875,
+          "dTFR_vs_ref": -0.03646542062356817
+        },
+        "0.2x20": {
+          "exc": 0.296875,
+          "dTFR_vs_ref": -0.06548528965724243
+        },
+        "0.25x4": {
+          "exc": 0.109375,
+          "dTFR_vs_ref": -0.012821014579396994
+        },
+        "0.25x8": {
+          "exc": 0.171875,
+          "dTFR_vs_ref": -0.029019384997168274
+        },
+        "0.25x12": {
+          "exc": 0.1875,
+          "dTFR_vs_ref": -0.046471941656891946
+        },
+        "0.25x20": {
+          "exc": 0.34375,
+          "dTFR_vs_ref": -0.0830909332982035
+        },
+        "0.3x4": {
+          "exc": 0.140625,
+          "dTFR_vs_ref": -0.015694050202927023
+        },
+        "0.3x8": {
+          "exc": 0.171875,
+          "dTFR_vs_ref": -0.0357043865302491
+        },
+        "0.3x12": {
+          "exc": 0.25,
+          "dTFR_vs_ref": -0.05638733563344234
+        },
+        "0.3x20": {
+          "exc": 0.421875,
+          "dTFR_vs_ref": -0.1006939575394934
+        }
+      }
+    },
+    "France": {
+      "ref": 0.171875,
+      "ref_tfr": 1.2296868219463497,
+      "grid": {
+        "0.1x4": {
+          "exc": 0.0,
+          "dTFR_vs_ref": -0.0036819808942132326
+        },
+        "0.1x8": {
+          "exc": 0.046875,
+          "dTFR_vs_ref": -0.007890570686468923
+        },
+        "0.1x12": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.012428369456228605
+        },
+        "0.1x20": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.021943935975152762
+        },
+        "0.15x4": {
+          "exc": 0.015625,
+          "dTFR_vs_ref": -0.005693706438540058
+        },
+        "0.15x8": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.012216278332095598
+        },
+        "0.15x12": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.018986963919064292
+        },
+        "0.15x20": {
+          "exc": 0.125,
+          "dTFR_vs_ref": -0.03360557677823062
+        },
+        "0.2x4": {
+          "exc": 0.046875,
+          "dTFR_vs_ref": -0.00774556567622442
+        },
+        "0.2x8": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.01646020015609606
+        },
+        "0.2x12": {
+          "exc": 0.109375,
+          "dTFR_vs_ref": -0.025533014919193686
+        },
+        "0.2x20": {
+          "exc": 0.21875,
+          "dTFR_vs_ref": -0.04690964583462809
+        },
+        "0.25x4": {
+          "exc": 0.046875,
+          "dTFR_vs_ref": -0.009864595018880484
+        },
+        "0.25x8": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.02069880983650263
+        },
+        "0.25x12": {
+          "exc": 0.109375,
+          "dTFR_vs_ref": -0.03259714211051312
+        },
+        "0.25x20": {
+          "exc": 0.265625,
+          "dTFR_vs_ref": -0.06184304200065194
+        },
+        "0.3x4": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.011985027374817214
+        },
+        "0.3x8": {
+          "exc": 0.09375,
+          "dTFR_vs_ref": -0.02501745875472361
+        },
+        "0.3x12": {
+          "exc": 0.171875,
+          "dTFR_vs_ref": -0.04021782516918915
+        },
+        "0.3x20": {
+          "exc": 0.3125,
+          "dTFR_vs_ref": -0.07695981325313439
+        }
+      }
+    },
+    "Germany": {
+      "ref": 0.390625,
+      "ref_tfr": 0.9959558387145666,
+      "grid": {
+        "0.1x4": {
+          "exc": 0.0,
+          "dTFR_vs_ref": -0.0035935131788685792
+        },
+        "0.1x8": {
+          "exc": 0.015625,
+          "dTFR_vs_ref": -0.007542419882591744
+        },
+        "0.1x12": {
+          "exc": 0.03125,
+          "dTFR_vs_ref": -0.011810803300631556
+        },
+        "0.1x20": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.021422424986445088
+        },
+        "0.15x4": {
+          "exc": 0.015625,
+          "dTFR_vs_ref": -0.005448655874933261
+        },
+        "0.15x8": {
+          "exc": 0.03125,
+          "dTFR_vs_ref": -0.011549497954915777
+        },
+        "0.15x12": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.018516017221858583
+        },
+        "0.15x20": {
+          "exc": 0.125,
+          "dTFR_vs_ref": -0.0340874919029347
+        },
+        "0.2x4": {
+          "exc": 0.015625,
+          "dTFR_vs_ref": -0.007345247116160358
+        },
+        "0.2x8": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.015924664865276106
+        },
+        "0.2x12": {
+          "exc": 0.078125,
+          "dTFR_vs_ref": -0.02552529665319203
+        },
+        "0.2x20": {
+          "exc": 0.140625,
+          "dTFR_vs_ref": -0.04758957432597133
+        },
+        "0.25x4": {
+          "exc": 0.03125,
+          "dTFR_vs_ref": -0.00927095715014814
+        },
+        "0.25x8": {
+          "exc": 0.0625,
+          "dTFR_vs_ref": -0.020430493705624442
+        },
+        "0.25x12": {
+          "exc": 0.109375,
+          "dTFR_vs_ref": -0.032813410802616794
+        },
+        "0.25x20": {
+          "exc": 0.203125,
+          "dTFR_vs_ref": -0.06168465720817928
+        },
+        "0.3x4": {
+          "exc": 0.03125,
+          "dTFR_vs_ref": -0.01128585342153099
+        },
+        "0.3x8": {
+          "exc": 0.078125,
+          "dTFR_vs_ref": -0.024972401895823726
+        },
+        "0.3x12": {
+          "exc": 0.125,
+          "dTFR_vs_ref": -0.04029108579142393
+        },
+        "0.3x20": {
+          "exc": 0.21875,
+          "dTFR_vs_ref": -0.07635005623276792
+        }
+      }
+    }
+  },
+  "bundle_off_control": {
+    "USA": 0.0,
+    "France": 0.0,
+    "Germany": 0.0
+  },
+  "h421": {
+    "USA": {
+      "undefended": 0.421875,
+      "defended": 0.21875,
+      "prevented": 0.4814814814814815
+    },
+    "France": {
+      "undefended": 0.3125,
+      "defended": 0.125,
+      "prevented": 0.6
+    },
+    "Germany": {
+      "undefended": 0.21875,
+      "defended": 0.125,
+      "prevented": 0.4285714285714286
+    }
+  },
+  "h422": {
+    "USA": {
+      "after": 0.4444444444444444,
+      "during": 0.4814814814814815
+    },
+    "France": {
+      "after": 0.55,
+      "during": 0.6
+    },
+    "Germany": {
+      "after": 0.5,
+      "during": 0.4285714285714286
+    }
+  },
+  "h423": {
+    "USA": {
+      "pen": 0.5925925925925926,
+      "floor": 0.4814814814814815
+    },
+    "France": {
+      "pen": 0.15000000000000002,
+      "floor": 0.6
+    },
+    "Germany": {
+      "pen": 0.1428571428571429,
+      "floor": 0.4285714285714286
+    }
+  },
+  "h424": [
+    {
+      "eps": 2.2e-05,
+      "exc": 0.078125
+    },
+    {
+      "eps": 6.4e-05,
+      "exc": 0.078125
+    },
+    {
+      "eps": 0.00011,
+      "exc": 0.078125
+    }
+  ],
+  "h425": {
+    "USA:undefended": {
+      "fN_eff": 0.00382290918423989,
+      "pred": true,
+      "obs": true
+    },
+    "USA:floor": {
+      "fN_eff": 0.002636732637374002,
+      "pred": true,
+      "obs": true
+    },
+    "France:undefended": {
+      "fN_eff": 0.002829377754862488,
+      "pred": true,
+      "obs": true
+    },
+    "France:floor": {
+      "fN_eff": 0.0016314426954445347,
+      "pred": false,
+      "obs": true
+    },
+    "Germany:undefended": {
+      "fN_eff": 0.0031649023081749056,
+      "pred": true,
+      "obs": true
+    },
+    "Germany:floor": {
+      "fN_eff": 0.0019696441990739834,
+      "pred": true,
+      "obs": true
+    }
+  },
+  "fold_in": 0.001726268336233261,
+  "eps": {
+    "USA": 2.2e-05,
+    "Japan": 3.1e-05,
+    "Italy": 4.2e-05,
+    "Israel": 4.3e-05,
+    "France": 5.4e-05,
+    "Germany": 6.4e-05,
+    "Korea": 8.5e-05,
+    "Poland": 0.00011
+  }
+}

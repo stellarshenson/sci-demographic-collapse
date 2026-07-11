@@ -2,14 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the full E1-E44 campaign - 419 pre-registered
-hypotheses across forty-four rounds. It is an age-structured cohort-component (Leslie) core of national
+The distilled, calibrated design that survived the full E1-E45 campaign - 425 pre-registered
+hypotheses across forty-five rounds. It is an age-structured cohort-component (Leslie) core of national
 populations, wrapped in a seven-channel coupled behavioural layer whose baseline reproduces each region's
 real 2023 fertility, calibrated by an information-preserving Wasserstein objective, backtested
 out-of-sample, stress-tested against four historical crises, and used to size, rank and ablate the entire
 intervention catalogue over four generations. The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-41 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
+3-42 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
 coupled behavioural × Leslie model, the judge every intervention is scored on).
 
 ## Overview
@@ -465,6 +465,17 @@ writes tempo), but the broadcast x deterioration PAIR is a genuine super-additiv
 collision that anchored noise amplifies from 15/64 to 35-41/64 tipped strands - the standing
 warning for any bundle that loads parental wellbeing while a recession runs.
 
+E45 war-gamed that warning. The recession tipping frontier is real and lives ENTIRELY in the
+pair - across a (depth 0.10-0.30 x duration 4-20y) grid the tipped-strand excess reaches +0.42
+(USA) while the identical shocks with the wellbeing wires off tip zero strands anywhere - and
+the defenses are priced: 50%-sized floor support prevents only 43-60% of worst-corner tips
+(full sizing is the recommendation), the protect-during timing premium is REFUTED at severe
+corners (repair-after recovers about as much, Germany's after arm beats its during arm), penalty
+dampening rivals floor support only where the parenthood penalty is large (USA, not
+France/Germany), and the static tilted-fold pricing rule was downgraded at methodology review
+(its criterion, met 5/6, was never discriminated - every observed cell tipped), so the frontier
+map remains the honest pricing object (E45-H420..H425).
+
 ### 9. The transferable secular ingredients of religion, and enforced monogamy
 
 Religion is almost never a model primitive - it is a bundle that loads channels the model already owns, and
@@ -633,7 +644,7 @@ discipline the whole project runs on is that elegance must move the numbers.
   housing-coupling loop (E38); `35` the loop in time (E39); `36` the rigor audit of the core (E40); `37` the
   pre-registered rejection backtest (E41); `38` the education/happiness fanout (E42); `39` the stochastic
   basin mechanics (E43); `40` the early-warning round (E44); `41` the E41 Wave-4 cohort-reference
-  refresh. All execute end-to-end on the pinned GPU
+  refresh; `42` the recession war-game (E45). All execute end-to-end on the pinned GPU
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID
   behavioural panel; provenance in `data/raw/README.md` and the per-source manifests
 - **Numbers** - `reports/nb7_parameter_table.csv` (recalibrated per-region parameters), `nb7_predictions.csv`
