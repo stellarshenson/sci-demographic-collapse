@@ -188,7 +188,7 @@ def test_guard_catalogue_integrity():
 
 def test_guard_experiments_log_verdict_tally():
     """Campaign roll-up: the experiments log's per-hypothesis verdict rows tally EXACTLY to the
-    executive-summary counts - 429 unique H ids, no gaps H1-H429, 222 SUPPORTED / 127 PARTIAL /
+    executive-summary counts - 434 unique H ids, no gaps H1-H434, 225 SUPPORTED / 129 PARTIAL /
     77 REFUTED / 2 REFRAMED / 1 INCONCLUSIVE.
 
     On failure: a recorded verdict changed, a row was added without updating the roll-up, or the
@@ -215,10 +215,10 @@ def test_guard_experiments_log_verdict_tally():
         if v:
             assert rows.get(m.group(1), v) == v, f"conflicting verdicts for {m.group(1)}"
             rows[m.group(1)] = v
-    assert len(rows) == 429, f"expected 429 unique H rows, parsed {len(rows)}"
-    assert not [n for n in range(1, 430) if f"H{n}" not in rows], "gap in H numbering"
+    assert len(rows) == 434, f"expected 434 unique H rows, parsed {len(rows)}"
+    assert not [n for n in range(1, 435) if f"H{n}" not in rows], "gap in H numbering"
     assert Counter(rows.values()) == Counter(
-        SUPPORTED=222, PARTIAL=127, REFUTED=77, REFRAMED=2, INCONCLUSIVE=1
+        SUPPORTED=225, PARTIAL=129, REFUTED=77, REFRAMED=2, INCONCLUSIVE=1
     )
 
 
@@ -261,3 +261,23 @@ def test_guard_e40_audit_record():
         "A7": "DOCUMENTED",
         "A8": "CONFIRMED-FIXED",
     }
+
+
+def test_guard_e47_backtest_sign_not_magnitude():
+    """E47: the backtest passes the SIGN gate only - the magnitude clause fails.
+
+    Guards against silently re-inflating E47 back to "the model passes its own
+    backtest" / 5 SUPPORTED. The adversarial review re-graded H431 and H434 to
+    PARTIAL and forced the honest sign-vs-magnitude split; the recorded artifact
+    must keep it. On failure: someone re-claimed a magnitude pass or reverted the
+    re-grade without re-earning it.
+    """
+    data = json.load(open(PROJ / "reports" / "nb44_e47_verdicts.json"))
+    bt = data["backtest"]
+    assert bt["sign_passes"] is True, "sign gate must pass (misses 4 -> 0)"
+    assert bt["magnitude_improved"] is False, "magnitude clause must NOT be claimed as improved (DEF-8)"
+    assert bt["chi2_dof_corrected"] > bt["chi2_dof_baseline"], "corrected chi2/dof must record as worse"
+    verdicts = {k: h["verdict"] for k, h in data["hypotheses"].items()}
+    assert verdicts["H431"] == "PARTIAL", "H431 gate-load-bearing re-graded PARTIAL (near-tautological)"
+    assert verdicts["H434"] == "PARTIAL", "H434 model-comparison re-graded PARTIAL (circular)"
+    assert sum(v == "SUPPORTED" for v in verdicts.values()) == 3, "E47 is 3 SUPPORTED, not 5"

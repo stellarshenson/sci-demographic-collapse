@@ -2,14 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the full E1-E45 campaign - 425 pre-registered
-hypotheses across forty-five rounds. It is an age-structured cohort-component (Leslie) core of national
+The distilled, calibrated design that survived the full E1-E47 campaign - 434 pre-registered
+hypotheses across forty-seven rounds. It is an age-structured cohort-component (Leslie) core of national
 populations, wrapped in a seven-channel coupled behavioural layer whose baseline reproduces each region's
 real 2023 fertility, calibrated by an information-preserving Wasserstein objective, backtested
 out-of-sample, stress-tested against four historical crises, and used to size, rank and ablate the entire
 intervention catalogue over four generations. The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-42 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
+3-44 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
 coupled behavioural × Leslie model, the judge every intervention is scored on).
 
 ## Overview
@@ -605,7 +605,12 @@ discipline the whole project runs on is that elegance must move the numbers.
 - **No recuperation mechanism (E41 backtest)** - the pre-registered 2000→2023 rejection test REJECTED the
   core on hindcasting: its global monotone drift cannot produce the mid-2000s recuperation episodes
   (Germany, Poland, Israel, Italy all rose 2000→2019), so forward runs rank collapse scenarios and levers -
-  they do not forecast recoveries; the fitted drift constants are recorded, not shipped
+  they do not forecast recoveries; the fitted drift constants are recorded, not shipped. **E47 update:**
+  the rejection is PARTIALLY CORRECTABLE - a UN-grounded (Alkema-Raftery Phase III), gender-equity-gated
+  (Myrskyla) quantum recuperation term passes the backtest's SIGN gate notebook-local (R1 sign-misses
+  4 -> 0, Korea's collapse preserved, recovery strength Bayesian-inferred under a zero-admitting prior)
+  but NOT the magnitude clause (chi2/dof 3.93 -> 4.83, worse; recorded as DEF-8), demonstrated in
+  `notebooks/44-kj-e47-recuperation.ipynb`; promotion into the shipped core is a pending gated step
 - **The cohort reference recedes, and for Korea it always will** - the E41 honesty FAIL was
   attributed to reference drift and Wave 4 MEASURED it: on the epoch-matched b.1985 spliced reference all
   six non-exempt honesty gaps shrink (USA 0.72 -> 0.22; the erosion component is now quantified per

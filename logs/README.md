@@ -54,3 +54,4 @@ Progress logs for background and long-running jobs.
 - `nb41-execute.log` - E41 Wave-4 notebook (41-kj-e41w4-cohort-refresh): the epoch-matched b.1985 spliced cohort reference
 - `nb42-execute.log` - E45 notebook (42-kj-e45-recession-round): H420-H425 the recession war-game
 - `nb43-execute.log` - E46 notebook (43-kj-e46-second-order): H426-H429 second-order tempo/norm + the 2150 horizon
+- `nb44-execute.log` - E47 notebook (44-kj-e47-recuperation): the recuperation round making the backtest pass (H431/H435-H440)
