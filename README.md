@@ -155,9 +155,17 @@ One force in this story works too slowly to have surfaced in anything above: the
 
 The real engine is not transmission within a population - it is competition between them. A high-fertility, high-retention subculture does not convert anyone; it simply out-has the mainstream. The mainstream, below replacement, halves every generation; the subculture grows its share of the whole population every generation. Run that forward and the subculture's fertility becomes the floor the entire nation's birth rate settles toward, no matter how far the mainstream falls. The Amish, doubling roughly every twenty years, are the existence proof. In our projection this between-group compounding sets the national floor - the level the whole country's birth rate settles toward over four generations - at roughly four to seven children per woman. It was already in the model, validated in experiment E33.
 
-The formalism is a two-compartment replicator, not a matrix. Let $x_g$ be the subculture's share of births at generation $g$, and let each side's per-generation growth be its fertility over replacement - the mainstream $R_{\text{main}} = \text{TFR}_{\text{main}}/2.05 < 1$, the subculture $R_{\text{sub}} = (\text{TFR}_{\text{sub}}/2.05)\,(1-\delta)(1-\beta x_g)$, discounted by an apostasy rate $\delta$ and an edge-secularisation $\beta$. The share then updates by the standard selection ratio, and the national rate is the share-weighted blend:
+The formalism is a two-compartment replicator, not a matrix. Let $x_g$ be the subculture's share of births at generation $g$, and let each side's per-generation growth be its fertility over replacement - the mainstream $R_{\text{main}}$ below one, the subculture $R_{\text{sub}}$ discounted by an apostasy rate $\delta$ and an edge-secularisation $\beta$:
 
-$$x_{g+1} = \frac{R_{\text{sub}}\,x_g}{R_{\text{sub}}\,x_g + R_{\text{main}}\,(1-x_g)}, \qquad \text{TFR}_{\text{nat}} = x_g\,\text{TFR}_{\text{sub}} + (1-x_g)\,\text{TFR}_{\text{main}}.$$
+```math
+R_{\text{main}} = \text{TFR}_{\text{main}}/2.05 < 1, \qquad R_{\text{sub}} = (\text{TFR}_{\text{sub}}/2.05)(1-\delta)(1-\beta x_g).
+```
+
+The share then updates by the standard selection ratio, and the national rate is the share-weighted blend:
+
+```math
+x_{g+1} = \frac{R_{\text{sub}}\,x_g}{R_{\text{sub}}\,x_g + R_{\text{main}}\,(1-x_g)}, \qquad \text{TFR}_{\text{nat}} = x_g\,\text{TFR}_{\text{sub}} + (1-x_g)\,\text{TFR}_{\text{main}}.
+```
 
 Whenever $R_{\text{sub}} > R_{\text{main}}$ the share climbs to one and the national rate is dragged to the subculture's floor $\text{TFR}_{\text{sub}}$. The load-bearing term is $\delta$, not fertility: retention, the exit rate, decides the whole race.
 
@@ -167,7 +175,9 @@ Two things about it are worth holding onto. First, retention beats fertility: a 
 
 Everything above treats a country's path as a single line. But social attitudes do not move in lines - they wobble, year to year, and we measured that wobble from the world's marriage statistics and fed it back into the machine as genuine noise. The norm channel turns out to be the textbook case for this: its equation is an exact double well, so the escape mathematics of physics - Kramers' law, most-probable paths - applies without approximation, and the simulation reproduces the theory's escape times to within half a percent:
 
-$$dN = -V'(N)\,dt + \sqrt{2\varepsilon}\,dB, \qquad \mathbb{E}[\tau_{\text{esc}}] \simeq \frac{2\pi}{\sqrt{V''(N_{\text{well}})\,|V''(N_{\text{tip}})|}}\; e^{\Delta V/\varepsilon}.$$
+```math
+dN = -V'(N)\,dt + \sqrt{2\varepsilon}\,dB, \qquad \mathbb{E}[\tau_{\text{esc}}] \simeq \frac{2\pi}{\sqrt{V''(N_{\text{well}})\,|V''(N_{\text{tip}})|}}\; e^{\Delta V/\varepsilon}.
+```
 
 Three things fall out, none of them comforting. First, **the dice are loaded toward collapse**: falling *into* the cultural trap costs about 3.2 times less action than climbing out, so random turbulence alone slowly ratchets countries the wrong way - every country's noise pushes in the same direction, and doing nothing is not a neutral policy. Second, **fate becomes a probability**: Germany, safely outside the trap on the deterministic map, carries roughly a **1-in-8 chance this century** of drifting in on turbulence alone at its own measured wobble; France is close behind; and no trapped country has any meaningful chance of drifting *out* - escape by luck is not on the menu. Third, and hardest: **the drift rarely announces itself**. We tested the celebrated early-warning signals - rising variance and rising memory before a tipping point - and while the signature is mathematically real, at a realistic forty years of annual national data it is essentially invisible (detection power of a few percent), and even under ideal slow drift two thirds of the tips in our ensembles arrived with no warning at all. What the indicator pair *is* good for is telling drift from mere turbulence after the fact: a society getting noisier shows rising variance with flat memory; a society approaching the edge shows both rising.
 
@@ -238,7 +248,7 @@ Everything above came out of one machine, and this section opens the casing - th
 
 **The entire system.** Nine equations: seven coupled channel dynamics, one intergenerational memory, and the composition law that turns the channels into children.
 
-$$
+```math
 \begin{aligned}
 \dot S &= k_S\bigl(S_0 + f_S - \Pi_{\text{dep}} - S\bigr) - \varepsilon_S
   &&\text{security}\\[3pt]
@@ -263,7 +273,7 @@ J &= \int_{\text{childhood}} \bigl[\,w_F\,(f_F + \phi\,q) - w_{\text{scar}}\,f_{
   \qquad \mathrm{fec}(\tau) = e^{-0.03\,\max(\tau-30,\,0)}
   &&\text{composition}
 \end{aligned}
-$$
+```
 
 What each line says:
 
@@ -274,12 +284,12 @@ What each line says:
 - $\rho$ - **childlessness**: rises with late starts, with insecurity, and with the norm
 - $N$ - **the social norm**: the only non-relaxation - a cubic double-well with a child-friendly well at $N_{\text{lo}}=0.14$, a childfree well at $N_{\text{hi}}=0.42$, and a tipping point at $\theta_N=0.25$. Push a society across it and it does not drift back
 - $q$ - **marriageability**: partner-readiness relaxes toward what policy and upbringing ($A$) supply
-- $J,\,A$ - **intergenerational memory**: each cohort integrates its childhood environment (father investment minus relationship scarring) down its own life-line and hands the completed integral to the marriage market 27-45 years later. A damaged childhood shows up in the birth rate a generation later - which is exactly how the real force works
+- $J, A$ - **intergenerational memory**: each cohort integrates its childhood environment (father investment minus relationship scarring) down its own life-line and hands the completed integral to the marriage market 27-45 years later. A damaged childhood shows up in the birth rate a generation later - which is exactly how the real force works
 - **TFR - the composition law**: the channels **multiply, they do not add**. Every channel is a gate and a zero anywhere zeroes the product - no amount of cash ($\bar P$ up) rescues a society where couples do not form ($C$ down), which is precisely what the intervention rounds found. $\mathrm{fec}$ is the biological age penalty; the last factor is the Bongaarts-Feeney tempo correction - in a year when $\tau$ is actively rising by $\Delta\tau$, births are parked in the future and the period rate dips below the true quantum. That is the mirage machinery behind the baby-bonus illusion
 
 Six of the seven channel equations share one shape - a *relaxation*: drift toward a moving target at speed $k$, the way coffee cools. All the physics lives in where the targets sit and how the channels drag each other's targets around. The $f_\bullet$ symbols are the **nine policy wires** ($f_S, f_C, f_P, f_\tau, f_\rho, f_N, f_q, f_F, f_{\text{scar}}$) - every lever tested in this project is a pattern of pushes on these wires, and nothing else.
 
-**Anchoring to reality.** Each country enters as measured anchors - its 2023 TFR and mean age at childbearing (UN WPP 2024; national offices where they disagree), lifetime ever-in-union coupling $C_0$, cohort childlessness $\rho_0$, security $S_0$, and its starting norm-well $N_0$; rate constants and gains come from 58 source papers, not hand-tuning. One identity closes the loop: the parity anchor is *solved*, not fitted - $\bar P_0 = \text{TFR}_{2023} / \bigl(C_0\,(1-\rho_0)\,\mathrm{fec}(\tau_0)\bigr)$ - so the model starts *from reality*, and its dynamics were made to re-tell history (the 2008 recession, the COVID dip, Korea's 1997 crisis) before being trusted with anything new.
+**Anchoring to reality.** Each country enters as measured anchors - its 2023 TFR and mean age at childbearing (UN WPP 2024; national offices where they disagree), lifetime ever-in-union coupling $C_0$, cohort childlessness $\rho_0$, security $S_0$, and its starting norm-well $N_0$; rate constants and gains come from 58 source papers, not hand-tuning. One identity closes the loop: the parity anchor is *solved*, not fitted - $\bar P_0 = \text{TFR}_{2023} / \bigl(C_0(1-\rho_0)\mathrm{fec}(\tau_0)\bigr)$ - so the model starts *from reality*, and its dynamics were made to re-tell history (the 2008 recession, the COVID dip, Korea's 1997 crisis) before being trusted with anything new.
 
 ### From the blackboard to a running population
 
@@ -314,21 +324,27 @@ Two layers, and a bridge between them that is the point of the whole design.
 
 The **behavioural layer** is a system of coupled first-order ODEs in time - the observable channels (coupling $C$, childlessness $\rho$, parity $\bar P$, tempo $\tau$, security $S$, the bistable social norm $N$, and marriageability $q$) pushing on one another, with total fertility their product and the timing split by a Bongaarts-Feeney tempo correction (Bongaarts & Feeney, 1998):
 
-$$\text{TFR}(t) = C\,(1-\rho)\,\bar P\,\mathrm{fec}(\tau)\,\max\bigl(1 - k_{BF}\,\Delta\tau,\,0\bigr),$$
+```math
+\text{TFR}(t) = C\,(1-\rho)\,\bar P\,\mathrm{fec}(\tau)\,\max\bigl(1 - k_{BF}\,\Delta\tau,\,0\bigr),
+```
 
 with $\Delta\tau$ the *realized* annual change of the timing channel (the E40 audit fixed an implementation that applied four times this documented rate and could go negative).
 
 The **demographic backbone** is an age-structured cohort-component projection - the **Leslie** operator (Leslie, 1945) - and this is the crucial recognition: Leslie is exactly the finite-difference form of the **McKendrick-von Foerster / Sharpe-Lotka renewal PDE** (McKendrick, 1926; von Foerster, 1959; Sharpe & Lotka, 1911; Lotka, 1939),
 
-$$\frac{\partial n(a,t)}{\partial t} + \frac{\partial n(a,t)}{\partial a} = -\mu(a,t)\,n(a,t), \qquad n(0,t) = \int_{0}^{\infty} \beta(a,t)\,n(a,t)\,\mathrm{d}a.$$
+```math
+\frac{\partial n(a,t)}{\partial t} + \frac{\partial n(a,t)}{\partial a} = -\mu(a,t)\,n(a,t), \qquad n(0,t) = \int_{0}^{\infty} \beta(a,t)\,n(a,t)\,\mathrm{d}a.
+```
 
 The transport term $\frac{\partial n}{\partial t} + \frac{\partial n}{\partial a}$ is the derivative *along a cohort's life-line* - the Lexis diagonal (Lexis, 1875) - and the boundary integral is the Lotka renewal condition. So the age half of the model already **is** this PDE, solved along its characteristics; we did not add it, it is what the Leslie projection has always been.
 
 **The bridge: we deliver the renewal PDE's cohort structure to the ODE system as an optimal-transport (OT) component** (Villani, 2009). Rather than age-flat behavioural scalars glued to the population by a crude mean-field lag, each behavioural channel is carried as a free-form distribution $\rho(\theta,t)$ that is *transported* - its dynamics a Wasserstein-2 gradient flow, the JKO scheme (Jordan, Kinderlehrer & Otto, 1998),
 
-$$\rho_{k+1} = \arg\min_{\rho}\ \mathcal{F}[\rho] + \frac{1}{2\tau}\,W_2^2\!\left(\rho,\rho_k\right),$$
+```math
+\rho_{k+1} = \arg\min_{\rho}\ \mathcal{F}[\rho] + \frac{1}{2\tau}\,W_2^2\!\left(\rho,\rho_k\right),
+```
 
-with interventions and selection expressed as transport maps: a policy is a pushforward $T_\sharp\rho$, a selection cutoff is a truncation, and a targeted intervention transports the low-$q$ tail upward. Concretely, each channel's distribution is a **1-D normalising flow** - a monotone quantile function $\theta = Q_\phi(u)$ with $u\sim\mathrm{Uniform}(0,1)$ (Rezende & Mohamed, 2015; monotone-spline flows, Durkan et al., 2019). That single representation keeps the **reparameterisation trick** (Kingma & Welling, 2014) alive for *any* shape, not just a Gaussian - with implicit-reparameterisation gradients for the non-analytic case (Figurnov, Mohamed & Mnih, 2018) - so the population stays differentiable end-to-end for calibration.
+with interventions and selection expressed as transport maps: a policy is a pushforward $T_\sharp\rho$, a selection cutoff is a truncation, and a targeted intervention transports the low $q$ tail upward. Concretely, each channel's distribution is a **1-D normalising flow** - a monotone quantile function $\theta = Q_\phi(u)$ with $u\sim\mathrm{Uniform}(0,1)$ (Rezende & Mohamed, 2015; monotone-spline flows, Durkan et al., 2019). That single representation keeps the **reparameterisation trick** (Kingma & Welling, 2014) alive for *any* shape, not just a Gaussian - with implicit-reparameterisation gradients for the non-analytic case (Figurnov, Mohamed & Mnih, 2018) - so the population stays differentiable end-to-end for calibration.
 
 **The tradeoff, stated plainly.** There are two ways to give behaviour an age/cohort dimension. An **Eulerian PDE** adds age and state axes and solves them on a grid - faithful, but it smears cohorts through numerical diffusion and its cost explodes with every channel added. The **Lagrangian** route - the method of characteristics - instead follows cohort *particles* down their life-lines; it is mass-conserving, diffusion-free, and keeps each cohort's identity intact. We take the Lagrangian route, and optimal transport is what makes it exact and cheap. In one dimension the optimal plan is the **monotone, order-preserving rearrangement**, $W_2$ is the $L^2$ distance between quantile functions - the very quantity that already closed the model's calibration gap (the exact one-dimensional Wasserstein fit) - and the morph between two population states is displacement interpolation, linear in quantile space (McCann, 1997). No cost matrix, no Sinkhorn iteration, no approximation. The price is paid honestly: a distribution is a heavier object to evolve and calibrate than a scalar, and the elegance has to earn its keep by predicting *more faithfully* than the mean-field lag it replaces - a bar the build is measured against, not assumed to clear.
 
@@ -336,9 +352,70 @@ And the honest verdict is a split one, which is worth reporting rather than hidi
 
 **Why the path integral is the game-changer.** Because the one-dimensional optimal map preserves quantile rank, a cohort keeps its place in the distribution as it morphs - the transport plan *is* the Lexis life-line, now drawn in behavioural-state space rather than in age. That lets us carry, down each life-line, a **path integral of the cohort's own exposures**,
 
-$$J(u) = \int_{\text{birth}}^{t} \mathrm{effect}\!\bigl(\theta_u(s)\bigr)\,\mathrm{d}s,$$
+```math
+J(u) = \int_{\text{birth}}^{t} \mathrm{effect}\!\bigl(\theta_u(s)\bigr)\,\mathrm{d}s,
+```
 
 so that a slow-healing therapy, an accumulating scar, and the childhood-environment integral stop being a single aggregate lag and become genuine *life-course* integrals - one per cohort. The intergenerational channel then takes its true form: a parent cohort's *completed* path integral sets the **initial condition** of the child cohort's line - the honest statement of how a childhood exposure, such as a father-figure deficit, is transmitted to the next generation. Classical demography integrates only survival and fertility down the life-line; carrying the behavioural exposures along the same characteristic is what turns an age-flat behavioural model with a crude lag into a **cohort-resolved, life-course instrument**. That is the game-changer - not a new equation bolted on, but the model's own native cohort structure finally made to carry everything it should.
+
+### Cohorts as trajectories, and the least-action rule
+
+The equations earlier on this page define a **vector field**: at every point of the seven-channel
+state space they say which way the system drifts and how fast. One model year is a lap of that
+field - four small integration steps of the behavioural state, a per-strand fertility
+composition, and one exact accounting step of the age pyramid - and a century is 102 laps.
+Simulation, here, means *pushing the whole population forward along the flow of that field*.
+
+> *The machine is Lagrangian in both senses of the word: follow the particle, and extremize the action.*
+
+**Cohorts are the particles.** The age-structure equation is a transport equation, and the model
+never solves it on a grid - it rides the characteristics: a cohort born in year b travels its
+own diagonal through (age, time), thinning by mortality. Behavioural experience rides the same
+rails. Each year the model records the environment a child grows up in; a cohort's childhood is
+then a genuine path integral along its trajectory,
+
+```math
+J(b) = \frac{1}{18}\sum_{a=0}^{17} \mathrm{env}(b+a),
+```
+
+and what today's adults bring to family formation is the average of these completed integrals
+over everyone currently of reproductive age. This is why the model can catch generational
+reversals: a lever that flatters today's adults while souring today's childhoods flips sign
+about twenty years later, when the soured cohorts arrive.
+
+**Optimal transport is the ruler, not the engine.** A fair question: do the equations build the
+vector field as a constraint for the transport problem? Almost - the arrow runs the other way.
+The field *generates* the flow; the population the model predicts is the pushforward of the
+starting population along that flow. Optimal transport then enters as the **measuring
+instrument**: the calibration compares the model's population to the observed one by the
+cheapest way to morph one into the other,
+
+```math
+W_2^2(\mu,\nu) = \int_0^1 \big(Q_\mu(u) - Q_\nu(u)\big)^2\,du,
+```
+
+which - by a classical theorem - equals the *minimal kinetic action* of any deformation
+connecting them. Fitting by this distance means choosing parameters whose predicted population
+is cheapest to transport onto reality.
+
+> *Calibration does not match moments; it finds the parameters whose world is cheapest to morph into ours.*
+
+**Where the field does become a transport constraint is under noise.** With measured
+year-to-year turbulence added (its amplitude taken from real marriage statistics), the
+probability of any trajectory is weighed by how much it *disobeys the field*:
+
+```math
+S[\varphi] = \frac{1}{4}\int \big(\dot\varphi + V'(\varphi)\big)^2 dt, \qquad P \sim e^{-S/\varepsilon}.
+```
+
+Trajectories that follow the drift cost nothing; every departure is taxed, and rare events -
+a country fluctuating across the cultural tipping point - concentrate on the single cheapest
+path (the simulation reproduces the resulting escape-time law to half a percent). This turns
+policy sizing into mechanics: a norm intervention is priced by the action it removes from the
+barrier, which is why a decisive push and a permanent endowment both work while the
+half-hearted middle mostly evaporates.
+
+> *The model does not roll dice over fate - it weighs every possible path by its cost, and the cheap paths carry the probability.*
 
 ## The full trail
 
