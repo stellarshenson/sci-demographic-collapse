@@ -1,0 +1,256 @@
+{
+  "round": "E44",
+  "hypotheses": {
+    "H413": {
+      "title": "the approach announces itself - but only under slow forcing",
+      "verdict": "PARTIAL",
+      "metric": "slow: med taus -0.00/+0.24, joint-sig 8%; fast: -0.13/-0.11, joint-sig 3%",
+      "note": "One arm missed its bar - the signature exists but its regime boundary sits elsewhere."
+    },
+    "H414": {
+      "title": "variance without memory is noise, not approach",
+      "verdict": "SUPPORTED",
+      "metric": "control medians: tau_var +0.73 vs tau_AC1 +0.02 (bars >0.3 / <0.15)",
+      "note": "The discriminator works: a society getting NOISIER shows rising variance with flat memory, while a society approaching the tip shows both rising - so the indicator pair, read together, tells drift from turbulence. Variance alone would false-alarm on every volatile decade."
+    },
+    "H415": {
+      "title": "the warning survives the analyst",
+      "verdict": "PARTIAL",
+      "metric": "9 window x bandwidth combos, all-positive medians: False; range tau_var [-0.10, +0.20]",
+      "note": "At least one analyst choice flips a median sign - any single-pipeline claim is fragile."
+    },
+    "H416": {
+      "title": "the warning comes decades early, and speed eats the lead",
+      "verdict": "PARTIAL",
+      "metric": "median lead 42y (200y ramp) vs 29y (100y ramp); no-warning tip fractions 66%/85%",
+      "note": "The lead-time law missed a bar - the operational warning is not reliably early here."
+    },
+    "H417": {
+      "title": "a 40-year national series can see the approach",
+      "verdict": "REFUTED",
+      "metric": "joint-significance power 1% over 68 windows (bar 50%)",
+      "note": "Adjudicated AGAINST operational early warning at present data length: one 40-year annual series rarely clears joint significance even while the system genuinely approaches the fold. The signature is real (H413) but a statistics office watching one national aggregate will usually not see it in time - monitoring needs longer series, higher-frequency proxies, or pooling across regions/subpopulations."
+    },
+    "H418": {
+      "title": "flickering precedes the mean tip in the full core",
+      "verdict": "PARTIAL",
+      "metric": "mean-crossing year 189, strand-std peak year 187, lead 2y",
+      "note": "The spread did not lead the mean by the bar - flickering is not a usable precursor here."
+    },
+    "H419": {
+      "title": "the E42 triple residual - no emergent three-way; the PAIR is the hazard",
+      "verdict": "PARTIAL",
+      "metric": "triple excess 0 strands (deterministic AND at eps 2e-05, 5e-05: wave deltas [0.0, 0.0]); I3_mid +0.00080 (K-shift 0%); Korea escape-metric movement 0.000; gWN wire alone +0.016",
+      "note": "GATE-AMENDED record: the three-way term is null BY STRUCTURE (the norm channel reads only fN; the education wave writes tempo and cannot reach it) and the noise-confirming runs uphold the null at the anchored and central eps - the E42 residual is closed with the noise regime measured, not assumed. What the corners actually found is the PAIR: broadcast x deterioration collide on the W field (deterioration opens the misery gate the broadcast then amplifies), tipping 15/64 USA strands where the best single tips 7/64 - a super-additive same-channel collision, the real hazard the triple hypothesis was circling. The Korea occupancy control is flagged vacuous (saturated ceiling); the escape-metric re-read stands in for it."
+    }
+  },
+  "ews": {
+    "win_frac": 0.5,
+    "bw": 10,
+    "n_surr": 200,
+    "n_seeds": 60,
+    "fold_in": 0.001726268336233261,
+    "eps0": 5e-05,
+    "h413": {
+      "slow": {
+        "tv": -0.003048794581975359,
+        "ta": 0.24377937444032916,
+        "sig": 0.08333333333333333
+      },
+      "fast": {
+        "tv": -0.1304909560723514,
+        "ta": -0.11074197120708748,
+        "sig": 0.03333333333333333
+      }
+    },
+    "h414": {
+      "tv": 0.7304950495049507,
+      "ta": 0.020000000000000004
+    },
+    "h415": {
+      "w0.25_b5": [
+        -0.010522782752533615,
+        0.06926573348056547
+      ],
+      "w0.25_b10": [
+        0.033205363807936594,
+        0.08030852151287055
+      ],
+      "w0.25_b20": [
+        0.09054405905876889,
+        0.14511784511784515
+      ],
+      "w0.4_b5": [
+        -0.09686827492454089,
+        0.1424581860137843
+      ],
+      "w0.4_b10": [
+        0.007011688114146434,
+        0.24322221813860612
+      ],
+      "w0.4_b20": [
+        0.19967137628524056,
+        0.22178075353388416
+      ],
+      "w0.5_b5": [
+        -0.09954995014417764,
+        0.20230246554067172
+      ],
+      "w0.5_b10": [
+        0.06684397775551795,
+        0.3278204898980869
+      ],
+      "w0.5_b20": [
+        0.16762396277465172,
+        0.27778894597076415
+      ]
+    },
+    "h416": {
+      "lead200": 41.5,
+      "lead100": 29.0,
+      "nowarn200": 0.6595744680851063,
+      "nowarn100": 0.8484848484848485
+    },
+    "h417": {
+      "power": 0.014705882352941176,
+      "windows": 68
+    }
+  },
+  "h418": {
+    "cross_year": 189,
+    "std_peak_year": 187,
+    "lead": 2
+  },
+  "h419": {
+    "usa": {
+      "base": {
+        "mid": 1.4628073052386947,
+        "end": 1.2502316130880948,
+        "occ": 0.03125,
+        "esc": 0.96875
+      },
+      "A": {
+        "mid": 1.411093900973553,
+        "end": 1.1722517251432567,
+        "occ": 0.03125,
+        "esc": 0.96875
+      },
+      "B": {
+        "mid": 1.4499444287327141,
+        "end": 1.2077131946067088,
+        "occ": 0.109375,
+        "esc": 0.890625
+      },
+      "D": {
+        "mid": 1.3741798201742597,
+        "end": 1.2292448230220878,
+        "occ": 0.03125,
+        "esc": 0.96875
+      },
+      "AB": {
+        "mid": 1.3986746802970722,
+        "end": 1.1310787070249737,
+        "occ": 0.109375,
+        "esc": 0.890625
+      },
+      "AD": {
+        "mid": 1.3242706833939324,
+        "end": 1.1519802288666805,
+        "occ": 0.03125,
+        "esc": 0.96875
+      },
+      "BD": {
+        "mid": 1.3380973001644136,
+        "end": 1.1643889980191686,
+        "occ": 0.234375,
+        "esc": 0.765625
+      },
+      "ABD": {
+        "mid": 1.2894275104943957,
+        "end": 1.0894900995323236,
+        "occ": 0.234375,
+        "esc": 0.765625
+      }
+    },
+    "korea": {
+      "base": {
+        "mid": 0.5218868355113762,
+        "end": 0.24780396682791211,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "A": {
+        "mid": 0.5091745533662991,
+        "end": 0.23938299393329193,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "B": {
+        "mid": 0.5152693736822185,
+        "end": 0.22532485279098463,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "D": {
+        "mid": 0.4574462513727441,
+        "end": 0.24046652718956668,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "AB": {
+        "mid": 0.502706195268553,
+        "end": 0.21740216755621333,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "AD": {
+        "mid": 0.446298460256208,
+        "end": 0.23285018118791623,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "BD": {
+        "mid": 0.44433564434677003,
+        "end": 0.21618446110307304,
+        "occ": 1.0,
+        "esc": 0.0
+      },
+      "ABD": {
+        "mid": 0.4334798402045532,
+        "end": 0.20911348699538745,
+        "occ": 1.0,
+        "esc": 0.0
+      }
+    },
+    "I3_mid": 0.0007956912808098071,
+    "I3_mid_K128": 0.0007951544575197644,
+    "k_shift": 0.0006746627781271267,
+    "korea_occ_change": 0.0,
+    "gwn_wire_alone": 0.046875
+  },
+  "interaction_gate": {
+    "agent": "interaction-analyst",
+    "date": "2026-07-11",
+    "disposition": "AMEND - negative triple + BD pair-reframe recorded with the structural mechanism, the saturated-control flag, the noise-confirming runs and the sub-threshold scope correction",
+    "mechanism": "the norm drift is autonomous except fN; the wave writes tempo (f[3]) and never fN, so the deterministic triple null is STRUCTURALLY FORCED, not a measured smallness - the wave reaches W only via a second-order tau->rv path",
+    "korea_control": "occupancy metric saturated at 64/64 (strands pinned at Nhi) - vacuous as recorded; escape-metric re-read moves at most 0.000 across arms",
+    "noise_runs": {
+      "2.2e-05": {
+        "BD": 0.546875,
+        "ABD": 0.546875,
+        "delta": 0.0
+      },
+      "5.0e-05": {
+        "BD": 0.640625,
+        "ABD": 0.640625,
+        "delta": 0.0
+      }
+    },
+    "subthreshold": "gWN=0.01 alone tips +0.016 (sub-threshold confirmed); corner B's solo tip was the gWrv misery-gate wire, so 'sub-threshold broadcast' scopes the gWN sub-wire only",
+    "pair_confirmed": "I(B,D)_occ = +8/64, I(B,D)_midTFR = -0.0232 - a real super-additive same-channel (W-field) collision; the dangerous term is the PAIR"
+  },
+  "equivalence": {
+    "nb38_germany_gated": 1.0267482781835995,
+    "nb38_germany_linear": 0.9989920077459596
+  }
+}

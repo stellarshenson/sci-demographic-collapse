@@ -2,14 +2,14 @@
 
 **Canonical SOTA Document**
 
-The distilled, calibrated design that survived the full E1-E43 campaign - 412 pre-registered
-hypotheses across forty-three rounds. It is an age-structured cohort-component (Leslie) core of national
+The distilled, calibrated design that survived the full E1-E44 campaign - 419 pre-registered
+hypotheses across forty-four rounds. It is an age-structured cohort-component (Leslie) core of national
 populations, wrapped in a seven-channel coupled behavioural layer whose baseline reproduces each region's
 real 2023 fertility, calibrated by an information-preserving Wasserstein objective, backtested
 out-of-sample, stress-tested against four historical crises, and used to size, rank and ablate the entire
 intervention catalogue over four generations. The full evidence trail is in
 [the experiments log](experiments/demographic-collapse-experiments.md); the executable record is Notebooks
-3-39 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
+3-41 and the core modules `src/sci_demographic_collapse/coremodel.py` (Leslie) and `emergent.py` (the
 coupled behavioural × Leslie model, the judge every intervention is scored on).
 
 ## Overview
@@ -452,6 +452,19 @@ evidence), R2 confirmed the dispersed-E dead zone (Jensen gap 1.3e-5), and R3 co
 broadcast well-crossing at the mechanism level while AMENDING it - the response peak is basin
 surgery (the arm-splitting window), with a residual within-well dial (x3.3 baseline) riding on it.
 
+E44 then asked whether the approach ANNOUNCES itself. The critical-slowing-down signature
+(Scheffer) is real in the ensemble mean and the indicator pair separates drift from turbulence
+(rising variance with flat memory = a noisier society, not an approaching one - the clean
+discriminator), but operational early warning is REFUTED at realistic scale: one 40-year annual
+national series detects the approach with 1% power, and 66-85% of tips arrive with no warning
+even under ideal slow drift (E44-H413..H417). Monitoring should watch subgroup DISPERSION (the
+strand spread peaks before the mean crosses, if only by ~2y) rather than wait for a national
+alarm that will not ring. The last E42 interaction residual closed gate-amended (E44-H419): no
+emergent three-way (structurally impossible - the norm reads only fN and the education wave
+writes tempo), but the broadcast x deterioration PAIR is a genuine super-additive W-field
+collision that anchored noise amplifies from 15/64 to 35-41/64 tipped strands - the standing
+warning for any bundle that loads parental wellbeing while a recession runs.
+
 ### 9. The transferable secular ingredients of religion, and enforced monogamy
 
 Religion is almost never a model primitive - it is a bundle that loads channels the model already owns, and
@@ -582,10 +595,12 @@ discipline the whole project runs on is that elegance must move the numbers.
   core on hindcasting: its global monotone drift cannot produce the mid-2000s recuperation episodes
   (Germany, Poland, Israel, Italy all rose 2000→2019), so forward runs rank collapse scenarios and levers -
   they do not forecast recoveries; the fitted drift constants are recorded, not shipped
-- **The cohort reference is receding** - the E41 honesty table FAILED its pre-registered clause (3/6
-  non-exempt regions non-increasing): the b.1975 completed-cohort reference is drifting away from every
-  post-2010-collapse period state, so the |PB0 − PB0_check| diagnostic conflates calibration honesty with
-  real period-vs-cohort erosion; refreshing the epoch-matched reference is the named Wave-4 action
+- **The cohort reference recedes, and for Korea it always will** - the E41 honesty FAIL was
+  attributed to reference drift and Wave 4 MEASURED it: on the epoch-matched b.1985 spliced reference all
+  six non-exempt honesty gaps shrink (USA 0.72 -> 0.22; the erosion component is now quantified per
+  region), but Korea's gap stays at 0.36 because its erosion outruns any completed-cohort reference -
+  the epoch-matched check (`reports/e41_w4_cohort_refresh.json`) is the honesty gate going forward, with
+  residual gaps 0.06-0.22 (ex-Korea) the honest statement of period-vs-cohort distance
 - **The E42 wellbeing wires are notebook-local and regime-dependent** - the misery gate, loss-averse
   derivative and broadcast couplings live in NB38's EWModel, not the shipped core (the E42b workflow
   DECLINED promotion; the pre-registered floor-crossing identification test was RUN in E43 and
@@ -617,7 +632,8 @@ discipline the whole project runs on is that elegance must move the numbers.
   saturating-fanout re-simulation (E36); `33` Israel's mechanisms (E37); `34` the social fabric and the
   housing-coupling loop (E38); `35` the loop in time (E39); `36` the rigor audit of the core (E40); `37` the
   pre-registered rejection backtest (E41); `38` the education/happiness fanout (E42); `39` the stochastic
-  basin mechanics (E43). All execute end-to-end on the pinned GPU
+  basin mechanics (E43); `40` the early-warning round (E44); `41` the E41 Wave-4 cohort-reference
+  refresh. All execute end-to-end on the pinned GPU
 - **Data** - `data/raw/unwpp/` (UN WPP 2024, CC BY 3.0 IGO) plus the World Bank / Eurostat / OWID
   behavioural panel; provenance in `data/raw/README.md` and the per-source manifests
 - **Numbers** - `reports/nb7_parameter_table.csv` (recalibrated per-region parameters), `nb7_predictions.csv`

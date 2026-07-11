@@ -1,0 +1,106 @@
+{
+  "wave": "E41-W4",
+  "birth_cohort": 1985,
+  "construction": "observed ASFR diagonal ages 15-38 (years 2000-2023) + 2023-schedule tail 39-48; check = CFR_spl / (C0*(1-RV0)*fec(MAC_spl)) on the SHIPPED state pair",
+  "table": {
+    "USA": {
+      "PB0": 1.9407705577918344,
+      "check_epoch": 2.4957111366685836,
+      "D_epoch": 0.2223576962586765,
+      "D_ref": 0.7179,
+      "erosion": 0.49554230374132346,
+      "exempt": false,
+      "CFR_spl": 2.0832200000000003,
+      "MAC_spl": 27.750836205489577,
+      "tail_share": 0.04735409606282581
+    },
+    "France": {
+      "PB0": 1.9996602133386077,
+      "check_epoch": 2.403192046049189,
+      "D_epoch": 0.16791493354598172,
+      "D_ref": 0.3608,
+      "erosion": 0.1928850664540183,
+      "exempt": false,
+      "CFR_spl": 2.066625,
+      "MAC_spl": 29.807763382326254,
+      "tail_share": 0.06816911631282889
+    },
+    "Germany": {
+      "PB0": 1.8025134478156426,
+      "check_epoch": 2.031086531539166,
+      "D_epoch": 0.11253734401473772,
+      "D_ref": 0.1725,
+      "erosion": 0.059962655985262264,
+      "exempt": false,
+      "CFR_spl": 1.614145,
+      "MAC_spl": 30.221564357601086,
+      "tail_share": 0.06659191088780748
+    },
+    "Italy": {
+      "PB0": 1.6708183353517392,
+      "check_epoch": 1.8776670451062298,
+      "D_epoch": 0.11016261391688222,
+      "D_ref": 0.235,
+      "erosion": 0.12483738608311777,
+      "exempt": false,
+      "CFR_spl": 1.409669,
+      "MAC_spl": 30.831772565048954,
+      "tail_share": 0.08819091573979423
+    },
+    "Japan": {
+      "PB0": 1.7560532459821898,
+      "check_epoch": 2.044887535041808,
+      "D_epoch": 0.14124702904686287,
+      "D_ref": 0.2092,
+      "erosion": 0.06795297095313713,
+      "exempt": false,
+      "CFR_spl": 1.4761379999999997,
+      "MAC_spl": 30.363837256408285,
+      "tail_share": 0.06540309916823496
+    },
+    "Korea": {
+      "PB0": 1.2525751553372013,
+      "check_epoch": 1.9504181168687666,
+      "D_epoch": 0.3577914681452477,
+      "D_ref": 0.6313,
+      "erosion": 0.27350853185475227,
+      "exempt": true,
+      "CFR_spl": 1.208578,
+      "MAC_spl": 30.920456106267036,
+      "tail_share": 0.053227015550506476
+    },
+    "Poland": {
+      "PB0": 1.4023380360014022,
+      "check_epoch": 1.743283888828443,
+      "D_epoch": 0.19557678184943827,
+      "D_ref": 0.5312,
+      "erosion": 0.33562321815056173,
+      "exempt": false,
+      "CFR_spl": 1.442027,
+      "MAC_spl": 28.59153816121335,
+      "tail_share": 0.04177799722196603
+    },
+    "Israel": {
+      "PB0": 3.1520064349147163,
+      "check_epoch": 3.35348345089528,
+      "D_epoch": 0.06007991956148623,
+      "D_ref": 0.167,
+      "erosion": 0.10692008043851378,
+      "exempt": true,
+      "CFR_spl": 3.0902350000000003,
+      "MAC_spl": 29.880207815910435,
+      "tail_share": 0.07297179664329735
+    }
+  },
+  "outcome": {
+    "bars": {
+      "i": true,
+      "ii": false,
+      "iii": true
+    },
+    "n_better": 6,
+    "n_nonexempt": 6,
+    "n_within10": 1
+  },
+  "reference_superseded": "b.1975 completed-cohort check (reports/e41_stage5_reverdict.json) - kept as the erosion baseline, no longer the honesty gate"
+}
