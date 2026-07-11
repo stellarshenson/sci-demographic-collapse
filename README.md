@@ -422,9 +422,14 @@ pushing the whole population forward along its flow.
 > *The machine is Lagrangian in both senses of the word: follow the particle, and extremize the action.*
 
 **Do we solve the differential equations - and how.** Three answers, stated exactly. The
-age-structure PDE (McKendrick-von Foerster) is solved in closed form by the method of
-characteristics: with rates held constant within a year, the one-year Leslie map IS its exact
-solution - no grid-discretisation error. The seven coupled behavioural ODEs have no closed form
+age-structure PDE (McKendrick-von Foerster) is solved analytically by the method of
+characteristics: cohorts propagate in closed form along their (age, time) diagonals, and the
+one non-trivial piece - the birth boundary condition, the renewal integral - is imposed
+algebraically at the border each year from the current fertility schedule and pyramid. The only
+discretisation is of the COEFFICIENTS (rates held piecewise-constant within each year, exactly
+how the data arrives), never of the differential operator: the one-year Leslie map is the exact
+solution of that piecewise-constant problem, and no finite-difference PDE solver exists anywhere
+in the code. The seven coupled behavioural ODEs have no closed form
 and are integrated numerically (forward Euler, four steps of dt = 0.25 per year, states clipped
 to their physical ranges; first-order convergence verified in the E40 audit). One channel, the
 bistable norm, also admits analytic treatment of its noise-driven escapes (Kramers theory), and
