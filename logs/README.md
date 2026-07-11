@@ -55,3 +55,5 @@ Progress logs for background and long-running jobs.
 - `nb42-execute.log` - E45 notebook (42-kj-e45-recession-round): H420-H425 the recession war-game
 - `nb43-execute.log` - E46 notebook (43-kj-e46-second-order): H426-H429 second-order tempo/norm + the 2150 horizon
 - `nb44-execute.log` - E47 notebook (44-kj-e47-recuperation): the recuperation round making the backtest pass (H431/H435-H440)
+- `def8-pooling.log` - DEF-8 diagnostic: the four-regime pooling toy (base / E47 shared pool / per-region g_rec / per-region g_rec+mu_c) decomposing the magnitude miss into shrinkage vs shared-asymptote vs functional-form floor
+- `def8-filter.log` - DEF-8 state-space probe: per-region grid FILTER vs static per-region vs shared pool on held-out (2012-2023) magnitude RMSE (the coordinator's filtering-act toy)

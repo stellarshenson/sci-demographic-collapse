@@ -59,7 +59,9 @@ gate on everything downstream.
 - **H445 (few-shot transfer)** - discover the field on 7 countries, then predict the 8th from
   only its first ~10 years, beating a naive extrapolation and a per-country curve fit. Bar:
   held-out forecast RMSE materially below both baselines. The "predict a new market from a
-  handful of points because we captured the dynamics" claim, tested.
+  handful of points because we captured the dynamics" claim, tested. Caveat: this is within-regime
+  interpolation (the held-out region shares the trapped-low-fertility regime), not new-regime
+  transfer - the out-of-regime region (Israel) blows up.
 
 ### Act III - Structure and interpretability
 

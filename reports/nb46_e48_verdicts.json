@@ -1,0 +1,79 @@
+{
+  "H435": {
+    "title": "the probe reproduces the campaign's recorded quantum/tempo verdicts (by construction)",
+    "verdict": "PARTIAL",
+    "metric": "reproduction agreement 0.959 on 219 committed cells (abstain rate 0.00); one-axis comparator 0.959 vs two-axis 0.959 on the common basis (beat +0.000); coupling-reads-TEMPO 0; canonical 8x4 all-match True (a threshold-consistency check, not generalization)",
+    "note": "The probe reads the SAME Bongaarts-Feeney decomposition the campaign's dynamical verdicts were derived from, so high agreement is REPRODUCTION BY CONSTRUCTION - an internal-consistency check, not independent validation. On the common basis a fair one-axis persistence-only classifier reproduces the coarse labels about as well (beat +0.000), so the aggregate agreement does not earn the composition axis; that discrimination is H436's job, not this hypothesis's. Zero coupling levers read TEMPO because coupling never touches the tempo channel f[3] - a construction fact, not a discovered safety property."
+  },
+  "H436": {
+    "title": "the composition axis is necessary, not decorative",
+    "verdict": "SUPPORTED",
+    "metric": "one-axis (persistence) wrong in 8/8; two-axis TEMPO in 8/8 (one archetype - the tempo push - across 8 regions)",
+    "note": "On the pure tempo push, persistence reads high (the durable fec residual from a lower mean age), so a durability-only rule calls it QUANTUM - wrongly - while the two-axis rule reads tempo_share and tags TEMPO. The second axis fixes a real error, so it is not slop. This is the round's genuinely falsifiable core; it is demonstrated on one mechanism across 8 correlated regions, not 8 independent levers."
+  },
+  "H437": {
+    "title": "cash-mirage splits into a Bongaarts-Feeney mirage and a durability mirage",
+    "verdict": "SUPPORTED",
+    "metric": "eroding-reverts 8/8; durable-persists 8/8; tempo-confusions 0/16 (~0 BY CONSTRUCTION - cash routes to f[2])",
+    "note": "Composition-quantum for cash is BY CONSTRUCTION (cash writes the quantum channel f[2], never the tempo channel f[3]), so the 0 tempo-confusions are not evidence. The measured, falsifiable content is the durability split: the eroding variant reverts (survive < 40, largely the withdrawn-funding envelope by design) while the durable variant, held constant, still persists (survive > 60) - a genuine dynamical outcome the model could have overturned. 'Cash = mirage' conflates borrowed timing with withdrawn funding; the durability read separates them."
+  },
+  "H438": {
+    "title": "full-catalogue reclassification screen",
+    "verdict": "PARTIAL",
+    "metric": "9/219 probe-vs-campaign disagreements (rate 0.041, 1 shape(s) {('weak / stall', 'QUANTUM-DURABLE'): 9}); load-bearing contradictions 0",
+    "note": "The screen reproduces the coarse labels on the committed set; the residual disagreements are reported NEUTRALLY as interpretations the probe offers (it reads a durable adjTFR* gain where the coarse label said weak/stall), NOT proven corrections - the notebook has no ground truth beyond the same model, so it cannot adjudicate the probe right. No quantum-family escape is read as TEMPO. PARTIAL: reproduces most labels, disagreements interpretable but unproven."
+  },
+  "H439": {
+    "title": "composition is region-portable; durability is position-dependent",
+    "verdict": "PARTIAL",
+    "metric": "campaign variation-capable levers 1 (portable True); synthetic mixed stress range [0.67]; ranges cash_eroding 0.00~0constr, coupling_crown 0.00~0constr, tempo_push 0.10*, cash_durable_parity 0.01~0constr, mixed_cash+tempo 0.67(synth)",
+    "note": "Portability is a CONSTRUCTION ARTIFACT for the non-tempo levers: cash, coupling and durable parity never touch f[3], so their tempo_share is ~0 in every region by construction, not by finding. The campaign has exactly one variation-capable archetype (the tempo push), which is portable but marginal (range near 0.10, just under the 0.15 bar). A synthetic mixed cash+tempo lever, added to actually stress the claim, is NOT portable (tempo_share swings 0.00-0.67 across regions), so the property does NOT generalize to genuinely mixed levers. survive_pct still spreads with basin - the intended position signal. PARTIAL: portable for the campaign's single-channel and tempo levers, but the claim rests on construction-zeros and fails for a mixed lever."
+  },
+  "H440": {
+    "title": "the classification is robust to the one calibrated tempo constant",
+    "verdict": "SUPPORTED",
+    "metric": "class flips across kBF in {0.6, 1.0}: 0 (12 lever x anchor cells)",
+    "note": "No canonical lever changes class between the E40 damped kBF=0.6 and the E41-adjudicated undamped kBF=1.0. A fair robustness check: a class could have flipped if the tempo push crossed 0.60. The verdict is a property of the intervention, not an artefact of the tempo calibration."
+  },
+  "summary": {
+    "round": "E48",
+    "title": "The Quantum-Effect Probe (H435-H440)",
+    "tally": {
+      "PARTIAL": 3,
+      "SUPPORTED": 3
+    },
+    "reframe": "E48 is a DIAGNOSTIC INSTRUMENT that operationalizes the model's own Bongaarts-Feeney quantum-vs-tempo split. It reads the same decomposition the campaign's verdicts were derived from, so agreement with those verdicts REPRODUCES the model's own classifications by construction - it does not independently validate them. The meaningful, falsifiable comparator is one-axis (persistence only) vs two-axis (composition + durability): the composition axis earns its keep specifically on the tempo push (H436), not in aggregate catalogue agreement (H435). 'Zero coupling reads TEMPO' is a construction fact (coupling never touches the tempo channel), not a discovered safety property.",
+    "headline": "The probe REPRODUCES the model's own quantum/tempo classifications by construction (agreement 96% on the committed set); on the same basis a fair one-axis comparator does about as well (beat +0.000), so the composition axis is earned specifically on the tempo push (H436: one-axis wrong 8/8), not in aggregate. The measured durability split separates a withdrawn-funding mirage from a Bongaarts-Feeney timing mirage (H437: eroding-reverts 8/8, durable-persists 8/8). tempo_share portability is a construction artifact for non-tempo levers; the campaign has only 1 variation-capable archetype and a synthetic mixed lever is not portable, so the property does not generalize (H439). The classification is kBF-robust (0 flips, H440). Backfire and migration levers (33 region-runs) are out of scope; NULL mappings (21) carry no verdict; 0 committed-set abstentions (MIXED) are not counted as agreement.",
+    "one_axis_vs_two_axis": {
+      "one_axis_agreement": 0.9589,
+      "two_axis_agreement": 0.9589,
+      "beat": 0.0,
+      "reproduction_agreement_committed": 0.9589
+    },
+    "thresholds": {
+      "tempo_hi": 0.6,
+      "tempo_lo": 0.4,
+      "pers_hi": 0.6,
+      "pers_lo": 0.4,
+      "kBF_grid": [
+        0.6,
+        1.0
+      ]
+    },
+    "committed_n": 219,
+    "abstain_n": 0,
+    "excluded_n": 33,
+    "null_n": 21,
+    "campaign_variation_capable_n": 1,
+    "synthetic_mixed_stress_range": [
+      0.668
+    ],
+    "grounding": [
+      "reports/quantum_probe_fanout.md",
+      "scratchpad/probe_quantum.py",
+      "reports/nb14_e19_verdicts.json",
+      "Bongaarts & Feeney 1998/2006"
+    ],
+    "discipline": "notebook-local diagnostic; no src/ edit; harness bit-for-bit baseline-preserving (asserted)"
+  }
+}

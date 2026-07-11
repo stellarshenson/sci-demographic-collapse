@@ -188,7 +188,7 @@ def test_guard_catalogue_integrity():
 
 def test_guard_experiments_log_verdict_tally():
     """Campaign roll-up: the experiments log's per-hypothesis verdict rows tally EXACTLY to the
-    executive-summary counts - 434 unique H ids, no gaps H1-H434, 225 SUPPORTED / 129 PARTIAL /
+    executive-summary counts - 450 unique H ids, no gaps H1-H450, 235 SUPPORTED / 135 PARTIAL /
     77 REFUTED / 2 REFRAMED / 1 INCONCLUSIVE.
 
     On failure: a recorded verdict changed, a row was added without updating the roll-up, or the
@@ -215,10 +215,10 @@ def test_guard_experiments_log_verdict_tally():
         if v:
             assert rows.get(m.group(1), v) == v, f"conflicting verdicts for {m.group(1)}"
             rows[m.group(1)] = v
-    assert len(rows) == 434, f"expected 434 unique H rows, parsed {len(rows)}"
-    assert not [n for n in range(1, 435) if f"H{n}" not in rows], "gap in H numbering"
+    assert len(rows) == 450, f"expected 450 unique H rows, parsed {len(rows)}"
+    assert not [n for n in range(1, 451) if f"H{n}" not in rows], "gap in H numbering"
     assert Counter(rows.values()) == Counter(
-        SUPPORTED=225, PARTIAL=129, REFUTED=77, REFRAMED=2, INCONCLUSIVE=1
+        SUPPORTED=235, PARTIAL=135, REFUTED=77, REFRAMED=2, INCONCLUSIVE=1
     )
 
 
