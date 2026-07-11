@@ -1,0 +1,120 @@
+{
+  "round": "E50",
+  "defect": "DEF-8",
+  "hypotheses": {
+    "H456": {
+      "title": "the chi2/dof worsening is dominated by ONE region (Israel pronatal well)",
+      "verdict": "SUPPORTED",
+      "metric": "Israel share of worsening 166% (>60% bar cleared); recalibrated well 0.015 cuts Israel RMSE 0.367->0.093, pooled in-sample 0.220->0.180; sign misses 0, Korea monotone True",
+      "note": "single-region confirmed; recalibrating the region-specific Israel scalar closes DEF-8 below baseline while holding sign+Korea, temporally OUT-OF-SAMPLE for the single Israel region (n=1 region, NOT cross-region generalization); core-promotion candidate; OOS Israel test RMSE 0.096"
+    },
+    "H454": {
+      "title": "per-region depth does NOT generalize out-of-sample [MAKE-OR-BREAK gate]",
+      "verdict": "REFUTED",
+      "metric": "FAIR (both FIT-only, scored on TEST): per-region 0.229 vs shared pool 0.212; Germany FIT-only g -0.075 wrong-sign; in-sample full de-pool 0.207 > base 0.198",
+      "note": "Gelman few-groups: no-pooling overfits thin per-group data and loses to complete pooling. Under the fair FIT-only comparison de-pooling does not materially beat the pool out-of-sample, and it also loses on honest in-sample - gate FAILS as predicted -> H451/H452/H461/H462 pre-empted (Occam-pruned as inadmissible)."
+    },
+    "H455": {
+      "title": "recovery depth is unidentifiable at n~20yr - only the sign is",
+      "verdict": "REFUTED",
+      "metric": "Germany CI [+0.006,+0.024] excludes Poland [+0.040,+0.050] (mutually exclusive=True); shared g inside all CIs=False; pre-registered CIs, no post-hoc widening",
+      "note": "per-region depth CIs exclude each other under the pre-registered comparison - depth identifiable"
+    },
+    "H451": {
+      "title": "hierarchical partial-pooling recovery strength (g_rec_r ~ Normal(mu_g, tau_g))",
+      "verdict": "REFUTED",
+      "metric": "held-out RMSE 0.2279 > 0.198 bar; lands between static 0.229 and pool 0.208",
+      "note": "partial pooling shrinks toward the shared pool (small tau=0.112) and does not clear the bar; INADMISSIBLE under H454. Data prefer pooling - regularization was correctly calibrated."
+    },
+    "H452": {
+      "title": "per-region data-derived asymptote mu_c_r",
+      "verdict": "REFUTED",
+      "metric": "freeing mu_c buys +0.0064 in-sample (< 0.010 bar) and full de-pool 0.207 stays +0.0093 above baseline",
+      "note": "the shared 1.8 ceiling is adequate; a data-fixed mu_c_r buys less than the freely-fit one and cannot pay for itself; INADMISSIBLE under H454."
+    },
+    "H453": {
+      "title": "explicit magnitude likelihood selector (chi2/dof, not sign-miss count)",
+      "verdict": "REFUTED",
+      "metric": "magnitude-honest selector picks 'base (g=0, no well)' (chi2/dof 3.93); no shared g reaches base 3.93",
+      "note": "the honest full-trajectory likelihood declines the recuperation on magnitude and selects the down-only baseline - the term is a SIGN-only fix. This is the Occam adjudicator for the fanout."
+    },
+    "H457": {
+      "title": "the miss is a composition (tempo/cohort) artifact the sign test masks",
+      "verdict": "PARTIAL",
+      "metric": "mean |resid-vs-tempo corr| 0.36; re-timable RMSE ~0.1010 (>= 0.010 bar, but not significant at n~20yr autocorrelated)",
+      "note": "some gated regions (Italy/Poland) show moderate residual-vs-tempo correlation, but it is not significant given the smooth autocorrelated series, and Germany's recovery is quantum (E46, MAC rose monotonically) so tempo cannot rescue its depth. A tempo carry is NOT adopted - the Occam gate plus E40 Bongaarts-Feeney safety prune it - so composition is a partial, non-shipping story."
+    },
+    "H458": {
+      "title": "non-parametric free per-region recovery (and what it costs)",
+      "verdict": "REFUTED",
+      "metric": "held-out RMSE 0.6588 > pool 0.208; overfits thin data and loses OOS",
+      "note": "free-form recovery fits in-sample trivially, generalizes worse out-of-sample, and forfeits the mechanism and any forward-prediction claim; the parametric term is preferred even when it fits worse."
+    },
+    "H459": {
+      "title": "endogenous N-coupled asymptote mu_c_r = g(N_r), retiring the Israel well",
+      "verdict": "REFUTED",
+      "metric": "pooled in-sample 0.2434 vs free mu_c 0.207 and base 0.198; Israel sign-up False",
+      "note": "the N state is 2-level and does not separate Israel from the gated decliners USA/France (all N=0.14), so an N-coupled ceiling that lifts Israel also wrongly lifts the decliners - it cannot isolate the well. Endogeneity adds nothing over the simpler recalibrated Israel scalar (H456)."
+    },
+    "H460": {
+      "title": "null: recuperation is a sign-only correction, accept DEF-8 as residual",
+      "verdict": "REFUTED",
+      "metric": "H456 Israel-well recalibration clears a material magnitude win in-sample and out-of-sample with sign + Korea held",
+      "note": "the recuperation MECHANISM remains sign-only, but DEF-8 closes via the single-region error-model fix (H456), so the null that DEF-8 must be accepted as a residual is refuted."
+    },
+    "H461": {
+      "title": "per-region grid / point-mass filter for g_rec_r",
+      "verdict": "REFUTED",
+      "metric": "best held-out RMSE 0.2206 > shared pool 0.208 (no material OOS gain)",
+      "note": "a filter over a CONSTANT parameter with linear-Gaussian observation collapses to the static posterior; the recursion helps only if g_rec is genuinely time-varying, which it is not. INADMISSIBLE under H454."
+    },
+    "H462": {
+      "title": "mechanistic POMP with partial pooling",
+      "verdict": "REFUTED",
+      "metric": "matches the hierarchical fit (held-out 0.2279) > pool 0.208; no OOS gain",
+      "note": "the SSM machinery is interpretability-neutral overhead here; its only value is the honest likelihood that settles H453 (which declines the term), not a magnitude improvement. Occam prefers the simpler hierarchical fit; INADMISSIBLE under H454."
+    },
+    "H463": {
+      "title": "filtering adjudicator - does the state-space formulation get a hold, or diffuse interpretability?",
+      "verdict": "REFUTED",
+      "metric": "(a) pool 0.208 best; (c) filter 0.221, (d) POMP 0.228, (e) black-box 0.208 - none beat the pool materially",
+      "note": "the mechanistic filter and POMP do not beat the shared pool out-of-sample, and the black-box latent SSM only ties it (no wide-margin win) - so it does not justify trading away interpretability. Filtering does not move the numbers; the whole Act IV program is pruned, keeping the shared pool."
+    }
+  },
+  "summary": {
+    "round": "E50",
+    "defect": "DEF-8",
+    "disposition": "CLOSED",
+    "closed_by": "H456",
+    "disposition_text": "DEF-8 CLOSES via H456: recalibrating the region-specific Israel pronatal-well scalar (0.06 -> 0.015) cuts Israel RMSE 0.367 -> 0.093, drops pooled in-sample RMSE 0.220 -> 0.180 (below baseline 0.198) and holds temporally OUT-OF-SAMPLE for the single Israel region (test RMSE 0.096; n=1 region, NOT cross-region generalization), with the sign gate (misses 0<=1 = True) and Korea monotone (True) both computed-preserved. The recuperation MECHANISM stays sign-only; the miss was a one-region error model.",
+    "core_promotion_candidate": "H456 (recalibrated Israel well) - scope: temporally OOS for the single Israel region (n=1 region, NOT cross-region generalization). Israel test RMSE 0.096 vs E47 well 0.444; pooled in-sample 0.180 vs base 0.198; sign+Korea computed-preserved (True/True)",
+    "make_or_break_gate": {
+      "id": "H454",
+      "passed": false,
+      "note": "per-region depth does not generalize OOS -> de-pooling program pre-empted"
+    },
+    "reference_bars": {
+      "base_in_sample": 0.19813419887806513,
+      "pool_in_sample": 0.2195292067943969,
+      "pool_held_out": 0.2081929820721347,
+      "pool_held_out_fair_fit_only": 0.21200132895443258,
+      "occam_threshold": 0.01
+    },
+    "hard_constraints": {
+      "sign_gate": "misses <= 1 of 8",
+      "korea": "monotone collapse preserved",
+      "recal_sign_misses": [],
+      "sign_ok_computed": true,
+      "korea_monotone_computed": true
+    }
+  },
+  "grounding": [
+    "reports/def8_magnitude_research.md",
+    "reports/def8_magnitude_fanout.md",
+    "scratchpad/def8_pooling_results.json",
+    "scratchpad/def8_filter_results.json",
+    "Gelman (2006) prior distributions for variance parameters (few-groups pooling)",
+    "Alkema-Raftery UN WPP Bayesian Phase III asymptote"
+  ],
+  "promotion": "notebook-local only; no src/ edit; any core graft is a separate gated step (E40 discipline)"
+}
