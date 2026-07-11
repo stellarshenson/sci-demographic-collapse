@@ -52,3 +52,4 @@ Progress logs for background and long-running jobs.
 - `nb39-execute-review.log` - E43 notebook re-execution after the round-1 review fixes (H406 adjudicated spot check, H412 end-state metric, H407 seed check, LinModel eps guard)
 - `nb40-execute.log` - E44 notebook (40-kj-e44-early-warnings) nbconvert execution: H413-H419 early-warning signals + the E42 triple-interaction residual
 - `nb41-execute.log` - E41 Wave-4 notebook (41-kj-e41w4-cohort-refresh): the epoch-matched b.1985 spliced cohort reference
+- `nb42-execute.log` - E45 notebook (42-kj-e45-recession-round): H420-H425 the recession war-game
