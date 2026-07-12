@@ -196,7 +196,16 @@ earlier "40× break" was a self-referential-anchor artifact) yet is non-selectiv
 unreachable (baseline parity above the two-child plateau) and Germany is missed at the carried tip while
 the active set overshoots Poland and breaks Korea's collapse gate. No `emergent.py` graft is warranted; the monotone-decline default is a
 principled, adjudicated choice, and the recovery gap is per-region recuperation (a future DEF-4 × DEF-5
-direction), not a decline-bias to symmetrise (`docs/defects.md`, `reports/nb48_e51_verdicts.json`).**
+direction), not a decline-bias to symmetrise (`docs/defects.md`, `reports/nb48_e51_verdicts.json`).
+That per-region direction was then itself put on trial (E52, `notebooks/49-kj-e52-recuperation-velocity.ipynb`)
+and REFUTED: channel routing by measured data signature plus parameter-free tempo timing does not beat the
+shared recuperation knob - the observed mean-age path rises too smoothly for the model's own tempo factor to
+time the Italy/Poland bumps, the endogenous timing matches observed in 0/8 regions, and the fitted quantum
+depth fails leave-one-recovery-out again (reproducing the E50 finding on a new fold structure). One
+classification moved: Poland's measured recovery signature is QUANTUM (its tempo-adjusted TFR rises through
+the recovery), not tempo - of the four real recoveries only Italy's bump is tempo-signed. The recuperation
+mechanism remains SIGN-ONLY and notebook-local; the shipped monotone-decline baseline stands unchallenged
+for the third consecutive adjudication (E50/E51/E52; `reports/nb49_e52_verdicts.json`).**
 
 **Crisis battery** - four historical crises are reproduced and their demographic cost measured by
 counterfactual (E10): COVID-19 as a *mortality* shock (985k modelled excess deaths over 2020-21, real ≈1M,

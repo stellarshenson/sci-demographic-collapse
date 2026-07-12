@@ -188,10 +188,11 @@ def test_guard_catalogue_integrity():
 
 def test_guard_experiments_log_verdict_tally():
     """Campaign roll-up: the experiments log's per-hypothesis verdict rows tally EXACTLY to the
-    executive-summary counts - 470 unique H ids, no gaps H1-H470, 237 SUPPORTED / 136 PARTIAL /
-    91 REFUTED / 2 REFRAMED / 1 INCONCLUSIVE / 2 INERT-ON-HINDCAST / 1 SUBSUMED. The E51
+    executive-summary counts - 478 unique H ids, no gaps H1-H478, 239 SUPPORTED / 138 PARTIAL /
+    95 REFUTED / 2 REFRAMED / 1 INCONCLUSIVE / 2 INERT-ON-HINDCAST / 1 SUBSUMED. The E51
     decline-bias register round added the INERT-ON-HINDCAST and SUBSUMED dispositions; H464
-    REFUTED-AS-DEFECT folds into the REFUTED family (startswith "REFUTED").
+    REFUTED-AS-DEFECT folds into the REFUTED family (startswith "REFUTED"). E52 added H471-H478
+    (2 S / 2 P / 4 R).
 
     On failure: a recorded verdict changed, a row was added without updating the roll-up, or the
     roll-up was edited without a row - reconcile the exec summary against the tables before
@@ -218,13 +219,13 @@ def test_guard_experiments_log_verdict_tally():
         if v:
             assert rows.get(m.group(1), v) == v, f"conflicting verdicts for {m.group(1)}"
             rows[m.group(1)] = v
-    assert len(rows) == 470, f"expected 470 unique H rows, parsed {len(rows)}"
-    assert not [n for n in range(1, 471) if f"H{n}" not in rows], "gap in H numbering"
+    assert len(rows) == 478, f"expected 478 unique H rows, parsed {len(rows)}"
+    assert not [n for n in range(1, 479) if f"H{n}" not in rows], "gap in H numbering"
     assert Counter(rows.values()) == Counter(
         {
-            "SUPPORTED": 237,
-            "PARTIAL": 136,
-            "REFUTED": 91,
+            "SUPPORTED": 239,
+            "PARTIAL": 138,
+            "REFUTED": 95,
             "REFRAMED": 2,
             "INCONCLUSIVE": 1,
             "INERT-ON-HINDCAST": 2,

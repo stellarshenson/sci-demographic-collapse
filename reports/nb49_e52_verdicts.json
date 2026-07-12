@@ -1,0 +1,184 @@
+{
+  "round": "E52",
+  "hypotheses": {
+    "H471": {
+      "title": "channel decomposition by data signature",
+      "verdict": "SUPPORTED",
+      "metric": "3/4 land as predicted (Germany quantum, Italy tempo, Poland quantum, Israel pronatal)",
+      "note": "Germany's adjTFR rises (+0.050) through the recovery -> quantum (E46); Italy's adjTFR falls where covered with no clear MAC deceleration reversal -> tempo signature; Poland's adjTFR RISES (+0.065, inflated by the COVID-2020 point) so by its own signature it reads quantum, NOT the predicted tempo - an honest 3/4. Israel is the carried pronatal channel."
+    },
+    "H472": {
+      "title": "shared-knob mis-timing: one shared velocity misses the re-fall",
+      "verdict": "PARTIAL",
+      "metric": "shared-E47 post-peak slope Italy -0.0041/Poland -0.0015 vs obs -0.0185/-0.0356 (obs re-falls 4x/23x steeper); half-times {'Germany': 8, 'Italy': 5, 'Poland': 5}, spread 1.6x",
+      "note": "at the fitted config the shared-E47 AR(1) DOES fall after the peak (the secular drift pulls it down) but far too gently - it under-shoots the observed re-fall 4x (Italy) and 23x (Poland), so one shared velocity cannot match the per-region re-fall depth. The clean 'monotone cannot re-fall' prose overstated it (the miss is magnitude, not sign) and the half-time spread (1.6x) is below the anticipated 2x - the diagnostic quantities are shown but the specific claims are only partly borne out: graded PARTIAL."
+    },
+    "H473": {
+      "title": "prescribed-tempo diagnostic: observed MAC through the BF factor",
+      "verdict": "REFUTED",
+      "metric": "0/2 pass both timing and sign; Italy peak err 12y, Poland 6y",
+      "note": "the observed MAC rises too SMOOTHLY (dMAC ~ +0.10/yr, roughly constant) to time the Italy/Poland bumps through BF: the BF factor peaks at 2022-2023 (the recent MAC deceleration / COVID) not at the 2010/2017 TFR peaks, and the post-peak re-fall sign does not follow. The core's own tempo factor, fed the real tempo path, does NOT reproduce the bumps - the tempo-transient reading does not cash out in the BF mechanism. SENSITIVITY (series convention): under the sparse GUS national peak for Poland (2019 - a missing-data artifact, the GUS payload has no 2016-2018 points) the Poland timing error would be 4y and H473 would grade PARTIAL; the WPP reading (peak 2017, 6y) is retained as the conservative and instrument-valid choice. Italy fails under either convention."
+    },
+    "H474": {
+      "title": "endogenous tau-deceleration timing vs observed",
+      "verdict": "REFUTED",
+      "metric": "error <=5y in 0/8 regions",
+      "note": "the model's endogenous tau is a smooth monotone relaxation toward its 2023 target, so its deceleration peaks early and interior and does NOT match the observed 2010s-2020s MAC deceleration timing in almost any region - the endogenous tempo TIMING is off, which is exactly why routing a bump region to the parameter-free tempo channel cannot cash in its recovery."
+    },
+    "H475": {
+      "title": "channel-matched recuperation (make-or-break, signature-routed)",
+      "verdict": "REFUTED",
+      "metric": "signature-routed (quantum ['Germany', 'Poland']): misses ['Italy'], Korea True; recovery RMSE 0.072 vs shared-E47 0.065 (-11%); chi2/dof 3.831 vs 3.896 (-2%); sensitivity (Poland tempo): misses ['Italy', 'Poland'], RMSE 0.077 | RE-SCORED without g_rec (H476 gate failed): misses ['Germany', 'Italy', 'Poland'], RMSE 0.093, chi2/dof 3.803",
+      "note": "routing follows the MEASURED H471 signatures (quantum ['Germany', 'Poland'], tempo ['Italy']): chi2/dof improves vs the shared knob (3.831 vs 3.896) but the sign gate misses ['Italy'] and recovery RMSE 0.072 does not beat shared-E47 0.065 by 10%. The predicted-map sensitivity (Poland tempo) is worse still (misses ['Italy', 'Poland'], RMSE 0.077). EVERY tempo-routed bump region stays negative - the parameter-free tempo channel carries no recovery it is given - so the make-or-break fails under either routing. Channel routing + parameter-free timing does not beat the shared knob; DEF-5 stays sign-only. RE-SCORED per the H476 pre-registration (the fitted g_rec removed): the g_rec-stripped config loses every quantum-routed recovery too, so the make-or-break verdict is unchanged."
+    },
+    "H476": {
+      "title": "leave-one-recovery-out OOS gate on the fitted g_rec",
+      "verdict": "REFUTED",
+      "metric": "signature-routed OOS 0.0953 vs shared-pool 0.0579: gate FAILS; in-channel ['Germany', 'Poland']",
+      "note": "the g_rec carried into the headline routing FAILS the leave-one-recovery-out gate (OOS 0.0953 > shared-pool 0.0579): the quantum channel holds just ['Germany', 'Poland'], so each held-out fold fits g_rec on the single remaining in-channel region and the extrapolation overshoots (the Poland fold inherits Germany's fitted depth and vice versa). Per the pre-registered bar the fitted piece is removed and H475 re-scored without it - verdict unchanged (REFUTED). The E50-H454 finding stands: per-region quantum depth does not cross-validate."
+    },
+    "H477": {
+      "title": "re-fall discriminator (channel-matched Italy/Poland)",
+      "verdict": "PARTIAL",
+      "metric": "2/2 re-fall signs, 0/2 magnitude within factor 2 (Italy drop ratio 0.42, Poland 0.06)",
+      "note": "the channel-matched model reproduces the re-fall SIGN for both Italy and Poland (both decline after the observed peak, 2/2) but the modelled drop is only 42% (Italy) and 6% (Poland) of observed - 0/2 within a factor 2 - directionally right, quantitatively hollow. Note Italy is tempo-routed while Poland is quantum-routed in the headline config, so neither channel supplies the re-fall depth."
+    },
+    "H478": {
+      "title": "META: fate map unchanged 8/8 + Occam graft verdict",
+      "verdict": "SUPPORTED",
+      "metric": "basin unchanged 8/8; both-improve corner reached: False (channel-matched chi2/dof 3.831 vs 3.684, RMSE 0.072 vs 0.1238)",
+      "note": "the recuperation is a bounded transient (gated pull toward mu_c, decayed by 2100), so the forward fate map is unchanged in every region's end-state basin - the attractors stand. The both-improve corner is NOT reached (channel-matched chi2/dof 3.831 vs baseline 3.684), so no emergent.py graft is warranted; the winner stays notebook-local, exactly the E50/E51 disposition."
+    }
+  },
+  "summary": {
+    "round": "E52",
+    "disposition": "DEF-5-SIGN-ONLY (confirmed)",
+    "disposition_text": "Channel routing + parameter-free tempo timing does NOT beat the shared E47 knob (H475 REFUTED). Under the signature-derived routing (quantum ['Germany', 'Poland'], tempo ['Italy'], pronatal Israel) routing helps chi2/dof (channel-matched 3.831 vs shared-E47 3.896) but the sign gate misses ['Italy'] and recovery RMSE 0.072 does not beat the shared knob's 0.065 by 10%; the predicted-map sensitivity (Poland tempo) misses ['Italy', 'Poland'] at RMSE 0.077. Every tempo-routed bump region stays negative - the parameter-free tempo channel carries no recovery it is given: the observed MAC rises too smoothly for the BF factor to time the bumps (H473 REFUTED - BF peaks 2022-2023, not 2010/2017) and the model's endogenous tau deceleration matches observed in 0/8 regions (H474 REFUTED). Channel decomposition holds (3/4 signatures, H471 SUPPORTED; Poland's MEASURED signature is quantum, against the predicted tempo - the deviation is carried into the routing, not hidden) and the shared AR(1) under-shoots the per-region re-fall depth (H472 PARTIAL); the re-fall discriminator renders H477 PARTIAL and the OOS gate on the carried g_rec renders H476 REFUTED. The forward fate map is unchanged 8/8 (H478 SUPPORTED) and the both-improve corner is unreached, so NO emergent.py graft is warranted - the recovery gap stays open, DEF-5 stays sign-only, exactly the E50/E51 disposition. The honest negative is the result.",
+    "src_graft_warranted": false,
+    "channel_map": {
+      "Germany": {
+        "signature": "quantum",
+        "routed": "quantum"
+      },
+      "Italy": {
+        "signature": "tempo",
+        "routed": "tempo"
+      },
+      "Poland": {
+        "signature": "quantum",
+        "routed": "quantum"
+      },
+      "Israel": {
+        "signature": "pronatal",
+        "routed": "pronatal"
+      }
+    },
+    "routing_note": "headline H475 routing is SIGNATURE-derived per the fanout ('route each recovery region through its H471 channel'): Poland's measured signature is quantum (adjTFR rises, COVID-inflated), deviating from the fanout's PREDICTED tempo; the predicted-map routing (Poland tempo) is scored as the documented sensitivity",
+    "make_or_break": {
+      "id": "H475",
+      "verdict": "REFUTED",
+      "note": "channel routing + parameter-free timing does not beat the shared E47 knob under either routing (signature-derived headline or predicted-map sensitivity)"
+    },
+    "pareto": [
+      {
+        "config": "DEF-1 free (quantum DOWN)",
+        "chi2_dof": 3.221,
+        "recovery_rmse": 0.2654
+      },
+      {
+        "config": "baseline (shipped)",
+        "chi2_dof": 3.684,
+        "recovery_rmse": 0.1238
+      },
+      {
+        "config": "DEF-6 FAIR parity well",
+        "chi2_dof": 3.795,
+        "recovery_rmse": 0.1445
+      },
+      {
+        "config": "JOINT (DEF-1z+2+3+6)",
+        "chi2_dof": 7.99,
+        "recovery_rmse": 0.0715
+      },
+      {
+        "config": "shared-E47 recup",
+        "chi2_dof": 3.896,
+        "recovery_rmse": 0.0646
+      },
+      {
+        "config": "channel-matched (signature)",
+        "chi2_dof": 3.831,
+        "recovery_rmse": 0.0715
+      },
+      {
+        "config": "sens (Poland tempo)",
+        "chi2_dof": 3.803,
+        "recovery_rmse": 0.0772
+      }
+    ],
+    "reference_bars": {
+      "base_chi2_dof": 3.684,
+      "base_recovery_rmse": 0.1238,
+      "korea_obs_2019": 0.918,
+      "tol_cal": 0.0005
+    },
+    "configs": {
+      "baseline": {
+        "chi2_dof": 3.6838,
+        "recovery_rmse": 0.1238
+      },
+      "shared_e47": {
+        "chi2_dof": 3.8961,
+        "recovery_rmse": 0.0646,
+        "recovery_misses": [],
+        "cal_drift": 2.0227719605969696e-06
+      },
+      "channel_matched": {
+        "chi2_dof": 3.8307,
+        "recovery_rmse": 0.0715,
+        "recovery_misses": [
+          "Italy"
+        ],
+        "korea_2019": 0.813,
+        "cal_drift": 1.7704052124312142e-06,
+        "quantum_routing": [
+          "Germany",
+          "Poland"
+        ]
+      },
+      "sensitivity_poland_tempo": {
+        "chi2_dof": 3.8032,
+        "recovery_rmse": 0.0772,
+        "recovery_misses": [
+          "Italy",
+          "Poland"
+        ],
+        "cal_drift": 1.2265511752929115e-06,
+        "quantum_routing": [
+          "Germany"
+        ]
+      },
+      "h475_rescored_no_grec": {
+        "chi2": 3.803212222301614,
+        "rmse": 0.0932744194944337,
+        "misses": [
+          "Germany",
+          "Italy",
+          "Poland"
+        ]
+      }
+    }
+  },
+  "grounding": [
+    "reports/e52_recuperation_velocity_fanout.md",
+    "reports/nb48_e51_verdicts.json",
+    "scratchpad/toy_bias_harness.py",
+    "notebooks/44-kj-e47-recuperation.ipynb",
+    "notebooks/47-kj-e50-def8-magnitude.ipynb",
+    "Bongaarts-Sobotka 2012 (postponement-recuperation)",
+    "Goldstein-Sobotka 2009",
+    "Myrskyla-Kohler-Billari (gender-equity gate)",
+    "Alkema-Raftery UN WPP Phase III"
+  ],
+  "promotion": "notebook-local only; no src/ edit; any core graft is a separate gated step (E40 discipline). The coordinator decides the graft."
+}

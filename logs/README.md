@@ -57,3 +57,5 @@ Progress logs for background and long-running jobs.
 - `nb44-execute.log` - E47 notebook (44-kj-e47-recuperation): the recuperation round making the backtest pass (H431/H435-H440)
 - `def8-pooling.log` - DEF-8 diagnostic: the four-regime pooling toy (base / E47 shared pool / per-region g_rec / per-region g_rec+mu_c) decomposing the magnitude miss into shrinkage vs shared-asymptote vs functional-form floor
 - `def8-filter.log` - DEF-8 state-space probe: per-region grid FILTER vs static per-region vs shared pool on held-out (2012-2023) magnitude RMSE (the coordinator's filtering-act toy)
+- `proto-e52.log` / `proto-e52b.log` / `proto-e52c.log` - E52 prototype numerics (before the notebook build): part 1 baseline/shared-E47/channel-matched scoring on the toy_bias_harness, part 2 channel signatures + timing diagnostics, part 3 prescribed-tempo/OOS-emulator/re-fall/forward-basin
+- `nb49-execute.log` - E52 notebook (49-kj-e52-recuperation-velocity): channel-matched recuperation round H471-H478 (does channel routing + parameter-free tempo timing beat the shared E47 knob)
