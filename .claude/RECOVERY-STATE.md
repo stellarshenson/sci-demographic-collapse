@@ -207,3 +207,35 @@ Wave 3 + README rewrite sit in the working tree on 4e84b09; commit only on expli
 QUEUED: task #138 E42 fanout H393-H402 (education E + wellbeing W; user amendments: thorough
 research per hypothesis, interactions incl. first-derivative cross-terms, interaction-analyst
 gate) - awaiting user approval to execute.
+
+---
+
+## BRACE 2026-07-12 19:48 - server going down
+
+**HORIZON: SERVER RESTART** - every process dies with the host; nothing to reattach. Only disk +
+restart recipes below are valid on resume.
+
+**RUNNING AT BRACE**: nothing project-owned. Zero experiments, watchers, subagents, or detached
+compute in flight (verified `ps`). Only host-managed infra (JupyterHub, MLflow, tensorboard, MCP
+servers) which the container brings back on its own. Nothing to relaunch.
+
+**VALID ON DISK (everything)**: E52 round CLOSED, committed AND pushed as `7d9c922` - working tree
+clean, `main` == `origin/main`. Campaign 478 hypotheses / 52 rounds (239 S / 138 P / 95 R + 6
+special dispositions). Key artifacts: `notebooks/49-kj-e52-recuperation-velocity.ipynb` (executed
+green 20/20), `reports/nb49_e52_verdicts.json` (DEF-5-SIGN-ONLY confirmed, H475 make-or-break
+REFUTED), `reports/nb49_e52_review.md` (METHOD SOUND round 1 + confirming round 2), experiments log
+at 52 rounds with the repaired E51 at-a-glance row, `docs/defects.md` DEF-5 SIGN-ONLY FINAL,
+journal entry 82 validated, memory synced. `make test` 78 green, `make lint` clean at commit time.
+
+**INVALID / QUARANTINED**: none.
+
+**PAUSED PROCESSES**: none.
+
+**PENDING DECISIONS (user's)**: (1) next campaign direction - recovery-gap program EXHAUSTED after
+E50/E51/E52; only deferred material is DEF-2/DEF-3 forward-round work and DEF-7's narrow S-side
+kin-childcare term; the three /propose-goals candidates were offered, none selected. (2) home-git
+sync: `~/.claude/CLAUDE.md` emoji-spacing remedy + `~/.claude/commands/sitrep.md` byte-exact rule
+sit uncommitted in the home worktree (survive reboot on disk; `sync_home_up.sh` when desired).
+
+**FIRST ACTION ON RESUME**: nothing to relaunch or collect - verify `git log --oneline -1` shows
+`7d9c922` and `git status` clean, then report ready and await the user's next campaign direction.
