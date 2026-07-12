@@ -186,7 +186,17 @@ mechanism in the core; the declared structural error s_struct = 0.08 is simultan
 vs observed 0.920 in 2019, monotone fall), the mean-age direction 8/8, and the marriage-decline witness
 8/8. The scope statement this fixes: **the behavioural core is a 2023-anchored collapse-dynamics model for
 forward scenario RANKING - not a hindcasting machine for recuperation episodes** (bars and outcome:
-`docs/e41-backtest-preregistration.md`, `reports/e41_backtest_results.json`).
+`docs/e41-backtest-preregistration.md`, `reports/e41_backtest_results.json`). **That recovery gap was then
+formally adjudicated (E51, `notebooks/48-kj-e51-decline-bias.ipynb`): the core's downward drift was put on
+trial as a structural defect register (DEF-1/2/3/4/6) and confirmed EARNED SIGNAL, not a fixable bias -
+zeroing the secular terms is 2.3× worse (chi2/dof 3.68 → 8.39) and the fit set free rails every term DOWN;
+the dependency-dividend and pronatal-well corrections are inexercisable on an aging hindcast (INERT, not
+disproven); and a fair curvature-matched two-child parity well re-solves calibration cleanly (3.0e-06 - the
+earlier "40× break" was a self-referential-anchor artifact) yet is non-selective: Israel is structurally
+unreachable (baseline parity above the two-child plateau) and Germany is missed at the carried tip while
+the active set overshoots Poland and breaks Korea's collapse gate. No `emergent.py` graft is warranted; the monotone-decline default is a
+principled, adjudicated choice, and the recovery gap is per-region recuperation (a future DEF-4 × DEF-5
+direction), not a decline-bias to symmetrise (`docs/defects.md`, `reports/nb48_e51_verdicts.json`).**
 
 **Crisis battery** - four historical crises are reproduced and their demographic cost measured by
 counterfactual (E10): COVID-19 as a *mortality* shock (985k modelled excess deaths over 2020-21, real ≈1M,

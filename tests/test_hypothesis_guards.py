@@ -188,8 +188,10 @@ def test_guard_catalogue_integrity():
 
 def test_guard_experiments_log_verdict_tally():
     """Campaign roll-up: the experiments log's per-hypothesis verdict rows tally EXACTLY to the
-    executive-summary counts - 463 unique H ids, no gaps H1-H463, 236 SUPPORTED / 136 PARTIAL /
-    88 REFUTED / 2 REFRAMED / 1 INCONCLUSIVE.
+    executive-summary counts - 470 unique H ids, no gaps H1-H470, 237 SUPPORTED / 136 PARTIAL /
+    91 REFUTED / 2 REFRAMED / 1 INCONCLUSIVE / 2 INERT-ON-HINDCAST / 1 SUBSUMED. The E51
+    decline-bias register round added the INERT-ON-HINDCAST and SUBSUMED dispositions; H464
+    REFUTED-AS-DEFECT folds into the REFUTED family (startswith "REFUTED").
 
     On failure: a recorded verdict changed, a row was added without updating the roll-up, or the
     roll-up was edited without a row - reconcile the exec summary against the tables before
@@ -200,7 +202,8 @@ def test_guard_experiments_log_verdict_tally():
     from collections import Counter
 
     txt = (PROJ / "docs" / "experiments" / "demographic-collapse-experiments.md").read_text()
-    verdicts = ("SUPPORTED", "PARTIAL", "REFUTED", "REFRAMED", "INCONCLUSIVE")
+    verdicts = ("SUPPORTED", "PARTIAL", "REFUTED", "REFRAMED", "INCONCLUSIVE",
+                "INERT-ON-HINDCAST", "SUBSUMED")
     rows = {}
     for line in txt.splitlines():
         if not line.startswith("|"):
@@ -215,10 +218,18 @@ def test_guard_experiments_log_verdict_tally():
         if v:
             assert rows.get(m.group(1), v) == v, f"conflicting verdicts for {m.group(1)}"
             rows[m.group(1)] = v
-    assert len(rows) == 463, f"expected 463 unique H rows, parsed {len(rows)}"
-    assert not [n for n in range(1, 464) if f"H{n}" not in rows], "gap in H numbering"
+    assert len(rows) == 470, f"expected 470 unique H rows, parsed {len(rows)}"
+    assert not [n for n in range(1, 471) if f"H{n}" not in rows], "gap in H numbering"
     assert Counter(rows.values()) == Counter(
-        SUPPORTED=236, PARTIAL=136, REFUTED=88, REFRAMED=2, INCONCLUSIVE=1
+        {
+            "SUPPORTED": 237,
+            "PARTIAL": 136,
+            "REFUTED": 91,
+            "REFRAMED": 2,
+            "INCONCLUSIVE": 1,
+            "INERT-ON-HINDCAST": 2,
+            "SUBSUMED": 1,
+        }
     )
 
 

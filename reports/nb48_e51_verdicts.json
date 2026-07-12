@@ -1,0 +1,119 @@
+{
+  "round": "E51",
+  "defect_register": "DEF-1/2/3/4/6",
+  "hypotheses": {
+    "H464": {
+      "title": "DEF-1: secular down-drift is a feature (make-or-break, POOLED-OBJECTIVE-CONDITIONAL)",
+      "verdict": "REFUTED-AS-DEFECT",
+      "metric": "zeroing chi2/dof 8.39 vs baseline 3.68 (2.3x worse); free-bounds fit picks secC +0.010, secPb +0.012 (both DOWN), chi2 3.22 but recovery RMSE 0.265 (worse than 0.124); the recovery-weighted refit ALSO rails secC/secPb down",
+      "note": "the earned-signal claim is POOLED-OBJECTIVE-CONDITIONAL: on the pooled WLS objective the fit set free pins the drift maximally DOWN and makes the recoveries worse; the recovery-weighted refit ALSO rails secC/secPb down, so the down-drift is correctly-fit signal on both the pooled and the recovery-weighted objective. A monotone term of any sign cannot make a recovery's interior trough-then-rise, so DEF-1 is orthogonal to the missed recoveries regardless"
+    },
+    "H465": {
+      "title": "DEF-2: signed dependency dividend is inert on the hindcast",
+      "verdict": "INERT-ON-HINDCAST",
+      "metric": "max series delta 0.000679 < 0.001; refit chi2/dof 3.684 = baseline; cal drift 1e-06 after re-solve",
+      "note": "INERT-ON-HINDCAST, not disproven: over an aging window dep>dep0 always, so the clip reduces to the algebraic identity max(dep-dep0,0)=(dep-dep0) and the dividend branch is inexercisable in-sample. The forward-run asymmetry (a younging pyramid tail-winding fertility) is real but deferred - it moves no backtest number, so it is not a shipped fix now"
+    },
+    "H466": {
+      "title": "DEF-3: pronatal tri-well is inert on the hindcast",
+      "verdict": "INERT-ON-HINDCAST",
+      "metric": "tri-well series delta 0.00483 < 0.01; refit chi2/dof 3.681 = baseline; Israel with-well net +0.005 ~ baseline (frozen at NORM0)",
+      "note": "INERT-ON-HINDCAST, not disproven: N starts snapped to NORM0 and nothing forces it in-sample (fN=0), so the third well changes the potential but not the frozen state and moves no backtest number. It is the right structural home for a durable pronatal cascade, but its relevance is a FORWARD norm-lever durability verdict, deferred - and by Occam prefer the single norm-layer well over the DEF-6 parity layer"
+    },
+    "H467": {
+      "title": "DEF-4: recovery-velocity refit is subsumed",
+      "verdict": "SUBSUMED",
+      "metric": "max relative shift 1.7% < 20% (only kTau moves, 1.7%); both rate refits rail decl->0 (chi2/dof 6.87 at those constants)",
+      "note": "Israel as a recovery-velocity constraint moves nothing material (its C0=0.97 sits above the coupling trap and does not constrain the trap constants). Both the all-8 and hold-Israel-out rate refits drive decl->0 (chi2/dof 6.87) - the backtest wants the coupling trap OFF, which bounds how far a 23-year hindcast can certify the forward decline-bias: an identifiability caveat downstream of DEF-5, not an independent fix the backtest can act on"
+    },
+    "H468": {
+      "title": "DEF-6: the FAIR two-child parity well, re-adjudicated",
+      "verdict": "REFUTED",
+      "metric": "FAIR well: recovery RMSE 0.144 vs baseline 0.124, chi2/dof 3.80 vs 3.68, cal drift 3.0e-06 < 0.0005 (CLEAN re-solve, not the malformed 0.020), 0 new decline wrong-signs, Korea R2 False, active ['Italy', 'Korea', 'Poland']",
+      "note": "the FAIR well is NON-selective at the pre-registered tip_P=1.72 (a carried, un-swept modeling constant): inert on the five regions above the tip, active only on ['Italy', 'Korea', 'Poland']. The unreachability of the two LARGE recoveries splits honestly - Israel (obs +0.113) is STRUCTURAL: pb0 3.152 exceeds the plateau 2.0, so NO admissible two-child tip can ever activate it; Germany (obs +0.155) is INSTANCE-level: pb0 1.803 < 2.0, so a tip in (1.803, 2.0) would activate it - a configuration this round did not sweep. The REMOVE still stands on the computed horns at the pre-registered form: Germany is missed while the active set already overshoots Poland (+0.219 vs obs +0.049) and spuriously lifts Korea to 1.037 vs obs 0.918 (the R2 gate breaks), so recovery RMSE does not selectively improve. Calibration re-solves CLEANLY (3.0e-06) - the malformed well's 40x break was an anchor artifact, not a real defect - so the REMOVE is earned on the correct form, on chi2/selectivity alone"
+    },
+    "H469": {
+      "title": "JOINT structural symmetrisation is dominated by DEF-1 zeroing damage",
+      "verdict": "REFUTED",
+      "metric": "chi2/dof 7.99 (2.2x baseline); Korea19 0.688 R2 False; cal 2.9e-06; interaction I(DEF-1,DEF-6) -0.51",
+      "note": "the joint set is dominated by DEF-1's zeroing (which alone is 2.3x baseline); DEF-2/DEF-3 are inert and the fair DEF-6 lift is mild, so no clean interaction rescues the fit - the Pareto tension made worst-case; REMOVE"
+    },
+    "H470": {
+      "title": "META: the recovery gap is per-region recuperation, not symmetrisation",
+      "verdict": "SUPPORTED",
+      "metric": "no config reaches the lower-left corner (both chi2/dof < 3.68 AND RMSE < 0.124); monotone tension False: RMSE [0.071, 0.124, 0.144, 0.265] as chi2 [7.99, 3.68, 3.8, 3.22]",
+      "note": "a single shared quantum knob cannot fit collapsers and recoverers at once; the recovery gap is per-region heterogeneity + a transient postponement-recuperation (Bongaarts-Sobotka 2012, Goldstein 2009), a future DEF-4 x DEF-5 direction - not a decline-bias symmetrisation this round can supply"
+    }
+  },
+  "summary": {
+    "round": "E51",
+    "defect_register": "DEF-1/2/3/4/6 (decline-bias root-cause)",
+    "retest": "fair DEF-6 well (curvature-matched aP, clean unscaled anchor, honest ordering) + clean joint recalibration; H465/H466 relabelled INERT-ON-HINDCAST; H464 POOLED-OBJECTIVE-CONDITIONAL; H467 decl->0 refit reported",
+    "disposition": "EARNED-SIGNAL",
+    "disposition_text": "The decline-bias is EARNED SIGNAL, and the FAIR DEF-6 well does NOT change it. DEF-1 is the make-or-break: zeroing the four secular terms sends chi2/dof 3.68 -> 8.39 (2.3x worse), and set free the fit pins every secular term DOWN (secC +0.010, secPb +0.012); even a recovery-weighted refit rails down. DEF-2/DEF-3 are INERT-ON-HINDCAST (deltas 0.00068, 0.00483; inexercisable, not disproven); DEF-4 subsumed (rate shift 1.7%, both refits rail decl->0). The FAIR DEF-6 well - curvature-matched, cleanly anchored, calibration re-solving cleanly at 3.0e-06 (NOT the malformed 40x break) - is NON-selective: inert on the five regions already above the tip (Israel STRUCTURALLY - pb0 3.15 exceeds the two-child plateau 2.0, no admissible tip reaches it; Germany INSTANCE-level at the carried un-swept tip_P=1.72 - the computed horns in H468 close the repair) and moving only ['Italy', 'Korea', 'Poland'], so recovery RMSE 0.144 does not beat baseline 0.124 while chi2/dof 3.80. No config reaches the both-improve corner, so no emergent.py graft is warranted; the honest shipped default remains the monotone-decline baseline (E50 precedent). The REMOVE is now earned on the correct form.",
+    "src_graft_warranted": false,
+    "make_or_break": {
+      "id": "H464",
+      "verdict": "REFUTED-AS-DEFECT",
+      "note": "DEF-1 is the only defect the backtest directly adjudicates; it settles the omnibus defect-vs-feature question (POOLED-OBJECTIVE-CONDITIONAL, and the recovery-weighted refit also rails down)"
+    },
+    "def6_fair_well": {
+      "verdict": "REFUTED",
+      "chi2_dof": 3.795,
+      "recovery_rmse": 0.1445,
+      "cal_drift_after_resolve": 2.999296184080791e-06,
+      "korea_2019": 1.037,
+      "korea_r2_ok": false,
+      "active_regions": [
+        "Italy",
+        "Korea",
+        "Poland"
+      ],
+      "new_decline_wrongsigns": [],
+      "note": "the fair well re-solves calibration cleanly (the malformed 0.0203 was a self-referential-anchor artifact); it is active only on ['Italy', 'Korea', 'Poland'] and inert on the five regions already above the two-child tip AT the carried un-swept tip_P=1.72 - Israel's inertness is STRUCTURAL (pb0 3.152 > plateau 2.0), Germany's is INSTANCE-level (pb0 1.803 < 2.0; see the H468 note)"
+    },
+    "pareto_tension": [
+      {
+        "config": "DEF-1 free (quantum DOWN)",
+        "chi2_dof": 3.221,
+        "recovery_rmse": 0.2654
+      },
+      {
+        "config": "baseline (shipped)",
+        "chi2_dof": 3.684,
+        "recovery_rmse": 0.1238
+      },
+      {
+        "config": "DEF-6 FAIR parity well",
+        "chi2_dof": 3.795,
+        "recovery_rmse": 0.1445
+      },
+      {
+        "config": "JOINT (DEF-1z+2+3+6 fair)",
+        "chi2_dof": 7.99,
+        "recovery_rmse": 0.0715
+      }
+    ],
+    "no_lower_left_corner": true,
+    "monotone_tension": false,
+    "constructive_pointer": "per-region recuperation velocity (DEF-4 heterogeneity x DEF-5 transient postponement-recuperation); the recovery gap is a pooling problem, not a missing up-well - a future round, and even there E47/E50 found the magnitude sign-only",
+    "reference_bars": {
+      "base_chi2_dof": 3.684,
+      "base_recovery_rmse": 0.1238,
+      "base_R1": 6,
+      "korea_obs_2019": 0.918,
+      "tol_cal": 0.0005
+    }
+  },
+  "grounding": [
+    "reports/def_biascorrection_research.md",
+    "reports/def_biascorrection_fanout.md",
+    "scratchpad/toy_bias_harness.py",
+    "scratchpad/bias_results.json",
+    "Bongaarts-Sobotka 2012 (postponement-recuperation)",
+    "Goldstein-Sobotka 2009",
+    "Lee & Mason 2006 (demographic dividend)",
+    "Okun 2017 / Kaufmann 2012 (pronatal wells)"
+  ],
+  "promotion": "notebook-local only; no src/ edit; any core graft is a separate gated step (E40 discipline). The coordinator decides the graft."
+}
