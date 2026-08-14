@@ -86,7 +86,7 @@ class Dist:
 
     def interpolate(self, other, t, n=512):
         """McCann displacement interpolation - the geodesic morph: F_t^{-1} = (1-t)F0^{-1} + t F1^{-1}."""
-        u, qa, qb = self._common_grid(other, n)
+        _u, qa, qb = self._common_grid(other, n)
         return Dist((1 - t) * qa + t * qb, np.ones(n))
 
     @staticmethod

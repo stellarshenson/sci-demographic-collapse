@@ -93,14 +93,14 @@ def load_unwpp(data_dir="data/raw/unwpp", y0=1990, y1=2023, regions=None, varid=
         di = ind.filter(
             (pl.col("LocID") == loc) & (pl.col("Time") >= y0) & (pl.col("Time") <= y1)
         ).sort("Time")
-        out[name] = dict(
-            years=np.arange(y0, y1 + 1),
-            pop_f=_grid(pop, loc, "PopFemale", y0, y1),
-            pop_m=_grid(pop, loc, "PopMale", y0, y1),
-            Sx=_grid(life, loc, "Sx", y0, y1),
-            asfr=_grid(fert, loc, "ASFR", y0, y1) / 1000.0,  # per-1000 women -> per woman
-            ind={c: di[c].to_numpy() for c in _IND_COLS if c in di.columns},
-        )
+        out[name] = {
+            "years": np.arange(y0, y1 + 1),
+            "pop_f": _grid(pop, loc, "PopFemale", y0, y1),
+            "pop_m": _grid(pop, loc, "PopMale", y0, y1),
+            "Sx": _grid(life, loc, "Sx", y0, y1),
+            "asfr": _grid(fert, loc, "ASFR", y0, y1) / 1000.0,  # per-1000 women -> per woman
+            "ind": {c: di[c].to_numpy() for c in _IND_COLS if c in di.columns},
+        }
     return out
 
 
@@ -159,7 +159,7 @@ def project(region, mig_schedule=None, asfr_override=None, sx_override=None, dev
         nf, nm, b, d = leslie_step(nf, nm, Sx, asfr, float(R["ind"]["SRB"][k]), mig)
         bir[k] = float(b)
         dea[k] = float(d)
-    return dict(total=tot, births=bir, deaths=dea, pyr_f=pyr_f, pyr_m=pyr_m)
+    return {"total": tot, "births": bir, "deaths": dea, "pyr_f": pyr_f, "pyr_m": pyr_m}
 
 
 def onestep_fidelity(region, dev=DEV):

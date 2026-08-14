@@ -40,16 +40,16 @@ def _window_stats(traj: np.ndarray, y_lo: int, y_hi: int) -> dict | None:
     if not valid:
         return None
     seg = np.asarray([traj[i] for i in valid], dtype=float)
-    return dict(
-        mean=float(seg.mean()),
-        first=float(seg[0]),
-        last=float(seg[-1]),
-        min=float(seg.min()),
-        max=float(seg.max()),
-        coverage=len(valid) / len(idx),
-        y_lo=y_lo,
-        y_hi=y_hi,
-    )
+    return {
+        "mean": float(seg.mean()),
+        "first": float(seg[0]),
+        "last": float(seg[-1]),
+        "min": float(seg.min()),
+        "max": float(seg.max()),
+        "coverage": len(valid) / len(idx),
+        "y_lo": y_lo,
+        "y_hi": y_hi,
+    }
 
 
 def _childhood_coupling_integral(c_traj: np.ndarray, region: str, birth_year: int) -> dict:
@@ -68,11 +68,11 @@ def _childhood_coupling_integral(c_traj: np.ndarray, region: str, birth_year: in
     covered = sum(0 <= (y - SIM_Y0) < len(env) for y in child_years)
     coverage = covered / CHILDHOOD
     if t < 0 or t >= len(env):
-        return dict(value=None, coverage=coverage)
+        return {"value": None, "coverage": coverage}
     mem = CohortMemory(childhood=CHILDHOOD, repro_lo=CHILDHOOD, repro_hi=CHILDHOOD)
     for e in env[: t + 1]:
         mem.push(e)
-    return dict(value=float(mem.reproductive_mean()), coverage=coverage)
+    return {"value": float(mem.reproductive_mean()), "coverage": coverage}
 
 
 def cohort_biography(model, region: str, birth_year: int, force=None) -> dict:
@@ -101,23 +101,33 @@ def cohort_biography(model, region: str, birth_year: int, force=None) -> dict:
 
     # end-of-run scalars are only meaningful for this cohort if its reproductive window reaches the final year
     reaches_end = ry_hi >= SIM_Y0 + SIM_YEARS - 1
-    end_scalars = dict(tau=res["tauend"], Pbar=res["Pbend"], rho=res["rvend"], S=res["Send"])
+    end_scalars = {
+        "tau": res["tauend"],
+        "Pbar": res["Pbend"],
+        "rho": res["rvend"],
+        "S": res["Send"],
+    }
 
-    record = dict(
-        region=region,
-        birth_year=birth_year,
-        reproductive_window=(ry_lo, ry_hi),
-        childhood_window=(cy_lo, cy_hi),
-        anchors=dict(
-            C0=C0[region], NORM0=NORM0[region], C_thr=c_thr, thN=th_n, replacement=2.1, ridge=1.5
-        ),
-        reproductive=repro,
-        childhood=child,
-        childhood_coupling_integral=child_integral,
-        end_scalars=end_scalars if reaches_end else None,
-        exposed=["C (coupling)", "N (norm)", "q (marriageability)", "TFR"],
-        aggregated_only=["tau (tempo)", "Pbar (parity)", "rho (childlessness)", "S (security)"],
-    )
+    record = {
+        "region": region,
+        "birth_year": birth_year,
+        "reproductive_window": (ry_lo, ry_hi),
+        "childhood_window": (cy_lo, cy_hi),
+        "anchors": {
+            "C0": C0[region],
+            "NORM0": NORM0[region],
+            "C_thr": c_thr,
+            "thN": th_n,
+            "replacement": 2.1,
+            "ridge": 1.5,
+        },
+        "reproductive": repro,
+        "childhood": child,
+        "childhood_coupling_integral": child_integral,
+        "end_scalars": end_scalars if reaches_end else None,
+        "exposed": ["C (coupling)", "N (norm)", "q (marriageability)", "TFR"],
+        "aggregated_only": ["tau (tempo)", "Pbar (parity)", "rho (childlessness)", "S (security)"],
+    }
     record["narration"] = _narrate(record)
     return record
 

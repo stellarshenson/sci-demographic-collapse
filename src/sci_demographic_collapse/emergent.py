@@ -20,6 +20,8 @@ model validated in notebooks 14-17; import it instead of re-deriving it.
 
 from __future__ import annotations
 
+from typing import ClassVar
+
 import numpy as np
 import torch
 
@@ -140,23 +142,23 @@ PB_SCALE_ENS = {
 
 # behavioural rate constants (calibrated in E19; norm constants added in E25; marriageability +
 # intergenerational-memory constants added in E30)
-PARAMS = dict(
-    kC=0.08,
-    C_thr=0.66,
-    C_floor=0.24,
-    decl=0.05,
-    gS_C=0.9,
-    secC=0.0007,
-    kPb=0.05,
-    gPb=1.2,
-    secPb=0.0010,
-    kTau=0.06,
-    gTau=6.0,
-    secTau=0.006,
-    kRV=0.03,
-    gRV=0.012,
-    kS=0.06,
-    secS=0.0010,
+PARAMS = {
+    "kC": 0.08,
+    "C_thr": 0.66,
+    "C_floor": 0.24,
+    "decl": 0.05,
+    "gS_C": 0.9,
+    "secC": 0.0007,
+    "kPb": 0.05,
+    "gPb": 1.2,
+    "secPb": 0.0010,
+    "kTau": 0.06,
+    "gTau": 6.0,
+    "secTau": 0.006,
+    "kRV": 0.03,
+    "gRV": 0.012,
+    "kS": 0.06,
+    "secS": 0.0010,
     # Bongaarts & Feeney 1998 ("On the quantum and tempo of fertility", PDR 24(2)): the tempo
     # adjustment TFR/(1 - r) with r the annual change in mean age at childbearing, applied on the
     # REALIZED annual dtau (E40). E41 Stage-4 gate: adjudicated on GAP dynamics G = 1-TFR/adjTFR
@@ -165,25 +167,25 @@ PARAMS = dict(
     # (systematic residual sign -0.86, logged as a scope finding: even 1.0 underexplains). 1.0 is
     # the canonical undamped B-F factor. The E40-A4g sweep note ({0.4,0.6,0.8}, no verdict rode on
     # the choice) is superseded by this data-adjudicated value (reports/e41_backtest_results.json).
-    kBF=1.0,
-    dep_fb=0.22,
-    aN=2.5,
-    thN=0.25,
-    Nlo=0.14,
-    Nhi=0.42,
-    lam_rho=0.30,
+    "kBF": 1.0,
+    "dep_fb": 0.22,
+    "aN": 2.5,
+    "thN": 0.25,
+    "Nlo": 0.14,
+    "Nhi": 0.42,
+    "lam_rho": 0.30,
     # marriageability capital q (bilateral) gates coupling; fed by therapy/health and by the
     # lifetime-integrated childhood environment of the current reproductive cohort (alienation).
-    kq=0.06,
-    gqC=0.9,
-    phi=0.4,
-    wF=0.6,
-    wS=0.3,  # DEAD (E41 Stage 0(e)): defined but never referenced by any dynamics; kept in place
-    wScar=0.5,
-    gA=0.5,
-    lagLo=27,
-    lagHi=45,
-)
+    "kq": 0.06,
+    "gqC": 0.9,
+    "phi": 0.4,
+    "wF": 0.6,
+    "wS": 0.3,  # DEAD (E41 Stage 0(e)): defined but never referenced by any dynamics; kept in place
+    "wScar": 0.5,
+    "gA": 0.5,
+    "lagLo": 27,
+    "lagHi": 45,
+}
 
 
 def fec(tau: float) -> float:
@@ -210,7 +212,7 @@ def erode(yr: int, s: int = 2, d: int = 10) -> float:
 def _shift_profile(asfr: np.ndarray, mult: float, dtau: float) -> np.ndarray:
     """Scale an ASFR profile by `mult` and shift it by `dtau` years (tempo)."""
     b = asfr * mult
-    s = int(round(dtau))
+    s = round(dtau)
     if s > 0:
         b = np.concatenate([np.zeros(min(s, len(b))), b[:-s]]) if s < len(b) else b * 0
     elif s < 0:
@@ -316,7 +318,7 @@ class EmergentModel:
         (births, deaths, total population, dependency ratio, dep_pen).
         """
         if force is None:
-            force = lambda yr: [0.0] * 6  # noqa: E731
+            force = lambda yr: [0.0] * 6
         st = np.array(
             [
                 C0[region],
@@ -414,21 +416,21 @@ class EmergentModel:
                     dependency=dep,
                     dep_pen=dep_pen,
                 )
-        out = dict(
-            C=np.array(Ctr),
-            TFR=np.array(Ttr),
-            N=np.array(Ntr),
-            q=np.array(Qtr),
-            Cend=float(C),
-            Nend=float(N),
-            qend=float(q),
-            Pbend=float(Pb),
-            Send=float(S),
-            rvend=float(rv),
-            tauend=float(tau),
-            tfr=float(tfr),
-            pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
-        )
+        out = {
+            "C": np.array(Ctr),
+            "TFR": np.array(Ttr),
+            "N": np.array(Ntr),
+            "q": np.array(Qtr),
+            "Cend": float(C),
+            "Nend": float(N),
+            "qend": float(q),
+            "Pbend": float(Pb),
+            "Send": float(S),
+            "rvend": float(rv),
+            "tauend": float(tau),
+            "tfr": float(tfr),
+            "pop_pct": (float(tot.sum()) / pop0 - 1) * 100,
+        }
         if traj is not None:
             out["trajectories"] = {k: np.array(v) for k, v in traj.items()}
         return out
@@ -445,7 +447,7 @@ class EmergentModel:
         scalar (the lift only earns its keep where the channel is nonlinear).
         """
         if force is None:
-            force = lambda yr: [0.0] * 6  # noqa: E731
+            force = lambda yr: [0.0] * 6
         p = self.P
         C, rv, Pb, tau, S, qc = (
             C0[region],
@@ -546,14 +548,14 @@ class EmergentModel:
             A_lag = p["gA"] * mem.reproductive_mean()
             Ttr.append(tfr)
             Ntr.append(float(Nd.mean()))
-        return dict(
-            TFR=np.array(Ttr),
-            N=np.array(Ntr),
-            Nend=float(Nd.mean()),
-            Cend=float(C),
-            tfr=float(tfr),
-            pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
-        )
+        return {
+            "TFR": np.array(Ttr),
+            "N": np.array(Ntr),
+            "Nend": float(Nd.mean()),
+            "Cend": float(C),
+            "tfr": float(tfr),
+            "pop_pct": (float(tot.sum()) / pop0 - 1) * 100,
+        }
 
     def _estep_vec(self, nm, st, force, tn, dep_pen, A_lag=0.0, dt=0.25):
         """Vectorised `_estep` over a K-agent ensemble. `st` is (K,7); returns ((K,7), dtau (K,)).
@@ -603,7 +605,15 @@ class EmergentModel:
     # per-channel population dispersion for the ensemble core; 0 keeps a channel a point mass, so the
     # ensemble reduces EXACTLY to the scalar `run` (the baseline-preservation guarantee). Phase-2
     # calibration overrides these so the dispersed ensemble still hits each region's 2023 TFR.
-    SIGMA0 = {"C": 0.0, "rv": 0.0, "Pb": 0.0, "tau": 0.0, "S": 0.0, "N": 0.0, "q": 0.0}
+    SIGMA0: ClassVar[dict[str, float]] = {
+        "C": 0.0,
+        "rv": 0.0,
+        "Pb": 0.0,
+        "tau": 0.0,
+        "S": 0.0,
+        "N": 0.0,
+        "q": 0.0,
+    }
 
     def run_ens(
         self,
@@ -630,7 +640,7 @@ class EmergentModel:
         """
         chans = ["C", "rv", "Pb", "tau", "S", "N", "q"]
         if force is None:
-            force = lambda yr: [0.0] * 6  # noqa: E731
+            force = lambda yr: [0.0] * 6
         p = self.P
         start = np.array(
             [
@@ -744,19 +754,19 @@ class EmergentModel:
                     dependency=dep,
                     dep_pen=dep_pen,
                 )
-        out = dict(
-            TFR=np.array(Ttr),
-            N=np.array(Ntr),
-            Nend=float(N.mean()),
-            Cend=float(C.mean()),
-            qend=float(q.mean()),
-            Pbend=float(Pb.mean()),
-            Send=float(S.mean()),
-            rvend=float(rv.mean()),
-            tauend=float(tau.mean()),
-            tfr=tfr,
-            pop_pct=(float(tot.sum()) / pop0 - 1) * 100,
-        )
+        out = {
+            "TFR": np.array(Ttr),
+            "N": np.array(Ntr),
+            "Nend": float(N.mean()),
+            "Cend": float(C.mean()),
+            "qend": float(q.mean()),
+            "Pbend": float(Pb.mean()),
+            "Send": float(S.mean()),
+            "rvend": float(rv.mean()),
+            "tauend": float(tau.mean()),
+            "tfr": tfr,
+            "pop_pct": (float(tot.sum()) / pop0 - 1) * 100,
+        }
         if return_dist:
             out["dist_end"] = {c: st[:, i].copy() for i, c in enumerate(chans)}
         if traj is not None:

@@ -21,6 +21,7 @@ from sci_demographic_collapse.emergent import PARAMS, PB_SCALE_ENS, REAL, Emerge
 from sci_demographic_collapse.interventions import CATALOGUE, CHANNELS, force_of
 
 PROJ = Path(__file__).resolve().parents[1]
+UNWPP = PROJ / "data" / "raw" / "unwpp"
 REGIONS8 = ["USA", "France", "Germany", "Italy", "Japan", "Korea", "Poland", "Israel"]
 
 
@@ -36,7 +37,9 @@ def f9(fS=0.0, fC=0.0, fPb=0.0, fTau=0.0, fq=0.0, d=10):
 
 @pytest.fixture(scope="module")
 def model():
-    return EmergentModel(data_dir=str(PROJ / "data" / "raw" / "unwpp"))
+    if not UNWPP.exists():
+        pytest.skip("UN WPP dataset absent (data/raw/ is not committed) - simulation guards run locally only")
+    return EmergentModel(data_dir=str(UNWPP))
 
 
 @pytest.fixture(scope="module")

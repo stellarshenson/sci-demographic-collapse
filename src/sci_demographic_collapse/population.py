@@ -73,14 +73,14 @@ class PopChannel:
         return self.aggregate(f) - float(np.vectorize(f)(self.mean()))
 
     # -- interventions -----------------------------------------------------
-    def shift(self, dmu: float = 0.0, dsigma: float = 0.0) -> "PopChannel":
+    def shift(self, dmu: float = 0.0, dsigma: float = 0.0) -> PopChannel:
         """Shift the whole distribution's mean and/or spread (e.g. inequality widens sigma). In place."""
         self.mu += dmu
         self.sigma = max(self.sigma + dsigma, 0.0)
         self.theta = self.mu + self.sigma * self.eps
         return self
 
-    def respond(self, effect: float, response_fn=None) -> "PopChannel":
+    def respond(self, effect: float, response_fn=None) -> PopChannel:
         """Apply a heterogeneous intervention: theta_k += effect * response_fn(theta_k), accumulating.
 
         `response_fn` maps a bucket's current value to its responsiveness in [0, 1] (default: uniform 1.0).
@@ -97,7 +97,7 @@ class PopChannel:
         self.sigma = self.std()
         return self
 
-    def step(self, dfn, dt: float = 1.0) -> "PopChannel":
+    def step(self, dfn, dt: float = 1.0) -> PopChannel:
         """Evolve each bucket by its own dynamics: theta_k += dt * dfn(theta_k). In place."""
         self.theta = self.theta + dt * np.vectorize(dfn)(self.theta)
         self.mu = self.mean()
@@ -116,13 +116,13 @@ class PopChannel:
         wk = self.w[mask]
         tot = float(wk.sum())
         mean = float(np.sum(wk * self.theta[mask]) / tot) if tot > 0 else float("nan")
-        return dict(weight=tot, mean=mean, n=int(mask.sum()))
+        return {"weight": tot, "mean": mean, "n": int(mask.sum())}
 
     def match_prob(self, thresh: float) -> float:
         """Share of the population acceptable to a chooser with a hypergamy bar at `thresh`."""
         return self.select(thresh, side="above")["weight"]
 
-    def copy(self) -> "PopChannel":
+    def copy(self) -> PopChannel:
         c = PopChannel(self.mu, self.sigma, len(self.eps))
         c.theta = self.theta.copy()
         return c

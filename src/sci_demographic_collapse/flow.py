@@ -96,24 +96,24 @@ class QuantileFlow:
         return self.Qv[lo] * (1 - w) + self.Qv[hi] * w
 
     # -- optimal transport (exact, 1-D) -----------------------------------
-    def W2(self, other: "QuantileFlow") -> torch.Tensor:
+    def W2(self, other: QuantileFlow) -> torch.Tensor:
         """Exact 1-D Wasserstein-2: L2 between quantile functions."""
         return torch.sqrt(((self.Qv - other.Qv) ** 2).mean())
 
-    def interpolate(self, other: "QuantileFlow", t: float) -> "QuantileFlow":
+    def interpolate(self, other: QuantileFlow, t: float) -> QuantileFlow:
         """McCann displacement geodesic - linear interpolation in quantile space."""
         return QuantileFlow((1 - t) * self.Qv + t * other.Qv, self.u)
 
-    def pushforward(self, T) -> "QuantileFlow":
+    def pushforward(self, T) -> QuantileFlow:
         """Transport by a map T (an intervention / selection)."""
         return QuantileFlow(T(self.Qv), self.u)
 
-    def advect(self, vfield, dt: float = 1.0) -> "QuantileFlow":
+    def advect(self, vfield, dt: float = 1.0) -> QuantileFlow:
         """One explicit transport step under a velocity field (the particle Fokker-Planck drift)."""
         return QuantileFlow(self.Qv + dt * vfield(self.Qv), self.u)
 
     @staticmethod
-    def barycenter(flows, weights=None) -> "QuantileFlow":
+    def barycenter(flows, weights=None) -> QuantileFlow:
         """Wasserstein barycenter - the quantile-averaged distribution."""
         n = len(flows)
         w = torch.ones(n, dtype=_DT) if weights is None else torch.as_tensor(weights, dtype=_DT)

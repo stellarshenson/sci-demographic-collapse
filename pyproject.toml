@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sci_demographic_collapse"
-version = "0.7.0"
+version = "0.7.1"
 description = "Data science analysis of demographic collapse"
 authors = [
     { name = "Stellars Henson" },
